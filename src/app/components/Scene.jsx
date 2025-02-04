@@ -24,7 +24,8 @@ function FloatingModel({ url, position, ...props }) {
     <mesh
       ref={modelRef}
       {...props}
-      onClick={() => window.open('https://example.com', '_blank')}
+      // onClick={() => window.open('https://example.com', '_blank')}
+      onClick={() => window.open('/productdetails')}
       onPointerOver={() => (document.body.style.cursor = 'pointer')}
       onPointerOut={() => (document.body.style.cursor = 'auto')}
     >
