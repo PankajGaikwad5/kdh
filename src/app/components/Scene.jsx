@@ -217,11 +217,11 @@ export default function Scene() {
           scale={1}
           position={[Math.random() * 10 - 5, 2, Math.random() * 10 - 5]} // Randomize positions
         />
-        <FloatingModel
+        {/* <FloatingModel
           url='/mb4/m.gltf'
           scale={1}
           position={[Math.random() * 10 - 5, 2, Math.random() * 10 - 5]} // Randomize positions
-        />
+        /> */}
         {/* ))} */}
         <Preload all />
       </Suspense>
