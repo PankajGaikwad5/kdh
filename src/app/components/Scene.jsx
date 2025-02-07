@@ -264,47 +264,67 @@ export default function Scene() {
         /> */}
         <FloatingVideo
           url='/assets/chair.webm'
-          position={[31, 8, 12]}
+          position={[0, 2, 0]}
           scale={3}
         />
         <FloatingVideo
           url='/assets/chair.webm'
-          position={[12, 22, 10]}
+          position={[0, 2, 0]}
           scale={3}
         />
         <FloatingVideo
           url='/assets/chair.webm'
-          position={[6, 23, 12]}
+          position={[0, 2, 0]}
           scale={3}
         />
         <FloatingVideo
           url='/assets/chair.webm'
-          position={[65, 27, 2]}
+          position={[0, 2, 0]}
           scale={3}
         />
         <FloatingVideo
           url='/assets/chair.webm'
-          position={[3, 43, 60]}
+          position={[0, 2, 0]}
           scale={3}
         />
         <FloatingVideo
           url='/assets/chair.webm'
-          position={[2, 32, 65]}
+          position={[0, 2, 0]}
           scale={3}
         />
         <FloatingVideo
           url='/assets/chair.webm'
-          position={[32, 56, 67]}
+          position={[0, 2, 0]}
           scale={3}
         />
         <FloatingVideo
           url='/assets/chair.webm'
-          position={[42, 36, 34]}
+          position={[0, 2, 0]}
           scale={3}
         />
         <FloatingVideo
           url='/assets/chair.webm'
-          position={[22, 1, 97]}
+          position={[0, 2, 0]}
+          scale={3}
+        />
+        <FloatingVideo
+          url='/assets/chair.webm'
+          position={[0, 2, 0]}
+          scale={3}
+        />
+        <FloatingVideo
+          url='/assets/chair.webm'
+          position={[0, 2, 0]}
+          scale={3}
+        />
+        <FloatingVideo
+          url='/assets/chair.webm'
+          position={[0, 2, 0]}
+          scale={3}
+        />
+        <FloatingVideo
+          url='/assets/chair.webm'
+          position={[0, 2, 0]}
           scale={3}
         />
         {/* <FloatingModel
