@@ -6,8 +6,35 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+  opacity: 0;
+  animation: fadeIn 0.9s ease-in-out forwards;
+
   /* overflow: hidden; */
   /* background: #111; */
+  /* background-image: ; */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.project-bg {
+  background-image: url('/assets/3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* opacity: 0.75; */
+  z-index: 0;
 }
 
 /* html,
@@ -79,6 +106,6 @@ body {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
   }
 }

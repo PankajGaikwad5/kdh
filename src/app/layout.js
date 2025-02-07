@@ -3,6 +3,7 @@
 import './globals.css';
 import { Inter } from 'next/font/google'; // Use a known Google font
 import { Poppins, Montserrat } from 'next/font/google';
+import Footer from './components/Footer';
 
 // popins
 // montserrat
@@ -38,7 +39,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body className={`${montserrat.className} antialiased`}>{children}</body>
+      <body className={`${montserrat.className} antialiased`}>
+        {children}
+        {/* <Footer /> */}
+      </body>
     </html>
   );
 }

@@ -78,6 +78,31 @@ const DescAccordian = ({ scrollPosition }) => {
       console.log(error);
     }
   }
+
+  const handleDownload = async (event) => {
+    event.preventDefault();
+    const fileUrl =
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQsSTArCgpKiS14YXmU2JDcwG0vBsCL6dWNyP';
+
+    try {
+      const response = await fetch(fileUrl);
+      const blob = await response.blob();
+      const blobUrl = window.URL.createObjectURL(blob);
+
+      const link = document.createElement('a');
+      link.href = blobUrl;
+      link.setAttribute('download', 'file.pdf');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      // Clean up blob URL
+      window.URL.revokeObjectURL(blobUrl);
+    } catch (error) {
+      console.error('Download failed:', error);
+    }
+  };
+
   return (
     <div
       className='flex flex-col md:flex-row gap-4 w-full bg-zinc-100/50  text-zinc-700 py-8'
@@ -138,7 +163,15 @@ const DescAccordian = ({ scrollPosition }) => {
               download pdf
             </AccordionTrigger>
             <AccordionContent>
-              <a href='/new.pdf'>dalksjdlka</a>
+              {/* <a
+                href='https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQsSTArCgpKiS14YXmU2JDcwG0vBsCL6dWNyP'
+                download='filename.pdf'
+              >
+                click here to start download
+              </a> */}
+              <a href='#' onClick={handleDownload}>
+                Download PDF
+              </a>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem

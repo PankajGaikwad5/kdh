@@ -18,6 +18,7 @@ import {
 import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
 import { Poppins, Montserrat, Bebas_Neue } from 'next/font/google';
+import Footer from '../components/Footer';
 
 // popins
 // montserrat
@@ -79,16 +80,19 @@ const page = () => {
     }
   }
   return (
-    <div>
-      <Navbar />
-      <main className='pt-16'>
-        <h1
-          className={`text-3xl border-b-4 border-pink-400 pb-4 px-8 tracking-wider  font-semibold uppercase `}
-        >
-          about
+    <div
+      className='min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800'
+      style={{
+        backgroundImage: `url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.1'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+      }}
+    >
+      {/* <Navbar /> */}
+      <main className='pt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+        <h1 className='text-4xl font-bold text-gray-900 dark:text-white pb-8 border-b border-gray-200 dark:border-gray-700'>
+          Contact Us
         </h1>
-        <div className='w-full text-gray-800 flex justify-center items-center flex-col pt-8 bg-zinc-100/40'>
-          <div className='w-full max-w-lg tracking-widest p-6 flex flex-col border border-zinc-3200 shadow-md rounded bg-zinc-100'>
+        <div className='w-full text-black flex justify-center items-center flex-col lg:flex-row gap-8 py-12  '>
+          <div className='w-full max-w-lg z-10 tracking-widest p-6 flex flex-col '>
             <p
               className={`text-xs font-bold mb-2 ${montserrat.className} uppercase font-light`}
             >
@@ -109,7 +113,7 @@ const page = () => {
                       <FormLabel>Name</FormLabel>
                       <FormControl>
                         <Input
-                          className='text-black'
+                          className='text-black border border-zinc-400'
                           placeholder='Enter your name'
                           {...field}
                         />
@@ -126,7 +130,7 @@ const page = () => {
                       <FormLabel>Email</FormLabel>
                       <FormControl>
                         <Input
-                          className='text-black'
+                          className='text-black border border-zinc-400'
                           placeholder='Enter your email'
                           {...field}
                         />
@@ -144,7 +148,7 @@ const page = () => {
                       <FormControl>
                         <Textarea
                           placeholder='Enter your message'
-                          className='input textarea text-black'
+                          className='input textarea text-black border border-zinc-400'
                           rows={5}
                           {...field}
                         />
@@ -155,7 +159,7 @@ const page = () => {
                 />
                 <Button
                   type='submit'
-                  className='bg-white uppercase text-gray-900 hover:bg-black hover:text-white transition-all duration-500 ease-in-out rounded border-zinc-200 border px-5 tracking-normal font-medium'
+                  className='bg-white uppercase text-gray-900 hover:bg-black hover:text-white transition-all duration-500 ease-in-out  border-zinc-600 rounded-none border px-5 tracking-normal font-medium'
                 >
                   Submit
                 </Button>
@@ -163,7 +167,7 @@ const page = () => {
             </Form>
           </div>
           {/*  */}
-          <div className='w-full max-w-lg text-xs font-thin text-zinc-800 p-4 flex flex-col space-y-4 my-12 py-10'>
+          <div className='w-full max-w-lg text-xs z-10 font-thin text-black p-4 flex flex-col space-y-4 my-12 py-10'>
             <div className='flex flex-wrap items-center gap-8 text-center '>
               <a
                 href='mailto:info@karandesai.in'
@@ -207,7 +211,7 @@ const page = () => {
                 <a href='https://wa.me/+917977112242' target='_blank'>
                   <FaWhatsapp
                     size={25}
-                    className='text-green-700 hover:text-green-400'
+                    className='text-green-700 hover:text-green-500 transition-all duration-300'
                   />
                 </a>
                 <a
@@ -221,7 +225,7 @@ const page = () => {
             </div>
 
             <div
-              className={`flex flex-col gap-4 sm:flex-row sm:gap-6 font-light text-center sm:text-left ${popins.className} tracking-widest`}
+              className={`flex flex-col gap-4 sm:flex-row sm:gap-6 font-light  sm:text-left ${popins.className} tracking-widest`}
             >
               <p>
                 We are not a normal team of architects and interior designers,
@@ -237,6 +241,7 @@ const page = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 };

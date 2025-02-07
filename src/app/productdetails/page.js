@@ -16,13 +16,11 @@ import Navbar from '../components/Navbar';
 const page = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const imgArray = [
-    '/img/1.jpg',
-    '/img/2.jpg',
-    '/img/3.jpg',
-    '/img/4.jpg',
-    '/img/5.jpg',
-    '/img/6.jpg',
-    '/img/7.jpg',
+    '/monster_basin_p/1.jpg',
+    '/monster_basin_p/2.jpg',
+    '/monster_basin_p/3.jpg',
+    '/monster_basin_p/4.jpg',
+    '/monster_basin_p/5.jpg',
   ];
 
   const handleScroll = () => {
@@ -47,7 +45,7 @@ const page = () => {
           Scroll to New Section
         </button>
       </Link> */}
-      <div className='w-full h-screen p-0 m-0 bg-zinc-200/50'>
+      <div className='w-full h-screen p-0 m-0 bg-black'>
         <Element name=''>
           <CarouselComp imgArray={imgArray} />
         </Element>
@@ -63,24 +61,24 @@ const page = () => {
         >
           {' '}
           {/* <div className='flex justify-center items-center h-full'> */}
-          <div className='flex justify-around text-lg uppercase text-zinc-700 items-center hover:text-zinc-400 transition-all duration-100 sticky top-0 z-10 px-6 py-0 font-semibold bg-white '>
+          <div className='flex justify-around text-md uppercase text-zinc-700 items-center hover:text-zinc-400 transition-all duration-100 sticky top-0 z-10 px-6 py-0 font-semibold bg-white '>
             <Link to='description' smooth={true} duration={500}>
-              <button className='text-lg uppercase font-semibold hover:text-zinc-900 transition-all duration-500'>
+              <button className='text-md uppercase font-semibold hover:text-zinc-900 transition-all duration-500'>
                 description
               </button>
             </Link>
             <Link to='inspiration' smooth={true} duration={500}>
-              <button className='text-lg uppercase font-semibold hover:text-zinc-900 transition-all duration-500'>
+              <button className='text-md uppercase font-semibold hover:text-zinc-900 transition-all duration-500'>
                 inspiration
               </button>
             </Link>
             <Link to='dimensions' smooth={true} duration={500}>
-              <button className='text-lg uppercase font-semibold hover:text-zinc-900 transition-all duration-500'>
+              <button className='text-md uppercase font-semibold hover:text-zinc-900 transition-all duration-500'>
                 dimensions & download
               </button>
             </Link>
             <Link to='designer' smooth={true} duration={500}>
-              <button className='text-lg uppercase font-semibold hover:text-zinc-900 transition-all duration-500'>
+              <button className='text-md uppercase font-semibold hover:text-zinc-900 transition-all duration-500'>
                 designer
               </button>
             </Link>
@@ -94,14 +92,14 @@ const page = () => {
       <Element name='dimensions' className='border-b-2 border-zinc-400 '>
         <div className='p-4'>
           <div className='flex flex-col md:flex-row items-center text-zinc-700 px-4 md:px-8 justify-between'>
-            <h1 className='uppercase font-bold my-4 md:text-xl'>
+            <h1 className='uppercase font-bold my-4 md:text-lg'>
               Dimensions and Download
             </h1>
-            <div className='flex space-x-8 md:space-x-14'>
-              <button className='px-10 py-3 underline hover:bg-red-600 hover:text-white transition-all duration-300 border-zinc-500 border-2 hover:border-red-600 text-lg font-semibold'>
+            <div className='flex  flex-col justify-center items-center md:flex-row gap-4 md:space-x-14 px-4'>
+              <button className='px-4 py-2 md:px-10 md:py-2 underline hover:bg-red-600 hover:text-white transition-all duration-500 border-zinc-500 border-2 hover:border-red-600 text-base font-semibold'>
                 Dimensions
               </button>
-              <button className='px-10 py-3 bg-red-600 text-white hover:bg-red-600 hover:text-white transition-all duration-300 border-zinc-500  text-lg font-semibold'>
+              <button className='px-4 py-2 md:px-10 md:py-2 bg-red-600 text-white hover:bg-red-500 hover:text-white transition-all duration-300 border-zinc-500  text-base font-semibold'>
                 Product sheet
               </button>
             </div>
