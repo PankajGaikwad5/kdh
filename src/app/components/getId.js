@@ -1,6 +1,6 @@
 const getTopicById = async (id) => {
   try {
-    const res = await fetch(`/api/products/${id}`, {
+    const res = await fetch(`https://kdh.vercel.app/api/products/${id}`, {
       cache: 'no-store',
     });
 
