@@ -21,7 +21,7 @@ const bebas = Bebas_Neue({
 const Footer = () => {
   return (
     <div className=' flex flex-col'>
-      <div className='py-10 flex md:flex-row md:justify-evenly space-x-12 border-t '>
+      <div className='py-10 flex-col flex md:flex-row md:justify-evenly space-x-12 border-t '>
         {/* <div className='flex flex-col md:flex-row gap-4 text-start px-4'>
         <a href='/'>
           <img src='/assets/kdhlogo1.png' alt='' className=' md:w-40' />
@@ -65,9 +65,9 @@ const Footer = () => {
           Contact us
         </a>
       </div> */}
-        <div className='flex flex-col  text-start px-4'>
+        <div className='flex py-4 justify-center items-center px-4'>
           <a href='/'>
-            <img src='/assets/kdhlogo1.png' alt='' className=' md:w-56' />
+            <img src='/assets/kdhlogo2.png' alt='' className='w-48 md:w-56' />
           </a>
         </div>
         <div
@@ -110,18 +110,21 @@ const Footer = () => {
           <div className='my-4 flex gap-4 items-center'>
             <a
               href='instagram.com'
+              target='_blank'
               className='hover:text-pink-600 transition-all duration-500'
             >
               <Instagram />
             </a>
             <a
-              href='instagram.com'
+              href='https://wa.me/+917977112242'
+              target='_blank'
               className='hover:text-green-600 transition-all duration-500'
             >
               <FaWhatsapp size={25} />
             </a>
             <a
               href='instagram.com'
+              target='_blank'
               className='hover:text-blue-600 transition-all duration-500'
             >
               <FaLinkedin size={25} />
@@ -137,7 +140,7 @@ const Footer = () => {
           href='https://www.karandesai.in/'
           className='hover:text-zinc-700 hover:scale-95 transition-all duration-300'
         >
-          karan desai architecture and design
+          kdad
         </a>
         <a
           target='_blank'

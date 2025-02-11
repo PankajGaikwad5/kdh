@@ -60,70 +60,72 @@ export default function ProductForm() {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      encType='multipart/form-data'
-      className='text-black'
-    >
-      <div className=''>
-        <label htmlFor='title'>
-          Title:
-          <input
-            id='title'
-            type='text'
-            name='title'
-            className='border-black border-2'
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-            required
-          />
-        </label>
-      </div>
+    <div className='flex justify-center items-center w-full h-screen'>
+      <form
+        onSubmit={handleSubmit}
+        encType='multipart/form-data'
+        className='text-black'
+      >
+        <div className=''>
+          <label htmlFor='title'>
+            Title:
+            <input
+              id='title'
+              type='text'
+              name='title'
+              className='border-black border-2'
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+              required
+            />
+          </label>
+        </div>
 
-      <div>
-        <label htmlFor='description'>
-          Description:
-          <textarea
-            id='description'
-            name='description'
-            value={description}
-            className='border-black border-2'
-            onChange={(e) => setDescription(e.target.value)}
-          ></textarea>
-        </label>
-      </div>
+        <div>
+          <label htmlFor='description'>
+            Description:
+            <textarea
+              id='description'
+              name='description'
+              value={description}
+              className='border-black border-2'
+              onChange={(e) => setDescription(e.target.value)}
+            ></textarea>
+          </label>
+        </div>
 
-      <div>
-        <label htmlFor='dimensions'>
-          Dimensions:
-          <input
-            id='dimensions'
-            type='text'
-            name='dimensions'
-            className='border-black border-2'
-            value={dimensions}
-            onChange={(e) => setDimensions(e.target.value)}
-          />
-        </label>
-      </div>
+        <div>
+          <label htmlFor='dimensions'>
+            Dimensions:
+            <input
+              id='dimensions'
+              type='text'
+              name='dimensions'
+              className='border-black border-2'
+              value={dimensions}
+              onChange={(e) => setDimensions(e.target.value)}
+            />
+          </label>
+        </div>
 
-      <div>
-        <label htmlFor='images'>
-          Images:
-          <input
-            id='images'
-            type='file'
-            name='images'
-            multiple
-            onChange={handleFileChange}
-            required
-          />
-        </label>
-      </div>
+        <div>
+          <label htmlFor='images'>
+            Images:
+            <input
+              id='images'
+              type='file'
+              name='images'
+              multiple
+              onChange={handleFileChange}
+              required
+            />
+          </label>
+        </div>
 
-      <button type='submit'>Create Product</button>
+        <button type='submit'>Create Product</button>
 
-      {message && <p>{message}</p>}
-    </form>
+        {message && <p>{message}</p>}
+      </form>
+    </div>
   );
 }

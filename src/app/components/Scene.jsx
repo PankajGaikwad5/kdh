@@ -1,121 +1,51 @@
 'use client';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
-// import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 import { Preload, useGLTF } from '@react-three/drei';
-import { Suspense, useEffect, useRef, useState } from 'react';
+import { Suspense, useEffect, useRef, useMemo } from 'react';
 import * as THREE from 'three';
+import MaterialOverride from './MaterialOverride';
+import { OrbitControls, MapControls } from '@react-three/drei';
+import CustomLoader from './CustomLoader';
 
-// function FloatingModel({ url, position, ...props }) {
-//   const { scene } = useGLTF(url);
-//   const modelRef = useRef();
+function FloatingModel({ url, position, id, ...props }) {
+  const { scene } = useGLTF(url);
+  const modelRef = useRef();
 
-//   useEffect(() => {
-//     if (modelRef.current) {
-//       modelRef.current.position.set(...position); // Set initial position
-//     }
-//   }, [position]);
+  // Store the base position to use as the starting point for floating.
+  const basePosition = useRef(position);
 
-//   useFrame((state, delta) => {
-//     // modelRef.current.position.y = Math.sin(state.clock.elapsedTime) * 0.5 + 2;
-//     modelRef.current.position.y = Math.sin(state.clock.elapsedTime) * 0.2 + 2;
-//     modelRef.current.rotation.y += delta * 0.2;
-//   });
-
-//   return (
-//     <mesh
-//       ref={modelRef}
-//       {...props}
-//       // onClick={() => window.open('https://example.com', '_blank')}
-//       onClick={() => (window.location.href = '/productdetails')}
-//       onPointerOver={() => (document.body.style.cursor = 'pointer')}
-//       onPointerOut={() => (document.body.style.cursor = 'auto')}
-//     >
-//       <primitive object={scene} />
-//     </mesh>
-//   );
-// }
-
-function FloatingVideo({ url, position = [0, 0, 0], scale = 3 }) {
-  const meshRef = useRef();
-  const [videoTexture, setVideoTexture] = useState(null);
+  // Create a random phase offset so that models don’t all oscillate in sync.
+  const phaseOffset = useMemo(() => Math.random() * Math.PI * 2, []);
 
   useEffect(() => {
-    // Create a video element
-    const video = document.createElement('video');
-    video.src = url;
-    video.loop = true;
-    video.muted = true; // Ensure autoplay works in many browsers
-    video.play();
+    if (modelRef.current) {
+      modelRef.current.position.set(...position);
+    }
+  }, [position]);
 
-    // Create a VideoTexture from the video element
-    const texture = new THREE.VideoTexture(video);
-    texture.flipY = true; // Adjust based on your video's orientation
-    setVideoTexture(texture);
-  }, [url]);
-
-  useFrame((state) => {
-    if (meshRef.current) {
-      meshRef.current.quaternion.copy(state.camera.quaternion);
+  useFrame((state, delta) => {
+    if (modelRef.current) {
+      // Keep the base y-level and add a small sine oscillation
+      modelRef.current.position.y =
+        basePosition.current[1] +
+        Math.sin(state.clock.elapsedTime + phaseOffset) * 0.2;
+      modelRef.current.rotation.y += delta * 0.2;
     }
   });
 
-  if (!videoTexture) return null;
   return (
     <mesh
-      ref={meshRef}
-      position={position}
-      onClick={() => (window.location.href = '/productdetails')}
+      ref={modelRef}
+      {...props}
+      onClick={() => (window.location.href = `/productdetails/${id}`)}
+      onPointerOver={() => (document.body.style.cursor = 'pointer')}
+      onPointerOut={() => (document.body.style.cursor = 'auto')}
     >
-      <planeGeometry args={[scale, scale]} />
-      <meshBasicMaterial map={videoTexture} transparent={true} />
+      <primitive object={scene} />
     </mesh>
   );
-  video.addEventListener('ended', () => {
-    console.log('Video ended');
-    // If needed, you can restart it manually:
-    video.currentTime = 0;
-    video.play();
-  });
 }
 
-// function CameraControls() {
-//   const { camera } = useThree();
-//   const keys = useRef({
-//     ArrowUp: false,
-//     ArrowDown: false,
-//     ArrowLeft: false,
-//     ArrowRight: false,
-//   });
-
-//   useEffect(() => {
-//     const handleKeyDown = (e) => (keys.current[e.key] = true);
-//     const handleKeyUp = (e) => (keys.current[e.key] = false);
-
-//     window.addEventListener('keydown', handleKeyDown);
-//     window.addEventListener('keyup', handleKeyUp);
-//     return () => {
-//       window.removeEventListener('keydown', handleKeyDown);
-//       window.removeEventListener('keyup', handleKeyUp);
-//     };
-//   }, []);
-
-//   useFrame((_, delta) => {
-//     const moveSpeed = 5 * delta;
-//     const rotateSpeed = 2 * delta;
-//     const direction = new THREE.Vector3();
-
-//     camera.getWorldDirection(direction);
-
-//     if (keys.current.ArrowUp)
-//       camera.position.addScaledVector(direction, moveSpeed);
-//     if (keys.current.ArrowDown)
-//       camera.position.addScaledVector(direction, -moveSpeed);
-//     if (keys.current.ArrowLeft) camera.rotation.y += rotateSpeed;
-//     if (keys.current.ArrowRight) camera.rotation.y -= rotateSpeed;
-//   });
-
-//   return <OrbitControls enableZoom={false} enablePan={false} />;
-// }
 function CameraControls() {
   const { camera } = useThree();
   const moveSpeed = 5;
@@ -138,6 +68,11 @@ function CameraControls() {
     prevX: 0,
     prevY: 0,
   });
+
+  // Set the initial camera lookAt so that it is aimed at the center of the model spread.
+  useEffect(() => {
+    camera.lookAt(new THREE.Vector3(0, 6, 0));
+  }, [camera]);
 
   useEffect(() => {
     const handleKeyDown = (e) => (keys.current[e.code] = true);
@@ -181,15 +116,12 @@ function CameraControls() {
     const direction = new THREE.Vector3();
     const rotation = new THREE.Euler(0, 0, 0, 'YXZ');
 
-    // Get forward/backward direction
     if (keys.current.KeyW || keys.current.ArrowUp) {
       direction.z -= 1;
     }
     if (keys.current.KeyS || keys.current.ArrowDown) {
       direction.z += 1;
     }
-
-    // Get left/right direction
     if (keys.current.KeyA || keys.current.ArrowLeft) {
       direction.x -= 1;
     }
@@ -199,7 +131,6 @@ function CameraControls() {
 
     direction.normalize();
 
-    // Apply movement relative to camera orientation
     const cameraDirection = new THREE.Vector3();
     camera.getWorldDirection(cameraDirection);
     const cameraRotation = new THREE.Euler().setFromRotationMatrix(
@@ -211,7 +142,6 @@ function CameraControls() {
     );
 
     rotation.set(cameraRotation.x, cameraRotation.y, 0);
-
     direction.applyEuler(rotation);
     camera.position.addScaledVector(direction, speed);
 
@@ -220,10 +150,7 @@ function CameraControls() {
       const deltaX = mouse.current.x - mouse.current.prevX;
       const deltaY = mouse.current.y - mouse.current.prevY;
 
-      // Horizontal rotation
       camera.rotation.y -= deltaX * sensitivity;
-
-      // Vertical rotation (limit to prevent flipping)
       const newPitch = camera.rotation.x - deltaY * sensitivity;
       camera.rotation.x = THREE.MathUtils.clamp(
         newPitch,
@@ -236,108 +163,125 @@ function CameraControls() {
     }
   });
 
-  return null; // Remove OrbitControls
+  return null;
 }
 
 export default function Scene() {
+  const glbs = [
+    'basin',
+    'bathtub',
+    'cchair',
+    'coffeetable',
+    'coffeetable2',
+    'console1',
+    'ctable',
+    'ctable2',
+    'ctkarishma',
+    'floorlamp',
+    'lemonconsole',
+    'library',
+    'partitionscreen',
+    'planter',
+    'tablelamp',
+    'utable',
+    'vase',
+  ];
+
+  const getRandomPosition = () => {
+    // Spread the models horizontally and vertically,
+    // and keep z relatively near 0 so they're in front of the camera.
+    const x = Math.random() * 40 - 20; // -20 to 20
+    const y = Math.random() * 10 + 1; // 1 to 11 (average ~6)
+    const z = Math.random() * 10 - 5; // -5 to 5
+    return [x, y, z];
+  };
+
   return (
     <Canvas
       gl={{ antialias: true, powerPreference: 'high-performance' }}
-      camera={{ position: [0, 5, 10], fov: 50 }}
+      // Set the camera's y to 6 so it's centered with the models.
+      camera={{ position: [0, 6, 15], fov: 50 }}
       className='w-full h-full'
     >
+      <MaterialOverride mode={'normal'} />
       <ambientLight intensity={0.8} />
       <pointLight position={[10, 10, 10]} />
-      <Suspense fallback={null}>
-        {/* <FloatingModel url='/shiba/scene.gltf' scale={0.5} /> */}
-        {/* {[...Array(16)].map((_, i) => ( */}
-        {/* key={i} */}
-        {/* <FloatingModel
-          url='/shiba/scene.gltf'
-          scale={1}
-          position={[Math.random() * 10 - 5, 2, Math.random() * 10 - 5]} // Randomize positions
+      <Suspense fallback={<CustomLoader />}>
+        <FloatingModel
+          url='https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUakCs2bzVIx6ZjWFiGhcRQJMUzft1drvPNTbL'
+          scale={5}
+          id={'67a5e7ce4da9b29cd0f10b51'}
+          position={getRandomPosition()}
         />
         <FloatingModel
-          url='/chair_2.glb'
-          scale={1}
-          position={[Math.random() * 10 - 5, 2, Math.random() * 10 - 5]} // Randomize positions
-        /> */}
-        <FloatingVideo
-          url='/assets/chair.webm'
-          position={[0, 2, 0]}
-          scale={3}
+          url='https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKURaqIhoE1fzw0AFxNe2UEaubVBY53GTv7kqpl'
+          scale={5}
+          id={'67a5e7ce4da9b29cd0f10b51'}
+          position={getRandomPosition()}
         />
-        <FloatingVideo
-          url='/assets/chair.webm'
-          position={[0, 2, 0]}
-          scale={3}
+        <FloatingModel
+          url='https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUjAoPH1UhR95a1yWpqvPz7meuoUTAG8HEOb2I'
+          scale={5}
+          id={'67a5e7ce4da9b29cd0f10b51'}
+          position={getRandomPosition()}
         />
-        <FloatingVideo
-          url='/assets/chair.webm'
-          position={[0, 2, 0]}
-          scale={3}
+        <FloatingModel
+          url='https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSdbsVtSAKnraNxkI5vbez6dT2q8M0osBfR9A'
+          scale={2}
+          id={'67a5e7ce4da9b29cd0f10b51'}
+          position={getRandomPosition()}
         />
-        <FloatingVideo
-          url='/assets/chair.webm'
-          position={[0, 2, 0]}
-          scale={3}
+        <FloatingModel
+          url='https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8gQ5gg64oKUn37W6wsTlRmDBFhGrviIjcMxV'
+          scale={5}
+          id={'67a5e7ce4da9b29cd0f10b51'}
+          position={getRandomPosition()}
         />
-        <FloatingVideo
-          url='/assets/chair.webm'
-          position={[0, 2, 0]}
-          scale={3}
+        <FloatingModel
+          url='https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU0Ti7frhhiHbrpSCkBA8lKn64duFxNeTWLcq5'
+          scale={5}
+          id={'67a5e7ce4da9b29cd0f10b51'}
+          position={getRandomPosition()}
         />
-        <FloatingVideo
-          url='/assets/chair.webm'
-          position={[0, 2, 0]}
-          scale={3}
-        />
-        <FloatingVideo
-          url='/assets/chair.webm'
-          position={[0, 2, 0]}
-          scale={3}
-        />
-        <FloatingVideo
-          url='/assets/chair.webm'
-          position={[0, 2, 0]}
-          scale={3}
-        />
-        <FloatingVideo
-          url='/assets/chair.webm'
-          position={[0, 2, 0]}
-          scale={3}
-        />
-        <FloatingVideo
-          url='/assets/chair.webm'
-          position={[0, 2, 0]}
-          scale={3}
-        />
-        <FloatingVideo
-          url='/assets/chair.webm'
-          position={[0, 2, 0]}
-          scale={3}
-        />
-        <FloatingVideo
-          url='/assets/chair.webm'
-          position={[0, 2, 0]}
-          scale={3}
-        />
-        <FloatingVideo
-          url='/assets/chair.webm'
-          position={[0, 2, 0]}
-          scale={3}
+        <FloatingModel
+          url='https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUeCK9h6cFPv1kdbg4tT0YfOS529XxhywHpVoU'
+          scale={5}
+          id={'67a5e7ce4da9b29cd0f10b51'}
+          position={getRandomPosition()}
         />
         {/* <FloatingModel
-          url='/mb4/m.gltf'
-          scale={1}
-          position={[Math.random() * 10 - 5, 2, Math.random() * 10 - 5]} // Randomize positions
+          url='/mtotem.glb'
+          scale={5}
+          id={'67a5e7ce4da9b29cd0f10b51'}
+          position={getRandomPosition()}
         /> */}
-        {/* ))} */}
-        <Preload all />
+        <FloatingModel
+          url='/sbench.glb'
+          scale={5}
+          id={'67a5e7ce4da9b29cd0f10b51'}
+          position={getRandomPosition()}
+        />
+        <FloatingModel
+          url='/tbg.glb'
+          scale={60}
+          id={'67a5e7ce4da9b29cd0f10b51'}
+          position={getRandomPosition()}
+        />
+        {glbs.map((model, index) => {
+          return (
+            <FloatingModel
+              key={index}
+              url={`/glb/${model}.glb`}
+              scale={5}
+              id={'67a5e7ce4da9b29cd0f10b51'}
+              position={getRandomPosition()}
+            />
+          );
+        })}
       </Suspense>
-      {/* <PointerLockControls /> */}
       <CameraControls />
-      <color attach='background' args={['white']} />
+      {/* <MapControls /> */}
+      <color attach='background' args={['black']} />
     </Canvas>
   );
 }

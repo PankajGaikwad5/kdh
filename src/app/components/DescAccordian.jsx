@@ -43,7 +43,7 @@ const formSchema = z.object({
   message: z.string(),
 });
 
-const DescAccordian = ({ scrollPosition }) => {
+const DescAccordian = ({ scrollPosition, desc, title, dimensions }) => {
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -112,14 +112,9 @@ const DescAccordian = ({ scrollPosition }) => {
       // }}
     >
       <div className='flex flex-col md:w-1/2 px-6 md:px-16'>
-        <h1 className='uppercase font-bold my-4 text-xl'>description</h1>
-        <p className='font-medium'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione a
-          animi ipsum voluptatem, eligendi voluptatibus maxime sit nemo ab, est
-          esse fugiat eveniet. Neque, tenetur incidunt blanditiis ea veritatis
-          maxime. Dolorem, ad odio. Possimus laudantium, neque suscipit cum in
-          blanditiis error illum fuga omnis ab fugit nulla tempore quidem eius.
-        </p>
+        <h1 className='uppercase font-bold my-4 text-2xl'>{title}</h1>
+        <h1 className='uppercase font-semibold my-4 text-xl'>description</h1>
+        <p className='font-medium'>{desc}</p>
       </div>
       <div className='flex flex-col mt-10  md:w-1/2 px-6 md:px-16'>
         <Accordion type='single' collapsible className='space-y-4'>
@@ -146,14 +141,7 @@ const DescAccordian = ({ scrollPosition }) => {
             <AccordionTrigger className='text-zinc-800 uppercase font-semibold'>
               Dimensions
             </AccordionTrigger>
-            <AccordionContent>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nisi
-              ab ut in libero assumenda ad optio commodi. Quibusdam voluptate,
-              illum ipsum earum, commodi consectetur dicta sed, quisquam facere
-              beatae provident doloribus? Harum assumenda, quia cum rem fugit
-              deleniti eaque recusandae esse accusantium quidem. Aliquid
-              similique dolorem quibusdam beatae earum.
-            </AccordionContent>
+            <AccordionContent>{dimensions}</AccordionContent>
           </AccordionItem>
           <AccordionItem
             value='item-3'

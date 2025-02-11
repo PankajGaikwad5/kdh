@@ -1,4 +1,5 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Image from 'next/image';
 import { CardBody, CardContainer, CardItem } from '../../components/ui/3d-card';
@@ -6,22 +7,33 @@ import ProductCard from '../components/ProductCard';
 import Footer from '../components/Footer';
 
 const page = () => {
+  const [imgArray, setImgArray] = useState([]);
+  const fetchProjects = async () => {
+    try {
+      const response = await fetch(`/api/products`);
+      const data = await response.json();
+      const { products } = data;
+      // console.log(products);
+      setImgArray(products);
+      // console.log(data);
+      // console.log(products);
+      // console.log(imgArray);
+    } catch (error) {
+      console.error('Error fetching projects:', error);
+    }
+    // finally {
+    //   setLoading(false);
+    // }
+  };
+
+  React.useEffect(() => {
+    fetchProjects();
+  }, []);
+
+  // React.useEffect(() => {
+  //   console.log('Updated imgArray:', imgArray);
+  // }, [imgArray]);
   return (
-    // <div className='min-h-screen bg-gray-50 dark:bg-gray-900'>
-    //   <Navbar />
-    //   <div className='pt-24 z-10 max-w-7xl mx-auto'>
-    //     <h1
-    //       className={`text-3xl border-b-4 border-pink-400 pb-4 tracking-wider font-semibold uppercase px-8`}
-    //     >
-    //       products
-    //     </h1>
-    // <div className='min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800'>
-    //   <Navbar />
-    //   <div className='pt-24 max-w-7xl mx-auto'>
-    //     <h1 className='text-3xl border-b-4 border-blue-500 pb-4 tracking-wider font-semibold uppercase px-8'>
-    //       Products
-    //     </h1>
-    // <div className='min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800'>
     <div
       className='min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800'
       style={{
@@ -29,19 +41,29 @@ const page = () => {
       }}
     >
       {/* <Navbar /> */}
-      <div className='pt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <div className='pt-12 max-w-7xl    px-4 sm:px-6 lg:px-8'>
         <h1 className='text-4xl font-bold text-gray-900 dark:text-white pb-8 border-b border-gray-200 dark:border-gray-700'>
           Our Products
         </h1>
 
-        <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 p-6'>
+        <div className='grid  sm:grid-cols-2 lg:grid-cols-3'>
+          {/* <ProductCard title='first product' img={'/img/1.jpg'} />
           <ProductCard title='first product' img={'/img/1.jpg'} />
           <ProductCard title='first product' img={'/img/1.jpg'} />
           <ProductCard title='first product' img={'/img/1.jpg'} />
           <ProductCard title='first product' img={'/img/1.jpg'} />
           <ProductCard title='first product' img={'/img/1.jpg'} />
-          <ProductCard title='first product' img={'/img/1.jpg'} />
-          <ProductCard title='first product' img={'/img/1.jpg'} />
+          <ProductCard title='first product' img={'/img/1.jpg'} /> */}
+          {imgArray.map(({ title, images, _id }) => {
+            return (
+              <ProductCard
+                title={title}
+                img={images[0].filePath}
+                id={_id}
+                key={_id}
+              />
+            );
+          })}
         </div>
       </div>
       <Footer />

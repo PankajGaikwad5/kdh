@@ -119,7 +119,7 @@ const CarouselComp = ({ imgArray }) => {
           <SwiperSlide key={index}>
             <div className='w-full h-full swiper-zoom-container flex items-center justify-center'>
               <img
-                src={img}
+                src={img.filePath}
                 alt={`Slide ${index}`}
                 loading='lazy'
                 className='max-w-full max-h-full object-contain'

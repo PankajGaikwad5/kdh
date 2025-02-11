@@ -157,17 +157,18 @@ import Image from 'next/image';
 import { CardBody, CardContainer, CardItem } from '../../components/ui/3d-card';
 // import { useRouter } from 'next/navigation';
 
-const ProductCard = ({ title, img }) => {
+const ProductCard = ({ title, img, id }) => {
   // const router = useRouter();
 
   const navigateTo = () => {
-    window.location.href = '/productdetails';
+    window.location.href = `/productdetails/${id}`;
   };
 
   return (
     <div
       onClick={navigateTo}
-      className='cursor-pointer transform transition duration-300 hover:scale-[1.02]'
+      className='cursor-pointer transform transition duration-300 hover:scale-[1.02] hover:z-20'
+      // /assets/products/1738927177034-Slide1.JPG
     >
       <CardContainer className='p-0'>
         <CardBody className='bg-white dark:bg-gray-800 rounded-xl p-4 border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-lg transition-shadow duration-300'>
@@ -183,6 +184,7 @@ const ProductCard = ({ title, img }) => {
                 // fill
                 width='1000'
                 height='1000'
+                loading='lazy'
                 // sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                 className='object-cover transition-transform duration-300 rounded hover:scale-105'
                 alt={title}
@@ -191,7 +193,7 @@ const ProductCard = ({ title, img }) => {
           </CardItem>
 
           <div className='mt-4 space-y-2 flex justify-between items-center'>
-            <h3 className='text-lg font-semibold text-gray-800 dark:text-gray-100 truncate'>
+            <h3 className='text-lg  text-gray-800 dark:text-gray-100 truncate uppercase font-semibold'>
               {title}
             </h3>
             <div className='flex justify-between items-center'>

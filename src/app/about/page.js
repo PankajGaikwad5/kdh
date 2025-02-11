@@ -19,7 +19,7 @@ const page = () => {
       }}
     >
       {/* <Navbar /> */}
-      <main className='pt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <main className='pt-12 max-w-7xl mx-auto px-2 sm:px-6 lg:px-8'>
         <h1 className='text-4xl font-bold text-gray-900 dark:text-white pb-8 border-b border-gray-200 dark:border-gray-700'>
           About
         </h1>
