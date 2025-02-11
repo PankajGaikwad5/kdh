@@ -207,50 +207,38 @@ export default function Scene() {
       <ambientLight intensity={0.8} />
       <pointLight position={[10, 10, 10]} />
       <Suspense fallback={<CustomLoader />}>
-        <FloatingModel
-          url='https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUakCs2bzVIx6ZjWFiGhcRQJMUzft1drvPNTbL'
-          scale={5}
-          id={'67a5e7ce4da9b29cd0f10b51'}
-          position={getRandomPosition()}
-        />
-        <FloatingModel
+        {/* <FloatingModel
           url='https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKURaqIhoE1fzw0AFxNe2UEaubVBY53GTv7kqpl'
           scale={5}
           id={'67a5e7ce4da9b29cd0f10b51'}
           position={getRandomPosition()}
-        />
-        <FloatingModel
+        /> */}
+        {/* <FloatingModel
           url='https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUjAoPH1UhR95a1yWpqvPz7meuoUTAG8HEOb2I'
           scale={5}
           id={'67a5e7ce4da9b29cd0f10b51'}
           position={getRandomPosition()}
-        />
+        /> */}
         <FloatingModel
           url='https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSdbsVtSAKnraNxkI5vbez6dT2q8M0osBfR9A'
           scale={2}
           id={'67a5e7ce4da9b29cd0f10b51'}
           position={getRandomPosition()}
         />
-        <FloatingModel
+        {/* <FloatingModel
           url='https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8gQ5gg64oKUn37W6wsTlRmDBFhGrviIjcMxV'
           scale={5}
           id={'67a5e7ce4da9b29cd0f10b51'}
           position={getRandomPosition()}
-        />
-        <FloatingModel
+        /> */}
+        {/* <FloatingModel
           url='https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU0Ti7frhhiHbrpSCkBA8lKn64duFxNeTWLcq5'
           scale={5}
           id={'67a5e7ce4da9b29cd0f10b51'}
           position={getRandomPosition()}
-        />
-        <FloatingModel
-          url='https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUeCK9h6cFPv1kdbg4tT0YfOS529XxhywHpVoU'
-          scale={5}
-          id={'67a5e7ce4da9b29cd0f10b51'}
-          position={getRandomPosition()}
-        />
+        /> */}
         {/* <FloatingModel
-          url='/mtotem.glb'
+          url='https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUeCK9h6cFPv1kdbg4tT0YfOS529XxhywHpVoU'
           scale={5}
           id={'67a5e7ce4da9b29cd0f10b51'}
           position={getRandomPosition()}
@@ -258,13 +246,13 @@ export default function Scene() {
         <FloatingModel
           url='/sbench.glb'
           scale={5}
-          id={'67a5e7ce4da9b29cd0f10b51'}
+          id={'67a5fa124da9b29cd0f10c36'}
           position={getRandomPosition()}
         />
         <FloatingModel
           url='/tbg.glb'
           scale={60}
-          id={'67a5e7ce4da9b29cd0f10b51'}
+          id={'67a5eb7e4da9b29cd0f10b69'}
           position={getRandomPosition()}
         />
         {glbs.map((model, index) => {
