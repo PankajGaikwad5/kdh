@@ -1,7 +1,7 @@
 'use client';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { Preload, useGLTF } from '@react-three/drei';
-import { Suspense, useEffect, useRef, useMemo } from 'react';
+import { Suspense, useEffect, useRef, useState, useMemo } from 'react';
 import * as THREE from 'three';
 import MaterialOverride from './MaterialOverride';
 import { OrbitControls, MapControls } from '@react-three/drei';
@@ -189,6 +189,17 @@ function CameraControls() {
 }
 
 export default function Scene() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Adjust the breakpoint as needed
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   const glb = [
     {
       id: '67a5ed3c4da9b29cd0f10bbf',
@@ -364,7 +375,8 @@ export default function Scene() {
           );
         })}
       </Suspense>
-      <CameraControls />
+      {/* <CameraControls /> */}
+      {isMobile ? <MapControls /> : <CameraControls />}
       {/* <MapControls /> */}
       <color attach='background' args={['black']} />
     </Canvas>
