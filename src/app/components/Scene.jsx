@@ -50,6 +50,9 @@ function CameraControls() {
   const { camera } = useThree();
   const moveSpeed = 5;
   const sensitivity = 0.002;
+  // Adjust this value to change how far the camera moves per scroll
+  const scrollSpeed = 0.05;
+
   const keys = useRef({
     KeyW: false,
     KeyS: false,
@@ -74,6 +77,7 @@ function CameraControls() {
     camera.lookAt(new THREE.Vector3(0, 6, 0));
   }, [camera]);
 
+  // Register keyboard and mouse event listeners.
   useEffect(() => {
     const handleKeyDown = (e) => (keys.current[e.code] = true);
     const handleKeyUp = (e) => (keys.current[e.code] = false);
@@ -110,6 +114,24 @@ function CameraControls() {
     };
   }, []);
 
+  // Add a wheel event listener for scroll zooming.
+  useEffect(() => {
+    const handleWheel = (e) => {
+      // e.deltaY > 0 means scrolling down (move backward),
+      // e.deltaY < 0 means scrolling up (move forward).
+      const forward = new THREE.Vector3();
+      camera.getWorldDirection(forward);
+      // Multiply by -e.deltaY so that negative deltaY moves forward
+      camera.position.addScaledVector(forward, -e.deltaY * scrollSpeed);
+    };
+
+    window.addEventListener('wheel', handleWheel);
+    return () => {
+      window.removeEventListener('wheel', handleWheel);
+    };
+  }, [camera, scrollSpeed]);
+
+  // useFrame updates camera movement and rotation on every frame.
   useFrame((_, delta) => {
     // Keyboard movement
     const speed = moveSpeed * delta;
@@ -167,6 +189,80 @@ function CameraControls() {
 }
 
 export default function Scene() {
+  const glb = [
+    {
+      id: '67a5ed3c4da9b29cd0f10bbf',
+      model: 'basin',
+    },
+    {
+      id: '67a5ef4c4da9b29cd0f10bf4',
+      model: 'bathtub',
+    },
+    {
+      id: '67a5ef664da9b29cd0f10bfb',
+      model: 'cchair',
+    },
+    {
+      id: '67a5ecc44da9b29cd0f10ba2',
+      model: 'coffeetable',
+    },
+    {
+      id: '67a5ecc44da9b29cd0f10ba2',
+      model: 'coffeetable2',
+    },
+    {
+      id: '67a5ecf94da9b29cd0f10bb6',
+      model: 'coffeetable2',
+    },
+    {
+      id: '67a5ec684da9b29cd0f10b8e',
+      model: 'console1',
+    },
+    {
+      id: '67a5ece24da9b29cd0f10bac',
+      model: 'ctable',
+    },
+    {
+      id: '67a5ecf94da9b29cd0f10bb6',
+      model: 'ctable2',
+    },
+    {
+      id: '67a5ecf94da9b29cd0f10bb6',
+      model: 'ctkarishma',
+    },
+    {
+      id: '67a5ef974da9b29cd0f10c0a',
+      model: 'floorlamp',
+    },
+    {
+      id: '67a5ef974da9b29cd0f10c0a',
+      model: 'lemonconsole',
+    },
+    {
+      id: '67a5ec084da9b29cd0f10b7e',
+      model: 'library',
+    },
+    {
+      id: '67a5ec494da9b29cd0f10b87',
+      model: 'partitionscreen',
+    },
+    {
+      id: '67a5eedf4da9b29cd0f10bd0',
+      model: 'planter',
+    },
+    {
+      id: '67a5ebf14da9b29cd0f10b77',
+      model: 'tablelamp',
+    },
+    {
+      id: '67a5ef304da9b29cd0f10bea',
+      model: 'utable',
+    },
+    {
+      id: '67a5ed9e4da9b29cd0f10bc6',
+      model: 'vase',
+    },
+  ];
   const glbs = [
     'basin',
     'bathtub',
@@ -255,13 +351,14 @@ export default function Scene() {
           id={'67a5eb7e4da9b29cd0f10b69'}
           position={getRandomPosition()}
         />
-        {glbs.map((model, index) => {
+        {glb.map((models, index) => {
+          const { model, id } = models;
           return (
             <FloatingModel
               key={index}
               url={`/glb/${model}.glb`}
               scale={5}
-              id={'67a5e7ce4da9b29cd0f10b51'}
+              id={id}
               position={getRandomPosition()}
             />
           );
