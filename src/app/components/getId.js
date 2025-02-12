@@ -15,10 +15,10 @@ const getTopicById = async (id) => {
 };
 
 export default async ({ params }) => {
-  console.log(params);
+  // console.log(params);
   const { id } = params;
   const data = await getTopicById(id);
-  console.log(data);
+  // console.log(data);
   const { title, images, dimensions } = data.products;
   return data;
 };

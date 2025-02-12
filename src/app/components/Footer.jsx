@@ -109,7 +109,7 @@ const Footer = () => {
           </a>
           <div className='my-4 flex gap-4 items-center'>
             <a
-              href='instagram.com'
+              href='https://www.instagram.com/karandesaihome/'
               target='_blank'
               className='hover:text-pink-600 transition-all duration-500'
             >

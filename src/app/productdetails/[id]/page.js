@@ -16,6 +16,18 @@ import getId from '@/app/components/getId';
 
 const page = (params) => {
   const [data, setData] = useState({});
+  const tempImageData = [
+    {
+      _id: 1,
+      fileName: 'temp',
+      filePath: '/assets/loading.gif',
+    },
+    {
+      _id: 2,
+      fileName: 'temp',
+      filePath: '/assets/loading.gif',
+    },
+  ];
   // const { id } = params;
   // console.log(id);
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -48,7 +60,7 @@ const page = (params) => {
       const result = await getId(params); // Wait for the async function
       if (result) {
         setData(result);
-        console.log(result);
+        // console.log(result);
       }
     };
 
@@ -65,7 +77,7 @@ const page = (params) => {
   const title = data?.products?.title || 'Loading...';
   const description = data?.products?.description || 'Loading...';
   const dimensions = data?.products?.dimensions || 'Loading...';
-  const images = data?.products?.images || imgArray;
+  const images = data?.products?.images || tempImageData;
 
   // const parallaxOffset = Math.max(0, scrollPosition - window.innerHeight);
 

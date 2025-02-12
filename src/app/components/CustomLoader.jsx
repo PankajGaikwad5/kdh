@@ -13,8 +13,7 @@ export default function CustomLoader() {
   const screenPosition = loaderPosition.clone().project(camera);
   return (
     <Html
-      center
-      className=''
+      className='z-10'
       position={loaderPosition}
       // style={{
       //   position: 'absolute',
@@ -40,8 +39,8 @@ export default function CustomLoader() {
         </div>
       </div> */}
       {/* <div className='w-full h-screen absolute  flex justify-center items-center'> */}
-      <div className='content'>
-        <div className='planet'>
+      <div className='content z-10'>
+        {/* <div className='planet'>
           <div className='ring'></div>
           <div className='cover-ring'></div>
           <div className='spots'>
@@ -53,7 +52,8 @@ export default function CustomLoader() {
             <span></span>
             <span></span>
           </div>
-        </div>
+        </div> */}
+        <img src='/gattoo.gif' alt='loading' />
         <p>loading</p>
       </div>
       {/* </div> */}
