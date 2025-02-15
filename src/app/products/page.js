@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Image from 'next/image';
 import { CardBody, CardContainer, CardItem } from '../../components/ui/3d-card';
-import ProductCard from '../components/ProductCard';
+import SubProductCard from '../components/SubProductCard';
 import Footer from '../components/Footer';
 
 const page = () => {
@@ -13,26 +13,63 @@ const page = () => {
       const response = await fetch(`/api/products`);
       const data = await response.json();
       const { products } = data;
-      // console.log(products);
       setImgArray(products);
-      // console.log(data);
-      // console.log(products);
-      // console.log(imgArray);
     } catch (error) {
       console.error('Error fetching projects:', error);
     }
-    // finally {
-    //   setLoading(false);
-    // }
   };
 
   React.useEffect(() => {
     fetchProjects();
   }, []);
 
-  // React.useEffect(() => {
-  //   console.log('Updated imgArray:', imgArray);
-  // }, [imgArray]);
+  const products = [
+    {
+      id: 1,
+      title: 'Monster 1.0 Collection',
+      group: 'monster_1.0',
+      img: '/assets/products/1738926778783-Slide2.JPG',
+      projects: 'monster basin, monster bathtub, monster console',
+    },
+    {
+      id: 2,
+      title: 'Monster 2.0 Collection',
+      group: 'monster_2.0',
+      img: '/assets/products/1738926974587-Slide4.JPG',
+      projects: 'gattoo x top brewer, yoda',
+    },
+    {
+      id: 3,
+      title: 'Matilda Collection',
+      group: 'matilda',
+      img: '/assets/products/1738927300853-Slide6.JPG',
+      projects:
+        'table lamp, library, partition screen, console 1, console 2, coffee table, center table 1, center table 2, basin, flower vase, planter, side table, u table, bathtub, chair, bench floor lamp',
+    },
+    {
+      id: 4,
+      title: 'Monster Collection',
+      group: 'monster_collection',
+      img: '/assets/products/1738928071412-Slide1.JPG',
+      projects:
+        'monster binty, monster brainy, monster gattooffer, monster guard, monster gum, monster grumpy, monster squinty',
+    },
+    {
+      id: 5,
+      title: 'Serafini X KD Bench',
+      group: 'serafini',
+      img: '/assets/products/1738930706115-Slide1.JPG',
+      projects: 'serafini',
+    },
+    {
+      id: 6,
+      title: 'Monsformer',
+      group: 'monsformer',
+      img: '/assets/products/1738930738995-Slide4.JPG',
+      projects: 'monsformer',
+    },
+  ];
+
   return (
     <div
       className='min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800'
@@ -55,7 +92,7 @@ const page = () => {
           <ProductCard title='first product' img={'/img/1.jpg'} />
           <ProductCard title='first product' img={'/img/1.jpg'} />
           <ProductCard title='first product' img={'/img/1.jpg'} /> */}
-          {imgArray.map(({ title, images, _id }) => {
+          {/* {imgArray.map(({ title, images, _id }) => {
             return (
               <ProductCard
                 title={title}
@@ -63,6 +100,11 @@ const page = () => {
                 id={_id}
                 key={_id}
               />
+            );
+          })} */}
+          {products.map(({ title, img, id, group }) => {
+            return (
+              <SubProductCard title={title} img={img} id={group} key={id} />
             );
           })}
         </div>

@@ -21,7 +21,7 @@ const bebas = Bebas_Neue({
 const Footer = () => {
   return (
     <div className=' flex flex-col'>
-      <div className='py-10 flex-col flex md:flex-row md:justify-evenly space-x-12 border-t '>
+      <div className='pt-4 flex-col flex md:flex-row md:justify-evenly space-x-12 border-t '>
         {/* <div className='flex flex-col md:flex-row gap-4 text-start px-4'>
         <a href='/'>
           <img src='/assets/kdhlogo1.png' alt='' className=' md:w-40' />

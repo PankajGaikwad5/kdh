@@ -2,6 +2,7 @@ import mongoose from 'mongoose';
 
 const ProductSchema = new mongoose.Schema({
   title: { type: String, required: true },
+  group: { type: String, required: false },
   images: [
     {
       fileName: { type: String },

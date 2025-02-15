@@ -82,10 +82,38 @@ export async function POST(req) {
   }
 }
 
-export async function GET() {
+// export async function GET() {
+//   try {
+//     await connectMongoDB();
+//     const products = await Product.find();
+//     return NextResponse.json({ products });
+//   } catch (error) {
+//     console.error('Error fetching products:', error);
+//     return NextResponse.json(
+//       { error: 'Error fetching products' },
+//       { status: 500 }
+//     );
+//   }
+// }
+
+export async function GET(req) {
   try {
     await connectMongoDB();
-    const products = await Product.find();
+
+    // Get search parameters from the request
+    const { searchParams } = new URL(req.url);
+    const group = searchParams.get('group');
+
+    let products;
+
+    if (group) {
+      // Find products that belong to the requested group
+      products = await Product.find({ group });
+    } else {
+      // If no group is specified, return all products
+      products = await Product.find();
+    }
+
     return NextResponse.json({ products });
   } catch (error) {
     console.error('Error fetching products:', error);

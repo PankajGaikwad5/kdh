@@ -3,11 +3,11 @@ import Image from 'next/image';
 import { CardBody, CardContainer, CardItem } from '../../components/ui/3d-card';
 // import { useRouter } from 'next/navigation';
 
-const ProductCard = ({ title, img, id }) => {
+const SubProductCard = ({ title, img, id }) => {
   // const router = useRouter();
 
   const navigateTo = () => {
-    window.location.href = `/productdetails/${id}`;
+    window.location.href = `/products/${id}`;
   };
 
   return (
@@ -50,7 +50,7 @@ const ProductCard = ({ title, img, id }) => {
                 </span>
               </span> */}
               <button className='px-3 py-1.5 text-sm bg-blue-600 hover:bg-blue-700 text-white rounded-md transition-colors duration-200'>
-                View Details
+                View
               </button>
             </div>
           </div>
@@ -60,4 +60,4 @@ const ProductCard = ({ title, img, id }) => {
   );
 };
 
-export default ProductCard;
+export default SubProductCard;

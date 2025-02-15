@@ -9,7 +9,6 @@ import { glb } from './glb';
 import CameraControls from './CameraControls';
 import FloatingModel from './FloatingModel';
 import LatestProject from './LatestProject';
-import WhiteGlowingSphere from './WhiteGlowingSphere';
 
 export default function Scene() {
   const [isMobile, setIsMobile] = useState(false);

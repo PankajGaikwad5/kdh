@@ -53,7 +53,7 @@ export default function CustomLoader() {
             <span></span>
           </div>
         </div> */}
-        <img src='/gattoo.gif' alt='loading' />
+        <img src='/gattoo2.gif' alt='loading' />
         <p>loading</p>
       </div>
       {/* </div> */}
