@@ -119,3 +119,48 @@ body {
     transform: scale(1);
   }
 }
+
+.navMenu {
+  position: fixed;
+  width: 28px; /* Fixed width */
+  height: 21px; /* Fixed height (3 spans with margin) */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navMenu > span {
+  display: block;
+  width: 28px;
+  height: 2px;
+  border-radius: 9999px;
+  background: white;
+}
+
+.navMenu > span:not(:last-child) {
+  margin-bottom: 7px;
+}
+
+.navMenu,
+.navMenu > span {
+  transition: all 400ms ease-in-out;
+}
+
+.navMenu.open {
+  transition-delay: 0.8s;
+  transform: rotate(45deg);
+}
+
+.navMenu.open > span:nth-child(2) {
+  width: 0;
+}
+.navMenu.open > span:nth-child(1),
+.navMenu.open > span:nth-child(3) {
+  transition-delay: 400ms;
+}
+.navMenu.open > span:nth-child(1) {
+  transform: translateY(9px);
+}
+.navMenu.open > span:nth-child(3) {
+  transform: translateY(-9px) rotate(90deg);
+}

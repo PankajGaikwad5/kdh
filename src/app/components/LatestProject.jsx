@@ -83,7 +83,7 @@ export default function LatestProject() {
             borderRadius: '8px',
           }}
         >
-          ✨ Latest Project!
+          ✨ Latest Release!
         </div>
       </Html>
     </>

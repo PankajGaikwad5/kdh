@@ -133,7 +133,7 @@ const Footer = () => {
         </div>
       </div>
       <div
-        className={`w-full p-4 flex justify-between items-center uppercase text-zinc-500 ${bebas.className} tracking-widest text-base`}
+        className={`w-full p-4 flex justify-between items-center uppercase text-black ${bebas.className} tracking-widest text-base`}
       >
         <a
           target='_blank'

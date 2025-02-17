@@ -9,6 +9,7 @@ import {
   ChevronLeft,
 } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import Navbar from './components/Navbar';
 
 const Scene = dynamic(() => import('./components/Scene'), {
   ssr: false,
@@ -33,7 +34,8 @@ export default function Home() {
   }, []);
 
   return (
-    <main className='w-screen h-screen bg-white relative'>
+    <main className='w-screen h-screen bg-white relative overflow-hidden'>
+      <Navbar />
       <div
         className={`absolute z-50 bg-white/10 text-white top-[40%] left-[33%] p-4 rounded ${
           showOverlay ? 'flex' : 'hidden'

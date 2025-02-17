@@ -8,9 +8,9 @@ import * as THREE from 'three';
 
 export default function CustomLoader() {
   const { progress } = useProgress();
-  const { camera } = useThree();
+  // const { camera } = useThree();
   const loaderPosition = new THREE.Vector3(0, 6, 0); // Desired position in 3D space
-  const screenPosition = loaderPosition.clone().project(camera);
+  // const screenPosition = loaderPosition.clone().project(camera);
   return (
     <Html
       className='z-10'
