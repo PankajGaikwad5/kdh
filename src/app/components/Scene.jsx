@@ -12,6 +12,8 @@ import LatestProject from './LatestProject';
 
 export default function Scene() {
   const [isMobile, setIsMobile] = useState(false);
+  const latestProjectPos = new THREE.Vector3(0, -5, -17);
+  const exclusionRadius = 10;
 
   useEffect(() => {
     const handleResize = () => {
@@ -32,17 +34,38 @@ export default function Scene() {
   }, []);
 
   const getRandomPosition = () => {
-    const radius = 25; // Adjust the radius to control spread distance
-    const theta = Math.random() * Math.PI * 2; // Random angle around Y-axis
-    const phi = Math.acos(2 * Math.random() - 1); // Random angle from top to bottom
-    const distance = Math.cbrt(Math.random()) * radius; // Uniform distribution within sphere
+    // const radius = 25; // Adjust the radius to control spread distance
+    // const theta = Math.random() * Math.PI * 2; // Random angle around Y-axis
+    // const phi = Math.acos(2 * Math.random() - 1); // Random angle from top to bottom
+    // const distance = Math.cbrt(Math.random()) * radius; // Uniform distribution within sphere
 
-    // Convert spherical coordinates to Cartesian
-    const x = distance * Math.sin(phi) * Math.cos(theta);
-    const y = distance * Math.cos(phi);
-    const z = distance * Math.sin(phi) * Math.sin(theta);
+    // // Convert spherical coordinates to Cartesian
+    // const x = distance * Math.sin(phi) * Math.cos(theta);
+    // const y = distance * Math.cos(phi);
+    // const z = distance * Math.sin(phi) * Math.sin(theta);
 
-    return [x, y, z];
+    // return [x, y, z];
+    const radius = 25;
+    let pos = new THREE.Vector3();
+    let attempts = 0;
+
+    do {
+      const theta = Math.random() * Math.PI * 2;
+      const phi = Math.acos(2 * Math.random() - 1);
+      const distance = Math.cbrt(Math.random()) * radius;
+
+      pos.set(
+        distance * Math.sin(phi) * Math.cos(theta),
+        distance * Math.cos(phi),
+        distance * Math.sin(phi) * Math.sin(theta)
+      );
+
+      attempts++;
+
+      if (attempts > 10) break;
+    } while (pos.distanceTo(latestProjectPos) < exclusionRadius);
+
+    return [pos.x, pos.y, pos.z];
   };
 
   return (

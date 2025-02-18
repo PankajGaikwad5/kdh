@@ -133,19 +133,19 @@ const Footer = () => {
         </div>
       </div>
       <div
-        className={`w-full p-4 flex justify-between items-center uppercase text-black ${bebas.className} tracking-widest text-base`}
+        className={`w-full p-4 flex justify-between items-center uppercase text-black/60 ${bebas.className} tracking-widest text-base font-bold`}
       >
         <a
           target='_blank'
           href='https://www.karandesai.in/'
-          className='hover:text-zinc-700 hover:scale-95 transition-all duration-300'
+          className='hover:text-black hover:scale-95 transition-all duration-300'
         >
           kdad
         </a>
         <a
           target='_blank'
           href='https://www.karandesai.in/shukhabar'
-          className='hover:text-zinc-700 hover:scale-95 transition-all duration-300'
+          className='hover:text-black hover:scale-95 transition-all duration-300'
         >
           shukhabar
         </a>
