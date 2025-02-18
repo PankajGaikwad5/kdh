@@ -77,7 +77,7 @@ const Navbar = ({ isBgBlack, isHomePage }) => {
       <ul
         className={
           !nav
-            ? 'absolute w-full h-screen top-0 left-[100%]  flex flex-col p-4 justify-center text-gray-800 items-center duration-500 '
+            ? 'absolute w-full h-screen top-0 left-[100%]  flex flex-col p-4 justify-center text-gray-800 items-center duration-500 z-20'
             : `fixed w-full h-screen top-0 left-0 flex flex-col uppercase  ${
                 isBgBlack ? 'text-white' : 'text-white'
               } text-3xl justify-center items-start md:max-w-xs bg-black/90 p-4 z-20 duration-500 `

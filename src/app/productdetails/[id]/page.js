@@ -13,6 +13,8 @@ import {
 import Footer from '../../components/Footer';
 import getId from '@/app/components/getId';
 import Navbar from '@/app/components/Navbar';
+import { ChevronLeft } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 // import Navbar from '../components/Navbar';
 
 const page = (params) => {
@@ -56,6 +58,19 @@ const page = (params) => {
     setScrollPosition(scrollTop);
   };
 
+  const router = useRouter();
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    // If there's a previous page in the history, go back
+    if (window.history.length > 1) {
+      router.back();
+    } else {
+      // Otherwise, navigate to the fallback route
+      router.push(`/products/${group}`);
+    }
+  };
+
   useEffect(() => {
     const fetchData = async () => {
       const result = await getId(params); // Wait for the async function
@@ -79,12 +94,19 @@ const page = (params) => {
   const description = data?.products?.description || 'Loading...';
   const dimensions = data?.products?.dimensions || 'Loading...';
   const images = data?.products?.images || tempImageData;
+  const group = data?.products?.group || '#';
 
   // const parallaxOffset = Math.max(0, scrollPosition - window.innerHeight);
 
   return (
     <div className=''>
       <div className='flex flex-col relative overflow-hidden'>
+        <button
+          className='fixed z-10 left-20 top-6 text-white'
+          onClick={handleClick}
+        >
+          <ChevronLeft size={50} />
+        </button>
         <Navbar />
         {/* <Link to='newSection' smooth={true} duration={500}>
         <button className='mt-4 p-2 bg-blue-500 text-white rounded'>

@@ -78,21 +78,21 @@ const page = () => {
       }}
     >
       {/* <Navbar /> */}
-      <div className='pt-12 max-w-7xl px-4 sm:px-6 lg:px-8'>
+      <div className='pt-12  px-4 sm:px-6 lg:px-8 '>
         <h1 className='text-4xl font-bold text-gray-900 dark:text-white pb-8 border-b border-gray-200 dark:border-gray-700'>
           Our Products
         </h1>
 
-        {/* <div className='w-full flex justify-center'> */}
-        <div className='grid  sm:grid-cols-2 lg:grid-cols-3'>
-          {/* <ProductCard title='first product' img={'/img/1.jpg'} />
+        <div className='w-full flex justify-center'>
+          <div className='grid sm:grid-cols-2 lg:grid-cols-3 max-w-7xl lg:gap-x-10'>
+            {/* <ProductCard title='first product' img={'/img/1.jpg'} />
           <ProductCard title='first product' img={'/img/1.jpg'} />
           <ProductCard title='first product' img={'/img/1.jpg'} />
           <ProductCard title='first product' img={'/img/1.jpg'} />
           <ProductCard title='first product' img={'/img/1.jpg'} />
           <ProductCard title='first product' img={'/img/1.jpg'} />
           <ProductCard title='first product' img={'/img/1.jpg'} /> */}
-          {/* {imgArray.map(({ title, images, _id }) => {
+            {/* {imgArray.map(({ title, images, _id }) => {
             return (
               <ProductCard
                 title={title}
@@ -102,13 +102,13 @@ const page = () => {
               />
             );
           })} */}
-          {products.map(({ title, img, id, group }) => {
-            return (
-              <SubProductCard title={title} img={img} id={group} key={id} />
-            );
-          })}
+            {products.map(({ title, img, id, group }) => {
+              return (
+                <SubProductCard title={title} img={img} id={group} key={id} />
+              );
+            })}
+          </div>
         </div>
-        {/* </div> */}
       </div>
       <Footer />
     </div>
