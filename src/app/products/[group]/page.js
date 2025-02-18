@@ -4,10 +4,23 @@ import { useParams } from 'next/navigation';
 import ProductCard from '../../components/ProductCard';
 import Footer from '../../components/Footer';
 import { ChevronLeft } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 const GroupProductsPage = () => {
   const { group } = useParams();
   const [filteredProducts, setFilteredProducts] = useState([]);
+  const router = useRouter();
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    // If there's a previous page in the history, go back
+    if (window.history.length > 1) {
+      router.back();
+    } else {
+      // Otherwise, navigate to the fallback route
+      router.push(`/products/${group}`);
+    }
+  };
 
   useEffect(() => {
     const fetchGroupProducts = async () => {
@@ -31,6 +44,12 @@ const GroupProductsPage = () => {
   return (
     <div className='bg-gradient-to-b from-gray-50 min-h-screen grid grid-rows-[1fr_auto] to-gray-100 dark:from-gray-900 dark:to-gray-800'>
       <div className='pt-12 px-4 sm:px-6 lg:px-8 '>
+        {/* <button
+          className='fixed z-10 right-20 top-6 text-black'
+          onClick={handleClick}
+        >
+          <ChevronLeft size={50} />
+        </button> */}
         {/* <button className='fixed z-10 left-20 top-6 text-black'>
           <a href={`/products/`}>
             <ChevronLeft size={50} />

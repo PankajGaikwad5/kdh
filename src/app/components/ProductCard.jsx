@@ -20,8 +20,8 @@ const ProductCard = ({ title, img, id }) => {
         <CardBody className='bg-white dark:bg-gray-800 rounded-xl p-4 border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-lg transition-shadow duration-300'>
           <CardItem
             translateZ='200'
-            rotateX={20}
-            rotateZ={-10}
+            // rotateX={20}
+            // rotateZ={-10}
             className='w-full mt-4'
           >
             <div className='w-full aspect-[4/3] relative overflow-hidden flex justify-center items-center rounded-lg'>
