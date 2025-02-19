@@ -13,6 +13,7 @@ export async function POST(req) {
     const title = formData.get('title');
     const description = formData.get('description');
     const dimensions = formData.get('dimensions') || '';
+    const group = formData.get('group') || '';
 
     if (!title || !description) {
       return NextResponse.json(
@@ -65,6 +66,7 @@ export async function POST(req) {
     const newProduct = await Product.create({
       title,
       description,
+      group,
       dimensions,
       images,
     });

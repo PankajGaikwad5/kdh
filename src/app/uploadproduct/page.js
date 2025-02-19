@@ -11,6 +11,7 @@ export default function ProductForm() {
   const [dimensions, setDimensions] = useState('');
   const [images, setImages] = useState([]); // FileList or array of files
   const [message, setMessage] = useState('');
+  const [group, setGroup] = useState('monster_3.0');
 
   // Handle file input changes
   const handleFileChange = (e) => {
@@ -27,6 +28,7 @@ export default function ProductForm() {
     formData.append('title', title);
     formData.append('description', description);
     formData.append('dimensions', dimensions);
+    formData.append('group', group);
 
     // Append each image file; note that the backend expects the field name "images"
     for (let i = 0; i < images.length; i++) {
@@ -104,6 +106,19 @@ export default function ProductForm() {
               className='border-black border-2'
               value={dimensions}
               onChange={(e) => setDimensions(e.target.value)}
+            />
+          </label>
+        </div>
+        <div>
+          <label htmlFor='group'>
+            Group:
+            <input
+              id='group'
+              type='text'
+              name='group'
+              className='border-black border-2'
+              value={group}
+              onChange={(e) => setGroup(e.target.value)}
             />
           </label>
         </div>

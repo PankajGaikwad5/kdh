@@ -79,6 +79,48 @@ export default function Scene() {
       <ambientLight intensity={0.8} />
       <pointLight position={[10, 10, 10]} />
       <Suspense fallback={<CustomLoader />}>
+        <FloatingModel
+          url='/mconsole.glb'
+          scale={2}
+          id={'67b59041e03cc2c55c624a4b'}
+          position={getRandomPosition()}
+        />
+        <FloatingModel
+          url='/assets/mb4.glb'
+          scale={2}
+          id={'67b590b8e03cc2c55c624a5b'}
+          position={getRandomPosition()}
+        />
+        <FloatingModel
+          url='/draco/dchair.glb'
+          scale={2}
+          id={'67b59060e03cc2c55c624a4e'}
+          position={getRandomPosition()}
+        />
+        <FloatingModel
+          url='/draco/octo.glb'
+          scale={20}
+          id={'67b59111e03cc2c55c624a64'}
+          position={getRandomPosition()}
+        />
+        <FloatingModel
+          url='/assets/mchandelier2.glb'
+          scale={5}
+          id={'67b590e8e03cc2c55c624a61'}
+          position={getRandomPosition()}
+        />
+        <FloatingModel
+          url='/assets/mlibrary3.glb'
+          scale={2}
+          id={'67b590a6e03cc2c55c624a58'}
+          position={getRandomPosition()}
+        />
+        <FloatingModel
+          url='/assets/mdining.glb'
+          scale={5}
+          id={'67b59097e03cc2c55c624a54'}
+          position={getRandomPosition()}
+        />
         {/* <FloatingModel
           url='/assets/gchair.glb'
           scale={60}
@@ -94,12 +136,6 @@ export default function Scene() {
         /> */}
         {/* <WhiteGlowingSphere position={[0, 0, 0]} /> */}
         {/* Other floating models */}
-        <FloatingModel
-          url='/mtotem.glb'
-          scale={2}
-          id={'67a5eb9f4da9b29cd0f10b71'}
-          position={getRandomPosition()}
-        />
         <LatestProject />
         <FloatingModel
           url='/mtotem.glb'

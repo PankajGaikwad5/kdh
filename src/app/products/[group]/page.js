@@ -5,6 +5,7 @@ import ProductCard from '../../components/ProductCard';
 import Footer from '../../components/Footer';
 import { ChevronLeft } from 'lucide-react';
 import { useRouter } from 'next/navigation';
+import Navbar from '@/app/components/Navbar';
 
 const GroupProductsPage = () => {
   const { group } = useParams();
@@ -43,6 +44,7 @@ const GroupProductsPage = () => {
 
   return (
     <div className='bg-gradient-to-b from-gray-50 min-h-screen grid grid-rows-[1fr_auto] to-gray-100 dark:from-gray-900 dark:to-gray-800'>
+      {/* <Navbar arrow={true} /> */}
       <div className='pt-12 px-4 sm:px-6 lg:px-8 '>
         {/* <button
           className='fixed z-10 right-20 top-6 text-black'

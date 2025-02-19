@@ -40,6 +40,13 @@ const page = () => {
     },
     {
       id: 3,
+      title: 'Monster 3.0 Collection',
+      group: 'monster_3.0',
+      img: '/assets/products/1739952336217-Monster%20chai%20Opt%201.52.jpg',
+      projects: 'gattoo x top brewer, yoda',
+    },
+    {
+      id: 4,
       title: 'Matilda Collection',
       group: 'matilda',
       img: '/assets/products/1738927300853-Slide6.JPG',
@@ -47,7 +54,7 @@ const page = () => {
         'table lamp, library, partition screen, console 1, console 2, coffee table, center table 1, center table 2, basin, flower vase, planter, side table, u table, bathtub, chair, bench floor lamp',
     },
     {
-      id: 4,
+      id: 5,
       title: 'Monster Collection',
       group: 'monster_collection',
       img: '/assets/products/1738928071412-Slide1.JPG',
@@ -55,14 +62,14 @@ const page = () => {
         'monster binty, monster brainy, monster gattooffer, monster guard, monster gum, monster grumpy, monster squinty',
     },
     {
-      id: 5,
+      id: 6,
       title: 'Serafini X KD Bench',
       group: 'serafini',
       img: '/assets/products/1738930706115-Slide1.JPG',
       projects: 'serafini',
     },
     {
-      id: 6,
+      id: 7,
       title: 'Monsformer',
       group: 'monsformer',
       img: '/assets/products/1738930738995-Slide4.JPG',
@@ -79,7 +86,7 @@ const page = () => {
     >
       {/* <Navbar /> */}
       <div className='pt-12  px-4 sm:px-6 lg:px-8 '>
-        <h1 className='text-4xl font-bold text-gray-900 dark:text-white mb-8'>
+        <h1 className='text-4xl font-bold text-gray-900 max-w-5xl dark:text-white mb-8'>
           Our Products
         </h1>
 

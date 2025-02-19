@@ -27,14 +27,14 @@ export default function LatestProject() {
       {/* Floating Model with Special Props */}
       <FloatingModel
         ref={modelRef}
-        url='/draco/ogc.glb' // Replace with your latest project GLB
+        url='/assets/gchair2.glb' // Replace with your latest project GLB
         position={[0, -5, -17]} // Center position
-        scale={40}
-        id='latest-project' // Unique ID for the latest project
+        scale={10}
+        id='67b58dfde03cc2c55c624373' // Unique ID for the latest project
         onPointerOver={() => setHovered(true)}
         onPointerOut={() => setHovered(false)}
         onClick={() =>
-          (window.location.href = '/productdetails/latest-project')
+          (window.location.href = '/productdetails/67b58dfde03cc2c55c624373')
         }
       >
         {/* Add a glowing effect to the model */}
