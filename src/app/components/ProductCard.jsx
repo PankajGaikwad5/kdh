@@ -39,7 +39,7 @@ const ProductCard = ({ title, img, id }) => {
           </CardItem>
 
           <div className='mt-4 space-y-2 flex justify-between items-center'>
-            <h3 className='text-lg  text-gray-800 dark:text-gray-100 truncate uppercase font-semibold'>
+            <h3 className='text-lg  text-gray-800 dark:text-gray-100 truncate w-full text-center uppercase font-semibold'>
               {title}
             </h3>
             <div className='flex justify-between items-center'>
@@ -49,9 +49,9 @@ const ProductCard = ({ title, img, id }) => {
                   $299
                 </span>
               </span> */}
-              <button className='px-3 py-1.5 text-sm bg-blue-600 hover:bg-blue-700 text-white rounded-md transition-colors duration-200'>
+              {/* <button className='px-3 py-1.5 text-sm bg-blue-600 hover:bg-blue-700 text-white rounded-md transition-colors duration-200'>
                 View Details
-              </button>
+              </button> */}
             </div>
           </div>
         </CardBody>
