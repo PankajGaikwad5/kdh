@@ -35,7 +35,7 @@ export default function Scene() {
 
   const getRandomPosition = () => {
     // const radius = 25; // Adjust the radius to control spread distance
-    // const theta = Math.random() * Math.PI * 2; // Random angle around Y-axis
+    // const theta = Math.random() * Math.PI * 5; // Random angle around Y-axis
     // const phi = Math.acos(2 * Math.random() - 1); // Random angle from top to bottom
     // const distance = Math.cbrt(Math.random()) * radius; // Uniform distribution within sphere
 
@@ -81,25 +81,31 @@ export default function Scene() {
       <Suspense fallback={<CustomLoader />}>
         <FloatingModel
           url='/mconsole.glb'
-          scale={2}
+          scale={5}
           id={'67b59041e03cc2c55c624a4b'}
           position={getRandomPosition()}
         />
         <FloatingModel
           url='/assets/mb4.glb'
-          scale={2}
+          scale={5}
           id={'67b590b8e03cc2c55c624a5b'}
           position={getRandomPosition()}
         />
         <FloatingModel
           url='/draco/dchair.glb'
-          scale={2}
+          scale={8}
           id={'67b59060e03cc2c55c624a4e'}
           position={getRandomPosition()}
         />
         <FloatingModel
-          url='/draco/octo.glb'
-          scale={20}
+          url='/assets/kchair.glb'
+          scale={0.1}
+          id={'67b59060e03cc2c55c624a4e'}
+          position={getRandomPosition()}
+        />
+        <FloatingModel
+          url='/assets/mplanters.glb'
+          scale={5}
           id={'67b59111e03cc2c55c624a64'}
           position={getRandomPosition()}
         />
@@ -130,7 +136,7 @@ export default function Scene() {
         <LatestProject />
         {/* <FloatingModel
           url='/assets/mb2.glb'
-          scale={2}
+          scale={5}
           id={'67a5eb7e4da9b29cd0f10b69'}
           position={getRandomPosition()}
         /> */}
@@ -139,7 +145,7 @@ export default function Scene() {
         <LatestProject />
         <FloatingModel
           url='/mtotem.glb'
-          scale={2}
+          scale={5}
           id={'67a5eb9f4da9b29cd0f10b71'}
           position={getRandomPosition()}
         />
