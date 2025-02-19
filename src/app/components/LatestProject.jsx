@@ -33,9 +33,9 @@ export default function LatestProject() {
         id='67b590d0e03cc2c55c624a5e' // Unique ID for the latest project
         onPointerOver={() => setHovered(true)}
         onPointerOut={() => setHovered(false)}
-        // onClick={() =>
-        //   (window.location.href = '/productdetails/67b58dfde03cc2c55c624373')
-        // }
+        onClick={() =>
+          (window.location.href = '/productdetails/67b590d0e03cc2c55c624a5e')
+        }
       >
         {/* Add a glowing effect to the model */}
         <meshStandardMaterial
