@@ -3,6 +3,8 @@ import Image from 'next/image';
 import React from 'react';
 import { useState } from 'react';
 import { Poppins, Montserrat } from 'next/font/google';
+import { useRouter } from 'next/navigation';
+import { ArrowLeft } from 'lucide-react';
 
 // popins
 // montserrat
@@ -15,8 +17,19 @@ const montserrat = Montserrat({
   weight: ['100', '200', '300', '400', '600', '700'], // Specify weight
 });
 
-const Navbar = ({ isBgBlack, isHomePage }) => {
+const Navbar = ({ isBgBlack, arrow }) => {
+  const router = useRouter();
   const [nav, setNav] = useState(false);
+  const handleClick = (e) => {
+    e.preventDefault();
+    // If there's a previous page in the history, go back
+    if (window.history.length > 1) {
+      router.back();
+    } else {
+      // Otherwise, navigate to the fallback route
+      router.push(`/products/${group}`);
+    }
+  };
   const newNavTopics = [
     // {
     //   id: 1,
@@ -51,7 +64,7 @@ const Navbar = ({ isBgBlack, isHomePage }) => {
   ];
 
   const navTopics = [
-    `${isHomePage ? '' : 'home'}`,
+    `${arrow ? '' : 'home'}`,
     'about',
     'products',
     'collaborations',
@@ -68,17 +81,17 @@ const Navbar = ({ isBgBlack, isHomePage }) => {
         }`}
         onClick={() => setNav(!nav)}
       >
-        <span className={` bg-black `}></span>
-        <span className={` bg-black `}></span>
-        <span className={` bg-black `}></span>
+        <span className={`${isBgBlack ? 'bg-black' : 'bg-white'} `}></span>
+        <span className={`${isBgBlack ? 'bg-black' : 'bg-white'} `}></span>
+        <span className={`${isBgBlack ? 'bg-black' : 'bg-white'} `}></span>
       </div>
 
       {/* <div className={`${!nav ? 'hidden' : 'block'} relative`}> */}
       <ul
         className={
           !nav
-            ? 'absolute w-full h-screen top-0 left-[100%]  flex flex-col p-4 justify-center text-gray-800 items-center duration-500 z-20'
-            : `fixed w-full h-screen top-0 left-0 flex flex-col uppercase  ${
+            ? 'absolute w-full h-screen bottom-[100%]  flex flex-col p-4 justify-center items-start md:max-w-xs text-gray-800 duration-500 z-20 uppercase'
+            : `fixed w-full h-screen left-0 bottom-0 flex flex-col uppercase  ${
                 isBgBlack ? 'text-white' : 'text-white'
               } text-3xl justify-center items-start md:max-w-xs bg-black/90 p-4 z-20 duration-500 `
         }
@@ -122,6 +135,14 @@ const Navbar = ({ isBgBlack, isHomePage }) => {
         </ul>
       </ul>
       {/* </div> */}
+      {arrow && (
+        <button
+          className='fixed z-10 left-4 md:left-12 bottom-6 md:bottom-10 bg-white text-black p-2 border-2 border-black rounded-full'
+          onClick={handleClick}
+        >
+          <ArrowLeft size={25} />
+        </button>
+      )}
     </>
   );
 };

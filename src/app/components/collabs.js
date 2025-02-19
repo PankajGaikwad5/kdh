@@ -131,8 +131,7 @@ export const collabs = [
     images: [
       {
         fileName: 'new1.jpg',
-        fileUrl:
-          'https://3.imimg.com/data3/CH/KI/MY-5246137/bharat-floorings-logo-120x120.jpg',
+        fileUrl: '/assets/bft7.png',
         _id: {
           $oid: '6791fe227a5dc4ac2d27e24f',
         },

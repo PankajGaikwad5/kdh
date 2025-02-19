@@ -52,7 +52,7 @@ const page = () => {
       }}
     >
       {/* <Navbar /> */}
-      <div className='w-full pt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <div className='w-full pt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-screen '>
         <h1 className='text-4xl font-bold text-gray-900 dark:text-white pb-8 border-b border-gray-200 dark:border-gray-700'>
           Collaborations
         </h1>
@@ -88,7 +88,7 @@ const page = () => {
             <img src='/assets/serafini.png' alt='' className='object-cover ' />
           </div>
         </div> */}
-        <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 p-6 space-y-16 2xl:space-y-56 items-center py-10'>
+        <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3  p-6 space-y-8 space-x-8  items-center py-10'>
           {collabs.map((project) => (
             <div
               key={project._id.$oid || project._id}

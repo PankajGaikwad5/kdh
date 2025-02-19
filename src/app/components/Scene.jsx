@@ -79,6 +79,19 @@ export default function Scene() {
       <ambientLight intensity={0.8} />
       <pointLight position={[10, 10, 10]} />
       <Suspense fallback={<CustomLoader />}>
+        {/* <FloatingModel
+          url='/assets/gchair.glb'
+          scale={60}
+          id={'67a5eb7e4da9b29cd0f10b69'}
+          position={getRandomPosition()}
+        /> */}
+        <LatestProject />
+        {/* <FloatingModel
+          url='/assets/mb2.glb'
+          scale={2}
+          id={'67a5eb7e4da9b29cd0f10b69'}
+          position={getRandomPosition()}
+        /> */}
         {/* <WhiteGlowingSphere position={[0, 0, 0]} /> */}
         {/* Other floating models */}
         <FloatingModel

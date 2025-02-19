@@ -13,7 +13,7 @@ import {
 import Footer from '../../components/Footer';
 import getId from '@/app/components/getId';
 import Navbar from '@/app/components/Navbar';
-import { ChevronLeft } from 'lucide-react';
+import { ArrowLeft, ChevronLeft } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 // import Navbar from '../components/Navbar';
 
@@ -101,13 +101,13 @@ const page = (params) => {
   return (
     <div className=''>
       <div className='flex flex-col relative overflow-hidden'>
-        <button
-          className='fixed z-10 left-20 top-6 text-white'
+        {/* <button
+          className='fixed z-10 left-4 md:left-12 bottom-6 md:bottom-10 bg-white text-black p-2 border-2 border-black rounded-full'
           onClick={handleClick}
         >
-          <ChevronLeft size={50} />
-        </button>
-        <Navbar />
+          <ArrowLeft size={25} />
+        </button> */}
+        <Navbar arrow={true} />
         {/* <Link to='newSection' smooth={true} duration={500}>
         <button className='mt-4 p-2 bg-blue-500 text-white rounded'>
           Scroll to New Section

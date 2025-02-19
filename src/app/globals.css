@@ -135,7 +135,6 @@ body {
   width: 28px;
   height: 2px;
   border-radius: 9999px;
-  background: white;
 }
 
 .navMenu > span:not(:last-child) {
