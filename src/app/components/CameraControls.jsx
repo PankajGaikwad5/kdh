@@ -6,7 +6,7 @@ import { useSpring } from '@react-spring/three';
 
 export default function CameraControls() {
   const { camera } = useThree();
-  const moveSpeed = 10;
+  const moveSpeed = 20;
   const sensitivity = 0.002;
   const scrollSpeed = 0.05;
   const boundaryRadius = 30;
