@@ -30,12 +30,12 @@ export default function LatestProject() {
         url='/assets/gchair2.glb' // Replace with your latest project GLB
         position={[0, -5, -17]} // Center position
         scale={10}
-        id='67b58dfde03cc2c55c624373' // Unique ID for the latest project
+        id='67b590d0e03cc2c55c624a5e' // Unique ID for the latest project
         onPointerOver={() => setHovered(true)}
         onPointerOut={() => setHovered(false)}
-        onClick={() =>
-          (window.location.href = '/productdetails/67b58dfde03cc2c55c624373')
-        }
+        // onClick={() =>
+        //   (window.location.href = '/productdetails/67b58dfde03cc2c55c624373')
+        // }
       >
         {/* Add a glowing effect to the model */}
         <meshStandardMaterial
@@ -71,7 +71,13 @@ export default function LatestProject() {
         />
       </mesh>
 
-      <Html distanceFactor={10} position={[0, 2, -17]}>
+      <Html
+        distanceFactor={10}
+        position={[0, 2, -17]}
+        onClick={() =>
+          (window.location.href = '/productdetails/67b58dfde03cc2c55c624373')
+        }
+      >
         <div
           style={{
             color: glowColor,
