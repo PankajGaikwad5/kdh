@@ -100,6 +100,8 @@ export default function FloatingModel({
   position,
   id,
   scale = [1, 1, 1],
+  onHover,
+  onUnhover,
   ...props
 }) {
   const { scene } = useGLTF(url);
@@ -137,8 +139,21 @@ export default function FloatingModel({
         scale={scale} // Apply scaling here
         {...props}
         onClick={() => (window.location.href = `/productdetails/${id}`)}
-        onPointerOver={() => (document.body.style.cursor = 'pointer')}
-        onPointerOut={() => (document.body.style.cursor = 'auto')}
+        // onPointerOver={() => (document.body.style.cursor = 'pointer')}
+        // onPointerOut={() => (document.body.style.cursor = 'auto')}
+        onPointerOver={(e) => {
+          document.body.style.cursor = 'pointer';
+          if (onHover) {
+            // Get screen position of the pointer
+            const x = e.nativeEvent.clientX;
+            const y = e.nativeEvent.clientY;
+            onHover(id, [x, y]);
+          }
+        }}
+        onPointerOut={(e) => {
+          document.body.style.cursor = 'auto';
+          if (onUnhover) onUnhover();
+        }}
       >
         <primitive object={scene} />
       </group>

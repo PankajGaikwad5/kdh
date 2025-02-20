@@ -14,6 +14,11 @@ export default function Scene() {
   const [isMobile, setIsMobile] = useState(false);
   const latestProjectPos = new THREE.Vector3(0, -5, -17);
   const exclusionRadius = 10;
+  const [tooltip, setTooltip] = useState({
+    visible: false,
+    content: '',
+    position: [0, 0],
+  });
 
   useEffect(() => {
     const handleResize = () => {
@@ -69,113 +74,253 @@ export default function Scene() {
   };
 
   return (
-    <Canvas
-      gl={{ antialias: true, powerPreference: 'high-performance' }}
-      // Set the camera's y to 6 so it's centered with the models.
-      camera={{ position: [0, 0, 0], fov: 75 }}
-      className='w-full h-full z-0'
-    >
-      {/* <MaterialOverride mode={'normal'} /> */}
-      <ambientLight intensity={0.8} />
-      <pointLight position={[10, 10, 10]} />
-      <Suspense fallback={<CustomLoader />}>
-        <FloatingModel
-          url='/mconsole.glb'
-          scale={5}
-          id={'67b59041e03cc2c55c624a4b'}
-          position={getRandomPosition()}
-        />
-        <FloatingModel
-          url='/assets/mb4.glb'
-          scale={5}
-          id={'67b590b8e03cc2c55c624a5b'}
-          position={getRandomPosition()}
-        />
-        <FloatingModel
-          url='/draco/dchair.glb'
-          scale={8}
-          id={'67b59060e03cc2c55c624a4e'}
-          position={getRandomPosition()}
-        />
-        <FloatingModel
-          url='/assets/kchair.glb'
-          scale={0.1}
-          id={'67b59060e03cc2c55c624a4e'}
-          position={getRandomPosition()}
-        />
-        <FloatingModel
-          url='/assets/mplanters.glb'
-          scale={5}
-          id={'67b59111e03cc2c55c624a64'}
-          position={getRandomPosition()}
-        />
-        <FloatingModel
-          url='/assets/mchandelier2.glb'
-          scale={5}
-          id={'67b590e8e03cc2c55c624a61'}
-          position={getRandomPosition()}
-        />
-        <FloatingModel
-          url='/assets/mlibrary3.glb'
-          scale={2}
-          id={'67b590a6e03cc2c55c624a58'}
-          position={getRandomPosition()}
-        />
-        <FloatingModel
-          url='/assets/mdining.glb'
-          scale={5}
-          id={'67b59097e03cc2c55c624a54'}
-          position={getRandomPosition()}
-        />
-        {/* <FloatingModel
+    <>
+      <Canvas
+        gl={{ antialias: true, powerPreference: 'high-performance' }}
+        // Set the camera's y to 6 so it's centered with the models.
+        camera={{ position: [0, 0, 0], fov: 75 }}
+        className='w-full h-full z-0'
+      >
+        {/* <MaterialOverride mode={'normal'} /> */}
+        <ambientLight intensity={0.8} />
+        <pointLight position={[10, 10, 10]} />
+        <Suspense fallback={<CustomLoader />}>
+          <FloatingModel
+            onHover={(id, [x, y]) =>
+              setTooltip({
+                visible: true,
+                content: 'Monster Console',
+                position: [x, y],
+              })
+            }
+            onUnhover={() =>
+              setTooltip({ visible: false, content: '', position: [0, 0] })
+            }
+            url='/mconsole.glb'
+            scale={5}
+            id={'67b59041e03cc2c55c624a4b'}
+            position={getRandomPosition()}
+          />
+          <FloatingModel
+            onHover={(id, [x, y]) =>
+              setTooltip({
+                visible: true,
+                content: ' Monster Bench',
+                position: [x, y],
+              })
+            }
+            onUnhover={() =>
+              setTooltip({ visible: false, content: '', position: [0, 0] })
+            }
+            url='/assets/mb4.glb'
+            scale={5}
+            id={'67b590b8e03cc2c55c624a5b'}
+            position={getRandomPosition()}
+          />
+          <FloatingModel
+            onHover={(id, [x, y]) =>
+              setTooltip({
+                visible: true,
+                content: 'Monster Dining Chair',
+                position: [x, y],
+              })
+            }
+            onUnhover={() =>
+              setTooltip({ visible: false, content: '', position: [0, 0] })
+            }
+            url='/draco/dchair.glb'
+            scale={8}
+            id={'67b59060e03cc2c55c624a4e'}
+            position={getRandomPosition()}
+          />
+          <FloatingModel
+            onHover={(id, [x, y]) =>
+              setTooltip({
+                visible: true,
+                content: 'Monster Dining Kids Chair',
+                position: [x, y],
+              })
+            }
+            onUnhover={() =>
+              setTooltip({ visible: false, content: '', position: [0, 0] })
+            }
+            url='/assets/kchair.glb'
+            scale={0.1}
+            id={'67b5e69de03cc2c55c62bd22'}
+            position={getRandomPosition()}
+          />
+          <FloatingModel
+            onHover={(id, [x, y]) =>
+              setTooltip({
+                visible: true,
+                content: 'Monster Planters',
+                position: [x, y],
+              })
+            }
+            onUnhover={() =>
+              setTooltip({ visible: false, content: '', position: [0, 0] })
+            }
+            url='/assets/mplanters.glb'
+            scale={5}
+            id={'67b59111e03cc2c55c624a64'}
+            position={getRandomPosition()}
+          />
+          <FloatingModel
+            onHover={(id, [x, y]) =>
+              setTooltip({
+                visible: true,
+                content: 'Monster Chandelier',
+                position: [x, y],
+              })
+            }
+            onUnhover={() =>
+              setTooltip({ visible: false, content: '', position: [0, 0] })
+            }
+            url='/assets/mchandelier2.glb'
+            scale={5}
+            id={'67b590e8e03cc2c55c624a61'}
+            position={getRandomPosition()}
+          />
+          <FloatingModel
+            onHover={(id, [x, y]) =>
+              setTooltip({
+                visible: true,
+                content: 'Monster Library',
+                position: [x, y],
+              })
+            }
+            onUnhover={() =>
+              setTooltip({ visible: false, content: '', position: [0, 0] })
+            }
+            url='/assets/mlibrary3.glb'
+            scale={1}
+            id={'67b590a6e03cc2c55c624a58'}
+            position={getRandomPosition()}
+          />
+          <FloatingModel
+            onHover={(id, [x, y]) =>
+              setTooltip({
+                visible: true,
+                content: 'Monster Dining Table',
+                position: [x, y],
+              })
+            }
+            onUnhover={() =>
+              setTooltip({ visible: false, content: '', position: [0, 0] })
+            }
+            url='/assets/mdining.glb'
+            scale={5}
+            id={'67b59097e03cc2c55c624a54'}
+            position={getRandomPosition()}
+          />
+          {/* <FloatingModel
+        onHover={(id, [x, y]) => setTooltip({ visible: true, content: id, position: [x, y] })}
+          onUnhover={() => setTooltip({ visible: false, content: '', position: [0, 0] })}
           url='/assets/gchair.glb'
           scale={60}
           id={'67a5eb7e4da9b29cd0f10b69'}
           position={getRandomPosition()}
         /> */}
-        <LatestProject />
-        {/* <FloatingModel
+          <LatestProject
+            onHover={(id, [x, y]) =>
+              setTooltip({
+                visible: true,
+                content: 'Gattoo Chair',
+                position: [x, y],
+              })
+            }
+            onUnhover={() =>
+              setTooltip({ visible: false, content: '', position: [0, 0] })
+            }
+          />
+          {/* <FloatingModel
+        onHover={(id, [x, y]) => setTooltip({ visible: true, content: id, position: [x, y] })}
+          onUnhover={() => setTooltip({ visible: false, content: '', position: [0, 0] })}
           url='/assets/mb2.glb'
           scale={5}
           id={'67a5eb7e4da9b29cd0f10b69'}
           position={getRandomPosition()}
         /> */}
-        {/* <WhiteGlowingSphere position={[0, 0, 0]} /> */}
-        {/* Other floating models */}
-        <LatestProject />
-        <FloatingModel
-          url='/mtotem.glb'
-          scale={5}
-          id={'67a5eb9f4da9b29cd0f10b71'}
-          position={getRandomPosition()}
-        />
-        <FloatingModel
-          url='/sbench.glb'
-          scale={5}
-          id={'67a5fa124da9b29cd0f10c36'}
-          position={getRandomPosition()}
-        />
-        <FloatingModel
-          url='/tbg.glb'
-          scale={60}
-          id={'67a5eb7e4da9b29cd0f10b69'}
-          position={getRandomPosition()}
-        />
-        {glb.map((models, index) => {
-          const { model, id } = models;
-          return (
-            <FloatingModel
-              key={index}
-              url={`/glb/${model}.glb`}
-              scale={5}
-              id={id}
-              position={getRandomPosition()}
-            />
-          );
-        })}
-      </Suspense>
-      <CameraControls />
-      <color attach='background' args={['black']} />
-    </Canvas>
+          {/* <WhiteGlowingSphere position={[0, 0, 0]} /> */}
+          {/* Other floating models */}
+          <FloatingModel
+            onHover={(id, [x, y]) =>
+              setTooltip({ visible: true, content: id, position: [x, y] })
+            }
+            onUnhover={() =>
+              setTooltip({ visible: false, content: '', position: [0, 0] })
+            }
+            url='/mtotem.glb'
+            scale={5}
+            id={'67a5eb9f4da9b29cd0f10b71'}
+            position={getRandomPosition()}
+          />
+          <FloatingModel
+            onHover={(id, [x, y]) =>
+              setTooltip({ visible: true, content: id, position: [x, y] })
+            }
+            onUnhover={() =>
+              setTooltip({ visible: false, content: '', position: [0, 0] })
+            }
+            url='/sbench.glb'
+            scale={5}
+            id={'67a5fa124da9b29cd0f10c36'}
+            position={getRandomPosition()}
+          />
+          <FloatingModel
+            onHover={(id, [x, y]) =>
+              setTooltip({ visible: true, content: id, position: [x, y] })
+            }
+            onUnhover={() =>
+              setTooltip({ visible: false, content: '', position: [0, 0] })
+            }
+            url='/tbg.glb'
+            scale={60}
+            id={'67a5eb7e4da9b29cd0f10b69'}
+            position={getRandomPosition()}
+          />
+          {glb.map((models, index) => {
+            const { model, id, name } = models;
+            return (
+              <FloatingModel
+                onHover={(name, [x, y]) => {
+                  setTooltip({
+                    visible: true,
+                    content: models.name,
+                    position: [x, y],
+                  });
+                }}
+                onUnhover={() =>
+                  setTooltip({ visible: false, content: '', position: [0, 0] })
+                }
+                key={index}
+                url={`/glb/${model}.glb`}
+                scale={5}
+                id={id}
+                position={getRandomPosition()}
+              />
+            );
+          })}
+        </Suspense>
+        <CameraControls />
+        <color attach='background' args={['black']} />
+      </Canvas>
+      {tooltip.visible && (
+        <div
+          style={{
+            position: 'fixed',
+            left: tooltip.position[0] + 15,
+            top: tooltip.position[1] - 15,
+            pointerEvents: 'none',
+            color: 'white',
+            padding: '8px',
+            borderRadius: '4px',
+            whiteSpace: 'nowrap',
+          }}
+        >
+          {tooltip.content}
+        </div>
+      )}
+    </>
   );
 }

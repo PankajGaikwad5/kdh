@@ -17,7 +17,7 @@ const SubProductCard = ({ title, img, id }) => {
       // /assets/products/1738927177034-Slide1.JPG
     >
       <CardContainer className='p-0'>
-        <CardBody className='bg-white dark:bg-gray-800 rounded-xl p-4 border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-lg transition-shadow duration-300'>
+        <CardBody className='bg-white dark:bg-gray-800 rounded-xl p-4 max-w-72 max-h-72 md:max-w-max md:max-h-max border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-lg transition-shadow duration-300'>
           <CardItem
             translateZ='200'
             // rotateX={20}

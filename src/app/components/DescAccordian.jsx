@@ -113,8 +113,10 @@ const DescAccordian = ({ scrollPosition, desc, title, dimensions }) => {
     >
       <div className='flex flex-col md:w-1/2 px-6 md:px-16'>
         <h1 className='uppercase font-bold my-4 text-2xl'>{title}</h1>
-        <h1 className='uppercase font-semibold my-4 text-xl'>description</h1>
-        <p className='font-medium'>{desc}</p>
+        <h1 className='uppercase text-zinc-500 font-semibold my-4 text-xl'>
+          description
+        </h1>
+        <p className='font-semibold '>{desc}</p>
       </div>
       <div className='flex flex-col mt-10  md:w-1/2 px-6 md:px-16'>
         <Accordion type='single' collapsible className='space-y-4'>
