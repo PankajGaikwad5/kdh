@@ -245,7 +245,7 @@ export default function Scene() {
           {/* Other floating models */}
           <FloatingModel
             onHover={(id, [x, y]) =>
-              setTooltip({ visible: true, content: id, position: [x, y] })
+              setTooltip({ visible: true, content: 'Yoda', position: [x, y] })
             }
             onUnhover={() =>
               setTooltip({ visible: false, content: '', position: [0, 0] })
@@ -257,7 +257,11 @@ export default function Scene() {
           />
           <FloatingModel
             onHover={(id, [x, y]) =>
-              setTooltip({ visible: true, content: id, position: [x, y] })
+              setTooltip({
+                visible: true,
+                content: 'Samaveta Bench',
+                position: [x, y],
+              })
             }
             onUnhover={() =>
               setTooltip({ visible: false, content: '', position: [0, 0] })
@@ -269,7 +273,11 @@ export default function Scene() {
           />
           <FloatingModel
             onHover={(id, [x, y]) =>
-              setTooltip({ visible: true, content: id, position: [x, y] })
+              setTooltip({
+                visible: true,
+                content: 'Gattoo X Top Brewer',
+                position: [x, y],
+              })
             }
             onUnhover={() =>
               setTooltip({ visible: false, content: '', position: [0, 0] })
