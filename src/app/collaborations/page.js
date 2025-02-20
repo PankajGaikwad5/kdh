@@ -88,7 +88,7 @@ const page = () => {
             <img src='/assets/serafini.png' alt='' className='object-cover ' />
           </div>
         </div> */}
-        <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3  p-6 space-y-8 space-x-8  items-center py-10'>
+        <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3  p-6 space-y-8 items-center py-10'>
           {collabs.map((project) => (
             <div
               key={project._id.$oid || project._id}
