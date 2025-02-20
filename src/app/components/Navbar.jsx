@@ -137,7 +137,7 @@ const Navbar = ({ isBgBlack, arrow }) => {
       {/* </div> */}
       {arrow && (
         <button
-          className='fixed z-10 left-4 md:left-12 bottom-6 md:bottom-10 bg-white text-black p-2 border-2 border-black rounded-full'
+          className='fixed z-50 left-4 md:left-12 bottom-6 md:bottom-10 bg-white/20 hover:bg-white/70 duration-500 transition-all text-black p-2 border-2 border-black rounded-full'
           onClick={handleClick}
         >
           <ArrowLeft size={25} />

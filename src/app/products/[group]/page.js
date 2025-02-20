@@ -44,6 +44,7 @@ const GroupProductsPage = () => {
 
   return (
     <div className='bg-gradient-to-b from-gray-50 min-h-screen grid grid-rows-[1fr_auto] to-gray-100 dark:from-gray-900 dark:to-gray-800'>
+      <Navbar arrow={true} isBgBlack={true} />
       {/* <Navbar arrow={true} /> */}
       <div className='pt-12 px-4 sm:px-6 lg:px-8 '>
         {/* <button
@@ -57,9 +58,11 @@ const GroupProductsPage = () => {
             <ChevronLeft size={50} />
           </a>
         </button> */}
-        <h1 className='text-4xl font-bold text-gray-900 dark:text-white pb-8 border-b border-gray-200 dark:border-gray-700 capitalize'>
-          {group.replace('_', ' ')}
-        </h1>
+        <div className='w-full text-center flex justify-center'>
+          <h1 className='text-4xl font-bold text-gray-900 dark:text-white pb-8 border-b-2 border-gray-200 dark:border-gray-700 capitalize w-full md:max-w-3xl'>
+            {group.replace('_', ' ')}
+          </h1>
+        </div>
 
         <div className='flex justify-center items-center'>
           <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-7xl lg:gap-x-10'>
