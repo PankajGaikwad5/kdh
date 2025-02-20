@@ -40,20 +40,20 @@ const page = () => {
           />
         </div>
 
-        <div className='p-2 md:p-8 flex justify-center flex-col'>
-          <div className='flex justify-center mb-8'>
+        <div className='p-2 flex justify-center flex-col'>
+          <div className='flex justify-center'>
             <a href='/' className=''>
               <Image
                 src='/assets/kdadlogo.png'
                 alt='Logo'
-                width={200}
-                height={200}
+                width={400}
+                height={400}
                 className=' flex justify-self-center object-contain m-0 p-0  '
               />
             </a>
           </div>
           <p
-            className={`font-light text-start flex flex-col space-y-4 ${popins.className}`}
+            className={`font-light text-start flex flex-col space-y-4 pb-6 ${popins.className}`}
           >
             <span>
               "Imagine transforming everyday spaces into rich, immersive
