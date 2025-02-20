@@ -81,9 +81,9 @@ const Navbar = ({ isBgBlack, arrow }) => {
         }`}
         onClick={() => setNav(!nav)}
       >
-        <span className={`${isBgBlack ? 'bg-black' : 'bg-white'} `}></span>
-        <span className={`${isBgBlack ? 'bg-black' : 'bg-white'} `}></span>
-        <span className={`${isBgBlack ? 'bg-black' : 'bg-white'} `}></span>
+        <span className={`${isBgBlack ? 'bg-zinc-500' : 'bg-white'} `}></span>
+        <span className={`${isBgBlack ? 'bg-zinc-500' : 'bg-white'} `}></span>
+        <span className={`${isBgBlack ? 'bg-zinc-500' : 'bg-white'} `}></span>
       </div>
 
       {/* <div className={`${!nav ? 'hidden' : 'block'} relative`}> */}
