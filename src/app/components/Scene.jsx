@@ -372,6 +372,24 @@ export default function Scene() {
       tooltip: 'Monster Console',
     },
     {
+      url: '/mconsole2.glb',
+      scale: 5,
+      id: '67a5eaba4da9b29cd0f10b63',
+      tooltip: 'Monster Console',
+    },
+    {
+      url: '/mbathtub.glb',
+      scale: 5,
+      id: '67a5e9914da9b29cd0f10b58',
+      tooltip: 'Monster Bathtub',
+    },
+    {
+      url: '/mbasin.glb',
+      scale: 5,
+      id: '67a5e7ce4da9b29cd0f10b51',
+      tooltip: 'Monster Basin',
+    },
+    {
       url: '/assets/mb4.glb',
       scale: 5,
       id: '67b590b8e03cc2c55c624a5b',
