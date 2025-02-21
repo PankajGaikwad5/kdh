@@ -171,7 +171,7 @@ export default function CameraControls() {
   const moveSpeed = 20;
   const sensitivity = 0.002;
   const scrollSpeed = 0.05;
-  const boundaryRadius = 30;
+  const boundaryRadius = 40;
   const clampVector = useRef(new THREE.Vector3());
   const forward = useRef(new THREE.Vector3());
   const right = useRef(new THREE.Vector3());

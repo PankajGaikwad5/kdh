@@ -14,7 +14,7 @@ export default function CustomLoader() {
   return (
     <Html
       className='z-10'
-      position={loaderPosition}
+      // position={loaderPosition}
       // style={{
       //   position: 'absolute',
       //   top: `${((screenPosition.y + 1) / 2) * 100}%`,
@@ -53,7 +53,7 @@ export default function CustomLoader() {
             <span></span>
           </div>
         </div> */}
-        <img src='/gattoo2.gif' alt='loading' />
+        <img src='/gattoo2.gif' alt='loading' className='' />
         <p>loading</p>
       </div>
       {/* </div> */}

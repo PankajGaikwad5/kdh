@@ -21,15 +21,15 @@ export default function Home() {
 
   useEffect(() => {
     const handleKeyDown = (e) => {
-      if (e.key === 'Enter') {
-        setShowOverlay(false);
-      }
+      setShowOverlay(false);
     };
 
     window.addEventListener('keydown', handleKeyDown);
+    window.addEventListener('mousedown', handleKeyDown);
 
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
+      window.removeEventListener('mousedown', handleKeyDown);
     };
   }, []);
 

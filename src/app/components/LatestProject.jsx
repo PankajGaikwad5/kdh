@@ -28,7 +28,7 @@ export default function LatestProject() {
       <FloatingModel
         ref={modelRef}
         url='/assets/gchair2.glb' // Replace with your latest project GLB
-        position={[0, -5, -17]} // Center position
+        position={[0, -5, 0]} // Center position
         scale={10}
         id='67b590d0e03cc2c55c624a5e' // Unique ID for the latest project
         onPointerOver={() => setHovered(true)}
@@ -60,7 +60,7 @@ export default function LatestProject() {
       />
 
       {/* Add a glowing ring around the model */}
-      <mesh position={[0, -6, -17]} rotation={[-Math.PI / 2, 0, 0]}>
+      <mesh position={[0, -6, 0]} rotation={[-Math.PI / 2, 0, 0]}>
         <ringGeometry args={[12, 14, 64]} />
         <meshStandardMaterial
           color={glowColor}
@@ -73,7 +73,7 @@ export default function LatestProject() {
 
       <Html
         distanceFactor={10}
-        position={[0, 2, -17]}
+        position={[0, 2, 0]}
         onClick={() =>
           (window.location.href = '/productdetails/67b58dfde03cc2c55c624373')
         }
