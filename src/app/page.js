@@ -66,9 +66,7 @@ export default function Home() {
           </div>
           <span>To move around</span>
         </h1>
-        <h1>
-          Press <span className='font-extrabold'>ENTER</span> to continue
-        </h1>
+        <h1>Press any button to continue</h1>
       </div>
       <Scene />
     </main>
