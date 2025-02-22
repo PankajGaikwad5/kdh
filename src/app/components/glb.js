@@ -89,4 +89,9 @@ export const glb = [
     id: '67a5ed9e4da9b29cd0f10bc6',
     model: 'vase',
   },
+  {
+    name: 'Flower Vase',
+    id: '67a5ed9e4da9b29cd0f10bc6',
+    model: 'mhumpty',
+  },
 ];
