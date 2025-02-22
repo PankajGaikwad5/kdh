@@ -367,13 +367,13 @@ export default function Scene() {
   const staticModels = [
     {
       url: '/mconsole.glb',
-      scale: 5,
+      scale: 20,
       id: '67b59041e03cc2c55c624a4b',
       tooltip: 'Monster Console',
     },
     {
       url: '/mconsole2.glb',
-      scale: 5,
+      scale: 20,
       id: '67a5eaba4da9b29cd0f10b63',
       tooltip: 'Monster Console',
     },
@@ -385,7 +385,7 @@ export default function Scene() {
     },
     {
       url: '/mbasin.glb',
-      scale: 5,
+      scale: 25,
       id: '67a5e7ce4da9b29cd0f10b51',
       tooltip: 'Monster Basin',
     },
@@ -397,13 +397,13 @@ export default function Scene() {
     },
     {
       url: '/draco/dchair.glb',
-      scale: 8,
+      scale: 15,
       id: '67b59060e03cc2c55c624a4e',
       tooltip: 'Monster Dining Chair',
     },
     {
       url: '/assets/kchair.glb',
-      scale: 0.1,
+      scale: 0.3,
       id: '67b5e69de03cc2c55c62bd22',
       tooltip: 'Monster Dining Kids Chair',
     },
