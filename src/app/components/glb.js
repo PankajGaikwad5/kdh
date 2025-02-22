@@ -100,44 +100,4 @@ export const glb = [
     id: '67a5ef7f4da9b29cd0f10c05',
     model: 'dining',
   },
-  {
-    name: 'Monster Guard',
-    id: '67a5ed9e4da9b29cd0f10bc6',
-    model: 'gaurd',
-  },
-  {
-    name: 'Monster Brainy',
-    id: '67a5ed9e4da9b29cd0f10bc6',
-    model: 'brainy',
-  },
-  {
-    name: 'Monster Gum',
-    id: '67a5ed9e4da9b29cd0f10bc6',
-    model: 'gum',
-  },
-  {
-    name: 'Monster Gattoofer',
-    id: '67a5ed9e4da9b29cd0f10bc6',
-    model: 'gattoofer',
-  },
-  {
-    name: 'Monster Buddha',
-    id: '67a5ed9e4da9b29cd0f10bc6',
-    model: 'buddha',
-  },
-  {
-    name: 'Monster Squinty',
-    id: '67a5ed9e4da9b29cd0f10bc6',
-    model: 'squinty',
-  },
-  {
-    name: 'Monster Grumpy',
-    id: '67a5ed9e4da9b29cd0f10bc6',
-    model: 'grumpy',
-  },
-  {
-    name: 'Monster Binty',
-    id: '67a5ed9e4da9b29cd0f10bc6',
-    model: 'binty',
-  },
 ];

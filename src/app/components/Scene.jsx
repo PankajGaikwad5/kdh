@@ -361,7 +361,7 @@ function useEvenlyDistributedPositions(
 
 export default function Scene() {
   const latestProjectPos = new THREE.Vector3(0, -5, -17);
-  const exclusionRadius = 30;
+  const exclusionRadius = 20;
 
   // Define your static floating models (excluding LatestProject)
   const staticModels = [
@@ -449,6 +449,61 @@ export default function Scene() {
       id: '67a5eb7e4da9b29cd0f10b69',
       tooltip: 'Gattoo X Top Brewer',
     },
+
+    {
+      tooltip: 'Monster Guard',
+      id: '67a5f6534da9b29cd0f10c22',
+      scale: 15,
+      url: '/glb/gaurd.glb',
+    },
+    {
+      tooltip: 'Monster Brainy',
+      id: '67a5f5c14da9b29cd0f10c17',
+      scale: 15,
+      url: '/glb/brainy.glb',
+    },
+    {
+      tooltip: 'Monster Gum',
+      id: '67a5f6834da9b29cd0f10c27',
+      scale: 15,
+      url: '/glb/gum.glb',
+    },
+    {
+      tooltip: 'Monster Gattoofer',
+      id: '67a5f5ea4da9b29cd0f10c1c',
+      scale: 15,
+      url: '/glb/gattoofer.glb',
+    },
+    {
+      tooltip: 'Monster Buddha',
+      id: '67a5ed9e4da9b29cd0f10bc6',
+      scale: 15,
+      url: '/glb/buddha.glb',
+    },
+    {
+      tooltip: 'Monster Squinty',
+      id: '67a5f8544da9b29cd0f10c31',
+      scale: 15,
+      url: '/glb/squinty.glb',
+    },
+    {
+      tooltip: 'Monster Grumpy',
+      id: '67a5f8394da9b29cd0f10c2c',
+      scale: 15,
+      url: '/glb/grumpy.glb',
+    },
+    {
+      tooltip: 'Monster Binty',
+      id: '67a5efc74da9b29cd0f10c11',
+      scale: 15,
+      url: '/glb/binty.glb',
+    },
+    {
+      tooltip: 'Monster Humpty',
+      id: '67a5efc74da9b29cd0f10c11',
+      scale: 15,
+      url: '/glb/humpty.glb',
+    },
   ];
 
   // Models from your glb array
@@ -460,7 +515,7 @@ export default function Scene() {
   // Precompute positions with an even distribution
   const positions = useEvenlyDistributedPositions(
     totalModelsCount,
-    30,
+    35,
     latestProjectPos,
     exclusionRadius
   );
