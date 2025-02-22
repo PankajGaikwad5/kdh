@@ -100,4 +100,9 @@ export const glb = [
     id: '67a5ef7f4da9b29cd0f10c05',
     model: 'dining',
   },
+  {
+    name: 'Bench 1',
+    id: '67a5ef7f4da9b29cd0f10c05',
+    model: 'newbench',
+  },
 ];
