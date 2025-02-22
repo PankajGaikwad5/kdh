@@ -62,7 +62,7 @@ export const glb = [
   {
     name: 'Library',
     id: '67a5ec084da9b29cd0f10b7e',
-    model: 'library',
+    model: 'library2',
   },
   {
     name: 'Partition Screen',
