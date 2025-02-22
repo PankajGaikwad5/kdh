@@ -17,7 +17,7 @@ export const glb = [
   {
     name: 'Coffee Table',
     id: '67a5ecc44da9b29cd0f10ba2',
-    model: 'coffeetable',
+    model: 'newcoffeetable',
   },
   {
     name: 'Side Table',
