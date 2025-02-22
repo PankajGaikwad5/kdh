@@ -108,7 +108,7 @@ const Navbar = ({ isBgBlack, arrow }) => {
             return (
               <li key={id}>
                 <a
-                  href={path}
+                  href={`/${path}`}
                   className='hover:text-gray-600 transition-all duration-300 '
                 >
                   {name}
