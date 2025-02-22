@@ -1,8 +1,8 @@
 export const glb = [
   {
-    name: 'Monster Basin',
+    name: 'Basin',
     id: '67a5ed3c4da9b29cd0f10bbf',
-    model: 'basin',
+    model: 'basin2',
   },
   {
     name: 'Monster Bathtub',
@@ -12,7 +12,7 @@ export const glb = [
   {
     name: 'Chair',
     id: '67a5ef664da9b29cd0f10bfb',
-    model: 'cchair',
+    model: 'matildachair',
   },
   {
     name: 'Coffee Table',

@@ -378,7 +378,7 @@ export default function Scene() {
       tooltip: 'Monster Console',
     },
     {
-      url: '/mbathtub.glb',
+      url: '/mbathtub2.glb',
       scale: 5,
       id: '67a5e9914da9b29cd0f10b58',
       tooltip: 'Monster Bathtub',
