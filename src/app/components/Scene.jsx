@@ -460,7 +460,7 @@ export default function Scene() {
   // Precompute positions with an even distribution
   const positions = useEvenlyDistributedPositions(
     totalModelsCount,
-    20,
+    30,
     latestProjectPos,
     exclusionRadius
   );
