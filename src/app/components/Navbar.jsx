@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Poppins, Montserrat } from 'next/font/google';
 import { useRouter } from 'next/navigation';
 import { ArrowLeft } from 'lucide-react';
@@ -30,6 +30,21 @@ const Navbar = ({ isBgBlack, arrow }) => {
       router.push(`/products/${group}`);
     }
   };
+
+  useEffect(() => {
+    const handleEscape = (event) => {
+      console.log('Escape key pressed'); // Debug log
+      if (event.key === 'Escape') {
+        handleClick(event);
+      }
+    };
+
+    document.addEventListener('keydown', handleEscape, true);
+    return () => {
+      document.removeEventListener('keydown', handleEscape, true);
+    };
+  }, []);
+
   const newNavTopics = [
     // {
     //   id: 1,
