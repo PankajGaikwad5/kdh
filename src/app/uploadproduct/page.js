@@ -11,7 +11,7 @@ export default function ProductForm() {
   const [dimensions, setDimensions] = useState('');
   const [images, setImages] = useState([]); // FileList or array of files
   const [message, setMessage] = useState('');
-  const [group, setGroup] = useState('monster_3.0');
+  const [group, setGroup] = useState('');
 
   // Handle file input changes
   const handleFileChange = (e) => {
