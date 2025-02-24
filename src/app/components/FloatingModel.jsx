@@ -88,14 +88,87 @@
 //   );
 // }
 
+// 'use client';
+// import { useRef, useMemo, useEffect } from 'react';
+// import { useGLTF } from '@react-three/drei';
+// import { useFrame } from '@react-three/fiber';
+// import MaterialOverride from './MaterialOverride';
+// import * as THREE from 'three';
+
+// export default function FloatingModel({
+//   url,
+//   position,
+//   id,
+//   scale = [1, 1, 1],
+//   onHover,
+//   onUnhover,
+//   ...props
+// }) {
+//   const { scene } = useGLTF(url);
+//   const modelRef = useRef();
+//   const basePosition = useRef(position);
+//   const phaseOffset = useMemo(() => Math.random() * Math.PI * 2, []);
+//   const tempPos = useRef(new THREE.Vector3());
+
+//   // Update the bounding box to account for scaling
+//   useEffect(() => {
+//     if (modelRef.current) {
+//       modelRef.current.traverse((child) => {
+//         if (child.isMesh) {
+//           child.geometry.computeBoundingBox();
+//         }
+//       });
+//     }
+//   }, [scale]);
+
+//   useFrame((state, delta) => {
+//     if (modelRef.current) {
+//       tempPos.current.set(...basePosition.current);
+//       tempPos.current.y +=
+//         Math.sin(state.clock.elapsedTime + phaseOffset) * 0.2;
+//       modelRef.current.position.copy(tempPos.current);
+//       modelRef.current.rotation.y += delta * 0.2;
+//     }
+//   });
+
+//   return (
+//     <group>
+//       <MaterialOverride mode='normal' />
+//       <group
+//         ref={modelRef}
+//         scale={scale} // Apply scaling here
+//         {...props}
+//         onClick={() => (window.location.href = `/productdetails/${id}`)}
+//         // onPointerOver={() => (document.body.style.cursor = 'pointer')}
+//         // onPointerOut={() => (document.body.style.cursor = 'auto')}
+//         onPointerOver={(e) => {
+//           document.body.style.cursor = 'pointer';
+//           if (onHover) {
+//             // Get screen position of the pointer
+//             const x = e.nativeEvent.clientX;
+//             const y = e.nativeEvent.clientY;
+//             onHover(id, [x, y]);
+//           }
+//         }}
+//         onPointerOut={(e) => {
+//           document.body.style.cursor = 'auto';
+//           if (onUnhover) onUnhover();
+//         }}
+//       >
+//         <primitive object={scene} />
+//       </group>
+//     </group>
+//   );
+// }
+
 'use client';
-import { useRef, useMemo, useEffect } from 'react';
+import { useRef, useMemo, useEffect, useCallback, memo } from 'react';
 import { useGLTF } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 import MaterialOverride from './MaterialOverride';
 import * as THREE from 'three';
 
-export default function FloatingModel({
+const FloatingModel = memo(function FloatingModel({
   url,
   position,
   id,
@@ -110,16 +183,22 @@ export default function FloatingModel({
   const phaseOffset = useMemo(() => Math.random() * Math.PI * 2, []);
   const tempPos = useRef(new THREE.Vector3());
 
-  // Update the bounding box to account for scaling
-  useEffect(() => {
-    if (modelRef.current) {
-      modelRef.current.traverse((child) => {
-        if (child.isMesh) {
-          child.geometry.computeBoundingBox();
-        }
-      });
-    }
-  }, [scale]);
+  const handlePointerOver = useCallback(
+    (e) => {
+      document.body.style.cursor = 'pointer';
+      if (onHover) {
+        const x = e.nativeEvent.clientX;
+        const y = e.nativeEvent.clientY;
+        onHover(id, [x, y]);
+      }
+    },
+    [onHover, id]
+  );
+
+  const handlePointerOut = useCallback(() => {
+    document.body.style.cursor = 'auto';
+    if (onUnhover) onUnhover();
+  }, [onUnhover]);
 
   useFrame((state, delta) => {
     if (modelRef.current) {
@@ -132,31 +211,16 @@ export default function FloatingModel({
   });
 
   return (
-    <group>
+    <group ref={modelRef} scale={scale} {...props}>
       <MaterialOverride mode='normal' />
-      <group
-        ref={modelRef}
-        scale={scale} // Apply scaling here
-        {...props}
+      <primitive
+        object={scene}
         onClick={() => (window.location.href = `/productdetails/${id}`)}
-        // onPointerOver={() => (document.body.style.cursor = 'pointer')}
-        // onPointerOut={() => (document.body.style.cursor = 'auto')}
-        onPointerOver={(e) => {
-          document.body.style.cursor = 'pointer';
-          if (onHover) {
-            // Get screen position of the pointer
-            const x = e.nativeEvent.clientX;
-            const y = e.nativeEvent.clientY;
-            onHover(id, [x, y]);
-          }
-        }}
-        onPointerOut={(e) => {
-          document.body.style.cursor = 'auto';
-          if (onUnhover) onUnhover();
-        }}
-      >
-        <primitive object={scene} />
-      </group>
+        onPointerOver={handlePointerOver}
+        onPointerOut={handlePointerOut}
+      />
     </group>
   );
-}
+});
+
+export default FloatingModel;
