@@ -311,6 +311,7 @@ export default function Scene() {
             onUnhover={handleUnhover}
           />
         </Suspense>
+
         <CameraControls />
         <color attach='background' args={['black']} />
       </Canvas>

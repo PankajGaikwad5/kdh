@@ -226,7 +226,8 @@ export const collabs = [
       },
       {
         fileName: '2',
-        fileUrl: '/marble/b.jpg',
+        fileUrl:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUUx5spNBY1Vx48e2bhPHIZJqsnBOSArl5D3MT',
         _id: '2',
       },
     ],
