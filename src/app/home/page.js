@@ -5,7 +5,7 @@ import FloatingImagesScene from '../components/FloatingImagesScene';
 
 const page = () => {
   return (
-    <div className='min-h-screen'>
+    <div className='min-h-screen overflow-y-hidden'>
       <Navbar isBgBlack={true} arrow={true} />
       <FloatingImagesScene />
     </div>
