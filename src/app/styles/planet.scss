@@ -6,18 +6,6 @@ $m-05: #bf80a9;
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
 
-html,
-body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: $m-01;
-}
-
 .content {
   width: 300px;
   height: 300px;

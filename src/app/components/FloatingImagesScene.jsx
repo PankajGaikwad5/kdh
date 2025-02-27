@@ -9,6 +9,8 @@ import {
 import * as THREE from 'three';
 import { useRouter } from 'next/navigation';
 import { imagePaths } from './imagePaths';
+import { Suspense } from 'react';
+import CustomLoader from './CustomLoader';
 
 function FloatingImage({
   url,
@@ -167,9 +169,9 @@ export default function FloatingImagesScene() {
   };
 
   // Adjust parameters based on screen size
-  const spacingVal = isMobile ? 15 : 8;
+  const spacingVal = isMobile ? 10 : 8;
   const amplitudeXVal = isMobile ? 12 : 30;
-  const amplitudeYVal = isMobile ? 10 : 20;
+  const amplitudeYVal = isMobile ? 20 : 20;
   const baseScaleVal = isMobile ? 15 : 22;
 
   return (
@@ -191,15 +193,17 @@ export default function FloatingImagesScene() {
       >
         <ambientLight intensity={1} />
         <ScrollControls pages={pages} damping={1}>
-          <FloatingImagesGroup
-            imagePaths={imagePaths}
-            spacing={spacingVal}
-            amplitudeX={amplitudeXVal}
-            amplitudeY={amplitudeYVal}
-            baseScale={baseScaleVal}
-            onImageHover={showTooltip}
-            onImageOut={hideTooltip}
-          />
+          <Suspense fallback={<CustomLoader />}>
+            <FloatingImagesGroup
+              imagePaths={imagePaths}
+              spacing={spacingVal}
+              amplitudeX={amplitudeXVal}
+              amplitudeY={amplitudeYVal}
+              baseScale={baseScaleVal}
+              onImageHover={showTooltip}
+              onImageOut={hideTooltip}
+            />
+          </Suspense>
         </ScrollControls>
       </Canvas>
 
