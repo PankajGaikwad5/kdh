@@ -34,6 +34,8 @@ const inter = Inter({
 
 export const metadata = {
   title: 'Karan Desai Home',
+  description:
+    'Discover the innovative architectural designs of Karan Desai Home.',
   keywords: [
     'KDAD',
     'Karan Desai',
