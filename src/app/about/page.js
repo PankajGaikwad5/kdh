@@ -25,7 +25,7 @@ const page = () => {
           About
           </h1> */}
           <div className='w-full text-center flex justify-center'>
-            <h1 className='text-4xl font-bold text-gray-900 dark:text-white pb-8 border-b-2 border-gray-200 dark:border-gray-700 capitalize w-full md:max-w-3xl'>
+            <h1 className='text-4xl font-bold text-gray-950 dark:text-white pb-8 border-b-2 border-gray-200 dark:border-gray-700 capitalize w-full md:max-w-3xl'>
               about
             </h1>
           </div>
