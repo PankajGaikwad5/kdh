@@ -133,7 +133,8 @@ const Navbar = ({ isBgBlack, arrow }) => {
           })}
           <li className='border-t border-dotted pt-4'>
             <a
-              href='shukhabar'
+              href='https://www.karandesai.in/shukhabar'
+              target='_blank'
               className='hover:text-gray-600 transition-all duration-300'
             >
               shukhabar
@@ -142,6 +143,7 @@ const Navbar = ({ isBgBlack, arrow }) => {
           <li>
             <a
               href='https://karandesai.in'
+              target='_blank'
               className='hover:text-gray-600 transition-all duration-300'
             >
               kdad

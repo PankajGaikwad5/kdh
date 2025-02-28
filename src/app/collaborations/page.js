@@ -105,8 +105,8 @@ const page = () => {
             </div>
           ))}
         </div>
-        <Footer />
       </div>
+      <Footer />
       {selectedProject && (
         <div className='fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50'>
           <button
