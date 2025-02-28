@@ -162,7 +162,7 @@ function FloatingImagesGroup({
 
 export default function FloatingImagesScene() {
   // const pages = newImagePaths.length;
-  const duplicates = 0.1;
+  const duplicates = 0.4;
   const pages = newImagePaths.length * duplicates;
   const [isMobile, setIsMobile] = useState(false);
 
