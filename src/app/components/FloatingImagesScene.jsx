@@ -161,9 +161,9 @@ function FloatingImagesGroup({
 }
 
 export default function FloatingImagesScene() {
-  const pages = newImagePaths.length;
-  // const duplicates = 1;
-  // const pages = newImagePaths.length * duplicates;
+  // const pages = newImagePaths.length;
+  const duplicates = 0.1;
+  const pages = newImagePaths.length * duplicates;
   const [isMobile, setIsMobile] = useState(false);
 
   // Tooltip state: text, visibility, and screen coordinates
