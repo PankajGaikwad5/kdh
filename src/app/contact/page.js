@@ -227,7 +227,7 @@ const page = () => {
             </div>
 
             <div
-              className={`flex flex-col gap-4 sm:flex-row sm:gap-6 font-light  sm:text-left ${popins.className} tracking-widest`}
+              className={`flex flex-col gap-4 sm:flex-row sm:gap-6 font-normal  sm:text-left ${popins.className} tracking-widest`}
             >
               <p>
                 We are not a normal team of architects and interior designers,
