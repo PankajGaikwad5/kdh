@@ -93,7 +93,7 @@ const page = () => {
             Contact Us
           </h1>
         </div>
-        <div className='w-full text-black flex justify-center items-center flex-col lg:flex-row gap-8 py-12  '>
+        <div className='w-full text-black flex justify-center items-center flex-col lg:flex-row gap-8 md:py-12  '>
           <div className='w-full max-w-lg z-10 tracking-widest p-6 flex flex-col '>
             <p
               className={`text-xs font-bold mb-2 ${montserrat.className} uppercase font-light`}
@@ -169,7 +169,7 @@ const page = () => {
             </Form>
           </div>
           {/*  */}
-          <div className='w-full max-w-lg text-xs z-10 font-thin text-black p-4 flex flex-col space-y-4 my-12 py-10'>
+          <div className='w-full max-w-lg text-xs z-10 font-thin text-black p-4 flex flex-col space-y-4 md:my-12 md:py-10'>
             <div className='flex flex-wrap items-center gap-8 text-center '>
               <a
                 href='mailto:info@karandesai.in'
