@@ -17,7 +17,7 @@ const montserrat = Montserrat({
   weight: ['100', '200', '300', '400', '600', '700'], // Specify weight
 });
 
-const Navbar = ({ isBgBlack, arrow }) => {
+const Navbar = ({ isBgBlack, arrow, escape }) => {
   const router = useRouter();
   const [nav, setNav] = useState(false);
   const handleClick = (e) => {
@@ -34,8 +34,10 @@ const Navbar = ({ isBgBlack, arrow }) => {
   useEffect(() => {
     const handleEscape = (event) => {
       console.log('Escape key pressed'); // Debug log
-      if (event.key === 'Escape') {
-        handleClick(event);
+      if (escape) {
+        if (event.key === 'Escape') {
+          handleClick(event);
+        }
       }
     };
 

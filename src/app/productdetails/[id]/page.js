@@ -107,7 +107,7 @@ const page = (params) => {
         >
           <ArrowLeft size={25} />
         </button> */}
-        <Navbar arrow={true} />
+        <Navbar arrow={true} escape={true} />
         {/* <Link to='newSection' smooth={true} duration={500}>
         <button className='mt-4 p-2 bg-blue-500 text-white rounded'>
           Scroll to New Section
