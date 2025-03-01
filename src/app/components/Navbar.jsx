@@ -33,7 +33,7 @@ const Navbar = ({ isBgBlack, arrow, escape }) => {
 
   useEffect(() => {
     const handleEscape = (event) => {
-      console.log('Escape key pressed'); // Debug log
+      // console.log('Escape key pressed'); // Debug log
       if (escape) {
         if (event.key === 'Escape') {
           handleClick(event);
@@ -93,7 +93,7 @@ const Navbar = ({ isBgBlack, arrow, escape }) => {
   return (
     <>
       <div
-        className={` w-full flex fixed md:m-10 m-6 font-mono font-extralight text-xs uppercase tracking-wider text-gray-800 navMenu z-30 cursor-pointer ${
+        className={` w-full flex fixed md:m-8 m-6 font-mono font-extralight text-xs uppercase tracking-wider text-gray-800 navMenu z-30 cursor-pointer ${
           nav && 'open'
         }`}
         onClick={() => setNav(!nav)}

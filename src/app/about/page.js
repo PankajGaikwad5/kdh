@@ -53,7 +53,7 @@ const page = () => {
                 />
               </a>
             </div>
-            <p
+            {/* <p
               className={`font-light text-start flex flex-col space-y-4 pb-6 ${popins.className}`}
             >
               <span>
@@ -79,7 +79,7 @@ const page = () => {
                 functional art. Our unique approach and creative philosophy aim
                 to inspire and captivate, bringing exceptional products to life.
               </span>
-            </p>
+            </p> */}
           </div>
         </main>
       </div>
