@@ -26,13 +26,13 @@ const page = () => {
           //   backgroundSize: 'cover',
           //   backgroundPosition: 'center',
           // }}
-          className='w-full p-0 -mt-4 flex justify-center items-center'
+          className='w-full p-0 mt-6 flex justify-center items-center'
         >
           {/* <h1 className='uppercase md:text-6xl text-center flex flex-col md:gap-4 font-bold'>
             welcome to <span className=''>karan desai home</span>
           </h1> */}
           <Image
-            src='/assets/kdadlogo.png'
+            src='/assets/kdhlogo2.png'
             alt='Karan Desai Home Logo'
             width={200}
             height={200}
