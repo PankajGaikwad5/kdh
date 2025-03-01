@@ -1,10 +1,26 @@
-import React from 'react';
+'use client';
+import React, { useEffect, useState } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import FloatingImagesScene from './components/FloatingImagesScene';
 import Image from 'next/image';
 
 const page = () => {
+  const [dimensions, setDimensions] = useState({ width: 200, height: 200 });
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setDimensions({ width: 100, height: 100 });
+      } else {
+        setDimensions({ width: 200, height: 200 });
+      }
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   return (
     <div className='min-h-screen overflow-y-hidden'>
       <div
@@ -26,7 +42,7 @@ const page = () => {
           //   backgroundSize: 'cover',
           //   backgroundPosition: 'center',
           // }}
-          className='w-full p-0 mt-6 md:-mt-8 flex justify-center items-center'
+          className='w-full p-0 mt-6  flex justify-center items-center'
         >
           {/* <h1 className='uppercase md:text-6xl text-center flex flex-col md:gap-4 font-bold'>
             welcome to <span className=''>karan desai home</span>
@@ -34,9 +50,9 @@ const page = () => {
           <Image
             src='/assets/kdhlogo2.png'
             alt='Karan Desai Home Logo'
-            width={100}
-            height={100}
-            className='flex md:h-[200px] md:w-[200px]  justify-self-center object-contain  p-0 hover:cursor-pointer'
+            width={dimensions.width}
+            height={dimensions.height}
+            className='flex   justify-self-center object-contain  p-0 hover:cursor-pointer'
           />
         </div>
       </div>
