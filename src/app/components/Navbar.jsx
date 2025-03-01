@@ -20,6 +20,7 @@ const montserrat = Montserrat({
 const Navbar = ({ isBgBlack, arrow, escape }) => {
   const router = useRouter();
   const [nav, setNav] = useState(false);
+  const [white, setWhite] = useState(false);
   const handleClick = (e) => {
     e.preventDefault();
     // If there's a previous page in the history, go back
@@ -96,11 +97,26 @@ const Navbar = ({ isBgBlack, arrow, escape }) => {
         className={` w-full flex fixed md:m-8 m-6 font-mono font-extralight text-xs uppercase tracking-wider text-gray-800 navMenu z-30 cursor-pointer ${
           nav && 'open'
         }`}
-        onClick={() => setNav(!nav)}
+        onClick={() => {
+          setNav(!nav);
+          setWhite(!white);
+        }}
       >
-        <span className={`${isBgBlack ? 'bg-black' : 'bg-white'} `}></span>
-        <span className={`${isBgBlack ? 'bg-black' : 'bg-white'} `}></span>
-        <span className={`${isBgBlack ? 'bg-black' : 'bg-white'} `}></span>
+        <span
+          className={`${
+            isBgBlack ? `${!white ? 'bg-black' : 'bg-white'}` : 'bg-white'
+          } `}
+        ></span>
+        <span
+          className={`${
+            isBgBlack ? `${!white ? 'bg-black' : 'bg-white'}` : 'bg-white'
+          } `}
+        ></span>
+        <span
+          className={`${
+            isBgBlack ? `${!white ? 'bg-black' : 'bg-white'}` : 'bg-white'
+          } `}
+        ></span>
       </div>
 
       {/* <div className={`${!nav ? 'hidden' : 'block'} relative`}> */}

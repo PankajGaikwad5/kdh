@@ -26,7 +26,7 @@ const page = () => {
           //   backgroundSize: 'cover',
           //   backgroundPosition: 'center',
           // }}
-          className='w-full p-0 mt-6 flex justify-center items-center'
+          className='w-full p-0 mt-6 md:-mt-8 flex justify-center items-center'
         >
           {/* <h1 className='uppercase md:text-6xl text-center flex flex-col md:gap-4 font-bold'>
             welcome to <span className=''>karan desai home</span>
@@ -34,9 +34,9 @@ const page = () => {
           <Image
             src='/assets/kdhlogo2.png'
             alt='Karan Desai Home Logo'
-            width={200}
-            height={200}
-            className=' md:flex justify-self-center object-contain  p-0 hidden hover:cursor-pointer'
+            width={100}
+            height={100}
+            className='flex md:h-[200px] md:w-[200px]  justify-self-center object-contain  p-0 hover:cursor-pointer'
           />
         </div>
       </div>
