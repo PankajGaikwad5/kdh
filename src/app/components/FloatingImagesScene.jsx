@@ -227,7 +227,7 @@ export default function FloatingImagesScene() {
         }}
       >
         <ambientLight intensity={1} />
-        <ScrollControls pages={pages} damping={1}>
+        <ScrollControls pages={pages} damping={0.3}>
           <Suspense fallback={<CustomLoader />}>
             <FloatingImagesGroup
               imagePaths={newImagePaths}
