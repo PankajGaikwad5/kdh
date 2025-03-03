@@ -25,11 +25,6 @@ const page = (params) => {
       fileName: 'temp',
       filePath: '/assets/cat.gif',
     },
-    {
-      _id: 2,
-      fileName: 'temp',
-      filePath: '/assets/cat.gif',
-    },
   ];
   // const { id } = params;
   // console.log(id);
