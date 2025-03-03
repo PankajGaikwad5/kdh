@@ -42,13 +42,11 @@ const ProductCard = ({ title, img, id }) => {
                 <div className='absolute inset-0 bg-gray-200 dark:bg-gray-700 animate-pulse'></div>
               )}
               <Image
-                src={img}
+                src={isLoading ? '/assets/cat.gif' : img}
                 width='1000'
                 height='1000'
                 loading='lazy'
-                className={`object-cover transition-transform duration-300 rounded hover:scale-105 ${
-                  isLoading ? 'opacity-0' : 'opacity-100'
-                }`}
+                className={`object-cover transition-transform duration-300 rounded hover:scale-105`}
                 alt={title}
                 onLoad={() => setIsLoading(false)}
               />
