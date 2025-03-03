@@ -38,7 +38,7 @@ const SubProductCard = ({ title, img, id }) => {
             {isLoading ? (
               <div className='w-full h-6 bg-gray-200 dark:bg-gray-700 animate-pulse rounded'></div>
             ) : (
-              <h3 className='text-[0.5rem] md:text-sm font-bold text-gray-800 dark:text-gray-100 truncate text-center w-full uppercase'>
+              <h3 className='text-[0.75rem] md:text-sm font-bold text-gray-800 dark:text-gray-100 truncate text-center w-full uppercase'>
                 {title}
               </h3>
             )}
