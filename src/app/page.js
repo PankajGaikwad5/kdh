@@ -48,7 +48,7 @@ const page = () => {
             welcome to <span className=''>karan desai home</span>
           </h1> */}
           <Image
-            src='/assets/kdhlogo2.png'
+            src='/assets/kdhlogo3.png'
             alt='Karan Desai Home Logo'
             width={dimensions.width}
             height={dimensions.height}
@@ -56,7 +56,7 @@ const page = () => {
           />
         </div>
       </div>
-      <Navbar isBgBlack={true} />
+      <Navbar />
       <FloatingImagesScene />
     </div>
   );
