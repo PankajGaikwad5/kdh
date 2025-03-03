@@ -94,7 +94,7 @@ const Footer = () => {
           </a>
         </div>
         <div
-          className={`flex flex-col md:flex-row  text-zinc-800 font-medium hover:text-zinc-300  uppercase tracking-widest  line-clamp-6 space-x-4 md:-ml-44`}
+          className={`flex flex-col md:flex-row  text-zinc-800 font-medium hover:text-zinc-300  uppercase tracking-widest  line-clamp-6 md:space-x-4 space-y-1 md:space-y-0 md:-ml-44 text-center`}
         >
           <a
             href='/about'
@@ -126,7 +126,7 @@ const Footer = () => {
           >
             Contact us
           </a>
-          <div className='my-4 md:my-0 flex gap-4 items-center'>
+          <div className='my-4 md:my-0 flex gap-4 items-center py-4 md:py-0'>
             <a
               href='https://www.instagram.com/karandesaihome/'
               target='_blank'
