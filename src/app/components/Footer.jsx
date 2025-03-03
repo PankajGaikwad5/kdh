@@ -123,7 +123,7 @@ const Footer = () => {
               <FaWhatsapp size={25} />
             </a>
             <a
-              href='instagram.com'
+              href='https://www.linkedin.com/in/karandesaiad/'
               target='_blank'
               className='hover:text-blue-600 transition-all duration-500'
             >
