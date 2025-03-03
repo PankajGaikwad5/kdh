@@ -126,7 +126,7 @@ const Footer = () => {
           >
             Contact us
           </a>
-          <div className='my-4 md:my-0 flex gap-4 items-center py-4 md:py-0'>
+          <div className='my-4 md:my-0 flex gap-4 items-center py-4 md:py-0  justify-center'>
             <a
               href='https://www.instagram.com/karandesaihome/'
               target='_blank'
