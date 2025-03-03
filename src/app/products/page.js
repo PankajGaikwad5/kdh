@@ -97,23 +97,6 @@ const page = () => {
 
         <div className='w-full flex justify-center'>
           <div className='grid sm:grid-cols-2 lg:grid-cols-3 max-w-7xl lg:gap-x-10 '>
-            {/* <ProductCard title='first product' img={'/img/1.jpg'} />
-          <ProductCard title='first product' img={'/img/1.jpg'} />
-          <ProductCard title='first product' img={'/img/1.jpg'} />
-          <ProductCard title='first product' img={'/img/1.jpg'} />
-          <ProductCard title='first product' img={'/img/1.jpg'} />
-          <ProductCard title='first product' img={'/img/1.jpg'} />
-          <ProductCard title='first product' img={'/img/1.jpg'} /> */}
-            {/* {imgArray.map(({ title, images, _id }) => {
-            return (
-              <ProductCard
-                title={title}
-                img={images[0].filePath}
-                id={_id}
-                key={_id}
-              />
-            );
-          })} */}
             {products.map(({ title, img, id, group }) => {
               return (
                 <SubProductCard title={title} img={img} id={group} key={id} />

@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { CardBody, CardContainer, CardItem } from '../../components/ui/3d-card';
+import { useState } from 'react';
 // import { useRouter } from 'next/navigation';
 
 const ProductCard = ({ title, img, id }) => {
@@ -9,6 +10,8 @@ const ProductCard = ({ title, img, id }) => {
   const navigateTo = () => {
     window.location.href = `/productdetails/${id}`;
   };
+
+  const [isLoading, setIsLoading] = useState(true);
 
   return (
     <div
@@ -25,7 +28,7 @@ const ProductCard = ({ title, img, id }) => {
             className='w-full mt-4'
           >
             <div className='w-full aspect-[4/3] relative overflow-hidden flex justify-center items-center rounded-lg'>
-              <Image
+              {/* <Image
                 src={img}
                 // fill
                 width='1000'
@@ -34,25 +37,32 @@ const ProductCard = ({ title, img, id }) => {
                 // sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                 className='object-cover transition-transform duration-300 rounded hover:scale-105'
                 alt={title}
+              /> */}
+              {isLoading && (
+                <div className='absolute inset-0 bg-gray-200 dark:bg-gray-700 animate-pulse'></div>
+              )}
+              <Image
+                src={img}
+                width='1000'
+                height='1000'
+                loading='lazy'
+                className={`object-cover transition-transform duration-300 rounded hover:scale-105 ${
+                  isLoading ? 'opacity-0' : 'opacity-100'
+                }`}
+                alt={title}
+                onLoad={() => setIsLoading(false)}
               />
             </div>
           </CardItem>
 
           <div className='mt-4 space-y-2 flex justify-between items-center'>
-            <h3 className='text-lg  text-gray-800 dark:text-gray-100 truncate w-full text-center uppercase font-semibold'>
-              {title}
-            </h3>
-            <div className='flex justify-between items-center'>
-              {/* <span className='text-gray-500 dark:text-gray-400 text-sm'>
-                Starting from
-                <span className='ml-1 text-blue-600 dark:text-blue-400 font-medium'>
-                  $299
-                </span>
-              </span> */}
-              {/* <button className='px-3 py-1.5 text-sm bg-blue-600 hover:bg-blue-700 text-white rounded-md transition-colors duration-200'>
-                View Details
-              </button> */}
-            </div>
+            {isLoading ? (
+              <div className='w-full h-6 bg-gray-200 dark:bg-gray-700 animate-pulse rounded'></div>
+            ) : (
+              <h3 className='text-lg text-gray-800 dark:text-gray-100 truncate text-center w-full uppercase font-semibold'>
+                {title}
+              </h3>
+            )}
           </div>
         </CardBody>
       </CardContainer>
