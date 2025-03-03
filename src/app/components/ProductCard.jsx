@@ -42,7 +42,7 @@ const ProductCard = ({ title, img, id }) => {
                 <div className='absolute inset-0 bg-gray-200 dark:bg-gray-700 animate-pulse'></div>
               )}
               <Image
-                src={isLoading ? '/assets/cat.gif' : img}
+                src={img}
                 width='300'
                 height='300'
                 loading='lazy'
