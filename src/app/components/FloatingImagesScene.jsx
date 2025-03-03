@@ -109,8 +109,10 @@ function FloatingImagesGroup({
   const scroll = useScroll();
   const autoScroll = useRef(0);
   const totalDepth = imagePaths.length * spacing;
+  const scrollSpeed = 0.002;
 
   useFrame((state, delta) => {
+    autoScroll.current = (autoScroll.current + scrollSpeed * delta) % 1;
     const time = state.clock.getElapsedTime();
     const combinedOffset = scroll.offset + autoScroll.current;
     groupRef.current.position.z = totalDepth * (combinedOffset - 1);

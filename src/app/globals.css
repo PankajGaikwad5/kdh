@@ -10,10 +10,15 @@ body {
   padding: 0;
   opacity: 0;
   animation: fadeIn 0.9s ease-in-out forwards;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
 
   /* overflow: hidden; */
   /* background: #111; */
   /* background-image: ; */
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @keyframes fadeIn {

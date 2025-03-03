@@ -9,6 +9,7 @@ import {
   A11y,
   Zoom,
   Keyboard,
+  Autoplay,
 } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -148,7 +149,15 @@ const CarouselComp = ({ imgArray }) => {
       {/* Main Carousel */}
       <Swiper
         lazy={'true'}
-        modules={[Navigation, Thumbs, Pagination, A11y, Zoom, Keyboard]}
+        modules={[
+          Navigation,
+          Thumbs,
+          Pagination,
+          A11y,
+          Zoom,
+          Keyboard,
+          Autoplay,
+        ]}
         navigation
         thumbs={{ swiper: thumbsSwiper }}
         spaceBetween={10}
@@ -159,6 +168,10 @@ const CarouselComp = ({ imgArray }) => {
         pagination={{ clickable: true }}
         zoom={true}
         keyboard={{ enabled: true, onlyInViewport: true }}
+        autoplay={{
+          delay: 3000, // Time in milliseconds between slides
+          disableOnInteraction: true, // Keep autoplay running after interaction
+        }}
       >
         {imgArray.map((img, index) => (
           <SwiperSlide key={index}>

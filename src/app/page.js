@@ -22,7 +22,7 @@ const page = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
   return (
-    <div className='min-h-screen overflow-y-hidden'>
+    <div className='min-h-screen overflow-y-hidden scrollhide overflow-hidden bg-black'>
       <div
         style={{
           position: 'absolute',
@@ -34,7 +34,7 @@ const page = () => {
           // backgroundPosition: 'center',
           zIndex: 1,
         }}
-        className='flex justify-center text-start items-start'
+        className='flex  justify-center text-start items-start'
       >
         <div
           // style={{
@@ -42,7 +42,7 @@ const page = () => {
           //   backgroundSize: 'cover',
           //   backgroundPosition: 'center',
           // }}
-          className='w-full p-0 mt-6  flex justify-center items-center'
+          className='w-full p-0 mt-6  flex justify-center items-center '
         >
           {/* <h1 className='uppercase md:text-6xl text-center flex flex-col md:gap-4 font-bold'>
             welcome to <span className=''>karan desai home</span>

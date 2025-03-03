@@ -4,6 +4,7 @@ export const collabs = [
       $oid: '6791f5807a5dc4ac2d27e20e',
     },
     title: 'the quarry',
+    moreDetails: ''
     images: [
       {
         fileName: '1.jpg',

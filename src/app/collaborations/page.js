@@ -108,7 +108,7 @@ const page = () => {
       </div>
       <Footer />
       {selectedProject && (
-        <div className='fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50'>
+        <div className='fixed flex-col w-full h-screen inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50'>
           <button
             className='absolute top-14 left-14 z-10 text-white text-4xl font-bold'
             onClick={closeModal}
@@ -121,12 +121,13 @@ const page = () => {
               imgArray={selectedProject.map((image) => image.fileUrl)}
             />
           </div>
-          {/* <a
+          <h3 className='text-white'>ID 2024</h3>
+          <a
             href='/kdad'
             className='absolute right-20 bottom-14 underline  z-10 tracking-widest text-blue-600'
           >
-            know more
-          </a> */}
+            see more details
+          </a>
         </div>
       )}
     </div>
