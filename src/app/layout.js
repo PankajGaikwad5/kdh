@@ -95,7 +95,7 @@ export default function RootLayout({ children }) {
           content='Discover the innovative architectural designs of Karan Desai Home.'
         />
       </Head>
-      <body className={`${montserrat.className} antialiased`}>
+      <body className={`tracking-wider antialiased`}>
         {children}
         {/* <Footer /> */}
       </body>

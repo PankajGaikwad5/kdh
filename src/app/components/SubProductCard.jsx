@@ -24,8 +24,8 @@ const SubProductCard = ({ title, img, id }) => {
               )}
               <Image
                 src={isLoading ? '/assets/cat.gif' : img}
-                width='1000'
-                height='1000'
+                width='300'
+                height='300'
                 loading='lazy'
                 className={`object-cover transition-transform duration-300 rounded hover:scale-105 `}
                 alt={title}
@@ -38,7 +38,7 @@ const SubProductCard = ({ title, img, id }) => {
             {isLoading ? (
               <div className='w-full h-6 bg-gray-200 dark:bg-gray-700 animate-pulse rounded'></div>
             ) : (
-              <h3 className='text-lg text-gray-800 dark:text-gray-100 truncate text-center w-full uppercase font-semibold'>
+              <h3 className='text-sm font-bold text-gray-800 dark:text-gray-100 truncate text-center w-full uppercase'>
                 {title}
               </h3>
             )}

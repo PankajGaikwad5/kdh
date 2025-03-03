@@ -111,15 +111,19 @@ const DescAccordian = ({ scrollPosition, desc, title, dimensions }) => {
       //   transition: 'transform 0.1s ease-out',
       // }}
     >
-      <div className='flex flex-col md:w-1/2 px-6 md:px-16'>
+      <div className='flex flex-col md:w-[50%] px-6 md:px-16'>
         <h1 className='uppercase font-bold my-4 text-2xl'>{title}</h1>
-        <h1 className='uppercase text-zinc-500 font-semibold my-4 text-xl'>
+        {/* <h1 className='uppercase text-zinc-500 font-semibold my-4 text-base'>
           description
-        </h1>
-        <p className='font-semibold '>{desc}</p>
+        </h1> */}
+        <p className=' text-sm text-zinc-800 font-medium checkfont'>{desc}</p>
       </div>
-      <div className='flex flex-col mt-10  md:w-1/2 px-6 md:px-16'>
-        <Accordion type='single' collapsible className='space-y-4'>
+      <div className='flex flex-col  md:w-[50%] px-6 md:px-16'>
+        <Accordion
+          type='single'
+          collapsible
+          className='space-y-4 font-thin text-sm text-zinc-700'
+        >
           <AccordionItem
             value='item-1'
             className='border-y-[1px] border-zinc-600 py-1'

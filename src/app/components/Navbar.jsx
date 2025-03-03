@@ -126,10 +126,10 @@ const Navbar = ({ isBgBlack, arrow, escape }) => {
             ? 'absolute w-full h-screen bottom-[100%]  flex flex-col p-4 justify-center items-start md:max-w-xs text-gray-800 duration-500 z-20 uppercase'
             : `fixed w-full h-screen left-0 bottom-0 flex flex-col uppercase  ${
                 isBgBlack ? 'text-white' : 'text-white'
-              } text-3xl justify-center items-start md:max-w-xs bg-black/90 p-4 z-20 duration-500 `
+              }  justify-center items-start md:max-w-xs tracking-widest bg-black/90 p-4 z-20 duration-500 `
         }
       >
-        <ul className={`flex flex-col gap-2 text-2xl font-bold  `}>
+        <ul className={`flex flex-col text-lg  `}>
           <a
             href='/'
             className={`hover:text-gray-600 transition-all duration-300`}
@@ -149,7 +149,7 @@ const Navbar = ({ isBgBlack, arrow, escape }) => {
               </li>
             );
           })}
-          <li className='border-t border-dotted pt-4'>
+          {/* <li className='border-t border-dotted pt-4'>
             <a
               href='https://www.karandesai.in/shukhabar'
               target='_blank'
@@ -166,7 +166,7 @@ const Navbar = ({ isBgBlack, arrow, escape }) => {
             >
               kdad
             </a>
-          </li>
+          </li> */}
         </ul>
       </ul>
       {/* </div> */}

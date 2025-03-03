@@ -25,11 +25,11 @@ const page = () => {
 
   const products = [
     {
-      id: 1,
-      title: 'Monster 1.0 Collection',
-      group: 'monster_1.0',
-      img: '/assets/products/1738926778783-Slide2.JPG',
-      projects: 'monster basin, monster bathtub, monster console',
+      id: 3,
+      title: 'Monster 3.0 Collection',
+      group: 'monster_3.0',
+      img: '/assets/products/1739952336217-Monster%20chai%20Opt%201.52.jpg',
+      projects: 'gattoo x top brewer, yoda',
     },
     {
       id: 2,
@@ -39,11 +39,11 @@ const page = () => {
       projects: 'gattoo x top brewer, yoda',
     },
     {
-      id: 3,
-      title: 'Monster 3.0 Collection',
-      group: 'monster_3.0',
-      img: '/assets/products/1739952336217-Monster%20chai%20Opt%201.52.jpg',
-      projects: 'gattoo x top brewer, yoda',
+      id: 1,
+      title: 'Monster 1.0 Collection',
+      group: 'monster_1.0',
+      img: '/assets/products/1738926778783-Slide2.JPG',
+      projects: 'monster basin, monster bathtub, monster console',
     },
     {
       id: 4,

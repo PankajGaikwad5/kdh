@@ -119,17 +119,11 @@ const page = (params) => {
           </Element>
         </div>
         <Element name='newSection' className=' w-full m-0 p-0 hidden md:block'>
-          <div className='w-full h-6 bg-zinc-200/50 '></div>
-          <div
+          <div className='w-full h-[2px] bg-zinc-200/50 border-b border-zinc-700'></div>
+          {/* <div
             className='w-full p-4  border-y-[1px] border-zinc-400'
-            // style={{
-            //   transform: `translateY(${scrollPosition * 0.1}px)`, // Simple parallax effect
-            //   transition: 'transform 0.1s ease-out',
-            // }}
           >
-            {' '}
-            {/* <div className='flex justify-center items-center h-full'> */}
-            <div className='flex justify-around text-md uppercase text-zinc-700 items-center hover:text-zinc-400 transition-all duration-100 sticky top-0 z-10 px-6 py-0 font-semibold bg-white '>
+            <div className='flex justify-around text-sm uppercase text-zinc-700 items-center hover:text-zinc-400 transition-all duration-100 sticky top-0 z-10 px-6 py-0 font-semibold bg-white '>
               <Link to='description' smooth={true} duration={500}>
                 <button className='text-md uppercase font-semibold hover:text-zinc-900 transition-all duration-500'>
                   description
@@ -151,8 +145,7 @@ const page = (params) => {
                 </button>
               </Link>
             </div>
-            {/* </div> */}
-          </div>
+          </div> */}
         </Element>
         <Element name='description' className='border-b-2 border-zinc-400 '>
           <DescAccordian
@@ -162,23 +155,23 @@ const page = (params) => {
             title={title}
           />
         </Element>
-        <Element name='dimensions' className='border-b-2 border-zinc-400 '>
+        {/* <Element name='dimensions' className='border-b-2 border-zinc-400 '>
           <div className='p-4'>
             <div className='flex flex-col md:flex-row items-center text-zinc-700 px-4 md:px-8 justify-between'>
-              <h1 className='uppercase font-bold my-4 md:text-lg'>
+              <h1 className='uppercase font-bold my-4 md:text-base tracking-wider'>
                 Dimensions and Download
               </h1>
               <div className='flex  flex-col justify-center items-center md:flex-row gap-4 md:space-x-14 px-4'>
-                <button className='px-4 py-2 md:px-10 md:py-2 underline hover:bg-red-600 hover:text-white transition-all duration-500 border-zinc-500 border-2 hover:border-red-600 text-base font-semibold'>
+                <button className='px-4 py-2 md:px-10 md:py-2 underline hover:bg-red-600 hover:text-white transition-all duration-500 border-zinc-500 border-2 hover:border-red-600 text-sm font-semibold'>
                   Dimensions
                 </button>
-                <button className='px-4 py-2 md:px-10 md:py-2 bg-red-600 text-white hover:bg-red-500 hover:text-white transition-all duration-300 border-zinc-500  text-base font-semibold'>
+                <button className='px-4 py-2 md:px-10 md:py-2 bg-red-600 text-white hover:bg-red-500 hover:text-white transition-all duration-300 border-zinc-500  text-sm font-semibold'>
                   Product sheet
                 </button>
               </div>
             </div>
           </div>
-        </Element>
+        </Element> */}
         <Element name='footer'>
           <Footer />
         </Element>
