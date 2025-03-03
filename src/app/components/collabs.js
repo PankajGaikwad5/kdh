@@ -4,6 +4,8 @@ export const collabs = [
       $oid: '6791f5807a5dc4ac2d27e20e',
     },
     title: 'the quarry',
+    details: 'ID 2022',
+    moreDetails: '/products/monster_1.0',
     images: [
       {
         fileName: '1.jpg',
@@ -55,6 +57,8 @@ export const collabs = [
       $oid: '6791fe227a5dc4ac2d27e24e',
     },
     title: 'Top Brewer',
+    details: 'ID 2024',
+    moreDetails: '/productdetails/67a5eb7e4da9b29cd0f10b69',
     images: [
       {
         fileName: '2.jpg',
@@ -128,6 +132,8 @@ export const collabs = [
       $oid: '3',
     },
     title: 'bft',
+    details: 'ID 2024',
+    moreDetails: '/productdetails/67a5eb9f4da9b29cd0f10b71',
     images: [
       {
         fileName: 'new1.jpg',
@@ -215,6 +221,8 @@ export const collabs = [
       $oid: '4',
     },
     title: 'marble',
+    details: 'ID 2024',
+    moreDetails: '/products/matilda',
     images: [
       {
         fileName: '2.jpg',
@@ -238,6 +246,8 @@ export const collabs = [
       $oid: '5',
     },
     title: 'casa',
+    details: 'ID 2024',
+    moreDetails: '/products/matilda',
     images: [
       {
         fileName: '2.jpg',
@@ -290,6 +300,8 @@ export const collabs = [
       $oid: '6',
     },
     title: 'serafini',
+    details: 'Salone 2024',
+    moreDetails: '/productdetails/67a5fa124da9b29cd0f10c36',
     images: [
       {
         fileName: '2.jpg',

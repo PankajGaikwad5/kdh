@@ -21,6 +21,14 @@ body {
   }
 }
 
+.scrollhide {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

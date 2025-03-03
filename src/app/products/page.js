@@ -28,28 +28,28 @@ const page = () => {
       id: 3,
       title: 'Monster 3.0 Collection',
       group: 'monster_3.0',
-      img: '/assets/products/1739952336217-Monster%20chai%20Opt%201.52.jpg',
+      img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnYy0rpbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
       projects: 'gattoo x top brewer, yoda',
     },
     {
       id: 2,
       title: 'Monster 2.0 Collection',
       group: 'monster_2.0',
-      img: '/assets/products/1738926974587-Slide4.JPG',
+      img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUMeOsVlwfQbC4M3ZGkSm6KPAV10HlYU9dinrX',
       projects: 'gattoo x top brewer, yoda',
     },
     {
       id: 1,
       title: 'Monster 1.0 Collection',
       group: 'monster_1.0',
-      img: '/assets/products/1738926778783-Slide2.JPG',
+      img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUlXq7879DZL6up3G75dgCY2rJjaQFwifBAEky',
       projects: 'monster basin, monster bathtub, monster console',
     },
     {
       id: 4,
       title: 'Matilda Collection',
       group: 'matilda',
-      img: '/assets/products/1738927300853-Slide6.JPG',
+      img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUA1rftpJ1oeY2wnF0zQbWX83C4KujdSqt6MUT',
       projects:
         'table lamp, library, partition screen, console 1, console 2, coffee table, center table 1, center table 2, basin, flower vase, planter, side table, u table, bathtub, chair, bench floor lamp',
     },
@@ -57,7 +57,7 @@ const page = () => {
       id: 5,
       title: 'Monster Collection',
       group: 'monster_collection',
-      img: '/assets/products/1738928071412-Slide1.JPG',
+      img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8C1mTl64oKUn37W6wsTlRmDBFhGrviIjcMxV',
       projects:
         'monster binty, monster brainy, monster gattooffer, monster guard, monster gum, monster grumpy, monster squinty',
     },
@@ -65,48 +65,31 @@ const page = () => {
       id: 6,
       title: 'Serafini X KD Bench',
       group: 'serafini',
-      img: '/assets/products/1738930706115-Slide1.JPG',
+      img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDRVbUDg8FYI8sxbtc2ngQN4ZeSPwOKkv5yAj',
       projects: 'serafini',
     },
     {
       id: 7,
       title: 'Monsformer',
       group: 'monsformer',
-      img: '/assets/products/1738930738995-Slide4.JPG',
+      img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJw4h4udtZQpOq9no3vVs5yPKXR8gEYuikGUw',
       projects: 'monsformer',
     },
   ];
 
   return (
-    <div
-      className='min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800'
-      style={{
-        backgroundImage: `url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.1'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-      }}
-    >
-      <Navbar isBgBlack={true} />
-      <div className='pt-12  px-4 sm:px-6 lg:px-8 '>
-        {/* <h1 className='text-4xl font-bold text-gray-900 max-w-5xl dark:text-white mb-8'>
-          Our Products
-        </h1> */}
-        <div className='w-full text-center flex justify-center'>
-          <h1 className='text-4xl font-bold text-gray-900 dark:text-white pb-8 border-b-2 border-gray-200 dark:border-gray-700 capitalize w-full md:max-w-3xl'>
-            Our Products
-          </h1>
-        </div>
-
-        <div className='w-full flex justify-center'>
-          <div className='grid sm:grid-cols-2 lg:grid-cols-3 max-w-7xl lg:gap-x-10 '>
-            {products.map(({ title, img, id, group }) => {
-              return (
-                <SubProductCard title={title} img={img} id={group} key={id} />
-              );
-            })}
-          </div>
-        </div>
+    <>
+      <div className='min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800'>
+        <Navbar isBgBlack={true} />
+        {/* Grid container fills the available vertical space */}
+        <main className='flex-grow grid grid-cols-2 md:grid-cols-4  gap-4 p-4 h-full md:h-screen'>
+          {products.map(({ title, img, group, id }) => (
+            <SubProductCard key={id} title={title} img={img} id={group} />
+          ))}
+        </main>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </>
   );
 };
 
