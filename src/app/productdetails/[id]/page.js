@@ -23,12 +23,12 @@ const page = (params) => {
     {
       _id: 1,
       fileName: 'temp',
-      filePath: '/assets/loading.gif',
+      filePath: '/assets/cat.gif',
     },
     {
       _id: 2,
       fileName: 'temp',
-      filePath: '/assets/loading.gif',
+      filePath: '/assets/cat.gif',
     },
   ];
   // const { id } = params;
