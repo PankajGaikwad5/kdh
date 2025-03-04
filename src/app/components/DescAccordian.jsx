@@ -105,7 +105,7 @@ const DescAccordian = ({ scrollPosition, desc, title, dimensions }) => {
 
   return (
     <div
-      className='flex flex-col md:flex-row gap-4 w-full bg-zinc-100/50  text-zinc-700 py-8'
+      className='flex flex-col md:flex-row gap-4 w-full bg-zinc-800/50  text-zinc-200 py-8'
       // style={{
       //   transform: `translateY(${scrollPosition * 0.1}px)`, // Simple parallax effect
       //   transition: 'transform 0.1s ease-out',
@@ -116,19 +116,19 @@ const DescAccordian = ({ scrollPosition, desc, title, dimensions }) => {
         {/* <h1 className='uppercase text-zinc-500 font-semibold my-4 text-base'>
           description
         </h1> */}
-        <p className=' text-sm text-zinc-800 font-medium checkfont'>{desc}</p>
+        <p className=' text-sm text-zinc-300 font-medium checkfont'>{desc}</p>
       </div>
       <div className='flex flex-col  md:w-[50%] px-6 md:px-16'>
         <Accordion
           type='single'
           collapsible
-          className='space-y-4 font-thin text-sm text-zinc-700'
+          className='space-y-4 font-thin text-sm text-zinc-400'
         >
           <AccordionItem
             value='item-1'
             className='border-y-[1px] border-zinc-600 py-1'
           >
-            <AccordionTrigger className='text-zinc-800 uppercase font-semibold'>
+            <AccordionTrigger className='text-zinc-300 uppercase font-semibold'>
               Technical information
             </AccordionTrigger>
             <AccordionContent>
@@ -144,7 +144,7 @@ const DescAccordian = ({ scrollPosition, desc, title, dimensions }) => {
             value='item-2'
             className='border-y-[1px] border-zinc-600 py-1'
           >
-            <AccordionTrigger className='text-zinc-800 uppercase font-semibold'>
+            <AccordionTrigger className='text-zinc-300 uppercase font-semibold'>
               Dimensions
             </AccordionTrigger>
             <AccordionContent>{dimensions}</AccordionContent>
@@ -153,7 +153,7 @@ const DescAccordian = ({ scrollPosition, desc, title, dimensions }) => {
             value='item-3'
             className='border-y-[1px] border-zinc-600 py-1'
           >
-            <AccordionTrigger className='text-zinc-800 uppercase font-semibold'>
+            <AccordionTrigger className='text-zinc-300 uppercase font-semibold'>
               download pdf
             </AccordionTrigger>
             <AccordionContent>
@@ -172,7 +172,7 @@ const DescAccordian = ({ scrollPosition, desc, title, dimensions }) => {
             value='item-4'
             className='border-y-[1px] border-zinc-600 py-1'
           >
-            <AccordionTrigger className='text-zinc-800 uppercase font-semibold'>
+            <AccordionTrigger className='text-zinc-300 uppercase font-semibold'>
               3d model
             </AccordionTrigger>
             <AccordionContent>
@@ -194,7 +194,7 @@ const DescAccordian = ({ scrollPosition, desc, title, dimensions }) => {
                         <FormLabel>Name</FormLabel>
                         <FormControl>
                           <Input
-                            className='text-black'
+                            className='bg-black text-white placeholder:text-white'
                             placeholder='Enter your name'
                             {...field}
                           />
@@ -211,7 +211,7 @@ const DescAccordian = ({ scrollPosition, desc, title, dimensions }) => {
                         <FormLabel>Email</FormLabel>
                         <FormControl>
                           <Input
-                            className='text-black'
+                            className='bg-black text-white placeholder:text-white'
                             placeholder='Enter your email'
                             {...field}
                           />
@@ -229,7 +229,7 @@ const DescAccordian = ({ scrollPosition, desc, title, dimensions }) => {
                         <FormControl>
                           <Textarea
                             placeholder='Enter your message'
-                            className='input textarea text-black'
+                            className='input textarea bg-black text-white placeholder:text-white'
                             rows={5}
                             {...field}
                           />

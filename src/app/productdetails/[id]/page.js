@@ -94,7 +94,7 @@ const page = (params) => {
   // const parallaxOffset = Math.max(0, scrollPosition - window.innerHeight);
 
   return (
-    <div className=''>
+    <div className='bg-black'>
       <div className='flex flex-col relative overflow-hidden'>
         {/* <button
           className='fixed z-10 left-4 md:left-12 bottom-6 md:bottom-10 bg-white text-black p-2 border-2 border-black rounded-full'

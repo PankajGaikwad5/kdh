@@ -151,7 +151,7 @@ export const newImagePaths = [
   },
   {
     name: 'Yoda',
-    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUI15yL8W6qU3iBow9cLQK4A1kuMTGmF8rel2f',
+    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSwGCHZAKnraNxkI5vbez6dT2q8M0osBfR9At',
     group: 'Monster 2.0',
     productId: '67a5eb9f4da9b29cd0f10b71',
   },
@@ -418,7 +418,7 @@ export const newImagePaths = [
       },
       {
         name: 'Yoda',
-        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUI15yL8W6qU3iBow9cLQK4A1kuMTGmF8rel2f',
+        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSwGCHZAKnraNxkI5vbez6dT2q8M0osBfR9At',
         group: 'Monster 2.0',
         productId: '67a5eb9f4da9b29cd0f10b71',
       },

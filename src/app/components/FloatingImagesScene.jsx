@@ -8,7 +8,7 @@ import {
 } from '@react-three/drei';
 import * as THREE from 'three';
 import { useRouter } from 'next/navigation';
-import { imagePaths, newImagePaths } from './imagePaths';
+import { newImagePaths } from './imagePaths';
 import { Suspense } from 'react';
 import CustomLoader from './CustomLoader';
 
@@ -131,8 +131,8 @@ function FloatingImagesGroup({
         const x = -index * spacing - i * totalWidth;
         // Small variations in Z for subtle depth
         const z = -10 + Math.sin(index * 0.5) * depthVariation;
-        // Alternate image positions vertically
-        const y = (index % 2 === 0 ? 1 : -1) * (Math.random() * yVariation);
+        // Alternate image positions vertically in a deterministic way
+        const y = (index % 2 === 0 ? 1 : -1) * (index % 4) * yVariation * 0.25;
 
         images.push({
           url,
@@ -162,7 +162,7 @@ function FloatingImagesGroup({
 }
 
 export default function FloatingImagesScene() {
-  const duplicates = 0.4;
+  const duplicates = 0.09;
   const pages = newImagePaths.length * duplicates;
   const [isMobile, setIsMobile] = useState(false);
 
@@ -200,10 +200,10 @@ export default function FloatingImagesScene() {
   };
 
   // Adjust parameters based on screen size
-  const spacingVal = isMobile ? 10 : 10;
+  const spacingVal = isMobile ? 10 : 20;
   const depthVariationVal = isMobile ? 5 : 5;
   const yVariationVal = isMobile ? 30 : 30;
-  const baseScaleVal = isMobile ? 15 : 20;
+  const baseScaleVal = isMobile ? 15 : 22;
 
   return (
     <>
@@ -225,7 +225,7 @@ export default function FloatingImagesScene() {
         <ambientLight intensity={1} />
         <ScrollControls
           pages={pages}
-          damping={0.3}
+          damping={0.5}
           horizontal={true}
           reversed={false}
         >
