@@ -90,39 +90,39 @@ const Footer = () => {
         </div> */}
         <div className='flex py-4 justify-center items-center px-4'>
           <a href='/'>
-            <img src='/assets/kdhlogo2.png' alt='' className='w-48 md:w-40' />
+            <img src='/assets/kdhlogo3.png' alt='' className='w-48 md:w-40' />
           </a>
         </div>
         <div
-          className={`flex flex-col md:flex-row  text-zinc-800 font-medium hover:text-zinc-300  uppercase tracking-widest  line-clamp-6 md:space-x-4 space-y-1 md:space-y-0 md:-ml-44 text-center`}
+          className={`flex flex-col md:flex-row  text-white font-medium hover:text-zinc-800  uppercase tracking-widest  line-clamp-6 md:space-x-4 space-y-1 md:space-y-0 md:-ml-44 text-center`}
         >
           <a
             href='/about'
-            className='hover:scale-90 hover:text-zinc-900 transition-all duration-300'
+            className='hover:scale-90 hover:text-white transition-all duration-300'
           >
             About
           </a>
           <a
             href='/products'
-            className='hover:scale-90 hover:text-zinc-900 transition-all duration-300'
+            className='hover:scale-90 hover:text-white transition-all duration-300'
           >
             Products
           </a>
           <a
             href='/catalogue'
-            className='hover:scale-90 hover:text-zinc-900 transition-all duration-300'
+            className='hover:scale-90 hover:text-white transition-all duration-300'
           >
             Catalogue
           </a>
           <a
             href='/collaborations'
-            className='hover:scale-90 hover:text-zinc-900 transition-all duration-300'
+            className='hover:scale-90 hover:text-white transition-all duration-300'
           >
             Collaborations
           </a>
           <a
             href='/contact'
-            className='hover:scale-90 hover:text-zinc-900 transition-all duration-300'
+            className='hover:scale-90 hover:text-white transition-all duration-300'
           >
             Contact us
           </a>

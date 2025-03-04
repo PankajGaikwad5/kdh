@@ -16,8 +16,8 @@ const SubProductCard = ({ title, img, id }) => {
       className='cursor-pointer transform transition duration-300 hover:scale-[1.02] hover:z-20'
     >
       <div className='p-0'>
-        <div className=' shadow-sm transition-shadow duration-300'>
-          <div translateZ='200' className='w-full mt-4'>
+        <div className='duration-300'>
+          <div className='w-full mt-4'>
             <div className='w-full aspect-[4/3] relative overflow-hidden flex justify-center items-center rounded-lg'>
               {isLoading && (
                 <div className='absolute inset-0 bg-gray-200 dark:bg-gray-700 animate-pulse'></div>
@@ -38,7 +38,7 @@ const SubProductCard = ({ title, img, id }) => {
             {isLoading ? (
               <div className='w-full h-6 bg-gray-200 dark:bg-gray-700 animate-pulse rounded'></div>
             ) : (
-              <h3 className='text-[0.75rem] md:text-sm font-bold text-gray-800 dark:text-gray-100 truncate text-center w-full uppercase'>
+              <h3 className='text-[0.75rem] md:text-sm font-bold text-white truncate text-center w-full uppercase'>
                 {title}
               </h3>
             )}

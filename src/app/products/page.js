@@ -42,7 +42,7 @@ const page = () => {
       id: 1,
       title: 'Monster 1.0 Collection',
       group: 'monster_1.0',
-      img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUlXq7879DZL6up3G75dgCY2rJjaQFwifBAEky',
+      img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUreGqMKNnDI67jcCaomXhZLsJd91f4YGitMHP',
       projects: 'monster basin, monster bathtub, monster console',
     },
     {
@@ -55,7 +55,7 @@ const page = () => {
     },
     {
       id: 5,
-      title: 'Monster Collection',
+      title: 'Monster Collectibles',
       group: 'monster_collection',
       img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8C1mTl64oKUn37W6wsTlRmDBFhGrviIjcMxV',
       projects:
@@ -63,14 +63,14 @@ const page = () => {
     },
     {
       id: 6,
-      title: 'Serafini X KD Bench',
+      title: 'KD Bench X Serafini',
       group: 'serafini',
       img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDRVbUDg8FYI8sxbtc2ngQN4ZeSPwOKkv5yAj',
       projects: 'serafini',
     },
     {
       id: 7,
-      title: 'Monsformer',
+      title: 'Monsformer X Blum',
       group: 'monsformer',
       img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJw4h4udtZQpOq9no3vVs5yPKXR8gEYuikGUw',
       projects: 'monsformer',
@@ -79,10 +79,11 @@ const page = () => {
 
   return (
     <>
-      <div className='min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800'>
-        <Navbar isBgBlack={true} />
+      <div className='min-h-screen flex flex-col bg-gradient-to-b bg-black'>
+        <Navbar />
         {/* Grid container fills the available vertical space */}
-        <main className='flex-grow grid grid-cols-2 md:grid-cols-4  gap-4 p-4 h-full md:h-screen'>
+
+        <main className='flex-grow grid grid-cols-2 md:grid-cols-4 pt-10 gap-4 p-4 '>
           {products.map(({ title, img, group, id }) => (
             <SubProductCard key={id} title={title} img={img} id={group} />
           ))}

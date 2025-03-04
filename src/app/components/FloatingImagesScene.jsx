@@ -16,10 +16,10 @@ function FloatingImage({
   url,
   position,
   baseScale = 3,
-  visibleFront = -50,
-  visibleBack = 5,
-  fadeZone = 150,
-  onHover, // tooltip callback
+  visibleLeft = -80,
+  visibleRight = 80,
+  fadeZone = 40,
+  onHover,
   onOut,
   productId,
   name,
@@ -30,13 +30,13 @@ function FloatingImage({
   const aspect = texture.image ? texture.image.width / texture.image.height : 1;
   const router = useRouter();
 
-  const computeOpacity = (worldZ) => {
-    if (worldZ < visibleFront - fadeZone) return 0;
-    if (worldZ < visibleFront)
-      return (worldZ - (visibleFront - fadeZone)) / fadeZone;
-    if (worldZ <= visibleBack) return 1;
-    if (worldZ <= visibleBack + fadeZone)
-      return 1 - (worldZ - visibleBack) / fadeZone;
+  // Same opacity function but we'll reverse positioning later
+  const computeOpacity = (worldX) => {
+    if (worldX > visibleRight + fadeZone) return 0;
+    if (worldX > visibleRight) return 1 - (worldX - visibleRight) / fadeZone;
+    if (worldX >= visibleLeft) return 1;
+    if (worldX >= visibleLeft - fadeZone)
+      return (worldX - (visibleLeft - fadeZone)) / fadeZone;
     return 0;
   };
 
@@ -44,7 +44,7 @@ function FloatingImage({
     if (ref.current) {
       const worldPos = new THREE.Vector3();
       ref.current.getWorldPosition(worldPos);
-      ref.current.material.opacity = computeOpacity(worldPos.z);
+      ref.current.material.opacity = computeOpacity(worldPos.x);
     }
   });
 
@@ -52,24 +52,15 @@ function FloatingImage({
     if (productId) {
       router.push(`/productdetails/${productId}`);
     } else {
-      // Fallback if no productId is provided
       router.push('/products');
     }
   };
 
   const handlePointerOver = () => {
-    // document.body.style.cursor = 'pointer';
-    // if (onHover) onHover('View Product');
-    // if (onHover) onHover(`${name}\n${group}`);
-    // if (onHover) onHover({ name, group });
-    // if (ref.current.material.opacity < 0.5) return;
-    // document.body.style.cursor = 'pointer';
-    // if (onHover) onHover({ name, group });
     if (ref.current) {
       const worldPos = new THREE.Vector3();
       ref.current.getWorldPosition(worldPos);
-      const opacity = computeOpacity(worldPos.z);
-      // Only show tooltip if the image is nearly fully visible
+      const opacity = computeOpacity(worldPos.x);
       if (opacity < 0.7) return;
     }
     document.body.style.cursor = 'pointer';
@@ -98,28 +89,31 @@ function FloatingImage({
 
 function FloatingImagesGroup({
   imagePaths,
-  spacing = 10,
-  amplitudeX = 8,
-  amplitudeY = 3,
+  spacing = 30,
+  depthVariation = 10,
+  yVariation = 10,
   baseScale = 3,
-  onImageHover, // forwarded tooltip callback
+  onImageHover,
   onImageOut,
 }) {
   const groupRef = useRef();
   const scroll = useScroll();
   const autoScroll = useRef(0);
-  const totalDepth = imagePaths.length * spacing;
-  const scrollSpeed = 0.002;
+  const totalWidth = imagePaths.length * spacing;
+  const scrollSpeed = 0.0002;
 
   useFrame((state, delta) => {
     autoScroll.current = (autoScroll.current + scrollSpeed * delta) % 1;
     const time = state.clock.getElapsedTime();
     const combinedOffset = scroll.offset + autoScroll.current;
-    groupRef.current.position.z = totalDepth * (combinedOffset - 1);
 
+    // Reverse direction: negative sign makes items move from left to right
+    groupRef.current.position.x = -totalWidth * (combinedOffset - 1);
+
+    // Add subtle floating animation
     groupRef.current.children.forEach((child, index) => {
-      const floatingAmplitude = 0.5;
-      const floatingSpeed = 1;
+      const floatingAmplitude = 0.3;
+      const floatingSpeed = 0.5;
       const offset = index * 0.1;
       child.position.y +=
         Math.sin(time * floatingSpeed + offset) * floatingAmplitude * delta;
@@ -132,9 +126,14 @@ function FloatingImagesGroup({
     for (let i = 0; i < duplicates; i++) {
       imagePaths.forEach((item, index) => {
         const url = item.path;
-        const z = index * spacing + i * totalDepth;
-        const x = amplitudeX * Math.sin(index + i * imagePaths.length);
-        const y = amplitudeY * Math.cos(index + i * imagePaths.length);
+
+        // Position images horizontally with negative X to start from left
+        const x = -index * spacing - i * totalWidth;
+        // Small variations in Z for subtle depth
+        const z = -10 + Math.sin(index * 0.5) * depthVariation;
+        // Alternate image positions vertically
+        const y = (index % 2 === 0 ? 1 : -1) * (Math.random() * yVariation);
+
         images.push({
           url,
           position: [x, y, z],
@@ -146,7 +145,7 @@ function FloatingImagesGroup({
       });
     }
     return images;
-  }, [imagePaths, spacing, amplitudeX, amplitudeY, baseScale, totalDepth]);
+  }, [imagePaths, spacing, depthVariation, yVariation, baseScale, totalWidth]);
 
   return (
     <group ref={groupRef}>
@@ -163,12 +162,10 @@ function FloatingImagesGroup({
 }
 
 export default function FloatingImagesScene() {
-  // const pages = newImagePaths.length;
   const duplicates = 0.4;
   const pages = newImagePaths.length * duplicates;
   const [isMobile, setIsMobile] = useState(false);
 
-  // Tooltip state: text, visibility, and screen coordinates
   const [tooltip, setTooltip] = useState({
     visible: false,
     name: '',
@@ -186,7 +183,6 @@ export default function FloatingImagesScene() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Update tooltip position as the mouse moves
   useEffect(() => {
     const handleMouseMove = (e) => {
       setTooltip((prev) => ({ ...prev, x: e.clientX, y: e.clientY }));
@@ -204,17 +200,17 @@ export default function FloatingImagesScene() {
   };
 
   // Adjust parameters based on screen size
-  const spacingVal = isMobile ? 7 : 8;
-  const amplitudeXVal = isMobile ? 15 : 40;
-  const amplitudeYVal = isMobile ? 30 : 30;
-  const baseScaleVal = isMobile ? 18 : 25;
+  const spacingVal = isMobile ? 10 : 10;
+  const depthVariationVal = isMobile ? 5 : 5;
+  const yVariationVal = isMobile ? 30 : 30;
+  const baseScaleVal = isMobile ? 15 : 20;
 
   return (
     <>
       <Canvas
         camera={{
-          position: [0, 0, isMobile ? 10 : 60],
-          fov: isMobile ? 85 : 75,
+          position: [0, 0, 50],
+          fov: isMobile ? 75 : 65,
           near: 0.1,
           far: 2000,
         }}
@@ -227,13 +223,18 @@ export default function FloatingImagesScene() {
         }}
       >
         <ambientLight intensity={1} />
-        <ScrollControls pages={pages} damping={0.3}>
+        <ScrollControls
+          pages={pages}
+          damping={0.3}
+          horizontal={true}
+          reversed={false}
+        >
           <Suspense fallback={<CustomLoader />}>
             <FloatingImagesGroup
               imagePaths={newImagePaths}
               spacing={spacingVal}
-              amplitudeX={amplitudeXVal}
-              amplitudeY={amplitudeYVal}
+              depthVariation={depthVariationVal}
+              yVariation={yVariationVal}
               baseScale={baseScaleVal}
               onImageHover={showTooltip}
               onImageOut={hideTooltip}
@@ -242,7 +243,6 @@ export default function FloatingImagesScene() {
         </ScrollControls>
       </Canvas>
 
-      {/* Tooltip element with a "curtain opening" animation */}
       <div
         className={`tooltip ${tooltip.visible ? 'visible' : ''}`}
         style={{
@@ -255,7 +255,6 @@ export default function FloatingImagesScene() {
         <div className='tooltip-group'>{tooltip.group}</div>
       </div>
 
-      {/* CSS for the curtain-like animation */}
       <style jsx>{`
         .tooltip {
           position: fixed;
