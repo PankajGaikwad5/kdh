@@ -22,7 +22,7 @@ const page = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
   return (
-    <div className='min-h-screen overflow-y-hidden scrollhide overflow-hidden bg-black'>
+    <div className='min-h-screen overflow-y-hidden scrollhide overflow-hidden bg-[#232424]'>
       <div
         style={{
           position: 'absolute',
