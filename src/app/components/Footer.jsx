@@ -20,7 +20,7 @@ const bebas = Bebas_Neue({
 
 const Footer = () => {
   return (
-    <div className=' flex flex-col '>
+    <div className=' flex flex-col bg-black'>
       <div className='py-2 flex-col w-full flex md:flex-row md:justify-evenly items-center  space-x-1 border-t '>
         {/* <div className='flex py-4 justify-center items-center px-4'>
           <a href='/'>

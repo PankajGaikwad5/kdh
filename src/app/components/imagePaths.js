@@ -91,7 +91,7 @@ export const newImagePaths = [
   },
   {
     name: 'Bench 1',
-    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDBxgia8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULA7AAADqbauUfVsg4JYrj86xOSilFe5PBo3m',
     group: 'Matilda',
     productId: '67bc49a855b639fb58349ec7',
   },
@@ -100,12 +100,6 @@ export const newImagePaths = [
     path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU69BZDQRfb3HGeOz01MiLoldKrZaXQIxANWuV',
     group: 'Matilda',
     productId: '67a5ef304da9b29cd0f10bea',
-  },
-  {
-    name: 'Console 2',
-    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUowMRTtPd43VNTXj27bgOZneCUs9aBiY5x8vw',
-    group: 'Matilda',
-    productId: '67a5ec804da9b29cd0f10b98',
   },
   {
     name: 'Side Table',
@@ -151,7 +145,7 @@ export const newImagePaths = [
   },
   {
     name: 'Yoda',
-    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSwGCHZAKnraNxkI5vbez6dT2q8M0osBfR9At',
+    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUI15yL8W6qU3iBow9cLQK4A1kuMTGmF8rel2f',
     group: 'Monster 2.0',
     productId: '67a5eb9f4da9b29cd0f10b71',
   },
@@ -358,7 +352,7 @@ export const newImagePaths = [
       },
       {
         name: 'Bench 1',
-        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDBxgia8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULA7AAADqbauUfVsg4JYrj86xOSilFe5PBo3m',
         group: 'Matilda',
         productId: '67bc49a855b639fb58349ec7',
       },
@@ -367,12 +361,6 @@ export const newImagePaths = [
         path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU69BZDQRfb3HGeOz01MiLoldKrZaXQIxANWuV',
         group: 'Matilda',
         productId: '67a5ef304da9b29cd0f10bea',
-      },
-      {
-        name: 'Console 2',
-        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUowMRTtPd43VNTXj27bgOZneCUs9aBiY5x8vw',
-        group: 'Matilda',
-        productId: '67a5ec804da9b29cd0f10b98',
       },
       {
         name: 'Side Table',
@@ -418,7 +406,7 @@ export const newImagePaths = [
       },
       {
         name: 'Yoda',
-        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSwGCHZAKnraNxkI5vbez6dT2q8M0osBfR9At',
+        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUI15yL8W6qU3iBow9cLQK4A1kuMTGmF8rel2f',
         group: 'Monster 2.0',
         productId: '67a5eb9f4da9b29cd0f10b71',
       },
