@@ -1,7 +1,7 @@
 export const newImagePaths = [
   {
     name: 'Gattoo Chair',
-    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnYy0rpbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
+    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUmzLgXSMgck96WhX7TGdaslL58YeZAnUDbwov',
     group: 'Monster 3.0',
     productId: '67b590d0e03cc2c55c624a5e',
   },
@@ -37,7 +37,7 @@ export const newImagePaths = [
   },
   {
     name: 'Monster Dining Table',
-    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUUEThKlBY1Vx48e2bhPHIZJqsnBOSArl5D3MT',
+    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDcvElk8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
     group: 'Monster 3.0',
     productId: '67b59097e03cc2c55c624a54',
   },
@@ -229,7 +229,7 @@ export const newImagePaths = [
   },
   {
     name: 'Monster Console',
-    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUlXq7879DZL6up3G75dgCY2rJjaQFwifBAEky',
+    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUYYE36bnVM7iftKIsUSTJx8haC1mEBkZl4NvR',
     group: 'Monster 1.0',
     productId: '67a5eaba4da9b29cd0f10b63',
   },
@@ -262,7 +262,7 @@ export const newImagePaths = [
     .fill([
       {
         name: 'Gattoo Chair',
-        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnYy0rpbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
+        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUmzLgXSMgck96WhX7TGdaslL58YeZAnUDbwov',
         group: 'Monster 3.0',
         productId: '67b590d0e03cc2c55c624a5e',
       },
@@ -298,7 +298,7 @@ export const newImagePaths = [
       },
       {
         name: 'Monster Dining Table',
-        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUUEThKlBY1Vx48e2bhPHIZJqsnBOSArl5D3MT',
+        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDcvElk8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
         group: 'Monster 3.0',
         productId: '67b59097e03cc2c55c624a54',
       },
@@ -490,7 +490,7 @@ export const newImagePaths = [
       },
       {
         name: 'Monster Console',
-        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUlXq7879DZL6up3G75dgCY2rJjaQFwifBAEky',
+        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUYYE36bnVM7iftKIsUSTJx8haC1mEBkZl4NvR',
         group: 'Monster 1.0',
         productId: '67a5eaba4da9b29cd0f10b63',
       },
