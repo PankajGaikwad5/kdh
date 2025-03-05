@@ -48,6 +48,12 @@ const GroupProductsPage = () => {
         <Navbar arrow={true} />
         {/* <Navbar arrow={true} /> */}
         <div className='pt-12 px-4 sm:px-6 lg:px-8 '>
+          {/* <div className='w-full text-center flex justify-center'>
+            <h1 className='text-4xl font-bold text-gray-300  pb-8 border-b-2 border-gray-800 capitalize w-full md:max-w-3xl'>
+              {group.replace('_', ' ')}
+            </h1>
+          </div> */}
+
           <div className='flex justify-center items-center'>
             <div className='flex-grow grid grid-cols-2 md:grid-cols-4 pt-10 gap-4 p-4'>
               {filteredProducts.map(({ title, images, _id }) => (
