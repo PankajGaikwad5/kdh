@@ -231,13 +231,13 @@ const page = () => {
                 <div
                   className={`flex flex-col gap-4 sm:flex-row sm:gap-6 font-normal  sm:text-left ${popins.className} tracking-widest`}
                 >
-                  <p>
+                  <p className='text-green-400'>
                     We are not a normal team of architects and interior
                     designers, but a unified movement of innovators and creators
                     of unique design experiences. We offer extraordinary design
                     solutions
                   </p>
-                  <p>
+                  <p className='text-blue-400'>
                     which contribute to the well-being of our customers and
                     bring real value to their life and work. By entering the
                     space we created, you will feel as if you were in your

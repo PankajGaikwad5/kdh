@@ -202,7 +202,7 @@ export default function FloatingImagesScene() {
   // Adjust parameters based on screen size
   const spacingVal = isMobile ? 10 : 20;
   const depthVariationVal = isMobile ? 5 : 5;
-  const yVariationVal = isMobile ? 30 : 30;
+  const yVariationVal = isMobile ? 50 : 30;
   const baseScaleVal = isMobile ? 15 : 22;
 
   return (

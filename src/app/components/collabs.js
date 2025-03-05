@@ -3,13 +3,32 @@ export const collabs = [
     _id: {
       $oid: '6791f5807a5dc4ac2d27e20e',
     },
+    title: 'dimension',
+    details: 'ID 2025',
+    moreDetails: '/products/monster_1.0',
+    images: [
+      {
+        fileName: '1.jpg',
+        fileUrl:
+          'https://dimensionsfurniture.in/wp-content/uploads/2024/05/Dimensions-logo12-e1738670961220.png',
+        _id: {
+          $oid: '6791f5807a5dc4ac2d27e20f',
+        },
+      },
+    ],
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '6791f5807a5dc4ac2d27e20e',
+    },
     title: 'the quarry',
     details: 'ID 2022',
     moreDetails: '/products/monster_1.0',
     images: [
       {
         fileName: '1.jpg',
-        fileUrl: '/assets/query.png',
+        fileUrl: '/assets/quary.png',
         _id: {
           $oid: '6791f5807a5dc4ac2d27e20f',
         },
@@ -62,7 +81,8 @@ export const collabs = [
     images: [
       {
         fileName: '2.jpg',
-        fileUrl: '/assets/topb.png',
+        fileUrl:
+          'https://www.topbrewernyc.com/wp-content/uploads/2023/06/TopBrewer-logo-white.png',
         _id: {
           $oid: '6791fe227a5dc4ac2d27e24f',
         },
@@ -137,7 +157,7 @@ export const collabs = [
     images: [
       {
         fileName: 'new1.jpg',
-        fileUrl: '/assets/bft7.png',
+        fileUrl: '/assets/bft.png',
         _id: {
           $oid: '6791fe227a5dc4ac2d27e24f',
         },

@@ -11,7 +11,7 @@ const page = () => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
-        setDimensions({ width: 100, height: 100 });
+        setDimensions({ width: 200, height: 200 });
       } else {
         setDimensions({ width: 200, height: 200 });
       }
