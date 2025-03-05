@@ -14,9 +14,11 @@ const GroupProductsPage = () => {
 
   const handleClick = (e) => {
     e.preventDefault();
+    // If there's a previous page in the history, go back
     if (window.history.length > 1) {
       router.back();
     } else {
+      // Otherwise, navigate to the fallback route
       router.push(`/products/${group}`);
     }
   };
@@ -44,6 +46,7 @@ const GroupProductsPage = () => {
     <div className='min-h-screen flex flex-col bg-black'>
       <div className=' min-h-screen grid grid-rows-[1fr_auto]'>
         <Navbar arrow={true} />
+        {/* <Navbar arrow={true} /> */}
         <div className='pt-12 px-4 sm:px-6 lg:px-8 '>
           <div className='flex justify-center items-center'>
             <div className='flex-grow grid grid-cols-2 md:grid-cols-4 pt-10 gap-4 p-4'>
