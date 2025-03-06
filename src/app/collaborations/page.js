@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 import CustomCarousel from '../components/CustomCarouselComp';
 import { X } from 'lucide-react';
 import { Poppins, Montserrat } from 'next/font/google';
+import { set } from 'mongoose';
 
 const popins = Poppins({
   subsets: ['latin'],
@@ -19,9 +20,11 @@ const montserrat = Montserrat({
 
 const page = () => {
   const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProjectImages, setSelectedProjectImages] = useState(null);
 
   const openModal = (project) => {
-    setSelectedProject(project.images);
+    setSelectedProject(project);
+    setSelectedProjectImages(project.images);
     // console.log(project.images);
   };
 
@@ -118,12 +121,12 @@ const page = () => {
           </button>
           <div className='relative w-full max-w-4xl p-4'>
             <CustomCarousel
-              imgArray={selectedProject.map((image) => image.fileUrl)}
+              imgArray={selectedProjectImages.map((image) => image.fileUrl)}
             />
           </div>
-          <h3 className='text-white'>ID 2024</h3>
+          <h3 className='text-white'>{selectedProject.details}</h3>
           <a
-            href='/kdad'
+            href={`${selectedProject.moreDetails}`}
             className='absolute right-20 bottom-14 underline  z-10 tracking-widest text-blue-600'
           >
             see more details

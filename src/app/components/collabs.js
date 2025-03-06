@@ -9,8 +9,7 @@ export const collabs = [
     images: [
       {
         fileName: '1.jpg',
-        fileUrl:
-          'https://dimensionsfurniture.in/wp-content/uploads/2024/05/Dimensions-logo12-e1738670961220.png',
+        fileUrl: '/assets/dimensions.png',
         _id: {
           $oid: '6791f5807a5dc4ac2d27e20f',
         },

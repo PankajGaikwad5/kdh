@@ -1,4 +1,5 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import { Poppins, Montserrat, Bebas_Neue } from 'next/font/google';
 import { Instagram } from 'lucide-react';
 import { FaWhatsapp, FaLinkedin } from 'react-icons/fa';
@@ -19,6 +20,8 @@ const bebas = Bebas_Neue({
 });
 
 const Footer = () => {
+  const [hover, setHover] = useState('text-zinc-800');
+
   return (
     <div className=' flex flex-col bg-black'>
       <div className='py-2 flex-col w-full flex md:flex-row md:justify-evenly items-center  space-x-1 border-t '>
