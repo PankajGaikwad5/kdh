@@ -103,7 +103,7 @@ function FloatingImagesGroup({
   const scrollSpeed = 0.0002;
 
   useFrame((state, delta) => {
-    autoScroll.current = (autoScroll.current + scrollSpeed * delta) % 1;
+    // autoScroll.current = (autoScroll.current + scrollSpeed * delta) % 1;
     const time = state.clock.getElapsedTime();
     const combinedOffset = scroll.offset + autoScroll.current;
 
@@ -228,6 +228,7 @@ export default function FloatingImagesScene() {
           damping={0.5}
           horizontal={true}
           reversed={false}
+          infinite={true}
         >
           <Suspense fallback={<CustomLoader />}>
             <FloatingImagesGroup

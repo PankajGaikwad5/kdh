@@ -14,6 +14,22 @@ export const collabs = [
           $oid: '6791f5807a5dc4ac2d27e20f',
         },
       },
+      {
+        fileName: '1.jpg',
+        fileUrl:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUoSYmQHjPd43VNTXj27bgOZneCUs9aBiY5x8v',
+        _id: {
+          $oid: '6791f5807a5dc4ac2d3123',
+        },
+      },
+      {
+        fileName: '1.jpg',
+        fileUrl:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUcVFL1OzfU0v5mZaj1HWcAwKFCxykrE2NGSIu',
+        _id: {
+          $oid: '6791f5807aac2d3123',
+        },
+      },
     ],
     __v: 0,
   },
