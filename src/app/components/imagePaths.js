@@ -223,7 +223,7 @@ export const newImagePaths = [
   },
   {
     name: 'Basin',
-    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUN8wHJVG5UuqxLjF0ygrW1ikRpXaHfGVvonDw',
+    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU3gwRaRvb7L0Z2G4mkrAFzE8uQjRclW5px9hX',
     group: 'Matilda',
     productId: '67a5ed3c4da9b29cd0f10bbf',
   },
@@ -484,7 +484,7 @@ export const newImagePaths = [
       },
       {
         name: 'Basin',
-        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUN8wHJVG5UuqxLjF0ygrW1ikRpXaHfGVvonDw',
+        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU3gwRaRvb7L0Z2G4mkrAFzE8uQjRclW5px9hX',
         group: 'Matilda',
         productId: '67a5ed3c4da9b29cd0f10bbf',
       },

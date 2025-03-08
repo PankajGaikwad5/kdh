@@ -112,7 +112,7 @@ function FloatingImagesGroup({
 
     // Add subtle floating animation
     groupRef.current.children.forEach((child, index) => {
-      const floatingAmplitude = 0.3;
+      const floatingAmplitude = 0.9;
       const floatingSpeed = 0.5;
       const offset = index * 0.1;
       child.position.y +=
@@ -162,7 +162,8 @@ function FloatingImagesGroup({
 }
 
 export default function FloatingImagesScene() {
-  const duplicates = 0.09;
+  const [duplicates, setDuplicates] = useState(0.09);
+  // const duplicates = 0.09;
   const pages = newImagePaths.length * duplicates;
   const [isMobile, setIsMobile] = useState(false);
 
@@ -178,6 +179,7 @@ export default function FloatingImagesScene() {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
+    setDuplicates(isMobile ? 0.5 : 0.09);
     handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
@@ -225,7 +227,7 @@ export default function FloatingImagesScene() {
         <ambientLight intensity={1} />
         <ScrollControls
           pages={pages}
-          damping={0.5}
+          // damping={0.5}
           horizontal={true}
           reversed={false}
           infinite={true}
