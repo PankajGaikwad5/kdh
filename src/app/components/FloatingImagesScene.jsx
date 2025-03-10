@@ -103,7 +103,7 @@ function FloatingImagesGroup({
   const scrollSpeed = 0.0002;
 
   useFrame((state, delta) => {
-    // autoScroll.current = (autoScroll.current + scrollSpeed * delta) % 1;
+    autoScroll.current = (autoScroll.current + scrollSpeed * delta) % 1;
     const time = state.clock.getElapsedTime();
     const combinedOffset = scroll.offset + autoScroll.current;
 
@@ -112,11 +112,16 @@ function FloatingImagesGroup({
 
     // Add subtle floating animation
     groupRef.current.children.forEach((child, index) => {
-      const floatingAmplitude = 0.9;
-      const floatingSpeed = 0.5;
+      const floatingAmplitude = 0.5;
+      const floatingSpeed = 0.9;
       const offset = index * 0.1;
+      // child.position.y +=
+      //   Math.sin(time * floatingSpeed + offset) * floatingAmplitude * delta;
+      const clampedDelta = Math.min(delta, 0.05); // cap the delta to a maximum value
       child.position.y +=
-        Math.sin(time * floatingSpeed + offset) * floatingAmplitude * delta;
+        Math.sin(time * floatingSpeed + offset) *
+        floatingAmplitude *
+        clampedDelta;
     });
   });
 
@@ -147,6 +152,48 @@ function FloatingImagesGroup({
     return images;
   }, [imagePaths, spacing, depthVariation, yVariation, baseScale, totalWidth]);
 
+  // useEffect(() => {
+  //   const container = groupRef.current;
+  //   if (!container) {
+  //     console.log(container);
+  //   }
+
+  //   let lastUserScrollTime = Date.now();
+  //   let userScrolling = false;
+
+  //   // When user scrolls, update the timestamp
+  //   const onScroll = () => {
+  //     userScrolling = false;
+  //     lastUserScrollTime = Date.now();
+  //   };
+
+  //   container.addEventListener('scroll', onScroll);
+
+  //   let animFrame;
+  //   // Adjust this speed to your needs (pixels per frame)
+  //   const autoscrollSpeed = 0.5;
+
+  //   const animate = () => {
+  //     const now = Date.now();
+  //     // Resume autoscroll if no manual scroll in the last 1000ms
+  //     if (!userScrolling || now - lastUserScrollTime > 1000) {
+  //       container.scrollLeft += autoscrollSpeed;
+  //     } else {
+  //       // After a timeout, consider manual scroll finished
+  //       if (now - lastUserScrollTime > 1000) {
+  //         userScrolling = false;
+  //       }
+  //     }
+  //     animFrame = requestAnimationFrame(animate);
+  //   };
+  //   animate();
+
+  //   return () => {
+  //     container.removeEventListener('scroll', onScroll);
+  //     cancelAnimationFrame(animFrame);
+  //   };
+  // }, []);
+
   return (
     <group ref={groupRef}>
       {images.map((img, index) => (
@@ -166,6 +213,7 @@ export default function FloatingImagesScene() {
   // const duplicates = 0.09;
   const pages = newImagePaths.length * duplicates;
   const [isMobile, setIsMobile] = useState(false);
+  const scrollContainerRef = useRef(null);
 
   const [tooltip, setTooltip] = useState({
     visible: false,
@@ -209,42 +257,45 @@ export default function FloatingImagesScene() {
 
   return (
     <>
-      <Canvas
-        camera={{
-          position: [0, 0, 50],
-          fov: isMobile ? 75 : 65,
-          near: 0.1,
-          far: 2000,
-        }}
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-        }}
-      >
-        <ambientLight intensity={1} />
-        <ScrollControls
-          pages={pages}
-          // damping={0.5}
-          horizontal={true}
-          reversed={false}
-          infinite={true}
+      <div style={{ overflowX: 'auto', width: '100%', height: '100%' }}>
+        <Canvas
+          ref={scrollContainerRef}
+          camera={{
+            position: [0, 0, 50],
+            fov: isMobile ? 75 : 65,
+            near: 0.1,
+            far: 2000,
+          }}
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+          }}
         >
-          <Suspense fallback={<CustomLoader />}>
-            <FloatingImagesGroup
-              imagePaths={newImagePaths}
-              spacing={spacingVal}
-              depthVariation={depthVariationVal}
-              yVariation={yVariationVal}
-              baseScale={baseScaleVal}
-              onImageHover={showTooltip}
-              onImageOut={hideTooltip}
-            />
-          </Suspense>
-        </ScrollControls>
-      </Canvas>
+          <ambientLight intensity={1} />
+          <ScrollControls
+            pages={pages}
+            // damping={0.5}
+            horizontal={true}
+            reversed={false}
+            infinite={true}
+          >
+            <Suspense fallback={<CustomLoader />}>
+              <FloatingImagesGroup
+                imagePaths={newImagePaths}
+                spacing={spacingVal}
+                depthVariation={depthVariationVal}
+                yVariation={yVariationVal}
+                baseScale={baseScaleVal}
+                onImageHover={showTooltip}
+                onImageOut={hideTooltip}
+              />
+            </Suspense>
+          </ScrollControls>
+        </Canvas>
+      </div>
 
       <div
         className={`tooltip ${tooltip.visible ? 'visible' : ''}`}
