@@ -298,7 +298,7 @@ export default function FloatingImagesScene() {
       </div>
 
       <div
-        className={`tooltip ${tooltip.visible ? 'visible' : ''}`}
+        className={`tooltip  ${tooltip.visible ? 'visible' : ''}`}
         style={{
           top: tooltip.y + 15,
           left: tooltip.x + 15,
@@ -319,7 +319,6 @@ export default function FloatingImagesScene() {
           );
           color: #fff;
           padding: 12px 16px;
-          border-radius: 8px;
           pointer-events: none;
           font-family: sans-serif;
           z-index: 1000;
