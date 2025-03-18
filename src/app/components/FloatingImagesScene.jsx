@@ -1,10 +1,11 @@
 'use client';
-import React, { useRef, useMemo, useEffect, useState } from 'react';
-import { Canvas, useFrame, useLoader } from '@react-three/fiber';
+import React, { useRef, useState, useEffect } from 'react';
+import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import {
   ScrollControls,
   useScroll,
-  Image as DreiImage,
+  useTexture,
+  OrbitControls,
 } from '@react-three/drei';
 import * as THREE from 'three';
 import { useRouter } from 'next/navigation';
@@ -12,13 +13,11 @@ import { newImagePaths } from './imagePaths';
 import { Suspense } from 'react';
 import CustomLoader from './CustomLoader';
 
+// Enhanced Image component to maintain aspect ratio
 function FloatingImage({
   url,
   position,
   baseScale = 3,
-  visibleLeft = -80,
-  visibleRight = 80,
-  fadeZone = 40,
   onHover,
   onOut,
   productId,
@@ -26,27 +25,25 @@ function FloatingImage({
   group,
 }) {
   const ref = useRef();
-  const texture = useLoader(THREE.TextureLoader, url);
-  const aspect = texture.image ? texture.image.width / texture.image.height : 1;
   const router = useRouter();
+  const [aspectRatio, setAspectRatio] = useState(1);
+  const { gl } = useThree();
 
-  // Same opacity function but we'll reverse positioning later
-  const computeOpacity = (worldX) => {
-    if (worldX > visibleRight + fadeZone) return 0;
-    if (worldX > visibleRight) return 1 - (worldX - visibleRight) / fadeZone;
-    if (worldX >= visibleLeft) return 1;
-    if (worldX >= visibleLeft - fadeZone)
-      return (worldX - (visibleLeft - fadeZone)) / fadeZone;
-    return 0;
-  };
+  // Use useTexture to load and get image dimensions
+  const texture = useTexture(url);
 
-  useFrame(() => {
-    if (ref.current) {
-      const worldPos = new THREE.Vector3();
-      ref.current.getWorldPosition(worldPos);
-      ref.current.material.opacity = computeOpacity(worldPos.x);
+  useEffect(() => {
+    if (texture) {
+      // Use onLoad to get the correct dimensions
+      texture.anisotropy = gl.capabilities.getMaxAnisotropy();
+
+      // Ensure texture has loaded
+      if (texture.image) {
+        const imageAspect = texture.image.width / texture.image.height;
+        setAspectRatio(imageAspect);
+      }
     }
-  });
+  }, [texture, gl.capabilities]);
 
   const handleClick = () => {
     if (productId) {
@@ -56,15 +53,9 @@ function FloatingImage({
     }
   };
 
-  const handlePointerOver = () => {
-    if (ref.current) {
-      const worldPos = new THREE.Vector3();
-      ref.current.getWorldPosition(worldPos);
-      const opacity = computeOpacity(worldPos.x);
-      if (opacity < 0.7) return;
-    }
+  const handlePointerOver = (e) => {
     document.body.style.cursor = 'pointer';
-    if (onHover) onHover({ name, group });
+    if (onHover) onHover({ name, group, ref, event: e });
   };
 
   const handlePointerOut = () => {
@@ -73,148 +64,169 @@ function FloatingImage({
   };
 
   return (
-    <DreiImage
-      ref={ref}
-      url={url}
-      position={position}
-      scale={[baseScale * aspect, baseScale, 1]}
-      transparent
-      material-opacity={0}
-      onClick={handleClick}
-      onPointerOver={handlePointerOver}
-      onPointerOut={handlePointerOut}
+    <group ref={ref} position={position}>
+      {/* Use plane with texture instead of DreiImage for better control */}
+      <mesh
+        onClick={handleClick}
+        onPointerOver={handlePointerOver}
+        onPointerOut={handlePointerOut}
+      >
+        <planeGeometry args={[baseScale * aspectRatio, baseScale, 32]} />
+        <meshBasicMaterial map={texture} transparent={true} alphaTest={0.5} />
+      </mesh>
+    </group>
+  );
+}
+
+// Custom controls component that manages both orbit controls and auto-rotation
+function ControlsManager({ autoRotateSpeed = 0.5 }) {
+  const controlsRef = useRef();
+  const [isUserInteracting, setIsUserInteracting] = useState(false);
+  const { gl, camera } = useThree();
+
+  useEffect(() => {
+    const controls = controlsRef.current;
+
+    // Handle start of user interaction
+    const handleStart = () => {
+      setIsUserInteracting(true);
+    };
+
+    // Handle end of user interaction, resume auto-rotation after a delay
+    const handleEnd = () => {
+      setTimeout(() => {
+        setIsUserInteracting(false);
+      }, 2000); // Resume auto-rotation after 2 seconds of inactivity
+    };
+
+    if (controls) {
+      controls.addEventListener('start', handleStart);
+      controls.addEventListener('end', handleEnd);
+    }
+
+    return () => {
+      if (controls) {
+        controls.removeEventListener('start', handleStart);
+        controls.removeEventListener('end', handleEnd);
+      }
+    };
+  }, []);
+
+  useFrame(() => {
+    if (controlsRef.current) {
+      // Only auto-rotate when user is not interacting
+      controlsRef.current.autoRotate = !isUserInteracting;
+    }
+  });
+
+  return (
+    <OrbitControls
+      ref={controlsRef}
+      enableZoom={false}
+      enablePan={false}
+      minPolarAngle={Math.PI / 6}
+      maxPolarAngle={Math.PI - Math.PI / 6}
+      autoRotate
+      autoRotateSpeed={autoRotateSpeed}
+      makeDefault
     />
   );
 }
 
-function FloatingImagesGroup({
+function SphericalGallery({
   imagePaths,
-  spacing = 30,
-  depthVariation = 10,
-  yVariation = 10,
-  baseScale = 3,
+  radius = 20,
   onImageHover,
   onImageOut,
 }) {
   const groupRef = useRef();
   const scroll = useScroll();
-  const autoScroll = useRef(0);
-  const totalWidth = imagePaths.length * spacing;
-  const scrollSpeed = 0.0002;
+  const [hoveredImage, setHoveredImage] = useState(null);
+  const hoveredImageRef = useRef(null);
+  const { camera } = useThree();
 
-  useFrame((state, delta) => {
-    autoScroll.current = (autoScroll.current + scrollSpeed * delta) % 1;
-    const time = state.clock.getElapsedTime();
-    const combinedOffset = scroll.offset + autoScroll.current;
+  useFrame(() => {
+    // Scale up the hovered image
+    if (hoveredImage && hoveredImageRef.current) {
+      // Scale while maintaining aspect ratio
+      const currentScale = hoveredImageRef.current.scale.clone();
+      const targetScale = currentScale.clone().normalize().multiplyScalar(2.5);
 
-    // Reverse direction: negative sign makes items move from left to right
-    groupRef.current.position.x = -totalWidth * (combinedOffset - 1);
-
-    // Add subtle floating animation
-    groupRef.current.children.forEach((child, index) => {
-      const floatingAmplitude = 0.5;
-      const floatingSpeed = 0.9;
-      const offset = index * 0.1;
-      // child.position.y +=
-      //   Math.sin(time * floatingSpeed + offset) * floatingAmplitude * delta;
-      const clampedDelta = Math.min(delta, 0.05); // cap the delta to a maximum value
-      child.position.y +=
-        Math.sin(time * floatingSpeed + offset) *
-        floatingAmplitude *
-        clampedDelta;
-    });
-  });
-
-  const images = useMemo(() => {
-    const duplicates = 2;
-    let images = [];
-    for (let i = 0; i < duplicates; i++) {
-      imagePaths.forEach((item, index) => {
-        const url = item.path;
-
-        // Position images horizontally with negative X to start from left
-        const x = -index * spacing - i * totalWidth;
-        // Small variations in Z for subtle depth
-        const z = -10 + Math.sin(index * 0.5) * depthVariation;
-        // Alternate image positions vertically in a deterministic way
-        const y = (index % 2 === 0 ? 1 : -1) * (index % 4) * yVariation * 0.25;
-
-        images.push({
-          url,
-          position: [x, y, z],
-          baseScale,
-          productId: item.productId,
-          name: item.name,
-          group: item.group,
-        });
+      hoveredImageRef.current.scale.lerp(
+        new THREE.Vector3(targetScale.x, targetScale.y, 1),
+        0.1
+      );
+    } else {
+      // Reset scale of all images to their original size
+      groupRef.current.children.forEach((child) => {
+        const originalScale =
+          child.userData.originalScale || new THREE.Vector3(1, 1, 1);
+        child.scale.lerp(originalScale, 0.1);
       });
     }
-    return images;
-  }, [imagePaths, spacing, depthVariation, yVariation, baseScale, totalWidth]);
 
-  // useEffect(() => {
-  //   const container = groupRef.current;
-  //   if (!container) {
-  //     console.log(container);
-  //   }
+    // Make images face the camera (billboarding)
+    groupRef.current.children.forEach((child) => {
+      child.lookAt(camera.position);
+    });
 
-  //   let lastUserScrollTime = Date.now();
-  //   let userScrolling = false;
+    // Adjust camera position based on scroll offset
+    const offset = scroll.offset;
+    const cameraDistance = THREE.MathUtils.lerp(50, 10, offset); // Move camera closer as user scrolls
+    camera.position.setLength(cameraDistance);
+  });
 
-  //   // When user scrolls, update the timestamp
-  //   const onScroll = () => {
-  //     userScrolling = false;
-  //     lastUserScrollTime = Date.now();
-  //   };
+  // Store original scale on mount and handle hover
+  useEffect(() => {
+    if (groupRef.current) {
+      groupRef.current.children.forEach((child) => {
+        // Store original scale for reference
+        child.userData.originalScale = child.scale.clone();
+      });
+    }
+  }, [imagePaths]);
 
-  //   container.addEventListener('scroll', onScroll);
+  const handleImageHover = ({ name, group, ref, event }) => {
+    setHoveredImage({ name, group });
+    hoveredImageRef.current = ref.current;
+    if (onImageHover) onImageHover({ name, group, event });
+  };
 
-  //   let animFrame;
-  //   // Adjust this speed to your needs (pixels per frame)
-  //   const autoscrollSpeed = 0.5;
-
-  //   const animate = () => {
-  //     const now = Date.now();
-  //     // Resume autoscroll if no manual scroll in the last 1000ms
-  //     if (!userScrolling || now - lastUserScrollTime > 1000) {
-  //       container.scrollLeft += autoscrollSpeed;
-  //     } else {
-  //       // After a timeout, consider manual scroll finished
-  //       if (now - lastUserScrollTime > 1000) {
-  //         userScrolling = false;
-  //       }
-  //     }
-  //     animFrame = requestAnimationFrame(animate);
-  //   };
-  //   animate();
-
-  //   return () => {
-  //     container.removeEventListener('scroll', onScroll);
-  //     cancelAnimationFrame(animFrame);
-  //   };
-  // }, []);
+  const handleImageOut = () => {
+    setHoveredImage(null);
+    hoveredImageRef.current = null;
+    if (onImageOut) onImageOut();
+  };
 
   return (
     <group ref={groupRef}>
-      {images.map((img, index) => (
-        <FloatingImage
-          key={index}
-          {...img}
-          onHover={onImageHover}
-          onOut={onImageOut}
-        />
-      ))}
+      {imagePaths.map((item, index) => {
+        const phi = Math.acos(-1 + (2 * index) / imagePaths.length);
+        const theta = Math.sqrt(imagePaths.length * Math.PI) * phi;
+
+        const x = radius * Math.cos(theta) * Math.sin(phi);
+        const y = radius * Math.sin(theta) * Math.sin(phi);
+        const z = radius * Math.cos(phi);
+
+        return (
+          <FloatingImage
+            key={index}
+            url={item.path}
+            position={[x, y, z]}
+            baseScale={2.8}
+            productId={item.productId}
+            name={item.name}
+            group={item.group}
+            onHover={handleImageHover}
+            onOut={handleImageOut}
+          />
+        );
+      })}
     </group>
   );
 }
 
 export default function FloatingImagesScene() {
-  const [duplicates, setDuplicates] = useState(0.09);
-  // const duplicates = 0.09;
-  const pages = newImagePaths.length * duplicates;
-  const [isMobile, setIsMobile] = useState(false);
-  const scrollContainerRef = useRef(null);
-
   const [tooltip, setTooltip] = useState({
     visible: false,
     name: '',
@@ -223,82 +235,72 @@ export default function FloatingImagesScene() {
     y: 0,
   });
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-    setDuplicates(isMobile ? 0.5 : 0.09);
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
+  // Track mouse position for tooltip
   useEffect(() => {
     const handleMouseMove = (e) => {
-      setTooltip((prev) => ({ ...prev, x: e.clientX, y: e.clientY }));
+      // Only update tooltip position if it's visible
+      if (tooltip.visible) {
+        setTooltip((prev) => ({
+          ...prev,
+          x: e.clientX,
+          y: e.clientY,
+        }));
+      }
     };
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
 
-  const showTooltip = ({ name, group }) => {
-    setTooltip((prev) => ({ ...prev, visible: true, name, group }));
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, [tooltip.visible]);
+
+  const showTooltip = ({ name, group, event }) => {
+    // Initialize tooltip at the current mouse position
+    setTooltip({
+      visible: true,
+      name,
+      group,
+      x: event?.clientX || 0,
+      y: event?.clientY || 0,
+    });
   };
 
   const hideTooltip = () => {
     setTooltip((prev) => ({ ...prev, visible: false }));
   };
 
-  // Adjust parameters based on screen size
-  const spacingVal = isMobile ? 8 : 20;
-  const depthVariationVal = isMobile ? 5 : 5;
-  const yVariationVal = isMobile ? 40 : 30;
-  const baseScaleVal = isMobile ? 17 : 22;
-
   return (
     <>
-      <div style={{ overflowX: 'auto', width: '100%', height: '100%' }}>
-        <Canvas
-          ref={scrollContainerRef}
-          camera={{
-            position: [0, 0, 50],
-            fov: isMobile ? 75 : 65,
-            near: 0.1,
-            far: 2000,
-          }}
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-          }}
-        >
-          <ambientLight intensity={1} />
-          <ScrollControls
-            pages={pages}
-            // damping={0.5}
-            horizontal={true}
-            reversed={false}
-            infinite={true}
-          >
-            <Suspense fallback={<CustomLoader />}>
-              <FloatingImagesGroup
-                imagePaths={newImagePaths}
-                spacing={spacingVal}
-                depthVariation={depthVariationVal}
-                yVariation={yVariationVal}
-                baseScale={baseScaleVal}
-                onImageHover={showTooltip}
-                onImageOut={hideTooltip}
-              />
-            </Suspense>
+      <Canvas
+        camera={{
+          position: [0, 0, 50],
+          fov: 65,
+          near: 0.1,
+          far: 2000,
+        }}
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+        }}
+      >
+        <ambientLight intensity={1} />
+        <Suspense fallback={<CustomLoader />}>
+          <ScrollControls pages={2} damping={0.1}>
+            <SphericalGallery
+              imagePaths={newImagePaths}
+              onImageHover={showTooltip}
+              onImageOut={hideTooltip}
+            />
           </ScrollControls>
-        </Canvas>
-      </div>
+        </Suspense>
+        <ControlsManager autoRotateSpeed={0.5} />
+      </Canvas>
 
       <div
-        className={`tooltip  ${tooltip.visible ? 'visible' : ''}`}
+        className={`tooltip ${tooltip.visible ? 'visible' : ''}`}
         style={{
           top: tooltip.y + 15,
           left: tooltip.x + 15,
@@ -308,6 +310,8 @@ export default function FloatingImagesScene() {
         <div className='tooltip-divider' />
         <div className='tooltip-group'>{tooltip.group}</div>
       </div>
+
+      <div className='instructions'>Click and drag to rotate the gallery</div>
 
       <style jsx>{`
         .tooltip {
@@ -342,6 +346,21 @@ export default function FloatingImagesScene() {
         }
         .tooltip-group {
           font-size: 14px;
+        }
+        .instructions {
+          position: fixed;
+          bottom: 20px;
+          left: 50%;
+          transform: translateX(-50%);
+          background: rgba(0, 0, 0, 0.5);
+          color: white;
+          padding: 8px 16px;
+          border-radius: 20px;
+          font-family: sans-serif;
+          font-size: 14px;
+          opacity: 0.8;
+          pointer-events: none;
+          z-index: 1000;
         }
       `}</style>
     </>

@@ -38,6 +38,11 @@ body {
   }
 }
 
+.bgImage {
+  background-image: url('https://t4.ftcdn.net/jpg/05/21/74/45/360_F_521744549_EIpXcj84wsoBPj65tlqBleEGR3bzdKrO.jpg');
+  background-size: cover;
+}
+
 .project-bg {
   background-image: url('/assets/3.jpg');
   background-size: cover;
