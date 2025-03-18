@@ -248,38 +248,34 @@ export default function FloatingImagesScene() {
     y: 0,
   });
 
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
   // Track mouse position for tooltip
   useEffect(() => {
     const handleMouseMove = (e) => {
-      // Only update tooltip position if it's visible
-      if (tooltip.visible) {
-        setTooltip((prev) => ({
-          ...prev,
-          x: e.clientX,
-          y: e.clientY,
-        }));
-      }
+      setMousePosition({ x: e.clientX, y: e.clientY });
     };
 
     window.addEventListener('mousemove', handleMouseMove);
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
     };
-  }, [tooltip.visible]);
+  }, []);
 
   const showTooltip = ({ name, group, event }) => {
-    // Initialize tooltip at the current mouse position
     setTooltip({
       visible: true,
       name,
       group,
-      x: event?.clientX || 0,
-      y: event?.clientY || 0,
+      x: event?.clientX || mousePosition.x,
+      y: event?.clientY || mousePosition.y,
     });
   };
 
   const hideTooltip = () => {
-    setTooltip((prev) => ({ ...prev, visible: false }));
+    setTimeout(() => {
+      setTooltip((prev) => ({ ...prev, visible: false }));
+    }, 100); // Delay hiding the tooltip
   };
 
   return (
