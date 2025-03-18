@@ -18,26 +18,22 @@ function FloatingImage({
   url,
   position,
   baseScale = 3,
-  onHover,
-  onOut,
+
   productId,
   name,
   group,
+  userData,
 }) {
   const ref = useRef();
   const router = useRouter();
   const [aspectRatio, setAspectRatio] = useState(1);
   const { gl } = useThree();
 
-  // Use useTexture to load and get image dimensions
   const texture = useTexture(url);
 
   useEffect(() => {
     if (texture) {
-      // Use onLoad to get the correct dimensions
       texture.anisotropy = gl.capabilities.getMaxAnisotropy();
-
-      // Ensure texture has loaded
       if (texture.image) {
         const imageAspect = texture.image.width / texture.image.height;
         setAspectRatio(imageAspect);
@@ -53,24 +49,9 @@ function FloatingImage({
     }
   };
 
-  const handlePointerOver = (e) => {
-    document.body.style.cursor = 'pointer';
-    if (onHover) onHover({ name, group, ref, event: e });
-  };
-
-  const handlePointerOut = () => {
-    document.body.style.cursor = 'auto';
-    if (onOut) onOut();
-  };
-
   return (
-    <group ref={ref} position={position}>
-      {/* Use plane with texture instead of DreiImage for better control */}
-      <mesh
-        onClick={handleClick}
-        onPointerOver={handlePointerOver}
-        onPointerOut={handlePointerOut}
-      >
+    <group ref={ref} position={position} userData={userData}>
+      <mesh onClick={handleClick}>
         <planeGeometry args={[baseScale * aspectRatio, baseScale, 32]} />
         <meshBasicMaterial map={texture} transparent={true} alphaTest={0.5} />
       </mesh>
@@ -143,26 +124,72 @@ function SphericalGallery({
   const scroll = useScroll();
   const [hoveredImage, setHoveredImage] = useState(null);
   const hoveredImageRef = useRef(null);
-  const { camera } = useThree();
+  const { camera, scene, mouse } = useThree();
+  const raycaster = new THREE.Raycaster();
 
   useFrame(() => {
-    // Scale up the hovered image
-    if (hoveredImage && hoveredImageRef.current) {
-      // Scale while maintaining aspect ratio
+    // Update the raycaster with the current mouse position and camera
+    raycaster.setFromCamera(mouse, camera);
+
+    // Find all intersected objects
+    const intersects = raycaster.intersectObjects(
+      groupRef.current.children,
+      true
+    );
+
+    // If there's an intersection, get the closest object
+    if (intersects.length > 0) {
+      const closestObject = intersects[0].object;
+
+      // Trigger hover for the closest object
+      if (closestObject !== hoveredImageRef.current) {
+        // Reset the previously hovered image
+        if (hoveredImageRef.current) {
+          const originalScale =
+            hoveredImageRef.current.userData.originalScale ||
+            new THREE.Vector3(1, 1, 1);
+          hoveredImageRef.current.scale.lerp(originalScale, 0.1);
+        }
+
+        // Set the new hovered image
+        hoveredImageRef.current = closestObject;
+        const { name, group } = closestObject.parent.userData; // Assuming userData is set on the parent group
+        setHoveredImage({ name, group });
+
+        // Trigger the onHover callback
+        if (onImageHover) {
+          onImageHover({ name, group, ref: { current: closestObject } });
+        }
+
+        // Change cursor to pointer
+        document.body.style.cursor = 'pointer';
+      }
+
+      // Scale up the hovered image
       const currentScale = hoveredImageRef.current.scale.clone();
       const targetScale = currentScale.clone().normalize().multiplyScalar(2.5);
-
       hoveredImageRef.current.scale.lerp(
         new THREE.Vector3(targetScale.x, targetScale.y, 1),
         0.1
       );
     } else {
-      // Reset scale of all images to their original size
-      groupRef.current.children.forEach((child) => {
+      // No intersection, reset the hovered image
+      if (hoveredImageRef.current) {
         const originalScale =
-          child.userData.originalScale || new THREE.Vector3(1, 1, 1);
-        child.scale.lerp(originalScale, 0.1);
-      });
+          hoveredImageRef.current.userData.originalScale ||
+          new THREE.Vector3(1, 1, 1);
+        hoveredImageRef.current.scale.lerp(originalScale, 0.1);
+        hoveredImageRef.current = null;
+        setHoveredImage(null);
+
+        // Trigger the onOut callback
+        if (onImageOut) {
+          onImageOut();
+        }
+
+        // Reset cursor to default
+        document.body.style.cursor = 'auto';
+      }
     }
 
     // Make images face the camera (billboarding)
@@ -172,31 +199,18 @@ function SphericalGallery({
 
     // Adjust camera position based on scroll offset
     const offset = scroll.offset;
-    const cameraDistance = THREE.MathUtils.lerp(50, 10, offset); // Move camera closer as user scrolls
+    const cameraDistance = THREE.MathUtils.lerp(50, 10, offset);
     camera.position.setLength(cameraDistance);
   });
 
-  // Store original scale on mount and handle hover
+  // Store original scale on mount
   useEffect(() => {
     if (groupRef.current) {
       groupRef.current.children.forEach((child) => {
-        // Store original scale for reference
         child.userData.originalScale = child.scale.clone();
       });
     }
   }, [imagePaths]);
-
-  const handleImageHover = ({ name, group, ref, event }) => {
-    setHoveredImage({ name, group });
-    hoveredImageRef.current = ref.current;
-    if (onImageHover) onImageHover({ name, group, event });
-  };
-
-  const handleImageOut = () => {
-    setHoveredImage(null);
-    hoveredImageRef.current = null;
-    if (onImageOut) onImageOut();
-  };
 
   return (
     <group ref={groupRef}>
@@ -217,8 +231,7 @@ function SphericalGallery({
             productId={item.productId}
             name={item.name}
             group={item.group}
-            onHover={handleImageHover}
-            onOut={handleImageOut}
+            userData={{ name: item.name, group: item.group }} // Store metadata for hover
           />
         );
       })}
