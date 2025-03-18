@@ -309,7 +309,9 @@ export default function FloatingImagesScene() {
       </Canvas>
 
       <div
-        className={`tooltip ${tooltip.visible ? 'visible' : ''}`}
+        className={`tooltip ${
+          tooltip.visible ? 'visible' : ''
+        } hidden md:block`}
         style={{
           top: tooltip.y + 15,
           left: tooltip.x + 15,
@@ -320,7 +322,9 @@ export default function FloatingImagesScene() {
         <div className='tooltip-group'>{tooltip.group}</div>
       </div>
 
-      <div className='instructions'>Click and drag to rotate the gallery</div>
+      <div className='instructions whitespace-nowrap'>
+        Click and drag to rotate the gallery
+      </div>
 
       <style jsx>{`
         .tooltip {
