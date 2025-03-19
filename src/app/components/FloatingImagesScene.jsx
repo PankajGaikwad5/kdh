@@ -18,7 +18,6 @@ function FloatingImage({
   url,
   position,
   baseScale = 3,
-
   productId,
   name,
   group,
@@ -60,7 +59,7 @@ function FloatingImage({
 }
 
 // Custom controls component that manages both orbit controls and auto-rotation
-function ControlsManager({ autoRotateSpeed = 0.5 }) {
+function ControlsManager({ autoRotateSpeed = 0.5, scrollRef }) {
   const controlsRef = useRef();
   const [isUserInteracting, setIsUserInteracting] = useState(false);
   const { gl, camera } = useThree();
@@ -103,8 +102,8 @@ function ControlsManager({ autoRotateSpeed = 0.5 }) {
   return (
     <OrbitControls
       ref={controlsRef}
-      enableZoom={true}
-      enablePan={true}
+      enableZoom={false}
+      enablePan={false}
       minPolarAngle={Math.PI / 6}
       maxPolarAngle={Math.PI - Math.PI / 6}
       autoRotate
@@ -239,6 +238,90 @@ function SphericalGallery({
   );
 }
 
+// Touch control component to handle pinch gestures
+function TouchScrollControls({ scrollRef }) {
+  const [initialDistance, setInitialDistance] = useState(null);
+  const [initialOffset, setInitialOffset] = useState(0);
+  const { camera } = useThree();
+  const scroll = useScroll();
+  const dampingFactor = 0.05; // Adjust this for smoother or more responsive scrolling
+
+  useEffect(() => {
+    const domElement = scrollRef.current;
+
+    if (!domElement) return;
+
+    const handleTouchStart = (e) => {
+      if (e.touches.length === 2) {
+        const touch1 = e.touches[0];
+        const touch2 = e.touches[1];
+        const distance = Math.hypot(
+          touch2.clientX - touch1.clientX,
+          touch2.clientY - touch1.clientY
+        );
+
+        setInitialDistance(distance);
+        setInitialOffset(scroll.offset);
+
+        // Prevent default to avoid browser zoom
+        e.preventDefault();
+      }
+    };
+
+    const handleTouchMove = (e) => {
+      if (e.touches.length === 2 && initialDistance !== null) {
+        const touch1 = e.touches[0];
+        const touch2 = e.touches[1];
+        const distance = Math.hypot(
+          touch2.clientX - touch1.clientX,
+          touch2.clientY - touch1.clientY
+        );
+
+        // Calculate the scale factor
+        const scaleFactor = initialDistance / distance;
+
+        // Calculate the new offset
+        let newOffset = initialOffset * scaleFactor;
+
+        // Clamp the offset between 0 and 1
+        newOffset = Math.max(0, Math.min(1, newOffset));
+
+        // Apply the offset with damping for smoother transitions
+        scroll.offset = THREE.MathUtils.lerp(
+          scroll.offset,
+          newOffset,
+          dampingFactor
+        );
+
+        // Prevent default to avoid browser zoom
+        e.preventDefault();
+      }
+    };
+
+    const handleTouchEnd = () => {
+      setInitialDistance(null);
+    };
+
+    // Add event listeners
+    domElement.addEventListener('touchstart', handleTouchStart, {
+      passive: false,
+    });
+    domElement.addEventListener('touchmove', handleTouchMove, {
+      passive: false,
+    });
+    domElement.addEventListener('touchend', handleTouchEnd);
+
+    // Clean up event listeners
+    return () => {
+      domElement.removeEventListener('touchstart', handleTouchStart);
+      domElement.removeEventListener('touchmove', handleTouchMove);
+      domElement.removeEventListener('touchend', handleTouchEnd);
+    };
+  }, [scroll, initialDistance, initialOffset, dampingFactor, scrollRef]);
+
+  return null;
+}
+
 export default function FloatingImagesScene() {
   const [tooltip, setTooltip] = useState({
     visible: false,
@@ -249,6 +332,20 @@ export default function FloatingImagesScene() {
   });
 
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [isMobile, setIsMobile] = useState(false);
+  const canvasRef = useRef(null);
+
+  // Check if the device is mobile
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkMobile(); // Initial check
+    window.addEventListener('resize', checkMobile);
+
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   // Track mouse position for tooltip
   useEffect(() => {
@@ -280,33 +377,36 @@ export default function FloatingImagesScene() {
 
   return (
     <>
-      <Canvas
-        camera={{
-          position: [0, 0, 50],
-          fov: 65,
-          near: 0.1,
-          far: 2000,
-        }}
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-        }}
-      >
-        <ambientLight intensity={1} />
-        <Suspense fallback={<CustomLoader />}>
-          <ScrollControls pages={2} damping={0.1}>
-            <SphericalGallery
-              imagePaths={newImagePaths}
-              onImageHover={showTooltip}
-              onImageOut={hideTooltip}
-            />
-          </ScrollControls>
-        </Suspense>
-        <ControlsManager autoRotateSpeed={0.5} />
-      </Canvas>
+      <div ref={canvasRef} style={{ width: '100%', height: '100%' }}>
+        <Canvas
+          camera={{
+            position: [0, 0, 50],
+            fov: 65,
+            near: 0.1,
+            far: 2000,
+          }}
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+          }}
+        >
+          <ambientLight intensity={1} />
+          <Suspense fallback={<CustomLoader />}>
+            <ScrollControls pages={2} damping={0.1}>
+              <SphericalGallery
+                imagePaths={newImagePaths}
+                onImageHover={showTooltip}
+                onImageOut={hideTooltip}
+              />
+              {isMobile && <TouchScrollControls scrollRef={canvasRef} />}
+            </ScrollControls>
+          </Suspense>
+          <ControlsManager autoRotateSpeed={0.5} scrollRef={canvasRef} />
+        </Canvas>
+      </div>
 
       <div
         className={`tooltip ${
@@ -323,7 +423,9 @@ export default function FloatingImagesScene() {
       </div>
 
       <div className='instructions whitespace-nowrap'>
-        Click and drag to rotate the gallery
+        {isMobile
+          ? 'Pinch to zoom in and out'
+          : 'Click and drag to rotate the gallery'}
       </div>
 
       <style jsx>{`
