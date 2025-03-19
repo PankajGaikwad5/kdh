@@ -239,6 +239,22 @@ function SphericalGallery({
   );
 }
 
+function ScrollHandler({ onScrollIntoSphere, onScrollOutOfSphere }) {
+  const scroll = useScroll();
+
+  // Expose scroll functions to the parent component
+  useEffect(() => {
+    onScrollIntoSphere.current = () => {
+      scroll.scroll.current = 1; // Scroll to the end (into the sphere)
+    };
+    onScrollOutOfSphere.current = () => {
+      scroll.scroll.current = 0; // Scroll to the start (out of the sphere)
+    };
+  }, [scroll, onScrollIntoSphere, onScrollOutOfSphere]);
+
+  return null;
+}
+
 export default function FloatingImagesScene() {
   const [tooltip, setTooltip] = useState({
     visible: false,
@@ -249,6 +265,10 @@ export default function FloatingImagesScene() {
   });
 
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  // Refs to store scroll functions
+  const scrollIntoSphereRef = useRef(() => {});
+  const scrollOutOfSphereRef = useRef(() => {});
 
   // Track mouse position for tooltip
   useEffect(() => {
@@ -278,6 +298,16 @@ export default function FloatingImagesScene() {
     }, 100); // Delay hiding the tooltip
   };
 
+  // Scroll into the sphere
+  const scrollIntoSphere = () => {
+    scrollIntoSphereRef.current();
+  };
+
+  // Scroll out of the sphere
+  const scrollOutOfSphere = () => {
+    scrollOutOfSphereRef.current();
+  };
+
   return (
     <>
       <Canvas
@@ -298,6 +328,10 @@ export default function FloatingImagesScene() {
         <ambientLight intensity={1} />
         <Suspense fallback={<CustomLoader />}>
           <ScrollControls pages={2} damping={0.1}>
+            <ScrollHandler
+              onScrollIntoSphere={scrollIntoSphereRef}
+              onScrollOutOfSphere={scrollOutOfSphereRef}
+            />
             <SphericalGallery
               imagePaths={newImagePaths}
               onImageHover={showTooltip}
@@ -308,6 +342,7 @@ export default function FloatingImagesScene() {
         <ControlsManager autoRotateSpeed={0.5} />
       </Canvas>
 
+      {/* Tooltip */}
       <div
         className={`tooltip ${
           tooltip.visible ? 'visible' : ''
@@ -322,7 +357,14 @@ export default function FloatingImagesScene() {
         <div className='tooltip-group'>{tooltip.group}</div>
       </div>
 
-      <div className='instructions whitespace-nowrap'>
+      {/* Navigation Buttons */}
+      <div className='navigation-buttons flex md:hidden whitespace-nowrap'>
+        <button onClick={scrollIntoSphere}>Zoom In</button>
+        <button onClick={scrollOutOfSphere}>Zoom Out</button>
+      </div>
+
+      {/* Instructions */}
+      <div className='instructions whitespace-nowrap hidden'>
         Click and drag to rotate the gallery
       </div>
 
@@ -374,6 +416,27 @@ export default function FloatingImagesScene() {
           opacity: 0.8;
           pointer-events: none;
           z-index: 1000;
+        }
+        .navigation-buttons {
+          position: fixed;
+          bottom: 10px;
+          right: 5%;
+          gap: 10px;
+          z-index: 1000;
+        }
+        .navigation-buttons button {
+          background: rgba(0, 0, 0, 0.5);
+          color: white;
+          border: none;
+          padding: 8px 16px;
+          border-radius: 20px;
+          font-family: sans-serif;
+          font-size: 14px;
+          cursor: pointer;
+          transition: background 0.3s ease;
+        }
+        .navigation-buttons button:hover {
+          background: rgba(0, 0, 0, 0.8);
         }
       `}</style>
     </>
