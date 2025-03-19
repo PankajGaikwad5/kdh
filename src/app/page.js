@@ -9,35 +9,35 @@ const page = () => {
   const [dimensions, setDimensions] = useState({ width: 200, height: 200 });
   const floatingImagesRef = useRef(null);
 
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     if (window.innerWidth < 768) {
-  //       setDimensions({ width: 200, height: 200 });
-  //     } else {
-  //       setDimensions({ width: 200, height: 200 });
-  //     }
-  //   };
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setDimensions({ width: 100, height: 100 });
+      } else {
+        setDimensions({ width: 200, height: 200 });
+      }
+    };
 
-  //   // const handleKeyDown = (event) => {
-  //   //   if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
-  //   //     // Scroll FloatingImagesScene into focus
-  //   //     if (floatingImagesRef.current) {
-  //   //       floatingImagesRef.current.scrollIntoView({
-  //   //         behavior: 'smooth',
-  //   //         block: 'center',
-  //   //       });
-  //   //       floatingImagesRef.current.focus();
-  //   //     }
-  //   //   }
-  //   // };
-  //   window.focus(floatingImagesRef.current);
+    //   // const handleKeyDown = (event) => {
+    //   //   if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+    //   //     // Scroll FloatingImagesScene into focus
+    //   //     if (floatingImagesRef.current) {
+    //   //       floatingImagesRef.current.scrollIntoView({
+    //   //         behavior: 'smooth',
+    //   //         block: 'center',
+    //   //       });
+    //   //       floatingImagesRef.current.focus();
+    //   //     }
+    //   //   }
+    //   // };
+    //   window.focus(floatingImagesRef.current);
 
-  //   handleResize(); // Initial check
-  //   window.addEventListener('resize', handleResize);
-  //   return () => {
-  //     window.removeEventListener('resize', handleResize);
-  //   };
-  // }, []);
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <div className='min-h-screen overflow-y-hidden scrollhide overflow-hidden bg-[#232424]'>
       <div

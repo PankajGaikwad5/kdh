@@ -103,8 +103,8 @@ function ControlsManager({ autoRotateSpeed = 0.5 }) {
   return (
     <OrbitControls
       ref={controlsRef}
-      enableZoom={false}
-      enablePan={false}
+      enableZoom={true}
+      enablePan={true}
       minPolarAngle={Math.PI / 6}
       maxPolarAngle={Math.PI - Math.PI / 6}
       autoRotate
