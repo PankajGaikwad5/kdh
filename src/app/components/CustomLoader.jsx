@@ -53,7 +53,11 @@ export default function CustomLoader() {
             <span></span>
           </div>
         </div> */}
-        <img src='/gattoo2.gif' alt='loading' className='' />
+        {/* <img
+          src='https://www.icegif.com/wp-content/uploads/2023/07/icegif-1262.gif'
+          alt='loading'
+          className=''
+        /> */}
         <p>loading</p>
       </div>
       {/* </div> */}
