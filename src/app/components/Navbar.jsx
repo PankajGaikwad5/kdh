@@ -123,13 +123,13 @@ const Navbar = ({ isBgBlack, arrow, escape }) => {
       <ul
         className={
           !nav
-            ? 'absolute w-full h-screen bottom-[100%]  flex flex-col p-4 justify-center items-start md:max-w-xs text-gray-800 duration-500 z-20 uppercase'
+            ? 'absolute w-full h-screen bottom-[100%]  flex flex-col p-4 justify-center items-start md:max-w-[13rem] text-gray-800 duration-500 z-20 uppercase'
             : `fixed w-full h-screen left-0 bottom-0 flex flex-col uppercase  ${
                 isBgBlack ? 'text-white' : 'text-white'
-              }  justify-center items-start md:max-w-xs tracking-widest bg-black/90 p-4 z-20 duration-500 `
+              }  justify-center items-start md:max-w-[13rem] tracking-widest bg-black/90 p-4 z-20 duration-500 `
         }
       >
-        <ul className={`flex flex-col text-lg  `}>
+        <ul className={`flex flex-col    `}>
           <a
             href='/'
             className={`hover:text-gray-600 transition-all duration-300`}

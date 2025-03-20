@@ -2,7 +2,7 @@
 // import {Giest, Geist_Mono} from 'next'
 import './globals.css';
 import { Inter } from 'next/font/google'; // Use a known Google font
-import { Poppins, Montserrat } from 'next/font/google';
+import { Poppins, Montserrat, Mate } from 'next/font/google';
 import Footer from './components/Footer';
 import Head from 'next/head';
 
@@ -15,6 +15,10 @@ const popins = Poppins({
 const montserrat = Montserrat({
   subsets: ['latin'], // Specify subsets
   weight: ['400', '600', '700'], // Specify weight
+});
+const jose = Mate({
+  subsets: ['latin'], // Specify subsets
+  weight: ['400'], // Specify weight
 });
 
 const inter = Inter({
@@ -95,7 +99,7 @@ export default function RootLayout({ children }) {
           content='Discover the innovative architectural designs of Karan Desai Home.'
         />
       </Head>
-      <body className={`tracking-wider antialiased`}>
+      <body className={`tracking-wider antialiased ${jose.className}`}>
         {children}
         {/* <Footer /> */}
       </body>
