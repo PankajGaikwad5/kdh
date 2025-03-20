@@ -227,7 +227,7 @@ function SphericalGallery({
             key={index}
             url={item.path}
             position={[x, y, z]}
-            baseScale={2.8}
+            baseScale={3}
             productId={item.productId}
             name={item.name}
             group={item.group}

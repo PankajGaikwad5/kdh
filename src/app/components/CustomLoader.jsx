@@ -11,6 +11,11 @@ export default function CustomLoader() {
   // const { camera } = useThree();
   const loaderPosition = new THREE.Vector3(0, 6, 0); // Desired position in 3D space
   // const screenPosition = loaderPosition.clone().project(camera);
+
+  function getColor(index) {
+    const colors = ['#ef4444', '#f97316', '#eab308', '#22c55e', '#3b82f6'];
+    return colors[index % colors.length];
+  }
   return (
     <Html
       className='z-10'
@@ -58,6 +63,19 @@ export default function CustomLoader() {
           alt='loading'
           className=''
         /> */}
+        <div class='flex space-x-2'>
+          {[0, 150, 300, 450, 600].map((delay, index) => (
+            <span
+              key={index}
+              className='h-3 w-3 rounded-full animate-bounce'
+              style={{
+                animationDelay: `${delay}ms`,
+                backgroundColor: getColor(index),
+              }}
+            ></span>
+          ))}
+        </div>
+
         <p>loading</p>
       </div>
       {/* </div> */}
