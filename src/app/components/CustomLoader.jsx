@@ -63,7 +63,7 @@ export default function CustomLoader() {
           alt='loading'
           className=''
         /> */}
-        <div class='flex space-x-2'>
+        <div className='flex space-x-2'>
           {[0, 150, 300, 450, 600].map((delay, index) => (
             <span
               key={index}

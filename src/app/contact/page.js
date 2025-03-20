@@ -234,14 +234,13 @@ const page = () => {
                   <p className='text-green-400'>
                     We are not a normal team of architects and interior
                     designers, but a unified movement of innovators and creators
-                    of unique design experiences. We offer extraordinary design
-                    solutions
+                    of unique design experiences.
                   </p>
                   <p className='text-blue-400'>
-                    which contribute to the well-being of our customers and
-                    bring real value to their life and work. By entering the
-                    space we created, you will feel as if you were in your
-                    imagination.
+                    We offer extraordinary design solutions which contribute to
+                    the well-being of our customers and bring real value to
+                    their life and work. By entering the space we created, you
+                    will feel as if you were in your imagination.
                   </p>
                 </div>
               </div>

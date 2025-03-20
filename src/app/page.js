@@ -59,7 +59,7 @@ const page = () => {
           //   backgroundSize: 'cover',
           //   backgroundPosition: 'center',
           // }}
-          className='w-full p-0 mt-4  flex justify-center items-center '
+          className='w-full p-0 mt-1  flex justify-center items-center '
         >
           {/* <h1 className='uppercase md:text-6xl text-center flex flex-col md:gap-4 font-bold'>
             welcome to <span className=''>karan desai home</span>

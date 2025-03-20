@@ -242,6 +242,24 @@ function SphericalGallery({
 function ScrollHandler({ onScrollIntoSphere, onScrollOutOfSphere }) {
   const scroll = useScroll();
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setTimeout(() => {
+          scroll.scroll.current = 1;
+        }, 1000);
+      } else {
+        scroll.scroll.current = 0;
+      }
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   // Expose scroll functions to the parent component
   useEffect(() => {
     onScrollIntoSphere.current = () => {
