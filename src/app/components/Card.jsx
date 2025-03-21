@@ -42,17 +42,27 @@ Internationally, we've completed a 20,000 sq.ft. project in Chicago and are curr
         />
         {/* Text Section */}
         <div className='flex-1 space-y-4'>
-          <h2 className='text-2xl md:text-3xl font-bold text-white tracking-wider uppercase'>
+          <h2
+            className='text-2xl md:text-3xl font-bold text-white tracking-wider uppercase leading-relaxed name-content'
+            style={{
+              animationDelay: `1500ms`,
+            }}
+          >
             {title}
           </h2>
-          <h6 className='text-blue-400 uppercase font-semibold'>
+          <h6
+            className='text-blue-400 uppercase font-semibold leading-relaxed name-content'
+            style={{
+              animationDelay: `2300ms`,
+            }}
+          >
             Award Winning Architecture + Interior Design Studio | TedX Speaker
           </h6>
           <div className='overflow-hidden'>
             <p
               className='md:text-lg text-gray-300 font-light leading-relaxed whitespace-pre-line text-content'
               style={{
-                animationDelay: `1500ms`,
+                animationDelay: `3500ms`,
               }}
             >
               {fullText}
@@ -68,6 +78,12 @@ Internationally, we've completed a 20,000 sq.ft. project in Chicago and are curr
           /* The clip-path inset starts fully closed on the right */
           clip-path: inset(0 100% 0 0);
           animation: reveal 2s steps(100, end) forwards;
+        }
+        .name-content {
+          display: inline-block;
+          /* The clip-path inset starts fully closed on the right */
+          clip-path: inset(0 100% 0 0);
+          animation: reveal 1s steps(100, end) forwards;
         }
         .cursor {
           animation: blink 1s step-start infinite;
