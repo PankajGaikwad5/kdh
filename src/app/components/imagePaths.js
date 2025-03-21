@@ -132,7 +132,7 @@ export const newImagePaths = [
     productId: '67a5ec684da9b29cd0f10b8e',
   },
   {
-    name: 'Console 2',
+    name: 'Center 2',
     path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUlaNXX3A9DZL6up3G75dgCY2rJjaQFwifBAEk',
     group: 'Matilda',
     productId: '67a5ec804da9b29cd0f10b98',
@@ -393,7 +393,7 @@ export const newImagePaths = [
         productId: '67a5ec684da9b29cd0f10b8e',
       },
       {
-        name: 'Console 2',
+        name: 'Center 2',
         path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUlaNXX3A9DZL6up3G75dgCY2rJjaQFwifBAEk',
         group: 'Matilda',
         productId: '67a5ec804da9b29cd0f10b98',

@@ -31,7 +31,7 @@ const ProductCard = ({ title, img, id }) => {
                 width='200'
                 height='200'
                 loading='lazy'
-                className={`object-cover transition-transform duration-300 rounded hover:scale-105 `}
+                className={`object-cover aspect-square transition-transform duration-300 rounded hover:scale-105 `}
                 alt={title}
                 onLoad={() => setIsLoading(false)}
               />
