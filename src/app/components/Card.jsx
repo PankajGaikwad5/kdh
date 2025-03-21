@@ -66,7 +66,7 @@ Internationally, we've completed a 20,000 sq.ft. project in Chicago and are curr
               }}
             >
               {fullText}
-              <span className='cursor'>|</span>
+              {/* <span className='cursor'>|</span> */}
             </p>
           </div>
         </div>
