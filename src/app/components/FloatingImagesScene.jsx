@@ -382,8 +382,8 @@ export default function FloatingImagesScene() {
       </div>
 
       {/* Instructions */}
-      <div className='instructions whitespace-nowrap hidden'>
-        Click and drag to rotate the gallery
+      <div className='instructions whitespace-nowrap'>
+        Scroll into Karan Desai Home
       </div>
 
       <style jsx>{`
