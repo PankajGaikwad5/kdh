@@ -132,10 +132,10 @@ export const newImagePaths = [
     productId: '67a5ec684da9b29cd0f10b8e',
   },
   {
-    name: 'Center 2',
+    name: 'Center Table 2',
     path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUlaNXX3A9DZL6up3G75dgCY2rJjaQFwifBAEk',
     group: 'Matilda',
-    productId: '67a5ec804da9b29cd0f10b98',
+    productId: '67a5ecf94da9b29cd0f10bb6',
   },
   {
     name: 'Table Lamp',
@@ -393,10 +393,10 @@ export const newImagePaths = [
         productId: '67a5ec684da9b29cd0f10b8e',
       },
       {
-        name: 'Center 2',
+        name: 'Center Table 2',
         path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUlaNXX3A9DZL6up3G75dgCY2rJjaQFwifBAEk',
         group: 'Matilda',
-        productId: '67a5ec804da9b29cd0f10b98',
+        productId: '67a5ecf94da9b29cd0f10bb6',
       },
       {
         name: 'Table Lamp',

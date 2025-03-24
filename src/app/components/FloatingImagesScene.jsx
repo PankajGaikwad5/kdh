@@ -18,7 +18,6 @@ function FloatingImage({
   url,
   position,
   baseScale = 3,
-
   productId,
   name,
   group,
@@ -51,7 +50,12 @@ function FloatingImage({
 
   return (
     <group ref={ref} position={position} userData={userData}>
-      <mesh onClick={handleClick}>
+      <mesh
+        onClick={(e) => {
+          e.stopPropagation();
+          handleClick();
+        }}
+      >
         <planeGeometry args={[baseScale * aspectRatio, baseScale, 32]} />
         <meshBasicMaterial map={texture} transparent={true} alphaTest={0.5} />
       </mesh>
