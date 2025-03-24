@@ -75,7 +75,7 @@ The internship under Ar. Ashiesh Shah during a year drop in 2007 carved a path f
       <div className="absolute -z-10 w-2/3 h-2/3 bg-[url('/images/doodle-shape.png')] bg-no-repeat bg-contain opacity-10 top-10 left-8 pointer-events-none" />
 
       {/* Image Section with floating animation */}
-      <div className='relative h-auto flex-shrink-0 md:-mt-12 animate-float'>
+      <div className='relative h-auto flex-shrink-0  animate-float'>
         {/* <div className='absolute -top-2 -left-2 w-full h-full bg-white/10 rounded transform rotate-1' /> */}
         <img
           src={img}
