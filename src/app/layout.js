@@ -156,7 +156,7 @@ export default function RootLayout({ children }) {
           content='Discover the innovative architectural designs of Karan Desai Home.'
         />
       </Head>
-      <body className={`tracking-wider antialiased ${jose.className}`}>
+      <body className={`tracking-widest antialiased ${jose.className}`}>
         {children}
         {/* <Footer /> */}
       </body>

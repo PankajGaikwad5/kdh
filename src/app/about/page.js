@@ -32,7 +32,7 @@ const page = () => {
             </div>
             <div className='p-2 md:p-8 flex justify-center'>
               <Card
-                img={'/assets/profile.jpg'}
+                img={'/assets/profile2.png'}
                 imagePosition={'left'}
                 title={'Karan Desai'}
                 desc={
