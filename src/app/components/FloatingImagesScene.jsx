@@ -382,7 +382,7 @@ export default function FloatingImagesScene() {
       </div>
 
       {/* Instructions */}
-      <div className='instructions whitespace-nowrap'>
+      <div className='instructions whitespace-nowrap hidden md:flex'>
         Scroll into Karan Desai Home
       </div>
 
