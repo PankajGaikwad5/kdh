@@ -42,6 +42,18 @@ const page = () => {
     <main className='min-h-screen overflow-y-hidden scrollhide overflow-hidden bg-[#232424]'>
       <div className='hidden'>
         <h1>Karan Desai Home</h1>
+        <h1>Karan Desai</h1>
+        <h1>Karan Desai Acrhitect</h1>
+        <h1>Karan Desai Acrhitect + Design</h1>
+        <h2>Architect</h2>
+        <h2>Designer</h2>
+        <h2>Interior Designer</h2>
+        <h2>Serafini</h2>
+        <h2>Casa walls</h2>
+        <h2>Dimensions</h2>
+        <h2>Top Brewer</h2>
+        <h2>Gattoo</h2>
+        <h2>Monster</h2>
         <p>Discover the innovative architectural designs of Karan Desai Home</p>
         <p>
           Karan Desai Award Winning Architecture + Interior Design Studio | TedX
