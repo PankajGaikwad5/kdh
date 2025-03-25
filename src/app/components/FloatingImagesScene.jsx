@@ -278,6 +278,7 @@ function ScrollHandler({ onScrollIntoSphere, onScrollOutOfSphere }) {
 }
 
 export default function FloatingImagesScene() {
+  const [hasMouseMoved, setHasMouseMoved] = useState(false);
   const [tooltip, setTooltip] = useState({
     visible: false,
     name: '',
@@ -296,6 +297,7 @@ export default function FloatingImagesScene() {
   useEffect(() => {
     const handleMouseMove = (e) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
+      setHasMouseMoved(true); // Add this line
     };
 
     window.addEventListener('mousemove', handleMouseMove);
@@ -305,6 +307,7 @@ export default function FloatingImagesScene() {
   }, []);
 
   const showTooltip = ({ name, group, event }) => {
+    if (!hasMouseMoved) return;
     setTooltip({
       visible: true,
       name,
@@ -367,7 +370,7 @@ export default function FloatingImagesScene() {
       {/* Tooltip */}
       <div
         className={`tooltip ${
-          tooltip.visible ? 'visible' : ''
+          tooltip.visible && hasMouseMoved ? 'visible' : '' // Modify this line
         } hidden md:block`}
         style={{
           top: tooltip.y + 15,
