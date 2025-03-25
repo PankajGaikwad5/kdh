@@ -27,7 +27,7 @@ const SubProductCard = ({ title, img, id }) => {
                 width='300'
                 height='300'
                 loading='lazy'
-                className={`object-cover transition-transform duration-300 rounded hover:scale-105 `}
+                className={`object-cover transition-transform duration-300 rounded hover:scale-[1.70] `}
                 alt={title}
                 onLoad={() => setIsLoading(false)}
               />
