@@ -22,7 +22,8 @@ const page = (params) => {
     {
       _id: 1,
       fileName: 'temp',
-      filePath: '/assets/loading.gif',
+      filePath:
+        'https://i.pinimg.com/originals/c4/3b/2d/c43b2d56b4ec611ac450e6782f7143b7.gif',
     },
   ];
   const [scrollPosition, setScrollPosition] = useState(0);
