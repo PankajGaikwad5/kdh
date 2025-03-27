@@ -54,6 +54,12 @@ export const newImagePaths = [
     productId: '67a5fa324da9b29cd0f10c3a',
   },
   {
+    name: 'Console 1',
+    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUolTL2HPd43VNTXj27bgOZneCUs9aBiY5x8vw',
+    group: 'Matilda',
+    productId: '67a5ec804da9b29cd0f10b98',
+  },
+  {
     name: 'Console 2',
     path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUA1rftpJ1oeY2wnF0zQbWX83C4KujdSqt6MUT',
     group: 'Matilda',
@@ -126,7 +132,7 @@ export const newImagePaths = [
     productId: '67a5f8544da9b29cd0f10c31',
   },
   {
-    name: 'Console 2',
+    name: 'Console 1',
     path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU13QEwhmcNbALVg2tCIRm5fi0793BwZH8PYyx',
     group: 'Matilda',
     productId: '67a5ec684da9b29cd0f10b8e',
@@ -315,6 +321,12 @@ export const newImagePaths = [
         productId: '67a5fa324da9b29cd0f10c3a',
       },
       {
+        name: 'Console 1',
+        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUolTL2HPd43VNTXj27bgOZneCUs9aBiY5x8vw ',
+        group: 'Matilda',
+        productId: '67a5ec804da9b29cd0f10b98',
+      },
+      {
         name: 'Console 2',
         path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUA1rftpJ1oeY2wnF0zQbWX83C4KujdSqt6MUT',
         group: 'Matilda',
@@ -387,7 +399,7 @@ export const newImagePaths = [
         productId: '67a5f8544da9b29cd0f10c31',
       },
       {
-        name: 'Console 2',
+        name: 'Console 1',
         path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU13QEwhmcNbALVg2tCIRm5fi0793BwZH8PYyx',
         group: 'Matilda',
         productId: '67a5ec684da9b29cd0f10b8e',
