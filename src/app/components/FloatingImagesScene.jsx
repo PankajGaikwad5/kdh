@@ -369,7 +369,7 @@ export default function FloatingImagesScene() {
 
       {/* Tooltip */}
       <div
-        className={`tooltip ${
+        className={`tooltip bg-black bg-opacity-80 p-10 text-white rounded-2xl ${
           tooltip.visible && hasMouseMoved ? 'visible' : '' // Modify this line
         } hidden md:block`}
         style={{
@@ -396,12 +396,6 @@ export default function FloatingImagesScene() {
       <style jsx>{`
         .tooltip {
           position: fixed;
-          background: linear-gradient(
-            135deg,
-            rgba(0, 0, 0, 0.85),
-            rgba(50, 50, 50, 0.95)
-          );
-          color: #fff;
           padding: 12px 16px;
           pointer-events: none;
           font-family: sans-serif;
