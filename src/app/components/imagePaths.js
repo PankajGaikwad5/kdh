@@ -138,6 +138,12 @@ export const newImagePaths = [
     productId: '67a5ec684da9b29cd0f10b8e',
   },
   {
+    name: 'Center Table 1',
+    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULg6XboDqbauUfVsg4JYrj86xOSilFe5PBo3m',
+    group: 'Matilda',
+    productId: '67a5ece24da9b29cd0f10bac',
+  },
+  {
     name: 'Center Table 2',
     path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUlaNXX3A9DZL6up3G75dgCY2rJjaQFwifBAEk',
     group: 'Matilda',
@@ -264,7 +270,7 @@ export const newImagePaths = [
     productId: '67a5ef7f4da9b29cd0f10c05',
   },
 
-  ...Array(7)
+  ...Array(6)
     .fill([
       {
         name: 'Gattoo Chair',
@@ -403,6 +409,12 @@ export const newImagePaths = [
         path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU13QEwhmcNbALVg2tCIRm5fi0793BwZH8PYyx',
         group: 'Matilda',
         productId: '67a5ec684da9b29cd0f10b8e',
+      },
+      {
+        name: 'Center Table 1',
+        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULg6XboDqbauUfVsg4JYrj86xOSilFe5PBo3m',
+        group: 'Matilda',
+        productId: '67a5ece24da9b29cd0f10bac',
       },
       {
         name: 'Center Table 2',

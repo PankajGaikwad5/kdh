@@ -147,7 +147,9 @@ const DescAccordian = ({ scrollPosition, desc, title, dimensions }) => {
             <AccordionTrigger className='text-zinc-300 uppercase font-semibold'>
               Dimensions
             </AccordionTrigger>
-            <AccordionContent>{dimensions}</AccordionContent>
+            <AccordionContent>
+              <img src={dimensions} alt={title} />
+            </AccordionContent>
           </AccordionItem>
           <AccordionItem
             value='item-3'

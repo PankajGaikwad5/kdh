@@ -83,7 +83,9 @@ const page = (params) => {
 
   const title = data?.products?.title || 'Loading...';
   const description = data?.products?.description || 'Loading...';
-  const dimensions = data?.products?.dimensions || 'Loading...';
+  const dimensions =
+    data?.products?.dimensions ||
+    'https://i.pinimg.com/originals/c4/3b/2d/c43b2d56b4ec611ac450e6782f7143b7.gif';
   const images = data?.products?.images || tempImageData;
   const group = data?.products?.group || '#';
 
