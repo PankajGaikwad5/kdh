@@ -117,7 +117,7 @@ const page = () => {
                           <FormLabel>Name</FormLabel>
                           <FormControl>
                             <Input
-                              className='text-white border border-zinc-400'
+                              className='text-black border border-zinc-400'
                               placeholder='Enter your name'
                               {...field}
                             />
