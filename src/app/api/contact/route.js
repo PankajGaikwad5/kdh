@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer';
 
 export async function POST(req) {
   const { values } = await req.json();
-  const { name, email, message } = values;
+  const { name, email, message, subject, product } = values;
   const transporter = nodemailer.createTransport({
     service: 'gmail', // or another email provider
     auth: {
@@ -16,8 +16,10 @@ export async function POST(req) {
   const mailOptions = {
     from: email, // sender's email
     to: process.env.REMAIL, // recipient's email
-    subject: '3d Model Form Submission',
-    text: `Name: ${name}\nEmail: ${email}\nMessage: ${message} Website: KDH`,
+    subject: subject,
+    text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}\n${
+      product ? `product: ${product}` : ''
+    }`,
   };
   try {
     await transporter.sendMail(mailOptions);

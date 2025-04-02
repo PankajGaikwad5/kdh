@@ -1,4 +1,4 @@
-const getTopicById = async (id) => {
+export const getTopicById = async (id) => {
   try {
     const res = await fetch(`/api/products/${id}`, {
       cache: 'no-store',

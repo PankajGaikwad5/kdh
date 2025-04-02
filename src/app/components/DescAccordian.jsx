@@ -1,5 +1,6 @@
 'use client';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import getId from './getId';
 import {
   Accordion,
   AccordionContent,
@@ -41,6 +42,8 @@ const formSchema = z.object({
     .max(50, 'name must be at most 50 characters'),
   email: z.string().email('Invalid email address').min(2).max(50),
   message: z.string(),
+  subject: z.string(),
+  product: z.string(),
 });
 
 const DescAccordian = ({ scrollPosition, desc, title, dimensions }) => {
@@ -50,6 +53,8 @@ const DescAccordian = ({ scrollPosition, desc, title, dimensions }) => {
       name: '',
       email: '',
       message: '',
+      subject: '3D model form submission',
+      product: '',
     },
   });
 
@@ -215,6 +220,23 @@ const DescAccordian = ({ scrollPosition, desc, title, dimensions }) => {
                           <Input
                             className='bg-black text-white placeholder:text-white'
                             placeholder='Enter your email'
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name='product'
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Product Name</FormLabel>
+                        <FormControl>
+                          <Input
+                            className='bg-black text-white placeholder:text-white'
+                            placeholder='Please specify the product name'
                             {...field}
                           />
                         </FormControl>

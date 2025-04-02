@@ -42,6 +42,7 @@ const formSchema = z.object({
     .max(50, 'name must be at most 50 characters'),
   email: z.string().email('Invalid email address').min(2).max(50),
   message: z.string(),
+  subject: z.string(),
 });
 
 const page = () => {
@@ -51,6 +52,7 @@ const page = () => {
       name: '',
       email: '',
       message: '',
+      subject: 'Kdh contact form',
     },
   });
 
