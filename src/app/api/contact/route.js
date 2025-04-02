@@ -17,7 +17,7 @@ export async function POST(req) {
     from: email, // sender's email
     to: process.env.REMAIL, // recipient's email
     subject: '3d Model Form Submission',
-    text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+    text: `Name: ${name}\nEmail: ${email}\nMessage: ${message} Website: KDH`,
   };
   try {
     await transporter.sendMail(mailOptions);
