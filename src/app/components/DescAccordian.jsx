@@ -129,7 +129,7 @@ const DescAccordian = ({ scrollPosition, desc, title, dimensions }) => {
           collapsible
           className='space-y-4 font-thin text-sm text-zinc-400'
         >
-          <AccordionItem
+          {/* <AccordionItem
             value='item-1'
             className='border-y-[1px] border-zinc-600 py-1'
           >
@@ -144,7 +144,7 @@ const DescAccordian = ({ scrollPosition, desc, title, dimensions }) => {
               deleniti eaque recusandae esse accusantium quidem. Aliquid
               similique dolorem quibusdam beatae earum.
             </AccordionContent>
-          </AccordionItem>
+          </AccordionItem> */}
           <AccordionItem
             value='item-2'
             className='border-y-[1px] border-zinc-600 py-1'
