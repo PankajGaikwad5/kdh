@@ -83,6 +83,7 @@ const page = (params) => {
 
   const title = data?.products?.title || 'Loading...';
   const description = data?.products?.description || 'Loading...';
+  const pdf = data?.products?.pdf || 'Loading...';
   const dimensions =
     data?.products?.dimensions ||
     'https://i.pinimg.com/originals/c4/3b/2d/c43b2d56b4ec611ac450e6782f7143b7.gif';
@@ -107,6 +108,7 @@ const page = (params) => {
             desc={description}
             dimensions={dimensions}
             title={title}
+            pdf={pdf}
           />
         </Element>
         <Element name='footer'>

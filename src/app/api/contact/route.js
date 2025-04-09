@@ -15,7 +15,7 @@ export async function POST(req) {
   // Set up email options
   const mailOptions = {
     from: email, // sender's email
-    to: process.env.REMAIL, // recipient's email
+    to: `${process.env.REMAIL}, ${process.env.SECONDEMAIL}`, // recipient's email
     subject: subject,
     text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}\n${
       product ? `product: ${product}` : ''

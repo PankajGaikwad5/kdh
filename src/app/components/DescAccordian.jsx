@@ -46,7 +46,7 @@ const formSchema = z.object({
   product: z.string(),
 });
 
-const DescAccordian = ({ scrollPosition, desc, title, dimensions }) => {
+const DescAccordian = ({ scrollPosition, desc, title, dimensions, pdf }) => {
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -86,8 +86,7 @@ const DescAccordian = ({ scrollPosition, desc, title, dimensions }) => {
 
   const handleDownload = async (event) => {
     event.preventDefault();
-    const fileUrl =
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQsSTArCgpKiS14YXmU2JDcwG0vBsCL6dWNyP';
+    const fileUrl = pdf;
 
     try {
       const response = await fetch(fileUrl);
