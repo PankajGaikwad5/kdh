@@ -269,6 +269,12 @@ export const newImagePaths = [
     group: 'Matilda',
     productId: '67a5ef7f4da9b29cd0f10c05',
   },
+  {
+    name: 'Dining Table',
+    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHckn01SaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
+    group: 'Matilda',
+    productId: '67ef850f629882967f3fbb3d',
+  },
 
   ...Array(6)
     .fill([
@@ -541,6 +547,12 @@ export const newImagePaths = [
         path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULbLOLiDqbauUfVsg4JYrj86xOSilFe5PBo3m',
         group: 'Matilda',
         productId: '67a5ef7f4da9b29cd0f10c05',
+      },
+      {
+        name: 'Dining Table',
+        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHckn01SaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
+        group: 'Matilda',
+        productId: '67ef850f629882967f3fbb3d',
       },
     ])
     .flat(),
