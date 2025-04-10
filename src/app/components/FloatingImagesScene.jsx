@@ -12,6 +12,7 @@ import { useRouter } from 'next/navigation';
 import { newImagePaths } from './imagePaths';
 import { Suspense } from 'react';
 import CustomLoader from './CustomLoader';
+import { Plus, Minus } from 'lucide-react';
 
 // Enhanced Image component to maintain aspect ratio
 function FloatingImage({
@@ -383,15 +384,19 @@ export default function FloatingImagesScene() {
       </div>
 
       {/* Navigation Buttons */}
-      <div className='navigation-buttons flex md:hidden whitespace-nowrap'>
-        <button onClick={scrollIntoSphere}>Zoom In</button>
-        <button onClick={scrollOutOfSphere}>Zoom Out</button>
+      <div className='navigation-buttons flex justify-center w-full md:hidden whitespace-nowrap'>
+        <button onClick={scrollOutOfSphere}>
+          <Minus />
+        </button>
+        <button onClick={scrollIntoSphere}>
+          <Plus />
+        </button>
       </div>
 
       {/* Instructions */}
-      <div className='instructions whitespace-nowrap hidden md:flex'>
+      {/* <div className='instructions whitespace-nowrap hidden md:flex'>
         Scroll into Karan Desai Home
-      </div>
+      </div> */}
 
       <style jsx>{`
         .tooltip {
@@ -438,8 +443,7 @@ export default function FloatingImagesScene() {
         }
         .navigation-buttons {
           position: fixed;
-          bottom: 10px;
-          right: 5%;
+          bottom: 15px;
           gap: 10px;
           z-index: 1000;
         }
@@ -447,8 +451,8 @@ export default function FloatingImagesScene() {
           background: rgba(0, 0, 0, 0.5);
           color: white;
           border: none;
-          padding: 8px 16px;
-          border-radius: 20px;
+          padding: 6px 10px;
+          border-radius: 25px;
           font-family: sans-serif;
           font-size: 14px;
           cursor: pointer;
