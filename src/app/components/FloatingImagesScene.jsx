@@ -386,10 +386,10 @@ export default function FloatingImagesScene() {
       {/* Navigation Buttons */}
       <div className='navigation-buttons flex justify-center w-full md:hidden whitespace-nowrap'>
         <button onClick={scrollOutOfSphere}>
-          <Minus />
+          <Minus size={30} />
         </button>
         <button onClick={scrollIntoSphere}>
-          <Plus />
+          <Plus size={30} />
         </button>
       </div>
 
@@ -443,7 +443,7 @@ export default function FloatingImagesScene() {
         }
         .navigation-buttons {
           position: fixed;
-          bottom: 15px;
+          bottom: 20px;
           gap: 10px;
           z-index: 1000;
         }
