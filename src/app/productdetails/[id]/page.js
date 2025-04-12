@@ -81,6 +81,29 @@ const page = (params) => {
     };
   }, []);
 
+  useEffect(() => {
+    // Check if fbq is already defined to avoid reloading
+    if (!window.fbq) {
+      const script = document.createElement('script');
+      script.innerHTML = `
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];
+        t=b.createElement(e);t.async=!0;
+        t.src=v;
+        s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)
+        }(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1398430317981375');
+        fbq('track', 'PageView');
+      `;
+      document.head.appendChild(script);
+    }
+  }, []);
+
   const title = data?.products?.title || 'Loading...';
   const description = data?.products?.description || 'Loading...';
   const pdf = data?.products?.pdf || 'Loading...';
@@ -91,31 +114,45 @@ const page = (params) => {
   const group = data?.products?.group || '#';
 
   return (
-    <div className='bg-black'>
-      <div className='flex flex-col relative overflow-hidden'>
-        <Navbar arrow={true} escape={true} />
-        <div className='w-full h-screen p-0 m-0 bg-black'>
-          <Element name=''>
-            <CarouselComp imgArray={images} />
+    <>
+      <noscript>
+        <img
+          height='1'
+          width='1'
+          style={{ display: 'none' }}
+          src='https://www.facebook.com/tr?id=1398430317981375&ev=PageView&noscript=1'
+          alt='fb-pixel'
+        />
+      </noscript>
+      <div className='bg-black'>
+        <div className='flex flex-col relative overflow-hidden'>
+          <Navbar arrow={true} escape={true} />
+          <div className='w-full h-screen p-0 m-0 bg-black'>
+            <Element name=''>
+              <CarouselComp imgArray={images} />
+            </Element>
+          </div>
+          <Element
+            name='newSection'
+            className=' w-full m-0 p-0 hidden md:block'
+          >
+            <div className='w-full h-[2px] bg-zinc-200/50 border-b border-zinc-700'></div>
+          </Element>
+          <Element name='description' className='border-b-2 border-zinc-400 '>
+            <DescAccordian
+              scrollPosition={scrollPosition}
+              desc={description}
+              dimensions={dimensions}
+              title={title}
+              pdf={pdf}
+            />
+          </Element>
+          <Element name='footer'>
+            <Footer />
           </Element>
         </div>
-        <Element name='newSection' className=' w-full m-0 p-0 hidden md:block'>
-          <div className='w-full h-[2px] bg-zinc-200/50 border-b border-zinc-700'></div>
-        </Element>
-        <Element name='description' className='border-b-2 border-zinc-400 '>
-          <DescAccordian
-            scrollPosition={scrollPosition}
-            desc={description}
-            dimensions={dimensions}
-            title={title}
-            pdf={pdf}
-          />
-        </Element>
-        <Element name='footer'>
-          <Footer />
-        </Element>
       </div>
-    </div>
+    </>
   );
 };
 
