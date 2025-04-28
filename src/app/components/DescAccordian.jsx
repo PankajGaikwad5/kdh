@@ -53,7 +53,7 @@ const DescAccordian = ({ scrollPosition, desc, title, dimensions, pdf }) => {
       name: '',
       email: '',
       message: '',
-      subject: '3D model form submission',
+      subject: '3D model ',
       product: '',
     },
   });

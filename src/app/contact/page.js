@@ -52,7 +52,7 @@ const page = () => {
       name: '',
       email: '',
       message: '',
-      subject: 'Kdh contact form',
+      subject: 'Contact Form',
     },
   });
 
