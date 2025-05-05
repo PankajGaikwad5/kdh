@@ -261,8 +261,7 @@ export const collabs = [
     images: [
       {
         fileName: '2.jpg',
-        fileUrl:
-          'https://foremostmarbles.com/wp-content/uploads/2021/09/FM-LOGO-copy-1536x292.png',
+        fileUrl: '/assets/fm.png',
         _id: {
           $oid: '6791fe227a5dc4ac2d27e24f',
         },
@@ -286,7 +285,7 @@ export const collabs = [
     images: [
       {
         fileName: '2.jpg',
-        fileUrl: '/assets/casa.png',
+        fileUrl: '/assets/casa2.png',
         _id: {
           $oid: '6791fe227a5dc4ac2d27e24f',
         },
