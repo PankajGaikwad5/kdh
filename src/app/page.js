@@ -39,7 +39,7 @@ const page = () => {
     };
   }, []);
   return (
-    <main className='min-h-screen overflow-y-hidden scrollhide overflow-hidden bg-[#232424]'>
+    <main className='min-h-screen select-none overflow-y-hidden scrollhide overflow-hidden bg-[#232424]'>
       <div className='hidden'>
         <h1>Karan Desai Home</h1>
         <h1>Karan Desai</h1>

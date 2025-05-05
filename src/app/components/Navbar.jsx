@@ -94,7 +94,7 @@ const Navbar = ({ isBgBlack, arrow, escape }) => {
   return (
     <>
       <div
-        className={` w-full flex fixed md:m-8 m-6 font-mono font-extralight text-xs uppercase tracking-wider text-gray-800 navMenu z-30 cursor-pointer ${
+        className={` w-full flex fixed md:m-8 m-6  font-extralight text-xs uppercase tracking-wider text-gray-800 navMenu z-30 cursor-pointer ${
           nav && 'open'
         }`}
         onClick={() => {
@@ -129,7 +129,9 @@ const Navbar = ({ isBgBlack, arrow, escape }) => {
               }  justify-center items-start md:max-w-[13rem] tracking-widest bg-black/90 p-4 z-20 duration-500 `
         }
       >
-        <ul className={`flex flex-col    `}>
+        <ul
+          className={`flex flex-col font-semibold text-sm 2xl:text-lg ${popins.className} `}
+        >
           <a
             href='/'
             className={`hover:text-gray-600 transition-all duration-300`}

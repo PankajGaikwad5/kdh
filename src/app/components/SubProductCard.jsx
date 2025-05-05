@@ -13,7 +13,7 @@ const SubProductCard = ({ title, img, id }) => {
   return (
     <div
       onClick={navigateTo}
-      className='cursor-pointer transform transition duration-300 hover:scale-[1.02] hover:z-20'
+      className='cursor-pointer transform transition duration-300 hover:scale-[1.02]'
     >
       <div className='p-0'>
         <div className='duration-300'>
