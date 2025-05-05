@@ -188,7 +188,7 @@ const ProductDetailPage = ({ params }) => {
           <Navbar arrow={true} escape={true} />
 
           {/* Hero Section with Main Image */}
-          <div className='absolute top-6 left-[45%] 2xl:left-[47%] z-50'>
+          <div className='fixed top-6 left-[45%] 2xl:left-[47%] z-50'>
             <Image
               src='/assets/kdhlogo3.png'
               alt='Your Logo'
