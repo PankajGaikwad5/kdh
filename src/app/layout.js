@@ -271,7 +271,7 @@ export default function RootLayout({ children }) {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta
           name='description'
-          content={`Discover the innovative architectural designs of Karan Desai Home. Karan Desai Award Winning Architecture + Interior Design Studio | TedX
+          content={`Discover the innovative product designs of Karan Desai Home. Karan Desai Award Winning Architecture + Interior Design Studio | TedX
           Speaker Karan DesaiBorn in 1987, a passionate founder of his eponymous
           studio, KARAN DESAI | Architecture + Design, focusing on Architecture,
           Interiors & furniture designing, KD started off with his individual
