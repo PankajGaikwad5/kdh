@@ -208,9 +208,9 @@ const ProductDetailPage = ({ params }) => {
               className=' flex flex-col items-center cursor-pointer'
             >
               <ArrowDown size={28} className='animate-pulse anima text-white' />
-              <span className='mt-1 text-xs text-white uppercase tracking-wide'>
+              {/* <span className='mt-1 text-xs text-white uppercase tracking-wide'>
                 Scroll
-              </span>
+              </span> */}
             </Link>
           </div>
           <div className='w-full h-screen p-0 m-0 relative'>
