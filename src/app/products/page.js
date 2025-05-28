@@ -56,7 +56,7 @@ const page = () => {
     {
       id: 5,
       title: 'Monster Collectibles',
-      group: 'monster_collection',
+      group: 'monster_collectibles',
       img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8C1mTl64oKUn37W6wsTlRmDBFhGrviIjcMxV',
       projects:
         'monster binty, monster brainy, monster gattooffer, monster guard, monster gum, monster grumpy, monster squinty',
