@@ -7,6 +7,7 @@ import Navbar from '@/app/components/Navbar';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { ArrowDown } from 'lucide-react';
+import Head from 'next/head';
 
 // Lazy load components that aren't needed for initial render
 const CarouselComp = React.lazy(() => import('../../components/CarouselComp'));
@@ -102,7 +103,7 @@ const ProductDetailPage = ({ params }) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Data fetching in a separate function
+  // Data fetching
   useEffect(() => {
     const controller = new AbortController();
     const signal = controller.signal;
@@ -112,7 +113,7 @@ const ProductDetailPage = ({ params }) => {
       try {
         const res = await fetch(`/api/products/${params.id}`, {
           signal,
-          next: { revalidate: 300 }, // Revalidate cache every 5 minutes
+          next: { revalidate: 300 },
         });
 
         if (!res.ok) throw new Error('Failed to fetch product');
@@ -132,14 +133,12 @@ const ProductDetailPage = ({ params }) => {
 
     fetchData();
 
-    // Cleanup function
     return () => controller.abort();
   }, [params.id]);
 
   // Optimized scroll handler with throttling
   useEffect(() => {
     let ticking = false;
-
     const handleScroll = () => {
       if (!ticking) {
         window.requestAnimationFrame(() => {
@@ -149,12 +148,10 @@ const ProductDetailPage = ({ params }) => {
         ticking = true;
       }
     };
-
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Handle navigation
   const handleGoBack = (e) => {
     e.preventDefault();
     if (window.history.length > 1) {
@@ -164,30 +161,45 @@ const ProductDetailPage = ({ params }) => {
     }
   };
 
-  // Loading state
   if (isLoading) {
     return <LoadingSpinner />;
   }
 
-  // Error state
   if (!product) {
     return (
       <div className='flex flex-col h-screen w-full items-center justify-center bg-black text-white'>
-        {/* <h1 className='text-2xl font-bold mb-4'>Product not found</h1> */}
         <Button onClick={handleGoBack}>Go Back</Button>
       </div>
     );
   }
 
-  // Main content with progressive loading
   return (
     <>
+      <Head>
+        <title>{`${product.title} | Karan Desai Home`}</title>
+        <meta
+          name='description'
+          content={`Discover ${product.title} from the ${product.group} collection at Karan Desai Home.`}
+        />
+        <meta
+          name='keywords'
+          content={`Karan Desai Home, ${product.title}, ${product.group}, luxury furniture, designer decor`}
+        />
+        <meta
+          property='og:title'
+          content={`${product.title} | Karan Desai Home`}
+        />
+        <meta
+          property='og:description'
+          content={`Explore the ${product.group} collection and more at Karan Desai Home.`}
+        />
+      </Head>
+
       <FacebookPixel />
       <div className='bg-black min-h-screen'>
         <div className='flex flex-col relative select-none'>
           <Navbar arrow={true} escape={true} />
 
-          {/* Hero Section with Main Image */}
           <div className='fixed top-6 left-[45%] 2xl:left-[47%] z-50'>
             <Image
               src='/assets/kdhlogo3.png'
@@ -196,23 +208,22 @@ const ProductDetailPage = ({ params }) => {
               height={150}
             />
           </div>
+
           <div
             className={`${
               isScrolled && 'hidden transition-all duration-300'
             } absolute top-[55%] right-0 transform -translate-x-1/2 z-50 transition-all duration-300`}
           >
             <Link
-              to='description' // matches your <Element name="description">
+              to='description'
               smooth={true}
               duration={600}
-              className=' flex flex-col items-center cursor-pointer'
+              className='flex flex-col items-center cursor-pointer'
             >
-              <ArrowDown size={28} className='animate-pulse anima text-white' />
-              {/* <span className='mt-1 text-xs text-white uppercase tracking-wide'>
-                Scroll
-              </span> */}
+              <ArrowDown size={28} className='animate-pulse text-white' />
             </Link>
           </div>
+
           <div className='w-full h-screen p-0 m-0 relative'>
             <div className='absolute w-full h-screen top-0 left-0 z-0'>
               {product.images && product.images[1]?.filePath && (
@@ -225,7 +236,6 @@ const ProductDetailPage = ({ params }) => {
             </div>
             <div className='absolute w-full h-screen top-0 left-0 z-0 bg-black/50 backdrop-blur-md'></div>
 
-            {/* Carousel */}
             <Element name='' className='z-20'>
               <Suspense
                 fallback={
@@ -237,12 +247,10 @@ const ProductDetailPage = ({ params }) => {
             </Element>
           </div>
 
-          {/* Divider */}
           <Element name='newSection' className='w-full m-0 p-0 hidden md:block'>
             <div className='w-full h-[2px] bg-zinc-200/50 border-b border-zinc-700'></div>
           </Element>
 
-          {/* Description Section */}
           <Element name='description' className='border-b-2 border-zinc-400'>
             <Suspense
               fallback={
@@ -261,7 +269,6 @@ const ProductDetailPage = ({ params }) => {
             </Suspense>
           </Element>
 
-          {/* Footer */}
           <Element name='footer'>
             <Footer />
           </Element>
