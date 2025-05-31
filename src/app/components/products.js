@@ -1,0 +1,2936 @@
+export const products = [
+  {
+    _id: {
+      $oid: '67a5ec494da9b29cd0f10b87',
+    },
+    title: 'partition screen',
+    group: 'matilda',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUMm9LEowfQbC4M3ZGkSm6KPAV10HlYU9dinrX',
+    images: [
+      {
+        fileName: '1738927177034-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUU8HsyLBY1Vx48e2bhPHIZJqsnBOSArl5D3MT',
+        _id: {
+          $oid: '67a5ec494da9b29cd0f10b88',
+        },
+      },
+      {
+        fileName: '1738927177034-Slide1.JPG',
+        filePath: '/assets/products/1738927177034-Slide1.JPG',
+        _id: {
+          $oid: '67a5ec494da9b29cd0f10b88',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927177034-Slide1.JPG',
+      },
+      {
+        fileName: '1738927177035-Slide2.JPG',
+        filePath: '/assets/products/1738927177035-Slide2.JPG',
+        _id: {
+          $oid: '67a5ec494da9b29cd0f10b89',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927177035-Slide2.JPG',
+      },
+      {
+        fileName: '1738927177036-Slide3.JPG',
+        filePath: '/assets/products/1738927177036-Slide3.JPG',
+        _id: {
+          $oid: '67a5ec494da9b29cd0f10b8a',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927177036-Slide3.JPG',
+      },
+      {
+        fileName: '1738927177038-Slide4.JPG',
+        filePath: '/assets/products/1738927177038-Slide4.JPG',
+        _id: {
+          $oid: '67a5ec494da9b29cd0f10b8b',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927177038-Slide4.JPG',
+      },
+      {
+        fileName: '1738927177039-Slide5.JPG',
+        filePath: '/assets/products/1738927177039-Slide5.JPG',
+        _id: {
+          $oid: '67a5ec494da9b29cd0f10b8c',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927177039-Slide5.JPG',
+      },
+    ],
+    description:
+      'This beautiful marble partition wall is both elegant and well-made.\n\nThis all-white marble work of art redefines luxury with its smooth shapes and stunning crossing pattern.',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUOeq1JXZXhqs0g964QCxmbwcn2WStleB3MEP5',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5f6834da9b29cd0f10c27',
+    },
+    title: 'monster gum',
+    group: 'monster_collectibles',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDqHaKe8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+    images: [
+      {
+        fileName: '1738929795488-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDREE0DA8FYI8sxbtc2ngQN4ZeSPwOKkv5yAj',
+        _id: {
+          $oid: '67a5f6834da9b29cd0f10c28',
+        },
+      },
+      {
+        fileName: '1738929795488-Slide1.JPG',
+        filePath: '/assets/products/1738929795488-Slide1.JPG',
+        _id: {
+          $oid: '67a5f6834da9b29cd0f10c28',
+        },
+        thumbnail: '/assets/products/thumbnails/1738929795488-Slide1.JPG',
+      },
+      {
+        fileName: '1738929795490-Slide2.JPG',
+        filePath: '/assets/products/1738929795490-Slide2.JPG',
+        _id: {
+          $oid: '67a5f6834da9b29cd0f10c29',
+        },
+        thumbnail: '/assets/products/thumbnails/1738929795490-Slide2.JPG',
+      },
+      {
+        fileName: '1738929795491-Slide3.JPG',
+        filePath: '/assets/products/1738929795491-Slide3.JPG',
+        _id: {
+          $oid: '67a5f6834da9b29cd0f10c2a',
+        },
+        thumbnail: '/assets/products/thumbnails/1738929795491-Slide3.JPG',
+      },
+    ],
+    description:
+      'Brighten your space with a playful twist!\n\nThe Monster Gum Lamp blends quirky design with practical lighting, bringing a splash of creativity to any room.\n\nWith its soft, gummy texture and bold shape, it’s the perfect statement piece to spark conversations and light up your home in a fun, unexpected way. 🌟💡',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUv1mQj1X0iQtznIlhRaFJ8jZ6p7xPg3bw9OrD',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67b590b8e03cc2c55c624a5b',
+    },
+    title: 'Monster Bench',
+    group: 'monster_3.0',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9zGTRgx2frimQ5LhFdjbpOHNPEsav1o2Ac0D',
+    images: [
+      {
+        fileName: '1739952312340-MB Set.53.jpg',
+        filePath: '/new_monster3/bench1.jpg',
+        _id: {
+          $oid: '67b590b8e03cc2c55c624a5c',
+        },
+        thumbnail: '/assets/products/thumbnails/bench1.jpg',
+      },
+      {
+        fileName: '1739952312340-MB Set.53.jpg',
+        filePath: '/new_monster3/bench2.jpg',
+        _id: {
+          $oid: '67b590b8e03cc2c55c624a5c',
+        },
+        thumbnail: '/assets/products/thumbnails/bench2.jpg',
+      },
+      {
+        fileName: '1739952312340-MB Set.53.jpg',
+        filePath: '/new_monster3/bench3.jpg',
+        _id: {
+          $oid: '67b590b8e03cc2c55c624a5c',
+        },
+        thumbnail: '/assets/products/thumbnails/bench3.jpg',
+      },
+      {
+        fileName: '1739952312340-MB Set.53.jpg',
+        filePath: '/new_monster3/bench4.jpg',
+        _id: {
+          $oid: '67b590b8e03cc2c55c624a5c',
+        },
+        thumbnail: '/assets/products/thumbnails/bench4.jpg',
+      },
+      {
+        fileName: '1739952312340-MB Set.53.jpg',
+        filePath: '/new_monster3/bench5.jpg',
+        _id: {
+          $oid: '67b590b8e03cc2c55c624a5c',
+        },
+        thumbnail: '/assets/products/thumbnails/bench5.jpg',
+      },
+      {
+        fileName: '1739952312340-MB Set.53.jpg',
+        filePath: '/new_monster3/bench6.jpg',
+        _id: {
+          $oid: '67b590b8e03cc2c55c624a5c',
+        },
+        thumbnail: '/assets/products/thumbnails/bench6.jpg',
+      },
+      {
+        fileName: '1739952312340-MB Set.53.jpg',
+        filePath: '/new_monster3/bench7.jpg',
+        _id: {
+          $oid: '67b590b8e03cc2c55c624a5c',
+        },
+        thumbnail: '/assets/products/thumbnails/bench7.jpg',
+      },
+      {
+        fileName: '1739952312340-MB Set.53.jpg',
+        filePath: '/new_monster3/bench8.jpg',
+        _id: {
+          $oid: '67b590b8e03cc2c55c624a5c',
+        },
+        thumbnail: '/assets/products/thumbnails/bench8.jpg',
+      },
+      {
+        fileName: '1739952312340-MB Set.53.jpg',
+        filePath: '/new_monster3/bench9.jpg',
+        _id: {
+          $oid: '67b590b8e03cc2c55c624a5c',
+        },
+        thumbnail: '/assets/products/thumbnails/bench9.jpg',
+      },
+      {
+        fileName: '1739952312340-MB Set.53.jpg',
+        filePath: '/new_monster3/bench10.jpg',
+        _id: {
+          $oid: '67b590b8e03cc2c55c624a5c',
+        },
+        thumbnail: '/assets/products/thumbnails/bench10.jpg',
+      },
+      {
+        fileName: '1739952312340-MB Set.53.jpg',
+        filePath: '/new_monster3/bench11.jpg',
+        _id: {
+          $oid: '67b590b8e03cc2c55c624a5c',
+        },
+        thumbnail: '/assets/products/thumbnails/bench11.jpg',
+      },
+    ],
+    description:
+      'A bench that challenges perceptions. Heavy,\nsculpted wood forms the base, while a\ntouch of fur disrupts the expected.\nGrounded yet indulgent, it’s a piece that\nrefuses to be ignored.',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUdXEaLleQLipXnNcaZzTWOmKke9BGF7gf2xIh',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67b59060e03cc2c55c624a4e',
+    },
+    title: 'Monster Dining Chair',
+    group: 'monster_3.0',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUVOfTglleJz0jfKoyVd9HNhC5wFQ4OrBi2UkD',
+    images: [
+      {
+        fileName: '1739952224055-Dining chair set.10.jpg',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDREVUe78FYI8sxbtc2ngQN4ZeSPwOKkv5yAj',
+        _id: {
+          $oid: '67b59060e03cc2c55c624a4f',
+        },
+      },
+      {
+        fileName: '1739952224055-Dining chair set.10.jpg',
+        filePath: '/new_monster3/chair1.jpg',
+        _id: {
+          $oid: '67b59060e03cc2c55c624a4f',
+        },
+        thumbnail: '/assets/products/thumbnails/chair1.jpg',
+      },
+      {
+        fileName: '1739952224057-Dining chair set.12.jpg',
+        filePath: '/new_monster3/chair2.jpg',
+        _id: {
+          $oid: '67b59060e03cc2c55c624a50',
+        },
+        thumbnail: '/assets/products/thumbnails/chair2.jpg',
+      },
+      {
+        fileName: '1739952224059-Dining chair set.15.jpg',
+        filePath: '/new_monster3/chair3.jpg',
+        _id: {
+          $oid: '67b59060e03cc2c55c624a51',
+        },
+        thumbnail: '/assets/products/thumbnails/chair3.jpg',
+      },
+      {
+        fileName: '1739952224061-Dining Chair.7.jpg',
+        filePath: '/new_monster3/chair4.jpg',
+        _id: {
+          $oid: '67b59060e03cc2c55c624a52',
+        },
+        thumbnail: '/assets/products/thumbnails/chair4.jpg',
+      },
+      {
+        fileName: '1739952224061-Dining Chair.7.jpg',
+        filePath: '/new_monster3/chair5.jpg',
+        _id: {
+          $oid: '67b59060e03cc2c55c624a52',
+        },
+        thumbnail: '/assets/products/thumbnails/chair5.jpg',
+      },
+      {
+        fileName: '1739952224061-Dining Chair.7.jpg',
+        filePath: '/new_monster3/chair6.jpg',
+        _id: {
+          $oid: '67b59060e03cc2c55c624a52',
+        },
+        thumbnail: '/assets/products/thumbnails/chair6.jpg',
+      },
+      {
+        fileName: '1739952224061-Dining Chair.7.jpg',
+        filePath: '/new_monster3/chair7.jpg',
+        _id: {
+          $oid: '67b59060e03cc2c55c624a52',
+        },
+        thumbnail: '/assets/products/thumbnails/chair7.jpg',
+      },
+      {
+        fileName: '1739952224061-Dining Chair.7.jpg',
+        filePath: '/new_monster3/dining1.jpg',
+        _id: {
+          $oid: '67b59060e03cc2c55c624a52',
+        },
+        thumbnail: '/assets/products/thumbnails/dining1.jpg',
+      },
+      {
+        fileName: '1739952224061-Dining Chair.7.jpg',
+        filePath: '/new_monster3/dining2.jpg',
+        _id: {
+          $oid: '67b59060e03cc2c55c624a52',
+        },
+        thumbnail: '/assets/products/thumbnails/dining2.jpg',
+      },
+      {
+        fileName: '1739952224061-Dining Chair.7.jpg',
+        filePath: '/new_monster3/dining3.jpg',
+        _id: {
+          $oid: '67b59060e03cc2c55c624a52',
+        },
+        thumbnail: '/assets/products/thumbnails/dining3.jpg',
+      },
+      {
+        fileName: '1739952224061-Dining Chair.7.jpg',
+        filePath: '/new_monster3/dining4.jpg',
+        _id: {
+          $oid: '67b59060e03cc2c55c624a52',
+        },
+        thumbnail: '/assets/products/thumbnails/dining4.jpg',
+      },
+    ],
+    description:
+      'Not just a chair—a throne for the bold. Designed to\nmake a statement at the dining table, the Monster\nDining Chair blends audacious form with indulgent\ncomfort. Structured yet plush, sculptural yet inviting,\nit dares you to sit, settle in, and own the space.',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQr4b0hCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67b59097e03cc2c55c624a54',
+    },
+    title: 'Monster Dining Table',
+    group: 'monster_3.0',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8t2Fwv64oKUn37W6wsTlRmDBFhGrviIjcMxV',
+    images: [
+      {
+        fileName: '1739952279061-Id Dining set.156.jpg',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDcvElk8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+        _id: {
+          $oid: '67b59097e03cc2c55c624a55',
+        },
+      },
+      {
+        fileName: '1739952279061-Id Dining set.156.jpg',
+        filePath: '/new_monster3/table1.jpg',
+        _id: {
+          $oid: '67b59097e03cc2c55c624a55',
+        },
+        thumbnail: '/assets/products/thumbnails/table1.jpg',
+      },
+      {
+        fileName: '1739952279063-Id Dining set.161.jpg',
+        filePath: '/new_monster3/table2.jpg',
+        _id: {
+          $oid: '67b59097e03cc2c55c624a56',
+        },
+        thumbnail: '/assets/products/thumbnails/table2.jpg',
+      },
+      {
+        fileName: '1739952279063-Id Dining set.161.jpg',
+        filePath: '/new_monster3/table3.jpg',
+        _id: {
+          $oid: '67b59097e03cc2c55c624a56',
+        },
+        thumbnail: '/assets/products/thumbnails/table3.jpg',
+      },
+      {
+        fileName: '1739952279063-Id Dining set.161.jpg',
+        filePath: '/new_monster3/table4.jpg',
+        _id: {
+          $oid: '67b59097e03cc2c55c624a56',
+        },
+        thumbnail: '/assets/products/thumbnails/table4.jpg',
+      },
+      {
+        fileName: '1739952279063-Id Dining set.161.jpg',
+        filePath: '/new_monster3/table5.jpg',
+        _id: {
+          $oid: '67b59097e03cc2c55c624a56',
+        },
+        thumbnail: '/assets/products/thumbnails/table5.jpg',
+      },
+      {
+        fileName: '1739952279063-Id Dining set.161.jpg',
+        filePath: '/new_monster3/table6.jpg',
+        _id: {
+          $oid: '67b59097e03cc2c55c624a56',
+        },
+        thumbnail: '/assets/products/thumbnails/table6.jpg',
+      },
+    ],
+    description:
+      'Forget dinner conversations—this table is the\nconversation. A bold fusion of wood and fur, it commands\nattention while inviting connection. Designed for those\nwho host with flair, the Monster Dining Table is where\nluxury meets audacity.',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnOBMcIbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5eb7e4da9b29cd0f10b69',
+    },
+    title: 'gattoo x top brewer',
+    group: 'monster_2.0',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUj6mAs3UhR95a1yWpqvPz7meuoUTAG8HEOb2I',
+    images: [
+      {
+        fileName: '1738926974582-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUMeOsVlwfQbC4M3ZGkSm6KPAV10HlYU9dinrX',
+        _id: {
+          $oid: '67a5eb7e4da9b29cd0f10b6a',
+        },
+      },
+      {
+        fileName: '1738926974582-Slide1.JPG',
+        filePath: '/assets/products/1738926974584-Slide2.JPG',
+        _id: {
+          $oid: '67a5eb7e4da9b29cd0f10b6a',
+        },
+        thumbnail: '/assets/products/thumbnails/1738926974584-Slide2.JPG',
+      },
+      {
+        fileName: '1738926974584-Slide2.JPG',
+        filePath: '/assets/products/1738926974582-Slide1.JPG',
+        _id: {
+          $oid: '67a5eb7e4da9b29cd0f10b6b',
+        },
+        thumbnail: '/assets/products/thumbnails/1738926974582-Slide1.JPG',
+      },
+      {
+        fileName: '1738926974586-Slide3.JPG',
+        filePath: '/assets/products/1738926974586-Slide3.JPG',
+        _id: {
+          $oid: '67a5eb7e4da9b29cd0f10b6c',
+        },
+        thumbnail: '/assets/products/thumbnails/1738926974586-Slide3.JPG',
+      },
+      {
+        fileName: '1738926974587-Slide4.JPG',
+        filePath: '/assets/products/1738926974587-Slide4.JPG',
+        _id: {
+          $oid: '67a5eb7e4da9b29cd0f10b6d',
+        },
+        thumbnail: '/assets/products/thumbnails/1738926974587-Slide4.JPG',
+      },
+      {
+        fileName: '1738926974588-Slide5.JPG',
+        filePath: '/assets/products/1738926974588-Slide5.JPG',
+        _id: {
+          $oid: '67a5eb7e4da9b29cd0f10b6e',
+        },
+        thumbnail: '/assets/products/thumbnails/1738926974588-Slide5.JPG',
+      },
+      {
+        fileName: '1738926974590-Slide6.JPG',
+        filePath: '/assets/products/1738926974590-Slide6.JPG',
+        _id: {
+          $oid: '67a5eb7e4da9b29cd0f10b6f',
+        },
+        thumbnail: '/assets/products/thumbnails/1738926974590-Slide6.JPG',
+      },
+    ],
+    description:
+      'A collaboration that began with a shared appreciation for precision and attention to detail, Karan Desai and TopBrewer India transcend the ordinary and fuse the world of architecture with exceptional coffee.\n\nMonster 2.0, is a dedication to those who approach life with larger than life vision, elevating daily rituals into a harmony of art, technology and taste.',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUD5ZmhT8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5ece24da9b29cd0f10bac',
+    },
+    title: 'center table 1',
+    group: 'matilda',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJ5OjuodtZQpOq9no3vVs5yPKXR8gEYuikGUw',
+    images: [
+      {
+        fileName: '1738927330509-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULg6XboDqbauUfVsg4JYrj86xOSilFe5PBo3m',
+        _id: {
+          $oid: '67a5ece24da9b29cd0f10bad',
+        },
+      },
+      {
+        fileName: '1738927330509-Slide1.JPG',
+        filePath: '/assets/products/1738927330509-Slide1.JPG',
+        _id: {
+          $oid: '67a5ece24da9b29cd0f10bad',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927330509-Slide1.JPG',
+      },
+      {
+        fileName: '1738927330514-Slide4.JPG',
+        filePath: '/assets/products/1738927330514-Slide4.JPG',
+        _id: {
+          $oid: '67a5ece24da9b29cd0f10bb0',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927330514-Slide4.JPG',
+      },
+      {
+        fileName: '1738927330515-Slide5.JPG',
+        filePath: '/assets/products/1738927330515-Slide5.JPG',
+        _id: {
+          $oid: '67a5ece24da9b29cd0f10bb1',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927330515-Slide5.JPG',
+      },
+      {
+        fileName: '1738927330516-Slide6.JPG',
+        filePath: '/assets/products/1738927330516-Slide6.JPG',
+        _id: {
+          $oid: '67a5ece24da9b29cd0f10bb2',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927330516-Slide6.JPG',
+      },
+    ],
+    description:
+      'This stunning curved-shaped marble the center table is the height of style and skill.\n\nIts sleek design and unique U-pattern in all-white marble make it stand out as a true statement piece in luxurious homes.',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUzrPAA9MIQShtkIwJflF6rAvm7LBdDHgWeNPU',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5ecf94da9b29cd0f10bb6',
+    },
+    title: 'center table 2',
+    group: 'matilda',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUEbuppDLYFi7GYsQA2my03DTouek5wnIJXgjp',
+    images: [
+      {
+        fileName: '1738927353299-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUlaNXX3A9DZL6up3G75dgCY2rJjaQFwifBAEk',
+        _id: {
+          $oid: '67a5ecf94da9b29cd0f10bb7',
+        },
+      },
+      {
+        fileName: '1738927353299-Slide1.JPG',
+        filePath: '/assets/products/1738927353299-Slide1.JPG',
+        _id: {
+          $oid: '67a5ecf94da9b29cd0f10bb7',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927353299-Slide1.JPG',
+      },
+      {
+        fileName: '1738927353301-Slide3.JPG',
+        filePath: '/assets/products/1738927353301-Slide3.JPG',
+        _id: {
+          $oid: '67a5ecf94da9b29cd0f10bb9',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927353301-Slide3.JPG',
+      },
+      {
+        fileName: '1738927353305-Slide6.JPG',
+        filePath: '/assets/products/1738927353305-Slide6.JPG',
+        _id: {
+          $oid: '67a5ecf94da9b29cd0f10bbc',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927353305-Slide6.JPG',
+      },
+      {
+        fileName: '1738927353306-Slide7.JPG',
+        filePath: '/assets/products/1738927353306-Slide7.JPG',
+        _id: {
+          $oid: '67a5ecf94da9b29cd0f10bbd',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927353306-Slide7.JPG',
+      },
+    ],
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione a animi ipsum voluptatem, eligendi voluptatibus maxime sit nemo ab, est esse fugiat eveniet. Neque, tenetur incidunt blanditiis ea veritatis maxime. Dolorem, ad odio. Possimus laudantium, neque suscipit cum in blanditiis error illum fuga omnis ab fugit nulla tempore quidem eius.',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUE1947WYFi7GYsQA2my03DTouek5wnIJXgjpV',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67b590e8e03cc2c55c624a61',
+    },
+    title: 'Monster Chandelier',
+    group: 'monster_3.0',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU2PfjIgaDNvkE7HG39CYgFqmlMw2jVAoxdcnf',
+    images: [
+      {
+        fileName: '1739952360039-Monster Light installation.179.jpg',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUj3g1wm0UhR95a1yWpqvPz7meuoUTAG8HEOb2',
+        _id: {
+          $oid: '67b590e8e03cc2c55c624a62',
+        },
+      },
+      {
+        fileName: '1739952360039-Monster Light installation.179.jpg',
+        filePath:
+          '/assets/products/1739952360039-Monster Light installation.179.jpg',
+        _id: {
+          $oid: '67b590e8e03cc2c55c624a62',
+        },
+        thumbnail:
+          '/assets/products/thumbnails/1739952360039-Monster Light installation.179.jpg',
+      },
+    ],
+    description:
+      'Lighting is usually about precision—but this one is about\nmystery. The Monster Light casts a glow that’s more than\nillumination—it’s an experience. Soft, unpredictable, and\nwildly elegant, this piece transforms any space into a\ntheatrical spectacle.',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUtF0l465Bu7NntcLbi8k4ldwr62VXy3PODz9j',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5eef74da9b29cd0f10be1',
+    },
+    title: 'side table',
+    group: 'matilda',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9zMRyt2frimQ5LhFdjbpOHNPEsav1o2Ac0Dz',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUEbcbsxAYFi7GYsQA2my03DTouek5wnIJXgjp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/assets/products/1738927863060-Slide1.JPG',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
+      },
+      {
+        fileName: '1738927863063-Slide3.JPG',
+        filePath: '/assets/products/1738927863063-Slide3.JPG',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be4',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927863063-Slide3.JPG',
+      },
+      {
+        fileName: '1738927863066-Slide5.JPG',
+        filePath: '/assets/products/1738927863066-Slide5.JPG',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be6',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927863066-Slide5.JPG',
+      },
+      {
+        fileName: '1738927863069-Slide7.JPG',
+        filePath: '/assets/products/1738927863069-Slide7.JPG',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be8',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927863069-Slide7.JPG',
+      },
+    ],
+    description:
+      'This luxurious masterpiece, crafted from pristine white marble, redefines sophistication and transforms any space into a sanctuary of grandeur.',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUz8wrsAIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5ef304da9b29cd0f10bea',
+    },
+    title: 'u-table',
+    group: 'matilda',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULb6xVhDqbauUfVsg4JYrj86xOSilFe5PBo3m',
+    images: [
+      {
+        fileName: '1738927920698-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU69BZDQRfb3HGeOz01MiLoldKrZaXQIxANWuV',
+        _id: {
+          $oid: '67a5ef304da9b29cd0f10beb',
+        },
+      },
+      {
+        fileName: '1738927920698-Slide1.JPG',
+        filePath: '/assets/products/1738927920698-Slide1.JPG',
+        _id: {
+          $oid: '67a5ef304da9b29cd0f10beb',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927920698-Slide1.JPG',
+      },
+      {
+        fileName: '1738927920699-Slide2.JPG',
+        filePath: '/assets/products/1738927920699-Slide2.JPG',
+        _id: {
+          $oid: '67a5ef304da9b29cd0f10bec',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927920699-Slide2.JPG',
+      },
+      {
+        fileName: '1738927920701-Slide3.JPG',
+        filePath: '/assets/products/1738927920701-Slide3.JPG',
+        _id: {
+          $oid: '67a5ef304da9b29cd0f10bed',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927920701-Slide3.JPG',
+      },
+      {
+        fileName: '1738927920703-Slide4.JPG',
+        filePath: '/assets/products/1738927920703-Slide4.JPG',
+        _id: {
+          $oid: '67a5ef304da9b29cd0f10bee',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927920703-Slide4.JPG',
+      },
+      {
+        fileName: '1738927920704-Slide5.JPG',
+        filePath: '/assets/products/1738927920704-Slide5.JPG',
+        _id: {
+          $oid: '67a5ef304da9b29cd0f10bef',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927920704-Slide5.JPG',
+      },
+      {
+        fileName: '1738927920705-Slide6.JPG',
+        filePath: '/assets/products/1738927920705-Slide6.JPG',
+        _id: {
+          $oid: '67a5ef304da9b29cd0f10bf0',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927920705-Slide6.JPG',
+      },
+      {
+        fileName: '1738927920706-Slide7.JPG',
+        filePath: '/assets/products/1738927920706-Slide7.JPG',
+        _id: {
+          $oid: '67a5ef304da9b29cd0f10bf1',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927920706-Slide7.JPG',
+      },
+      {
+        fileName: '1738927920707-Slide8.JPG',
+        filePath: '/assets/products/1738927920707-Slide8.JPG',
+        _id: {
+          $oid: '67a5ef304da9b29cd0f10bf2',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927920707-Slide8.JPG',
+      },
+    ],
+    description:
+      'Experience the artistry of Karan Desai with this extraordinary U-shaped marble table.\n\nCarved from pure white marble, its graceful curves and meticulous craftsmanship set it apart.',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUltkpqe9DZL6up3G75dgCY2rJjaQFwifBAEky',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5f5ea4da9b29cd0f10c1c',
+    },
+    title: 'monster gattooffer',
+    group: 'monster_collectibles',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUrucY8mNnDI67jcCaomXhZLsJd91f4YGitMHP',
+    images: [
+      {
+        fileName: '1738929642727-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUgWssIUlLdSN8CY5rJGOAxcqQpM9fjoh4etX6',
+        _id: {
+          $oid: '67a5f5ea4da9b29cd0f10c1d',
+        },
+      },
+      {
+        fileName: '1738929642727-Slide1.JPG',
+        filePath: '/assets/products/1738929642727-Slide1.JPG',
+        _id: {
+          $oid: '67a5f5ea4da9b29cd0f10c1d',
+        },
+        thumbnail: '/assets/products/thumbnails/1738929642727-Slide1.JPG',
+      },
+      {
+        fileName: '1738929642728-Slide2.JPG',
+        filePath: '/assets/products/1738929642728-Slide2.JPG',
+        _id: {
+          $oid: '67a5f5ea4da9b29cd0f10c1e',
+        },
+        thumbnail: '/assets/products/thumbnails/1738929642728-Slide2.JPG',
+      },
+      {
+        fileName: '1738929642730-Slide3.JPG',
+        filePath: '/assets/products/1738929642730-Slide3.JPG',
+        _id: {
+          $oid: '67a5f5ea4da9b29cd0f10c1f',
+        },
+        thumbnail: '/assets/products/thumbnails/1738929642730-Slide3.JPG',
+      },
+      {
+        fileName: '1738929642731-Slide4.JPG',
+        filePath: '/assets/products/1738929642731-Slide4.JPG',
+        _id: {
+          $oid: '67a5f5ea4da9b29cd0f10c20',
+        },
+        thumbnail: '/assets/products/thumbnails/1738929642731-Slide4.JPG',
+      },
+    ],
+    description:
+      "Unleash the extraordinary with the Monster Gattooffer Lamp—a fearless fusion of art and light.\n\nIts bold, spiked silhouette defies tradition, making a statement that transcends function.\n\nMore than just a lamp, it's a sculptural masterpiece that pushes design boundaries, turning any space into a daring expression of style.\n\nReady to make a striking impression?",
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8hOcOm64oKUn37W6wsTlRmDBFhGrviIjcMxV',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5f6534da9b29cd0f10c22',
+    },
+    title: 'monster guard',
+    group: 'monster_collectibles',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAadKi3J1oeY2wnF0zQbWX83C4KujdSqt6MUT',
+    images: [
+      {
+        fileName: '1738929747418-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnng337bYcoeRKumWaHxyTj5q3bfMXB6INAUz',
+        _id: {
+          $oid: '67a5f6534da9b29cd0f10c23',
+        },
+      },
+      {
+        fileName: '1738929747418-Slide1.JPG',
+        filePath: '/assets/products/1738929747418-Slide1.JPG',
+        _id: {
+          $oid: '67a5f6534da9b29cd0f10c23',
+        },
+        thumbnail: '/assets/products/thumbnails/1738929747418-Slide1.JPG',
+      },
+      {
+        fileName: '1738929747419-Slide2.JPG',
+        filePath: '/assets/products/1738929747419-Slide2.JPG',
+        _id: {
+          $oid: '67a5f6534da9b29cd0f10c24',
+        },
+        thumbnail: '/assets/products/thumbnails/1738929747419-Slide2.JPG',
+      },
+      {
+        fileName: '1738929747420-Slide3.JPG',
+        filePath: '/assets/products/1738929747420-Slide3.JPG',
+        _id: {
+          $oid: '67a5f6534da9b29cd0f10c25',
+        },
+        thumbnail: '/assets/products/thumbnails/1738929747420-Slide3.JPG',
+      },
+    ],
+    description:
+      'Meet the Monster Guard Lamp: where playful design meets practical purpose.\n\nNot just a lamp, but a watchful companion that brings both light and comfort to your space.\n\nLet it stand guard, offering a quirky yet reassuring presence in any room!',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAadKi3J1oeY2wnF0zQbWX83C4KujdSqt6MUT',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5fa324da9b29cd0f10c3a',
+    },
+    title: 'monsformer',
+    group: 'monsformer',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU2YRm87aDNvkE7HG39CYgFqmlMw2jVAoxdcnf',
+    images: [
+      {
+        fileName: '1738930738989-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJw4h4udtZQpOq9no3vVs5yPKXR8gEYuikGUw',
+        _id: {
+          $oid: '67a5fa324da9b29cd0f10c3b',
+        },
+      },
+      {
+        fileName: '1738930738989-Slide1.JPG',
+        filePath: '/assets/products/1738930738989-Slide1.JPG',
+        _id: {
+          $oid: '67a5fa324da9b29cd0f10c3b',
+        },
+        thumbnail: '/assets/products/thumbnails/1738930738989-Slide1.JPG',
+      },
+      {
+        fileName: '1738930738990-Slide2.JPG',
+        filePath: '/assets/products/1738930738990-Slide2.JPG',
+        _id: {
+          $oid: '67a5fa324da9b29cd0f10c3c',
+        },
+        thumbnail: '/assets/products/thumbnails/1738930738990-Slide2.JPG',
+      },
+      {
+        fileName: '1738930738993-Slide3.JPG',
+        filePath: '/assets/products/1738930738993-Slide3.JPG',
+        _id: {
+          $oid: '67a5fa324da9b29cd0f10c3d',
+        },
+        thumbnail: '/assets/products/thumbnails/1738930738993-Slide3.JPG',
+      },
+      {
+        fileName: '1738930738995-Slide4.JPG',
+        filePath: '/assets/products/1738930738995-Slide4.JPG',
+        _id: {
+          $oid: '67a5fa324da9b29cd0f10c3e',
+        },
+        thumbnail: '/assets/products/thumbnails/1738930738995-Slide4.JPG',
+      },
+      {
+        fileName: '1738930738997-Slide5.JPG',
+        filePath: '/assets/products/1738930738997-Slide5.JPG',
+        _id: {
+          $oid: '67a5fa324da9b29cd0f10c3f',
+        },
+        thumbnail: '/assets/products/thumbnails/1738930738997-Slide5.JPG',
+      },
+    ],
+    description:
+      'Enter if you dare… Mons-Former is waiting!\n\nLast year, he was just a friendly farmer. Now?\n\nHe’s got unfinished business!\n\nAfter a colorful mishap at a wild festival, Mons-Former is out for payback, running, chasing, and never stopping!\n\nCan you dodge his grasp inside his rotating playground of chaos?\n\nRace through the madness.\n\nSnap some epic pics. But most importantly… RUN!\n\nThink you can escape?\n\nLet’s find out!',
+    dimensions:
+      'https://imgs.search.brave.com/iVjI8zr3e5IndwkFtM2PVy-uMhc949oudpKHRM6MEOk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzExLzA3LzEwLzc2/LzM2MF9GXzExMDcx/MDc2ODRfbnBSOURr/M0FtbHZzc0JFN01H/d0tUd0h6UnJFZ2Rs/emwuanBn',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5eb9f4da9b29cd0f10b71',
+    },
+    title: 'yoda',
+    group: 'monster_2.0',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUNNmO9kG5UuqxLjF0ygrW1ikRpXaHfGVvonDw',
+    images: [
+      {
+        fileName: '1738927007154-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSwGCHZAKnraNxkI5vbez6dT2q8M0osBfR9At',
+        _id: {
+          $oid: '67a5eb9f4da9b29cd0f10b72',
+        },
+      },
+      {
+        fileName: '1738927007154-Slide1.JPG',
+        filePath: '/assets/products/1738927007154-Slide1.JPG',
+        _id: {
+          $oid: '67a5eb9f4da9b29cd0f10b72',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927007154-Slide1.JPG',
+      },
+      {
+        fileName: '1738927007155-Slide2.JPG',
+        filePath: '/assets/products/1738927007155-Slide2.JPG',
+        _id: {
+          $oid: '67a5eb9f4da9b29cd0f10b73',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927007155-Slide2.JPG',
+      },
+      {
+        fileName: '1738927007157-Slide3.JPG',
+        filePath: '/assets/products/1738927007157-Slide3.JPG',
+        _id: {
+          $oid: '67a5eb9f4da9b29cd0f10b74',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927007157-Slide3.JPG',
+      },
+      {
+        fileName: '1738927007158-Slide4.JPG',
+        filePath: '/assets/products/1738927007158-Slide4.JPG',
+        _id: {
+          $oid: '67a5eb9f4da9b29cd0f10b75',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927007158-Slide4.JPG',
+      },
+    ],
+    description:
+      "Get ready for something awesome! Here the monster Totem called the YODA\n\nYODA is all about celebrating Bharat Flooring's 100+ years of experience constantly thriving to create wonders with Terrazzo.\n\nIntroducing never before experimental product range, a piece of art, a testament to our age old technique with terrazzo, a TOTEM, our monster TOTEM, our YODA\n\nYoda can be used in lots of different ways! You can keep it outside, inside, or even turn it into stools, a fire pit, or a planter.",
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUrT6FLUNnDI67jcCaomXhZLsJd91f4YGitMHP',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67b5e69de03cc2c55c62bd22',
+    },
+    title: 'Monster Dining Kids Chair',
+    group: 'monster_3.0',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUVOfTglleJz0jfKoyVd9HNhC5wFQ4OrBi2UkD',
+    images: [
+      {
+        fileName: '1739974301885-dchair10.jpg',
+        filePath: '/assets/products/1739974301885-dchair10.jpg',
+        _id: {
+          $oid: '67b5e69de03cc2c55c62bd23',
+        },
+        thumbnail: '/assets/products/thumbnails/1739974301885-dchair10.jpg',
+      },
+    ],
+    description:
+      'Not just a chair—a throne for the bold. Designed to\nmake a statement at the dining table, the Monster\nDining Chair blends audacious form with indulgent\ncomfort. Structured yet plush, sculptural yet inviting,\nit dares you to sit, settle in, and own the space.',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQr4b0hCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5e9914da9b29cd0f10b58',
+    },
+    title: 'monster bathtub',
+    group: 'monster_1.0',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUmXhiD1Mgck96WhX7TGdaslL58YeZAnUDbwov',
+    images: [
+      {
+        fileName: '1738926481003-Slide2.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUreGqMKNnDI67jcCaomXhZLsJd91f4YGitMHP',
+        _id: {
+          $oid: '67a5e9914da9b29cd0f10b5a',
+        },
+      },
+      {
+        fileName: '1738926481003-Slide2.JPG',
+        filePath: '/assets/products/1738926481003-Slide2.JPG',
+        _id: {
+          $oid: '67a5e9914da9b29cd0f10b5a',
+        },
+        thumbnail: '/assets/products/thumbnails/1738926481003-Slide2.JPG',
+      },
+      {
+        fileName: '1738926481009-Slide3.JPG',
+        filePath: '/assets/products/1738926481009-Slide3.JPG',
+        _id: {
+          $oid: '67a5e9914da9b29cd0f10b5b',
+        },
+        thumbnail: '/assets/products/thumbnails/1738926481009-Slide3.JPG',
+      },
+      {
+        fileName: '1738926481018-Slide4.JPG',
+        filePath: '/assets/products/1738926481018-Slide4.JPG',
+        _id: {
+          $oid: '67a5e9914da9b29cd0f10b5c',
+        },
+        thumbnail: '/assets/products/thumbnails/1738926481018-Slide4.JPG',
+      },
+      {
+        fileName: '1738926481035-Slide5.JPG',
+        filePath: '/assets/products/1738926481035-Slide5.JPG',
+        _id: {
+          $oid: '67a5e9914da9b29cd0f10b5d',
+        },
+        thumbnail: '/assets/products/thumbnails/1738926481035-Slide5.JPG',
+      },
+      {
+        fileName: '1738926481093-Slide7.JPG',
+        filePath: '/assets/products/1738926481093-Slide7.JPG',
+        _id: {
+          $oid: '67a5e9914da9b29cd0f10b5f',
+        },
+        thumbnail: '/assets/products/thumbnails/1738926481093-Slide7.JPG',
+      },
+    ],
+    description:
+      "Ever wished your bathtub could be a work of art?\n\nWell, meet our marble marvel, not your average soak spot! I broke all the rules in India to turn marble into something extraordinary.\n\nPicture this: a gigantic tub, sculpted for two, with a touch of textured leather for that extra 'wow.'\n\nAnd get this, it's not just for the bathroom vibes, imagine it as a fancy outdoor planter, making a statement in any space. Marble has never been this cool!",
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUCdwK2EX0XaKgNMT1QEmen25RAwc7Sk4UxoJF',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5ecc44da9b29cd0f10ba2',
+    },
+    title: 'coffee table',
+    group: 'matilda',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUEohaJEYFi7GYsQA2my03DTouek5wnIJXgjpV',
+    images: [
+      {
+        fileName: '1738927300847-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUaWWk8w7zVIx6ZjWFiGhcRQJMUzft1drvPNTb',
+        _id: {
+          $oid: '67a5ecc44da9b29cd0f10ba3',
+        },
+      },
+      {
+        fileName: '1738927300847-Slide1.JPG',
+        filePath: '/assets/products/1738927300847-Slide1.JPG',
+        _id: {
+          $oid: '67a5ecc44da9b29cd0f10ba3',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927300847-Slide1.JPG',
+      },
+      {
+        fileName: '1738927300852-Slide5.JPG',
+        filePath: '/assets/products/1738927300852-Slide5.JPG',
+        _id: {
+          $oid: '67a5ecc44da9b29cd0f10ba7',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927300852-Slide5.JPG',
+      },
+      {
+        fileName: '1738927300853-Slide6.JPG',
+        filePath: '/assets/products/1738927300853-Slide6.JPG',
+        _id: {
+          $oid: '67a5ecc44da9b29cd0f10ba8',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927300853-Slide6.JPG',
+      },
+      {
+        fileName: '1738927300856-Slide7.JPG',
+        filePath: '/assets/products/1738927300856-Slide7.JPG',
+        _id: {
+          $oid: '67a5ecc44da9b29cd0f10ba9',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927300856-Slide7.JPG',
+      },
+    ],
+    description:
+      'Discover the height of style with this stunning marble coffee table\nIts flawless, all-white marble surface shows off a perfect mix of smooth shapes and useful design.\n\nThis piece is both a work of art and a useful addition to any living space thanks to the well-thought-out shelves that make the perfect place for your favorite books and other things.',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUIGKf4uW6qU3iBow9cLQK4A1kuMTGmF8rel2f',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5f8394da9b29cd0f10c2c',
+    },
+    title: 'monster grumpy',
+    group: 'monster_collectibles',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAQbcOOjJ1oeY2wnF0zQbWX83C4KujdSqt6MU',
+    images: [
+      {
+        fileName: '1738930233947-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDrE3aJ8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+        _id: {
+          $oid: '67a5f8394da9b29cd0f10c2d',
+        },
+      },
+      {
+        fileName: '1738930233947-Slide1.JPG',
+        filePath: '/assets/products/1738930233947-Slide1.JPG',
+        _id: {
+          $oid: '67a5f8394da9b29cd0f10c2d',
+        },
+        thumbnail: '/assets/products/thumbnails/1738930233947-Slide1.JPG',
+      },
+      {
+        fileName: '1738930233949-Slide2.JPG',
+        filePath: '/assets/products/1738930233949-Slide2.JPG',
+        _id: {
+          $oid: '67a5f8394da9b29cd0f10c2e',
+        },
+        thumbnail: '/assets/products/thumbnails/1738930233949-Slide2.JPG',
+      },
+      {
+        fileName: '1738930233951-Slide3.JPG',
+        filePath: '/assets/products/1738930233951-Slide3.JPG',
+        _id: {
+          $oid: '67a5f8394da9b29cd0f10c2f',
+        },
+        thumbnail: '/assets/products/thumbnails/1738930233951-Slide3.JPG',
+      },
+    ],
+    description:
+      'The Monster Grumpy Lamp is a distinctive lighting fixture, thoughtfully crafted to infuse any space with character and playfulness. Its design features a sculptural, monster-inspired form with exaggerated details, creating a striking visual statement. The lamp’s defining element is its cleverly designed, subtly grumpy expression, offering a blend of humor and artistic sophistication.',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDt1neS8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5eedf4da9b29cd0f10bd0',
+    },
+    title: 'planter',
+    group: 'matilda',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8OsyEi64oKUn37W6wsTlRmDBFhGrviIjcMxV',
+    images: [
+      {
+        fileName: '1738927839144-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUbusAEKsxzt13BbVlJhGUR6Ww2eTaj5pASg9N',
+        _id: {
+          $oid: '67a5eedf4da9b29cd0f10bd1',
+        },
+      },
+      {
+        fileName: '1738927839144-Slide1.JPG',
+        filePath: '/assets/products/1738927839144-Slide1.JPG',
+        _id: {
+          $oid: '67a5eedf4da9b29cd0f10bd1',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927839144-Slide1.JPG',
+      },
+      {
+        fileName: '1738927839145-Slide2.JPG',
+        filePath: '/assets/products/1738927839145-Slide2.JPG',
+        _id: {
+          $oid: '67a5eedf4da9b29cd0f10bd2',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927839145-Slide2.JPG',
+      },
+      {
+        fileName: '1738927839147-Slide3.JPG',
+        filePath: '/assets/products/1738927839147-Slide3.JPG',
+        _id: {
+          $oid: '67a5eedf4da9b29cd0f10bd3',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927839147-Slide3.JPG',
+      },
+      {
+        fileName: '1738927839148-Slide4.JPG',
+        filePath: '/assets/products/1738927839148-Slide4.JPG',
+        _id: {
+          $oid: '67a5eedf4da9b29cd0f10bd4',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927839148-Slide4.JPG',
+      },
+      {
+        fileName: '1738927839149-Slide5.JPG',
+        filePath: '/assets/products/1738927839149-Slide5.JPG',
+        _id: {
+          $oid: '67a5eedf4da9b29cd0f10bd5',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927839149-Slide5.JPG',
+      },
+      {
+        fileName: '1738927839150-Slide6.JPG',
+        filePath: '/assets/products/1738927839150-Slide6.JPG',
+        _id: {
+          $oid: '67a5eedf4da9b29cd0f10bd6',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927839150-Slide6.JPG',
+      },
+      {
+        fileName: '1738927839152-Slide7.JPG',
+        filePath: '/assets/products/1738927839152-Slide7.JPG',
+        _id: {
+          $oid: '67a5eedf4da9b29cd0f10bd7',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927839152-Slide7.JPG',
+      },
+      {
+        fileName: '1738927839153-Slide8.JPG',
+        filePath: '/assets/products/1738927839153-Slide8.JPG',
+        _id: {
+          $oid: '67a5eedf4da9b29cd0f10bd8',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927839153-Slide8.JPG',
+      },
+      {
+        fileName: '1738927839154-Slide9.JPG',
+        filePath: '/assets/products/1738927839154-Slide9.JPG',
+        _id: {
+          $oid: '67a5eedf4da9b29cd0f10bd9',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927839154-Slide9.JPG',
+      },
+      {
+        fileName: '1738927839156-Slide10.JPG',
+        filePath: '/assets/products/1738927839156-Slide10.JPG',
+        _id: {
+          $oid: '67a5eedf4da9b29cd0f10bda',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927839156-Slide10.JPG',
+      },
+      {
+        fileName: '1738927839157-Slide11.JPG',
+        filePath: '/assets/products/1738927839157-Slide11.JPG',
+        _id: {
+          $oid: '67a5eedf4da9b29cd0f10bdb',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927839157-Slide11.JPG',
+      },
+      {
+        fileName: '1738927839158-Slide12.JPG',
+        filePath: '/assets/products/1738927839158-Slide12.JPG',
+        _id: {
+          $oid: '67a5eedf4da9b29cd0f10bdc',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927839158-Slide12.JPG',
+      },
+      {
+        fileName: '1738927839159-Slide13.JPG',
+        filePath: '/assets/products/1738927839159-Slide13.JPG',
+        _id: {
+          $oid: '67a5eedf4da9b29cd0f10bdd',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927839159-Slide13.JPG',
+      },
+      {
+        fileName: '1738927839162-Slide14.JPG',
+        filePath: '/assets/products/1738927839162-Slide14.JPG',
+        _id: {
+          $oid: '67a5eedf4da9b29cd0f10bde',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927839162-Slide14.JPG',
+      },
+      {
+        fileName: '1738927839163-Slide15.JPG',
+        filePath: '/assets/products/1738927839163-Slide15.JPG',
+        _id: {
+          $oid: '67a5eedf4da9b29cd0f10bdf',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927839163-Slide15.JPG',
+      },
+    ],
+    description:
+      'This exquisite marble planter box is the epitome of elegance and craftsmanship.\n\nCrafted from pristine white marble, this work of art redefines luxury with its sleek U-shaped design and stunning aesthetics.',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUrt5sfTMNnDI67jcCaomXhZLsJd91f4YGitMH',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67b59111e03cc2c55c624a64',
+    },
+    title: 'Monster Planter',
+    group: 'monster_3.0',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKURWr6TYE1fzw0AFxNe2UEaubVBY53GTv7kqpl',
+    images: [
+      {
+        fileName: '1739952401888-Monster Planter_2.17.png',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8tT38j64oKUn37W6wsTlRmDBFhGrviIjcMxV',
+        _id: {
+          $oid: '67b59111e03cc2c55c624a65',
+        },
+      },
+      {
+        fileName: '1739952401888-Monster Planter_2.17.png',
+        filePath: '/new_monster3/planter1.jpg',
+        _id: {
+          $oid: '67b59111e03cc2c55c624a65',
+        },
+        thumbnail: '/assets/products/thumbnails/planter1.jpg',
+      },
+      {
+        fileName: '1739952401888-Monster Planter_2.17.png',
+        filePath: '/new_monster3/planter2.jpg',
+        _id: {
+          $oid: '67b59111e03cc2c55c624a65',
+        },
+        thumbnail: '/assets/products/thumbnails/planter2.jpg',
+      },
+      {
+        fileName: '1739952401888-Monster Planter_2.17.png',
+        filePath: '/new_monster3/planter3.jpg',
+        _id: {
+          $oid: '67b59111e03cc2c55c624a65',
+        },
+        thumbnail: '/assets/products/thumbnails/planter3.jpg',
+      },
+      {
+        fileName: '1739952401888-Monster Planter_2.17.png',
+        filePath: '/new_monster3/planter4.jpg',
+        _id: {
+          $oid: '67b59111e03cc2c55c624a65',
+        },
+        thumbnail: '/assets/products/thumbnails/planter4.jpg',
+      },
+      {
+        fileName: '1739952401888-Monster Planter_2.17.png',
+        filePath: '/new_monster3/planter5.jpg',
+        _id: {
+          $oid: '67b59111e03cc2c55c624a65',
+        },
+        thumbnail: '/assets/products/thumbnails/planter5.jpg',
+      },
+      {
+        fileName: '1739952401888-Monster Planter_2.17.png',
+        filePath: '/new_monster3/planter6.jpg',
+        _id: {
+          $oid: '67b59111e03cc2c55c624a65',
+        },
+        thumbnail: '/assets/products/thumbnails/planter6.jpg',
+      },
+      {
+        fileName: '1739952401888-Monster Planter_2.17.png',
+        filePath: '/new_monster3/planter7.jpg',
+        _id: {
+          $oid: '67b59111e03cc2c55c624a65',
+        },
+        thumbnail: '/assets/products/thumbnails/planter7.jpg',
+      },
+      {
+        fileName: '1739952401888-Monster Planter_2.17.png',
+        filePath: '/new_monster3/planter8.jpg',
+        _id: {
+          $oid: '67b59111e03cc2c55c624a65',
+        },
+        thumbnail: '/assets/products/thumbnails/planter8.jpg',
+      },
+    ],
+    description:
+      'Why should plants have all the peace? The Monster\nPlanter reimagines botanical displays with an\navant-garde, feral aesthetic. Sculptural yet organic, it’s a\nfusion of life and art—because even nature deserves to\nbe bold.',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUdXDc4ymQLipXnNcaZzTWOmKke9BGF7gf2xIh',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67b590d0e03cc2c55c624a5e',
+    },
+    title: 'Gattoo Chair',
+    group: 'monster_3.0',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSOlRnmAKnraNxkI5vbez6dT2q8M0osBfR9At',
+    images: [
+      {
+        fileName: '1739952336217-Monster chai Opt 1.52.jpg',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUmzLgXSMgck96WhX7TGdaslL58YeZAnUDbwov',
+        _id: {
+          $oid: '67b590d0e03cc2c55c624a5f',
+        },
+      },
+      {
+        fileName: '1739952336217-Monster chai Opt 1.52.jpg',
+        filePath: '/monster_3/gchair1.jpg',
+        _id: {
+          $oid: '67b590d0e03cc2c55c624a5f',
+        },
+        thumbnail: '/assets/products/thumbnails/gchair1.jpg',
+      },
+      {
+        fileName: '1739952336217-Monster chai Opt 1.52.jpg',
+        filePath: '/new_monster3/gchair2.jpg',
+        _id: {
+          $oid: '67b590d0e03cc2c55c624a5f',
+        },
+        thumbnail: '/assets/products/thumbnails/gchair2.jpg',
+      },
+      {
+        fileName: '1739952336217-Monster chai Opt 1.52.jpg',
+        filePath: '/new_monster3/gchair3.jpg',
+        _id: {
+          $oid: '67b590d0e03cc2c55c624a5f',
+        },
+        thumbnail: '/assets/products/thumbnails/gchair3.jpg',
+      },
+      {
+        fileName: '1739952336217-Monster chai Opt 1.52.jpg',
+        filePath: '/new_monster3/gchair4.jpg',
+        _id: {
+          $oid: '67b590d0e03cc2c55c624a5f',
+        },
+        thumbnail: '/assets/products/thumbnails/gchair4.jpg',
+      },
+      {
+        fileName: '1739952336217-Monster chai Opt 1.52.jpg',
+        filePath: '/new_monster3/gchair5.jpg',
+        _id: {
+          $oid: '67b590d0e03cc2c55c624a5f',
+        },
+        thumbnail: '/assets/products/thumbnails/gchair5.jpg',
+      },
+      {
+        fileName: '1739952336217-Monster chai Opt 1.52.jpg',
+        filePath: '/new_monster3/gchair6.jpg',
+        _id: {
+          $oid: '67b590d0e03cc2c55c624a5f',
+        },
+        thumbnail: '/assets/products/thumbnails/gchair6.jpg',
+      },
+      {
+        fileName: '1739952336217-Monster chai Opt 1.52.jpg',
+        filePath: '/new_monster3/gchair7.jpg',
+        _id: {
+          $oid: '67b590d0e03cc2c55c624a5f',
+        },
+        thumbnail: '/assets/products/thumbnails/gchair7.jpg',
+      },
+      {
+        fileName: '1739952336217-Monster chai Opt 1.52.jpg',
+        filePath: '/new_monster3/gchair8.jpg',
+        _id: {
+          $oid: '67b590d0e03cc2c55c624a5f',
+        },
+        thumbnail: '/assets/products/thumbnails/gchair8.jpg',
+      },
+      {
+        fileName: '1739952336217-Monster chai Opt 1.52.jpg',
+        filePath: '/new_monster3/gchair9.jpg',
+        _id: {
+          $oid: '67b590d0e03cc2c55c624a5f',
+        },
+        thumbnail: '/assets/products/thumbnails/gchair9.jpg',
+      },
+      {
+        fileName: '1739952336217-Monster chai Opt 1.52.jpg',
+        filePath: '/new_monster3/gchair10.jpg',
+        _id: {
+          $oid: '67b590d0e03cc2c55c624a5f',
+        },
+        thumbnail: '/assets/products/thumbnails/gchair10.jpg',
+      },
+      {
+        fileName: '1739952336217-Monster chai Opt 1.52.jpg',
+        filePath: '/new_monster3/gchair11.jpg',
+        _id: {
+          $oid: '67b590d0e03cc2c55c624a5f',
+        },
+        thumbnail: '/assets/products/thumbnails/gchair11.jpg',
+      },
+    ],
+    description:
+      'More than just a chair, it’s a statement of rebellion.\nWith a commanding silhouette and a luxurious fur\nembrace, the Gatoo Chair invites you to sink in, but stay\nalert. It’s comfort with an edge—because softness can\nbe just as powerful as structure..',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDssaFE8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67b59041e03cc2c55c624a4b',
+    },
+    title: 'Monster Console',
+    group: 'monster_3.0',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUvwL3aR0iQtznIlhRaFJ8jZ6p7xPg3bw9OrDV',
+    images: [
+      {
+        fileName: '1739952193181-1.jpg',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUEmod5KYFi7GYsQA2my03DTouek5wnIJXgjpV',
+        _id: {
+          $oid: '67b59041e03cc2c55c624a4c',
+        },
+      },
+      {
+        fileName: '1739952193181-1.jpg',
+        filePath: '/new_monster3/console1.jpg',
+        _id: {
+          $oid: '67b59041e03cc2c55c624a4c',
+        },
+        thumbnail: '/assets/products/thumbnails/console1.jpg',
+      },
+      {
+        fileName: '1739952193181-1.jpg',
+        filePath: '/new_monster3/console2.jpg',
+        _id: {
+          $oid: '67b59041e03cc2c55c624a4c',
+        },
+        thumbnail: '/assets/products/thumbnails/console2.jpg',
+      },
+      {
+        fileName: '1739952193181-1.jpg',
+        filePath: '/new_monster3/console3.jpg',
+        _id: {
+          $oid: '67b59041e03cc2c55c624a4c',
+        },
+        thumbnail: '/assets/products/thumbnails/console3.jpg',
+      },
+      {
+        fileName: '1739952193181-1.jpg',
+        filePath: '/new_monster3/console4.jpg',
+        _id: {
+          $oid: '67b59041e03cc2c55c624a4c',
+        },
+        thumbnail: '/assets/products/thumbnails/console4.jpg',
+      },
+      {
+        fileName: '1739952193181-1.jpg',
+        filePath: '/new_monster3/console5.jpg',
+        _id: {
+          $oid: '67b59041e03cc2c55c624a4c',
+        },
+        thumbnail: '/assets/products/thumbnails/console5.jpg',
+      },
+      {
+        fileName: '1739952193181-1.jpg',
+        filePath: '/new_monster3/console6.jpg',
+        _id: {
+          $oid: '67b59041e03cc2c55c624a4c',
+        },
+        thumbnail: '/assets/products/thumbnails/console6.jpg',
+      },
+      {
+        fileName: '1739952193181-1.jpg',
+        filePath: '/new_monster3/console7.jpg',
+        _id: {
+          $oid: '67b59041e03cc2c55c624a4c',
+        },
+        thumbnail: '/assets/products/thumbnails/console7.jpg',
+      },
+      {
+        fileName: '1739952193181-1.jpg',
+        filePath: '/new_monster3/console8.jpg',
+        _id: {
+          $oid: '67b59041e03cc2c55c624a4c',
+        },
+        thumbnail: '/assets/products/thumbnails/console8.jpg',
+      },
+    ],
+    description:
+      'Some call it a table, we call it a beast in disguise. The\nMonster Console is where form meets function in a bold\nclash of materials. With its raw wood body and\nunexpected fur detailing, it’s an artistic\ncontradiction—brutal yet refined, structured yet untamed. ',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUtJTy2o5Bu7NntcLbi8k4ldwr62VXy3PODz9j',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5ec684da9b29cd0f10b8e',
+    },
+    title: 'console 1',
+    group: 'matilda',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUFE5IdEyvrgRIBMUa1Cwt3nu4PEZOTo0XLQDf',
+    images: [
+      {
+        fileName: '1738927208522-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU13QEwhmcNbALVg2tCIRm5fi0793BwZH8PYyx',
+        _id: {
+          $oid: '67a5ec684da9b29cd0f10b8f',
+        },
+      },
+      {
+        fileName: '1738927208522-Slide1.JPG',
+        filePath: '/assets/products/1738927208522-Slide1.JPG',
+        _id: {
+          $oid: '67a5ec684da9b29cd0f10b8f',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927208522-Slide1.JPG',
+      },
+      {
+        fileName: '1738927208529-Slide6.JPG',
+        filePath: '/assets/products/1738927208529-Slide6.JPG',
+        _id: {
+          $oid: '67a5ec684da9b29cd0f10b94',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927208529-Slide6.JPG',
+      },
+      {
+        fileName: '1738927208530-Slide7.JPG',
+        filePath: '/assets/products/1738927208530-Slide7.JPG',
+        _id: {
+          $oid: '67a5ec684da9b29cd0f10b95',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927208530-Slide7.JPG',
+      },
+      {
+        fileName: '1738927208531-Slide8.JPG',
+        filePath: '/assets/products/1738927208531-Slide8.JPG',
+        _id: {
+          $oid: '67a5ec684da9b29cd0f10b96',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927208531-Slide8.JPG',
+      },
+    ],
+    description:
+      'This stunning arch-shaped marble, the center table by Karan Desai is the height of style and skill.\n\nIts sleek design and unique continuous arch pattern in all-white marble make it stand out as a true statement piece in luxurious homes.',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJ2rjROdtZQpOq9no3vVs5yPKXR8gEYuikGUw',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5ec804da9b29cd0f10b98',
+    },
+    title: 'console 2',
+    group: 'matilda',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUC8rBCeX0XaKgNMT1QEmen25RAwc7Sk4UxoJF',
+    images: [
+      {
+        fileName: '1738927232483-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUA1rftpJ1oeY2wnF0zQbWX83C4KujdSqt6MUT',
+        _id: {
+          $oid: '67a5ec804da9b29cd0f10b99',
+        },
+      },
+      {
+        fileName: '1738927232483-Slide1.JPG',
+        filePath: '/assets/products/1738927232483-Slide1.JPG',
+        _id: {
+          $oid: '67a5ec804da9b29cd0f10b99',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927232483-Slide1.JPG',
+      },
+      {
+        fileName: '1738927232488-Slide4.JPG',
+        filePath: '/assets/products/1738927232488-Slide4.JPG',
+        _id: {
+          $oid: '67a5ec804da9b29cd0f10b9c',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927232488-Slide4.JPG',
+      },
+      {
+        fileName: '1738927232489-Slide5.JPG',
+        filePath: '/assets/products/1738927232489-Slide5.JPG',
+        _id: {
+          $oid: '67a5ec804da9b29cd0f10b9d',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927232489-Slide5.JPG',
+      },
+      {
+        fileName: '1738927232491-Slide6.JPG',
+        filePath: '/assets/products/1738927232491-Slide6.JPG',
+        _id: {
+          $oid: '67a5ec804da9b29cd0f10b9e',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927232491-Slide6.JPG',
+      },
+    ],
+    description:
+      "Unveiling Karan Desai's exclusive masterpiece: a console with a graceful curve atop and refined center partitions, sculpted from pristine white marble.\n\nThis exquisitely crafted piece is a testament to unmatched precision and artistic brilliance, redefining elegance and sophistication.",
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUGkau59t5PDVekS3148x67aQRtcZvuTwfrOph',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5f5c14da9b29cd0f10c17',
+    },
+    title: 'monster brainy',
+    group: 'monster_collectibles',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUyBMn5e7jvoD5bj92PLzxBdul6nT8GrEAS30e',
+    images: [
+      {
+        fileName: '1738929601187-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUUvWcAzyBY1Vx48e2bhPHIZJqsnBOSArl5D3M',
+        _id: {
+          $oid: '67a5f5c14da9b29cd0f10c18',
+        },
+      },
+      {
+        fileName: '1738929601187-Slide1.JPG',
+        filePath: '/assets/products/1738929601187-Slide1.JPG',
+        _id: {
+          $oid: '67a5f5c14da9b29cd0f10c18',
+        },
+        thumbnail: '/assets/products/thumbnails/1738929601187-Slide1.JPG',
+      },
+      {
+        fileName: '1738929601187-Slide1.JPG',
+        filePath: '/assets/products/1738929601187-Slide1.JPG',
+        _id: {
+          $oid: '67a5f5c14da9b29cd0f10c18',
+        },
+        thumbnail: '/assets/products/thumbnails/1738929601187-Slide1.JPG',
+      },
+      {
+        fileName: '1738929601188-Slide2.JPG',
+        filePath: '/assets/products/1738929601188-Slide2.JPG',
+        _id: {
+          $oid: '67a5f5c14da9b29cd0f10c19',
+        },
+        thumbnail: '/assets/products/thumbnails/1738929601188-Slide2.JPG',
+      },
+      {
+        fileName: '1738929601189-Slide3.JPG',
+        filePath: '/assets/products/1738929601189-Slide3.JPG',
+        _id: {
+          $oid: '67a5f5c14da9b29cd0f10c1a',
+        },
+        thumbnail: '/assets/products/thumbnails/1738929601189-Slide3.JPG',
+      },
+    ],
+    description:
+      "Unleashing the 'Monster Brainy'—where bold aesthetics meet functional genius.\n\nThis concept dares to blend creativity with curiosity, crafting environments that provoke thought and inspire innovation.\n\nA true fusion of form and function, designed to ignite the imagination.",
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULT9qlKDqbauUfVsg4JYrj86xOSilFe5PBo3m',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67bc49a855b639fb58349ec7',
+    },
+    title: 'Bench 1',
+    group: 'matilda',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnw5EEDbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
+    images: [
+      {
+        fileName: '1740392872397-1.jpg',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULA7AAADqbauUfVsg4JYrj86xOSilFe5PBo3m',
+        _id: {
+          $oid: '67bc49a855b639fb58349ec8',
+        },
+      },
+      {
+        fileName: '1740392872397-1.jpg',
+        filePath: '/assets/products/1740392872397-1.jpg',
+        _id: {
+          $oid: '67bc49a855b639fb58349ec8',
+        },
+        thumbnail: '/assets/products/thumbnails/1740392872397-1.jpg',
+      },
+      {
+        fileName: '1740392872400-3.jpg',
+        filePath: '/assets/products/1740392872400-3.jpg',
+        _id: {
+          $oid: '67bc49a855b639fb58349ec9',
+        },
+        thumbnail: '/assets/products/thumbnails/1740392872400-3.jpg',
+      },
+      {
+        fileName: '1740392872403-4.jpg',
+        filePath: '/assets/products/1740392872403-4.jpg',
+        _id: {
+          $oid: '67bc49a855b639fb58349eca',
+        },
+        thumbnail: '/assets/products/thumbnails/1740392872403-4.jpg',
+      },
+      {
+        fileName: '1740392872406-5.jpg',
+        filePath: '/assets/products/1740392872406-5.jpg',
+        _id: {
+          $oid: '67bc49a855b639fb58349ecb',
+        },
+        thumbnail: '/assets/products/thumbnails/1740392872406-5.jpg',
+      },
+      {
+        fileName: '1740392872412-6.jpg',
+        filePath: '/assets/products/1740392872412-6.jpg',
+        _id: {
+          $oid: '67bc49a855b639fb58349ecc',
+        },
+        thumbnail: '/assets/products/thumbnails/1740392872412-6.jpg',
+      },
+      {
+        fileName: '1740392872422-7.jpg',
+        filePath: '/assets/products/1740392872422-7.jpg',
+        _id: {
+          $oid: '67bc49a855b639fb58349ecd',
+        },
+        thumbnail: '/assets/products/thumbnails/1740392872422-7.jpg',
+      },
+      {
+        fileName: '1740392872435-8.jpg',
+        filePath: '/assets/products/1740392872435-8.jpg',
+        _id: {
+          $oid: '67bc49a855b639fb58349ece',
+        },
+        thumbnail: '/assets/products/thumbnails/1740392872435-8.jpg',
+      },
+      {
+        fileName: '1740392872438-9.jpg',
+        filePath: '/assets/products/1740392872438-9.jpg',
+        _id: {
+          $oid: '67bc49a855b639fb58349ecf',
+        },
+        thumbnail: '/assets/products/thumbnails/1740392872438-9.jpg',
+      },
+      {
+        fileName: '1740392872443-10.jpg',
+        filePath: '/assets/products/1740392872443-10.jpg',
+        _id: {
+          $oid: '67bc49a855b639fb58349ed0',
+        },
+        thumbnail: '/assets/products/thumbnails/1740392872443-10.jpg',
+      },
+      {
+        fileName: '1740392872447-11.jpg',
+        filePath: '/assets/products/1740392872447-11.jpg',
+        _id: {
+          $oid: '67bc49a855b639fb58349ed1',
+        },
+        thumbnail: '/assets/products/thumbnails/1740392872447-11.jpg',
+      },
+      {
+        fileName: '1740392872450-12.jpg',
+        filePath: '/assets/products/1740392872450-12.jpg',
+        _id: {
+          $oid: '67bc49a855b639fb58349ed2',
+        },
+        thumbnail: '/assets/products/thumbnails/1740392872450-12.jpg',
+      },
+      {
+        fileName: '1740392872453-14.jpg',
+        filePath: '/assets/products/1740392872453-14.jpg',
+        _id: {
+          $oid: '67bc49a855b639fb58349ed3',
+        },
+        thumbnail: '/assets/products/thumbnails/1740392872453-14.jpg',
+      },
+    ],
+    description:
+      "Step into the embrace of luxury with the Karan Desai Home marble bench, where sitting together becomes an art form.\n\nPicture this: two souls, side by side, savoring not just coffee or tea, but each other's company.\n\nIt's not just furniture, it's a sanctuary for shared laughter, deep talks, and stolen glances.\n\nLet the smooth marble cradle your moments, turning every sip into a memory to cherish.",
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUEhdShVYFi7GYsQA2my03DTouek5wnIJXgjpV',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5ef7f4da9b29cd0f10c05',
+    },
+    title: 'bench 2',
+    group: 'matilda',
+    pdf: '',
+    images: [
+      {
+        fileName: '1738927999036-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULbLOLiDqbauUfVsg4JYrj86xOSilFe5PBo3m',
+        _id: {
+          $oid: '67a5ef7f4da9b29cd0f10c06',
+        },
+      },
+      {
+        fileName: '1738927999036-Slide1.JPG',
+        filePath: '/assets/products/1738927999036-Slide1.JPG',
+        _id: {
+          $oid: '67a5ef7f4da9b29cd0f10c06',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927999036-Slide1.JPG',
+      },
+      {
+        fileName: '1738927999037-Slide2.JPG',
+        filePath: '/assets/products/1738927999037-Slide2.JPG',
+        _id: {
+          $oid: '67a5ef7f4da9b29cd0f10c07',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927999037-Slide2.JPG',
+      },
+      {
+        fileName: '1738927999039-Slide3.JPG',
+        filePath: '/assets/products/1738927999039-Slide3.JPG',
+        _id: {
+          $oid: '67a5ef7f4da9b29cd0f10c08',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927999039-Slide3.JPG',
+      },
+    ],
+    description:
+      "Step into the embrace of luxury with the Karan Desai Home marble bench, where sitting together becomes an art form.\n\nPicture this: two souls, side by side, savoring not just coffee or tea, but each other's company.\n\nIt's not just furniture, it's a sanctuary for shared laughter, deep talks, and stolen glances.\n\nLet the smooth marble cradle your moments, turning every sip into a memory to cherish.",
+    dimensions:
+      'https://imgs.search.brave.com/iVjI8zr3e5IndwkFtM2PVy-uMhc949oudpKHRM6MEOk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzExLzA3LzEwLzc2/LzM2MF9GXzExMDcx/MDc2ODRfbnBSOURr/M0FtbHZzc0JFN01H/d0tUd0h6UnJFZ2Rs/emwuanBn',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5ed9e4da9b29cd0f10bc6',
+    },
+    title: 'flower vase',
+    group: 'matilda',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUOKfQovWZXhqs0g964QCxmbwcn2WStleB3MEP',
+    images: [
+      {
+        fileName: '1738927518491-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAiSsUwJ1oeY2wnF0zQbWX83C4KujdSqt6MUT',
+        _id: {
+          $oid: '67a5ed9e4da9b29cd0f10bc7',
+        },
+      },
+      {
+        fileName: '1738927518491-Slide1.JPG',
+        filePath: '/assets/products/1738927518491-Slide1.JPG',
+        _id: {
+          $oid: '67a5ed9e4da9b29cd0f10bc7',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927518491-Slide1.JPG',
+      },
+      {
+        fileName: '1738927518492-Slide2.JPG',
+        filePath: '/assets/products/1738927518492-Slide2.JPG',
+        _id: {
+          $oid: '67a5ed9e4da9b29cd0f10bc8',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927518492-Slide2.JPG',
+      },
+      {
+        fileName: '1738927518494-Slide3.JPG',
+        filePath: '/assets/products/1738927518494-Slide3.JPG',
+        _id: {
+          $oid: '67a5ed9e4da9b29cd0f10bc9',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927518494-Slide3.JPG',
+      },
+      {
+        fileName: '1738927518495-Slide4.JPG',
+        filePath: '/assets/products/1738927518495-Slide4.JPG',
+        _id: {
+          $oid: '67a5ed9e4da9b29cd0f10bca',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927518495-Slide4.JPG',
+      },
+      {
+        fileName: '1738927518497-Slide5.JPG',
+        filePath: '/assets/products/1738927518497-Slide5.JPG',
+        _id: {
+          $oid: '67a5ed9e4da9b29cd0f10bcb',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927518497-Slide5.JPG',
+      },
+      {
+        fileName: '1738927518498-Slide6.JPG',
+        filePath: '/assets/products/1738927518498-Slide6.JPG',
+        _id: {
+          $oid: '67a5ed9e4da9b29cd0f10bcc',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927518498-Slide6.JPG',
+      },
+      {
+        fileName: '1738927518499-Slide7.JPG',
+        filePath: '/assets/products/1738927518499-Slide7.JPG',
+        _id: {
+          $oid: '67a5ed9e4da9b29cd0f10bcd',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927518499-Slide7.JPG',
+      },
+      {
+        fileName: '1738927518500-Slide8.JPG',
+        filePath: '/assets/products/1738927518500-Slide8.JPG',
+        _id: {
+          $oid: '67a5ed9e4da9b29cd0f10bce',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927518500-Slide8.JPG',
+      },
+    ],
+    description:
+      'a flower vase made of pure white marble.\n\nThis beautiful piece shows unmatched accuracy and artistic talent, and it is the perfect example of class and grace.',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUaA2lXGzVIx6ZjWFiGhcRQJMUzft1drvPNTbL',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5fa124da9b29cd0f10c36',
+    },
+    title: 'Samaveta Bench',
+    group: 'serafini',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUCDnRdrPX0XaKgNMT1QEmen25RAwc7Sk4UxoJ',
+    images: [
+      {
+        fileName: '1738930706115-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDRVbUDg8FYI8sxbtc2ngQN4ZeSPwOKkv5yAj',
+        _id: {
+          $oid: '67a5fa124da9b29cd0f10c37',
+        },
+      },
+      {
+        fileName: '1738930706115-Slide1.JPG',
+        filePath: '/assets/products/1738930706115-Slide1.JPG',
+        _id: {
+          $oid: '67a5fa124da9b29cd0f10c37',
+        },
+        thumbnail: '/assets/products/thumbnails/1738930706115-Slide1.JPG',
+      },
+      {
+        fileName: '1738930706117-Slide2.JPG',
+        filePath: '/assets/products/1738930706117-Slide2.JPG',
+        _id: {
+          $oid: '67a5fa124da9b29cd0f10c38',
+        },
+        thumbnail: '/assets/products/thumbnails/1738930706117-Slide2.JPG',
+      },
+    ],
+    description:
+      'Serafini, located in Chiampo (Italy), a city internationally\nrenowned for its marble production, has evolved into one\nof the most innovative marble factories, producing design-\ndriven products and objects. At the 2013 Milan Fair, a\nchance encounter sparked the idea for a bench that\ntranscends mere functionality, symbolizing unity and\nconnection. Designed by Karan Desai, it reflects the\nbeauty of cultural exchange and serves as a humble\ntribute to inclusivity and empathy, fostering connections\nthat transcend boundaries.\n\n\n\nThe Samaveta bench, designed for indoor and outdoor\nuse, blends comfort and versatility. Its contoured seating\nensures ergonomic support, while a flat surface provides\nspace for personal items. A built-in vessel can house plants\nfor shade or serve creative indoor purposes like an ice\nbucket. Features like a horseshoe-shaped seat and heel\nskirting enhance comfort, while its sleek design balances\nstrength and elegance.\n\n\n\nA testament to cultural synthesis and thoughtful design, the\nSamaveta bench combines functionality, aesthetics, and\ninnovation, enriching any space it inhabits.',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUV965cLeJz0jfKoyVd9HNhC5wFQ4OrBi2UkDx',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67b590a6e03cc2c55c624a58',
+    },
+    title: 'Monster Library',
+    group: 'monster_3.0',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUeJWNLScFPv1kdbg4tT0YfOS529XxhywHpVoU',
+    images: [
+      {
+        fileName: '1739952294985-Library_1.19.jpg',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJ1j5gKdtZQpOq9no3vVs5yPKXR8gEYuikGUw',
+        _id: {
+          $oid: '67b590a6e03cc2c55c624a59',
+        },
+      },
+      {
+        fileName: '1739952294985-Library_1.19.jpg',
+        filePath: '/new_monster3/library1.jpg',
+        _id: {
+          $oid: '67b590a6e03cc2c55c624a59',
+        },
+        thumbnail: '/assets/products/thumbnails/library1.jpg',
+      },
+      {
+        fileName: '1739952294985-Library_1.19.jpg',
+        filePath: '/new_monster3/library2.jpg',
+        _id: {
+          $oid: '67b590a6e03cc2c55c624a59',
+        },
+        thumbnail: '/assets/products/thumbnails/library2.jpg',
+      },
+      {
+        fileName: '1739952294985-Library_1.19.jpg',
+        filePath: '/new_monster3/library3.jpg',
+        _id: {
+          $oid: '67b590a6e03cc2c55c624a59',
+        },
+        thumbnail: '/assets/products/thumbnails/library3.jpg',
+      },
+      {
+        fileName: '1739952294985-Library_1.19.jpg',
+        filePath: '/new_monster3/library4.jpg',
+        _id: {
+          $oid: '67b590a6e03cc2c55c624a59',
+        },
+        thumbnail: '/assets/products/thumbnails/library4.jpg',
+      },
+      {
+        fileName: '1739952294985-Library_1.19.jpg',
+        filePath: '/new_monster3/library5.jpg',
+        _id: {
+          $oid: '67b590a6e03cc2c55c624a59',
+        },
+        thumbnail: '/assets/products/thumbnails/library5.jpg',
+      },
+      {
+        fileName: '1739952294985-Library_1.19.jpg',
+        filePath: '/new_monster3/library6.jpg',
+        _id: {
+          $oid: '67b590a6e03cc2c55c624a59',
+        },
+        thumbnail: '/assets/products/thumbnails/library6.jpg',
+      },
+      {
+        fileName: '1739952294985-Library_1.19.jpg',
+        filePath: '/new_monster3/library7.jpg',
+        _id: {
+          $oid: '67b590a6e03cc2c55c624a59',
+        },
+        thumbnail: '/assets/products/thumbnails/library7.jpg',
+      },
+      {
+        fileName: '1739952294985-Library_1.19.jpg',
+        filePath: '/new_monster3/library8.jpg',
+        _id: {
+          $oid: '67b590a6e03cc2c55c624a59',
+        },
+        thumbnail: '/assets/products/thumbnails/library8.jpg',
+      },
+      {
+        fileName: '1739952294985-Library_1.19.jpg',
+        filePath: '/new_monster3/library9.jpg',
+        _id: {
+          $oid: '67b590a6e03cc2c55c624a59',
+        },
+        thumbnail: '/assets/products/thumbnails/library9.jpg',
+      },
+      {
+        fileName: '1739952294985-Library_1.19.jpg',
+        filePath: '/new_monster3/library10.jpg',
+        _id: {
+          $oid: '67b590a6e03cc2c55c624a59',
+        },
+        thumbnail: '/assets/products/thumbnails/library10.jpg',
+      },
+      {
+        fileName: '1739952294985-Library_1.19.jpg',
+        filePath: '/new_monster3/library11.jpg',
+        _id: {
+          $oid: '67b590a6e03cc2c55c624a59',
+        },
+        thumbnail: '/assets/products/thumbnails/library11.jpg',
+      },
+      {
+        fileName: '1739952294985-Library_1.19.jpg',
+        filePath: '/new_monster3/library12.jpg',
+        _id: {
+          $oid: '67b590a6e03cc2c55c624a59',
+        },
+        thumbnail: '/assets/products/thumbnails/library12.jpg',
+      },
+      {
+        fileName: '1739952294985-Library_1.19.jpg',
+        filePath: '/new_monster3/library13.jpg',
+        _id: {
+          $oid: '67b590a6e03cc2c55c624a59',
+        },
+        thumbnail: '/assets/products/thumbnails/library13.jpg',
+      },
+    ],
+    description:
+      'A library that doesn’t just hold books—it\nholds stories, secrets, and statements.\nCrafted with a raw, sculptural form, it\nembodies the elegance of disorder. Because\nin great design, perfection is overrated.',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUuEphv8VvD2FOkC3NsiU7yPRWb18aeZThVzGr',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5f8544da9b29cd0f10c31',
+    },
+    title: 'monster squinty',
+    group: 'monster_collectibles',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWMVvzsrSVLpqPbsdCUAMXZB0lT2vrWw4RhOud',
+    images: [
+      {
+        fileName: '1738930260208-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUr9wURxNnDI67jcCaomXhZLsJd91f4YGitMHP',
+        _id: {
+          $oid: '67a5f8544da9b29cd0f10c32',
+        },
+      },
+      {
+        fileName: '1738930260208-Slide1.JPG',
+        filePath: '/assets/products/1738930260208-Slide1.JPG',
+        _id: {
+          $oid: '67a5f8544da9b29cd0f10c32',
+        },
+        thumbnail: '/assets/products/thumbnails/1738930260208-Slide1.JPG',
+      },
+      {
+        fileName: '1738930260210-Slide2.JPG',
+        filePath: '/assets/products/1738930260210-Slide2.JPG',
+        _id: {
+          $oid: '67a5f8544da9b29cd0f10c33',
+        },
+        thumbnail: '/assets/products/thumbnails/1738930260210-Slide2.JPG',
+      },
+      {
+        fileName: '1738930260212-Slide3.JPG',
+        filePath: '/assets/products/1738930260212-Slide3.JPG',
+        _id: {
+          $oid: '67a5f8544da9b29cd0f10c34',
+        },
+        thumbnail: '/assets/products/thumbnails/1738930260212-Slide3.JPG',
+      },
+    ],
+    description:
+      'Meet the Monster Squinty Lamp, a quirky blend of art and light that adds a playful twist to your space!\n\nWith its creature-like body and squinty eyes, this lamp brings character and charm, casting unique shadows that make any room come alive.\n\nPerfect for those who love a touch of whimsy in their decor!',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUFF11zUyvrgRIBMUa1Cwt3nu4PEZOTo0XLQDf',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5ef974da9b29cd0f10c0a',
+    },
+    title: 'floor lamp',
+    group: 'matilda',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUzOlagRIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
+    images: [
+      {
+        fileName: '1738928023191-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQst98FCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
+        _id: {
+          $oid: '67a5ef974da9b29cd0f10c0b',
+        },
+      },
+      {
+        fileName: '1738928023191-Slide1.JPG',
+        filePath: '/assets/products/1738928023191-Slide1.JPG',
+        _id: {
+          $oid: '67a5ef974da9b29cd0f10c0b',
+        },
+        thumbnail: '/assets/products/thumbnails/1738928023191-Slide1.JPG',
+      },
+      {
+        fileName: '1738928023191-Slide1.JPG',
+        filePath: '/assets/products/1738928023191-Slide1.JPG',
+        _id: {
+          $oid: '67a5ef974da9b29cd0f10c0b',
+        },
+        thumbnail: '/assets/products/thumbnails/1738928023191-Slide1.JPG',
+      },
+      {
+        fileName: '1738928023193-Slide2.JPG',
+        filePath: '/assets/products/1738928023193-Slide2.JPG',
+        _id: {
+          $oid: '67a5ef974da9b29cd0f10c0c',
+        },
+        thumbnail: '/assets/products/thumbnails/1738928023193-Slide2.JPG',
+      },
+      {
+        fileName: '1738928023194-Slide3.JPG',
+        filePath: '/assets/products/1738928023194-Slide3.JPG',
+        _id: {
+          $oid: '67a5ef974da9b29cd0f10c0d',
+        },
+        thumbnail: '/assets/products/thumbnails/1738928023194-Slide3.JPG',
+      },
+      {
+        fileName: '1738928023196-Slide4.JPG',
+        filePath: '/assets/products/1738928023196-Slide4.JPG',
+        _id: {
+          $oid: '67a5ef974da9b29cd0f10c0e',
+        },
+        thumbnail: '/assets/products/thumbnails/1738928023196-Slide4.JPG',
+      },
+      {
+        fileName: '1738928023197-Slide5.JPG',
+        filePath: '/assets/products/1738928023197-Slide5.JPG',
+        _id: {
+          $oid: '67a5ef974da9b29cd0f10c0f',
+        },
+        thumbnail: '/assets/products/thumbnails/1738928023197-Slide5.JPG',
+      },
+    ],
+    description:
+      "Find out what marble can do for you!\n\nThe smooth marble shape of this lamp is a masterpiece of design and workmanship.\n\nWhat a beautiful way the light source glows from under the marble.\n\nIt's perfect for giving any room a bit of class.",
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDO9d0Q8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5ebf14da9b29cd0f10b77',
+    },
+    group: 'matilda',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUykphDsjvoD5bj92PLzxBdul6nT8GrEAS30eN',
+    title: 'table lamp',
+    images: [
+      {
+        fileName: '1738927089671-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUonnAgrPd43VNTXj27bgOZneCUs9aBiY5x8vw',
+        _id: {
+          $oid: '67a5ebf14da9b29cd0f10b78',
+        },
+      },
+      {
+        fileName: '1738927089671-Slide1.JPG',
+        filePath: '/assets/products/1738927089671-Slide1.JPG',
+        _id: {
+          $oid: '67a5ebf14da9b29cd0f10b78',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927089671-Slide1.JPG',
+      },
+      {
+        fileName: '1738927089671-Slide1.JPG',
+        filePath: '/assets/products/1738927089671-Slide1.JPG',
+        _id: {
+          $oid: '67a5ebf14da9b29cd0f10b78',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927089671-Slide1.JPG',
+      },
+      {
+        fileName: '1738927089672-Slide2.JPG',
+        filePath: '/assets/products/1738927089672-Slide2.JPG',
+        _id: {
+          $oid: '67a5ebf14da9b29cd0f10b79',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927089672-Slide2.JPG',
+      },
+      {
+        fileName: '1738927089674-Slide3.JPG',
+        filePath: '/assets/products/1738927089674-Slide3.JPG',
+        _id: {
+          $oid: '67a5ebf14da9b29cd0f10b7a',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927089674-Slide3.JPG',
+      },
+      {
+        fileName: '1738927089675-Slide4.JPG',
+        filePath: '/assets/products/1738927089675-Slide4.JPG',
+        _id: {
+          $oid: '67a5ebf14da9b29cd0f10b7b',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927089675-Slide4.JPG',
+      },
+      {
+        fileName: '1738927089676-Slide5.JPG',
+        filePath: '/assets/products/1738927089676-Slide5.JPG',
+        _id: {
+          $oid: '67a5ebf14da9b29cd0f10b7c',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927089676-Slide5.JPG',
+      },
+    ],
+    description:
+      "This stunning piece is more than just a lamp; it’s a work of art that redefines grace and sophistication.\n\nThe lamp's unique curved design and bespoke craftsmanship make it a standout addition to any table, effortlessly elevating the ambiance of your home.",
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQLRjq6wCgpKiS14YXmU2JDcwG0vBsCL6dWNy',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5ec084da9b29cd0f10b7e',
+    },
+    title: 'library',
+    group: 'matilda',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUYY6moTnVM7iftKIsUSTJx8haC1mEBkZl4NvR',
+    images: [
+      {
+        fileName: '1738927112883-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSdCYMG1AKnraNxkI5vbez6dT2q8M0osBfR9A',
+        _id: {
+          $oid: '67a5ec084da9b29cd0f10b7f',
+        },
+      },
+      {
+        fileName: '1738927112883-Slide1.JPG',
+        filePath: '/assets/products/1738927112883-Slide1.JPG',
+        _id: {
+          $oid: '67a5ec084da9b29cd0f10b7f',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927112883-Slide1.JPG',
+      },
+      {
+        fileName: '1738927112885-Slide2.JPG',
+        filePath: '/assets/products/1738927112885-Slide2.JPG',
+        _id: {
+          $oid: '67a5ec084da9b29cd0f10b80',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927112885-Slide2.JPG',
+      },
+      {
+        fileName: '1738927112886-Slide3.JPG',
+        filePath: '/assets/products/1738927112886-Slide3.JPG',
+        _id: {
+          $oid: '67a5ec084da9b29cd0f10b81',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927112886-Slide3.JPG',
+      },
+      {
+        fileName: '1738927112887-Slide4.JPG',
+        filePath: '/assets/products/1738927112887-Slide4.JPG',
+        _id: {
+          $oid: '67a5ec084da9b29cd0f10b82',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927112887-Slide4.JPG',
+      },
+      {
+        fileName: '1738927112888-Slide5.JPG',
+        filePath: '/assets/products/1738927112888-Slide5.JPG',
+        _id: {
+          $oid: '67a5ec084da9b29cd0f10b83',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927112888-Slide5.JPG',
+      },
+      {
+        fileName: '1738927112889-Slide6.JPG',
+        filePath: '/assets/products/1738927112889-Slide6.JPG',
+        _id: {
+          $oid: '67a5ec084da9b29cd0f10b84',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927112889-Slide6.JPG',
+      },
+      {
+        fileName: '1738927112890-Slide7.JPG',
+        filePath: '/assets/products/1738927112890-Slide7.JPG',
+        _id: {
+          $oid: '67a5ec084da9b29cd0f10b85',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927112890-Slide7.JPG',
+      },
+    ],
+    description:
+      "This book shelf is more than just a shelf, it's a work of art that combines style and function.\n\nIts curved shape and one-of-a-kind walls redefine grace and make any room look better.",
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDcPdoS8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5efc74da9b29cd0f10c11',
+    },
+    title: 'monster binty',
+    group: 'monster_collectibles',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKURoDyPCE1fzw0AFxNe2UEaubVBY53GTv7kqpl',
+    images: [
+      {
+        fileName: '1738928071412-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8C1mTl64oKUn37W6wsTlRmDBFhGrviIjcMxV',
+        _id: {
+          $oid: '67a5efc74da9b29cd0f10c12',
+        },
+      },
+      {
+        fileName: '1738928071412-Slide1.JPG',
+        filePath: '/assets/products/1738928071412-Slide1.JPG',
+        _id: {
+          $oid: '67a5efc74da9b29cd0f10c12',
+        },
+        thumbnail: '/assets/products/thumbnails/1738928071412-Slide1.JPG',
+      },
+      {
+        fileName: '1738928071412-Slide1.JPG',
+        filePath: '/assets/products/1738928071412-Slide1.JPG',
+        _id: {
+          $oid: '67a5efc74da9b29cd0f10c12',
+        },
+        thumbnail: '/assets/products/thumbnails/1738928071412-Slide1.JPG',
+      },
+      {
+        fileName: '1738928071413-Slide2.JPG',
+        filePath: '/assets/products/1738928071413-Slide2.JPG',
+        _id: {
+          $oid: '67a5efc74da9b29cd0f10c13',
+        },
+        thumbnail: '/assets/products/thumbnails/1738928071413-Slide2.JPG',
+      },
+      {
+        fileName: '1738928071414-Slide3.JPG',
+        filePath: '/assets/products/1738928071414-Slide3.JPG',
+        _id: {
+          $oid: '67a5efc74da9b29cd0f10c14',
+        },
+        thumbnail: '/assets/products/thumbnails/1738928071414-Slide3.JPG',
+      },
+      {
+        fileName: '1738928071416-Slide4.JPG',
+        filePath: '/assets/products/1738928071416-Slide4.JPG',
+        _id: {
+          $oid: '67a5efc74da9b29cd0f10c15',
+        },
+        thumbnail: '/assets/products/thumbnails/1738928071416-Slide4.JPG',
+      },
+    ],
+    description:
+      'Brighten up your space with a scoop of style!\n\nIntroducing the Binty lamp, where playful design meets sleek functionality.\n\nWith its whimsical ice cream cone shape, Binty adds a sprinkle of nostalgia and charm to any room.\n',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPNbp9DHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5eaba4da9b29cd0f10b63',
+    },
+    title: 'monster console',
+    group: 'monster_1.0',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUB0rHdma3qeoXrYV82Q6T5Enb4WD1LwdAJjzP',
+    images: [
+      {
+        fileName: '1738926778781-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUYYE36bnVM7iftKIsUSTJx8haC1mEBkZl4NvR',
+        _id: {
+          $oid: '67a5eaba4da9b29cd0f10b64',
+        },
+      },
+      {
+        fileName: '1738926778781-Slide1.JPG',
+        filePath: '/assets/products/1738926778781-Slide1.JPG',
+        _id: {
+          $oid: '67a5eaba4da9b29cd0f10b64',
+        },
+        thumbnail: '/assets/products/thumbnails/1738926778781-Slide1.JPG',
+      },
+      {
+        fileName: '1738926778783-Slide2.JPG',
+        filePath: '/assets/products/1738926778783-Slide2.JPG',
+        _id: {
+          $oid: '67a5eaba4da9b29cd0f10b65',
+        },
+        thumbnail: '/assets/products/thumbnails/1738926778783-Slide2.JPG',
+      },
+      {
+        fileName: '1738926778784-Slide3.JPG',
+        filePath: '/assets/products/1738926778784-Slide3.JPG',
+        _id: {
+          $oid: '67a5eaba4da9b29cd0f10b66',
+        },
+        thumbnail: '/assets/products/thumbnails/1738926778784-Slide3.JPG',
+      },
+      {
+        fileName: '1738926778785-Slide4.JPG',
+        filePath: '/assets/products/1738926778785-Slide4.JPG',
+        _id: {
+          $oid: '67a5eaba4da9b29cd0f10b67',
+        },
+        thumbnail: '/assets/products/thumbnails/1738926778785-Slide4.JPG',
+      },
+    ],
+    description:
+      "Discover the magic of marble like never before!\n\nImagine one big block turning into three useful and beautiful pieces.\n\nThey're not just furniture, they have cool lights, speakers, and a sleek design.\n\nYour space, but way more awesome!\n\nWelcome to a world where marble becomes something extraordinary.",
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnl32aIbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5e7ce4da9b29cd0f10b51',
+    },
+    title: 'monster basin',
+    group: 'monster_1.0',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUcmsYcPOzfU0v5mZaj1HWcAwKFCxykrE2NGSI',
+    images: [
+      {
+        fileName: '1738926030310-1.jpg',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUF0ZdrIyvrgRIBMUa1Cwt3nu4PEZOTo0XLQDf',
+        _id: {
+          $oid: '67a5e7ce4da9b29cd0f10b52',
+        },
+      },
+      {
+        fileName: '1738926030310-1.jpg',
+        filePath: '/assets/products/1738926030310-1.jpg',
+        _id: {
+          $oid: '67a5e7ce4da9b29cd0f10b52',
+        },
+        thumbnail: '/assets/products/thumbnails/1738926030310-1.jpg',
+      },
+      {
+        fileName: '1738926030314-2.jpg',
+        filePath: '/assets/products/1738926030314-2.jpg',
+        _id: {
+          $oid: '67a5e7ce4da9b29cd0f10b53',
+        },
+        thumbnail: '/assets/products/thumbnails/1738926030314-2.jpg',
+      },
+      {
+        fileName: '1738926030318-3.jpg',
+        filePath: '/assets/products/1738926030318-3.jpg',
+        _id: {
+          $oid: '67a5e7ce4da9b29cd0f10b54',
+        },
+        thumbnail: '/assets/products/thumbnails/1738926030318-3.jpg',
+      },
+      {
+        fileName: '1738926030325-4.jpg',
+        filePath: '/assets/products/1738926030325-4.jpg',
+        _id: {
+          $oid: '67a5e7ce4da9b29cd0f10b55',
+        },
+        thumbnail: '/assets/products/thumbnails/1738926030325-4.jpg',
+      },
+      {
+        fileName: '1738926030383-5.jpg',
+        filePath: '/assets/products/1738926030383-5.jpg',
+        _id: {
+          $oid: '67a5e7ce4da9b29cd0f10b56',
+        },
+        thumbnail: '/assets/products/thumbnails/1738926030383-5.jpg',
+      },
+    ],
+    description:
+      "Say hello to a basin that's not just good-looking but also super handy!\n\nIt's like a bathroom superhero.\n\nPair it with a bathtub for a bathroom upgrade that's next level cool! 🛁💫",
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUgPpkpBlLdSN8CY5rJGOAxcqQpM9fjoh4etX6',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5ef4c4da9b29cd0f10bf4',
+    },
+    title: 'bathtub',
+    group: 'matilda',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU32sYLEvb7L0Z2G4mkrAFzE8uQjRclW5px9hX',
+    images: [
+      {
+        fileName: '1738927948144-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUxALIhqiPUt8w7TpsY9iaCJZ03LNVMQzoX6l4',
+        _id: {
+          $oid: '67a5ef4c4da9b29cd0f10bf5',
+        },
+      },
+      {
+        fileName: '1738927948144-Slide1.JPG',
+        filePath: '/assets/products/1738927948144-Slide1.JPG',
+        _id: {
+          $oid: '67a5ef4c4da9b29cd0f10bf5',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927948144-Slide1.JPG',
+      },
+      {
+        fileName: '1738927948145-Slide2.JPG',
+        filePath: '/assets/products/1738927948145-Slide2.JPG',
+        _id: {
+          $oid: '67a5ef4c4da9b29cd0f10bf6',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927948145-Slide2.JPG',
+      },
+      {
+        fileName: '1738927948146-Slide3.JPG',
+        filePath: '/assets/products/1738927948146-Slide3.JPG',
+        _id: {
+          $oid: '67a5ef4c4da9b29cd0f10bf7',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927948146-Slide3.JPG',
+      },
+      {
+        fileName: '1738927948147-Slide4.JPG',
+        filePath: '/assets/products/1738927948147-Slide4.JPG',
+        _id: {
+          $oid: '67a5ef4c4da9b29cd0f10bf8',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927948147-Slide4.JPG',
+      },
+      {
+        fileName: '1738927948150-Slide5.JPG',
+        filePath: '/assets/products/1738927948150-Slide5.JPG',
+        _id: {
+          $oid: '67a5ef4c4da9b29cd0f10bf9',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927948150-Slide5.JPG',
+      },
+    ],
+    description:
+      "Dive into the essence of elegance with Karan Desai's masterpiece—a u-shaped marble bathtub that redefines luxury.\n\nWith its seamless design, dual glass sides, and pristine white marble, this stunning centerpiece transforms any space into a haven of sophistication and grandeur.\n\nMore than just a bathtub, it’s a sculptural marvel.",
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDWJFkL8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5ef664da9b29cd0f10bfb',
+    },
+    title: 'chair',
+    group: 'matilda',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUfRZ9Y2FreUiploh17Cx6dSMgtF0NPTW8vq2I',
+    images: [
+      {
+        fileName: '1738927974894-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPZiDMtHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
+        _id: {
+          $oid: '67a5ef664da9b29cd0f10bfc',
+        },
+      },
+      {
+        fileName: '1738927974894-Slide1.JPG',
+        filePath: '/assets/products/1738927974894-Slide1.JPG',
+        _id: {
+          $oid: '67a5ef664da9b29cd0f10bfc',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927974894-Slide1.JPG',
+      },
+      {
+        fileName: '1738927974898-Slide5.JPG',
+        filePath: '/assets/products/1738927974898-Slide5.JPG',
+        _id: {
+          $oid: '67a5ef664da9b29cd0f10c00',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927974898-Slide5.JPG',
+      },
+      {
+        fileName: '1738927974899-Slide6.JPG',
+        filePath: '/assets/products/1738927974899-Slide6.JPG',
+        _id: {
+          $oid: '67a5ef664da9b29cd0f10c01',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927974899-Slide6.JPG',
+      },
+      {
+        fileName: '1738927974901-Slide7.JPG',
+        filePath: '/assets/products/1738927974901-Slide7.JPG',
+        _id: {
+          $oid: '67a5ef664da9b29cd0f10c02',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927974901-Slide7.JPG',
+      },
+    ],
+    description:
+      'a one-of-a-kind marble chair, elegantly sculpted from pure white marble.\n\nCrafted with unparalleled precision, this piece is an artistic marvel that elevates elegance and sophistication to new heights.',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUcFPDsNOzfU0v5mZaj1HWcAwKFCxykrE2NGSI',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5ed3c4da9b29cd0f10bbf',
+    },
+    title: 'basin',
+    group: 'matilda',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUu6KK8TVvD2FOkC3NsiU7yPRWb18aeZThVzGr',
+    images: [
+      {
+        fileName: '1738927420322-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU3gwRaRvb7L0Z2G4mkrAFzE8uQjRclW5px9hX',
+        _id: {
+          $oid: '67a5ed3c4da9b29cd0f10bc0',
+        },
+      },
+      {
+        fileName: '1738927420322-Slide1.JPG',
+        filePath: '/assets/products/1738927420322-Slide1.JPG',
+        _id: {
+          $oid: '67a5ed3c4da9b29cd0f10bc0',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927420322-Slide1.JPG',
+      },
+      {
+        fileName: '1738927420326-Slide4.JPG',
+        filePath: '/assets/products/1738927420326-Slide4.JPG',
+        _id: {
+          $oid: '67a5ed3c4da9b29cd0f10bc3',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927420326-Slide4.JPG',
+      },
+      {
+        fileName: '1738927420327-Slide5.JPG',
+        filePath: '/assets/products/1738927420327-Slide5.JPG',
+        _id: {
+          $oid: '67a5ed3c4da9b29cd0f10bc4',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927420327-Slide5.JPG',
+      },
+    ],
+    description:
+      "Discover the epitome of elegance with this exquisite arch-shaped marble basin.\n\nCrafted with unparalleled skill, its seamless arch design and pristine white marble make it a centerpiece that exudes luxury and sophistication.\n\nPerfect for adding a touch of grandeur to any space, this bsin is more than just furniture, it's a work of art.\n",
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQeyDy6CgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67ef850f629882967f3fbb3d',
+    },
+    title: 'Dining Table',
+    group: 'matilda',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUgrObNwlLdSN8CY5rJGOAxcqQpM9fjoh4etX6',
+    images: [
+      {
+        fileName: '1743750415386-1.png',
+        filePath: '/assets/products/1743750415386-1.png',
+        _id: {
+          $oid: '67ef850f629882967f3fbb3e',
+        },
+        thumbnail: '/assets/products/thumbnails/1743750415386-1.png',
+      },
+      {
+        fileName: '1743750415390-2.png',
+        filePath: '/assets/products/1743750415390-2.png',
+        _id: {
+          $oid: '67ef850f629882967f3fbb3f',
+        },
+        thumbnail: '/assets/products/thumbnails/1743750415390-2.png',
+      },
+      {
+        fileName: '1743750415400-3.png',
+        filePath: '/assets/products/1743750415400-3.png',
+        _id: {
+          $oid: '67ef850f629882967f3fbb40',
+        },
+        thumbnail: '/assets/products/thumbnails/1743750415400-3.png',
+      },
+      {
+        fileName: '1743750415404-4.png',
+        filePath: '/assets/products/1743750415404-4.png',
+        _id: {
+          $oid: '67ef850f629882967f3fbb41',
+        },
+        thumbnail: '/assets/products/thumbnails/1743750415404-4.png',
+      },
+      {
+        fileName: '1743750415407-5.png',
+        filePath: '/assets/products/1743750415407-5.png',
+        _id: {
+          $oid: '67ef850f629882967f3fbb42',
+        },
+        thumbnail: '/assets/products/thumbnails/1743750415407-5.png',
+      },
+    ],
+    description:
+      'This elegant marble dining table features a conical white marble base and a round tabletop with a central opening, seamlessly integrating a natural tree for a harmonious blend of organic and modern aesthetics.',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUINP1NBMW6qU3iBow9cLQK4A1kuMTGmF8rel2',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67efa13d38f60435b89ba291',
+    },
+    title: 'monster humpty',
+    group: 'monster_collectibles',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUohMIiwPd43VNTXj27bgOZneCUs9aBiY5x8vw',
+    images: [
+      {
+        fileName: '1743757629639-1.jpg',
+        filePath: '/assets/humpty.png',
+        _id: {
+          $oid: '67efa13d38f60435b89ba292',
+        },
+        thumbnail: '/assets/products/thumbnails/humpty.png',
+      },
+      {
+        fileName: '1743757629639-1.jpg',
+        filePath: '/assets/products/1743757629639-1.jpg',
+        _id: {
+          $oid: '67efa13d38f60435b89ba292',
+        },
+        thumbnail: '/assets/products/thumbnails/1743757629639-1.jpg',
+      },
+      {
+        fileName: '1743757629642-2.jpg',
+        filePath: '/assets/products/1743757629642-2.jpg',
+        _id: {
+          $oid: '67efa13d38f60435b89ba293',
+        },
+        thumbnail: '/assets/products/thumbnails/1743757629642-2.jpg',
+      },
+      {
+        fileName: '1743757629643-3.jpg',
+        filePath: '/assets/products/1743757629643-3.jpg',
+        _id: {
+          $oid: '67efa13d38f60435b89ba294',
+        },
+        thumbnail: '/assets/products/thumbnails/1743757629643-3.jpg',
+      },
+    ],
+    description:
+      'The Monster Humpty wall sconce is a whimsical lighting fixture crafted from textured brass and frosted glass. Designed in the shape of a playful monster blowing a bubble, it combines artistic charm with functional elegance, making it a unique statement piece for any interior.\n',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUohMIiwPd43VNTXj27bgOZneCUs9aBiY5x8vw',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67f4da6bd5986748ae8f34fe',
+    },
+    title: 'monster buddha',
+    group: 'monster_collectibles',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU1bhFt7mcNbALVg2tCIRm5fi0793BwZH8PYyx',
+    images: [
+      {
+        fileName: '1744099947423-1.jpg',
+        filePath: '/assets/buddha.png',
+        _id: {
+          $oid: '67f4da6bd5986748ae8f34ff',
+        },
+        thumbnail: '/assets/products/thumbnails/buddha.png',
+      },
+      {
+        fileName: '1744099947423-1.jpg',
+        filePath: '/assets/products/1744099947423-1.jpg',
+        _id: {
+          $oid: '67f4da6bd5986748ae8f34ff',
+        },
+        thumbnail: '/assets/products/thumbnails/1744099947423-1.jpg',
+      },
+      {
+        fileName: '1744099947425-2.jpg',
+        filePath: '/assets/products/1744099947425-2.jpg',
+        _id: {
+          $oid: '67f4da6bd5986748ae8f3500',
+        },
+        thumbnail: '/assets/products/thumbnails/1744099947425-2.jpg',
+      },
+      {
+        fileName: '1744099947427-3.jpg',
+        filePath: '/assets/products/1744099947427-3.jpg',
+        _id: {
+          $oid: '67f4da6bd5986748ae8f3501',
+        },
+        thumbnail: '/assets/products/thumbnails/1744099947427-3.jpg',
+      },
+    ],
+    description:
+      'The Monster Buddha table lamp is a serene yet playful design, featuring a textured brass base resembling a meditative figure and a large, hand-blown glass dome that diffuses light softly. This artistic piece blends tranquility with whimsy, making it a captivating addition to any space.\r\n',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUzbq9egIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
+    __v: 0,
+  },
+];
