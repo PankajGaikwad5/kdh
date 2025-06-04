@@ -1,110 +1,20 @@
-// FloatingImagesScene.jsx
 'use client';
-
-import React, { useRef, useState, useEffect, useMemo, Suspense } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import {
   ScrollControls,
   useScroll,
-  OrbitControls,
   useTexture,
+  OrbitControls,
 } from '@react-three/drei';
 import * as THREE from 'three';
 import { useRouter } from 'next/navigation';
 import { newImagePaths } from './imagePaths';
+import { Suspense } from 'react';
 import CustomLoader from './CustomLoader';
 import { Plus, Minus } from 'lucide-react';
 
-// ─── Starfield with Pronounced Glow ───────────────────────────────────────────
-function Starfield({ count = 400, radius = 200 }) {
-  const pointsRef = useRef();
-  const { gl } = useThree();
-
-  // 1) Generate positions so that no stars lie inside the sphere (radius)
-  const positions = useMemo(() => {
-    const pos = new Float32Array(count * 3);
-    for (let i = 0; i < count; i++) {
-      const phi = Math.random() * Math.PI * 2;
-      const theta = Math.acos(2 * Math.random() - 1);
-      // Half the stars just outside the sphere, half farther for depth
-      const offset =
-        i < count * 0.5
-          ? radius + 2 + Math.random() * 40
-          : radius + 50 + Math.random() * 100;
-      pos[i * 3] = offset * Math.sin(theta) * Math.cos(phi);
-      pos[i * 3 + 1] = offset * Math.sin(theta) * Math.sin(phi);
-      pos[i * 3 + 2] = offset * Math.cos(theta);
-    }
-    return pos;
-  }, [count, radius]);
-
-  // 2) Create a sharper glow texture: bright core, smooth halo
-  const starTexture = useMemo(() => {
-    const size = 64;
-    const canvas = document.createElement('canvas');
-    canvas.width = size;
-    canvas.height = size;
-    const ctx = canvas.getContext('2d');
-
-    ctx.clearRect(0, 0, size, size);
-    // Create radial gradient: very bright small core, fading to transparent
-    const gradient = ctx.createRadialGradient(
-      size / 2,
-      size / 2,
-      0,
-      size / 2,
-      size / 2,
-      size / 2
-    );
-    gradient.addColorStop(0, 'rgba(255, 255, 255, 1)'); // bright core
-    gradient.addColorStop(0.05, 'rgba(255, 255, 255, 1)');
-    gradient.addColorStop(0.2, 'rgba(255, 255, 255, 0.2)');
-    gradient.addColorStop(0.5, 'rgba(255, 255, 255, 0.1)');
-    gradient.addColorStop(1, 'rgba(255, 255, 255, 0)'); // fade to transparent
-
-    ctx.fillStyle = gradient;
-    ctx.beginPath();
-    ctx.arc(size / 2, size / 2, size / 2, 0, Math.PI * 2);
-    ctx.fill();
-
-    const texture = new THREE.CanvasTexture(canvas);
-    texture.needsUpdate = true;
-    texture.magFilter = THREE.LinearFilter;
-    texture.minFilter = THREE.LinearMipMapLinearFilter;
-    texture.anisotropy = gl.capabilities.getMaxAnisotropy();
-    return texture;
-  }, [gl.capabilities]);
-
-  // 3) Slowly rotate the entire starfield for subtle motion
-  useFrame(() => {
-    if (pointsRef.current) {
-      pointsRef.current.rotation.y += 0.0005;
-    }
-  });
-
-  return (
-    <points ref={pointsRef}>
-      <bufferGeometry>
-        <bufferAttribute
-          attach='attributes-position'
-          count={count}
-          array={positions}
-          itemSize={3}
-        />
-      </bufferGeometry>
-      <pointsMaterial
-        map={starTexture}
-        size={3}
-        sizeAttenuation
-        transparent
-        blending={THREE.AdditiveBlending}
-        depthWrite={false}
-      />
-    </points>
-  );
-}
-
-// ─── FloatingImage (suspense‐aware) ──────────────────────────────────────────
+// Enhanced Image component to maintain aspect ratio
 function FloatingImage({
   url,
   position,
@@ -116,23 +26,22 @@ function FloatingImage({
 }) {
   const ref = useRef();
   const router = useRouter();
+  const [aspectRatio, setAspectRatio] = useState(1);
   const { gl } = useThree();
 
-  // Load texture with useTexture, which suspends until loaded
   const texture = useTexture(url);
 
-  // Compute aspect ratio and set anisotropy once the texture is ready
-  const [aspectRatio, setAspectRatio] = useState(1);
   useEffect(() => {
-    if (texture && texture.image) {
+    if (texture) {
       texture.anisotropy = gl.capabilities.getMaxAnisotropy();
-      setAspectRatio(texture.image.width / texture.image.height);
+      if (texture.image) {
+        const imageAspect = texture.image.width / texture.image.height;
+        setAspectRatio(imageAspect);
+      }
     }
   }, [texture, gl.capabilities]);
 
-  // On click, navigate to product detail or products list
-  const handleClick = (e) => {
-    e.stopPropagation();
+  const handleClick = () => {
     if (productId) {
       router.push(`/productdetails/${productId}`);
     } else {
@@ -142,41 +51,56 @@ function FloatingImage({
 
   return (
     <group ref={ref} position={position} userData={userData}>
-      <mesh onClick={handleClick}>
+      <mesh
+        onClick={(e) => {
+          e.stopPropagation();
+          handleClick();
+        }}
+      >
         <planeGeometry args={[baseScale * aspectRatio, baseScale, 32]} />
-        <meshBasicMaterial map={texture} transparent alphaTest={0.5} />
+        <meshBasicMaterial map={texture} transparent={true} alphaTest={0.5} />
       </mesh>
     </group>
   );
 }
 
-// ─── ControlsManager ────────────────────────────────────────────────────────
+// Custom controls component that manages both orbit controls and auto-rotation
 function ControlsManager({ autoRotateSpeed = 0.5 }) {
   const controlsRef = useRef();
   const [isUserInteracting, setIsUserInteracting] = useState(false);
-  const { camera } = useThree();
+  const { gl, camera } = useThree();
 
   useEffect(() => {
     const controls = controlsRef.current;
-    if (!controls) return;
 
-    const handleStart = () => setIsUserInteracting(true);
+    // Handle start of user interaction
+    const handleStart = () => {
+      setIsUserInteracting(true);
+    };
+
+    // Handle end of user interaction, resume auto-rotation after a delay
     const handleEnd = () => {
       setTimeout(() => {
         setIsUserInteracting(false);
-      }, 2000);
+      }, 2000); // Resume auto-rotation after 2 seconds of inactivity
     };
 
-    controls.addEventListener('start', handleStart);
-    controls.addEventListener('end', handleEnd);
+    if (controls) {
+      controls.addEventListener('start', handleStart);
+      controls.addEventListener('end', handleEnd);
+    }
+
     return () => {
-      controls.removeEventListener('start', handleStart);
-      controls.removeEventListener('end', handleEnd);
+      if (controls) {
+        controls.removeEventListener('start', handleStart);
+        controls.removeEventListener('end', handleEnd);
+      }
     };
   }, []);
 
   useFrame(() => {
     if (controlsRef.current) {
+      // Only auto-rotate when user is not interacting
       controlsRef.current.autoRotate = !isUserInteracting;
     }
   });
@@ -195,7 +119,6 @@ function ControlsManager({ autoRotateSpeed = 0.5 }) {
   );
 }
 
-// ─── SphericalGallery ────────────────────────────────────────────────────────
 function SphericalGallery({
   imagePaths,
   radius = 20,
@@ -204,39 +127,50 @@ function SphericalGallery({
 }) {
   const groupRef = useRef();
   const scroll = useScroll();
-  const { camera, mouse } = useThree();
-  const raycaster = new THREE.Raycaster();
+  const [hoveredImage, setHoveredImage] = useState(null);
   const hoveredImageRef = useRef(null);
+  const { camera, scene, mouse } = useThree();
+  const raycaster = new THREE.Raycaster();
 
   useFrame(() => {
-    if (!groupRef.current) return;
-
+    // Update the raycaster with the current mouse position and camera
     raycaster.setFromCamera(mouse, camera);
+
+    // Find all intersected objects
     const intersects = raycaster.intersectObjects(
       groupRef.current.children,
       true
     );
 
+    // If there's an intersection, get the closest object
     if (intersects.length > 0) {
-      const closest = intersects[0].object;
-      if (closest !== hoveredImageRef.current) {
+      const closestObject = intersects[0].object;
+
+      // Trigger hover for the closest object
+      if (closestObject !== hoveredImageRef.current) {
+        // Reset the previously hovered image
         if (hoveredImageRef.current) {
           const originalScale =
             hoveredImageRef.current.userData.originalScale ||
             new THREE.Vector3(1, 1, 1);
           hoveredImageRef.current.scale.lerp(originalScale, 0.1);
         }
-        hoveredImageRef.current = closest;
-        const { name, group } = closest.parent.userData;
+
+        // Set the new hovered image
+        hoveredImageRef.current = closestObject;
+        const { name, group } = closestObject.parent.userData; // Assuming userData is set on the parent group
+        setHoveredImage({ name, group });
+
+        // Trigger the onHover callback
         if (onImageHover) {
-          onImageHover({
-            name,
-            group,
-            event: { clientX: mouse.x, clientY: mouse.y },
-          });
+          onImageHover({ name, group, ref: { current: closestObject } });
         }
+
+        // Change cursor to pointer
         document.body.style.cursor = 'pointer';
       }
+
+      // Scale up the hovered image
       const currentScale = hoveredImageRef.current.scale.clone();
       const targetScale = currentScale.clone().normalize().multiplyScalar(2.5);
       hoveredImageRef.current.scale.lerp(
@@ -244,26 +178,37 @@ function SphericalGallery({
         0.1
       );
     } else {
+      // No intersection, reset the hovered image
       if (hoveredImageRef.current) {
         const originalScale =
           hoveredImageRef.current.userData.originalScale ||
           new THREE.Vector3(1, 1, 1);
         hoveredImageRef.current.scale.lerp(originalScale, 0.1);
         hoveredImageRef.current = null;
-        if (onImageOut) onImageOut();
+        setHoveredImage(null);
+
+        // Trigger the onOut callback
+        if (onImageOut) {
+          onImageOut();
+        }
+
+        // Reset cursor to default
         document.body.style.cursor = 'auto';
       }
     }
 
+    // Make images face the camera (billboarding)
     groupRef.current.children.forEach((child) => {
       child.lookAt(camera.position);
     });
 
+    // Adjust camera position based on scroll offset
     const offset = scroll.offset;
-    const camDist = THREE.MathUtils.lerp(50, 10, offset);
-    camera.position.setLength(camDist);
+    const cameraDistance = THREE.MathUtils.lerp(50, 10, offset);
+    camera.position.setLength(cameraDistance);
   });
 
+  // Store original scale on mount
   useEffect(() => {
     if (groupRef.current) {
       groupRef.current.children.forEach((child) => {
@@ -274,23 +219,24 @@ function SphericalGallery({
 
   return (
     <group ref={groupRef}>
-      {imagePaths.map((item, idx) => {
-        const phi = Math.acos(-1 + (2 * idx) / imagePaths.length);
+      {imagePaths.map((item, index) => {
+        const phi = Math.acos(-1 + (2 * index) / imagePaths.length);
         const theta = Math.sqrt(imagePaths.length * Math.PI) * phi;
+
         const x = radius * Math.cos(theta) * Math.sin(phi);
         const y = radius * Math.sin(theta) * Math.sin(phi);
         const z = radius * Math.cos(phi);
 
         return (
           <FloatingImage
-            key={idx}
+            key={index}
             url={item.path}
             position={[x, y, z]}
             baseScale={2.8}
             productId={item.productId}
             name={item.name}
             group={item.group}
-            userData={{ name: item.name, group: item.group }}
+            userData={{ name: item.name, group: item.group }} // Store metadata for hover
           />
         );
       })}
@@ -298,7 +244,6 @@ function SphericalGallery({
   );
 }
 
-// ─── ScrollHandler ───────────────────────────────────────────────────────────
 function ScrollHandler({ onScrollIntoSphere, onScrollOutOfSphere }) {
   const scroll = useScroll();
 
@@ -312,26 +257,27 @@ function ScrollHandler({ onScrollIntoSphere, onScrollOutOfSphere }) {
         scroll.scroll.current = 0;
       }
     };
-    handleResize();
+
+    handleResize(); // Initial check
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, [scroll]);
+  }, []);
 
+  // Expose scroll functions to the parent component
   useEffect(() => {
     onScrollIntoSphere.current = () => {
-      scroll.scroll.current = 1;
+      scroll.scroll.current = 1; // Scroll to the end (into the sphere)
     };
     onScrollOutOfSphere.current = () => {
-      scroll.scroll.current = 0;
+      scroll.scroll.current = 0; // Scroll to the start (out of the sphere)
     };
   }, [scroll, onScrollIntoSphere, onScrollOutOfSphere]);
 
   return null;
 }
 
-// ─── Main FloatingImagesScene ─────────────────────────────────────────────────
 export default function FloatingImagesScene() {
   const [hasMouseMoved, setHasMouseMoved] = useState(false);
   const [tooltip, setTooltip] = useState({
@@ -341,15 +287,20 @@ export default function FloatingImagesScene() {
     x: 0,
     y: 0,
   });
+
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  // Refs to store scroll functions
   const scrollIntoSphereRef = useRef(() => {});
   const scrollOutOfSphereRef = useRef(() => {});
 
+  // Track mouse position for tooltip
   useEffect(() => {
     const handleMouseMove = (e) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
-      setHasMouseMoved(true);
+      setHasMouseMoved(true); // Add this line
     };
+
     window.addEventListener('mousemove', handleMouseMove);
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
@@ -362,20 +313,23 @@ export default function FloatingImagesScene() {
       visible: true,
       name,
       group,
-      x: event.clientX || mousePosition.x,
-      y: event.clientY || mousePosition.y,
+      x: event?.clientX || mousePosition.x,
+      y: event?.clientY || mousePosition.y,
     });
   };
 
   const hideTooltip = () => {
     setTimeout(() => {
       setTooltip((prev) => ({ ...prev, visible: false }));
-    }, 100);
+    }, 100); // Delay hiding the tooltip
   };
 
+  // Scroll into the sphere
   const scrollIntoSphere = () => {
     scrollIntoSphereRef.current();
   };
+
+  // Scroll out of the sphere
   const scrollOutOfSphere = () => {
     scrollOutOfSphereRef.current();
   };
@@ -383,22 +337,21 @@ export default function FloatingImagesScene() {
   return (
     <>
       <Canvas
-        camera={{ position: [0, 0, 50], fov: 65, near: 0.1, far: 2000 }}
+        camera={{
+          position: [0, 0, 50],
+          fov: 65,
+          near: 0.1,
+          far: 2000,
+        }}
         style={{
           position: 'absolute',
           top: 0,
           left: 0,
           width: '100%',
           height: '100%',
-          background: '#000511',
         }}
       >
         <ambientLight intensity={1} />
-
-        {/* Render stars immediately (no suspense) */}
-        <Starfield count={280} radius={25} />
-
-        {/* Wrap only the gallery in Suspense so loader appears while images load */}
         <Suspense fallback={<CustomLoader />}>
           <ScrollControls pages={2} damping={0.1}>
             <ScrollHandler
@@ -412,26 +365,25 @@ export default function FloatingImagesScene() {
             />
           </ScrollControls>
         </Suspense>
-
         <ControlsManager autoRotateSpeed={0.5} />
       </Canvas>
 
       {/* Tooltip */}
       <div
-        className={`tooltip bg-black bg-opacity-80 p-4 text-white rounded-2xl ${
-          tooltip.visible && hasMouseMoved ? 'visible' : ''
+        className={`tooltip bg-black bg-opacity-80 p-10 text-white rounded-2xl ${
+          tooltip.visible && hasMouseMoved ? 'visible' : '' // Modify this line
         } hidden md:block`}
         style={{
           top: tooltip.y + 15,
           left: tooltip.x + 15,
         }}
       >
-        <div className='tooltip-name text-base font-bold'>{tooltip.name}</div>
-        <div className='tooltip-divider my-1 h-px bg-white bg-opacity-50' />
-        <div className='tooltip-group text-sm'>{tooltip.group}</div>
+        <div className='tooltip-name'>{tooltip.name}</div>
+        <div className='tooltip-divider' />
+        <div className='tooltip-group'>{tooltip.group}</div>
       </div>
 
-      {/* Mobile navigation buttons */}
+      {/* Navigation Buttons */}
       <div className='navigation-buttons flex justify-center w-full md:hidden whitespace-nowrap'>
         <button onClick={scrollOutOfSphere}>
           <Minus size={30} />
@@ -441,9 +393,15 @@ export default function FloatingImagesScene() {
         </button>
       </div>
 
+      {/* Instructions */}
+      {/* <div className='instructions whitespace-nowrap hidden md:flex'>
+        Scroll into Karan Desai Home
+      </div> */}
+
       <style jsx>{`
         .tooltip {
           position: fixed;
+          padding: 12px 16px;
           pointer-events: none;
           font-family: sans-serif;
           z-index: 1000;
@@ -454,6 +412,34 @@ export default function FloatingImagesScene() {
         .tooltip.visible {
           opacity: 1;
           transform: scale(1);
+        }
+        .tooltip-name {
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 4px;
+        }
+        .tooltip-divider {
+          height: 1px;
+          background: rgba(255, 255, 255, 0.5);
+          margin: 4px 0;
+        }
+        .tooltip-group {
+          font-size: 14px;
+        }
+        .instructions {
+          position: fixed;
+          bottom: 20px;
+          left: 50%;
+          transform: translateX(-50%);
+          background: rgba(0, 0, 0, 0.5);
+          color: white;
+          padding: 8px 16px;
+          border-radius: 20px;
+          font-family: sans-serif;
+          font-size: 14px;
+          opacity: 0.8;
+          pointer-events: none;
+          z-index: 1000;
         }
         .navigation-buttons {
           position: fixed;
