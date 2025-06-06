@@ -150,7 +150,9 @@ const ProductDetailsPage = () => {
 
   if (!product)
     return (
-      <div className='text-center bg-black text-white py-20'>Loading...</div>
+      <div className='text-center bg-black text-white py-20 w-full h-screen flex justify-center items-center'>
+        Loading...
+      </div>
     );
 
   return (
