@@ -136,6 +136,20 @@ const ProductDetailsPage = () => {
     fetchData();
   }, [params]);
 
+  // Escape key listener
+  useEffect(() => {
+    const handleEsc = (e) => {
+      if (e.key === 'Escape') {
+        router.back();
+      }
+    };
+
+    window.addEventListener('keydown', handleEsc);
+    return () => {
+      window.removeEventListener('keydown', handleEsc);
+    };
+  }, []);
+
   const nextImage = () => {
     if (!product?.images?.length) return;
     setCurrentIndex((prev) => (prev + 1) % product.images.length);
