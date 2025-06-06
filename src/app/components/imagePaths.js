@@ -116,7 +116,7 @@ export const newImagePaths = [
   {
     name: 'Monster Binty',
     path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8C1mTl64oKUn37W6wsTlRmDBFhGrviIjcMxV',
-    group: 'Monster Collection',
+    group: 'Monster Collectibles',
     productId: '67a5efc74da9b29cd0f10c11',
   },
   {
@@ -128,7 +128,7 @@ export const newImagePaths = [
   {
     name: 'Monster Squinty',
     path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUr9wURxNnDI67jcCaomXhZLsJd91f4YGitMHP',
-    group: 'Monster Collection',
+    group: 'Monster Collectibles',
     productId: '67a5f8544da9b29cd0f10c31',
   },
   {
@@ -176,13 +176,13 @@ export const newImagePaths = [
   {
     name: 'Monster Brainy',
     path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUUvWcAzyBY1Vx48e2bhPHIZJqsnBOSArl5D3M',
-    group: 'Monster Collection',
+    group: 'Monster Collectibles',
     productId: '67a5f5c14da9b29cd0f10c17',
   },
   {
     name: 'Monster Gattoofer',
     path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUgWssIUlLdSN8CY5rJGOAxcqQpM9fjoh4etX6',
-    group: 'Monster Colection',
+    group: 'Monster Collectibles',
     productId: '67a5f5ea4da9b29cd0f10c1c',
   },
   // {
@@ -194,7 +194,7 @@ export const newImagePaths = [
   {
     name: 'Monster Grumpy',
     path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDrE3aJ8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
-    group: 'Monster Collection',
+    group: 'Monster Collectibles',
     productId: '67a5f8394da9b29cd0f10c2c',
   },
   {
@@ -212,13 +212,13 @@ export const newImagePaths = [
   {
     name: 'Monster Gum',
     path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDREE0DA8FYI8sxbtc2ngQN4ZeSPwOKkv5yAj',
-    group: 'Monster Collection',
+    group: 'Monster Collectibles',
     productId: '67a5f6834da9b29cd0f10c27',
   },
   {
     name: 'Monster Guard',
     path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnng337bYcoeRKumWaHxyTj5q3bfMXB6INAUz',
-    group: 'Monster Collection',
+    group: 'Monster Collectibles',
     productId: '67a5f6534da9b29cd0f10c22',
   },
   {
@@ -274,6 +274,18 @@ export const newImagePaths = [
     path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHckn01SaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
     group: 'Matilda',
     productId: '67ef850f629882967f3fbb3d',
+  },
+  {
+    name: 'Monster Buddha',
+    path: '/assets/buddha.png',
+    group: 'Monster Collectibles',
+    productId: '67f4da6bd5986748ae8f34fe',
+  },
+  {
+    name: 'Monster Humpty',
+    path: '/assets/humpty.png',
+    group: 'Monster Collectibles',
+    productId: '67efa13d38f60435b89ba291',
   },
 
   ...Array(6)
@@ -395,7 +407,7 @@ export const newImagePaths = [
       {
         name: 'Monster Binty',
         path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8C1mTl64oKUn37W6wsTlRmDBFhGrviIjcMxV',
-        group: 'Monster Collection',
+        group: 'Monster Collectibles',
         productId: '67a5efc74da9b29cd0f10c11',
       },
       {
@@ -407,7 +419,7 @@ export const newImagePaths = [
       {
         name: 'Monster Squinty',
         path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUr9wURxNnDI67jcCaomXhZLsJd91f4YGitMHP',
-        group: 'Monster Collection',
+        group: 'Monster Collectibles',
         productId: '67a5f8544da9b29cd0f10c31',
       },
       {
@@ -455,7 +467,7 @@ export const newImagePaths = [
       {
         name: 'Monster Brainy',
         path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUUvWcAzyBY1Vx48e2bhPHIZJqsnBOSArl5D3M',
-        group: 'Monster Collection',
+        group: 'Monster Collectibles',
         productId: '67a5f5c14da9b29cd0f10c17',
       },
       {
@@ -473,7 +485,7 @@ export const newImagePaths = [
       {
         name: 'Monster Grumpy',
         path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDrE3aJ8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
-        group: 'Monster Collection',
+        group: 'Monster Collectibles',
         productId: '67a5f8394da9b29cd0f10c2c',
       },
       {
@@ -491,13 +503,13 @@ export const newImagePaths = [
       {
         name: 'Monster Gum',
         path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDREE0DA8FYI8sxbtc2ngQN4ZeSPwOKkv5yAj',
-        group: 'Monster Collection',
+        group: 'Monster Collectibles',
         productId: '67a5f6834da9b29cd0f10c27',
       },
       {
         name: 'Monster Guard',
         path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnng337bYcoeRKumWaHxyTj5q3bfMXB6INAUz',
-        group: 'Monster Collection',
+        group: 'Monster Collectibles',
         productId: '67a5f6534da9b29cd0f10c22',
       },
       {
@@ -553,6 +565,18 @@ export const newImagePaths = [
         path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHckn01SaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
         group: 'Matilda',
         productId: '67ef850f629882967f3fbb3d',
+      },
+      {
+        name: 'Monster Buddha',
+        path: '/assets/buddha.png',
+        group: 'Monster Collectibles',
+        productId: '67f4da6bd5986748ae8f34fe',
+      },
+      {
+        name: 'Monster Humpty',
+        path: '/assets/humpty.png',
+        group: 'Monster Collectibles',
+        productId: '67efa13d38f60435b89ba291',
       },
     ])
     .flat(),
