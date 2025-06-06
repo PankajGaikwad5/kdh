@@ -11,6 +11,7 @@ import {
 } from '@react-three/drei';
 import * as THREE from 'three';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { newImagePaths } from './imagePaths';
 import CustomLoader from './CustomLoader';
 import { Plus, Minus } from 'lucide-react';
@@ -113,9 +114,9 @@ function FloatingImage({
   name,
   group,
   userData,
+  onImageClick,
 }) {
   const ref = useRef();
-  const router = useRouter();
   const { gl } = useThree();
 
   // Load texture with useTexture, which suspends until loaded
@@ -130,14 +131,10 @@ function FloatingImage({
     }
   }, [texture, gl.capabilities]);
 
-  // On click, navigate to product detail or products list
+  // Optimized click handler that passes data to parent
   const handleClick = (e) => {
     e.stopPropagation();
-    if (productId) {
-      router.push(`/productdetails/${productId}`);
-    } else {
-      router.push('/products');
-    }
+    onImageClick({ productId, name, group });
   };
 
   return (
@@ -201,6 +198,7 @@ function SphericalGallery({
   radius = 20,
   onImageHover,
   onImageOut,
+  onImageClick,
 }) {
   const groupRef = useRef();
   const scroll = useScroll();
@@ -290,6 +288,7 @@ function SphericalGallery({
             name={item.name}
             group={item.group}
             userData={{ name: item.name, group: item.group }}
+            onImageClick={onImageClick}
           />
         );
       })}
@@ -332,6 +331,7 @@ function ScrollHandler({ onScrollIntoSphere, onScrollOutOfSphere }) {
 
 // ─── Main FloatingImagesScene ─────────────────────────────────────────────────
 export default function FloatingImagesScene() {
+  const router = useRouter();
   const [hasMouseMoved, setHasMouseMoved] = useState(false);
   const [tooltip, setTooltip] = useState({
     visible: false,
@@ -366,6 +366,29 @@ export default function FloatingImagesScene() {
       cancelAnimationFrame(animationFrame);
     };
   }, []);
+
+  // Optimized navigation handler using router.push with prefetching
+  const handleImageClick = ({ productId, name, group }) => {
+    if (productId) {
+      // Use router.push for immediate navigation
+      router.push(`/productdetails/${productId}`);
+    } else {
+      router.push('/products');
+    }
+  };
+
+  // Prefetch important routes on component mount for faster navigation
+  useEffect(() => {
+    // Prefetch the products page
+    router.prefetch('/products');
+
+    // Prefetch some product detail pages (you can customize this logic)
+    newImagePaths.forEach((item) => {
+      if (item.productId) {
+        router.prefetch(`/productdetails/${item.productId}`);
+      }
+    });
+  }, [router]);
 
   const showTooltip = ({ name, group }) => {
     if (!hasMouseMoved) return;
@@ -419,6 +442,7 @@ export default function FloatingImagesScene() {
               imagePaths={newImagePaths}
               onImageHover={showTooltip}
               onImageOut={hideTooltip}
+              onImageClick={handleImageClick}
             />
           </ScrollControls>
         </Suspense>
@@ -448,6 +472,21 @@ export default function FloatingImagesScene() {
         <button onClick={scrollIntoSphere}>
           <Plus size={30} />
         </button>
+      </div>
+
+      {/* Hidden Link elements for prefetching (optional additional optimization) */}
+      <div style={{ display: 'none' }}>
+        <Link href='/products'>Products</Link>
+        {newImagePaths.slice(0, 5).map((item) =>
+          item.productId ? (
+            <Link
+              key={item.productId}
+              href={`/productdetails/${item.productId}`}
+            >
+              {item.name}
+            </Link>
+          ) : null
+        )}
       </div>
 
       <style jsx>{`
