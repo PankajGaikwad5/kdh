@@ -1,6 +1,5 @@
 // FloatingImagesScene.jsx
 'use client';
-
 import React, { useRef, useState, useEffect, useMemo, Suspense } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import {
