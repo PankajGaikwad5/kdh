@@ -32,6 +32,10 @@ const productSchema = new mongoose.Schema(
       type: String,
       required: [true, 'Please provide a description for this product'],
     },
+    material: {
+      type: String,
+      default: '',
+    },
     group: {
       type: String,
       default: '',

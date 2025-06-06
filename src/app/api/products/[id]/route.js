@@ -36,6 +36,7 @@ const getProductById = async (id) => {
       dimensions: 1,
       group: 1,
       images: 1,
+      material: 1,
       pdf: 1,
       _id: 1,
     }

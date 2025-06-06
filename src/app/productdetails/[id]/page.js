@@ -1,170 +1,114 @@
 'use client';
-import React, { useState, useEffect, useMemo, Suspense, memo } from 'react';
-import { Link, Element } from 'react-scroll';
-import { Button } from '../../components/ui/button';
-import Footer from '../../components/Footer';
-import Navbar from '@/app/components/Navbar';
-import { useRouter } from 'next/navigation';
+
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import { ArrowDown } from 'lucide-react';
-import Head from 'next/head';
+import { useParams, useRouter } from 'next/navigation';
+import { Button } from '@/app/components/ui/button';
+import { X } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Montserrat } from 'next/font/google';
+import { z } from 'zod';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { useForm } from 'react-hook-form';
+import {
+  Form,
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from '../../components/ui/form';
+import { Input } from '../../components/ui/input';
+import { Textarea } from '../../components/ui/textarea';
 
-// Preload critical components
-import('../../components/CarouselComp');
-import('../../components/DescAccordian');
-
-// Lazy load non-critical components
-const CarouselComp = React.lazy(() => import('../../components/CarouselComp'));
-const DescAccordian = React.lazy(() =>
-  import('../../components/DescAccordian')
-);
-
-// Memoized Facebook Pixel Component
-const FacebookPixel = memo(() => {
-  useEffect(() => {
-    // Use requestIdleCallback for non-critical FB pixel
-    const loadFBPixel = () => {
-      if (window.fbq) return;
-
-      const script = document.createElement('script');
-      script.async = true;
-      script.src = 'https://connect.facebook.net/en_US/fbevents.js';
-      script.onload = () => {
-        window.fbq('init', '1398430317981375');
-        window.fbq('track', 'PageView');
-      };
-
-      // Initialize fbq function
-      window.fbq =
-        window.fbq ||
-        function () {
-          (window.fbq.q = window.fbq.q || []).push(arguments);
-        };
-
-      document.head.appendChild(script);
-    };
-
-    if ('requestIdleCallback' in window) {
-      requestIdleCallback(loadFBPixel);
-    } else {
-      setTimeout(loadFBPixel, 100);
-    }
-  }, []);
-
-  return (
-    <noscript>
-      <img
-        height='1'
-        width='1'
-        style={{ display: 'none' }}
-        src='https://www.facebook.com/tr?id=1398430317981375&ev=PageView&noscript=1'
-        alt='fb-pixel'
-      />
-    </noscript>
-  );
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['300', '400', '600', '700'],
 });
 
-// Optimized Loading Spinner
-const LoadingSpinner = memo(() => (
-  <div className='flex h-screen w-full items-center justify-center bg-black'>
-    <div className='h-16 w-16 animate-spin rounded-full border-t-4 border-white'></div>
-  </div>
-));
-
-// Optimized Image Placeholder
-const ImagePlaceholder = memo(() => (
-  <div className='bg-gray-800 w-full h-full flex items-center justify-center'>
-    <div className='w-8 h-8 border-2 border-gray-600 border-t-white rounded-full animate-spin'></div>
-  </div>
-));
-
-// Highly optimized Product Image Component
-const ProductImage = memo(({ src, alt, priority = false, className = '' }) => {
-  const [isLoaded, setIsLoaded] = useState(false);
-  const [hasError, setHasError] = useState(false);
-
-  if (!src || hasError) return <ImagePlaceholder />;
-
-  return (
-    <div className={`relative w-full h-full ${className}`}>
-      {!isLoaded && <ImagePlaceholder />}
-      <Image
-        src={src}
-        alt={alt || 'Product image'}
-        className={`object-cover transition-opacity duration-200 ${
-          isLoaded ? 'opacity-100' : 'opacity-0'
-        }`}
-        fill
-        priority={priority}
-        quality={priority ? 85 : 75}
-        loading={priority ? 'eager' : 'lazy'}
-        onLoad={() => setIsLoaded(true)}
-        onError={() => setHasError(true)}
-        sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-        placeholder='blur'
-        blurDataURL='data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGxEiMxUf/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=='
-      />
-    </div>
-  );
+const formSchema = z.object({
+  name: z
+    .string()
+    .min(2, 'name must be at least 2 characters')
+    .max(50, 'name must be at most 50 characters'),
+  email: z.string().email('Invalid email address').min(2).max(50),
+  message: z.string(),
+  subject: z.string(),
+  product: z.string(),
 });
 
-// Main Product Detail Page with extensive optimizations
-const ProductDetailPage = ({ params }) => {
-  const [product, setProduct] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null);
+const ProductDetailsPage = () => {
+  const params = useParams();
   const router = useRouter();
-
-  // Optimized scroll state with reduced re-renders
-  const [scrollState, setScrollState] = useState({
-    position: 0,
-    isScrolled: false,
+  const [product, setProduct] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [showModal, setShowModal] = useState(false);
+  const form = useForm({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: '',
+      email: '',
+      message: '',
+      subject: 'Product Enquiry',
+      product: '',
+    },
   });
 
-  // Throttled scroll handler
-  const handleScroll = useMemo(() => {
-    let ticking = false;
-    return () => {
-      if (!ticking) {
-        requestAnimationFrame(() => {
-          const scrollY = window.scrollY;
-          setScrollState((prev) => {
-            const isScrolled = scrollY > 10;
-            if (
-              prev.isScrolled !== isScrolled ||
-              Math.abs(prev.position - scrollY) > 10
-            ) {
-              return { position: scrollY, isScrolled };
-            }
-            return prev;
-          });
-          ticking = false;
-        });
-        ticking = true;
+  async function onSubmit(values) {
+    // Do something with the form values.
+    // console.log(values);
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          values,
+        }),
+      });
+
+      if (response.ok) {
+        alert('Message sent successfully!');
+        // Refresh the page
+        window.location.reload();
+      } else {
+        alert('Failed to send the message. Please try again.');
       }
-    };
-  }, []);
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [handleScroll]);
+  const handleDownload = async (event) => {
+    event.preventDefault();
+    const fileUrl = pdf;
 
-  // Optimized data fetching with better error handling and caching
+    try {
+      const response = await fetch(fileUrl);
+      const blob = await response.blob();
+      const blobUrl = window.URL.createObjectURL(blob);
+
+      const link = document.createElement('a');
+      link.href = blobUrl;
+      link.setAttribute('download', 'file.pdf');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      // Clean up blob URL
+      window.URL.revokeObjectURL(blobUrl);
+    } catch (error) {
+      console.error('Download failed:', error);
+    }
+  };
+
   useEffect(() => {
     const controller = new AbortController();
-
     const fetchData = async () => {
       try {
-        setIsLoading(true);
-        setError(null);
-        setProduct(null); // Reset product state
-
-        // Add cache busting only if needed
-        const cacheParam =
-          process.env.NODE_ENV === 'development' ? `?t=${Date.now()}` : '';
-
-        const res = await fetch(`/api/products/${params.id}${cacheParam}`, {
+        const res = await fetch(`/api/products/${params.id}`, {
           signal: controller.signal,
           headers: {
             Accept: 'application/json',
@@ -172,185 +116,290 @@ const ProductDetailPage = ({ params }) => {
           },
         });
 
-        if (!res.ok) {
-          if (res.status === 404) {
-            setError('Product not found');
-          } else {
-            setError(`HTTP ${res.status}: ${res.statusText}`);
-          }
-          setIsLoading(false);
-          return;
-        }
+        if (!res.ok) return console.error('Failed to fetch product');
 
         const data = await res.json();
-
-        if (!data?.products) {
-          setError('Product not found');
-          setIsLoading(false);
-          return;
-        }
+        if (!data?.products) return;
 
         setProduct(data.products);
-        setIsLoading(false);
       } catch (error) {
         if (error.name !== 'AbortError') {
           console.error('Error fetching product:', error);
-          setError(error.message);
         }
-        setIsLoading(false);
       }
     };
 
     fetchData();
-    return () => controller.abort();
-  }, [params.id]);
+  }, [params]);
 
-  const handleGoBack = useMemo(
-    () => (e) => {
-      e.preventDefault();
-      if (window.history.length > 1) {
-        router.back();
-      } else {
-        router.push(`/products/${product?.group || ''}`);
-      }
-    },
-    [router, product?.group]
-  );
+  const nextImage = () => {
+    if (!product?.images?.length) return;
+    setCurrentIndex((prev) => (prev + 1) % product.images.length);
+  };
 
-  // Memoized hero image data
-  const heroImage = useMemo(() => {
-    return product?.images?.[1]?.filePath || null;
-  }, [product?.images]);
-
-  // Early returns for loading and error states
-  if (isLoading) {
-    return <LoadingSpinner />;
-  }
-
-  if (error || !product) {
-    return (
-      <div className='flex flex-col h-screen w-full items-center justify-center bg-black text-white'>
-        <h1 className='text-xl mb-4'>{error || 'Product not found'}</h1>
-        <Button onClick={handleGoBack}>Go Back</Button>
-      </div>
+  const prevImage = () => {
+    if (!product?.images?.length) return;
+    setCurrentIndex((prev) =>
+      prev === 0 ? product.images.length - 1 : prev - 1
     );
-  }
+  };
+
+  const handleInputChange = (e) => {
+    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+    // Here you can call your API or send email
+    setShowModal(false);
+    setFormData({ name: '', email: '', message: '' });
+  };
+  console.log(product);
+
+  if (!product) return <div className='text-center py-20'>Loading...</div>;
 
   return (
-    <>
-      <Head>
-        <title>{`${product.title} | Karan Desai Home`}</title>
-        <meta
-          name='description'
-          content={`Discover ${product.title} from the ${product.group} collection at Karan Desai Home.`}
+    <main
+      className={`min-h-screen bg-black text-white font-sans relative ${montserrat.className}`}
+    >
+      <header className='fixed top-0  left-0 w-full flex justify-between items-center p-4 z-50 bg-black/80 backdrop-blur'>
+        <Image
+          src='/assets/kdhlogo3.png'
+          alt='Logo'
+          width={150}
+          height={40}
+          className='object-contain'
         />
-        <meta
-          name='keywords'
-          content={`Karan Desai Home, ${product.title}, ${product.group}, luxury furniture, designer decor`}
-        />
-        <meta
-          property='og:title'
-          content={`${product.title} | Karan Desai Home`}
-        />
-        <meta
-          property='og:description'
-          content={`Explore the ${product.group} collection and more at Karan Desai Home.`}
-        />
-        {heroImage && <link rel='preload' as='image' href={heroImage} />}
-      </Head>
+        <button
+          onClick={() => router.back()}
+          className='text-white hover:text-gray-300 transition'
+        >
+          <X size={28} />
+        </button>
+      </header>
 
-      <FacebookPixel />
-
-      <div className='bg-black min-h-screen'>
-        <div className='flex flex-col relative select-none'>
-          <Navbar arrow={true} escape={true} />
-
-          {/* Logo - consider making this a CSS background for better performance */}
-          <div className='fixed top-6 left-[45%] 2xl:left-[47%] z-50'>
-            <Image
-              src='/assets/kdhlogo3.png'
-              alt='Karan Desai Home Logo'
-              width={150}
-              height={150}
-              priority
-              quality={90}
-            />
-          </div>
-
-          {/* Scroll arrow - only render when needed */}
-          {!scrollState.isScrolled && (
-            <div className='absolute top-[55%] right-0 transform -translate-x-1/2 z-50 transition-opacity duration-300'>
-              <Link
-                to='description'
-                smooth={true}
-                duration={600}
-                className='flex flex-col items-center cursor-pointer'
-              >
-                <ArrowDown size={28} className='animate-pulse text-white' />
-              </Link>
-            </div>
-          )}
-
-          {/* Hero Section */}
-          <div className='w-full h-screen p-0 m-0 relative'>
-            {/* Background Image */}
-            <div className='absolute w-full h-screen top-0 left-0 z-0'>
-              {heroImage && (
-                <ProductImage
-                  src={heroImage}
+      <div className='grid md:grid-cols-2 pt-20'>
+        <section className='relative p-4 flex items-center justify-center bg-black'>
+          {product.images?.length > 0 && (
+            <div className='relative w-full h-[80vh] overflow-hidden rounded-lg'>
+              <AnimatePresence mode='wait'>
+                <motion.img
+                  key={currentIndex}
+                  src={product.images[currentIndex].filePath}
                   alt={product.title}
-                  priority={true}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.5 }}
+                  className='w-full h-full object-contain'
                 />
+              </AnimatePresence>
+
+              {product.images.length > 1 && (
+                <>
+                  <button
+                    onClick={prevImage}
+                    className='absolute left-4 top-1/2 -translate-y-1/2 text-white bg-black/60 rounded-full p-2 hover:bg-white hover:text-black'
+                  >
+                    ‹
+                  </button>
+                  <button
+                    onClick={nextImage}
+                    className='absolute right-4 top-1/2 -translate-y-1/2 text-white bg-black/60 rounded-full p-2 hover:bg-white hover:text-black'
+                  >
+                    ›
+                  </button>
+                </>
               )}
             </div>
-
-            {/* Overlay */}
-            <div className='absolute w-full h-screen top-0 left-0 z-10 bg-black/50 backdrop-blur-sm'></div>
-
-            {/* Carousel */}
-            <Element name='' className='relative z-20'>
-              <Suspense
-                fallback={
-                  <div className='w-full h-64 bg-gray-800 animate-pulse'></div>
-                }
-              >
-                <CarouselComp imgArray={product.images || []} />
-              </Suspense>
-            </Element>
-          </div>
-
-          {/* Section Divider */}
-          <Element name='newSection' className='w-full m-0 p-0 hidden md:block'>
-            <div className='w-full h-[2px] bg-zinc-200/50 border-b border-zinc-700'></div>
-          </Element>
-
-          {/* Description Section */}
-          <Element name='description' className='border-b-2 border-zinc-400'>
-            <Suspense
-              fallback={
-                <div className='w-full h-64 bg-gray-800 animate-pulse p-4'>
-                  Loading description...
+          )}
+        </section>
+        <motion.section
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className='p-10 flex flex-col justify-between bg-black z-10'
+        >
+          <div>
+            <h1 className='text-4xl md:text-4xl mb-6 capitalize font-light tracking-tight'>
+              {product.title}
+            </h1>
+            <div className='flex flex-col gap-4 text-sm'>
+              <div className='grid grid-cols-3 '>
+                <div>
+                  <h4 className='font-semibold  text-gray-400 text-xs mb-1'>
+                    Dimension
+                  </h4>
+                  <p className='text-white'>
+                    {product.dimensions?.includes('http') ? (
+                      <a
+                        href={product.dimensions}
+                        target='_blank'
+                        className='underline text-blue-400 hover:text-blue-200'
+                      >
+                        View Dimensions
+                      </a>
+                    ) : (
+                      product.dimensions
+                    )}
+                  </p>
                 </div>
-              }
-            >
-              <DescAccordian
-                scrollPosition={scrollState.position}
-                desc={product.description}
-                dimensions={product.dimensions}
-                title={product.title}
-                pdf={product.pdf}
-              />
-            </Suspense>
-          </Element>
+                <div>
+                  <h4 className='font-semibold  text-gray-400 text-xs mb-1'>
+                    Lead Time
+                  </h4>
+                  <p className='text-white'>30 Days</p>
+                </div>
+                <div>
+                  <h4 className='font-semibold  text-gray-400 text-xs mb-1'>
+                    Material
+                  </h4>
+                  <p className='text-white'>{product.material}</p>
+                </div>
+              </div>
 
-          {/* Footer */}
-          <Element name='footer'>
-            <Footer />
-          </Element>
-        </div>
+              <div className='mt-6 border-t border-gray-700 pt-4 text-sm text-white font-light whitespace-pre-line leading-relaxed'>
+                {product.description}
+              </div>
+
+              <div className='mt-10 flex gap-4'>
+                <a href={product.pdf} target='_blank' rel='noopener noreferrer'>
+                  <Button
+                    variant='outline'
+                    className='px-6 py-2 border border-white text-black rounded-none hover:bg-white/80'
+                  >
+                    Download Spec Sheet
+                  </Button>
+                </a>
+                <Button
+                  className='px-6 py-2 border border-white bg-transparent text-white rounded-none hover:bg-white hover:text-black'
+                  onClick={() => setShowModal(true)}
+                >
+                  Enquire
+                </Button>
+              </div>
+            </div>
+          </div>
+        </motion.section>
       </div>
-    </>
+
+      {/* Enquiry Modal */}
+      <AnimatePresence>
+        {showModal && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className='fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur'
+          >
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className='bg-black/70 p-8 rounded-md w-full max-w-md relative'
+            >
+              <button
+                onClick={() => setShowModal(false)}
+                className='absolute top-3 right-3 text-gray-600 hover:text-black'
+              >
+                <X size={20} />
+              </button>
+              <h2 className='text-xl font-semibold mb-4'>Enquire</h2>
+              <Form {...form}>
+                <form
+                  // action='https://getform.io/f/bjjjprgb'
+                  // method='POST'
+                  className={`space-y-4 px-4 `}
+                  onSubmit={form.handleSubmit(onSubmit)}
+                >
+                  {/* <h1 className='font-semibold uppercase'>
+                    Email us to get the 3d model sent to your email
+                  </h1> */}
+                  <FormField
+                    control={form.control}
+                    name='name'
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Name</FormLabel>
+                        <FormControl>
+                          <Input
+                            className='bg-black text-white placeholder:text-white'
+                            placeholder='Enter your name'
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name='email'
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Email</FormLabel>
+                        <FormControl>
+                          <Input
+                            className='bg-black text-white placeholder:text-white'
+                            placeholder='Enter your email'
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name='product'
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Product Name</FormLabel>
+                        <FormControl>
+                          <Input
+                            className='bg-black text-white placeholder:text-white'
+                            placeholder='Please specify the product name'
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name='message'
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Message</FormLabel>
+                        <FormControl>
+                          <Textarea
+                            placeholder='Enter your message'
+                            className='input textarea bg-black text-white placeholder:text-white'
+                            rows={5}
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <Button
+                    type='submit'
+                    className='bg-white uppercase text-gray-900 hover:bg-black hover:text-gray-300 transition-all duration-500 ease-in-out rounded-full px-5 tracking-normal font-medium'
+                  >
+                    Submit
+                  </Button>
+                </form>
+              </Form>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </main>
   );
 };
 
-export default memo(ProductDetailPage);
+export default ProductDetailsPage;
