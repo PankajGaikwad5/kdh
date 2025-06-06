@@ -13,7 +13,6 @@ import { useForm } from 'react-hook-form';
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -44,6 +43,7 @@ const ProductDetailsPage = () => {
   const [product, setProduct] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showModal, setShowModal] = useState(false);
+
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -55,23 +55,50 @@ const ProductDetailsPage = () => {
     },
   });
 
+  // Inject Facebook Pixel on mount
+  useEffect(() => {
+    if (window.fbq) return;
+
+    !(function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod
+          ? n.callMethod.apply(n, arguments)
+          : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(
+      window,
+      document,
+      'script',
+      'https://connect.facebook.net/en_US/fbevents.js'
+    );
+
+    window.fbq('init', '1398430317981375');
+    window.fbq('track', 'PageView');
+  }, []);
+
   async function onSubmit(values) {
-    // Do something with the form values.
-    // console.log(values);
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-          values,
-        }),
+        body: JSON.stringify({ values }),
       });
 
       if (response.ok) {
         alert('Message sent successfully!');
-        // Refresh the page
         window.location.reload();
       } else {
         alert('Failed to send the message. Please try again.');
@@ -80,29 +107,6 @@ const ProductDetailsPage = () => {
       console.log(error);
     }
   }
-
-  const handleDownload = async (event) => {
-    event.preventDefault();
-    const fileUrl = pdf;
-
-    try {
-      const response = await fetch(fileUrl);
-      const blob = await response.blob();
-      const blobUrl = window.URL.createObjectURL(blob);
-
-      const link = document.createElement('a');
-      link.href = blobUrl;
-      link.setAttribute('download', 'file.pdf');
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-
-      // Clean up blob URL
-      window.URL.revokeObjectURL(blobUrl);
-    } catch (error) {
-      console.error('Download failed:', error);
-    }
-  };
 
   useEffect(() => {
     const controller = new AbortController();
@@ -144,33 +148,25 @@ const ProductDetailsPage = () => {
     );
   };
 
-  const handleInputChange = (e) => {
-    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData);
-    // Here you can call your API or send email
-    setShowModal(false);
-    setFormData({ name: '', email: '', message: '' });
-  };
-  console.log(product);
-
-  if (!product) return <div className='text-center py-20'>Loading...</div>;
+  if (!product)
+    return (
+      <div className='text-center bg-black text-white py-20'>Loading...</div>
+    );
 
   return (
     <main
       className={`min-h-screen bg-black text-white font-sans relative ${montserrat.className}`}
     >
-      <header className='fixed top-0  left-0 w-full flex justify-between items-center p-4 z-50 bg-black/80 backdrop-blur'>
-        <Image
-          src='/assets/kdhlogo3.png'
-          alt='Logo'
-          width={150}
-          height={40}
-          className='object-contain'
-        />
+      <header className='fixed top-0 left-0 w-full flex justify-between items-center p-4 z-50 bg-black/80 backdrop-blur'>
+        <a href='/'>
+          <Image
+            src='/assets/kdhlogo3.png'
+            alt='Logo'
+            width={150}
+            height={40}
+            className='object-contain'
+          />
+        </a>
         <button
           onClick={() => router.back()}
           className='text-white hover:text-gray-300 transition'
@@ -215,6 +211,7 @@ const ProductDetailsPage = () => {
             </div>
           )}
         </section>
+
         <motion.section
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -228,7 +225,7 @@ const ProductDetailsPage = () => {
             <div className='flex flex-col gap-4 text-sm'>
               <div className='grid grid-cols-3 '>
                 <div>
-                  <h4 className='font-semibold  text-gray-400 text-xs mb-1'>
+                  <h4 className='font-semibold text-gray-400 text-xs mb-1'>
                     Dimension
                   </h4>
                   <p className='text-white'>
@@ -246,13 +243,13 @@ const ProductDetailsPage = () => {
                   </p>
                 </div>
                 <div>
-                  <h4 className='font-semibold  text-gray-400 text-xs mb-1'>
+                  <h4 className='font-semibold text-gray-400 text-xs mb-1'>
                     Lead Time
                   </h4>
                   <p className='text-white'>30 Days</p>
                 </div>
                 <div>
-                  <h4 className='font-semibold  text-gray-400 text-xs mb-1'>
+                  <h4 className='font-semibold text-gray-400 text-xs mb-1'>
                     Material
                   </h4>
                   <p className='text-white'>{product.material}</p>
@@ -309,14 +306,9 @@ const ProductDetailsPage = () => {
               <h2 className='text-xl font-semibold mb-4'>Enquire</h2>
               <Form {...form}>
                 <form
-                  // action='https://getform.io/f/bjjjprgb'
-                  // method='POST'
-                  className={`space-y-4 px-4 `}
+                  className={`space-y-4 px-4`}
                   onSubmit={form.handleSubmit(onSubmit)}
                 >
-                  {/* <h1 className='font-semibold uppercase'>
-                    Email us to get the 3d model sent to your email
-                  </h1> */}
                   <FormField
                     control={form.control}
                     name='name'

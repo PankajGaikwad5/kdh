@@ -232,7 +232,6 @@ function SphericalGallery({
           onImageHover({
             name,
             group,
-            event: { clientX: mouse.x, clientY: mouse.y },
           });
         }
         document.body.style.cursor = 'pointer';
@@ -341,30 +340,41 @@ export default function FloatingImagesScene() {
     x: 0,
     y: 0,
   });
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const scrollIntoSphereRef = useRef(() => {});
   const scrollOutOfSphereRef = useRef(() => {});
 
   useEffect(() => {
+    let animationFrame;
     const handleMouseMove = (e) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
+      // Cancel previous animation frame to ensure we use the latest position
+      cancelAnimationFrame(animationFrame);
+
+      animationFrame = requestAnimationFrame(() => {
+        setTooltip((prev) => ({
+          ...prev,
+          x: e.clientX,
+          y: e.clientY,
+        }));
+      });
+
       setHasMouseMoved(true);
     };
+
     window.addEventListener('mousemove', handleMouseMove);
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
+      cancelAnimationFrame(animationFrame);
     };
   }, []);
 
-  const showTooltip = ({ name, group, event }) => {
+  const showTooltip = ({ name, group }) => {
     if (!hasMouseMoved) return;
-    setTooltip({
+    setTooltip((prev) => ({
+      ...prev,
       visible: true,
       name,
       group,
-      x: event.clientX || mousePosition.x,
-      y: event.clientY || mousePosition.y,
-    });
+    }));
   };
 
   const hideTooltip = () => {
@@ -418,7 +428,7 @@ export default function FloatingImagesScene() {
 
       {/* Tooltip */}
       <div
-        className={`tooltip bg-black bg-opacity-80 p-4 text-white rounded-2xl ${
+        className={`tooltip ${
           tooltip.visible && hasMouseMoved ? 'visible' : ''
         } hidden md:block`}
         style={{
@@ -426,9 +436,8 @@ export default function FloatingImagesScene() {
           left: tooltip.x + 15,
         }}
       >
-        <div className='tooltip-name text-base font-bold'>{tooltip.name}</div>
-        <div className='tooltip-divider my-1 h-px bg-white bg-opacity-50' />
-        <div className='tooltip-group text-sm'>{tooltip.group}</div>
+        <div className='tooltip-name'>{tooltip.name}</div>
+        <div className='tooltip-group'>{tooltip.group}</div>
       </div>
 
       {/* Mobile navigation buttons */}
@@ -445,15 +454,37 @@ export default function FloatingImagesScene() {
         .tooltip {
           position: fixed;
           pointer-events: none;
-          font-family: sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+            sans-serif;
           z-index: 1000;
           opacity: 0;
-          transform: scale(0.8);
-          transition: opacity 0.3s ease, transform 0.3s ease;
+          transform: scale(0.95) translateY(4px);
+          transition: opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+            transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+          background: rgba(15, 15, 15, 0.95);
+          backdrop-filter: blur(12px);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 8px;
+          padding: 8px 12px;
+          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+          max-width: 200px;
         }
         .tooltip.visible {
           opacity: 1;
-          transform: scale(1);
+          transform: scale(1) translateY(0);
+        }
+        .tooltip-name {
+          color: white;
+          font-size: 13px;
+          font-weight: 600;
+          line-height: 1.3;
+          margin-bottom: 2px;
+        }
+        .tooltip-group {
+          color: rgba(255, 255, 255, 0.65);
+          font-size: 11px;
+          font-weight: 400;
+          line-height: 1.2;
         }
         .navigation-buttons {
           position: fixed;

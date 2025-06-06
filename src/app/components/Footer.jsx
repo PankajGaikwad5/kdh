@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Poppins, Montserrat, Bebas_Neue } from 'next/font/google';
 import { Instagram } from 'lucide-react';
 import { FaWhatsapp, FaLinkedin } from 'react-icons/fa';
+import Link from 'next/link';
 
 // Fonts
 const poppins = Poppins({
@@ -30,16 +31,16 @@ const Footer = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <div className='flex flex-col bg-black text-sm font-semibold'>
+    <div className='flex flex-col bg-black text-sm font-semibold relative z-10'>
       <div className='py-2 flex-col w-full flex md:flex-row md:justify-evenly items-center space-x-1 border-t'>
         <div className='flex py-4 justify-center items-center px-4'>
-          <a href='/'>
+          <Link href='/'>
             <img src='/assets/kdhlogo3.png' alt='' className='w-48 md:w-40' />
-          </a>
+          </Link>
         </div>
         <div className='flex flex-col md:flex-row text-white font-medium uppercase tracking-widest text-center md:space-x-4 space-y-1 md:space-y-0 md:-ml-44'>
           {navLinks.map((link, index) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               onMouseEnter={() => setHoveredIndex(index)}
@@ -55,30 +56,30 @@ const Footer = () => {
               `}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
           <div className='my-4 md:my-0 flex gap-4 items-center py-4 md:py-0 justify-center'>
-            <a
+            <Link
               href='https://www.instagram.com/karandesaihome/'
               target='_blank'
               className='hover:text-pink-600 transition-all duration-500'
             >
               <Instagram />
-            </a>
-            <a
+            </Link>
+            <Link
               href='https://wa.me/+917977112242'
               target='_blank'
               className='hover:text-green-600 transition-all duration-500'
             >
               <FaWhatsapp size={25} />
-            </a>
-            <a
+            </Link>
+            <Link
               href='https://www.linkedin.com/in/karandesaiad/'
               target='_blank'
               className='hover:text-blue-600 transition-all duration-500'
             >
               <FaLinkedin size={25} />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

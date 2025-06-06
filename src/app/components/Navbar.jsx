@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import { Poppins, Montserrat } from 'next/font/google';
 import { useRouter } from 'next/navigation';
 import { ArrowLeft } from 'lucide-react';
+import Link from 'next/link';
 
 // popins
 // montserrat
@@ -132,22 +133,22 @@ const Navbar = ({ isBgBlack, arrow, escape }) => {
         <ul
           className={`flex flex-col font-semibold text-sm 2xl:text-lg ${popins.className} `}
         >
-          <a
+          <Link
             href='/'
             className={`hover:text-gray-600 transition-all duration-300`}
           >
             home
-          </a>
+          </Link>
           {newNavTopics.map((items) => {
             const { id, name, path } = items;
             return (
               <li key={id}>
-                <a
+                <Link
                   href={`/${path}`}
                   className='hover:text-gray-600 transition-all duration-300 '
                 >
                   {name}
-                </a>
+                </Link>
               </li>
             );
           })}
