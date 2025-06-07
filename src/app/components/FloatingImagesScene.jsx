@@ -1,4 +1,4 @@
-// FloatingImagesScene.jsx
+// FloatingImagesScene.jsx - Optimized Version
 'use client';
 import React, { useRef, useState, useEffect, useMemo, Suspense } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
@@ -20,13 +20,11 @@ function Starfield({ count = 400, radius = 200 }) {
   const pointsRef = useRef();
   const { gl } = useThree();
 
-  // 1) Generate positions so that no stars lie inside the sphere (radius)
   const positions = useMemo(() => {
     const pos = new Float32Array(count * 3);
     for (let i = 0; i < count; i++) {
       const phi = Math.random() * Math.PI * 2;
       const theta = Math.acos(2 * Math.random() - 1);
-      // Half the stars just outside the sphere, half farther for depth
       const offset =
         i < count * 0.5
           ? radius + 2 + Math.random() * 40
@@ -38,7 +36,6 @@ function Starfield({ count = 400, radius = 200 }) {
     return pos;
   }, [count, radius]);
 
-  // 2) Create a sharper glow texture: bright core, smooth halo
   const starTexture = useMemo(() => {
     const size = 64;
     const canvas = document.createElement('canvas');
@@ -47,7 +44,6 @@ function Starfield({ count = 400, radius = 200 }) {
     const ctx = canvas.getContext('2d');
 
     ctx.clearRect(0, 0, size, size);
-    // Create radial gradient: very bright small core, fading to transparent
     const gradient = ctx.createRadialGradient(
       size / 2,
       size / 2,
@@ -56,11 +52,11 @@ function Starfield({ count = 400, radius = 200 }) {
       size / 2,
       size / 2
     );
-    gradient.addColorStop(0, 'rgba(255, 255, 255, 1)'); // bright core
+    gradient.addColorStop(0, 'rgba(255, 255, 255, 1)');
     gradient.addColorStop(0.05, 'rgba(255, 255, 255, 1)');
     gradient.addColorStop(0.2, 'rgba(255, 255, 255, 0.2)');
     gradient.addColorStop(0.5, 'rgba(255, 255, 255, 0.1)');
-    gradient.addColorStop(1, 'rgba(255, 255, 255, 0)'); // fade to transparent
+    gradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
 
     ctx.fillStyle = gradient;
     ctx.beginPath();
@@ -75,7 +71,6 @@ function Starfield({ count = 400, radius = 200 }) {
     return texture;
   }, [gl.capabilities]);
 
-  // 3) Slowly rotate the entire starfield for subtle motion
   useFrame(() => {
     if (pointsRef.current) {
       pointsRef.current.rotation.y += 0.0005;
@@ -104,7 +99,7 @@ function Starfield({ count = 400, radius = 200 }) {
   );
 }
 
-// ─── FloatingImage (suspense‐aware) ──────────────────────────────────────────
+// ─── FloatingImage with Link Integration ──────────────────────────────────────
 function FloatingImage({
   url,
   position,
@@ -117,12 +112,9 @@ function FloatingImage({
 }) {
   const ref = useRef();
   const { gl } = useThree();
-
-  // Load texture with useTexture, which suspends until loaded
   const texture = useTexture(url);
-
-  // Compute aspect ratio and set anisotropy once the texture is ready
   const [aspectRatio, setAspectRatio] = useState(1);
+
   useEffect(() => {
     if (texture && texture.image) {
       texture.anisotropy = gl.capabilities.getMaxAnisotropy();
@@ -130,10 +122,13 @@ function FloatingImage({
     }
   }, [texture, gl.capabilities]);
 
-  // Optimized click handler that passes data to parent
+  // Create the href for the link
+  const href = productId ? `/productdetails/${productId}` : '/products';
+
   const handleClick = (e) => {
     e.stopPropagation();
-    onImageClick({ productId, name, group });
+    // Pass the href to the parent so it can handle navigation
+    onImageClick({ productId, name, group, href });
   };
 
   return (
@@ -226,10 +221,7 @@ function SphericalGallery({
         hoveredImageRef.current = closest;
         const { name, group } = closest.parent.userData;
         if (onImageHover) {
-          onImageHover({
-            name,
-            group,
-          });
+          onImageHover({ name, group });
         }
         document.body.style.cursor = 'pointer';
       }
@@ -345,9 +337,7 @@ export default function FloatingImagesScene() {
   useEffect(() => {
     let animationFrame;
     const handleMouseMove = (e) => {
-      // Cancel previous animation frame to ensure we use the latest position
       cancelAnimationFrame(animationFrame);
-
       animationFrame = requestAnimationFrame(() => {
         setTooltip((prev) => ({
           ...prev,
@@ -355,7 +345,6 @@ export default function FloatingImagesScene() {
           y: e.clientY,
         }));
       });
-
       setHasMouseMoved(true);
     };
 
@@ -366,28 +355,56 @@ export default function FloatingImagesScene() {
     };
   }, []);
 
-  // Optimized navigation handler using router.push with prefetching
-  const handleImageClick = ({ productId, name, group }) => {
-    if (productId) {
-      // Use router.push for immediate navigation
-      router.push(`/productdetails/${productId}`);
-    } else {
-      router.push('/products');
-    }
+  // Optimized navigation handler with immediate navigation
+  const handleImageClick = ({ productId, name, group, href }) => {
+    // Use window.location for immediate navigation (fastest option)
+    window.location.href = href;
+
+    // Alternative: Use router.push with shallow routing for faster navigation
+    // router.push(href, undefined, { shallow: true });
   };
 
-  // Prefetch important routes on component mount for faster navigation
+  // Aggressive prefetching strategy
   useEffect(() => {
-    // Prefetch the products page
-    router.prefetch('/products');
+    // Prefetch all product detail pages immediately on mount
+    const prefetchTimer = setTimeout(() => {
+      newImagePaths.forEach((item, index) => {
+        if (item.productId) {
+          // Stagger prefetching to avoid overwhelming the browser
+          setTimeout(() => {
+            router.prefetch(`/productdetails/${item.productId}`);
+          }, index * 50); // 50ms delay between each prefetch
+        }
+      });
+      // Also prefetch the products page
+      router.prefetch('/products');
+    }, 100); // Start prefetching after component mounts
 
-    // Prefetch some product detail pages (you can customize this logic)
-    newImagePaths.forEach((item) => {
-      if (item.productId) {
-        router.prefetch(`/productdetails/${item.productId}`);
-      }
-    });
+    return () => clearTimeout(prefetchTimer);
   }, [router]);
+
+  // Preload critical resources
+  useEffect(() => {
+    // Preload the most commonly accessed product pages
+    const criticalProductIds = newImagePaths
+      .slice(0, 10) // First 10 products are likely most accessed
+      .filter((item) => item.productId)
+      .map((item) => item.productId);
+
+    criticalProductIds.forEach((productId) => {
+      // Create invisible link elements to trigger browser prefetching
+      const link = document.createElement('link');
+      link.rel = 'prefetch';
+      link.href = `/productdetails/${productId}`;
+      document.head.appendChild(link);
+    });
+
+    // Cleanup
+    return () => {
+      const prefetchLinks = document.querySelectorAll('link[rel="prefetch"]');
+      prefetchLinks.forEach((link) => link.remove());
+    };
+  }, []);
 
   const showTooltip = ({ name, group }) => {
     if (!hasMouseMoved) return;
@@ -427,10 +444,8 @@ export default function FloatingImagesScene() {
       >
         <ambientLight intensity={1} />
 
-        {/* Render stars immediately (no suspense) */}
         <Starfield count={280} radius={25} />
 
-        {/* Wrap only the gallery in Suspense so loader appears while images load */}
         <Suspense fallback={<CustomLoader />}>
           <ScrollControls pages={2} damping={0.1}>
             <ScrollHandler
@@ -473,14 +488,17 @@ export default function FloatingImagesScene() {
         </button>
       </div>
 
-      {/* Hidden Link elements for prefetching (optional additional optimization) */}
+      {/* Enhanced prefetching with invisible Link components */}
       <div style={{ display: 'none' }}>
-        <Link href='/products'>Products</Link>
-        {newImagePaths.slice(0, 5).map((item) =>
+        <Link href='/products' prefetch={true}>
+          Products
+        </Link>
+        {newImagePaths.map((item) =>
           item.productId ? (
             <Link
               key={item.productId}
               href={`/productdetails/${item.productId}`}
+              prefetch={true}
             >
               {item.name}
             </Link>

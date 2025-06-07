@@ -288,7 +288,7 @@ export const newImagePaths = [
     productId: '67efa13d38f60435b89ba291',
   },
 
-  ...Array(6)
+  ...Array(5)
     .fill([
       {
         name: 'Gattoo Chair',
