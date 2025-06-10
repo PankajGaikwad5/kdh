@@ -7,7 +7,7 @@ export const newImagePaths = [
   },
   {
     name: 'Monster Bench',
-    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU6j61uIRfb3HGeOz01MiLoldKrZaXQIxANWuV',
+    path: '/new_monster3/bench1.png',
     group: 'Monster 3.0',
     productId: '67b590b8e03cc2c55c624a5b',
   },
@@ -298,7 +298,7 @@ export const newImagePaths = [
       },
       {
         name: 'Monster Bench',
-        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU6j61uIRfb3HGeOz01MiLoldKrZaXQIxANWuV',
+        path: '/new_monster3/bench1.png',
         group: 'Monster 3.0',
         productId: '67b590b8e03cc2c55c624a5b',
       },
