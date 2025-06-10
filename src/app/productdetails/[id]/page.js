@@ -43,6 +43,7 @@ const ProductDetailsPage = () => {
   const [product, setProduct] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showModal, setShowModal] = useState(false);
+  const MotionImage = motion(Image);
 
   const form = useForm({
     resolver: zodResolver(formSchema),
@@ -196,7 +197,7 @@ const ProductDetailsPage = () => {
           {product.images?.length > 0 && (
             <div className='relative w-full h-[80vh] overflow-hidden rounded-lg'>
               <AnimatePresence mode='wait'>
-                <motion.img
+                <MotionImage
                   key={currentIndex}
                   src={product.images[currentIndex].filePath}
                   alt={product.title}
@@ -204,7 +205,14 @@ const ProductDetailsPage = () => {
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.5 }}
-                  className='w-full h-full object-contain'
+                  className='object-contain'
+                  fill
+                  sizes='(max-width: 768px) 100vw, 50vw'
+                  // Eager-load only the first slide
+                  {...(currentIndex === 0
+                    ? { priority: true }
+                    : { loading: 'lazy' })}
+                  blurDataURL={product.images[currentIndex].blurDataURL}
                 />
               </AnimatePresence>
 
