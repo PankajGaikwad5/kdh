@@ -20,6 +20,7 @@ import {
 } from '../../components/ui/form';
 import { Input } from '../../components/ui/input';
 import { Textarea } from '../../components/ui/textarea';
+import { products } from '@/app/components/products';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -109,33 +110,23 @@ const ProductDetailsPage = () => {
     }
   }
 
+  // Replace API fetch with static data lookup
   useEffect(() => {
-    const controller = new AbortController();
-    const fetchData = async () => {
-      try {
-        const res = await fetch(`/api/products/${params.id}`, {
-          signal: controller.signal,
-          headers: {
-            Accept: 'application/json',
-            'Cache-Control': 'max-age=300',
-          },
-        });
+    if (!params.id) return;
 
-        if (!res.ok) return console.error('Failed to fetch product');
+    // Find product by ID from static data
+    const foundProduct = products.find((p) => {
+      // Handle both string and ObjectId format
+      const productId = typeof p._id === 'object' ? p._id.$oid : p._id;
+      return productId === params.id;
+    });
 
-        const data = await res.json();
-        if (!data?.products) return;
-
-        setProduct(data.products);
-      } catch (error) {
-        if (error.name !== 'AbortError') {
-          console.error('Error fetching product:', error);
-        }
-      }
-    };
-
-    fetchData();
-  }, [params]);
+    if (foundProduct) {
+      setProduct(foundProduct);
+    } else {
+      console.error('Product not found');
+    }
+  }, [params.id]);
 
   // Escape key listener
   useEffect(() => {
