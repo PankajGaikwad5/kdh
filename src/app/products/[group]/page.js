@@ -6,6 +6,7 @@ import Footer from '../../components/Footer';
 import { ChevronLeft } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import Navbar from '@/app/components/Navbar';
+import { products } from '../../components/products'; // Import static data
 
 const GroupProductsPage = () => {
   const { group } = useParams();
@@ -24,22 +25,9 @@ const GroupProductsPage = () => {
   };
 
   useEffect(() => {
-    const fetchGroupProducts = async () => {
-      try {
-        const response = await fetch(`/api/products`);
-        const data = await response.json();
-        const groupProducts = data.products.filter(
-          (product) => product.group === group
-        );
-        setFilteredProducts(groupProducts);
-      } catch (error) {
-        console.error('Error fetching group products:', error);
-      }
-    };
-
-    if (group) {
-      fetchGroupProducts();
-    }
+    // Filter products based on group from static data
+    const groupProducts = products.filter((product) => product.group === group);
+    setFilteredProducts(groupProducts);
   }, [group]);
 
   return (
