@@ -19,7 +19,7 @@ export const newImagePaths = [
   },
   {
     name: 'Monster Console',
-    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUEmod5KYFi7GYsQA2my03DTouek5wnIJXgjpV',
+    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUysEWFrjvoD5bj92PLzxBdul6nT8GrEAS30eN',
     group: 'Monster 3.0',
     productId: '67b59041e03cc2c55c624a4b',
   },
@@ -310,7 +310,7 @@ export const newImagePaths = [
       },
       {
         name: 'Monster Console',
-        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUEmod5KYFi7GYsQA2my03DTouek5wnIJXgjpV',
+        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUysEWFrjvoD5bj92PLzxBdul6nT8GrEAS30eN',
         group: 'Monster 3.0',
         productId: '67b59041e03cc2c55c624a4b',
       },
