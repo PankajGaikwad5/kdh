@@ -48,7 +48,7 @@ const GroupProductsPage = () => {
                 <ProductCard
                   title={title}
                   img={images[0]?.filePath}
-                  id={_id}
+                  id={_id.$oid}
                   key={_id}
                 />
               ))}
