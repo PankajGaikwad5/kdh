@@ -6,7 +6,7 @@ import Footer from '../../components/Footer';
 import { ChevronLeft } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import Navbar from '@/app/components/Navbar';
-import { products } from '../../components/products'; // Import static data
+import { products } from '@/app/components/products';
 
 const GroupProductsPage = () => {
   const { group } = useParams();
