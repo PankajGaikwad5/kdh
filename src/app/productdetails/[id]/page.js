@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import Image from 'next/image';
 import { useParams, useRouter } from 'next/navigation';
 import { Button } from '@/app/components/ui/button';
@@ -44,6 +44,8 @@ const ProductDetailsPage = () => {
   const [product, setProduct] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showModal, setShowModal] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const [loadedImages, setLoadedImages] = useState(new Set());
   const MotionImage = motion(Image);
 
   const form = useForm({
@@ -56,6 +58,19 @@ const ProductDetailsPage = () => {
       product: '',
     },
   });
+
+  // Preload images aggressively
+  const preloadImage = useCallback((src) => {
+    return new Promise((resolve, reject) => {
+      const img = new window.Image();
+      img.onload = () => {
+        setLoadedImages((prev) => new Set([...prev, src]));
+        resolve(src);
+      };
+      img.onerror = reject;
+      img.src = src;
+    });
+  }, []);
 
   // Inject Facebook Pixel on mount
   useEffect(() => {
@@ -110,23 +125,36 @@ const ProductDetailsPage = () => {
     }
   }
 
-  // Replace API fetch with static data lookup
+  // Replace API fetch with static data lookup and aggressive preloading
   useEffect(() => {
     if (!params.id) return;
 
-    // Find product by ID from static data
     const foundProduct = products.find((p) => {
-      // Handle both string and ObjectId format
       const productId = typeof p._id === 'object' ? p._id.$oid : p._id;
       return productId === params.id;
     });
 
     if (foundProduct) {
       setProduct(foundProduct);
+
+      // Preload ALL images immediately
+      if (foundProduct.images?.length > 0) {
+        // Preload first image immediately
+        preloadImage(foundProduct.images[0].filePath).then(() => {
+          setImageLoaded(true);
+        });
+
+        // Preload remaining images in background
+        foundProduct.images.slice(1).forEach((image, index) => {
+          setTimeout(() => {
+            preloadImage(image.filePath);
+          }, index * 100); // Stagger loading
+        });
+      }
     } else {
       console.error('Product not found');
     }
-  }, [params.id]);
+  }, [params.id, preloadImage]);
 
   // Escape key listener
   useEffect(() => {
@@ -140,24 +168,45 @@ const ProductDetailsPage = () => {
     return () => {
       window.removeEventListener('keydown', handleEsc);
     };
+  }, [router]);
+
+  const nextImage = useCallback(() => {
+    if (!product?.images?.length) return;
+    setImageLoaded(false);
+    const nextIndex = (currentIndex + 1) % product.images.length;
+    setCurrentIndex(nextIndex);
+
+    // Check if next image is already loaded
+    if (loadedImages.has(product.images[nextIndex].filePath)) {
+      setImageLoaded(true);
+    }
+  }, [product, currentIndex, loadedImages]);
+
+  const prevImage = useCallback(() => {
+    if (!product?.images?.length) return;
+    setImageLoaded(false);
+    const prevIndex =
+      currentIndex === 0 ? product.images.length - 1 : currentIndex - 1;
+    setCurrentIndex(prevIndex);
+
+    // Check if previous image is already loaded
+    if (loadedImages.has(product.images[prevIndex].filePath)) {
+      setImageLoaded(true);
+    }
+  }, [product, currentIndex, loadedImages]);
+
+  // Handle image load completion
+  const handleImageLoad = useCallback(() => {
+    setImageLoaded(true);
   }, []);
-
-  const nextImage = () => {
-    if (!product?.images?.length) return;
-    setCurrentIndex((prev) => (prev + 1) % product.images.length);
-  };
-
-  const prevImage = () => {
-    if (!product?.images?.length) return;
-    setCurrentIndex((prev) =>
-      prev === 0 ? product.images.length - 1 : prev - 1
-    );
-  };
 
   if (!product)
     return (
       <div className='text-center bg-black text-white py-20 w-full h-screen flex justify-center items-center'>
-        Loading...
+        <div className='flex flex-col items-center gap-4'>
+          <div className='animate-spin rounded-full h-12 w-12 border-b-2 border-white'></div>
+          <p>Loading product...</p>
+        </div>
       </div>
     );
 
@@ -186,43 +235,99 @@ const ProductDetailsPage = () => {
       <div className='grid md:grid-cols-2 pt-20'>
         <section className='relative p-4 flex items-center justify-center bg-black'>
           {product.images?.length > 0 && (
-            <div className='relative w-full h-[80vh] overflow-hidden rounded-lg'>
-              <AnimatePresence mode='wait'>
+            <div className='relative w-full h-[80vh] overflow-hidden rounded-lg '>
+              {/* Loading state */}
+              {!imageLoaded && (
+                <div className='absolute inset-0 flex items-center justify-center z-10'>
+                  <div className='flex flex-col items-center gap-4'>
+                    <div className='animate-spin rounded-full h-8 w-8 border-b-2 border-white'></div>
+                    <p className='text-sm text-gray-400'>Loading image...</p>
+                  </div>
+                </div>
+              )}
+
+              {/* Main image */}
+              <div
+                className={`relative w-full h-full transition-opacity duration-200 ${
+                  imageLoaded ? 'opacity-100' : 'opacity-0'
+                }`}
+              >
                 <MotionImage
                   key={currentIndex}
                   src={product.images[currentIndex].filePath}
                   alt={product.title}
                   initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.5 }}
+                  animate={{ opacity: imageLoaded ? 1 : 0 }}
+                  transition={{ duration: 0.15 }}
                   className='object-contain'
                   fill
                   sizes='(max-width: 768px) 100vw, 50vw'
-                  // Eager-load only the first slide
-                  {...(currentIndex === 0
-                    ? { priority: true }
-                    : { loading: 'lazy' })}
-                  blurDataURL={product.images[currentIndex].blurDataURL}
+                  priority={currentIndex === 0}
+                  quality={75}
+                  unoptimized={product.images[currentIndex].filePath.startsWith(
+                    'http'
+                  )}
+                  onLoad={handleImageLoad}
+                  onLoadingComplete={handleImageLoad}
                 />
-              </AnimatePresence>
+              </div>
 
+              {/* Navigation buttons */}
               {product.images.length > 1 && (
                 <>
                   <button
                     onClick={prevImage}
-                    className='absolute left-4 top-1/2 -translate-y-1/2 text-white bg-black/60 rounded-full p-2 hover:bg-white hover:text-black'
+                    disabled={!imageLoaded}
+                    className='absolute left-4 top-1/2 -translate-y-1/2 text-white bg-black/60 rounded-full p-3 hover:bg-white hover:text-black transition-all disabled:opacity-50 disabled:cursor-not-allowed z-20'
                   >
-                    ‹
+                    <span className='text-xl'>‹</span>
                   </button>
                   <button
                     onClick={nextImage}
-                    className='absolute right-4 top-1/2 -translate-y-1/2 text-white bg-black/60 rounded-full p-2 hover:bg-white hover:text-black'
+                    disabled={!imageLoaded}
+                    className='absolute right-4 top-1/2 -translate-y-1/2 text-white bg-black/60 rounded-full p-3 hover:bg-white hover:text-black transition-all disabled:opacity-50 disabled:cursor-not-allowed z-20'
                   >
-                    ›
+                    <span className='text-xl'>›</span>
                   </button>
                 </>
               )}
+
+              {/* Image counter */}
+              {product.images.length > 1 && (
+                <div className='absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/60 rounded-full px-3 py-1 text-sm z-20'>
+                  {currentIndex + 1} / {product.images.length}
+                </div>
+              )}
+
+              {/* Thumbnail strip for faster navigation */}
+              {/* {product.images.length > 1 && (
+                <div className='absolute bottom-16 left-1/2 -translate-x-1/2 flex gap-2 z-20'>
+                  {product.images.slice(0, 5).map((image, index) => (
+                    <button
+                      key={index}
+                      onClick={() => {
+                        setImageLoaded(loadedImages.has(image.filePath));
+                        setCurrentIndex(index);
+                      }}
+                      className={`w-12 h-12 rounded border-2 overflow-hidden transition-all ${
+                        currentIndex === index
+                          ? 'border-white'
+                          : 'border-gray-600 hover:border-gray-400'
+                      }`}
+                    >
+                      <Image
+                        src={image.thumbnail || image.filePath}
+                        alt=''
+                        width={48}
+                        height={48}
+                        className='object-cover w-full h-full'
+                        quality={30}
+                        loading='eager'
+                      />
+                    </button>
+                  ))}
+                </div>
+              )} */}
             </div>
           )}
         </section>
