@@ -390,22 +390,22 @@ function SphericalGallery({
 function ScrollHandler({ onScrollIntoSphere, onScrollOutOfSphere }) {
   const scroll = useScroll();
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 768) {
-        setTimeout(() => {
-          scroll.scroll.current = 1;
-        }, 1000);
-      } else {
-        scroll.scroll.current = 0;
-      }
-    };
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, [scroll]);
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     if (window.innerWidth < 768) {
+  //       setTimeout(() => {
+  //         scroll.scroll.current = 1;
+  //       }, 1000);
+  //     } else {
+  //       scroll.scroll.current = 0;
+  //     }
+  //   };
+  //   handleResize();
+  //   window.addEventListener('resize', handleResize);
+  //   return () => {
+  //     window.removeEventListener('resize', handleResize);
+  //   };
+  // }, [scroll]);
 
   useEffect(() => {
     onScrollIntoSphere.current = () => {
