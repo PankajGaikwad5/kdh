@@ -1,4 +1,4 @@
-// FloatingImagesScene.jsx - Optimized Version
+// FloatingImagesScene.jsx - With Pinch-to-Zoom
 'use client';
 import React, { useRef, useState, useEffect, useMemo, Suspense } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
@@ -14,6 +14,102 @@ import Link from 'next/link';
 import { newImagePaths } from './imagePaths';
 import CustomLoader from './CustomLoader';
 import { Plus, Minus } from 'lucide-react';
+
+// ─── Pinch-to-Zoom Handler Hook ──────────────────────────────────────────────
+function usePinchZoom(onZoomChange) {
+  const [isZooming, setIsZooming] = useState(false);
+  const lastTouchDistance = useRef(0);
+  const lastWheelTime = useRef(0);
+
+  useEffect(() => {
+    let touchStartDistance = 0;
+    let initialZoom = 0;
+
+    // Touch events for mobile pinch
+    const handleTouchStart = (e) => {
+      if (e.touches.length === 2) {
+        const touch1 = e.touches[0];
+        const touch2 = e.touches[1];
+        touchStartDistance = Math.hypot(
+          touch2.clientX - touch1.clientX,
+          touch2.clientY - touch1.clientY
+        );
+        lastTouchDistance.current = touchStartDistance;
+        setIsZooming(true);
+        e.preventDefault();
+      }
+    };
+
+    const handleTouchMove = (e) => {
+      if (e.touches.length === 2 && touchStartDistance > 0) {
+        const touch1 = e.touches[0];
+        const touch2 = e.touches[1];
+        const currentDistance = Math.hypot(
+          touch2.clientX - touch1.clientX,
+          touch2.clientY - touch1.clientY
+        );
+
+        const scale = currentDistance / touchStartDistance;
+        const zoomLevel = Math.max(0, Math.min(1, 1 - (scale - 1) * 0.5));
+
+        onZoomChange(zoomLevel);
+        e.preventDefault();
+      }
+    };
+
+    const handleTouchEnd = (e) => {
+      if (e.touches.length < 2) {
+        touchStartDistance = 0;
+        setIsZooming(false);
+      }
+    };
+
+    // Wheel events for trackpad/mouse wheel
+    const handleWheel = (e) => {
+      const now = Date.now();
+      const timeDiff = now - lastWheelTime.current;
+      lastWheelTime.current = now;
+
+      // Detect trackpad vs mouse wheel
+      const isTrackpad = Math.abs(e.deltaY) < 50 && timeDiff < 50;
+
+      if (isTrackpad || e.ctrlKey) {
+        // Trackpad or Ctrl+wheel for zoom
+        e.preventDefault();
+        setIsZooming(true);
+
+        const zoomSensitivity = 0.01;
+        const deltaZoom = -e.deltaY * zoomSensitivity;
+
+        // Get current zoom level and apply change
+        onZoomChange((prevZoom) => {
+          const newZoom = Math.max(0, Math.min(1, prevZoom + deltaZoom));
+          return newZoom;
+        });
+
+        // Reset zooming state after a delay
+        setTimeout(() => setIsZooming(false), 100);
+      }
+    };
+
+    // Add event listeners
+    document.addEventListener('touchstart', handleTouchStart, {
+      passive: false,
+    });
+    document.addEventListener('touchmove', handleTouchMove, { passive: false });
+    document.addEventListener('touchend', handleTouchEnd);
+    document.addEventListener('wheel', handleWheel, { passive: false });
+
+    return () => {
+      document.removeEventListener('touchstart', handleTouchStart);
+      document.removeEventListener('touchmove', handleTouchMove);
+      document.removeEventListener('touchend', handleTouchEnd);
+      document.removeEventListener('wheel', handleWheel);
+    };
+  }, [onZoomChange]);
+
+  return isZooming;
+}
 
 // ─── Starfield with Pronounced Glow ───────────────────────────────────────────
 function Starfield({ count = 400, radius = 200 }) {
@@ -122,12 +218,10 @@ function FloatingImage({
     }
   }, [texture, gl.capabilities]);
 
-  // Create the href for the link
   const href = productId ? `/productdetails/${productId}` : '/products';
 
   const handleClick = (e) => {
     e.stopPropagation();
-    // Pass the href to the parent so it can handle navigation
     onImageClick({ productId, name, group, href });
   };
 
@@ -141,8 +235,8 @@ function FloatingImage({
   );
 }
 
-// ─── ControlsManager ────────────────────────────────────────────────────────
-function ControlsManager({ autoRotateSpeed = 0.5 }) {
+// ─── Enhanced ControlsManager with Zoom Disable ──────────────────────────────
+function ControlsManager({ autoRotateSpeed = 0.5, isZooming = false }) {
   const controlsRef = useRef();
   const [isUserInteracting, setIsUserInteracting] = useState(false);
   const { camera } = useThree();
@@ -168,14 +262,16 @@ function ControlsManager({ autoRotateSpeed = 0.5 }) {
 
   useFrame(() => {
     if (controlsRef.current) {
-      controlsRef.current.autoRotate = !isUserInteracting;
+      controlsRef.current.autoRotate = !isUserInteracting && !isZooming;
+      // Disable orbit controls when zooming to prevent conflicts
+      controlsRef.current.enabled = !isZooming;
     }
   });
 
   return (
     <OrbitControls
       ref={controlsRef}
-      enableZoom={false}
+      enableZoom={false} // Disable built-in zoom to use custom pinch-to-zoom
       enablePan={false}
       minPolarAngle={Math.PI / 6}
       maxPolarAngle={Math.PI - Math.PI / 6}
@@ -186,13 +282,14 @@ function ControlsManager({ autoRotateSpeed = 0.5 }) {
   );
 }
 
-// ─── SphericalGallery ────────────────────────────────────────────────────────
+// ─── SphericalGallery with Zoom Control ───────────────────────────────────────
 function SphericalGallery({
   imagePaths,
   radius = 20,
   onImageHover,
   onImageOut,
   onImageClick,
+  zoomLevel = 0,
 }) {
   const groupRef = useRef();
   const scroll = useScroll();
@@ -247,8 +344,10 @@ function SphericalGallery({
       child.lookAt(camera.position);
     });
 
-    const offset = scroll.offset;
-    const camDist = THREE.MathUtils.lerp(50, 10, offset);
+    // Combine scroll offset and zoom level for camera distance
+    const scrollOffset = scroll.offset;
+    const combinedZoom = Math.max(scrollOffset, zoomLevel);
+    const camDist = THREE.MathUtils.lerp(50, 10, combinedZoom);
     camera.position.setLength(camDist);
   });
 
@@ -287,7 +386,7 @@ function SphericalGallery({
   );
 }
 
-// ─── ScrollHandler ───────────────────────────────────────────────────────────
+// ─── ScrollHandler with Zoom Integration ──────────────────────────────────────
 function ScrollHandler({ onScrollIntoSphere, onScrollOutOfSphere }) {
   const scroll = useScroll();
 
@@ -320,10 +419,11 @@ function ScrollHandler({ onScrollIntoSphere, onScrollOutOfSphere }) {
   return null;
 }
 
-// ─── Main FloatingImagesScene ─────────────────────────────────────────────────
+// ─── Main FloatingImagesScene with Pinch-to-Zoom ──────────────────────────────
 export default function FloatingImagesScene() {
   const router = useRouter();
   const [hasMouseMoved, setHasMouseMoved] = useState(false);
+  const [zoomLevel, setZoomLevel] = useState(0);
   const [tooltip, setTooltip] = useState({
     visible: false,
     name: '',
@@ -333,6 +433,21 @@ export default function FloatingImagesScene() {
   });
   const scrollIntoSphereRef = useRef(() => {});
   const scrollOutOfSphereRef = useRef(() => {});
+
+  // Handle zoom changes from pinch-to-zoom
+  const handleZoomChange = (newZoomLevel) => {
+    if (typeof newZoomLevel === 'function') {
+      setZoomLevel((prev) => {
+        const result = newZoomLevel(prev);
+        return result;
+      });
+    } else {
+      setZoomLevel(newZoomLevel);
+    }
+  };
+
+  // Use the pinch-to-zoom hook
+  const isZooming = usePinchZoom(handleZoomChange);
 
   useEffect(() => {
     let animationFrame;
@@ -355,51 +470,39 @@ export default function FloatingImagesScene() {
     };
   }, []);
 
-  // Optimized navigation handler with immediate navigation
   const handleImageClick = ({ productId, name, group, href }) => {
-    // Use window.location for immediate navigation (fastest option)
     window.location.href = href;
-
-    // Alternative: Use router.push with shallow routing for faster navigation
-    // router.push(href, undefined, { shallow: true });
   };
 
   // Aggressive prefetching strategy
   useEffect(() => {
-    // Prefetch all product detail pages immediately on mount
     const prefetchTimer = setTimeout(() => {
       newImagePaths.forEach((item, index) => {
         if (item.productId) {
-          // Stagger prefetching to avoid overwhelming the browser
           setTimeout(() => {
             router.prefetch(`/productdetails/${item.productId}`);
-          }, index * 50); // 50ms delay between each prefetch
+          }, index * 50);
         }
       });
-      // Also prefetch the products page
       router.prefetch('/products');
-    }, 100); // Start prefetching after component mounts
+    }, 100);
 
     return () => clearTimeout(prefetchTimer);
   }, [router]);
 
-  // Preload critical resources
   useEffect(() => {
-    // Preload the most commonly accessed product pages
     const criticalProductIds = newImagePaths
-      .slice(0, 10) // First 10 products are likely most accessed
+      .slice(0, 10)
       .filter((item) => item.productId)
       .map((item) => item.productId);
 
     criticalProductIds.forEach((productId) => {
-      // Create invisible link elements to trigger browser prefetching
       const link = document.createElement('link');
       link.rel = 'prefetch';
       link.href = `/productdetails/${productId}`;
       document.head.appendChild(link);
     });
 
-    // Cleanup
     return () => {
       const prefetchLinks = document.querySelectorAll('link[rel="prefetch"]');
       prefetchLinks.forEach((link) => link.remove());
@@ -457,11 +560,12 @@ export default function FloatingImagesScene() {
               onImageHover={showTooltip}
               onImageOut={hideTooltip}
               onImageClick={handleImageClick}
+              zoomLevel={zoomLevel}
             />
           </ScrollControls>
         </Suspense>
 
-        <ControlsManager autoRotateSpeed={0.5} />
+        <ControlsManager autoRotateSpeed={0.5} isZooming={isZooming} />
       </Canvas>
 
       {/* Tooltip */}
@@ -487,6 +591,19 @@ export default function FloatingImagesScene() {
           <Plus size={30} />
         </button>
       </div>
+
+      {/* Zoom indicator */}
+      {isZooming && (
+        <div className='zoom-indicator'>
+          <div className='zoom-bar'>
+            <div
+              className='zoom-fill'
+              style={{ width: `${zoomLevel * 100}%` }}
+            />
+          </div>
+          <span>Zoom: {Math.round(zoomLevel * 100)}%</span>
+        </div>
+      )}
 
       {/* Enhanced prefetching with invisible Link components */}
       <div style={{ display: 'none' }}>
@@ -561,6 +678,34 @@ export default function FloatingImagesScene() {
         }
         .navigation-buttons button:hover {
           background: rgba(0, 0, 0, 0.8);
+        }
+        .zoom-indicator {
+          position: fixed;
+          top: 20px;
+          right: 20px;
+          background: rgba(0, 0, 0, 0.8);
+          color: white;
+          padding: 8px 12px;
+          border-radius: 8px;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+            sans-serif;
+          font-size: 12px;
+          z-index: 1000;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+        .zoom-bar {
+          width: 60px;
+          height: 4px;
+          background: rgba(255, 255, 255, 0.3);
+          border-radius: 2px;
+          overflow: hidden;
+        }
+        .zoom-fill {
+          height: 100%;
+          background: white;
+          transition: width 0.1s ease;
         }
       `}</style>
     </>
