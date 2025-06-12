@@ -46,11 +46,11 @@ const Footer = () => {
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
               className={`
-                transition-all duration-300 
                 hover:scale-90 hover:text-white 
+                transition-all duration-300 
                 ${
                   hoveredIndex !== null && hoveredIndex !== index
-                    ? 'blur-sm'
+                    ? 'blur-[2px]'
                     : 'blur-0'
                 }
               `}

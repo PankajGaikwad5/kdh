@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { CardBody, CardContainer, CardItem } from '../../components/ui/3d-card';
 import Link from 'next/link';
 
-const SubProductCard = ({ title, img, id }) => {
+const SubProductCard = ({ title, img, id, hoveredIndex, setHoveredIndex }) => {
   const [isLoading, setIsLoading] = useState(true);
 
   const navigateTo = () => {
@@ -14,13 +14,17 @@ const SubProductCard = ({ title, img, id }) => {
   return (
     <Link href={`/products/${id}`}>
       <div
+        onMouseEnter={() => setHoveredIndex(id)}
+        onMouseLeave={() => setHoveredIndex(null)}
         // onClick={navigateTo}
-        className='cursor-pointer transform transition duration-300 hover:scale-[1.02]'
+        className={`cursor-pointer  hover:scale-[1.02] transform transition duration-300 ${
+          hoveredIndex !== null && hoveredIndex !== id ? 'blur-[2px]' : 'blur-0'
+        }`}
       >
         <div className='p-0'>
           <div className='duration-300'>
             <div className='w-full mt-4'>
-              <div className='w-full aspect-[4/3] relative overflow-hidden flex justify-center items-center rounded-lg'>
+              <div className='w-full aspect-[4/3] relative  flex justify-center items-center rounded-lg'>
                 {isLoading && (
                   <div className='absolute inset-0 bg-gray-200 dark:bg-gray-700 animate-pulse'></div>
                 )}

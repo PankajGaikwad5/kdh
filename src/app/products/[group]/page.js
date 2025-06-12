@@ -12,6 +12,7 @@ const GroupProductsPage = () => {
   const { group } = useParams();
   const [filteredProducts, setFilteredProducts] = useState([]);
   const router = useRouter();
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -50,6 +51,8 @@ const GroupProductsPage = () => {
                   img={images[0]?.filePath}
                   id={_id.$oid}
                   key={_id}
+                  hoveredIndex={hoveredIndex}
+                  setHoveredIndex={setHoveredIndex}
                 />
               ))}
             </div>

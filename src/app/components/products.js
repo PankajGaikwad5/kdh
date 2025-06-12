@@ -532,15 +532,7 @@ export const products = [
         },
         thumbnail: '/assets/products/thumbnails/1738929642727-Slide1.JPG',
       },
-      {
-        fileName: '1738929642727-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSdQwBqzAKnraNxkI5vbez6dT2q8M0osBfR9A',
-        _id: {
-          $oid: '67a5f5ea4da9b29cd0f10c1d',
-        },
-        thumbnail: '/assets/products/thumbnails/1738929642727-Slide1.JPG',
-      },
+
       {
         fileName: '1738929642727-Slide1.JPG',
         filePath:
@@ -986,6 +978,51 @@ export const products = [
         _id: {
           $oid: '67a5ecf94da9b29cd0f10bb7',
         },
+      },
+      {
+        fileName: '1738927353299-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUa2vVaJzVIx6ZjWFiGhcRQJMUzft1drvPNTbL',
+        _id: {
+          $oid: '67a5ecf94da9b29cd0f10bb7',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927353299-Slide1.JPG',
+      },
+      {
+        fileName: '1738927353299-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUMrh8V2wfQbC4M3ZGkSm6KPAV10HlYU9dinrX',
+        _id: {
+          $oid: '67a5ecf94da9b29cd0f10bb7',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927353299-Slide1.JPG',
+      },
+      {
+        fileName: '1738927353299-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAQEIuaFJ1oeY2wnF0zQbWX83C4KujdSqt6MU',
+        _id: {
+          $oid: '67a5ecf94da9b29cd0f10bb7',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927353299-Slide1.JPG',
+      },
+      {
+        fileName: '1738927353299-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDR6QxI08FYI8sxbtc2ngQN4ZeSPwOKkv5yAj',
+        _id: {
+          $oid: '67a5ecf94da9b29cd0f10bb7',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927353299-Slide1.JPG',
+      },
+      {
+        fileName: '1738927353299-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUeFv8RCcFPv1kdbg4tT0YfOS529XxhywHpVoU',
+        _id: {
+          $oid: '67a5ecf94da9b29cd0f10bb7',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927353299-Slide1.JPG',
       },
       {
         fileName: '1738927353299-Slide1.JPG',
@@ -1678,6 +1715,33 @@ export const products = [
         _id: {
           $oid: '67bc49a855b639fb58349ec8',
         },
+      },
+      {
+        fileName: '1740392872397-1.jpg',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU1SRy5EmcNbALVg2tCIRm5fi0793BwZH8PYyx',
+        _id: {
+          $oid: '67bc49a855b639fb58349ec8',
+        },
+        thumbnail: '/assets/products/thumbnails/1740392872397-1.jpg',
+      },
+      {
+        fileName: '1740392872397-1.jpg',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUuHSAkNVvD2FOkC3NsiU7yPRWb18aeZThVzGr',
+        _id: {
+          $oid: '67bc49a855b639fb58349ec8',
+        },
+        thumbnail: '/assets/products/thumbnails/1740392872397-1.jpg',
+      },
+      {
+        fileName: '1740392872397-1.jpg',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUCr0QKcX0XaKgNMT1QEmen25RAwc7Sk4UxoJF',
+        _id: {
+          $oid: '67bc49a855b639fb58349ec8',
+        },
+        thumbnail: '/assets/products/thumbnails/1740392872397-1.jpg',
       },
       {
         fileName: '1740392872397-1.jpg',
@@ -2763,6 +2827,33 @@ export const products = [
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUgrObNwlLdSN8CY5rJGOAxcqQpM9fjoh4etX6',
     images: [
+      {
+        fileName: '1743750415386-1.png',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAQCwvE1J1oeY2wnF0zQbWX83C4KujdSqt6MU',
+        _id: {
+          $oid: '67ef850f629882967f3fbb3e',
+        },
+        thumbnail: '/assets/products/thumbnails/1743750415386-1.png',
+      },
+      {
+        fileName: '1743750415386-1.png',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9zTq3nt2frimQ5LhFdjbpOHNPEsav1o2Ac0D',
+        _id: {
+          $oid: '67ef850f629882967f3fbb3e',
+        },
+        thumbnail: '/assets/products/thumbnails/1743750415386-1.png',
+      },
+      {
+        fileName: '1743750415386-1.png',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWYvBftrSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
+        _id: {
+          $oid: '67ef850f629882967f3fbb3e',
+        },
+        thumbnail: '/assets/products/thumbnails/1743750415386-1.png',
+      },
       {
         fileName: '1743750415386-1.png',
         filePath: '/assets/products/1743750415386-1.png',

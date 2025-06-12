@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 
 const page = () => {
   const [imgArray, setImgArray] = useState([]);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
   const fetchProjects = async () => {
     try {
       const response = await fetch(`/api/products`);
@@ -28,28 +29,28 @@ const page = () => {
       id: 3,
       title: 'Monster 3.0 Collection',
       group: 'monster_3.0',
-      img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnYy0rpbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
+      img: '/group/1.png',
       projects: 'gattoo x top brewer, yoda',
     },
     {
       id: 2,
       title: 'Monster 2.0 Collection',
       group: 'monster_2.0',
-      img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUMeOsVlwfQbC4M3ZGkSm6KPAV10HlYU9dinrX',
+      img: '/group/2.png',
       projects: 'gattoo x top brewer, yoda',
     },
     {
       id: 1,
       title: 'Monster 1.0 Collection',
       group: 'monster_1.0',
-      img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUreGqMKNnDI67jcCaomXhZLsJd91f4YGitMHP',
+      img: '/group/3.png',
       projects: 'monster basin, monster bathtub, monster console',
     },
     {
       id: 4,
       title: 'Matilda Collection',
       group: 'matilda',
-      img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUA1rftpJ1oeY2wnF0zQbWX83C4KujdSqt6MUT',
+      img: '/group/4.png',
       projects:
         'table lamp, library, partition screen, console 1, console 2, coffee table, center table 1, center table 2, basin, flower vase, planter, side table, u table, bathtub, chair, bench floor lamp',
     },
@@ -57,7 +58,7 @@ const page = () => {
       id: 5,
       title: 'Monster Collectibles',
       group: 'monster_collectibles',
-      img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8C1mTl64oKUn37W6wsTlRmDBFhGrviIjcMxV',
+      img: '/group/5.png',
       projects:
         'monster binty, monster brainy, monster gattooffer, monster guard, monster gum, monster grumpy, monster squinty',
     },
@@ -65,14 +66,14 @@ const page = () => {
       id: 6,
       title: 'KD Bench X Serafini',
       group: 'serafini',
-      img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDRVbUDg8FYI8sxbtc2ngQN4ZeSPwOKkv5yAj',
+      img: '/group/6.png',
       projects: 'serafini',
     },
     {
       id: 7,
       title: 'Monsformer X Blum',
       group: 'monsformer',
-      img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJw4h4udtZQpOq9no3vVs5yPKXR8gEYuikGUw',
+      img: '/group/7.png',
       projects: 'monsformer',
     },
   ];
@@ -85,7 +86,14 @@ const page = () => {
 
         <main className='flex-grow grid grid-cols-2 md:grid-cols-4 pt-10 gap-4 p-4 md:mx-14 my-10 md:my-6 '>
           {products.map(({ title, img, group, id }) => (
-            <SubProductCard key={id} title={title} img={img} id={group} />
+            <SubProductCard
+              key={id}
+              title={title}
+              img={img}
+              id={group}
+              hoveredIndex={hoveredIndex}
+              setHoveredIndex={setHoveredIndex}
+            />
           ))}
         </main>
         <Footer />

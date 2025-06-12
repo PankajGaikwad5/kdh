@@ -5,7 +5,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 // import { useRouter } from 'next/navigation';
 
-const ProductCard = ({ title, img, id }) => {
+const ProductCard = ({ title, img, id, hoveredIndex, setHoveredIndex }) => {
   // const router = useRouter();
 
   const navigateTo = () => {
@@ -18,13 +18,20 @@ const ProductCard = ({ title, img, id }) => {
     <Link href={`/productdetails/${id}`}>
       <div
         // onClick={navigateTo}
-        className='cursor-pointer transform transition duration-300 hover:scale-[1.02] hover:z-20'
+        onMouseEnter={() => setHoveredIndex(id)}
+        onMouseLeave={() => setHoveredIndex(null)}
+        className={`cursor-pointer transform transition duration-300 hover:scale-[1.02] hover:z-20
+                ${
+                  hoveredIndex !== null && hoveredIndex !== id
+                    ? 'blur-[2px]'
+                    : 'blur-0'
+                }`}
         // /assets/products/1738927177034-Slide1.JPG
       >
         <div className='p-0'>
           <div className='duration-300'>
             <div className='w-full mt-4'>
-              <div className='w-full aspect-auto relative overflow-hidden flex justify-center items-center rounded-lg'>
+              <div className='w-full aspect-auto relative  flex justify-center items-center rounded-lg'>
                 {isLoading && (
                   <div className='absolute inset-0 bg-gray-200 dark:bg-gray-700 animate-pulse'></div>
                 )}
