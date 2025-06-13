@@ -336,14 +336,14 @@ const ProductDetailsPage = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className='p-10 flex flex-col justify-between bg-black z-10'
+          className='p-4 md:p-10 flex flex-col justify-between bg-black z-10'
         >
           <div>
             <h1 className='text-4xl md:text-4xl mb-6 capitalize font-light tracking-tight'>
               {product.title}
             </h1>
             <div className='flex flex-col gap-4 text-sm'>
-              <div className='grid grid-cols-3 '>
+              <div className='grid grid-cols-2 md:grid-cols-3 gap-2'>
                 <div>
                   <h4 className='font-semibold text-gray-400 text-xs mb-1'>
                     Dimension
@@ -380,17 +380,17 @@ const ProductDetailsPage = () => {
                 {product.description}
               </div>
 
-              <div className='mt-10 flex gap-4'>
+              <div className='mt-10 flex gap-4 flex-col md:flex-row'>
                 <a href={product.pdf} target='_blank' rel='noopener noreferrer'>
                   <Button
                     variant='outline'
-                    className='px-6 py-2 border border-white text-black rounded-none hover:bg-white/80'
+                    className='px-6 py-2 border w-full md:w-auto border-white text-black rounded-none hover:bg-white/80'
                   >
                     Download Spec Sheet
                   </Button>
                 </a>
                 <Button
-                  className='px-6 py-2 border border-white bg-transparent text-white rounded-none hover:bg-white hover:text-black'
+                  className='px-6 py-2 border w-full md:w-auto border-white bg-transparent text-white rounded-none hover:bg-white hover:text-black'
                   onClick={() => setShowModal(true)}
                 >
                   Enquire
