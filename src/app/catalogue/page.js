@@ -49,16 +49,11 @@ const page = () => {
                 <h1 className='font-bold tracking-widest'>kd x serafini</h1>
                 <span>
                   <a
-                    href=''
-                    onClick={(event) =>
-                      handleDownload(
-                        event,
-                        'https://res.cloudinary.com/dfpxvbkwt/image/upload/v1738908580/KD_X_Serafini_Catalogue_aeieux.pdf'
-                      )
-                    }
+                    target='_blank'
+                    href='https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKURhBZLLE1fzw0AFxNe2UEaubVBY53GTv7kqpl'
                     className=' text-blue-600 text-start rounded hover:text-blue-900 transition-all duration-300'
                   >
-                    download catalogue pdf
+                    view catalogue pdf
                   </a>
                 </span>
               </div>
@@ -67,16 +62,17 @@ const page = () => {
                 <h1 className='font-bold tracking-widest'>matilda</h1>
                 <span>
                   <a
-                    href=''
-                    onClick={(event) =>
-                      handleDownload(
-                        event,
-                        'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUczc3ZpOzfU0v5mZaj1HWcAwKFCxykrE2NGSI'
-                      )
-                    }
+                    target='_blank'
+                    href='https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUczc3ZpOzfU0v5mZaj1HWcAwKFCxykrE2NGSI'
+                    // onClick={(event) =>
+                    //   handleDownload(
+                    //     event,
+                    //     'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUczc3ZpOzfU0v5mZaj1HWcAwKFCxykrE2NGSI'
+                    //   )
+                    // }
                     className='text-blue-600 hover:text-blue-900 transition-all duration-300'
                   >
-                    download catalogue pdf
+                    view catalogue pdf
                   </a>
                 </span>
               </div>
@@ -85,16 +81,17 @@ const page = () => {
                 <h1 className='font-bold tracking-widest'>monster 1.0</h1>
                 <span>
                   <a
-                    href=''
-                    onClick={(event) =>
-                      handleDownload(
-                        event,
-                        'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUne69xubYcoeRKumWaHxyTj5q3bfMXB6INAUz'
-                      )
-                    }
+                    target='_blank'
+                    href='https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUne69xubYcoeRKumWaHxyTj5q3bfMXB6INAUz'
+                    // onClick={(event) =>
+                    //   handleDownload(
+                    //     event,
+                    //     'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUne69xubYcoeRKumWaHxyTj5q3bfMXB6INAUz'
+                    //   )
+                    // }
                     className='text-blue-600 hover:text-blue-900 transition-all duration-300'
                   >
-                    download catalogue pdf
+                    view catalogue pdf
                   </a>
                 </span>
               </div>
@@ -103,16 +100,17 @@ const page = () => {
                 <h1 className='font-bold tracking-widest'>monster2.0</h1>
                 <span>
                   <a
-                    href=''
-                    onClick={(event) =>
-                      handleDownload(
-                        event,
-                        'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQsSTArCgpKiS14YXmU2JDcwG0vBsCL6dWNyP'
-                      )
-                    }
+                    target='_blank'
+                    href='https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQsSTArCgpKiS14YXmU2JDcwG0vBsCL6dWNyP'
+                    // onClick={(event) =>
+                    //   handleDownload(
+                    //     event,
+                    //     'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQsSTArCgpKiS14YXmU2JDcwG0vBsCL6dWNyP'
+                    //   )
+                    // }
                     className='text-blue-600 hover:text-blue-900 transition-all duration-300'
                   >
-                    download catalogue pdf
+                    view catalogue pdf
                   </a>
                 </span>
               </div>
