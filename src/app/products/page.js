@@ -76,6 +76,20 @@ const page = () => {
       img: '/group/7.png',
       projects: 'monsformer',
     },
+    {
+      id: 8,
+      title: 'EA Bar',
+      group: 'EA_Bar',
+      img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUXh1MqVLaynKVcYuZHCDm1IeJRfoT4vBxS8i0',
+      projects: 'EA_Bar',
+    },
+    {
+      id: 9,
+      title: 'Conference Monster Table',
+      group: 'conference_monster',
+      img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSbVP7zAKnraNxkI5vbez6dT2q8M0osBfR9At',
+      projects: 'conference_monster',
+    },
   ];
 
   return (

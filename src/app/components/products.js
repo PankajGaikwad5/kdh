@@ -4220,4 +4220,294 @@ export const products = [
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUuEphv8VvD2FOkC3NsiU7yPRWb18aeZThVzGr',
     __v: 0,
   },
+  {
+    _id: {
+      $oid: '67a5eef74da9b29cd0f10be221',
+    },
+    title: 'KD Desk',
+    group: 'matilda',
+    material: 'Marble',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9zMRyt2frimQ5LhFdjbpOHNPEsav1o2Ac0Dz',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWsDqoIrSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUY7gTSdnVM7iftKIsUSTJx8haC1mEBkZl4NvR',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8GNUPV64oKUn37W6wsTlRmDBFhGrviIjcMxV',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUEWAilkYFi7GYsQA2my03DTouek5wnIJXgjpV',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
+      },
+    ],
+    description:
+      'This luxurious masterpiece, crafted from pristine white marble, redefines sophistication and transforms any space into a sanctuary of grandeur.',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUz8wrsAIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5eef74da9b29cd0f10be2219',
+    },
+    title: 'Office Mirror',
+    group: 'matilda',
+    material: 'Marble',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9zMRyt2frimQ5LhFdjbpOHNPEsav1o2Ac0Dz',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUoSJQki3Pd43VNTXj27bgOZneCUs9aBiY5x8v',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUwtUNjegi1vXhd2AYtoGrDFy59EOsBzTnN6eW',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8Pgq0764oKUn37W6wsTlRmDBFhGrviIjcMxV',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQBXwDhCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUyQPCE7jvoD5bj92PLzxBdul6nT8GrEAS30eN',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
+      },
+    ],
+    description:
+      'This luxurious masterpiece, crafted from pristine white marble, redefines sophistication and transforms any space into a sanctuary of grandeur.',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUz8wrsAIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5eef74da9b29cd0f10be22191',
+    },
+    title: 'Wash Basin',
+    group: 'matilda',
+    material: 'Marble',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9zMRyt2frimQ5LhFdjbpOHNPEsav1o2Ac0Dz',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUFUgtKtkyvrgRIBMUa1Cwt3nu4PEZOTo0XLQD',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9jounJ2frimQ5LhFdjbpOHNPEsav1o2Ac0Dz',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU0cmKYyhhiHbrpSCkBA8lKn64duFxNeTWLcq5',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKURp0Xm8E1fzw0AFxNe2UEaubVBY53GTv7kqpl',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUB2Mo7c3qeoXrYV82Q6T5Enb4WD1LwdAJjzPk',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQrVNmpCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
+      },
+    ],
+    description:
+      'This luxurious masterpiece, crafted from pristine white marble, redefines sophistication and transforms any space into a sanctuary of grandeur.',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUz8wrsAIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5eef74da9b29cd0f10be221912',
+    },
+    title: 'EA Bar',
+    group: 'EA_Bar',
+    material: 'Marble',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9zMRyt2frimQ5LhFdjbpOHNPEsav1o2Ac0Dz',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUXh1MqVLaynKVcYuZHCDm1IeJRfoT4vBxS8i0',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUMlIpqXXwfQbC4M3ZGkSm6KPAV10HlYU9dinr',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUOHOO2eZXhqs0g964QCxmbwcn2WStleB3MEP5',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUzAmkYrIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUw20WCLgi1vXhd2AYtoGrDFy59EOsBzTnN6eW',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
+      },
+    ],
+    description:
+      'This luxurious masterpiece, crafted from pristine white marble, redefines sophistication and transforms any space into a sanctuary of grandeur.',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUz8wrsAIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '67a5eef74da9b29cd0f10be2219112',
+    },
+    title: 'Conference Monster Table',
+    group: 'conference_monster',
+    material: 'Marble',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9zMRyt2frimQ5LhFdjbpOHNPEsav1o2Ac0Dz',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSbVP7zAKnraNxkI5vbez6dT2q8M0osBfR9At',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAVbLvbJ1oeY2wnF0zQbWX83C4KujdSqt6MUT',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUyB28ZV9jvoD5bj92PLzxBdul6nT8GrEAS30e',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUdNGcauQLipXnNcaZzTWOmKke9BGF7gf2xIhq',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUwBqqfkgi1vXhd2AYtoGrDFy59EOsBzTnN6eW',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
+      },
+    ],
+    description:
+      'This luxurious masterpiece, crafted from pristine white marble, redefines sophistication and transforms any space into a sanctuary of grandeur.',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUz8wrsAIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
+    __v: 0,
+  },
 ];

@@ -287,6 +287,36 @@ export const newImagePaths = [
     group: 'Monster Collectibles',
     productId: '67efa13d38f60435b89ba291',
   },
+  {
+    name: 'KD Desk',
+    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWsDqoIrSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
+    group: 'Matilda',
+    productId: '67a5eef74da9b29cd0f10be221',
+  },
+  {
+    name: 'Office Mirror',
+    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUoSJQki3Pd43VNTXj27bgOZneCUs9aBiY5x8v',
+    group: 'Matilda',
+    productId: '67a5eef74da9b29cd0f10be2219',
+  },
+  {
+    name: 'Wash Basin',
+    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUFUgtKtkyvrgRIBMUa1Cwt3nu4PEZOTo0XLQD',
+    group: 'Matilda',
+    productId: '67a5eef74da9b29cd0f10be22191',
+  },
+  {
+    name: 'EA Bar',
+    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUXh1MqVLaynKVcYuZHCDm1IeJRfoT4vBxS8i0',
+    group: 'EA_Bar',
+    productId: '67a5eef74da9b29cd0f10be221912',
+  },
+  {
+    name: 'Conference Monster Table',
+    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSbVP7zAKnraNxkI5vbez6dT2q8M0osBfR9At',
+    group: 'conference_monster',
+    productId: '67a5eef74da9b29cd0f10be2219112',
+  },
 
   ...Array(5)
     .fill([
@@ -577,6 +607,24 @@ export const newImagePaths = [
         path: '/assets/humpty.png',
         group: 'Monster Collectibles',
         productId: '67efa13d38f60435b89ba291',
+      },
+      {
+        name: 'KD Desk',
+        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWsDqoIrSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
+        group: 'Matilda',
+        productId: '67a5eef74da9b29cd0f10be221',
+      },
+      {
+        name: 'Office Mirror',
+        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUoSJQki3Pd43VNTXj27bgOZneCUs9aBiY5x8v',
+        group: 'Matilda',
+        productId: '67a5eef74da9b29cd0f10be2219',
+      },
+      {
+        name: 'Wash Basin',
+        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUFUgtKtkyvrgRIBMUa1Cwt3nu4PEZOTo0XLQD',
+        group: 'Matilda',
+        productId: '67a5eef74da9b29cd0f10be22191',
       },
     ])
     .flat(),
