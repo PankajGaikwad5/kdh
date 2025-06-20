@@ -4263,8 +4263,7 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
       },
     ],
-    description:
-      'This luxurious masterpiece, crafted from pristine white marble, redefines sophistication and transforms any space into a sanctuary of grandeur.',
+    description: 'To be edited.',
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUz8wrsAIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
     __v: 0,
@@ -4321,8 +4320,7 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
       },
     ],
-    description:
-      'This luxurious masterpiece, crafted from pristine white marble, redefines sophistication and transforms any space into a sanctuary of grandeur.',
+    description: 'To be edited.',
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUz8wrsAIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
     __v: 0,
@@ -4388,8 +4386,7 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
       },
     ],
-    description:
-      'This luxurious masterpiece, crafted from pristine white marble, redefines sophistication and transforms any space into a sanctuary of grandeur.',
+    description: 'To be edited.',
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUz8wrsAIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
     __v: 0,
@@ -4446,8 +4443,7 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
       },
     ],
-    description:
-      'This luxurious masterpiece, crafted from pristine white marble, redefines sophistication and transforms any space into a sanctuary of grandeur.',
+    description: 'To be edited.',
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUz8wrsAIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
     __v: 0,
@@ -4504,8 +4500,7 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
       },
     ],
-    description:
-      'This luxurious masterpiece, crafted from pristine white marble, redefines sophistication and transforms any space into a sanctuary of grandeur.',
+    description: 'To be edited.',
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUz8wrsAIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
     __v: 0,
