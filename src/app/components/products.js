@@ -4227,7 +4227,7 @@ export const products = [
     title: 'KD Desk',
     group: 'matilda',
     material: 'Marble',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9zMRyt2frimQ5LhFdjbpOHNPEsav1o2Ac0Dz',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUlmDkYQ9DZL6up3G75dgCY2rJjaQFwifBAEky',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -4265,7 +4265,7 @@ export const products = [
     ],
     description: 'To be edited.',
     dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUz8wrsAIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUlmDkYQ9DZL6up3G75dgCY2rJjaQFwifBAEky',
     __v: 0,
   },
   {
@@ -4275,7 +4275,7 @@ export const products = [
     title: 'Office Mirror',
     group: 'matilda',
     material: 'Marble',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9zMRyt2frimQ5LhFdjbpOHNPEsav1o2Ac0Dz',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSdXB8mYAKnraNxkI5vbez6dT2q8M0osBfR9A',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -4322,7 +4322,7 @@ export const products = [
     ],
     description: 'To be edited.',
     dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUz8wrsAIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSdXB8mYAKnraNxkI5vbez6dT2q8M0osBfR9A',
     __v: 0,
   },
   {
@@ -4332,7 +4332,7 @@ export const products = [
     title: 'Wash Basin',
     group: 'matilda',
     material: 'Marble',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9zMRyt2frimQ5LhFdjbpOHNPEsav1o2Ac0Dz',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU1V3L8TmcNbALVg2tCIRm5fi0793BwZH8PYyx',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -4388,7 +4388,7 @@ export const products = [
     ],
     description: 'To be edited.',
     dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUz8wrsAIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU1V3L8TmcNbALVg2tCIRm5fi0793BwZH8PYyx',
     __v: 0,
   },
   {
@@ -4398,7 +4398,7 @@ export const products = [
     title: 'EA Bar',
     group: 'EA_Bar',
     material: 'Marble',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9zMRyt2frimQ5LhFdjbpOHNPEsav1o2Ac0Dz',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUyXBkZujvoD5bj92PLzxBdul6nT8GrEAS30eN',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -4445,7 +4445,7 @@ export const products = [
     ],
     description: 'To be edited.',
     dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUz8wrsAIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUyXBkZujvoD5bj92PLzxBdul6nT8GrEAS30eN',
     __v: 0,
   },
   {
@@ -4455,7 +4455,7 @@ export const products = [
     title: 'Conference Monster Table',
     group: 'conference_monster',
     material: 'Marble',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9zMRyt2frimQ5LhFdjbpOHNPEsav1o2Ac0Dz',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUUvvIwiABY1Vx48e2bhPHIZJqsnBOSArl5D3M',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -4502,7 +4502,7 @@ export const products = [
     ],
     description: 'To be edited.',
     dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUz8wrsAIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUUvvIwiABY1Vx48e2bhPHIZJqsnBOSArl5D3M',
     __v: 0,
   },
 ];
