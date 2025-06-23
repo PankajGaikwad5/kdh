@@ -4396,7 +4396,7 @@ export const products = [
       $oid: '67a5eef74da9b29cd0f10be221912',
     },
     title: 'EA Bar',
-    group: 'matilda-2025',
+    group: 'friends',
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUyXBkZujvoD5bj92PLzxBdul6nT8GrEAS30eN',
     images: [

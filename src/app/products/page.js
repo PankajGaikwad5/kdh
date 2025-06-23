@@ -88,7 +88,7 @@ const page = () => {
       id: 8,
       title: 'Matilda 2025',
       group: 'matilda-2025',
-      img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUXh1MqVLaynKVcYuZHCDm1IeJRfoT4vBxS8i0',
+      img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWsDqoIrSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
       projects: 'matilda-2025',
     },
     // {
