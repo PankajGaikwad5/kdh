@@ -64,7 +64,7 @@ const page = () => {
     },
     {
       id: 6,
-      title: 'KD Bench X Serafini',
+      title: 'KD X Serafini',
       group: 'serafini',
       img: '/group/6.png',
       projects: 'serafini',
