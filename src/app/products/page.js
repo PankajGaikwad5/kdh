@@ -48,8 +48,16 @@ const page = () => {
     },
     {
       id: 4,
-      title: 'Matilda Collection',
-      group: 'matilda',
+      title: 'Matilda 2024',
+      group: 'matilda-2024',
+      img: '/group/4.png',
+      projects:
+        'table lamp, library, partition screen, console 1, console 2, coffee table, center table 1, center table 2, basin, flower vase, planter, side table, u table, bathtub, chair, bench floor lamp',
+    },
+    {
+      id: 11,
+      title: 'Matilda 2025',
+      group: 'matilda-2025',
       img: '/group/4.png',
       projects:
         'table lamp, library, partition screen, console 1, console 2, coffee table, center table 1, center table 2, basin, flower vase, planter, side table, u table, bathtub, chair, bench floor lamp',
@@ -78,17 +86,24 @@ const page = () => {
     },
     {
       id: 8,
-      title: 'EA Bar',
-      group: 'EA_Bar',
+      title: 'Matilda 2025',
+      group: 'matilda-2025',
       img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUXh1MqVLaynKVcYuZHCDm1IeJRfoT4vBxS8i0',
-      projects: 'EA_Bar',
+      projects: 'matilda-2025',
     },
+    // {
+    //   id: 9,
+    //   title: 'Conference Monster Table',
+    //   group: 'conference_monster',
+    //   img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSbVP7zAKnraNxkI5vbez6dT2q8M0osBfR9At',
+    //   projects: 'conference_monster',
+    // },
     {
-      id: 9,
-      title: 'Conference Monster Table',
-      group: 'conference_monster',
-      img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSbVP7zAKnraNxkI5vbez6dT2q8M0osBfR9At',
-      projects: 'conference_monster',
+      id: 10,
+      title: 'For Friends ',
+      group: 'friends',
+      img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUw9Nbw65gi1vXhd2AYtoGrDFy59EOsBzTnN6e',
+      projects: 'friends',
     },
   ];
 

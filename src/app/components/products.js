@@ -4,7 +4,7 @@ export const products = [
       $oid: '67a5ec494da9b29cd0f10b87',
     },
     title: 'partition screen',
-    group: 'matilda',
+    group: 'matilda-2024',
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUMm9LEowfQbC4M3ZGkSm6KPAV10HlYU9dinrX',
     images: [
@@ -276,7 +276,7 @@ export const products = [
       $oid: '67a5ece24da9b29cd0f10bac',
     },
     title: 'center table 1',
-    group: 'matilda',
+    group: 'matilda-2024',
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJ5OjuodtZQpOq9no3vVs5yPKXR8gEYuikGUw',
     images: [
@@ -364,7 +364,7 @@ export const products = [
       $oid: '67a5ef304da9b29cd0f10bea',
     },
     title: 'u-table',
-    group: 'matilda',
+    group: 'matilda-2024',
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULb6xVhDqbauUfVsg4JYrj86xOSilFe5PBo3m',
     images: [
@@ -686,7 +686,7 @@ export const products = [
       $oid: '67a5ef4c4da9b29cd0f10bf4',
     },
     title: 'bathtub',
-    group: 'matilda',
+    group: 'matilda-2024',
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU32sYLEvb7L0Z2G4mkrAFzE8uQjRclW5px9hX',
     images: [
@@ -804,7 +804,7 @@ export const products = [
       $oid: '67a5ef664da9b29cd0f10bfb',
     },
     title: 'chair',
-    group: 'matilda',
+    group: 'matilda-2024',
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUfRZ9Y2FreUiploh17Cx6dSMgtF0NPTW8vq2I',
     images: [
@@ -967,7 +967,7 @@ export const products = [
       $oid: '67a5ecf94da9b29cd0f10bb6',
     },
     title: 'center table 2',
-    group: 'matilda',
+    group: 'matilda-2024',
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUEbuppDLYFi7GYsQA2my03DTouek5wnIJXgjp',
     images: [
@@ -1159,7 +1159,7 @@ export const products = [
       $oid: '67a5ec804da9b29cd0f10b98',
     },
     title: 'console 2',
-    group: 'matilda',
+    group: 'matilda-2024',
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUC8rBCeX0XaKgNMT1QEmen25RAwc7Sk4UxoJF',
     images: [
@@ -1426,7 +1426,7 @@ export const products = [
     title: 'monster squinty',
     group: 'monster_collectibles',
     material: 'Brass and Glass',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWMVvzsrSVLpqPbsdCUAMXZB0lT2vrWw4RhOud',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWMVvzsrSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
     images: [
       {
         fileName: '1738930260208-Slide1.JPG',
@@ -1624,7 +1624,7 @@ export const products = [
       $oid: '67a5ec684da9b29cd0f10b8e',
     },
     title: 'console 1',
-    group: 'matilda',
+    group: 'matilda-2024',
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUFE5IdEyvrgRIBMUa1Cwt3nu4PEZOTo0XLQDf',
     images: [
@@ -1704,7 +1704,7 @@ export const products = [
       $oid: '67bc49a855b639fb58349ec7',
     },
     title: 'Bench 1',
-    group: 'matilda',
+    group: 'matilda-2024',
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnw5EEDbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
     images: [
@@ -1934,7 +1934,7 @@ export const products = [
       $oid: '67a5ecc44da9b29cd0f10ba2',
     },
     title: 'coffee table',
-    group: 'matilda',
+    group: 'matilda-2024',
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUEohaJEYFi7GYsQA2my03DTouek5wnIJXgjpV',
     images: [
@@ -2006,7 +2006,7 @@ export const products = [
       $oid: '67a5ef974da9b29cd0f10c0a',
     },
     title: 'floor lamp',
-    group: 'matilda',
+    group: 'matilda-2024',
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUzOlagRIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
     images: [
@@ -2115,7 +2115,7 @@ export const products = [
       $oid: '67a5ec084da9b29cd0f10b7e',
     },
     title: 'library',
-    group: 'matilda',
+    group: 'matilda-2024',
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUYY6moTnVM7iftKIsUSTJx8haC1mEBkZl4NvR',
     images: [
@@ -2471,7 +2471,7 @@ export const products = [
       $oid: '67a5ef7f4da9b29cd0f10c05',
     },
     title: 'bench 2',
-    group: 'matilda',
+    group: 'matilda-2024',
     material: 'Marble',
     pdf: '',
     images: [
@@ -2643,7 +2643,7 @@ export const products = [
       $oid: '67a5eedf4da9b29cd0f10bd0',
     },
     title: 'planter',
-    group: 'matilda',
+    group: 'matilda-2024',
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8OsyEi64oKUn37W6wsTlRmDBFhGrviIjcMxV',
     images: [
@@ -2823,7 +2823,7 @@ export const products = [
       $oid: '67ef850f629882967f3fbb3d',
     },
     title: 'Dining Table',
-    group: 'matilda',
+    group: 'matilda-2024',
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUgrObNwlLdSN8CY5rJGOAxcqQpM9fjoh4etX6',
     images: [
@@ -2906,7 +2906,7 @@ export const products = [
       $oid: '67a5ed9e4da9b29cd0f10bc6',
     },
     title: 'flower vase',
-    group: 'matilda',
+    group: 'matilda-2024',
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUOKfQovWZXhqs0g964QCxmbwcn2WStleB3MEP',
     images: [
@@ -3102,7 +3102,7 @@ export const products = [
       $oid: '67a5ed3c4da9b29cd0f10bbf',
     },
     title: 'basin',
-    group: 'matilda',
+    group: 'matilda-2024',
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUu6KK8TVvD2FOkC3NsiU7yPRWb18aeZThVzGr',
     images: [
@@ -3817,7 +3817,7 @@ export const products = [
     _id: {
       $oid: '67a5ebf14da9b29cd0f10b77',
     },
-    group: 'matilda',
+    group: 'matilda-2024',
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUykphDsjvoD5bj92PLzxBdul6nT8GrEAS30eN',
     title: 'table lamp',
@@ -3982,7 +3982,7 @@ export const products = [
       $oid: '67a5eef74da9b29cd0f10be1',
     },
     title: 'side table',
-    group: 'matilda',
+    group: 'matilda-2024',
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9zMRyt2frimQ5LhFdjbpOHNPEsav1o2Ac0Dz',
     images: [
@@ -4225,7 +4225,7 @@ export const products = [
       $oid: '67a5eef74da9b29cd0f10be221',
     },
     title: 'KD Desk',
-    group: 'matilda',
+    group: 'matilda-2025',
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUlmDkYQ9DZL6up3G75dgCY2rJjaQFwifBAEky',
     images: [
@@ -4273,7 +4273,7 @@ export const products = [
       $oid: '67a5eef74da9b29cd0f10be2219',
     },
     title: 'Office Mirror',
-    group: 'matilda',
+    group: 'matilda-2025',
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSdXB8mYAKnraNxkI5vbez6dT2q8M0osBfR9A',
     images: [
@@ -4330,7 +4330,7 @@ export const products = [
       $oid: '67a5eef74da9b29cd0f10be22191',
     },
     title: 'Wash Basin',
-    group: 'matilda',
+    group: 'matilda-2025',
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU1V3L8TmcNbALVg2tCIRm5fi0793BwZH8PYyx',
     images: [
@@ -4396,7 +4396,7 @@ export const products = [
       $oid: '67a5eef74da9b29cd0f10be221912',
     },
     title: 'EA Bar',
-    group: 'EA_Bar',
+    group: 'matilda-2025',
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUyXBkZujvoD5bj92PLzxBdul6nT8GrEAS30eN',
     images: [
@@ -4453,7 +4453,7 @@ export const products = [
       $oid: '67a5eef74da9b29cd0f10be2219112',
     },
     title: 'Conference Monster Table',
-    group: 'conference_monster',
+    group: 'matilda-2024',
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUUvvIwiABY1Vx48e2bhPHIZJqsnBOSArl5D3M',
     images: [
@@ -4555,6 +4555,37 @@ export const products = [
           $oid: '67a5eef74da9b29cd0f10be2',
         },
         thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
+      },
+    ],
+    description: 'To be edited.',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHr4HFVSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: 'constellation-mirror',
+    },
+    title: 'Constelletion Mirror',
+    group: 'friends',
+    material: 'Mirror',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCEKH3sdtZQpOq9no3vVs5yPKXR8gEYuikGU',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUw9Nbw65gi1vXhd2AYtoGrDFy59EOsBzTnN6e',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULCssOhDqbauUfVsg4JYrj86xOSilFe5PBo3m',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
       },
     ],
     description: 'To be edited.',

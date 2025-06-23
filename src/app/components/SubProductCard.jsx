@@ -18,7 +18,9 @@ const SubProductCard = ({ title, img, id, hoveredIndex, setHoveredIndex }) => {
         onMouseLeave={() => setHoveredIndex(null)}
         // onClick={navigateTo}
         className={`cursor-pointer  hover:scale-[1.02] transform transition duration-300 ${
-          hoveredIndex !== null && hoveredIndex !== id ? 'blur-[2px]' : 'blur-0'
+          hoveredIndex !== null && hoveredIndex !== id
+            ? 'blur-[2px]'
+            : 'blur-0 z-40'
         }`}
       >
         <div className='p-0'>
