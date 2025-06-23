@@ -31,14 +31,18 @@ const Footer = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <div className='flex flex-col bg-black text-sm font-semibold relative z-10'>
+    <div className='flex flex-col bg-black text-sm font-semibold relative z-10 xl:text-3xl'>
       <div className='py-2 flex-col w-full flex md:flex-row md:justify-evenly items-center space-x-1 border-t'>
         <div className='flex py-4 justify-center items-center px-4'>
           <Link href='/'>
-            <img src='/assets/kdhlogo3.png' alt='' className='w-48 md:w-40' />
+            <img
+              src='/assets/kdhlogo3.png'
+              alt=''
+              className='w-48 md:w-40 xl:w-96'
+            />
           </Link>
         </div>
-        <div className='flex flex-col md:flex-row text-white font-medium uppercase tracking-widest text-center md:space-x-4 space-y-1 md:space-y-0 md:-ml-44'>
+        <div className='flex flex-col md:flex-row text-white font-medium uppercase tracking-widest text-center md:space-x-4 space-y-1 md:space-y-0 md:-ml-44 '>
           {navLinks.map((link, index) => (
             <Link
               key={link.href}
@@ -58,7 +62,7 @@ const Footer = () => {
               {link.label}
             </Link>
           ))}
-          <div className='my-4 md:my-0 flex gap-4 items-center py-4 md:py-0 justify-center'>
+          <div className='my-4 md:my-0 flex gap-4 items-center py-4 md:py-0 justify-center xl:text-3xl'>
             <Link
               href='https://www.instagram.com/karandesaihome/'
               target='_blank'

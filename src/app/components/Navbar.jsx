@@ -131,7 +131,7 @@ const Navbar = ({ isBgBlack, arrow, escape }) => {
         }
       >
         <ul
-          className={`flex flex-col font-semibold text-sm 2xl:text-lg ${popins.className} `}
+          className={`flex flex-col font-semibold text-sm 2xl:text-3xl ${popins.className} `}
         >
           <Link
             href='/'
