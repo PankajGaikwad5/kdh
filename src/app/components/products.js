@@ -4505,4 +4505,61 @@ export const products = [
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUUvvIwiABY1Vx48e2bhPHIZJqsnBOSArl5D3M',
     __v: 0,
   },
+  {
+    _id: {
+      $oid: 'samaveta-console',
+    },
+    title: 'Samaveta Console',
+    group: 'serafini',
+    material: 'Marble',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHr4HFVSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPs2jLOHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUzlGNrAIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUowsRYTPd43VNTXj27bgOZneCUs9aBiY5x8vw',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUmJqgJAMgck96WhX7TGdaslL58YeZAnUDbwov',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUt9CiSk5Bu7NntcLbi8k4ldwr62VXy3PODz9j',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
+      },
+    ],
+    description: 'To be edited.',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHr4HFVSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
+    __v: 0,
+  },
 ];

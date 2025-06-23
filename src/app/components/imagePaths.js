@@ -317,6 +317,12 @@ export const newImagePaths = [
     group: 'conference_monster',
     productId: '67a5eef74da9b29cd0f10be2219112',
   },
+  {
+    name: 'Samaveta Console',
+    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPs2jLOHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
+    group: 'serafini',
+    productId: 'samaveta-console',
+  },
 
   ...Array(5)
     .fill([
@@ -625,6 +631,12 @@ export const newImagePaths = [
         path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUFUgtKtkyvrgRIBMUa1Cwt3nu4PEZOTo0XLQD',
         group: 'Matilda',
         productId: '67a5eef74da9b29cd0f10be22191',
+      },
+      {
+        name: 'Samaveta Console',
+        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPs2jLOHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
+        group: 'serafini',
+        productId: 'samaveta-console',
       },
     ])
     .flat(),
