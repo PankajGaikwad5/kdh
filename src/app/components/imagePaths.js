@@ -254,7 +254,7 @@ export const newImagePaths = [
   {
     name: 'Samaveta Bench',
     path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDRVbUDg8FYI8sxbtc2ngQN4ZeSPwOKkv5yAj',
-    group: 'Serafini X KD Bench',
+    group: 'KD X Serafini',
     productId: '67a5fa124da9b29cd0f10c36',
   },
   {
@@ -320,7 +320,7 @@ export const newImagePaths = [
   {
     name: 'Samaveta Console',
     path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPs2jLOHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
-    group: 'serafini',
+    group: 'KD X Serafini',
     productId: 'samaveta-console',
   },
 
@@ -581,7 +581,7 @@ export const newImagePaths = [
       {
         name: 'Samaveta Bench',
         path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDRVbUDg8FYI8sxbtc2ngQN4ZeSPwOKkv5yAj',
-        group: 'Serafini X KD Bench',
+        group: 'KD X Serafini',
         productId: '67a5fa124da9b29cd0f10c36',
       },
       {
@@ -635,7 +635,7 @@ export const newImagePaths = [
       {
         name: 'Samaveta Console',
         path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPs2jLOHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
-        group: 'serafini',
+        group: 'KD X Serafini',
         productId: 'samaveta-console',
       },
     ])
