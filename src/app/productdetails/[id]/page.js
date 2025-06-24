@@ -232,7 +232,7 @@ const ProductDetailsPage = () => {
         </button>
       </header>
 
-      <div className='grid md:grid-cols-2 pt-20'>
+      <div className='grid md:grid-cols-2 pt-14'>
         <section className='relative p-4 flex items-center justify-center bg-black'>
           {product.images?.length > 0 && (
             <div className='relative w-full h-[80vh] overflow-hidden rounded-lg '>
@@ -336,13 +336,13 @@ const ProductDetailsPage = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className='p-4 md:p-10 flex flex-col justify-between bg-black z-10'
+          className='p-4 md:p-10 flex flex-col 2xl:flex-row 2xl:mt-20 justify-between 2xl:items-center bg-black z-10'
         >
-          <div>
-            <h1 className='text-4xl md:text-4xl 2xl:text-6xl mb-6 capitalize font-light tracking-tight'>
+          <div className=''>
+            <h1 className='text-4xl md:text-4xl 2xl:text-6xl 2xl:mb-20 mb-6 capitalize font-light tracking-tight '>
               {product.title}
             </h1>
-            <div className='flex flex-col gap-4 text-sm'>
+            <div className='flex flex-col gap-4 text-sm 2xl:space-y-20'>
               <div className='grid grid-cols-2 md:grid-cols-3 gap-2'>
                 <div>
                   <h4 className='font-semibold text-gray-400 text-xs  2xl:text-3xl mb-1'>
@@ -376,7 +376,7 @@ const ProductDetailsPage = () => {
                 </div>
               </div>
 
-              <div className='mt-6 border-t border-gray-700 pt-4 text-sm 2xl:text-2xl text-white font-light whitespace-pre-line leading-relaxed'>
+              <div className='mt-6 border-t border-gray-700 pt-4 text-sm 2xl:text-3xl text-white font-light whitespace-pre-line leading-relaxed'>
                 {product.description}
               </div>
 
