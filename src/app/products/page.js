@@ -34,14 +34,14 @@ const page = () => {
     },
     {
       id: 2,
-      title: 'Monster 2.0 Collection',
+      title: 'Monster 2.0 X TopBrewer X Bharat Flooring',
       group: 'monster_2.0',
       img: '/group/2.png',
       projects: 'gattoo x top brewer, yoda',
     },
     {
       id: 1,
-      title: 'Monster 1.0 Collection',
+      title: 'Monster 1.0 X The Quarry',
       group: 'monster_1.0',
       img: '/group/3.png',
       projects: 'monster basin, monster bathtub, monster console',
@@ -72,7 +72,7 @@ const page = () => {
     },
     {
       id: 5,
-      title: 'Monster Collectibles',
+      title: 'Monster Collectibles X Arjun Rathi',
       group: 'monster_collectibles',
       img: '/group/5.png',
       projects:
