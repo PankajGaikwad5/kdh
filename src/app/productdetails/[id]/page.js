@@ -21,6 +21,7 @@ import {
 import { Input } from '../../components/ui/input';
 import { Textarea } from '../../components/ui/textarea';
 import { products } from '@/app/components/products';
+import ThumbnailGrid from '@/app/components/ThumbnailGrid';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -47,6 +48,19 @@ const ProductDetailsPage = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [loadedImages, setLoadedImages] = useState(new Set());
   const MotionImage = motion(Image);
+  const [showThumbnailGrid, setShowThumbnailGrid] = useState(false);
+
+  const handleImageSelect = useCallback(
+    (index) => {
+      setImageLoaded(false);
+      setCurrentIndex(index);
+
+      if (loadedImages.has(product.images[index].filePath)) {
+        setImageLoaded(true);
+      }
+    },
+    [product, loadedImages]
+  );
 
   const form = useForm({
     resolver: zodResolver(formSchema),
@@ -235,7 +249,7 @@ const ProductDetailsPage = () => {
       <div className='grid md:grid-cols-2 pt-14'>
         <section className='relative p-4 flex items-center justify-center bg-black'>
           {product.images?.length > 0 && (
-            <div className='relative w-full h-[80vh] overflow-hidden rounded-lg '>
+            <div className='relative w-full h-[80vh] overflow-hidden rounded-lg'>
               {/* Loading state */}
               {!imageLoaded && (
                 <div className='absolute inset-0 flex items-center justify-center z-10'>
@@ -272,6 +286,15 @@ const ProductDetailsPage = () => {
                 />
               </div>
 
+              {/* Thumbnail Grid Component */}
+              <ThumbnailGrid
+                images={product.images}
+                currentIndex={currentIndex}
+                onImageSelect={handleImageSelect}
+                isOpen={showThumbnailGrid}
+                onToggle={() => setShowThumbnailGrid(!showThumbnailGrid)}
+              />
+
               {/* Navigation buttons */}
               {product.images.length > 1 && (
                 <>
@@ -298,36 +321,6 @@ const ProductDetailsPage = () => {
                   {currentIndex + 1} / {product.images.length}
                 </div>
               )}
-
-              {/* Thumbnail strip for faster navigation */}
-              {/* {product.images.length > 1 && (
-                <div className='absolute bottom-16 left-1/2 -translate-x-1/2 flex gap-2 z-20'>
-                  {product.images.slice(0, 5).map((image, index) => (
-                    <button
-                      key={index}
-                      onClick={() => {
-                        setImageLoaded(loadedImages.has(image.filePath));
-                        setCurrentIndex(index);
-                      }}
-                      className={`w-12 h-12 rounded border-2 overflow-hidden transition-all ${
-                        currentIndex === index
-                          ? 'border-white'
-                          : 'border-gray-600 hover:border-gray-400'
-                      }`}
-                    >
-                      <Image
-                        src={image.thumbnail || image.filePath}
-                        alt=''
-                        width={48}
-                        height={48}
-                        className='object-cover w-full h-full'
-                        quality={30}
-                        loading='eager'
-                      />
-                    </button>
-                  ))}
-                </div>
-              )} */}
             </div>
           )}
         </section>
