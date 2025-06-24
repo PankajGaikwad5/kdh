@@ -4379,6 +4379,85 @@ You’re not organizing a space—you’re curating an experience. For those who
   },
   {
     _id: {
+      $oid: 'monster-library-art-edition',
+    },
+    title: 'Monster Library Art Edition',
+    group: 'monster_3.0',
+    material: 'Burnt Wood',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUeJWNLScFPv1kdbg4tT0YfOS529XxhywHpVoU',
+    images: [
+      {
+        fileName: '1739952294985-Library_1.19.jpg',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWaW2nLrSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
+        _id: {
+          $oid: '67b590a6e03cc2c55c624a59',
+        },
+      },
+      {
+        fileName: '1739952294985-Library_1.19.jpg',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUYVkMrsnVM7iftKIsUSTJx8haC1mEBkZl4NvR',
+        _id: {
+          $oid: '67b590a6e03cc2c55c624a59',
+        },
+      },
+      {
+        fileName: '1739952294985-Library_1.19.jpg',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUzVPs3gIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
+        _id: {
+          $oid: '67b590a6e03cc2c55c624a59',
+        },
+      },
+      {
+        fileName: '1739952294985-Library_1.19.jpg',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUCPVGB8X0XaKgNMT1QEmen25RAwc7Sk4UxoJF',
+        _id: {
+          $oid: '67b590a6e03cc2c55c624a59',
+        },
+      },
+      {
+        fileName: '1739952294985-Library_1.19.jpg',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU0AKjf9hhiHbrpSCkBA8lKn64duFxNeTWLcq5',
+        _id: {
+          $oid: '67b590a6e03cc2c55c624a59',
+        },
+      },
+      {
+        fileName: '1739952294985-Library_1.19.jpg',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU35xZ1bvb7L0Z2G4mkrAFzE8uQjRclW5px9hX',
+        _id: {
+          $oid: '67b590a6e03cc2c55c624a59',
+        },
+        thumbnail: '/assets/products/thumbnails/library1.jpg',
+      },
+      {
+        fileName: '1739952294985-Library_1.19.jpg',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSp6ypoAKnraNxkI5vbez6dT2q8M0osBfR9At',
+        _id: {
+          $oid: '67b590a6e03cc2c55c624a59',
+        },
+        thumbnail: '/assets/products/thumbnails/library2.jpg',
+      },
+    ],
+    description: `This isn’t just a library—it’s a conversation starter. 
+
+The Monster Library breaks the mold with its sculptural chaos and commanding silhouette. 
+It doesn’t just store books—it holds energy, curiosity, and unapologetic attitude. 
+
+Raw, bold, and perfectly imperfect, this piece proves that disorder can be a form of design brilliance. 
+You’re not organizing a space—you’re curating an experience. For those who live by instinct, not instruction—this is your statement shelf.`,
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUuEphv8VvD2FOkC3NsiU7yPRWb18aeZThVzGr',
+    __v: 0,
+  },
+  {
+    _id: {
       $oid: '67a5eef74da9b29cd0f10be221',
     },
     title: 'KD Desk',
