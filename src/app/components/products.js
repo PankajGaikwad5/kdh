@@ -4433,7 +4433,6 @@ You’re not organizing a space—you’re curating an experience. For those who
         _id: {
           $oid: '67b590a6e03cc2c55c624a59',
         },
-        thumbnail: '/assets/products/thumbnails/library1.jpg',
       },
       {
         fileName: '1739952294985-Library_1.19.jpg',
@@ -4442,7 +4441,6 @@ You’re not organizing a space—you’re curating an experience. For those who
         _id: {
           $oid: '67b590a6e03cc2c55c624a59',
         },
-        thumbnail: '/assets/products/thumbnails/library2.jpg',
       },
     ],
     description: `This isn’t just a library—it’s a conversation starter. 
