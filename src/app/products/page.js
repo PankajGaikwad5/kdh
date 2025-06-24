@@ -58,7 +58,7 @@ const page = () => {
       id: 11,
       title: 'Matilda 2025',
       group: 'matilda-2025',
-      img: '/group/4.png',
+      img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWsDqoIrSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
       projects:
         'table lamp, library, partition screen, console 1, console 2, coffee table, center table 1, center table 2, basin, flower vase, planter, side table, u table, bathtub, chair, bench floor lamp',
     },
@@ -84,13 +84,13 @@ const page = () => {
       img: '/group/7.png',
       projects: 'monsformer',
     },
-    {
-      id: 8,
-      title: 'Matilda 2025',
-      group: 'matilda-2025',
-      img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWsDqoIrSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
-      projects: 'matilda-2025',
-    },
+    // {
+    //   id: 8,
+    //   title: 'Matilda 2025',
+    //   group: 'matilda-2025',
+    //   img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWsDqoIrSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
+    //   projects: 'matilda-2025',
+    // },
     // {
     //   id: 9,
     //   title: 'Conference Monster Table',
