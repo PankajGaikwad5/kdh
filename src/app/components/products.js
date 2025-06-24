@@ -81,8 +81,13 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738927177039-Slide5.JPG',
       },
     ],
-    description:
-      'This beautiful marble partition wall is both elegant and well-made.\n\nThis all-white marble work of art redefines luxury with its smooth shapes and stunning crossing pattern.',
+    description: `This isn’t just a divider—it’s a statement in stone. 
+
+The Monster Partition Screen turns solid marble into pure fluidity, sculpted with curves that flow like confidence. 
+Its cutout rhythm and all-white finish bring structure and softness into perfect balance. It doesn’t separate space—it defines it. 
+
+Precision-crafted and impossible to ignore, this piece brings presence, poise, and quiet power. 
+For those who don’t follow the rules—they carve their own.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUOeq1JXZXhqs0g964QCxmbwcn2WStleB3MEP5',
     __v: 0,
@@ -265,8 +270,12 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/bench11.jpg',
       },
     ],
-    description:
-      'A bench that challenges perceptions. Heavy,\nsculpted wood forms the base, while a\ntouch of fur disrupts the expected.\nGrounded yet indulgent, it’s a piece that\nrefuses to be ignored.',
+    description: `This isn’t just a bench—it’s a quiet disruptor. 
+
+Anchored by heavy, sculpted wood and topped with a plush, fur-like form, it blurs the lines between function and statement. 
+Minimal in appearance, maximal in impact. It invites you to sit, but demands you notice. 
+
+Grounded in strength and softened with indulgence, this bench proves that the boldest moves don’t need to shout—they just need to exist.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUdXEaLleQLipXnNcaZzTWOmKke9BGF7gf2xIh',
     __v: 0,
@@ -353,8 +362,12 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738927330516-Slide6.JPG',
       },
     ],
-    description:
-      'This stunning curved-shaped marble the center table is the height of style and skill.\n\nIts sleek design and unique U-pattern in all-white marble make it stand out as a true statement piece in luxurious homes.',
+    description: `This center table isn’t just furniture — it’s a power play in pure marble. 
+
+Featuring a bold U-shaped curve and wrapped in flawless white veining, it’s the kind of piece that anchors a room and owns attention. 
+Designed for those who appreciate dominance in design, every angle speaks precision, confidence, and high-level taste. 
+
+This is Karan Desai at his best — where sculptural form meets unstoppable presence in your living space.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUzrPAA9MIQShtkIwJflF6rAvm7LBdDHgWeNPU',
     __v: 0,
@@ -473,8 +486,15 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738927920707-Slide8.JPG',
       },
     ],
-    description:
-      'Experience the artistry of Karan Desai with this extraordinary U-shaped marble table.\n\nCarved from pure white marble, its graceful curves and meticulous craftsmanship set it apart.',
+    description: `This isn’t just a U-shaped table — it’s a masterstroke in marble. 
+
+Sculpted with flawless precision, its flowing curves bend the rules of traditional design. 
+Sleek, bold, and built from pure white marble, this piece isn’t here to blend in — it’s here to lead. 
+
+Whether in a luxe lounge or a modern workspace, it delivers a sharp mix of sophistication and strength. 
+One glance, and you know — this is the real deal.
+
+`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUltkpqe9DZL6up3G75dgCY2rJjaQFwifBAEky',
     __v: 0,
@@ -575,8 +595,12 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738929642731-Slide4.JPG',
       },
     ],
-    description:
-      "Unleash the extraordinary with the Monster Gattooffer Lamp—a fearless fusion of art and light.\n\nIts bold, spiked silhouette defies tradition, making a statement that transcends function.\n\nMore than just a lamp, it's a sculptural masterpiece that pushes design boundaries, turning any space into a daring expression of style.\n\nReady to make a striking impression?",
+    description: `This isn’t just a basin—it’s a bold move. Sculpted like art, built for impact. 
+
+It turns any bathroom into a conversation starter. Pair it with a sleek bathtub and you’ve got a 
+setup that’s stylish, smart, and seriously impressive. 
+
+Luxury isn’t optional. It’s essential. Own it.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8hOcOm64oKUn37W6wsTlRmDBFhGrviIjcMxV',
     __v: 0,
@@ -675,8 +699,12 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738926030383-5.jpg',
       },
     ],
-    description:
-      "Say hello to a basin that's not just good-looking but also super handy!\n\nIt's like a bathroom superhero.\n\nPair it with a bathtub for a bathroom upgrade that's next level cool! 🛁💫",
+    description: `"This isn’t just a basin—it’s a bold move. Sculpted like art, built for impact. 
+
+It turns any bathroom into a conversation starter. Pair it with a sleek bathtub and you’ve got a 
+setup that’s stylish, smart, and seriously impressive. 
+
+Luxury isn’t optional. It’s essential. Own it."`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUgPpkpBlLdSN8CY5rJGOAxcqQpM9fjoh4etX6',
     __v: 0,
@@ -793,8 +821,15 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738927948150-Slide5.JPG',
       },
     ],
-    description:
-      "Dive into the essence of elegance with Karan Desai's masterpiece—a u-shaped marble bathtub that redefines luxury.\n\nWith its seamless design, dual glass sides, and pristine white marble, this stunning centerpiece transforms any space into a haven of sophistication and grandeur.\n\nMore than just a bathtub, it’s a sculptural marvel.",
+    description: `This isn’t just a bathtub — it’s a statement carved in stone. 
+
+With a bold U-shaped silhouette, dual glass panels, and the cool elegance of white marble, this piece transforms any space into a private 
+penthouse retreat. 
+
+Precision meets presence in a design that’s as commanding as it is calming. It’s not about bathing — it’s about owning the moment. 
+When style meets structure like this, luxury becomes non-negotiable.
+
+`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDWJFkL8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
     __v: 0,
@@ -881,8 +916,13 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738927974901-Slide7.JPG',
       },
     ],
-    description:
-      'a one-of-a-kind marble chair, elegantly sculpted from pure white marble.\n\nCrafted with unparalleled precision, this piece is an artistic marvel that elevates elegance and sophistication to new heights.',
+    description: `Listen closely. This isn’t just a chair—it’s a power move carved from pure white marble. 
+
+Sleek, sculptural, and impossibly elegant, this masterpiece commands attention in any room. 
+It’s not just about sitting—it’s about making a statement. Precision-crafted to perfection, it blends art, design, and status into one jaw-dropping piece. 
+
+You don’t just own it—you showcase it. This is how leaders decorate. 
+One look, and you know—you’ve arrived.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUcFPDsNOzfU0v5mZaj1HWcAwKFCxykrE2NGSI',
     __v: 0,
@@ -956,8 +996,12 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/table6.jpg',
       },
     ],
-    description:
-      'Forget dinner conversations—this table is the\nconversation. A bold fusion of wood and fur, it commands\nattention while inviting connection. Designed for those\nwho host with flair, the Monster Dining Table is where\nluxury meets audacity.',
+    description: `Forget dinner conversations—this table is the conversation. 
+
+Sculpted from rich wood and elevated with fearless design, the Monster Dining Table doesn’t just anchor a room—it defines it. 
+With powerful curves and a presence that commands attention, it invites connection, conversation, and curiosity. 
+
+Designed for those who host with flair, this is where luxury meets audacity, and every gathering becomes a bold expression of style.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnOBMcIbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
     __v: 0,
@@ -1057,8 +1101,13 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738927353306-Slide7.JPG',
       },
     ],
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione a animi ipsum voluptatem, eligendi voluptatibus maxime sit nemo ab, est esse fugiat eveniet. Neque, tenetur incidunt blanditiis ea veritatis maxime. Dolorem, ad odio. Possimus laudantium, neque suscipit cum in blanditiis error illum fuga omnis ab fugit nulla tempore quidem eius.',
+    description: `This center table doesn’t just complete a room — it dominates it. 
+
+With a sculptural cross-shaped form carved from seamless white marble, it’s the perfect fusion of architectural audacity and refined taste. 
+Every angle is engineered to impress, every curve is calculated to stand out. 
+
+Designed by Karan Desai, this piece isn’t just furniture — it’s a power statement in stone. 
+Bold. Balanced. Built for spaces that don’t settle for ordinary.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUE1947WYFi7GYsQA2my03DTouek5wnIJXgjpV',
     __v: 0,
@@ -1148,8 +1197,13 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738926481093-Slide7.JPG',
       },
     ],
-    description:
-      "Ever wished your bathtub could be a work of art?\n\nWell, meet our marble marvel, not your average soak spot! I broke all the rules in India to turn marble into something extraordinary.\n\nPicture this: a gigantic tub, sculpted for two, with a touch of textured leather for that extra 'wow.'\n\nAnd get this, it's not just for the bathroom vibes, imagine it as a fancy outdoor planter, making a statement in any space. Marble has never been this cool!",
+    description: `This isn’t just a bathtub—it’s a marble masterpiece. 
+
+Bold, sculptural, and built for two, it blends textured leather finesse with sheer size and elegance. 
+Designed to impress indoors or out, it doubles as a luxury planter that commands attention. 
+
+It breaks tradition and rewrites the rules. You’re not just buying a tub—you’re making a statement. 
+Because when marble meets vision, the result is nothing short of iconic.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUCdwK2EX0XaKgNMT1QEmen25RAwc7Sk4UxoJF',
     __v: 0,
@@ -1228,8 +1282,13 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738927232491-Slide6.JPG',
       },
     ],
-    description:
-      "Unveiling Karan Desai's exclusive masterpiece: a console with a graceful curve atop and refined center partitions, sculpted from pristine white marble.\n\nThis exquisitely crafted piece is a testament to unmatched precision and artistic brilliance, redefining elegance and sophistication.",
+    description: `This is more than a center table — it’s a statement of dominance, precision, and presence. 
+
+Sculpted from pure white marble, its continuous arch isn’t just design, it’s strategy — bold, seamless, unforgettable. 
+Created by Karan Desai, this piece doesn’t just elevate a room, it commands it. 
+
+It tells the world you don’t follow trends — you set them. 
+This is luxury with backbone. Solid, striking, and built to impress.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUGkau59t5PDVekS3148x67aQRtcZvuTwfrOph',
     __v: 0,
@@ -1320,8 +1379,13 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/console8.jpg',
       },
     ],
-    description:
-      'Some call it a table, we call it a beast in disguise. The\nMonster Console is where form meets function in a bold\nclash of materials. With its raw wood body and\nunexpected fur detailing, it’s an artistic\ncontradiction—brutal yet refined, structured yet untamed. ',
+    description: `It’s not just a console—it’s a bold sculptural force. 
+The Monster Console turns heads with unapologetic presence and primal confidence. 
+
+Crafted from raw, textured wood and sculpted into a form that defies the ordinary, it’s equal parts art and attitude. 
+Refined yet untamed, structured yet wild—this piece doesn’t blend in, it takes over. 
+
+If your space demands character, power, and a touch of rebellion, this is your next move.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUtJTy2o5Bu7NntcLbi8k4ldwr62VXy3PODz9j',
     __v: 0,
@@ -1613,8 +1677,12 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/dining4.jpg',
       },
     ],
-    description:
-      'Not just a chair—a throne for the bold. Designed to\nmake a statement at the dining table, the Monster\nDining Chair blends audacious form with indulgent\ncomfort. Structured yet plush, sculptural yet inviting,\nit dares you to sit, settle in, and own the space.',
+    description: `Not just a chair—a throne for the unapologetic. The Monster Dining Chair isn’t here to blend in; it’s here to dominate the table. 
+
+With its sculptural stance and indulgently textured surface, it redefines dining with drama and depth. 
+Bold yet comforting, it invites conversation, demands attention, and elevates every seat into a statement. 
+
+This isn’t about taking your place—it’s about owning it, one confident curve at a time.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQr4b0hCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
     __v: 0,
@@ -1693,8 +1761,13 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738927208531-Slide8.JPG',
       },
     ],
-    description:
-      'This stunning arch-shaped marble, the center table by Karan Desai is the height of style and skill.\n\nIts sleek design and unique continuous arch pattern in all-white marble make it stand out as a true statement piece in luxurious homes.',
+    description: `This isn’t just a center table—it’s architectural ambition in pure marble. 
+
+With a fluid arch design that flows like sculpture, the Monster Table is a masterclass in balance, boldness, and refinement. 
+Carved from pristine white marble and built to impress, it doesn’t play by the rules—it redefines the room. 
+
+Precision meets personality in a piece that’s equal parts design and dominance. 
+For those who don’t decorate—they curate power.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJ2rjROdtZQpOq9no3vVs5yPKXR8gEYuikGUw',
     __v: 0,
@@ -1840,8 +1913,13 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1740392872453-14.jpg',
       },
     ],
-    description:
-      "Step into the embrace of luxury with the Karan Desai Home marble bench, where sitting together becomes an art form.\n\nPicture this: two souls, side by side, savoring not just coffee or tea, but each other's company.\n\nIt's not just furniture, it's a sanctuary for shared laughter, deep talks, and stolen glances.\n\nLet the smooth marble cradle your moments, turning every sip into a memory to cherish.",
+    description: `This bench? It's not just a seat—it’s a statement. 
+
+Sculpted from striking marble, it turns every moment into a scene straight out of a luxury lifestyle playbook. 
+Two people, one masterpiece. You’re not just sharing coffee—you’re closing deals, creating memories, living large. 
+It’s smooth, it’s solid, and it screams sophistication. This is where connection meets craftsmanship. 
+
+Want to elevate your space and your standards? Then take a seat—if you can.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUEhdShVYFi7GYsQA2my03DTouek5wnIJXgjpV',
     __v: 0,
@@ -1995,8 +2073,13 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738927300856-Slide7.JPG',
       },
     ],
-    description:
-      'Discover the height of style with this stunning marble coffee table\nIts flawless, all-white marble surface shows off a perfect mix of smooth shapes and useful design.\n\nThis piece is both a work of art and a useful addition to any living space thanks to the well-thought-out shelves that make the perfect place for your favorite books and other things.',
+    description: `This is more than a center table — it’s a statement of dominance, precision, and presence. 
+
+Sculpted from pure white marble, its continuous arch isn’t just design, it’s strategy — bold, seamless, unforgettable. 
+Created by Karan Desai, this piece doesn’t just elevate a room, it commands it. 
+
+It tells the world you don’t follow trends — you set them. 
+This is luxury with backbone. Solid, striking, and built to impress.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUIGKf4uW6qU3iBow9cLQK4A1kuMTGmF8rel2f',
     __v: 0,
@@ -2104,8 +2187,15 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738928023197-Slide5.JPG',
       },
     ],
-    description:
-      "Find out what marble can do for you!\n\nThe smooth marble shape of this lamp is a masterpiece of design and workmanship.\n\nWhat a beautiful way the light source glows from under the marble.\n\nIt's perfect for giving any room a bit of class.",
+    description: `This isn’t just a lamp—it’s pure presence. 
+
+Carved from rich, veined marble and arched like a gateway to luxury, it doesn’t light a room—it transforms it. 
+That warm glow beneath the stone? That’s atmosphere, that’s mood, that’s power. 
+
+Every inch screams craftsmanship. This is how you tell the world you’ve arrived—without saying a word. 
+Want elegance? Want impact? Flip the switch—and let marble do the talking.
+
+`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDO9d0Q8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
     __v: 0,
@@ -2216,8 +2306,12 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738927112890-Slide7.JPG',
       },
     ],
-    description:
-      "This book shelf is more than just a shelf, it's a work of art that combines style and function.\n\nIts curved shape and one-of-a-kind walls redefine grace and make any room look better.",
+    description: `This isn’t just a bookshelf—it’s a sculptural flex. 
+
+The Monster Shelf fuses form and function with bold curves and architectural confidence. 
+Every line is intentional. Every shelf, a statement. It's not here to blend in—it’s built to elevate, anchor, and lead the room. 
+
+A piece like this doesn’t just hold your collection—it defines your taste. For those who don’t just store ideas—they live them.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDcPdoS8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
     __v: 0,
@@ -2336,8 +2430,12 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738926974590-Slide6.JPG',
       },
     ],
-    description:
-      'A collaboration that began with a shared appreciation for precision and attention to detail, Karan Desai and TopBrewer India transcend the ordinary and fuse the world of architecture with exceptional coffee.\n\nMonster 2.0, is a dedication to those who approach life with larger than life vision, elevating daily rituals into a harmony of art, technology and taste.',
+    description: `Born from a shared obsession with precision, Karan Desai and TopBrewer India present Monster 2.0—where architecture meets exceptional coffee. 
+
+This isn’t just a machine; it’s a sculpture with purpose. 
+Bold in form, smart in function, it celebrates those who think bigger, live bolder, and turn routines into rituals. 
+
+It’s not about drinking coffee—it’s about experiencing design, technology, and taste in one powerful moment.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUD5ZmhT8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
     __v: 0,
@@ -2544,8 +2642,13 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738927999039-Slide3.JPG',
       },
     ],
-    description:
-      "Step into the embrace of luxury with the Karan Desai Home marble bench, where sitting together becomes an art form.\n\nPicture this: two souls, side by side, savoring not just coffee or tea, but each other's company.\n\nIt's not just furniture, it's a sanctuary for shared laughter, deep talks, and stolen glances.\n\nLet the smooth marble cradle your moments, turning every sip into a memory to cherish.",
+    description: `This bench doesn’t just seat two—it seals the bond. 
+
+Carved from luxurious white marble with a design that dares to be different, it’s where bold form meets intimate function. 
+Whether it’s coffee, conversation, or closing a deal with a glance, this piece turns sitting into a shared experience of style and success. 
+
+You’re not just buying furniture—you’re investing in timeless chemistry. 
+This isn’t just art you admire. It’s art you live in.`,
     dimensions:
       'https://imgs.search.brave.com/iVjI8zr3e5IndwkFtM2PVy-uMhc949oudpKHRM6MEOk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzExLzA3LzEwLzc2/LzM2MF9GXzExMDcx/MDc2ODRfbnBSOURr/M0FtbHZzc0JFN01H/d0tUd0h6UnJFZ2Rs/emwuanBn',
     __v: 0,
@@ -2812,8 +2915,13 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738927839163-Slide15.JPG',
       },
     ],
-    description:
-      'This exquisite marble planter box is the epitome of elegance and craftsmanship.\n\nCrafted from pristine white marble, this work of art redefines luxury with its sleek U-shaped design and stunning aesthetics.',
+    description: `This planter box isn’t just elegant — it’s engineered to impress. 
+
+Sculpted from richly veined marble, its bold U-shaped design commands attention from every angle. 
+It’s not here to quietly blend in — it’s here to redefine what “luxury” means in your space. 
+
+Designed with purpose and executed with precision, this is a piece that turns raw stone into a statement of refined power. 
+Plant life never had a stage this strong.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUrt5sfTMNnDI67jcCaomXhZLsJd91f4YGitMH',
     __v: 0,
@@ -2895,8 +3003,15 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1743750415407-5.png',
       },
     ],
-    description:
-      'This elegant marble dining table features a conical white marble base and a round tabletop with a central opening, seamlessly integrating a natural tree for a harmonious blend of organic and modern aesthetics.',
+    description: `This isn’t a dining table—it’s the centerpiece of influence. 
+
+Sculpted from pure white marble with a bold conical base, it commands the room without saying a word. 
+And that central opening? It’s not just design—it’s vision. Slide in a living tree, and you’ve got nature meeting power, elegance meeting edge. 
+
+This is where deals are struck, guests are impressed, and legacy begins. 
+You don’t dine on it—you build your empire around it.
+
+`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUINP1NBMW6qU3iBow9cLQK4A1kuMTGmF8rel2',
     __v: 0,
@@ -3015,8 +3130,12 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738927518500-Slide8.JPG',
       },
     ],
-    description:
-      'a flower vase made of pure white marble.\n\nThis beautiful piece shows unmatched accuracy and artistic talent, and it is the perfect example of class and grace.',
+    description: `This isn’t your average vase — it’s a sculptural power play in white marble. 
+
+Designed with razor-sharp precision and bold architectural curves, it’s built to elevate any space it enters. 
+The floral display? That’s just the bonus. What you’re really showing off is control, taste, and presence. 
+
+Crafted by Karan Desai, this vase is where fine art meets fearless form — the kind of piece that doesn’t just hold flowers, it holds attention.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUaA2lXGzVIx6ZjWFiGhcRQJMUzft1drvPNTbL',
     __v: 0,
@@ -3171,8 +3290,12 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738927420327-Slide5.JPG',
       },
     ],
-    description:
-      "Discover the epitome of elegance with this exquisite arch-shaped marble basin.\n\nCrafted with unparalleled skill, its seamless arch design and pristine white marble make it a centerpiece that exudes luxury and sophistication.\n\nPerfect for adding a touch of grandeur to any space, this bsin is more than just furniture, it's a work of art.\n",
+    description: `This isn’t just a basin — it’s a bold declaration of design authority. 
+
+Carved from pure white marble with an architectural arch and sculpted bowl center, it turns everyday function into high-impact form. 
+Precision-cut, flawlessly balanced, and impossible to ignore — this piece by Karan Desai transforms a space into a scene. 
+
+It doesn’t whisper luxury — it roars it. Because when you live big, even your basin has to make a statement.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQeyDy6CgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
     __v: 0,
@@ -3491,8 +3614,13 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738927007158-Slide4.JPG',
       },
     ],
-    description:
-      "Get ready for something awesome! Here the monster Totem called the YODA\n\nYODA is all about celebrating Bharat Flooring's 100+ years of experience constantly thriving to create wonders with Terrazzo.\n\nIntroducing never before experimental product range, a piece of art, a testament to our age old technique with terrazzo, a TOTEM, our monster TOTEM, our YODA\n\nYoda can be used in lots of different ways! You can keep it outside, inside, or even turn it into stools, a fire pit, or a planter.",
+    description: `Meet YODA—a monster totem forged from over a century of Bharat Flooring’s terrazzo brilliance. 
+
+This is more than design; it’s a bold expression of heritage, material mastery, and fearless form. 
+Every layer tells a story, every curve breaks the mold. YODA doesn’t just stand—it owns the space it’s in. 
+
+It’s vibrant, it’s unapologetic, and it redefines what terrazzo can be. 
+You’re not just looking at art—you’re looking at 100 years of innovation, stacked tall.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUrT6FLUNnDI67jcCaomXhZLsJd91f4YGitMHP',
     __v: 0,
@@ -3515,8 +3643,13 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1739974301885-dchair10.jpg',
       },
     ],
-    description:
-      'Not just a chair—a throne for the bold. Designed to\nmake a statement at the dining table, the Monster\nDining Chair blends audacious form with indulgent\ncomfort. Structured yet plush, sculptural yet inviting,\nit dares you to sit, settle in, and own the space.',
+    description: `This isn’t just a chair—it’s a statement. 
+The Monster Dining Chair commands the room with bold curves, rich velvet, and sculpted form that radiates confidence. 
+
+It doesn’t quietly blend in—it leads. Sink into its plush comfort and feel the shift—you're not just sitting, you're setting the tone. 
+Designed for those who don’t follow trends—they create them. 
+
+When you take your seat here, you’re not part of the room. You become the focus.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQr4b0hCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
     __v: 0,
@@ -3663,8 +3796,13 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/gchair11.jpg',
       },
     ],
-    description:
-      'More than just a chair, it’s a statement of rebellion.\nWith a commanding silhouette and a luxurious fur\nembrace, the Gatoo Chair invites you to sink in, but stay\nalert. It’s comfort with an edge—because softness can\nbe just as powerful as structure..',
+    description: `The Gatoo Chair isn’t just a seat—it’s a bold rebellion in fur. 
+
+Sculpted to command attention, it pairs plush comfort with unapologetically powerful form. 
+Sink into its embrace, but know this: softness doesn’t mean surrender. It means strength. 
+
+Gatoo challenges expectations—where every curve speaks of attitude, and every detail dares to be different. 
+It’s luxury with an edge, comfort with a voice, and design that refuses to stay quiet.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDssaFE8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
     __v: 0,
@@ -3907,8 +4045,13 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738927089676-Slide5.JPG',
       },
     ],
-    description:
-      "This stunning piece is more than just a lamp; it’s a work of art that redefines grace and sophistication.\n\nThe lamp's unique curved design and bespoke craftsmanship make it a standout addition to any table, effortlessly elevating the ambiance of your home.",
+    description: `This isn’t just a lamp—it’s sculpture with swagger. 
+Carved with precision and presence, the Monster Table Lamp pairs fluid curves with raw stone power. 
+
+It doesn’t quietly light a corner—it elevates the entire room. 
+Refined, architectural, and impossible to ignore, it’s built for those who know real luxury lies in the details. 
+
+You don’t just decorate with this piece—you make a statement without saying a word.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQLRjq6wCgpKiS14YXmU2JDcwG0vBsCL6dWNy',
     __v: 0,
@@ -3971,8 +4114,13 @@ export const products = [
           '/assets/products/thumbnails/1739952360039-Monster Light installation.179.jpg',
       },
     ],
-    description:
-      'Lighting is usually about precision—but this one is about\nmystery. The Monster Light casts a glow that’s more than\nillumination—it’s an experience. Soft, unpredictable, and\nwildly elegant, this piece transforms any space into a\ntheatrical spectacle.',
+    description: `This isn’t a chandelier—it’s a spectacle in midair. 
+
+The Monster Chandelier redefines lighting with a surreal form and a glow that’s more emotion than illumination. 
+It doesn’t just light the room—it steals the spotlight. 
+
+Soft, sculptural, and wildly unexpected, it’s made for those who crave drama, depth, and design that speaks louder than words. 
+You don’t just switch it on—you ignite the atmosphere.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUtF0l465Bu7NntcLbi8k4ldwr62VXy3PODz9j',
     __v: 0,
@@ -4054,8 +4202,12 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738927863069-Slide7.JPG',
       },
     ],
-    description:
-      'This luxurious masterpiece, crafted from pristine white marble, redefines sophistication and transforms any space into a sanctuary of grandeur.',
+    description: `This isn’t just a piece of décor — it’s a calculated strike of style and status. 
+
+Sculpted from flawless white marble, it fuses form and function with unapologetic flair. 
+A commanding arched silhouette, subtle shelving, and a statement vase top—it’s not just about looking good, it’s about owning the space. 
+
+Designed for those who play to win, this piece turns any corner into a conversation, and any room into a showcase.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUz8wrsAIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
     __v: 0,
@@ -4214,8 +4366,13 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/library13.jpg',
       },
     ],
-    description:
-      'A library that doesn’t just hold books—it\nholds stories, secrets, and statements.\nCrafted with a raw, sculptural form, it\nembodies the elegance of disorder. Because\nin great design, perfection is overrated.',
+    description: `This isn’t just a library—it’s a conversation starter. 
+
+The Monster Library breaks the mold with its sculptural chaos and commanding silhouette. 
+It doesn’t just store books—it holds energy, curiosity, and unapologetic attitude. 
+
+Raw, bold, and perfectly imperfect, this piece proves that disorder can be a form of design brilliance. 
+You’re not organizing a space—you’re curating an experience. For those who live by instinct, not instruction—this is your statement shelf.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUuEphv8VvD2FOkC3NsiU7yPRWb18aeZThVzGr',
     __v: 0,
@@ -4263,7 +4420,14 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
       },
     ],
-    description: 'To be edited.',
+    description: `This isn’t a desk—it’s a power platform. 
+
+Crafted from rich white marble with a bold, asymmetrical silhouette, it doesn't just sit in a room—it dominates it. 
+This is where vision is sketched, empires are built, and signatures shape futures. 
+Clean, commanding, and cut like it belongs in the office of a market-moving mogul. 
+
+It's not just about work—it's about presence. 
+Want to own the room before you even speak? Start here.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUlmDkYQ9DZL6up3G75dgCY2rJjaQFwifBAEky',
     __v: 0,
@@ -4320,7 +4484,13 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
       },
     ],
-    description: 'To be edited.',
+    description: `This isn’t just a mirror—it’s your daily check-in with greatness. 
+
+Wrapped in precision-cut marble and standing tall with quiet authority, the Office Mirror brings clarity, presence, and power to any executive space. 
+It’s where ambition meets reflection. 
+You don’t just see yourself—you see the leader, the closer, the game-changer. Bold, refined, unapologetically sharp—just like you. 
+This is the kind of mirror that doesn’t flatter. It affirms.
+`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSdXB8mYAKnraNxkI5vbez6dT2q8M0osBfR9A',
     __v: 0,
@@ -4386,7 +4556,13 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
       },
     ],
-    description: 'To be edited.',
+    description: `This isn’t just a wash basin—it’s a flex in stone. 
+
+Carved from a solid block of premium marble, it’s smooth, sculpted, and impossible to ignore. 
+Every curve is confidence, every angle—precision. It doesn’t just belong in a bathroom; it upgrades the entire space. 
+
+You’re not washing up—you’re stepping into ritual, power, and presence. 
+This is what success looks like... even when you're rinsing your hands.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU1V3L8TmcNbALVg2tCIRm5fi0793BwZH8PYyx',
     __v: 0,
@@ -4500,7 +4676,11 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
       },
     ],
-    description: 'To be edited.',
+    description: `Make a bold statement in your meeting room with the Monster Conference Table. Crafted entirely from solid marble, 
+this piece blends sculptural artistry with executive function. 
+The organically shaped legs give the table a dynamic presence, as if it's alive and ready to take charge of the room.
+
+Sleek, commanding, and completely unexpected—this table doesn’t just support ideas, it inspires them.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUUvvIwiABY1Vx48e2bhPHIZJqsnBOSArl5D3M',
     __v: 0,
