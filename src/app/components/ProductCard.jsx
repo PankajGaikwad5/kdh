@@ -12,7 +12,7 @@ const ProductCard = ({ title, img, id, hoveredIndex, setHoveredIndex }) => {
         onMouseEnter={() => setHoveredIndex(id)}
         onMouseLeave={() => setHoveredIndex(null)}
         className={`
-          group cursor-pointer transform transition duration-300 hover:scale-[1.02] hover:z-20
+          group cursor-pointer transform transition flex flex-col justify-center items-center duration-300 hover:scale-[1.02] hover:z-20
           ${
             hoveredIndex !== null && hoveredIndex !== id
               ? 'blur-[2px]'
@@ -21,10 +21,7 @@ const ProductCard = ({ title, img, id, hoveredIndex, setHoveredIndex }) => {
         `}
       >
         {/* This wrapper allows the image to pop out */}
-        <div
-          className='w-full max-w-[300px] aspect-[4/3] relative rounded-lg 
-                        overflow-visible group-hover:overflow-visible'
-        >
+        <div className='w-full max-w-[300px] aspect-[4/3] relative rounded-lg overflow-visible group-hover:overflow-visible'>
           {isLoading && (
             <div className='absolute inset-0 bg-gray-200 dark:bg-gray-700 animate-pulse rounded-lg' />
           )}

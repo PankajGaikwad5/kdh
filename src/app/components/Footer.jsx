@@ -42,7 +42,7 @@ const Footer = () => {
             />
           </Link>
         </div>
-        <div className='flex flex-col md:flex-row text-white font-medium uppercase tracking-widest text-center md:space-x-4 space-y-1 md:space-y-0 md:-ml-44 '>
+        <div className='flex flex-col md:flex-row items-center text-white font-medium uppercase tracking-widest text-center md:space-x-4 space-y-1 md:space-y-0 md:-ml-44 '>
           {navLinks.map((link, index) => (
             <Link
               key={link.href}

@@ -27,7 +27,7 @@ const page = () => {
   const products = [
     {
       id: 3,
-      title: 'Monster 3.0 Collection',
+      title: 'Monster 3.0 X Dimensions',
       group: 'monster_3.0',
       img: '/group/1.png',
       projects: 'gattoo x top brewer, yoda',
