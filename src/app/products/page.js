@@ -47,6 +47,14 @@ const page = () => {
       projects: 'monster basin, monster bathtub, monster console',
     },
     {
+      id: 12,
+      title: 'Matilda 2022',
+      group: 'matilda-2022',
+      img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUloYwC49DZL6up3G75dgCY2rJjaQFwifBAEky',
+      projects:
+        '86 side table, side table, chaise longue, marble ball console, marble console, marble screen',
+    },
+    {
       id: 4,
       title: 'Matilda 2024',
       group: 'matilda-2024',
