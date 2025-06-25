@@ -16,12 +16,15 @@ import CustomLoader from './CustomLoader';
 import { Plus, Minus } from 'lucide-react';
 
 // ─── Starfield with Pronounced Glow ───────────────────────────────────────────
+// Updated Starfield with alternating colors
 function Starfield({ count = 400, radius = 200 }) {
   const pointsRef = useRef();
   const { gl } = useThree();
 
-  const positions = useMemo(() => {
+  const { positions, colors } = useMemo(() => {
     const pos = new Float32Array(count * 3);
+    const col = new Float32Array(count * 3);
+
     for (let i = 0; i < count; i++) {
       const phi = Math.random() * Math.PI * 2;
       const theta = Math.acos(2 * Math.random() - 1);
@@ -29,11 +32,27 @@ function Starfield({ count = 400, radius = 200 }) {
         i < count * 0.5
           ? radius + 2 + Math.random() * 40
           : radius + 50 + Math.random() * 100;
+
       pos[i * 3] = offset * Math.sin(theta) * Math.cos(phi);
       pos[i * 3 + 1] = offset * Math.sin(theta) * Math.sin(phi);
       pos[i * 3 + 2] = offset * Math.cos(theta);
+
+      // Alternate between different colors
+      if (i % 3 === 0) {
+        col[i * 3] = 1; // R - White
+        col[i * 3 + 1] = 1; // G
+        col[i * 3 + 2] = 1; // B
+      } else if (i % 3 === 1) {
+        col[i * 3] = 0.2; // R - Blue
+        col[i * 3 + 1] = 0.5; // G
+        col[i * 3 + 2] = 1; // B
+      } else {
+        col[i * 3] = 1; // R - Gold
+        col[i * 3 + 1] = 0.8; // G
+        col[i * 3 + 2] = 0.2; // B
+      }
     }
-    return pos;
+    return { positions: pos, colors: col };
   }, [count, radius]);
 
   const starTexture = useMemo(() => {
@@ -52,9 +71,10 @@ function Starfield({ count = 400, radius = 200 }) {
       size / 2,
       size / 2
     );
+    // Use gray gradient so vertex colors can show through
     gradient.addColorStop(0, 'rgba(255, 255, 255, 1)');
-    gradient.addColorStop(0.05, 'rgba(255, 255, 255, 1)');
-    gradient.addColorStop(0.2, 'rgba(255, 255, 255, 0.2)');
+    gradient.addColorStop(0.05, 'rgba(255, 255, 255, 0.8)');
+    gradient.addColorStop(0.2, 'rgba(255, 255, 255, 0.3)');
     gradient.addColorStop(0.5, 'rgba(255, 255, 255, 0.1)');
     gradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
 
@@ -86,6 +106,12 @@ function Starfield({ count = 400, radius = 200 }) {
           array={positions}
           itemSize={3}
         />
+        <bufferAttribute
+          attach='attributes-color'
+          count={count}
+          array={colors}
+          itemSize={3}
+        />
       </bufferGeometry>
       <pointsMaterial
         map={starTexture}
@@ -94,6 +120,7 @@ function Starfield({ count = 400, radius = 200 }) {
         transparent
         blending={THREE.AdditiveBlending}
         depthWrite={false}
+        vertexColors
       />
     </points>
   );
