@@ -4971,7 +4971,7 @@ It doesn’t whisper sophistication — it declares it. Functional? Absolutely. 
 
 When luxury meets structure like this, it’s not just furniture — it’s a flex.`,
     dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHr4HFVSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO3tC2WJLYnpyK0DhEV4daf1ZotLM8ROqYkSFN',
     __v: 0,
   },
   {
@@ -5032,7 +5032,7 @@ Whether placed in a master suite or a statement hallway, this piece isn’t just
 
 A symbol of restraint, rhythm, and remarkable design.`,
     dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHr4HFVSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOq1Aido7NLjmh9XDF3ngvZxi87QRBuOfyKs60',
     __v: 0,
   },
   {
@@ -5092,7 +5092,7 @@ Designed not just to rest, but to be revered — it’s a chaise that blurs the 
 
 Ideal for spaces where silence, strength, and sophistication are felt.`,
     dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHr4HFVSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOzuaZgH3drRCNOYV7h2kSoeU41wvlAyKEqG0T',
     __v: 0,
   },
   {
@@ -5153,7 +5153,7 @@ creating a visual rhythm that feels both sculptural and surreal.
 Topped with a sleek amber surface, it’s a bold expression of creativity — perfect for art-forward interiors that celebrate individuality and 
 unapologetic charm.`,
     dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHr4HFVSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOPcgRtyKaSjHqmNAIDGdfwbKCW75FER48cVo3',
     __v: 0,
   },
   {
@@ -5213,7 +5213,7 @@ The translucent smoked-glass top adds a modern edge, allowing the sculptural bas
 
 A true collector’s piece, it transforms hallways, entryways, or lounges into curated design moments.`,
     dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHr4HFVSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOXaBMTyuosnbmOpdheGL3EgIPWHwQBAfDiZqX',
     __v: 0,
   },
   {
@@ -5265,7 +5265,7 @@ Designed as both a divider and an art object, this piece commands attention—tu
 
 Ideal for spaces that embrace architectural drama with timeless sophistication.`,
     dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHr4HFVSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOBY3TsfgzYN8aVpJZLF50If4uUdl1vTPgMQEx',
     __v: 0,
   },
   {
@@ -5324,7 +5324,7 @@ Crafted from richly veined marble, the arched form embraces two seamless drawers
 The interplay of curves and clean lines reflects a refined minimalism, making this piece an icon of modern luxury—ideal for 
 curated interiors that appreciate the power of form and function in harmony.`,
     dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHr4HFVSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO4UCttXmYLAzci562mjC7NX0nUpdqB8Hf3QEW',
     __v: 0,
   },
 ];
