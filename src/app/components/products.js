@@ -6,6 +6,8 @@ export const products = [
     title: 'partition screen',
     group: 'matilda-2024',
     material: 'Marble',
+    collabtext: 'Foremost Marbles',
+    collablink: 'https://foremostmarbles.com/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUMm9LEowfQbC4M3ZGkSm6KPAV10HlYU9dinrX',
     images: [
       {
@@ -99,6 +101,8 @@ For those who don’t follow the rules—they carve their own.`,
     title: 'monster gum',
     group: 'monster_collectibles',
     material: 'Marble',
+    collabtext: 'Arjun Rathi',
+    collablink: 'https://www.arjunrathi.com/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDqHaKe8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
     images: [
       {
@@ -185,6 +189,9 @@ Want lighting that speaks louder than words? Then grab the Monster Gum—and let
     title: 'Monster Bench',
     group: 'monster_3.0',
     material: 'Burnt Wood & Fur Fabric',
+    collabtext: 'Dimensions',
+    collablink:
+      'https://dimensionsfurniture.in/collections/monster-collection/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9zGTRgx2frimQ5LhFdjbpOHNPEsav1o2Ac0D',
     images: [
       {
@@ -512,6 +519,8 @@ One glance, and you know — this is the real deal.
     title: 'monster gattooffer',
     group: 'monster_collectibles',
     material: 'Brass and Glass',
+    collabtext: 'Arjun Rathi',
+    collablink: 'https://www.arjunrathi.com/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUrucY8mNnDI67jcCaomXhZLsJd91f4YGitMHP',
     images: [
       {
@@ -619,6 +628,8 @@ Light your space like you mean it.`,
     title: 'monster basin',
     group: 'monster_1.0',
     material: 'Marble',
+    collabtext: 'The Quarry',
+    collablink: 'https://www.quarry.asia/index.php',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUcmsYcPOzfU0v5mZaj1HWcAwKFCxykrE2NGSI',
     images: [
       {
@@ -848,6 +859,8 @@ When style meets structure like this, luxury becomes non-negotiable.
     title: 'chair',
     group: 'matilda-2024',
     material: 'Marble',
+    collabtext: 'Foremost Marbles',
+    collablink: 'https://foremostmarbles.com/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUfRZ9Y2FreUiploh17Cx6dSMgtF0NPTW8vq2I',
     images: [
       {
@@ -941,6 +954,9 @@ One look, and you know—you’ve arrived.`,
     title: 'Monster Dining Table',
     group: 'monster_3.0',
     material: 'Burnt Wood',
+    collabtext: 'Dimensions',
+    collablink:
+      'https://dimensionsfurniture.in/collections/monster-collection/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8t2Fwv64oKUn37W6wsTlRmDBFhGrviIjcMxV',
     images: [
       {
@@ -1126,6 +1142,8 @@ Bold. Balanced. Built for spaces that don’t settle for ordinary.`,
     title: 'monster bathtub',
     group: 'monster_1.0',
     material: 'Marble',
+    collabtext: 'The Quarry',
+    collablink: 'https://www.quarry.asia/index.php',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUmXhiD1Mgck96WhX7TGdaslL58YeZAnUDbwov',
     images: [
       {
@@ -1222,6 +1240,8 @@ Because when marble meets vision, the result is nothing short of iconic.`,
     title: 'console 2',
     group: 'matilda-2024',
     material: 'Marble',
+    collabtext: 'Foremost Marbles',
+    collablink: 'https://foremostmarbles.com/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUC8rBCeX0XaKgNMT1QEmen25RAwc7Sk4UxoJF',
     images: [
       {
@@ -1307,6 +1327,9 @@ This is luxury with backbone. Solid, striking, and built to impress.`,
     title: 'Monster Console',
     group: 'monster_3.0',
     material: 'Burnt Wood',
+    collabtext: 'Dimensions',
+    collablink:
+      'https://dimensionsfurniture.in/collections/monster-collection/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUvwL3aR0iQtznIlhRaFJ8jZ6p7xPg3bw9OrDV',
     images: [
       {
@@ -1404,6 +1427,8 @@ If your space demands character, power, and a touch of rebellion, this is your n
     title: 'monster humpty',
     group: 'monster_collectibles',
     material: 'Brass and Glass',
+    collabtext: 'Arjun Rathi',
+    collablink: 'https://www.arjunrathi.com/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUohMIiwPd43VNTXj27bgOZneCUs9aBiY5x8vw',
     images: [
       {
@@ -1502,6 +1527,8 @@ Want ambiance with personality? This little beast delivers—big time.`,
     title: 'monster squinty',
     group: 'monster_collectibles',
     material: 'Brass and Glass',
+    collabtext: 'Arjun Rathi',
+    collablink: 'https://www.arjunrathi.com/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWMVvzsrSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
     images: [
       {
@@ -1594,6 +1621,9 @@ You want personality in your decor? This lamp is personality—wild, wide-eyed, 
     title: 'Monster Dining Chair',
     group: 'monster_3.0',
     material: 'Burnt Wood & Fur Fabric',
+    collabtext: 'Dimensions',
+    collablink:
+      'https://dimensionsfurniture.in/collections/monster-collection/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUVOfTglleJz0jfKoyVd9HNhC5wFQ4OrBi2UkD',
     images: [
       {
@@ -1795,6 +1825,8 @@ For those who don’t decorate—they curate power.`,
     title: 'Bench 1',
     group: 'matilda-2024',
     material: 'Marble',
+    collabtext: 'Foremost Marbles',
+    collablink: 'https://foremostmarbles.com/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnw5EEDbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
     images: [
       {
@@ -1947,6 +1979,8 @@ Want to elevate your space and your standards? Then take a seat—if you can.`,
     title: 'monster console',
     group: 'monster_1.0',
     material: 'Marble',
+    collabtext: 'The Quarry',
+    collablink: 'https://www.quarry.asia/index.php',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUB0rHdma3qeoXrYV82Q6T5Enb4WD1LwdAJjzP',
     images: [
       {
@@ -2030,6 +2064,8 @@ Want to elevate your space and your standards? Then take a seat—if you can.`,
     title: 'coffee table',
     group: 'matilda-2024',
     material: 'Marble',
+    collabtext: 'Foremost Marbles',
+    collablink: 'https://foremostmarbles.com/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUEohaJEYFi7GYsQA2my03DTouek5wnIJXgjpV',
     images: [
       {
@@ -2107,6 +2143,8 @@ This is luxury with backbone. Solid, striking, and built to impress.`,
     title: 'floor lamp',
     group: 'matilda-2024',
     material: 'Marble',
+    collabtext: 'Foremost Marbles',
+    collablink: 'https://foremostmarbles.com/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUzOlagRIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
     images: [
       {
@@ -2339,6 +2377,8 @@ A piece like this doesn’t just hold your collection—it defines your taste. F
     title: 'gattoo x top brewer',
     group: 'monster_2.0',
     material: 'Rainforest Green Marble',
+    collabtext: 'TopBrewer',
+    collablink: 'https://www.topbrewernyc.com/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUj6mAs3UhR95a1yWpqvPz7meuoUTAG8HEOb2I',
     images: [
       {
@@ -2463,6 +2503,9 @@ It’s not about drinking coffee—it’s about experiencing design, technology,
     title: 'Monster Planter',
     group: 'monster_3.0',
     material: 'Burnt Wood',
+    collabtext: 'Dimensions',
+    collablink:
+      'https://dimensionsfurniture.in/collections/monster-collection/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKURWr6TYE1fzw0AFxNe2UEaubVBY53GTv7kqpl',
     images: [
       {
@@ -2676,6 +2719,8 @@ This isn’t just art you admire. It’s art you live in.`,
     title: 'monster grumpy',
     group: 'monster_collectibles',
     material: 'Brass and Glass',
+    collabtext: 'Arjun Rathi',
+    collablink: 'https://www.arjunrathi.com/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAQbcOOjJ1oeY2wnF0zQbWX83C4KujdSqt6MU',
     images: [
       {
@@ -2768,6 +2813,8 @@ You want a statement that growls back? The Monster Grumpy is already watching.`,
     title: 'planter',
     group: 'matilda-2024',
     material: 'Marble',
+    collabtext: 'Foremost Marbles',
+    collablink: 'https://foremostmarbles.com/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8OsyEi64oKUn37W6wsTlRmDBFhGrviIjcMxV',
     images: [
       {
@@ -2953,6 +3000,8 @@ Plant life never had a stage this strong.`,
     title: 'Dining Table',
     group: 'matilda-2024',
     material: 'Marble',
+    collabtext: 'Foremost Marbles',
+    collablink: 'https://foremostmarbles.com/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUgrObNwlLdSN8CY5rJGOAxcqQpM9fjoh4etX6',
     images: [
       {
@@ -3167,6 +3216,9 @@ Crafted by Karan Desai, this vase is where fine art meets fearless form — the 
     title: 'Samaveta Bench',
     group: 'serafini',
     material: 'Marble',
+    collabtext: 'Serafini',
+    collablink:
+      'https://www.serafini.com/products-page/samaveta-luxury-marble-bench',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUCDnRdrPX0XaKgNMT1QEmen25RAwc7Sk4UxoJ',
     images: [
       {
@@ -3243,6 +3295,8 @@ Crafted by Karan Desai, this vase is where fine art meets fearless form — the 
     title: 'basin',
     group: 'matilda-2024',
     material: 'Marble',
+    collabtext: 'Foremost Marbles',
+    collablink: 'https://foremostmarbles.com/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUu6KK8TVvD2FOkC3NsiU7yPRWb18aeZThVzGr',
     images: [
       {
@@ -3327,6 +3381,8 @@ It doesn’t whisper luxury — it roars it. Because when you live big, even you
     title: 'monster brainy',
     group: 'monster_collectibles',
     material: 'Brass and Glass',
+    collabtext: 'Arjun Rathi',
+    collablink: 'https://www.arjunrathi.com/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUyBMn5e7jvoD5bj92PLzxBdul6nT8GrEAS30e',
     images: [
       {
@@ -3420,6 +3476,8 @@ Time to think bigger, move faster, and create smarter. Monster Brainy leads the 
     title: 'monster binty',
     group: 'monster_collectibles',
     material: 'Brass and Glass',
+    collabtext: 'Arjun Rathi',
+    collablink: 'https://www.arjunrathi.com/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKURoDyPCE1fzw0AFxNe2UEaubVBY53GTv7kqpl',
     images: [
       {
@@ -3517,6 +3575,8 @@ This is conversation-starting, vibe-setting, spotlight-stealing brilliance. Ligh
     title: 'monster buddha',
     group: 'monster_collectibles',
     material: 'Brass and Glass',
+    collabtext: 'Arjun Rathi',
+    collablink: 'https://www.arjunrathi.com/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU1bhFt7mcNbALVg2tCIRm5fi0793BwZH8PYyx',
     images: [
       {
@@ -3570,6 +3630,8 @@ Put it on your table and watch the room elevate—quietly, but unmistakably.`,
     title: 'yoda',
     group: 'monster_2.0',
     material: 'Concrete Terazzo',
+    collabtext: 'Bharat Floorings',
+    collablink: 'https://www.bharatfloorings.com/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUNNmO9kG5UuqxLjF0ygrW1ikRpXaHfGVvonDw',
     images: [
       {
@@ -3667,6 +3729,9 @@ You’re not just looking at art—you’re looking at 100 years of innovation, 
     title: 'Monster Dining Kids Chair',
     group: 'monster_3.0',
     material: 'Fur Fabric',
+    collabtext: 'Dimensions',
+    collablink:
+      'https://dimensionsfurniture.in/collections/monster-collection/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUVOfTglleJz0jfKoyVd9HNhC5wFQ4OrBi2UkD',
     images: [
       {
@@ -3696,6 +3761,9 @@ When you take your seat here, you’re not part of the room. You become the focu
     title: 'Gattoo Chair',
     group: 'monster_3.0',
     material: 'Burnt Wood & Fur Fabric',
+    collabtext: 'Dimensions',
+    collablink:
+      'https://dimensionsfurniture.in/collections/monster-collection/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSOlRnmAKnraNxkI5vbez6dT2q8M0osBfR9At',
     images: [
       {
@@ -3849,6 +3917,8 @@ It’s luxury with an edge, comfort with a voice, and design that refuses to sta
     title: 'monster guard',
     group: 'monster_collectibles',
     material: 'Brass and Glass',
+    collabtext: 'Arjun Rathi',
+    collablink: 'https://www.arjunrathi.com/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAadKi3J1oeY2wnF0zQbWX83C4KujdSqt6MUT',
     images: [
       {
@@ -4010,6 +4080,8 @@ Let’s find out.`,
     },
     group: 'matilda-2024',
     material: 'Marble',
+    collabtext: 'Foremost Marbles',
+    collablink: 'https://foremostmarbles.com/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUykphDsjvoD5bj92PLzxBdul6nT8GrEAS30eN',
     title: 'table lamp',
     images: [
@@ -4116,6 +4188,9 @@ You don’t just decorate with this piece—you make a statement without saying 
     title: 'Monster Chandelier',
     group: 'monster_3.0',
     material: 'Burnt Wood & Fur Fabric',
+    collabtext: 'Dimensions',
+    collablink:
+      'https://dimensionsfurniture.in/collections/monster-collection/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU2PfjIgaDNvkE7HG39CYgFqmlMw2jVAoxdcnf',
     images: [
       {
@@ -4185,6 +4260,8 @@ You don’t just switch it on—you ignite the atmosphere.`,
     title: 'side table',
     group: 'matilda-2024',
     material: 'Marble',
+    collabtext: 'Foremost Marbles',
+    collablink: 'https://foremostmarbles.com/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9zMRyt2frimQ5LhFdjbpOHNPEsav1o2Ac0Dz',
     images: [
       {
@@ -4272,6 +4349,9 @@ Designed for those who play to win, this piece turns any corner into a conversat
     title: 'Monster Library',
     group: 'monster_3.0',
     material: 'Burnt Wood',
+    collabtext: 'Dimensions',
+    collablink:
+      'https://dimensionsfurniture.in/collections/monster-collection/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUeJWNLScFPv1kdbg4tT0YfOS529XxhywHpVoU',
     images: [
       {
@@ -4437,6 +4517,9 @@ You’re not organizing a space—you’re curating an experience. For those who
     title: 'Monster Library Art Edition',
     group: 'monster_3.0',
     material: 'Burnt Wood',
+    collabtext: 'Dimensions',
+    collablink:
+      'https://dimensionsfurniture.in/collections/monster-collection/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUeJWNLScFPv1kdbg4tT0YfOS529XxhywHpVoU',
     images: [
       {
@@ -4829,6 +4912,9 @@ Sleek, commanding, and completely unexpected—this table doesn’t just support
     title: 'Samaveta Console',
     group: 'serafini',
     material: 'Marble',
+    collabtext: 'Serafini',
+    collablink:
+      'https://www.serafini.com/products-page/samaveta-marble-console',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHr4HFVSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
     images: [
       {

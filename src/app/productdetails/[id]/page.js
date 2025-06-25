@@ -366,6 +366,40 @@ const ProductDetailsPage = () => {
             <h1 className='text-4xl md:text-4xl 2xl:text-6xl 2xl:mb-20 mb-6 capitalize font-light tracking-tight '>
               {product.title}
             </h1>
+            {product.collabtext && (
+              <div className='mb-4 flex items-center'>
+                <span className='text-gray-400 text-sm mr-2'>
+                  Collaboration with
+                </span>
+                {product.collablink ? (
+                  <a
+                    href={product.collablink}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='text-white hover:underline transition-all flex items-center'
+                  >
+                    {product.collabtext}
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      className='h-4 w-4 ml-1'
+                      fill='none'
+                      viewBox='0 0 24 24'
+                      stroke='currentColor'
+                    >
+                      <path
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth={2}
+                        d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'
+                      />
+                    </svg>
+                  </a>
+                ) : (
+                  <span className='text-white'>{product.collabtext}</span>
+                )}
+              </div>
+            )}
+
             <div className='flex flex-col gap-4 text-sm 2xl:space-y-20'>
               <div className='grid grid-cols-2 md:grid-cols-3 gap-2'>
                 <div>
