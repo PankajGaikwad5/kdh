@@ -5051,7 +5051,7 @@ Sleek, commanding, and completely unexpected—this table doesn’t just support
       {
         fileName: '1738927863060-Slide1.JPG',
         filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUCDiKYVOX0XaKgNMT1QEmen25RAwc7Sk4UxoJ',
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUY4cpOHnVM7iftKIsUSTJx8haC1mEBkZl4NvR',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },

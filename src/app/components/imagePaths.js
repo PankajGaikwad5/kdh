@@ -323,6 +323,48 @@ export const newImagePaths = [
     group: 'KD X Serafini',
     productId: 'samaveta-console',
   },
+  {
+    name: '86 Side Table',
+    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUloYwC49DZL6up3G75dgCY2rJjaQFwifBAEky',
+    group: 'Matilda',
+    productId: '86-side-table',
+  },
+  {
+    name: '86 Chest of Drawer',
+    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWzFSFzrSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
+    group: 'Matilda',
+    productId: '86-chest-of-drawer',
+  },
+  {
+    name: 'Chaise Longue',
+    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUj40wlZUhR95a1yWpqvPz7meuoUTAG8HEOb2I',
+    group: 'Matilda',
+    productId: 'chaise-longue',
+  },
+  {
+    name: 'Marble Ball Console',
+    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUX4MctaLaynKVcYuZHCDm1IeJRfoT4vBxS8i0',
+    group: 'Matilda',
+    productId: 'marble-ball-console',
+  },
+  {
+    name: 'Marble Console',
+    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUUqNvDDBY1Vx48e2bhPHIZJqsnBOSArl5D3MT',
+    group: 'Matilda',
+    productId: 'marble-console',
+  },
+  {
+    name: 'Marble Screen',
+    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8KNqvC64oKUn37W6wsTlRmDBFhGrviIjcMxV',
+    group: 'Matilda',
+    productId: 'marble-screen',
+  },
+  {
+    name: 'Side Table',
+    path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9zWJSjs2frimQ5LhFdjbpOHNPEsav1o2Ac0D',
+    group: 'Matilda',
+    productId: 'side-table',
+  },
 
   ...Array(5)
     .fill([
@@ -637,6 +679,48 @@ export const newImagePaths = [
         path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPs2jLOHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
         group: 'KD X Serafini',
         productId: 'samaveta-console',
+      },
+      {
+        name: '86 Side Table',
+        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUloYwC49DZL6up3G75dgCY2rJjaQFwifBAEky',
+        group: 'Matilda',
+        productId: '86-side-table',
+      },
+      {
+        name: '86 Chest of Drawer',
+        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWzFSFzrSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
+        group: 'Matilda',
+        productId: '86-chest-of-drawer',
+      },
+      {
+        name: 'Chaise Longue',
+        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUj40wlZUhR95a1yWpqvPz7meuoUTAG8HEOb2I',
+        group: 'Matilda',
+        productId: 'chaise-longue',
+      },
+      {
+        name: 'Marble Ball Console',
+        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUX4MctaLaynKVcYuZHCDm1IeJRfoT4vBxS8i0',
+        group: 'Matilda',
+        productId: 'marble-ball-console',
+      },
+      {
+        name: 'Marble Console',
+        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUUqNvDDBY1Vx48e2bhPHIZJqsnBOSArl5D3MT',
+        group: 'Matilda',
+        productId: 'marble-console',
+      },
+      {
+        name: 'Marble Screen',
+        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8KNqvC64oKUn37W6wsTlRmDBFhGrviIjcMxV',
+        group: 'Matilda',
+        productId: 'marble-screen',
+      },
+      {
+        name: 'Side Table',
+        path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9zWJSjs2frimQ5LhFdjbpOHNPEsav1o2Ac0D',
+        group: 'Matilda',
+        productId: 'side-table',
       },
     ])
     .flat(),
