@@ -414,13 +414,13 @@ const ProductDetailsPage = () => {
                 <a href={product.pdf} target='_blank' rel='noopener noreferrer'>
                   <Button
                     variant='outline'
-                    className='2xl:text-xl px-6 py-2 border w-full md:w-auto border-white text-black rounded-none hover:bg-white/80'
+                    className=' px-6 py-2 border w-full md:w-auto border-white text-black rounded-none hover:bg-white/80'
                   >
                     Download Spec Sheet
                   </Button>
                 </a>
                 <Button
-                  className='2xl:text-xl px-6 py-2 border w-full md:w-auto border-white bg-transparent text-white rounded-none hover:bg-white hover:text-black'
+                  className=' px-6 py-2 border w-full md:w-auto border-white bg-transparent text-white rounded-none hover:bg-white hover:text-black'
                   onClick={() => setShowModal(true)}
                 >
                   Enquire
