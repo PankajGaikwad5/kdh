@@ -332,7 +332,6 @@ const ProductDetailsPage = () => {
                 onImageSelect={handleImageSelect}
                 isOpen={showThumbnailGrid}
                 onToggle={() => setShowThumbnailGrid(!showThumbnailGrid)}
-                onEscape={() => setShowThumbnailGrid(false)}
               />
 
               {/* Navigation buttons */}
@@ -378,10 +377,10 @@ const ProductDetailsPage = () => {
             <div className='flex flex-col gap-4 text-sm 2xl:space-y-20'>
               <div className='grid grid-cols-2 md:grid-cols-3 gap-2'>
                 <div>
-                  <h4 className='font-semibold text-gray-400 text-xs  2xl:text-3xl mb-1'>
+                  <h4 className='font-semibold text-gray-400 text-xs   mb-1'>
                     Dimension
                   </h4>
-                  <p className='text-white 2xl:text-2xl'>
+                  <p className='text-white '>
                     {product.dimensions?.includes('http') ? (
                       <a
                         href={product.dimensions}
@@ -396,20 +395,20 @@ const ProductDetailsPage = () => {
                   </p>
                 </div>
                 <div>
-                  <h4 className='font-semibold text-gray-400 text-xs 2xl:text-3xl mb-1'>
+                  <h4 className='font-semibold text-gray-400 text-xs  mb-1'>
                     Lead Time
                   </h4>
-                  <p className='text-white 2xl:text-2xl'>30 Days</p>
+                  <p className='text-white '>30 Days</p>
                 </div>
                 <div>
-                  <h4 className='font-semibold text-gray-400 text-xs 2xl:text-3xl mb-1'>
+                  <h4 className='font-semibold text-gray-400 text-xs  mb-1'>
                     Material
                   </h4>
-                  <p className='text-white 2xl:text-2xl'>{product.material}</p>
+                  <p className='text-white '>{product.material}</p>
                 </div>
               </div>
 
-              <div className='mt-6 border-t border-gray-700 pt-4 text-sm 2xl:text-3xl text-white font-light whitespace-pre-line leading-relaxed'>
+              <div className='mt-6 border-t border-gray-700 pt-4 text-sm  text-white font-light whitespace-pre-line leading-relaxed'>
                 {product.description}
               </div>
 
