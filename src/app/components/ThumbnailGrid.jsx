@@ -101,18 +101,18 @@ const ThumbnailGrid = ({
   onToggle,
   onEscape,
 }) => {
-  useEffect(() => {
-    const handleEsc = (e) => {
-      if (e.key === 'Escape') {
-        onEscape();
-      }
-    };
+  // useEffect(() => {
+  //   const handleEsc = (e) => {
+  //     if (e.key === 'Escape') {
+  //       onEscape();
+  //     }
+  //   };
 
-    window.addEventListener('keydown', handleEsc);
-    return () => {
-      window.removeEventListener('keydown', handleEsc);
-    };
-  }, []);
+  //   window.addEventListener('keydown', handleEsc);
+  //   return () => {
+  //     window.removeEventListener('keydown', handleEsc);
+  //   };
+  // }, []);
 
   return (
     <>

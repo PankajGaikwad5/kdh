@@ -176,11 +176,9 @@ const ProductDetailsPage = () => {
   // Escape key listener
   useEffect(() => {
     const handleEsc = (e) => {
-      if (!showThumbnailGrid) {
-        if (e.key === 'Escape') {
-          router.back();
-          console.log('working');
-        }
+      if (e.key === 'Escape') {
+        router.back();
+        console.log('working');
       }
     };
 
