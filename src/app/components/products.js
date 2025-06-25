@@ -2261,6 +2261,8 @@ Want elegance? Want impact? Flip the switch—and let marble do the talking.
     title: 'library',
     group: 'matilda-2024',
     material: 'Marble',
+    collabtext: 'Foremost Marbles',
+    collablink: 'https://foremostmarbles.com/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUYY6moTnVM7iftKIsUSTJx8haC1mEBkZl4NvR',
     images: [
       {
@@ -4260,8 +4262,6 @@ You don’t just switch it on—you ignite the atmosphere.`,
     title: 'side table',
     group: 'matilda-2024',
     material: 'Marble',
-    collabtext: 'Foremost Marbles',
-    collablink: 'https://foremostmarbles.com/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9zMRyt2frimQ5LhFdjbpOHNPEsav1o2Ac0Dz',
     images: [
       {
