@@ -99,7 +99,6 @@ const ThumbnailGrid = ({
   onImageSelect,
   isOpen,
   onToggle,
-  onEscape,
 }) => {
   // useEffect(() => {
   //   const handleEsc = (e) => {
