@@ -4006,6 +4006,8 @@ Light your space like you mean it.`,
     title: 'monsformer',
     group: 'monsformer',
     material: 'Hinges',
+    collabtext: 'Blum',
+    collablink: 'https://www.blum.com/us/en/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU2YRm87aDNvkE7HG39CYgFqmlMw2jVAoxdcnf',
     images: [
       {
