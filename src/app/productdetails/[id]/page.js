@@ -176,8 +176,11 @@ const ProductDetailsPage = () => {
   // Escape key listener
   useEffect(() => {
     const handleEsc = (e) => {
-      if (e.key === 'Escape') {
-        router.back();
+      if (!showThumbnailGrid) {
+        if (e.key === 'Escape') {
+          router.back();
+          console.log('working');
+        }
       }
     };
 
@@ -329,6 +332,7 @@ const ProductDetailsPage = () => {
                 onImageSelect={handleImageSelect}
                 isOpen={showThumbnailGrid}
                 onToggle={() => setShowThumbnailGrid(!showThumbnailGrid)}
+                onEscape={() => setShowThumbnailGrid(false)}
               />
 
               {/* Navigation buttons */}

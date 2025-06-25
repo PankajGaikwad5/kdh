@@ -91,6 +91,7 @@ import React from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Grid3X3 } from 'lucide-react';
+import { useEffect } from 'react';
 
 const ThumbnailGrid = ({
   images,
@@ -98,7 +99,21 @@ const ThumbnailGrid = ({
   onImageSelect,
   isOpen,
   onToggle,
+  onEscape,
 }) => {
+  useEffect(() => {
+    const handleEsc = (e) => {
+      if (e.key === 'Escape') {
+        onEscape();
+      }
+    };
+
+    window.addEventListener('keydown', handleEsc);
+    return () => {
+      window.removeEventListener('keydown', handleEsc);
+    };
+  }, []);
+
   return (
     <>
       {/* Grid Toggle Button */}
@@ -117,7 +132,7 @@ const ThumbnailGrid = ({
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className='fixed inset-0 bg-black/80 backdrop-blur-md z-50 flex items-center justify-center p-6'
+            className='fixed inset-0 bg-transparent backdrop-blur-md z-50 flex items-center justify-center p-6'
             onClick={onToggle}
           >
             <motion.div
@@ -125,7 +140,7 @@ const ThumbnailGrid = ({
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.7, opacity: 0, y: 50 }}
               transition={{ duration: 0.3, ease: 'easeOut' }}
-              className='relative max-w-4xl w-full bg-gradient-to-br from-gray-900/95 to-black/95 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl overflow-hidden'
+              className='relative  w-full bg-gradient-to-br bg-transparent backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl overflow-hidden'
               onClick={(e) => e.stopPropagation()}
             >
               {/* Header */}
