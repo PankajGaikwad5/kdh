@@ -159,7 +159,7 @@ const ThumbnailGrid = ({
                       }`}
                     >
                       <Image
-                        src={image.thumbnail || image.filePath}
+                        src={image.filePath}
                         alt={`Thumbnail ${index + 1}`}
                         fill
                         className='object-cover transition-transform duration-300 group-hover:scale-110'
