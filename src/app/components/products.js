@@ -166,8 +166,14 @@ For those who don’t follow the rules—they carve their own.`,
         thumbnail: '/assets/products/thumbnails/1738929795491-Slide3.JPG',
       },
     ],
-    description:
-      'Brighten your space with a playful twist!\n\nThe Monster Gum Lamp blends quirky design with practical lighting, bringing a splash of creativity to any room.\n\nWith its soft, gummy texture and bold shape, it’s the perfect statement piece to spark conversations and light up your home in a fun, unexpected way. 🌟💡',
+    description: `Monster Gum isn’t just lighting—it’s attitude, wrapped in fun.
+
+This golden beast clutching a glossy pink bubble isn’t here to blend in—it’s here to pop. 
+With bold curves and a playful edge, it turns any room from forgettable to unforgettable. It’s eye candy with a purpose, charm with a charge. 
+
+Want lighting that speaks louder than words? Then grab the Monster Gum—and let it do the talking.
+
+`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUv1mQj1X0iQtznIlhRaFJ8jZ6p7xPg3bw9OrD',
     __v: 0,
@@ -595,12 +601,13 @@ One glance, and you know — this is the real deal.
         thumbnail: '/assets/products/thumbnails/1738929642731-Slide4.JPG',
       },
     ],
-    description: `This isn’t just a basin—it’s a bold move. Sculpted like art, built for impact. 
+    description: `Monster Gattooffer isn’t a lamp—it’s a power move.
 
-It turns any bathroom into a conversation starter. Pair it with a sleek bathtub and you’ve got a 
-setup that’s stylish, smart, and seriously impressive. 
+This beast breaks all the rules. With a spiked glass crown and a gold-toned base that means business, it turns soft light into hard impact. 
+It’s art, it’s attitude, and it owns every room it enters. 
 
-Luxury isn’t optional. It’s essential. Own it.`,
+You want ordinary? Look elsewhere. You want bold, fearless, unforgettable? Gattooffer delivers—loud and proud. 
+Light your space like you mean it.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8hOcOm64oKUn37W6wsTlRmDBFhGrviIjcMxV',
     __v: 0,
@@ -699,12 +706,12 @@ Luxury isn’t optional. It’s essential. Own it.`,
         thumbnail: '/assets/products/thumbnails/1738926030383-5.jpg',
       },
     ],
-    description: `"This isn’t just a basin—it’s a bold move. Sculpted like art, built for impact. 
+    description: `This isn’t just a basin—it’s a bold move. Sculpted like art, built for impact. 
 
 It turns any bathroom into a conversation starter. Pair it with a sleek bathtub and you’ve got a 
 setup that’s stylish, smart, and seriously impressive. 
 
-Luxury isn’t optional. It’s essential. Own it."`,
+Luxury isn’t optional. It’s essential. Own it.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUgPpkpBlLdSN8CY5rJGOAxcqQpM9fjoh4etX6',
     __v: 0,
@@ -1477,8 +1484,13 @@ If your space demands character, power, and a touch of rebellion, this is your n
         thumbnail: '/assets/products/thumbnails/1743757629643-3.jpg',
       },
     ],
-    description:
-      'The Monster Humpty wall sconce is a whimsical lighting fixture crafted from textured brass and frosted glass. Designed in the shape of a playful monster blowing a bubble, it combines artistic charm with functional elegance, making it a unique statement piece for any interior.\n',
+    description: `This is Monster Humpty – not just a wall sconce, a conversation starter.
+
+Crafted in bold brass with a frosted glass “bubble,” it’s playful, powerful, and unapologetically original. 
+You don’t hang this on your wall—you make a statement. It’s design with attitude, lighting with charisma. 
+
+Whether it’s your lounge, studio, or office, Monster Humpty turns ordinary into unforgettable. 
+Want ambiance with personality? This little beast delivers—big time.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUohMIiwPd43VNTXj27bgOZneCUs9aBiY5x8vw',
     __v: 0,
@@ -1565,8 +1577,12 @@ If your space demands character, power, and a touch of rebellion, this is your n
         thumbnail: '/assets/products/thumbnails/1738930260212-Slide3.JPG',
       },
     ],
-    description:
-      'Meet the Monster Squinty Lamp, a quirky blend of art and light that adds a playful twist to your space!\n\nWith its creature-like body and squinty eyes, this lamp brings character and charm, casting unique shadows that make any room come alive.\n\nPerfect for those who love a touch of whimsy in their decor!',
+    description: `Say hello to the Monster Squinty—where weird is wonderful.
+
+This golden little oddball doesn't just light your room—it stares into your soul (with one giant eye and zero apologies). 
+It’s cheeky, it’s charming, and it’s unapologetically different. 
+
+You want personality in your decor? This lamp is personality—wild, wide-eyed, and totally unforgettable.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUFF11zUyvrgRIBMUa1Cwt3nu4PEZOTo0XLQDf',
     __v: 0,
@@ -2735,8 +2751,12 @@ This isn’t just art you admire. It’s art you live in.`,
         thumbnail: '/assets/products/thumbnails/1738930233951-Slide3.JPG',
       },
     ],
-    description:
-      'The Monster Grumpy Lamp is a distinctive lighting fixture, thoughtfully crafted to infuse any space with character and playfulness. Its design features a sculptural, monster-inspired form with exaggerated details, creating a striking visual statement. The lamp’s defining element is its cleverly designed, subtly grumpy expression, offering a blend of humor and artistic sophistication.',
+    description: `This is the Monster Grumpy—and it doesn’t care if you like it.
+
+Crafted in solid gold-toned swagger, with a stare that’s part scowl, part genius, it’s not just a lamp—it’s a mood. 
+That striped glow? That’s confidence. This beast doesn’t light up a room—it dominates it. You want ordinary? Walk away. 
+
+You want a statement that growls back? The Monster Grumpy is already watching.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDt1neS8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
     __v: 0,
@@ -3382,8 +3402,13 @@ It doesn’t whisper luxury — it roars it. Because when you live big, even you
         thumbnail: '/assets/products/thumbnails/1738929601189-Slide3.JPG',
       },
     ],
-    description:
-      "Unleashing the 'Monster Brainy'—where bold aesthetics meet functional genius.\n\nThis concept dares to blend creativity with curiosity, crafting environments that provoke thought and inspire innovation.\n\nA true fusion of form and function, designed to ignite the imagination.",
+    description: `Meet “Monster Brainy” – your secret weapon for next-level thinking.
+
+This isn’t just design—it’s domination. With a bold aesthetic and head-turning presence, Monster Brainy flips the script on ordinary. 
+It sparks curiosity, fuels innovation, and demands attention. Built to stand out and engineered to inspire, this is where form meets fierce function. 
+
+You don’t just display it—you leverage it. 
+Time to think bigger, move faster, and create smarter. Monster Brainy leads the way`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULT9qlKDqbauUfVsg4JYrj86xOSilFe5PBo3m',
     __v: 0,
@@ -3474,8 +3499,13 @@ It doesn’t whisper luxury — it roars it. Because when you live big, even you
         thumbnail: '/assets/products/thumbnails/1738928071416-Slide4.JPG',
       },
     ],
-    description:
-      'Brighten up your space with a scoop of style!\n\nIntroducing the Binty lamp, where playful design meets sleek functionality.\n\nWith its whimsical ice cream cone shape, Binty adds a sprinkle of nostalgia and charm to any room.\n',
+    description: `This isn’t just a lamp—it’s dessert for the power player. 
+
+The Binty takes playful design and spins it into gold—literally. 
+With a glittering cone, scoops that sparkle, and a bold little character gripping it like treasure, this piece turns heads and melts hearts. 
+
+It’s nostalgia with a luxury twist. Statement lighting? Nah. 
+This is conversation-starting, vibe-setting, spotlight-stealing brilliance. Light it up—and let them know fun just got upgraded.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPNbp9DHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
     __v: 0,
@@ -3522,8 +3552,13 @@ It doesn’t whisper luxury — it roars it. Because when you live big, even you
         thumbnail: '/assets/products/thumbnails/1744099947427-3.jpg',
       },
     ],
-    description:
-      'The Monster Buddha table lamp is a serene yet playful design, featuring a textured brass base resembling a meditative figure and a large, hand-blown glass dome that diffuses light softly. This artistic piece blends tranquility with whimsy, making it a captivating addition to any space.\r\n',
+    description: `Meet the lamp that doesn’t just light a room—it enlightens it. 
+
+The Monster Buddha is a power move in disguise—playful, yes, but packed with presence. A sculpted brass base echoes calm confidence, 
+while the blown-glass dome casts a soft, golden glow that makes everything—and everyone—look better. 
+
+It’s art, it’s attitude, it’s ambiance with a wink. 
+Put it on your table and watch the room elevate—quietly, but unmistakably.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUzbq9egIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
     __v: 0,
@@ -3881,8 +3916,13 @@ It’s luxury with an edge, comfort with a voice, and design that refuses to sta
         thumbnail: '/assets/products/thumbnails/1738929747420-Slide3.JPG',
       },
     ],
-    description:
-      'Meet the Monster Guard Lamp: where playful design meets practical purpose.\n\nNot just a lamp, but a watchful companion that brings both light and comfort to your space.\n\nLet it stand guard, offering a quirky yet reassuring presence in any room!',
+    description: `Monster Gattooffer isn’t a lamp—it’s a power move.
+
+This beast breaks all the rules. With a spiked glass crown and a gold-toned base that means business, it turns soft light into hard impact. 
+It’s art, it’s attitude, and it owns every room it enters. 
+
+You want ordinary? Look elsewhere. You want bold, fearless, unforgettable? Gattooffer delivers—loud and proud. 
+Light your space like you mean it.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAadKi3J1oeY2wnF0zQbWX83C4KujdSqt6MUT',
     __v: 0,
@@ -3945,8 +3985,21 @@ It’s luxury with an edge, comfort with a voice, and design that refuses to sta
         thumbnail: '/assets/products/thumbnails/1738930738997-Slide5.JPG',
       },
     ],
-    description:
-      'Enter if you dare… Mons-Former is waiting!\n\nLast year, he was just a friendly farmer. Now?\n\nHe’s got unfinished business!\n\nAfter a colorful mishap at a wild festival, Mons-Former is out for payback, running, chasing, and never stopping!\n\nCan you dodge his grasp inside his rotating playground of chaos?\n\nRace through the madness.\n\nSnap some epic pics. But most importantly… RUN!\n\nThink you can escape?\n\nLet’s find out!',
+    description: `ENTER IF YOU DARE: MONS-FORMER IS WAITING
+
+Last year, he was just a friendly farmer.
+Now? He’s a color-soaked chaos machine on a mission.
+
+After a “little” festival mishap, Mons-Former is back—bolder, weirder, and seriously ticked off. 
+His twisted playground never stops spinning, and neither does he. He’s chasing. You’re running. And the only rule? Don’t. Get. Caught.
+
+Dare to race through the madness?
+Snap your escape.
+Dodge the mayhem.
+But remember… he's got unfinished business.
+
+Think you can outrun the Mons-Former?
+Let’s find out.`,
     dimensions:
       'https://imgs.search.brave.com/iVjI8zr3e5IndwkFtM2PVy-uMhc949oudpKHRM6MEOk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzExLzA3LzEwLzc2/LzM2MF9GXzExMDcx/MDc2ODRfbnBSOURr/M0FtbHZzc0JFN01H/d0tUd0h6UnJFZ2Rs/emwuanBn',
     __v: 0,
@@ -4696,7 +4749,14 @@ This is what success looks like... even when you're rinsing your hands.`,
         thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
       },
     ],
-    description: 'To be edited.',
+    description: `Sleek, sculptural, and unapologetically functional — the EA Bar redefines modern luxury. 
+
+Wrapped in precision-cut marble with fluted side panels and clean lines, 
+this bar unit integrates high-performance appliances into a striking architectural form. 
+Equipped with refrigerated storage, a wine cooler, and ample concealed cabinetry, 
+it’s designed to serve effortlessly while making a bold visual statement.
+
+Ideal for contemporary lounges, hospitality spaces, or high-end offices — the EA Bar is where design meets utility, flawlessly.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUyXBkZujvoD5bj92PLzxBdul6nT8GrEAS30eN',
     __v: 0,
@@ -4845,7 +4905,11 @@ Sleek, commanding, and completely unexpected—this table doesn’t just support
         },
       },
     ],
-    description: 'To be edited.',
+    description: `Gaze into the cosmos with the Constellation Mirror, where the stars of Sagittarius, Capricorn, and Scorpio are etched 
+in delicate precision across its surface. 
+This circular mirror transforms your wall into a celestial map, glowing softly with constellation points that capture the mystery of the night sky.
+
+Minimalist yet mesmerizing, it brings both reflection and wonder into your space — ideal for those drawn to the stars and the stories they tell.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHr4HFVSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
     __v: 0,
@@ -4900,7 +4964,12 @@ Sleek, commanding, and completely unexpected—this table doesn’t just support
         },
       },
     ],
-    description: 'To be edited.',
+    description: `This isn’t your average side table — it’s a bold fusion of discipline and design. 
+
+Framed in precision-cut marble and finished with fluted wooden drawers, this piece delivers both edge and elegance in one clean shot. 
+It doesn’t whisper sophistication — it declares it. Functional? Absolutely. But make no mistake — this is a power move in furniture form. 
+
+When luxury meets structure like this, it’s not just furniture — it’s a flex.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHr4HFVSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
     __v: 0,
@@ -4955,7 +5024,13 @@ Sleek, commanding, and completely unexpected—this table doesn’t just support
         },
       },
     ],
-    description: 'To be edited.',
+    description: `This is where functionality meets architectural finesse. 
+
+Encased in a sculpted body of elegant white marble, its fluid curves are contrasted by 
+deep charcoal ribbed drawers — a tactile detail that speaks volumes without saying a word. 
+Whether placed in a master suite or a statement hallway, this piece isn’t just storage — it’s a sculptural presence. 
+
+A symbol of restraint, rhythm, and remarkable design.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHr4HFVSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
     __v: 0,
@@ -5010,7 +5085,12 @@ Sleek, commanding, and completely unexpected—this table doesn’t just support
         },
       },
     ],
-    description: 'To be edited.',
+    description: `Sculpted in a fluid arc of white marble, this Chaise Longue is a poetic interpretation of form and repose. 
+
+Its soft wave-like silhouette invites calm, while the cool, veined stone anchors it in timeless luxury. 
+Designed not just to rest, but to be revered — it’s a chaise that blurs the line between furniture and fine art. 
+
+Ideal for spaces where silence, strength, and sophistication are felt.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHr4HFVSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
     __v: 0,
@@ -5065,7 +5145,13 @@ Sleek, commanding, and completely unexpected—this table doesn’t just support
         },
       },
     ],
-    description: 'To be edited.',
+    description: `A playful rebellion against convention, this Marble Ball Console fuses luxury with whimsy. 
+
+Each vividly colored sphere is carved from solid marble, stacked with intentional chaos, 
+creating a visual rhythm that feels both sculptural and surreal. 
+
+Topped with a sleek amber surface, it’s a bold expression of creativity — perfect for art-forward interiors that celebrate individuality and 
+unapologetic charm.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHr4HFVSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
     __v: 0,
@@ -5120,7 +5206,12 @@ Sleek, commanding, and completely unexpected—this table doesn’t just support
         },
       },
     ],
-    description: 'To be edited.',
+    description: `A study in contrast and composition, this Marble Console strikes the perfect balance between sophistication and bold design. 
+
+Featuring four distinct marble legs—each in a different finish and shape—this piece blends symmetry with surprise. 
+The translucent smoked-glass top adds a modern edge, allowing the sculptural base to shine. 
+
+A true collector’s piece, it transforms hallways, entryways, or lounges into curated design moments.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHr4HFVSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
     __v: 0,
@@ -5167,7 +5258,12 @@ Sleek, commanding, and completely unexpected—this table doesn’t just support
         },
       },
     ],
-    description: 'To be edited.',
+    description: `A sculptural marvel, this curved marble screen is a striking fusion of form and function. 
+
+Crafted from exquisite veined marble, its undulating wave texture and bold spherical centerpiece create a powerful visual rhythm. 
+Designed as both a divider and an art object, this piece commands attention—turning any interior into a gallery of refined luxury. 
+
+Ideal for spaces that embrace architectural drama with timeless sophistication.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHr4HFVSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
     __v: 0,
@@ -5222,7 +5318,11 @@ Sleek, commanding, and completely unexpected—this table doesn’t just support
         },
       },
     ],
-    description: 'To be edited.',
+    description: `A bold expression of sculptural geometry, this side table reimagines storage through an architectural lens. 
+
+Crafted from richly veined marble, the arched form embraces two seamless drawers, blending utility with fluid design. 
+The interplay of curves and clean lines reflects a refined minimalism, making this piece an icon of modern luxury—ideal for 
+curated interiors that appreciate the power of form and function in harmony.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHr4HFVSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
     __v: 0,

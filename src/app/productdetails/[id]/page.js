@@ -298,18 +298,12 @@ const ProductDetailsPage = () => {
               )}
 
               {/* Main image */}
-              <div
-                className={`relative w-full h-full transition-opacity duration-200 ${
-                  imageLoaded ? 'opacity-100' : 'opacity-0'
-                }`}
-              >
-                <MotionImage
+              <div className='relative w-full h-full opacity-100'>
+                <Image
+                  style={{ opacity: imageLoaded ? 1 : 0 }}
                   key={currentIndex}
                   src={product.images[currentIndex].filePath}
                   alt={product.title}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: imageLoaded ? 1 : 0 }}
-                  transition={{ duration: 0.15 }}
                   className='object-contain'
                   fill
                   sizes='(max-width: 768px) 100vw, 50vw'
