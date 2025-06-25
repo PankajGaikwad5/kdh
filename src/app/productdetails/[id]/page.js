@@ -1,5 +1,4 @@
 'use client';
-
 import React, { useEffect, useState, useCallback } from 'react';
 import Image from 'next/image';
 import { useParams, useRouter } from 'next/navigation';
@@ -165,6 +164,10 @@ const ProductDetailsPage = () => {
           }, index * 100); // Stagger loading
         });
       }
+      // if (product?.title) {
+      //   document.title = product.title;
+      //   document. = product.description;
+      // }
     } else {
       console.error('Product not found');
     }
@@ -213,6 +216,39 @@ const ProductDetailsPage = () => {
   const handleImageLoad = useCallback(() => {
     setImageLoaded(true);
   }, []);
+
+  // Replace the previous useEffect with this expanded version
+
+  // Set page title and meta tags dynamically
+  useEffect(() => {
+    if (product?.title) {
+      document.title = product.title;
+
+      // Set description
+      let metaDescription = document.querySelector('meta[name="description"]');
+      if (!metaDescription) {
+        metaDescription = document.createElement('meta');
+        metaDescription.name = 'description';
+        document.head.appendChild(metaDescription);
+      }
+      metaDescription.content =
+        product.description ||
+        `${product.title} - Product specifications and details`;
+
+      // Set keywords
+      let metaKeywords = document.querySelector('meta[name="keywords"]');
+      if (!metaKeywords) {
+        metaKeywords = document.createElement('meta');
+        metaKeywords.name = 'keywords';
+        document.head.appendChild(metaKeywords);
+      }
+      metaKeywords.content = `${product.title}, ${
+        product.material || ''
+      }, furniture, interior design`
+        .replace(/,\s*,/g, ',')
+        .replace(/^,|,$/g, '');
+    }
+  }, [product]);
 
   if (!product)
     return (
