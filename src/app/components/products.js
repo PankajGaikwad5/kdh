@@ -4766,7 +4766,7 @@ Ideal for contemporary lounges, hospitality spaces, or high-end offices — the 
       $oid: '67a5eef74da9b29cd0f10be2219112',
     },
     title: 'Conference Monster Table',
-    group: 'matilda-2024',
+    group: 'matilda-2025',
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUUvvIwiABY1Vx48e2bhPHIZJqsnBOSArl5D3M',
     images: [
