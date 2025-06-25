@@ -4496,13 +4496,13 @@ You’re not organizing a space—you’re curating an experience. For those who
         },
       },
     ],
-    description: `This isn’t just a library—it’s a conversation starter. 
+    description: `This isn't just evolution—it's a revolution in form.
+The Monster Library Art Edition takes the unapologetic energy of its predecessor and catapults it into the realm of collectible design.
 
-The Monster Library breaks the mold with its sculptural chaos and commanding silhouette. 
-It doesn’t just store books—it holds energy, curiosity, and unapologetic attitude. 
+With sculptural asymmetry, bold primary hues, and integrated lighting that feels more like an aura than a feature, this piece blurs the line between functional furniture and immersive artwork. It doesn’t just sit in a room—it dominates it, electrifies it, dares it to respond.
 
-Raw, bold, and perfectly imperfect, this piece proves that disorder can be a form of design brilliance. 
-You’re not organizing a space—you’re curating an experience. For those who live by instinct, not instruction—this is your statement shelf.`,
+Crafted for the provocateurs, the aesthetes, and the visionaries—this edition isn't just a shelf.
+It's architecture with attitude.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUuEphv8VvD2FOkC3NsiU7yPRWb18aeZThVzGr',
     __v: 0,
