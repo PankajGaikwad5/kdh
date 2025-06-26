@@ -2983,6 +2983,15 @@ You want a statement that growls back? The Monster Grumpy is already watching.`,
         },
         thumbnail: '/assets/products/thumbnails/1738927839163-Slide15.JPG',
       },
+      // {
+      //   fileName: '1738927839163-Slide15.JPG',
+      //   filePath:
+      //     'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HC550WYE2zZEnj4uh9TVHdL6YlaGR3JgyF0cWr',
+      //   _id: {
+      //     $oid: '67a5eedf4da9b29cd0f10bdf',
+      //   },
+      //   thumbnail: '/assets/products/thumbnails/1738927839163-Slide15.JPG',
+      // },
     ],
     description: `This planter box isn’t just elegant — it’s engineered to impress. 
 

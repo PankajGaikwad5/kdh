@@ -45,12 +45,12 @@ const GroupProductsPage = () => {
 
           <div className='flex justify-center items-center'>
             <div className='flex-grow grid grid-cols-2 md:grid-cols-4 pt-10 gap-4 p-4'>
-              {filteredProducts.map(({ title, images, _id }) => (
+              {filteredProducts.map(({ title, images, _id, index }) => (
                 <ProductCard
                   title={title}
                   img={images[0]?.filePath}
                   id={_id.$oid}
-                  key={_id}
+                  key={index}
                   hoveredIndex={hoveredIndex}
                   setHoveredIndex={setHoveredIndex}
                 />

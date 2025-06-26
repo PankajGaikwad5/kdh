@@ -122,9 +122,9 @@ const page = () => {
         {/* Grid container fills the available vertical space */}
 
         <main className='flex-grow grid grid-cols-2 md:grid-cols-4 pt-10 gap-4 p-4 md:mx-14 my-10 md:my-6 '>
-          {products.map(({ title, img, group, id }) => (
+          {products.map(({ title, img, group, id, index }) => (
             <SubProductCard
-              key={id}
+              key={index}
               title={title}
               img={img}
               id={group}
