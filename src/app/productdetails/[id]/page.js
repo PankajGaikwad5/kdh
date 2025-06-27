@@ -49,12 +49,19 @@ const ProductDetailsPage = () => {
   const MotionImage = motion(Image);
   const [showThumbnailGrid, setShowThumbnailGrid] = useState(false);
 
+  // Calculate total media count and check if current slide is video
+  const totalMedia = (product?.images?.length || 0) + (product?.video ? 1 : 0);
+  const isVideoSlide = currentIndex >= (product?.images?.length || 0);
+
   const handleImageSelect = useCallback(
     (index) => {
       setImageLoaded(false);
       setCurrentIndex(index);
 
-      if (loadedImages.has(product.images[index].filePath)) {
+      // For video slide, set loaded immediately
+      if (index >= (product?.images?.length || 0)) {
+        setImageLoaded(true);
+      } else if (loadedImages.has(product.images[index].filePath)) {
         setImageLoaded(true);
       }
     },
@@ -164,10 +171,6 @@ const ProductDetailsPage = () => {
           }, index * 100); // Stagger loading
         });
       }
-      // if (product?.title) {
-      //   document.title = product.title;
-      //   document. = product.description;
-      // }
     } else {
       console.error('Product not found');
     }
@@ -189,36 +192,42 @@ const ProductDetailsPage = () => {
   }, [router]);
 
   const nextImage = useCallback(() => {
-    if (!product?.images?.length) return;
+    if (!totalMedia) return;
     setImageLoaded(false);
-    const nextIndex = (currentIndex + 1) % product.images.length;
+    const nextIndex = (currentIndex + 1) % totalMedia;
     setCurrentIndex(nextIndex);
 
-    // Check if next image is already loaded
-    if (loadedImages.has(product.images[nextIndex].filePath)) {
+    // For video slide, set loaded immediately
+    if (nextIndex >= (product?.images?.length || 0)) {
+      setImageLoaded(true);
+    } else if (loadedImages.has(product.images[nextIndex].filePath)) {
       setImageLoaded(true);
     }
-  }, [product, currentIndex, loadedImages]);
+  }, [product, currentIndex, loadedImages, totalMedia]);
 
   const prevImage = useCallback(() => {
-    if (!product?.images?.length) return;
+    if (!totalMedia) return;
     setImageLoaded(false);
-    const prevIndex =
-      currentIndex === 0 ? product.images.length - 1 : currentIndex - 1;
+    const prevIndex = currentIndex === 0 ? totalMedia - 1 : currentIndex - 1;
     setCurrentIndex(prevIndex);
 
-    // Check if previous image is already loaded
-    if (loadedImages.has(product.images[prevIndex].filePath)) {
+    // For video slide, set loaded immediately
+    if (prevIndex >= (product?.images?.length || 0)) {
+      setImageLoaded(true);
+    } else if (loadedImages.has(product.images[prevIndex].filePath)) {
       setImageLoaded(true);
     }
-  }, [product, currentIndex, loadedImages]);
+  }, [product, currentIndex, loadedImages, totalMedia]);
 
   // Handle image load completion
   const handleImageLoad = useCallback(() => {
     setImageLoaded(true);
   }, []);
 
-  // Replace the previous useEffect with this expanded version
+  // Handle video load completion
+  const handleVideoLoad = useCallback(() => {
+    setImageLoaded(true);
+  }, []);
 
   // Set page title and meta tags dynamically
   useEffect(() => {
@@ -285,41 +294,53 @@ const ProductDetailsPage = () => {
 
       <div className='grid md:grid-cols-2 pt-14'>
         <section className='relative p-4 flex items-center justify-center bg-black'>
-          {product.images?.length > 0 && (
+          {(product.images?.length > 0 || product.video) && (
             <div className='relative w-full h-[80vh] overflow-hidden rounded-lg'>
               {/* Loading state */}
               {!imageLoaded && (
                 <div className='absolute inset-0 flex items-center justify-center z-10'>
                   <div className='flex flex-col items-center gap-4'>
                     <div className='animate-spin rounded-full h-8 w-8 border-b-2 border-white'></div>
-                    <p className='text-sm text-gray-400'>Loading image...</p>
+                    <p className='text-sm text-gray-400'>Loading...</p>
                   </div>
                 </div>
               )}
 
-              {/* Main image */}
+              {/* Media content */}
               <div className='relative w-full h-full opacity-100'>
-                <Image
-                  style={{ opacity: imageLoaded ? 1 : 0 }}
-                  key={currentIndex}
-                  src={product.images[currentIndex].filePath}
-                  alt={product.title}
-                  className='object-contain'
-                  fill
-                  sizes='(max-width: 768px) 100vw, 50vw'
-                  priority={currentIndex === 0}
-                  quality={75}
-                  unoptimized={product.images[currentIndex].filePath.startsWith(
-                    'http'
-                  )}
-                  onLoad={handleImageLoad}
-                  onLoadingComplete={handleImageLoad}
-                />
+                {isVideoSlide && product.video ? (
+                  <video
+                    key='product-video'
+                    src={product.video}
+                    className='w-full h-full object-contain'
+                    controls
+                    style={{ opacity: imageLoaded ? 1 : 0 }}
+                    onLoadedData={handleVideoLoad}
+                  />
+                ) : (
+                  <Image
+                    style={{ opacity: imageLoaded ? 1 : 0 }}
+                    key={currentIndex}
+                    src={product.images[currentIndex].filePath}
+                    alt={product.title}
+                    className='object-contain'
+                    fill
+                    sizes='(max-width: 768px) 100vw, 50vw'
+                    priority={currentIndex === 0}
+                    quality={75}
+                    unoptimized={product.images[
+                      currentIndex
+                    ].filePath.startsWith('http')}
+                    onLoad={handleImageLoad}
+                    onLoadingComplete={handleImageLoad}
+                  />
+                )}
               </div>
 
               {/* Thumbnail Grid Component */}
               <ThumbnailGrid
                 images={product.images}
+                video={product.video}
                 currentIndex={currentIndex}
                 onImageSelect={handleImageSelect}
                 isOpen={showThumbnailGrid}
@@ -327,7 +348,7 @@ const ProductDetailsPage = () => {
               />
 
               {/* Navigation buttons */}
-              {product.images.length > 1 && (
+              {totalMedia > 1 && (
                 <>
                   <button
                     onClick={prevImage}
@@ -346,10 +367,10 @@ const ProductDetailsPage = () => {
                 </>
               )}
 
-              {/* Image counter */}
-              {product.images.length > 1 && (
+              {/* Media counter */}
+              {totalMedia > 1 && (
                 <div className='absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/60 rounded-full px-3 py-1 text-sm z-20'>
-                  {currentIndex + 1} / {product.images.length}
+                  {currentIndex + 1} / {totalMedia}
                 </div>
               )}
             </div>

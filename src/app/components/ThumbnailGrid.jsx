@@ -95,11 +95,13 @@ import { useEffect } from 'react';
 
 const ThumbnailGrid = ({
   images,
+  video,
   currentIndex,
   onImageSelect,
   isOpen,
   onToggle,
 }) => {
+  const totalMedia = (images?.length || 0) + (video ? 1 : 0);
   // useEffect(() => {
   //   const handleEsc = (e) => {
   //     if (e.key === 'Escape') {
@@ -119,7 +121,7 @@ const ThumbnailGrid = ({
       <button
         onClick={onToggle}
         className='absolute top-4 right-4 text-white bg-black/60 rounded-full p-3 hover:bg-white hover:text-black transition-all z-20'
-        title='View all images'
+        title='View all media'
       >
         <Grid3X3 size={20} />
       </button>
@@ -139,12 +141,12 @@ const ThumbnailGrid = ({
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.7, opacity: 0, y: 50 }}
               transition={{ duration: 0.3, ease: 'easeOut' }}
-              className='relative  w-full bg-gradient-to-br bg-transparent backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl overflow-hidden'
+              className='relative w-full bg-transparent backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl overflow-hidden'
               onClick={(e) => e.stopPropagation()}
             >
               {/* Header */}
               <div className='flex items-center justify-between p-6 border-b border-white/10'>
-                <h3 className='text-xl font-light text-white'>All Images</h3>
+                <h3 className='text-xl font-light text-white'>All Media</h3>
                 <button
                   onClick={onToggle}
                   className='text-gray-400 hover:text-white transition-colors p-2 hover:bg-white/10 rounded-full'
@@ -156,7 +158,8 @@ const ThumbnailGrid = ({
               {/* Thumbnail Grid */}
               <div className='p-6 max-h-[70vh] overflow-y-auto scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-transparent'>
                 <div className='grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4'>
-                  {images.map((image, index) => (
+                  {/* Image thumbnails */}
+                  {images?.map((image, index) => (
                     <motion.button
                       key={index}
                       initial={{ opacity: 0, scale: 0.8 }}
@@ -181,10 +184,8 @@ const ThumbnailGrid = ({
                         sizes='200px'
                       />
 
-                      {/* Overlay */}
                       <div className='absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300' />
 
-                      {/* Current indicator */}
                       {currentIndex === index && (
                         <motion.div
                           initial={{ scale: 0 }}
@@ -195,19 +196,75 @@ const ThumbnailGrid = ({
                         </motion.div>
                       )}
 
-                      {/* Image number */}
                       <div className='absolute top-2 left-2 bg-black/70 text-white text-xs px-2 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
                         {index + 1}
                       </div>
                     </motion.button>
                   ))}
+
+                  {/* Video thumbnail */}
+                  {video && (
+                    <motion.button
+                      key='video'
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{
+                        delay: (images?.length || 0) * 0.05,
+                        duration: 0.2,
+                      }}
+                      onClick={() => {
+                        onImageSelect(images?.length || 0);
+                        onToggle();
+                      }}
+                      className={`relative aspect-square rounded-xl overflow-hidden border-2 transition-all duration-300 hover:scale-105 hover:shadow-lg group ${
+                        currentIndex === (images?.length || 0)
+                          ? 'border-white shadow-white/25 shadow-lg ring-2 ring-white/30'
+                          : 'border-white/20 hover:border-white/50'
+                      }`}
+                    >
+                      <video
+                        src={video}
+                        className='w-full h-full object-cover'
+                        muted
+                      />
+
+                      {/* Play icon overlay */}
+                      <div className='absolute inset-0 flex items-center justify-center bg-black/30'>
+                        <div className='w-8 h-8 bg-white/80 rounded-full flex items-center justify-center'>
+                          <svg
+                            className='w-4 h-4 text-black ml-0.5'
+                            fill='currentColor'
+                            viewBox='0 0 24 24'
+                          >
+                            <path d='M8 5v14l11-7z' />
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div className='absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300' />
+
+                      {currentIndex === (images?.length || 0) && (
+                        <motion.div
+                          initial={{ scale: 0 }}
+                          animate={{ scale: 1 }}
+                          className='absolute inset-0 flex items-center justify-center'
+                        >
+                          <div className='w-4 h-4 bg-white rounded-full shadow-lg border-2 border-black/20'></div>
+                        </motion.div>
+                      )}
+
+                      <div className='absolute top-2 left-2 bg-black/70 text-white text-xs px-2 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+                        Video
+                      </div>
+                    </motion.button>
+                  )}
                 </div>
               </div>
 
               {/* Footer */}
               <div className='px-6 py-4 border-t border-white/10 bg-black/20'>
                 <p className='text-sm text-gray-400 text-center'>
-                  Click any image to view • {images.length} images total
+                  Click any media to view • {totalMedia} items total
                 </p>
               </div>
             </motion.div>

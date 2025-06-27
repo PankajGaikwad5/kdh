@@ -83,6 +83,8 @@ export const products = [
         thumbnail: '/assets/products/thumbnails/1738927177039-Slide5.JPG',
       },
     ],
+    video:
+      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCgDKppeFoQ5jtomeZYnhXwDRcaNS8IHVWdJi4',
     description: `This isn’t just a divider—it’s a statement in stone. 
 
 The Monster Partition Screen turns solid marble into pure fluidity, sculpted with curves that flow like confidence. 
@@ -499,6 +501,8 @@ This is Karan Desai at his best — where sculptural form meets unstoppable pres
         thumbnail: '/assets/products/thumbnails/1738927920707-Slide8.JPG',
       },
     ],
+    video:
+      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCc6u0KpnvRqiwA2cnJ9Zhf78sxCamS5tDUFQr',
     description: `This isn’t just a U-shaped table — it’s a masterstroke in marble. 
 
 Sculpted with flawless precision, its flowing curves bend the rules of traditional design. 
@@ -717,6 +721,8 @@ Light your space like you mean it.`,
         thumbnail: '/assets/products/thumbnails/1738926030383-5.jpg',
       },
     ],
+    video:
+      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCajdlk8JDhG5HCzPb3QlFJuiAr4j6p0c7eDEq',
     description: `This isn’t just a basin—it’s a bold move. Sculpted like art, built for impact. 
 
 It turns any bathroom into a conversation starter. Pair it with a sleek bathtub and you’ve got a 
@@ -1222,6 +1228,8 @@ Bold. Balanced. Built for spaces that don’t settle for ordinary.`,
         thumbnail: '/assets/products/thumbnails/1738926481093-Slide7.JPG',
       },
     ],
+    video:
+      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCaXJhNuDhG5HCzPb3QlFJuiAr4j6p0c7eDEqX',
     description: `This isn’t just a bathtub—it’s a marble masterpiece. 
 
 Bold, sculptural, and built for two, it blends textured leather finesse with sheer size and elegance. 
@@ -1309,6 +1317,8 @@ Because when marble meets vision, the result is nothing short of iconic.`,
         thumbnail: '/assets/products/thumbnails/1738927232491-Slide6.JPG',
       },
     ],
+    video:
+      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCjKPbe9RgMIbl3P4qwyANo9tH2kiZ5dfchuFv',
     description: `This is more than a center table — it’s a statement of dominance, precision, and presence. 
 
 Sculpted from pure white marble, its continuous arch isn’t just design, it’s strategy — bold, seamless, unforgettable. 
@@ -1961,6 +1971,8 @@ For those who don’t decorate—they curate power.`,
         thumbnail: '/assets/products/thumbnails/1740392872453-14.jpg',
       },
     ],
+    video:
+      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HC489LzLPeVGk63JHrUlZBpzAjR702ThdyPucm',
     description: `This bench? It's not just a seat—it’s a statement. 
 
 Sculpted from striking marble, it turns every moment into a scene straight out of a luxury lifestyle playbook. 
@@ -2241,6 +2253,8 @@ This is luxury with backbone. Solid, striking, and built to impress.`,
         thumbnail: '/assets/products/thumbnails/1738928023197-Slide5.JPG',
       },
     ],
+    video:
+      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HC9rpjN5cbKmaUnRuGY8rZ2WhpOsLIyt9Hq65V',
     description: `This isn’t just a lamp—it’s pure presence. 
 
 Carved from rich, veined marble and arched like a gateway to luxury, it doesn’t light a room—it transforms it. 
@@ -2488,6 +2502,8 @@ A piece like this doesn’t just hold your collection—it defines your taste. F
         thumbnail: '/assets/products/thumbnails/1738926974590-Slide6.JPG',
       },
     ],
+    video:
+      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCjraUcJRgMIbl3P4qwyANo9tH2kiZ5dfchuFv',
     description: `Born from a shared obsession with precision, Karan Desai and TopBrewer India present Monster 2.0—where architecture meets exceptional coffee. 
 
 This isn’t just a machine; it’s a sculpture with purpose. 
@@ -2993,6 +3009,8 @@ You want a statement that growls back? The Monster Grumpy is already watching.`,
       //   thumbnail: '/assets/products/thumbnails/1738927839163-Slide15.JPG',
       // },
     ],
+    video:
+      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HC550WYE2zZEnj4uh9TVHdL6YlaGR3JgyF0cWr',
     description: `This planter box isn’t just elegant — it’s engineered to impress. 
 
 Sculpted from richly veined marble, its bold U-shaped design commands attention from every angle. 
@@ -3083,6 +3101,8 @@ Plant life never had a stage this strong.`,
         thumbnail: '/assets/products/thumbnails/1743750415407-5.png',
       },
     ],
+    video:
+      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCrAAqEATm3Xw2n8KRLyesC1pDh0NbcqkHFIGS',
     description: `This isn’t a dining table—it’s the centerpiece of influence. 
 
 Sculpted from pure white marble with a bold conical base, it commands the room without saying a word. 
@@ -4072,6 +4092,8 @@ Light your space like you mean it.`,
         thumbnail: '/assets/products/thumbnails/1738930738997-Slide5.JPG',
       },
     ],
+    video:
+      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCHhlvxgVZ2z9ndleWYNv0FOLVQfpArj5MGE8q',
     description: `ENTER IF YOU DARE: MONS-FORMER IS WAITING
 
 Last year, he was just a friendly farmer.
@@ -4187,6 +4209,8 @@ Let’s find out.`,
         thumbnail: '/assets/products/thumbnails/1738927089676-Slide5.JPG',
       },
     ],
+    video:
+      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCb7IvhiUPLMp7CSHgZ1FoRv8cNKmaY5nb0V34',
     description: `This isn’t just a lamp—it’s sculpture with swagger. 
 Carved with precision and presence, the Monster Table Lamp pairs fluid curves with raw stone power. 
 
