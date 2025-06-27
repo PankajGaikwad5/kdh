@@ -365,6 +365,36 @@ export const newImagePaths = [
     group: 'Matilda',
     productId: 'side-table',
   },
+  {
+    name: 'Taavdi',
+    path: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6i13aArFz4iH7WfGTVpvldeUXscEPgYyhMN6x',
+    group: 'Matilda 2025',
+    productId: 'taavdi',
+  },
+  {
+    name: 'Bench',
+    path: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6gBXjHSCZerKAITJasY524vLb0iMwnFhmpSEq',
+    group: 'Matilda 2023',
+    productId: 'tfh-bench',
+  },
+  {
+    name: 'AV Console',
+    path: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6351hDNkO70Cba5AdxRUpojYnlNeJ2mGDHhtk',
+    group: 'Matilda 2023',
+    productId: 'tfh-av-console',
+  },
+  {
+    name: 'Console 1',
+    path: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6YGDJhbpQ6Mplf2w0nGeTNo5xsyRHC8DzakUP',
+    group: 'Matilda 2023',
+    productId: 'tfh-console-travertine',
+  },
+  {
+    name: 'Side Table',
+    path: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6SO7Dkd8zaXZkiDGfjl7Bco4E3528bMxICHhd',
+    group: 'Matilda 2023',
+    productId: 'tfh-side-table',
+  },
 
   ...Array(5)
     .fill([
@@ -721,6 +751,36 @@ export const newImagePaths = [
         path: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9zWJSjs2frimQ5LhFdjbpOHNPEsav1o2Ac0D',
         group: 'Matilda',
         productId: 'side-table',
+      },
+      {
+        name: 'Taavdi',
+        path: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6i13aArFz4iH7WfGTVpvldeUXscEPgYyhMN6x',
+        group: 'Matilda 2025',
+        productId: 'taavdi',
+      },
+      {
+        name: 'Bench',
+        path: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6gBXjHSCZerKAITJasY524vLb0iMwnFhmpSEq',
+        group: 'Matilda 2023',
+        productId: 'tfh-bench',
+      },
+      {
+        name: 'AV Console',
+        path: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6351hDNkO70Cba5AdxRUpojYnlNeJ2mGDHhtk',
+        group: 'Matilda 2023',
+        productId: 'tfh-av-console',
+      },
+      {
+        name: 'Console 1',
+        path: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6YGDJhbpQ6Mplf2w0nGeTNo5xsyRHC8DzakUP',
+        group: 'Matilda 2023',
+        productId: 'tfh-console-travertine',
+      },
+      {
+        name: 'Side Table',
+        path: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6SO7Dkd8zaXZkiDGfjl7Bco4E3528bMxICHhd',
+        group: 'Matilda 2023',
+        productId: 'tfh-side-table',
       },
     ])
     .flat(),

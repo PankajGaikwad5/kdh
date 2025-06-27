@@ -5646,7 +5646,14 @@ Whether it's hiding cables or holding court, AV means business — and business 
         },
       },
     ],
-    description: `To be edited.`,
+    description: `Understated? Never. Console 1 is pure finesse — all smooth curves and natural swagger, sculpted from warm travertine that looks like it’s been sunbathing in Tuscany for a century. 
+
+Two bold bases — one squared, one curved — balance each other like a masterclass in duality. 
+It’s clean, it’s confident, and it delivers elegance with a side of authority. 
+
+Place it in your entryway, gallery, or corner office — this piece doesn’t just complement the space, it upgrades the entire narrative. You don’t just walk past this console. You feel it.
+
+`,
     dimensions:
       'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO4UCttXmYLAzci562mjC7NX0nUpdqB8Hf3QEW',
     __v: 0,
