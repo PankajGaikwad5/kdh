@@ -3293,8 +3293,12 @@ Crafted by Karan Desai, this vase is where fine art meets fearless form — the 
         thumbnail: '/assets/products/thumbnails/1738930706117-Slide2.JPG',
       },
     ],
-    description:
-      'Serafini, located in Chiampo (Italy), a city internationally\nrenowned for its marble production, has evolved into one\nof the most innovative marble factories, producing design-\ndriven products and objects. At the 2013 Milan Fair, a\nchance encounter sparked the idea for a bench that\ntranscends mere functionality, symbolizing unity and\nconnection. Designed by Karan Desai, it reflects the\nbeauty of cultural exchange and serves as a humble\ntribute to inclusivity and empathy, fostering connections\nthat transcend boundaries.\n\n\n\nThe Samaveta bench, designed for indoor and outdoor\nuse, blends comfort and versatility. Its contoured seating\nensures ergonomic support, while a flat surface provides\nspace for personal items. A built-in vessel can house plants\nfor shade or serve creative indoor purposes like an ice\nbucket. Features like a horseshoe-shaped seat and heel\nskirting enhance comfort, while its sleek design balances\nstrength and elegance.\n\n\n\nA testament to cultural synthesis and thoughtful design, the\nSamaveta bench combines functionality, aesthetics, and\ninnovation, enriching any space it inhabits.',
+    description: `Crafted in collaboration with Serafini—a renowned marble atelier from Chiampo, Italy—the Samaveta Bench by Karan Desai is a tribute to cultural connection and inclusive design. 
+
+Its sculpted form offers ergonomic seating, a flat surface for essentials, and a vessel that invites nature or creativity indoors. 
+Equally at home inside or out, the bench marries strength with softness, blending Italian craftsmanship with Indian storytelling. 
+
+More than functional, Samaveta symbolizes unity, empathy, and the beauty of cross-cultural design—transforming any space it inhabits with intention, elegance, and quiet impact.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUV965cLeJz0jfKoyVd9HNhC5wFQ4OrBi2UkDx',
     __v: 0,
@@ -4971,7 +4975,12 @@ Sleek, commanding, and completely unexpected—this table doesn’t just support
         thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
       },
     ],
-    description: 'To be edited.',
+    description: `A poetic fusion of form and material, the Samaveta Console is a sculptural piece born from a creative collaboration between Karan Desai and Serafini.
+
+Part of the Monster series, its name—drawn from the Sanskrit Samaveta, meaning gathered—reflects its harmonious structure and unified presence. 
+Crafted in rich stone with Serafini’s signature finesse and architectural sensibility, the console balances organic fluidity with bold geometry. 
+
+With its monolithic silhouette and tactile surface, Samaveta anchors any space with quiet strength, becoming both a functional piece and a visual statement. A refined testament to material storytelling and design synergy.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHr4HFVSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
     __v: 0,
@@ -5420,6 +5429,285 @@ Ideal for spaces that embrace architectural drama with timeless sophistication.`
 Crafted from richly veined marble, the arched form embraces two seamless drawers, blending utility with fluid design. 
 The interplay of curves and clean lines reflects a refined minimalism, making this piece an icon of modern luxury—ideal for 
 curated interiors that appreciate the power of form and function in harmony.`,
+    dimensions:
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO4UCttXmYLAzci562mjC7NX0nUpdqB8Hf3QEW',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: 'taavdi',
+    },
+    title: 'Taavdi',
+    group: 'matilda-2025',
+    material: 'marble',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCEKH3sdtZQpOq9no3vVs5yPKXR8gEYuikGU',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6i13aArFz4iH7WfGTVpvldeUXscEPgYyhMN6x',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6I3wkF6sxbsjpAT301gKUZ9diywRSNXatVuBG',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6vhBkzTfBFZnrWTzhGMHUEmpQfVdIuNOjwvsx',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: `You’re not just looking at basins — you’re looking at a power move in stone.
+
+This dual-basin setup isn’t here to blend in. It’s here to dominate. Crafted in precision-cut marble and set on a layered tray of raw elegance, this piece screams taste, control, and status. 
+The contrast? Deliberate. The proportions? Spot on. Whether it’s for your penthouse powder room or a five-star suite, this is design that sells itself. 
+
+Functional? Absolutely. But more than that — it’s unforgettable. 
+Because when you invest in details like this, you’re not just upgrading your space — you’re owning it.`,
+    dimensions:
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO4UCttXmYLAzci562mjC7NX0nUpdqB8Hf3QEW',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: 'tfh-av-console',
+    },
+    title: 'AV Console',
+    group: 'matilda-2023',
+    material: 'marble',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCEKH3sdtZQpOq9no3vVs5yPKXR8gEYuikGU',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6351hDNkO70Cba5AdxRUpojYnlNeJ2mGDHhtk',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6CUfPe95TgwS23nFkaclOAiM4YpJ6GKdsHR1h',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ68D6Lg7Q7kSH4j3OdAFgERmY21KxqyNofLiQJ',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ645GGdNXgkHJgyXSOw8Nt1rLICdZhDa3cx560',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6YQUwDXpQ6Mplf2w0nGeTNo5xsyRHC8DzakUP',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: `This isn’t just a console — it’s confidence, carved in stone. 
+
+The AV Console takes clean lines and luxury materials, then throws subtlety out the window. 
+With its sleek fluted front and full marble body, it doesn’t whisper quality — it shouts it. 
+
+Rounded edges, seamless detailing, and a finish so polished it practically mirrors your ambition. 
+This is the kind of piece that tells the room who’s in charge — even before you say a word. 
+
+Whether it's hiding cables or holding court, AV means business — and business looks damn good.`,
+    dimensions:
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO4UCttXmYLAzci562mjC7NX0nUpdqB8Hf3QEW',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: 'tfh-bench',
+    },
+    title: 'Bench',
+    group: 'matilda-2023',
+    material: 'marble',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCEKH3sdtZQpOq9no3vVs5yPKXR8gEYuikGU',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6gBXjHSCZerKAITJasY524vLb0iMwnFhmpSEq',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6upUdYBDuc7iI6TAzg1V9OZvQdq2xWe0UJsBK',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6OIV0KluHEwqX8ryijeQWIxhs7f4S2KPznVcF',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ67mMW1MFzKGPvw5r90X863RfNEIjsCLM7n1qm',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6gXrHBvCZerKAITJasY524vLb0iMwnFhmpSEq',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: `To be edited.`,
+    dimensions:
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO4UCttXmYLAzci562mjC7NX0nUpdqB8Hf3QEW',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: 'tfh-console-travertine',
+    },
+    title: 'Console 1',
+    group: 'matilda-2023',
+    material: 'marble',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCEKH3sdtZQpOq9no3vVs5yPKXR8gEYuikGU',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6YGDJhbpQ6Mplf2w0nGeTNo5xsyRHC8DzakUP',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6MJfDueb1lcT5et2R98E1p3obFqIMhKPHkOGX',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6ZvGRLVnztXfi7NrOjVYyq8TUbv1HSJhxCEsF',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6Ki2lKgG1IjYTEqDxft0rBZkyuJnXG3FKod5e',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6Q5KXhHrAEae8yoHbhSkJuscDIK4m7dfTjqZWq',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: `To be edited.`,
+    dimensions:
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO4UCttXmYLAzci562mjC7NX0nUpdqB8Hf3QEW',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: 'tfh-side-table',
+    },
+    title: 'Side Table',
+    group: 'matilda-2023',
+    material: 'marble',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCEKH3sdtZQpOq9no3vVs5yPKXR8gEYuikGU',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6SO7Dkd8zaXZkiDGfjl7Bco4E3528bMxICHhd',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6oIs9oMWEjDF2ULYwO4TC6vlbt5HPqp1suxyV',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6tazmp1ZyMXp4DZUB5duPNHnOk0vqFAbeaVch',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6dHHzAUj5nQHCxdAwKzgMiNoO8BVZTP3fJuq1',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6yPtn0jAAvzOemNhFRJkaS3KXZ0LMo1E2ijgW',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: `You think this is just a side table? Think again. This is geometry with swagger. 
+Precision-cut marble cubes, separated by a jet-black bridge — bold, minimal, and absolutely unapologetic. 
+
+It’s not playing the sidekick, it’s co-starring. One part sculpture, one part function, this piece isn’t here to just hold your drink — it’s here to steal attention. 
+Clean lines, killer contrast, and a presence that says: I don’t follow the room, I anchor it.
+
+Because even your side table should speak volumes.`,
     dimensions:
       'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO4UCttXmYLAzci562mjC7NX0nUpdqB8Hf3QEW',
     __v: 0,

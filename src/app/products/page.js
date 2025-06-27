@@ -55,6 +55,14 @@ const page = () => {
         '86 side table, side table, chaise longue, marble ball console, marble console, marble screen',
     },
     {
+      id: 13,
+      title: 'Matilda 2023',
+      group: 'matilda-2023',
+      img: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6YGDJhbpQ6Mplf2w0nGeTNo5xsyRHC8DzakUP',
+      projects:
+        'av console, bench, console, green, travatine, dining table, side table',
+    },
+    {
       id: 4,
       title: 'Matilda 2024',
       group: 'matilda-2024',
