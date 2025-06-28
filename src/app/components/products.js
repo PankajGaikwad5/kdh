@@ -1027,6 +1027,8 @@ One look, and you know—you’ve arrived.`,
         thumbnail: '/assets/products/thumbnails/table6.jpg',
       },
     ],
+    video:
+      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCuKKdD4jcQlz4hvfIqLCiaOSx10dMWRDKZYPn',
     description: `Forget dinner conversations—this table is the conversation. 
 
 Sculpted from rich wood and elevated with fearless design, the Monster Dining Table doesn’t just anchor a room—it defines it. 
@@ -1421,6 +1423,8 @@ This is luxury with backbone. Solid, striking, and built to impress.`,
         thumbnail: '/assets/products/thumbnails/console8.jpg',
       },
     ],
+    video:
+      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCgze5OXoQ5jtomeZYnhXwDRcaNS8IHVWdJi4s',
     description: `It’s not just a console—it’s a bold sculptural force. 
 The Monster Console turns heads with unapologetic presence and primal confidence. 
 
@@ -1735,6 +1739,8 @@ You want personality in your decor? This lamp is personality—wild, wide-eyed, 
         thumbnail: '/assets/products/thumbnails/dining4.jpg',
       },
     ],
+    video:
+      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCOy3I6NvCdTRXkKq6It0VBFyceAso73JQWwnO',
     description: `Not just a chair—a throne for the unapologetic. The Monster Dining Chair isn’t here to blend in; it’s here to dominate the table. 
 
 With its sculptural stance and indulgently textured surface, it redefines dining with drama and depth. 
@@ -2637,6 +2643,8 @@ It’s not about drinking coffee—it’s about experiencing design, technology,
         thumbnail: '/assets/products/thumbnails/planter8.jpg',
       },
     ],
+    video:
+      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCE3laOFMxgSbMyfoC091qPNkZsU38XhOrtR6a',
     description:
       'Why should plants have all the peace? The Monster\nPlanter reimagines botanical displays with an\navant-garde, feral aesthetic. Sculptural yet organic, it’s a\nfusion of life and art—because even nature deserves to\nbe bold.',
     dimensions:
@@ -4542,6 +4550,8 @@ Designed for those who play to win, this piece turns any corner into a conversat
         thumbnail: '/assets/products/thumbnails/library13.jpg',
       },
     ],
+    video:
+      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCRJsIBrz87BdYKwzVbskge2pAtoyQOrc3vUTl',
     description: `This isn’t just a library—it’s a conversation starter. 
 
 The Monster Library breaks the mold with its sculptural chaos and commanding silhouette. 
