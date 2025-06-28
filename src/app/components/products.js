@@ -285,6 +285,8 @@ Want lighting that speaks louder than words? Then grab the Monster Gum—and let
         thumbnail: '/assets/products/thumbnails/bench11.jpg',
       },
     ],
+    video:
+      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HC1F6dwF9qTbodORhsaUxn8lAzV0u4LC9EkfG3',
     description: `This isn’t just a bench—it’s a quiet disruptor. 
 
 Anchored by heavy, sculpted wood and topped with a plush, fur-like form, it blurs the lines between function and statement. 
@@ -3934,6 +3936,8 @@ When you take your seat here, you’re not part of the room. You become the focu
         thumbnail: '/assets/products/thumbnails/gchair11.jpg',
       },
     ],
+    video:
+      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCiPUXo2cmlRJdGy18r5wqFbNcEQKfVHC9IjX2',
     description: `The Gatoo Chair isn’t just a seat—it’s a bold rebellion in fur. 
 
 Sculpted to command attention, it pairs plush comfort with unapologetically powerful form. 
