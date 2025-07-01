@@ -5576,7 +5576,7 @@ This is the kind of piece that tells the room who’s in charge — even before 
 
 Whether it's hiding cables or holding court, AV means business — and business looks damn good.`,
     dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO4UCttXmYLAzci562mjC7NX0nUpdqB8Hf3QEW',
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOxznN0KtfzZMOQ82F9V3XlUqPn6kstdYmWcTr',
     __v: 0,
   },
   {
@@ -5631,7 +5631,7 @@ Whether it's hiding cables or holding court, AV means business — and business 
     ],
     description: `To be edited.`,
     dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO4UCttXmYLAzci562mjC7NX0nUpdqB8Hf3QEW',
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgzsaPScO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
     __v: 0,
   },
   {
@@ -5693,7 +5693,7 @@ Place it in your entryway, gallery, or corner office — this piece doesn’t ju
 
 `,
     dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO4UCttXmYLAzci562mjC7NX0nUpdqB8Hf3QEW',
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOaBhQfedghAWJf0RpD5MNGad48yOCqt7roLni',
     __v: 0,
   },
   {
@@ -5754,7 +5754,7 @@ Clean lines, killer contrast, and a presence that says: I don’t follow the roo
 
 Because even your side table should speak volumes.`,
     dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO4UCttXmYLAzci562mjC7NX0nUpdqB8Hf3QEW',
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOrRQRBFbmfJY4ltsd2gZzTFGVu5iCAoIxpKya',
     __v: 0,
   },
 ];
