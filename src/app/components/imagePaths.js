@@ -401,6 +401,18 @@ export const newImagePaths = [
     group: 'Monster 3.0',
     productId: '67b5e69de03cc2c55c62bd22',
   },
+  {
+    name: 'Monster Ottoman',
+    path: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6ENEwIVvfBbIaKPCgLGxqndpNv5DjmeSowJ92',
+    group: 'Monster 3.0',
+    productId: 'monster-ottoman',
+  },
+  {
+    name: 'Tea Bar',
+    path: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6vLe7PDfBFZnrWTzhGMHUEmpQfVdIuNOjwvsx',
+    group: 'Matilda 2022',
+    productId: 'tdp-tea-bar',
+  },
 
   ...Array(5)
     .fill([
