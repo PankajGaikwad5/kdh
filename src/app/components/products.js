@@ -3780,6 +3780,46 @@ You’re not just looking at art—you’re looking at 100 years of innovation, 
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUVOfTglleJz0jfKoyVd9HNhC5wFQ4OrBi2UkD',
     images: [
       {
+        fileName: '1',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6GLjBya6qkvfmjiKDC4Xl80sHEdpQJGBAFYbh',
+        _id: {
+          $oid: '67b5e69de03cc2c55c62bd23',
+        },
+      },
+      {
+        fileName: '2',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6UMwbbFJlAmewIM0JczhqK9S4CkO27T5b3NuV',
+        _id: {
+          $oid: '67b5e69de03cc2c55c62bd23',
+        },
+      },
+      {
+        fileName: '3',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6gJx87HCZerKAITJasY524vLb0iMwnFhmpSEq',
+        _id: {
+          $oid: '67b5e69de03cc2c55c62bd23',
+        },
+      },
+      {
+        fileName: '4',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6Fn4BnEctnPM3mXfpc1SBakLQqAlTVoE0twgr',
+        _id: {
+          $oid: '67b5e69de03cc2c55c62bd23',
+        },
+      },
+      {
+        fileName: '5',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6gS5z9pMCZerKAITJasY524vLb0iMwnFhmpSE',
+        _id: {
+          $oid: '67b5e69de03cc2c55c62bd23',
+        },
+      },
+      {
         fileName: '1739974301885-dchair10.jpg',
         filePath: '/assets/products/1739974301885-dchair10.jpg',
         _id: {
@@ -5755,6 +5795,154 @@ Clean lines, killer contrast, and a presence that says: I don’t follow the roo
 Because even your side table should speak volumes.`,
     dimensions:
       'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOrRQRBFbmfJY4ltsd2gZzTFGVu5iCAoIxpKya',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: 'tdp-tea-bar',
+    },
+    title: 'Tea Bar',
+    group: 'matilda-2022',
+    material: 'marble',
+    pdf: '',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6vLe7PDfBFZnrWTzhGMHUEmpQfVdIuNOjwvsx',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6O72zJsuHEwqX8ryijeQWIxhs7f4S2KPznVcF',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6r00xac2LAoRbwEXW8aLYzdOU9uNSG45lIpvj',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6EWGJP3vfBbIaKPCgLGxqndpNv5DjmeSowJ92',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6vGYtXSfBFZnrWTzhGMHUEmpQfVdIuNOjwvsx',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6Ql7yYQWrAEae8yoHbhSkJuscDIK4m7dfTjqZ',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ66vrQSJ3jRledxo3hIaUpzVs7H2gCbEfBZ8Gk',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: `To be edited`,
+    dimensions: '',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: 'monster-ottoman',
+    },
+    title: 'Monster Ottoman',
+    group: 'monster_3.0',
+    material: 'Burnt Wood & Fur Fabric',
+    pdf: '',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6ENEwIVvfBbIaKPCgLGxqndpNv5DjmeSowJ92',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6UzHFtaJlAmewIM0JczhqK9S4CkO27T5b3NuV',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6spPiES9vFBgSUW0cX9kRd8PDVGquOawNHiYT',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6sCmNBq9vFBgSUW0cX9kRd8PDVGquOawNHiYT',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6EU2Qr5vfBbIaKPCgLGxqndpNv5DjmeSowJ92',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6Ed9aU8cvfBbIaKPCgLGxqndpNv5DjmeSowJ9',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6TI6zUu4l5c29SVtCBxOUDevPXhKIyTMj1qrL',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath:
+          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6M2oLJ41lcT5et2R98E1p3obFqIMhKPHkOGXS',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: `To be edited`,
+    dimensions: '',
     __v: 0,
   },
 ];
