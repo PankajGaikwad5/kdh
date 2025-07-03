@@ -5864,7 +5864,8 @@ Because even your side table should speak volumes.`,
       },
     ],
     description: `To be edited`,
-    dimensions: '',
+    dimensions:
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOjnwUKeNQNhsYReup8oqCmaiw71dHbWcUIX5f',
     __v: 0,
   },
   {
@@ -5942,7 +5943,8 @@ Because even your side table should speak volumes.`,
       },
     ],
     description: `To be edited`,
-    dimensions: '',
+    dimensions:
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgx2kAPcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
     __v: 0,
   },
 ];
