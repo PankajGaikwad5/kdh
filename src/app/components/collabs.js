@@ -1,6 +1,60 @@
 export const collabs = [
   {
     _id: {
+      $oid: '6',
+    },
+    title: 'serafini',
+    details: 'Salone 2024',
+    moreDetails: '/products/serafini',
+    images: [
+      {
+        fileName: '2.jpg',
+        fileUrl: '/assets/serafini.png',
+        _id: {
+          $oid: '6791fe227a5dc4ac2d27e24f',
+        },
+      },
+
+      {
+        fileName: 'new',
+        fileUrl: '/serafini/2.jpg',
+        _id: '123',
+      },
+      {
+        fileName: 'new',
+        fileUrl: '/serafini/3.jpg',
+        _id: '123',
+      },
+      {
+        fileName: 'new',
+        fileUrl: '/serafini/4.jpg',
+        _id: '123',
+      },
+      {
+        fileName: 'new',
+        fileUrl: '/serafini/5.jpg',
+        _id: '123',
+      },
+      {
+        fileName: 'new',
+        fileUrl: '/serafini/6.jpg',
+        _id: '123',
+      },
+      {
+        fileName: 'new',
+        fileUrl: '/serafini/7.jpg',
+        _id: '123',
+      },
+      {
+        fileName: 'new',
+        fileUrl: '/serafini/1.jpg',
+        _id: '123',
+      },
+    ],
+    __v: 0,
+  },
+  {
+    _id: {
       $oid: '6791f5807a5dc4ac2d27e20e',
     },
     title: 'dimension',
@@ -325,59 +379,6 @@ export const collabs = [
         fileName: '2',
         fileUrl: '/casa/n4.jpg',
         _id: '2',
-      },
-    ],
-    __v: 0,
-  },
-  {
-    _id: {
-      $oid: '6',
-    },
-    title: 'serafini',
-    details: 'Salone 2024',
-    moreDetails: '/productdetails/67a5fa124da9b29cd0f10c36',
-    images: [
-      {
-        fileName: '2.jpg',
-        fileUrl: '/assets/serafini.png',
-        _id: {
-          $oid: '6791fe227a5dc4ac2d27e24f',
-        },
-      },
-      {
-        fileName: 'new',
-        fileUrl: '/serafini/1.jpg',
-        _id: '123',
-      },
-      {
-        fileName: 'new',
-        fileUrl: '/serafini/2.jpg',
-        _id: '123',
-      },
-      {
-        fileName: 'new',
-        fileUrl: '/serafini/3.jpg',
-        _id: '123',
-      },
-      {
-        fileName: 'new',
-        fileUrl: '/serafini/4.jpg',
-        _id: '123',
-      },
-      {
-        fileName: 'new',
-        fileUrl: '/serafini/5.jpg',
-        _id: '123',
-      },
-      {
-        fileName: 'new',
-        fileUrl: '/serafini/6.jpg',
-        _id: '123',
-      },
-      {
-        fileName: 'new',
-        fileUrl: '/serafini/7.jpg',
-        _id: '123',
       },
     ],
     __v: 0,
