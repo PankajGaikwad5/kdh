@@ -15,14 +15,14 @@ export const collabs = [
         },
       },
 
+      // {
+      //   fileName: 'new',
+      //   fileUrl: '/serafini/3.jpg',
+      //   _id: '123',
+      // },
       {
         fileName: 'new',
-        fileUrl: '/serafini/2.jpg',
-        _id: '123',
-      },
-      {
-        fileName: 'new',
-        fileUrl: '/serafini/3.jpg',
+        fileUrl: '/serafini/1.jpg',
         _id: '123',
       },
       {
@@ -45,9 +45,28 @@ export const collabs = [
         fileUrl: '/serafini/7.jpg',
         _id: '123',
       },
+
       {
         fileName: 'new',
-        fileUrl: '/serafini/1.jpg',
+        fileUrl: '/serafini/2.jpg',
+        _id: '123',
+      },
+      {
+        fileName: 'new',
+        fileUrl:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPs2jLOHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
+        _id: '123',
+      },
+      {
+        fileName: 'new',
+        fileUrl:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPs2jLOHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
+        _id: '123',
+      },
+      {
+        fileName: 'new',
+        fileUrl:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUowsRYTPd43VNTXj27bgOZneCUs9aBiY5x8vw',
         _id: '123',
       },
     ],
@@ -147,6 +166,7 @@ export const collabs = [
     title: 'Top Brewer',
     details: 'ID 2024',
     moreDetails: '/productdetails/67a5eb7e4da9b29cd0f10b69',
+    singleProduct: true,
     images: [
       {
         fileName: '2.jpg',
@@ -223,6 +243,7 @@ export const collabs = [
     title: 'bft',
     details: 'ID 2024',
     moreDetails: '/productdetails/67a5eb9f4da9b29cd0f10b71',
+    singleProduct: true,
     images: [
       {
         fileName: 'new1.jpg',

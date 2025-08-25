@@ -93,11 +93,13 @@ const page = () => {
             <img src='/assets/serafini.png' alt='' className='object-cover ' />
           </div>
         </div> */}
-        <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3  p-6 space-y-8 items-center py-10'>
+        <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3 p-6 space-y-8 items-center py-10'>
           {collabs.map((project) => (
             <div
               key={project._id.$oid || project._id}
-              className='flex justify-center items-center'
+              className={`flex justify-center items-center ${
+                project.title && '-mb-20'
+              }`}
             >
               <img
                 src={project.images[0]?.fileUrl}
@@ -129,7 +131,7 @@ const page = () => {
             href={`${selectedProject.moreDetails}`}
             className='absolute right-20 bottom-14 underline  z-10 tracking-widest text-blue-600'
           >
-            see more details
+            {selectedProject.singleProduct ? 'Check Out' : 'View Collection'}
           </a>
         </div>
       )}
