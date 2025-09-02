@@ -21,11 +21,13 @@ const montserrat = Montserrat({
 const page = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [selectedProjectImages, setSelectedProjectImages] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const openModal = (project) => {
     setSelectedProject(project);
     setSelectedProjectImages(project.images);
     // console.log(project.images);
+    setActiveIndex(0); // reset when opening
   };
 
   const closeModal = () => {
@@ -124,9 +126,20 @@ const page = () => {
           <div className='relative w-full max-w-4xl p-4'>
             <CustomCarousel
               imgArray={selectedProjectImages.map((image) => image.fileUrl)}
+              onSlideChange={setActiveIndex}
             />
           </div>
-          <h3 className='text-white'>{selectedProject.details}</h3>
+          {/* {selectedProject.title === 'serafini' && (
+            <h3 className='text-white'>{selectedProject.details}</h3>
+          )} */}
+          {selectedProject.title === 'serafini' ? (
+            <h3 className='text-white'>
+              {selectedProjectImages[activeIndex]?.name || ''}
+            </h3>
+          ) : (
+            <h3 className='text-white'>{selectedProject.details}</h3>
+          )}
+
           <a
             href={`${selectedProject.moreDetails}`}
             className='absolute right-20 bottom-14 underline  z-10 tracking-widest text-blue-600'

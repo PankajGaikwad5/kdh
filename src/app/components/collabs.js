@@ -10,6 +10,7 @@ export const collabs = [
       {
         fileName: '2.jpg',
         fileUrl: '/assets/serafini.png',
+        name: '',
         _id: {
           $oid: '6791fe227a5dc4ac2d27e24f',
         },
@@ -23,50 +24,60 @@ export const collabs = [
       {
         fileName: 'new',
         fileUrl: '/serafini/1.jpg',
+        name: 'Salone 2024',
         _id: '123',
       },
       {
         fileName: 'new',
         fileUrl: '/serafini/4.jpg',
+        name: 'Salone 2024',
         _id: '123',
       },
       {
         fileName: 'new',
         fileUrl: '/serafini/5.jpg',
+        name: 'Salone 2024',
         _id: '123',
       },
       {
         fileName: 'new',
         fileUrl: '/serafini/6.jpg',
+        name: 'Salone 2024',
+
         _id: '123',
       },
       {
         fileName: 'new',
         fileUrl: '/serafini/7.jpg',
+        name: 'Salone 2024',
         _id: '123',
       },
 
       {
         fileName: 'new',
         fileUrl: '/serafini/2.jpg',
+        name: 'Salone 2024',
         _id: '123',
       },
       {
         fileName: 'new',
         fileUrl:
           'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPs2jLOHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
+        name: 'Salone 2025',
         _id: '123',
       },
       {
         fileName: 'new',
         fileUrl:
           'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPs2jLOHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
+        name: 'Salone 2025',
         _id: '123',
       },
       {
         fileName: 'new',
         fileUrl:
           'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUowsRYTPd43VNTXj27bgOZneCUs9aBiY5x8vw',
+        name: 'Salone 2025',
         _id: '123',
       },
     ],

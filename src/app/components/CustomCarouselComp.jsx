@@ -68,7 +68,7 @@ const MediaRenderer = ({ url, alt }) => {
   );
 };
 
-const CarouselComp = ({ imgArray }) => {
+const CarouselComp = ({ imgArray, onSlideChange }) => {
   const [thumbsSwiper, setThumbsSwiper] = React.useState(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const carouselRef = React.useRef(null);
@@ -171,6 +171,11 @@ const CarouselComp = ({ imgArray }) => {
         autoplay={{
           delay: 3000, // Time in milliseconds between slides
           disableOnInteraction: true, // Keep autoplay running after interaction
+        }}
+        onSlideChange={(swiper) => {
+          if (onSlideChange) {
+            onSlideChange(swiper.activeIndex);
+          }
         }}
       >
         {imgArray.map((img, index) => (
