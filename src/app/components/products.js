@@ -5947,4 +5947,484 @@ Because even your side table should speak volumes.`,
       'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgx2kAPcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
     __v: 0,
   },
+  {
+    _id: {
+      $oid: 'monster3centertable',
+    },
+    title: 'Monster Center Table',
+    group: 'monster_3.1',
+    material: 'To be edited',
+    pdf: '',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/centertable/1.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/centertable/2.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/centertable/3.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/centertable/4.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: `To be edited`,
+    dimensions:
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgx2kAPcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: 'monster3coffeetable',
+    },
+    title: 'Monster Coffee Table',
+    group: 'monster_3.1',
+    material: 'To be edited',
+    pdf: '',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/coffeetable/1.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/coffeetable/2.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/coffeetable/3.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: `To be edited`,
+    dimensions:
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgx2kAPcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: 'monster3console',
+    },
+    title: 'Monster Console',
+    group: 'monster_3.1',
+    material: 'To be edited',
+    pdf: '',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/console/1.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/console/2.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/console/3.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/console/4.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/console/5.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/console/6.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: `To be edited`,
+    dimensions:
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgx2kAPcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: 'monster3consolestorage',
+    },
+    title: 'Monster Console Storage',
+    group: 'monster_3.1',
+    material: 'To be edited',
+    pdf: '',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/consolestorage/1.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/consolestorage/2.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/consolestorage/3.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/consolestorage/4.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: `To be edited`,
+    dimensions:
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgx2kAPcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: 'monster3desk',
+    },
+    title: 'Monster Desk',
+    group: 'monster_3.1',
+    material: 'To be edited',
+    pdf: '',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/desk/3.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/desk/2.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/desk/1.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/desk/4.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: `To be edited`,
+    dimensions:
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgx2kAPcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: 'monster3floorlamp',
+    },
+    title: 'Monster Floorlamp',
+    group: 'monster_3.1',
+    material: 'To be edited',
+    pdf: '',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/floorlamp/1.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/floorlamp/2.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/floorlamp/3.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: `To be edited`,
+    dimensions:
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgx2kAPcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: 'monster3longdiningtable',
+    },
+    title: 'Monster Long Dining Table',
+    group: 'monster_3.1',
+    material: 'To be edited',
+    pdf: '',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/longdiningtable/1.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/longdiningtable/2.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/longdiningtable/3.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/longdiningtable/4.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/longdiningtable/5.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: `To be edited`,
+    dimensions:
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgx2kAPcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: 'monster3monstermirror',
+    },
+    title: 'Monster Mirror',
+    group: 'monster_3.1',
+    material: 'To be edited',
+    pdf: '',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/monstermirror/1.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/monstermirror/2.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/monstermirror/3.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/monstermirror/4.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: `To be edited`,
+    dimensions:
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgx2kAPcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: 'monster3rounddining',
+    },
+    title: 'Monster Round Dinig Table',
+    group: 'monster_3.1',
+    material: 'To be edited',
+    pdf: '',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/rounddining/3.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/rounddining/2.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/rounddining/1.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/rounddining/4.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: `To be edited`,
+    dimensions:
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgx2kAPcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: 'monster3shelves',
+    },
+    title: 'Monster Single Shelving Unit',
+    group: 'monster_3.1',
+    material: 'To be edited',
+    pdf: '',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/shelves/1.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/shelves/2.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/shelves/3.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/shelves/4.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: `To be edited`,
+    dimensions:
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgx2kAPcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: 'monster3sidetable',
+    },
+    title: 'Monster Side Table',
+    group: 'monster_3.1',
+    material: 'To be edited',
+    pdf: '',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/sidetable/1.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/sidetable/2.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/sidetable/3.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/sidetable/4.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: `To be edited`,
+    dimensions:
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgx2kAPcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
+    __v: 0,
+  },
 ];

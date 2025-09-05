@@ -413,8 +413,74 @@ export const newImagePaths = [
     group: 'Matilda 2022',
     productId: 'tdp-tea-bar',
   },
+  {
+    name: 'Monster Center Table',
+    path: '/m3/centertable/1.png',
+    group: 'Monster 3.1',
+    productId: 'monster3centertable',
+  },
+  {
+    name: 'Monster Coffee Table',
+    path: '/m3/coffeetable/1.png',
+    group: 'Monster 3.1',
+    productId: 'monster3coffeetable',
+  },
+  {
+    name: 'Monster Console',
+    path: '/m3/console/1.png',
+    group: 'Monster 3.1',
+    productId: 'monster3console',
+  },
+  {
+    name: 'Monster Console Storage',
+    path: '/m3/consolestorage/1.png',
+    group: 'Monster 3.1',
+    productId: 'monster3consolestorage',
+  },
+  {
+    name: 'Monster Desk',
+    path: '/m3/desk/3.png',
+    group: 'Monster 3.1',
+    productId: 'monster3desk',
+  },
+  {
+    name: 'Monster FloorLamp',
+    path: '/m3/floorlamp/1.png',
+    group: 'Monster 3.1',
+    productId: 'monster3floorlamp',
+  },
+  {
+    name: 'Monster Long Dining Table',
+    path: '/m3/longdiningtable/1.png',
+    group: 'Monster 3.1',
+    productId: 'monster3diningtable',
+  },
+  {
+    name: 'Monster Mirror',
+    path: '/m3/monstermirror/1.png',
+    group: 'Monster 3.1',
+    productId: 'monster3monstermirror',
+  },
+  {
+    name: 'Monster Round Dining Table',
+    path: '/m3/rounddining/3.png',
+    group: 'Monster 3.1',
+    productId: 'monster3rounddining',
+  },
+  {
+    name: 'Monster Single Shelving Unit',
+    path: '/m3/shelves/1.png',
+    group: 'Monster 3.1',
+    productId: 'monster3shelves',
+  },
+  {
+    name: 'Monster Side Table',
+    path: '/m3/sidetable/1.png',
+    group: 'Monster 3.1',
+    productId: 'monster3sidetable',
+  },
 
-  ...Array(5)
+  ...Array(3)
     .fill([
       {
         name: 'Gattoo Chair',
@@ -817,6 +883,72 @@ export const newImagePaths = [
         path: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6vLe7PDfBFZnrWTzhGMHUEmpQfVdIuNOjwvsx',
         group: 'Matilda 2022',
         productId: 'tdp-tea-bar',
+      },
+      {
+        name: 'Monster Center Table',
+        path: '/m3/centertable/1.png',
+        group: 'Monster 3.1',
+        productId: 'monster3centertable',
+      },
+      {
+        name: 'Monster Coffee Table',
+        path: '/m3/coffeetable/1.png',
+        group: 'Monster 3.1',
+        productId: 'monster3coffeetable',
+      },
+      {
+        name: 'Monster Console',
+        path: '/m3/console/1.png',
+        group: 'Monster 3.1',
+        productId: 'monster3console',
+      },
+      {
+        name: 'Monster Console Storage',
+        path: '/m3/consolestorage/1.png',
+        group: 'Monster 3.1',
+        productId: 'monster3consolestorage',
+      },
+      {
+        name: 'Monster Desk',
+        path: '/m3/desk/3.png',
+        group: 'Monster 3.1',
+        productId: 'monster3desk',
+      },
+      {
+        name: 'Monster FloorLamp',
+        path: '/m3/floorlamp/1.png',
+        group: 'Monster 3.1',
+        productId: 'monster3floorlamp',
+      },
+      {
+        name: 'Monster Long Dining Table',
+        path: '/m3/longdiningtable/1.png',
+        group: 'Monster 3.1',
+        productId: 'monster3diningtable',
+      },
+      {
+        name: 'Monster Mirror',
+        path: '/m3/monstermirror/1.png',
+        group: 'Monster 3.1',
+        productId: 'monster3monstermirror',
+      },
+      {
+        name: 'Monster Round Dining Table',
+        path: '/m3/rounddining/3.png',
+        group: 'Monster 3.1',
+        productId: 'monster3rounddining',
+      },
+      {
+        name: 'Monster Single Shelving Unit',
+        path: '/m3/shelves/1.png',
+        group: 'Monster 3.1',
+        productId: 'monster3shelves',
+      },
+      {
+        name: 'Monster Side Table',
+        path: '/m3/sidetable/1.png',
+        group: 'Monster 3.1',
+        productId: 'monster3sidetable',
       },
     ])
     .flat(),

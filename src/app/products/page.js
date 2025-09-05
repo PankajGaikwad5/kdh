@@ -26,6 +26,13 @@ const page = () => {
 
   const products = [
     {
+      id: 14,
+      title: 'Monster 3.1 X Dimensions',
+      group: 'monster_3.1',
+      img: '/m3/desk/3.png',
+      projects: '',
+    },
+    {
       id: 3,
       title: 'Monster 3.0 X Dimensions',
       group: 'monster_3.0',
@@ -129,7 +136,10 @@ const page = () => {
         <Navbar />
         {/* Grid container fills the available vertical space */}
 
-        <main className='flex-grow grid grid-cols-2 md:grid-cols-4 pt-10 gap-4 p-4 md:mx-14 my-10 md:my-6 '>
+        <main
+          className='flex-grow grid grid-cols-2 md:grid-cols-4 pt-10 gap-4 p-4 md:mx-14 my-10 md:my-6 '
+          onMouseLeave={() => setHoveredIndex(null)}
+        >
           {products.map(({ title, img, group, id, index }) => (
             <SubProductCard
               key={index}
