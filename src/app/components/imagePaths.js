@@ -480,7 +480,7 @@ export const newImagePaths = [
     productId: 'monster3sidetable',
   },
 
-  ...Array(3)
+  ...Array(2)
     .fill([
       {
         name: 'Gattoo Chair',
