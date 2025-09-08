@@ -4073,10 +4073,13 @@ It’s luxury with an edge, comfort with a voice, and design that refuses to sta
         thumbnail: '/assets/products/thumbnails/1738929747420-Slide3.JPG',
       },
     ],
-    description: `Monster Gattooffer isn’t a lamp—it’s a power move.
+    description: `Monster Guard isn’t just a lamp—it’s your golden enforcer.
 
-This beast breaks all the rules. With a spiked glass crown and a gold-toned base that means business, it turns soft light into hard impact. 
-It’s art, it’s attitude, and it owns every room it enters. 
+Built like a beast and lit like a legend, this bold design brings heat and attitude to any room. 
+With a blazing glass flame and a loyal stance, it doesn’t just light up the space—it owns it. Playful? 
+Sure. But make no mistake—this piece means business. 
+
+Want protection with personality? Monster Guard’s got your back—and your vibe.. 
 
 You want ordinary? Look elsewhere. You want bold, fearless, unforgettable? Gattooffer delivers—loud and proud. 
 Light your space like you mean it.`,
