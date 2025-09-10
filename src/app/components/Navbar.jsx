@@ -95,7 +95,7 @@ const Navbar = ({ isBgBlack, arrow, escape }) => {
   return (
     <>
       <div
-        className={` w-full flex fixed md:m-8 m-6  font-extralight text-xs uppercase tracking-wider text-gray-800 navMenu z-30 cursor-pointer ${
+        className={` w-full flex fixed md:m-8 m-6  font-extralight text-xs uppercase tracking-wider text-gray-800 navMenu z-50 cursor-pointer ${
           nav && 'open'
         }`}
         onClick={() => {

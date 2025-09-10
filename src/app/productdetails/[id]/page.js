@@ -21,6 +21,7 @@ import { Input } from '../../components/ui/input';
 import { Textarea } from '../../components/ui/textarea';
 import { products } from '@/app/components/products';
 import ThumbnailGrid from '@/app/components/ThumbnailGrid';
+import Navbar from '@/app/components/Navbar';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -274,8 +275,9 @@ const ProductDetailsPage = () => {
     <main
       className={`min-h-screen bg-black text-white font-sans relative ${montserrat.className}`}
     >
-      <header className='fixed top-0 left-0 w-full flex justify-between items-center p-4 z-50 bg-black/80 backdrop-blur'>
-        <a href='/'>
+      <Navbar />
+      <header className='fixed top-0 right-0 w-full flex justify-end items-center p-4 z-30 bg-black/80 backdrop-blur'>
+        {/* <a href='/'>
           <Image
             src='/assets/kdhlogo3.png'
             alt='Logo'
@@ -283,12 +285,12 @@ const ProductDetailsPage = () => {
             height={40}
             className='object-contain'
           />
-        </a>
+        </a> */}
         <button
           onClick={() => router.back()}
           className='text-white hover:text-gray-300 transition'
         >
-          <X size={28} />
+          <X size={30} />
         </button>
       </header>
 
