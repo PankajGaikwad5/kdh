@@ -9,7 +9,7 @@ export const collabs = [
     images: [
       {
         fileName: '2.jpg',
-        fileUrl: '/assets/serafini.png',
+        fileUrl: '/optimized/serafinilogo.webp',
         name: '',
         _id: {
           $oid: '6791fe227a5dc4ac2d27e24f',
@@ -411,6 +411,24 @@ export const collabs = [
         fileName: '2',
         fileUrl: '/casa/n4.jpg',
         _id: '2',
+      },
+    ],
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: '8',
+    },
+    title: 'Arjun Rathi Design',
+    details: '',
+    moreDetails: '/products/monster_collectibles',
+    images: [
+      {
+        fileName: '2.jpg',
+        fileUrl: '/optimized/arjunrathilogo.webp',
+        _id: {
+          $oid: '6791fe227a5dc4ac2d27e24f',
+        },
       },
     ],
     __v: 0,
