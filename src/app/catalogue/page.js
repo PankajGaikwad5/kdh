@@ -38,7 +38,7 @@ const page = () => {
         <Navbar arrow={true} />
         <div className='w-full pt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
           <div className='w-full text-center flex justify-center'>
-            <h1 className='text-4xl font-bold text-gray-200 dark:text-white pb-8 border-b-2 border-gray-800 dark:border-gray-700 capitalize w-full md:max-w-3xl'>
+            <h1 className='text-4xl font-bold text-gray-200 dark:text-white pb-8 border-b-2 border-gray-800 dark:border-gray-700 uppercase w-full md:max-w-3xl'>
               Catalogue
             </h1>
           </div>

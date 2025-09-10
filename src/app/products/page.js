@@ -135,6 +135,11 @@ const page = () => {
       <div className='min-h-screen flex flex-col bg-gradient-to-b bg-black'>
         <Navbar />
         {/* Grid container fills the available vertical space */}
+        <div className='w-full text-center flex justify-center'>
+          <h1 className='text-4xl font-bold text-gray-300 pt-8 pb-8 border-b-2 border-gray-800 uppercase w-full md:max-w-3xl'>
+            Collections
+          </h1>
+        </div>
 
         <main
           className='flex-grow grid grid-cols-2 md:grid-cols-4 pt-10 gap-4 p-4 md:mx-14 my-10 md:my-6 '

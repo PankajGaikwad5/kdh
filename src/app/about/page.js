@@ -33,7 +33,7 @@ const AboutPage = () => {
         transition={{ duration: 0.5 }}
         className='text-center mb-8'
       >
-        <h1 className='text-4xl md:text-5xl font-light tracking-tight capitalize'>
+        <h1 className='text-4xl md:text-5xl font-light tracking-tight uppercase'>
           About
         </h1>
       </motion.div>

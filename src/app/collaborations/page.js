@@ -59,7 +59,7 @@ const page = () => {
       <Navbar arrow={true} />
       <div className='w-full pt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-screen '>
         <div className='w-full text-center flex justify-center'>
-          <h1 className='text-4xl font-bold text-gray-200  pb-8 border-b-2 border-gray-800  capitalize w-full md:max-w-3xl'>
+          <h1 className='text-4xl font-bold text-gray-200  pb-8 border-b-2 border-gray-800  uppercase w-full md:max-w-3xl'>
             Collaborations
           </h1>
         </div>
