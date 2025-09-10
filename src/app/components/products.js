@@ -5850,6 +5850,97 @@ Because even your side table should speak volumes.`,
   },
   {
     _id: {
+      $oid: 'm23diningtable',
+    },
+    title: 'Matilda 2023 Dining Table',
+    group: 'matilda_2023',
+    material: 'marble',
+    pdf: '',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/tfhoptimized/tfhdiningt.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/tfhoptimized/tfhdiningt2.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/tfhoptimized/tfhdiningt3.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/tfhoptimized/tfhdiningt4.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: `To be edited.`,
+    dimensions: '',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: 'm23greenconsole',
+    },
+    title: 'Matilda 2023 Console Green',
+    group: 'matilda_2023',
+    material: 'marble',
+    pdf: '',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/tfhoptimized/tfhconsolegreen.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/tfhoptimized/tfhconsolegreen2.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/tfhoptimized/tfhconsolegreen3.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/tfhoptimized/tfhconsolegreen4.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/tfhoptimized/tfhconsolegreen5.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: `To be edited.`,
+    dimensions: '',
+    __v: 0,
+  },
+  {
+    _id: {
       $oid: 'tdp-tea-bar',
     },
     title: 'Tea Bar',
