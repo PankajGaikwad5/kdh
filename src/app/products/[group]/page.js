@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
 import ProductCard from '../../components/ProductCard';
 import Footer from '../../components/Footer';
-import { ChevronLeft } from 'lucide-react';
+import { ArrowLeft, ArrowLeftCircle, ChevronLeft } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import Navbar from '@/app/components/Navbar';
 import { products } from '@/app/components/products';
@@ -35,8 +35,25 @@ const GroupProductsPage = () => {
     <div className='min-h-screen flex flex-col bg-black'>
       <div className=' min-h-screen grid grid-rows-[1fr_auto]'>
         <Navbar arrow={true} />
+        <header className='fixed top-4 right-5 w-full flex justify-end items-center p-4 z-30 bg-black/80 backdrop-blur'>
+          {/* <a href='/'>
+          <Image
+            src='/assets/kdhlogo3.png'
+            alt='Logo'
+            width={150}
+            height={40}
+            className='object-contain'
+          />
+        </a> */}
+          <button
+            onClick={() => router.back()}
+            className='text-white hover:text-gray-300 transition'
+          >
+            <ArrowLeft size={30} />
+          </button>
+        </header>
         {/* <Navbar arrow={true} /> */}
-        <div className='pt-12 px-4 sm:px-6 lg:px-8 '>
+        <div className='pt-20 px-4 sm:px-6 lg:px-8 '>
           <div className='w-full text-center flex justify-center'>
             <h1 className='text-4xl font-bold text-gray-300  pb-8 border-b-2 border-gray-800 uppercase w-full md:max-w-3xl'>
               {group.replace('_', ' ')}

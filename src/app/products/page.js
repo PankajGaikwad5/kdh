@@ -56,7 +56,7 @@ const page = () => {
     {
       id: 12,
       title: 'Matilda 2022',
-      group: 'matilda-2022',
+      group: 'matilda_2022',
       img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUloYwC49DZL6up3G75dgCY2rJjaQFwifBAEky',
       projects:
         '86 side table, side table, chaise longue, marble ball console, marble console, marble screen',
@@ -64,7 +64,7 @@ const page = () => {
     {
       id: 13,
       title: 'Matilda 2023',
-      group: 'matilda-2023',
+      group: 'matilda_2023',
       img: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6YGDJhbpQ6Mplf2w0nGeTNo5xsyRHC8DzakUP',
       projects:
         'av console, bench, console, green, travatine, dining table, side table',
@@ -72,7 +72,7 @@ const page = () => {
     {
       id: 4,
       title: 'Matilda 2024',
-      group: 'matilda-2024',
+      group: 'matilda_2024',
       img: '/group/4.png',
       projects:
         'table lamp, library, partition screen, console 1, console 2, coffee table, center table 1, center table 2, basin, flower vase, planter, side table, u table, bathtub, chair, bench floor lamp',
@@ -80,7 +80,7 @@ const page = () => {
     {
       id: 11,
       title: 'Matilda 2025',
-      group: 'matilda-2025',
+      group: 'matilda_2025',
       img: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWsDqoIrSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
       projects:
         'table lamp, library, partition screen, console 1, console 2, coffee table, center table 1, center table 2, basin, flower vase, planter, side table, u table, bathtub, chair, bench floor lamp',
