@@ -404,7 +404,7 @@ export default function FloatingImagesScene() {
         }
       });
       // Also prefetch the products page
-      router.prefetch('/products');
+      router.prefetch('/collections');
     }, 100); // Start prefetching after component mounts
 
     return () => clearTimeout(prefetchTimer);

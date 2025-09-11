@@ -102,7 +102,7 @@ For those who don’t follow the rules—they carve their own.`,
     },
     title: 'monster gum',
     group: 'monster_collectibles',
-    material: 'Marble',
+    material: 'Brass and Glass',
     collabtext: 'Arjun Rathi',
     collablink: 'https://www.arjunrathi.com/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDqHaKe8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
@@ -5155,7 +5155,7 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
     },
     title: '86 Side Table',
     group: 'matilda_2022',
-    material: 'marble',
+    material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCEKH3sdtZQpOq9no3vVs5yPKXR8gEYuikGU',
     images: [
       {
@@ -5215,7 +5215,7 @@ When luxury meets structure like this, it’s not just furniture — it’s a fl
     },
     title: '86 Chest Of Drawer',
     group: 'matilda_2022',
-    material: 'marble',
+    material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCEKH3sdtZQpOq9no3vVs5yPKXR8gEYuikGU',
     images: [
       {
@@ -5276,7 +5276,7 @@ A symbol of restraint, rhythm, and remarkable design.`,
     },
     title: 'Chaise Longue',
     group: 'matilda_2022',
-    material: 'marble',
+    material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCEKH3sdtZQpOq9no3vVs5yPKXR8gEYuikGU',
     images: [
       {
@@ -5336,7 +5336,7 @@ Ideal for spaces where silence, strength, and sophistication are felt.`,
     },
     title: 'Marble Ball Console',
     group: 'matilda_2022',
-    material: 'marble',
+    material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCEKH3sdtZQpOq9no3vVs5yPKXR8gEYuikGU',
     images: [
       {
@@ -5397,7 +5397,7 @@ unapologetic charm.`,
     },
     title: 'Marble Console',
     group: 'matilda_2022',
-    material: 'marble',
+    material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCEKH3sdtZQpOq9no3vVs5yPKXR8gEYuikGU',
     images: [
       {
@@ -5457,7 +5457,7 @@ A true collector’s piece, it transforms hallways, entryways, or lounges into c
     },
     title: 'Marble Screen',
     group: 'matilda_2022',
-    material: 'marble',
+    material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCEKH3sdtZQpOq9no3vVs5yPKXR8gEYuikGU',
     images: [
       {
@@ -5509,7 +5509,7 @@ Ideal for spaces that embrace architectural drama with timeless sophistication.`
     },
     title: 'Side Table',
     group: 'matilda_2022',
-    material: 'marble',
+    material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCEKH3sdtZQpOq9no3vVs5yPKXR8gEYuikGU',
     images: [
       {
@@ -5568,7 +5568,7 @@ curated interiors that appreciate the power of form and function in harmony.`,
     },
     title: 'Taavdi',
     group: 'matilda_2025',
-    material: 'marble',
+    material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCEKH3sdtZQpOq9no3vVs5yPKXR8gEYuikGU',
     images: [
       {
@@ -5613,7 +5613,7 @@ Because when you invest in details like this, you’re not just upgrading your s
     },
     title: 'AV Console',
     group: 'matilda_2023',
-    material: 'marble',
+    material: 'Marble',
     pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOxznN0KtfzZMOQ82F9V3XlUqPn6kstdYmWcTr',
     images: [
       {
@@ -5676,7 +5676,7 @@ Whether it's hiding cables or holding court, AV means business — and business 
     },
     title: 'Bench',
     group: 'matilda_2023',
-    material: 'marble',
+    material: 'Marble',
     pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgzsaPScO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
     images: [
       {
@@ -5731,7 +5731,7 @@ Whether it's hiding cables or holding court, AV means business — and business 
     },
     title: 'Console 1',
     group: 'matilda_2023',
-    material: 'marble',
+    material: 'Marble',
     pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOaBhQfedghAWJf0RpD5MNGad48yOCqt7roLni',
     images: [
       {
@@ -5793,7 +5793,7 @@ Place it in your entryway, gallery, or corner office — this piece doesn’t ju
     },
     title: 'Side Table',
     group: 'matilda_2023',
-    material: 'marble',
+    material: 'Marble',
     pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOrRQRBFbmfJY4ltsd2gZzTFGVu5iCAoIxpKya',
     images: [
       {
@@ -5854,7 +5854,7 @@ Because even your side table should speak volumes.`,
     },
     title: 'Matilda 2023 Dining Table',
     group: 'matilda_2023',
-    material: 'marble',
+    material: 'Marble',
     pdf: '',
     images: [
       {
@@ -5896,7 +5896,7 @@ Because even your side table should speak volumes.`,
     },
     title: 'Matilda 2023 Console Green',
     group: 'matilda_2023',
-    material: 'marble',
+    material: 'Marble',
     pdf: '',
     images: [
       {
@@ -5945,7 +5945,7 @@ Because even your side table should speak volumes.`,
     },
     title: 'Tea Bar',
     group: 'matilda_2022',
-    material: 'marble',
+    material: 'Marble',
     pdf: '',
     images: [
       {

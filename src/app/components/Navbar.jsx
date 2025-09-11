@@ -29,7 +29,7 @@ const Navbar = ({ isBgBlack, arrow, escape }) => {
       router.back();
     } else {
       // Otherwise, navigate to the fallback route
-      router.push(`/products/${group}`);
+      router.push(`/collections/${group}`);
     }
   };
 
@@ -62,8 +62,8 @@ const Navbar = ({ isBgBlack, arrow, escape }) => {
     },
     {
       id: 3,
-      name: 'products',
-      path: 'products',
+      name: 'collections',
+      path: 'collections',
     },
     {
       id: 4,
@@ -85,7 +85,7 @@ const Navbar = ({ isBgBlack, arrow, escape }) => {
   const navTopics = [
     `${arrow ? '' : 'home'}`,
     'about',
-    'products',
+    'collections',
     'collaborations',
     'catalogue',
     'contact us',

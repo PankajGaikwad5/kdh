@@ -27,7 +27,7 @@ const SubProductCard = ({ title, img, id, hoveredIndex, setHoveredIndex }) => {
   }, []);
 
   return (
-    <Link href={`/products/${id}`}>
+    <Link href={`/collections/${id}`}>
       <div
         onMouseEnter={() => setHoveredIndex(id)}
         onMouseLeave={() => setHoveredIndex(null)}

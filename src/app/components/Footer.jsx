@@ -21,7 +21,7 @@ const bebas = Bebas_Neue({
 
 const navLinks = [
   { label: 'About', href: '/about' },
-  { label: 'Products', href: '/products' },
+  { label: 'Collections', href: '/collections' },
   { label: 'Catalogue', href: '/catalogue' },
   { label: 'Collaborations', href: '/collaborations' },
   { label: 'Contact us', href: '/contact' },

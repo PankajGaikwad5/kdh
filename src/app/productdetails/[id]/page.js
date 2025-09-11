@@ -457,73 +457,72 @@ const ProductDetailsPage = () => {
                 </div>
               </div>
 
-              {product.material === 'marble' ||
-                ('Marble' && (
-                  <div className=''>
-                    <h2 className='text-lg font-semibold mb-4'>MARBLES</h2>
-                    <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2'>
-                      {/* Banswara */}
-                      <div className='flex flex-col  gap-2'>
-                        <Image
-                          width={70}
-                          height={70}
-                          src='/marbles/banswara.webp'
-                          alt='Banswara'
-                          className='aspect-square object-cover'
-                        />
-                        <p className='text-xs '>Banswara</p>
-                      </div>
+              {product.material === 'Marble' && (
+                <div className=''>
+                  <h2 className='text-lg font-semibold mb-4'>MARBLES</h2>
+                  <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2'>
+                    {/* Banswara */}
+                    <div className='flex flex-col  gap-2'>
+                      <Image
+                        width={70}
+                        height={70}
+                        src='/marbles/banswara.webp'
+                        alt='Banswara'
+                        className='aspect-square object-cover'
+                      />
+                      <p className='text-xs '>Banswara</p>
+                    </div>
 
-                      {/* Indian Black Bheslana */}
-                      <div className='flex flex-col  gap-2'>
-                        <Image
-                          width={70}
-                          height={70}
-                          src='/marbles/indianblackbheslana.webp'
-                          alt='Indian Black Bheslana'
-                          className='aspect-square object-cover'
-                        />
-                        <p className='text-xs '>Indian Black Bheslana</p>
-                      </div>
+                    {/* Indian Black Bheslana */}
+                    <div className='flex flex-col  gap-2'>
+                      <Image
+                        width={70}
+                        height={70}
+                        src='/marbles/indianblackbheslana.webp'
+                        alt='Indian Black Bheslana'
+                        className='aspect-square object-cover'
+                      />
+                      <p className='text-xs '>Indian Black Bheslana</p>
+                    </div>
 
-                      {/* Indian Rosso Levante */}
-                      <div className='flex flex-col  gap-2'>
-                        <Image
-                          width={70}
-                          height={70}
-                          src='/marbles/indianrossolevante.webp'
-                          alt='Indian Rosso Levante'
-                          className='aspect-square object-cover'
-                        />
-                        <p className='text-xs '>Indian Rosso Levante</p>
-                      </div>
+                    {/* Indian Rosso Levante */}
+                    <div className='flex flex-col  gap-2'>
+                      <Image
+                        width={70}
+                        height={70}
+                        src='/marbles/indianrossolevante.webp'
+                        alt='Indian Rosso Levante'
+                        className='aspect-square object-cover'
+                      />
+                      <p className='text-xs '>Indian Rosso Levante</p>
+                    </div>
 
-                      {/* Italian Beige Travertine */}
-                      <div className='flex flex-col  gap-2'>
-                        <Image
-                          width={70}
-                          height={70}
-                          src='/marbles/italianbeigetravertine.webp'
-                          alt='Italian Beige Travertine'
-                          className='aspect-square object-cover'
-                        />
-                        <p className='text-xs '>Italian Beige Travertine</p>
-                      </div>
+                    {/* Italian Beige Travertine */}
+                    <div className='flex flex-col  gap-2'>
+                      <Image
+                        width={70}
+                        height={70}
+                        src='/marbles/italianbeigetravertine.webp'
+                        alt='Italian Beige Travertine'
+                        className='aspect-square object-cover'
+                      />
+                      <p className='text-xs '>Italian Beige Travertine</p>
+                    </div>
 
-                      {/* Marquina */}
-                      <div className='flex flex-col  gap-2'>
-                        <Image
-                          width={70}
-                          height={70}
-                          src='/marbles/marquina.webp'
-                          alt='Marquina'
-                          className='aspect-square object-cover'
-                        />
-                        <p className='text-xs '>Marquina</p>
-                      </div>
+                    {/* Marquina */}
+                    <div className='flex flex-col  gap-2'>
+                      <Image
+                        width={70}
+                        height={70}
+                        src='/marbles/marquina.webp'
+                        alt='Marquina'
+                        className='aspect-square object-cover'
+                      />
+                      <p className='text-xs '>Marquina</p>
                     </div>
                   </div>
-                ))}
+                </div>
+              )}
 
               <div className='mt-6 border-t border-gray-700 pt-4 text-sm  text-white font-light whitespace-pre-line leading-relaxed'>
                 {product.description}
