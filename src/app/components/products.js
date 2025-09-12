@@ -2068,7 +2068,20 @@ Want to elevate your space and your standards? Then take a seat—if you can.`,
         _id: {
           $oid: '67a5eaba4da9b29cd0f10b67',
         },
-        thumbnail: '/assets/products/thumbnails/1738926778785-Slide4.JPG',
+      },
+      {
+        fileName: '1738926778785-Slide4.JPG',
+        filePath: '/kdadprojectimages/monster1console.webp',
+        _id: {
+          $oid: '67a5eaba4da9b29cd0f10b67',
+        },
+      },
+      {
+        fileName: '1738926778785-Slide4.JPG',
+        filePath: '/kdadprojectimages/monster1console1.webp',
+        _id: {
+          $oid: '67a5eaba4da9b29cd0f10b67',
+        },
       },
     ],
     description:
@@ -5153,7 +5166,7 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
     _id: {
       $oid: '86-side-table',
     },
-    title: 'matilda 2022 Side Table',
+    title: 'matilda 2022 bed Side Table',
     group: 'matilda_2022',
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCEKH3sdtZQpOq9no3vVs5yPKXR8gEYuikGU',
@@ -5194,6 +5207,13 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
         fileName: '1738927863060-Slide1.JPG',
         filePath:
           'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUP9ubolHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/kdadprojectimages/22sidetable.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -5319,6 +5339,27 @@ A symbol of restraint, rhythm, and remarkable design.`,
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/kdadprojectimages/22chaiselongue.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/kdadprojectimages/22chaiselongue2.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/kdadprojectimages/22chaiselongue3.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
     ],
     description: `Sculpted in a fluid arc of white marble, this Chaise Longue is a poetic interpretation of form and repose. 
 
@@ -5375,6 +5416,13 @@ Ideal for spaces where silence, strength, and sophistication are felt.`,
         fileName: '1738927863060-Slide1.JPG',
         filePath:
           'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCnisW6dtZQpOq9no3vVs5yPKXR8gEYuikGU',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/kdadprojectimages/ballconsole.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -5492,6 +5540,13 @@ A true collector’s piece, it transforms hallways, entryways, or lounges into c
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/kdadprojectimages/mscreen.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
     ],
     description: `A sculptural marvel, this curved marble screen is a striking fusion of form and function. 
 
@@ -5548,6 +5603,13 @@ Ideal for spaces that embrace architectural drama with timeless sophistication.`
         fileName: '1738927863060-Slide1.JPG',
         filePath:
           'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU3zWgeivb7L0Z2G4mkrAFzE8uQjRclW5px9hX',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/kdadprojects/sidetable2.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -6000,6 +6062,13 @@ Because even your side table should speak volumes.`,
         fileName: '1738927863060-Slide1.JPG',
         filePath:
           'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ66vrQSJ3jRledxo3hIaUpzVs7H2gCbEfBZ8Gk',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/kdadprojects/22teabar.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
