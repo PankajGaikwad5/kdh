@@ -274,3 +274,32 @@ body {
   bottom: 20px !important;
   /* move up if needed */
 }
+
+/* Scoped custom scrollbar for elements with .srch-scrollbar */
+.srch-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  /* scrollbar width */
+}
+
+.srch-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+  /* transparent background */
+}
+
+.srch-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(231, 231, 231, 0.3);
+  /* dark thumb */
+  border-radius: 9999px;
+  /* rounded */
+}
+
+.srch-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(189, 185, 185, 0.5);
+}
+
+/* Firefox */
+.srch-scrollbar {
+  scrollbar-width: thin;
+  /* slim scrollbar */
+  scrollbar-color: rgba(255, 255, 255, 0.699) transparent;
+}
