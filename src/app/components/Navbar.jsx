@@ -159,9 +159,9 @@ const Navbar = ({ isBgBlack, arrow, escape }) => {
                       <Image
                         src={item.images?.[0].filePath || '/placeholder.png'} // first image or fallback
                         alt={item.title}
-                        width={50}
-                        height={50}
-                        className='w-12 h-12 object-cover rounded-md'
+                        width={100}
+                        height={100}
+                        className='w-32 h-32 object-cover rounded-md'
                       />
                       <span className='text-gray-300 font-medium'>
                         {item.title}
