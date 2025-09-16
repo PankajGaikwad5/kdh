@@ -1043,7 +1043,7 @@ Designed for those who host with flair, this is where luxury meets audacity, and
     _id: {
       $oid: '67a5ecf94da9b29cd0f10bb6',
     },
-    title: 'cmatilda 2024 enter table 2',
+    title: 'matilda 2024 center table 2',
     group: 'matilda_2024',
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUEbuppDLYFi7GYsQA2my03DTouek5wnIJXgjp',
