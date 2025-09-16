@@ -458,11 +458,11 @@ const ProductDetailsPage = () => {
               </div>
 
               {product.material === 'Marble' && (
-                <div className=''>
+                <div>
                   <h2 className='text-lg font-semibold mb-4'>MARBLES</h2>
-                  <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2'>
+                  <div className='flex flex-wrap gap-4'>
                     {/* Banswara */}
-                    <div className='flex flex-col  gap-2'>
+                    <div className='flex flex-col items-center text-center'>
                       <Image
                         width={70}
                         height={70}
@@ -470,11 +470,13 @@ const ProductDetailsPage = () => {
                         alt='Banswara'
                         className='aspect-square object-cover'
                       />
-                      <p className='text-xs '>Banswara</p>
+                      <p className='text-xs w-[80px] mt-2 break-words'>
+                        Banswara
+                      </p>
                     </div>
 
                     {/* Indian Black Bheslana */}
-                    <div className='flex flex-col  gap-2'>
+                    <div className='flex flex-col items-center text-center'>
                       <Image
                         width={70}
                         height={70}
@@ -482,11 +484,13 @@ const ProductDetailsPage = () => {
                         alt='Indian Black Bheslana'
                         className='aspect-square object-cover'
                       />
-                      <p className='text-xs '>Indian Black Bheslana</p>
+                      <p className='text-xs w-[80px] mt-2 break-words'>
+                        Indian Black Bheslana
+                      </p>
                     </div>
 
                     {/* Indian Rosso Levante */}
-                    <div className='flex flex-col  gap-2'>
+                    <div className='flex flex-col items-center text-center'>
                       <Image
                         width={70}
                         height={70}
@@ -494,11 +498,13 @@ const ProductDetailsPage = () => {
                         alt='Indian Rosso Levante'
                         className='aspect-square object-cover'
                       />
-                      <p className='text-xs '>Indian Rosso Levante</p>
+                      <p className='text-xs w-[80px] mt-2 break-words'>
+                        Indian Rosso Levante
+                      </p>
                     </div>
 
                     {/* Italian Beige Travertine */}
-                    <div className='flex flex-col  gap-2'>
+                    <div className='flex flex-col items-center text-center'>
                       <Image
                         width={70}
                         height={70}
@@ -506,11 +512,13 @@ const ProductDetailsPage = () => {
                         alt='Italian Beige Travertine'
                         className='aspect-square object-cover'
                       />
-                      <p className='text-xs '>Italian Beige Travertine</p>
+                      <p className='text-xs w-[80px] mt-2 break-words'>
+                        Italian Beige Travertine
+                      </p>
                     </div>
 
                     {/* Marquina */}
-                    <div className='flex flex-col  gap-2'>
+                    <div className='flex flex-col items-center text-center'>
                       <Image
                         width={70}
                         height={70}
@@ -518,7 +526,9 @@ const ProductDetailsPage = () => {
                         alt='Marquina'
                         className='aspect-square object-cover'
                       />
-                      <p className='text-xs '>Marquina</p>
+                      <p className='text-xs w-[80px] mt-2 break-words'>
+                        Marquina
+                      </p>
                     </div>
                   </div>
                 </div>
