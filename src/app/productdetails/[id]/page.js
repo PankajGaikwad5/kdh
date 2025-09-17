@@ -22,6 +22,7 @@ import { Textarea } from '../../components/ui/textarea';
 import { products } from '@/app/components/products';
 import ThumbnailGrid from '@/app/components/ThumbnailGrid';
 import Navbar from '@/app/components/Navbar';
+import { AccordionMarbles } from '@/app/components/AccordionMarbles';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -458,77 +459,87 @@ const ProductDetailsPage = () => {
               </div>
 
               {product.material === 'Marble' && (
-                <div>
-                  <h2 className='text-lg font-semibold mb-4'>MARBLES</h2>
-                  <div className='flex flex-wrap gap-4'>
-                    {/* Banswara */}
-                    <div className='flex flex-col items-center text-center'>
-                      <Image
-                        width={70}
-                        height={70}
-                        src='/marbles/banswara.webp'
-                        alt='Banswara'
-                        className='aspect-square object-cover'
-                      />
-                      <p className='text-xs w-[80px] mt-2 break-words'>
-                        Banswara
-                      </p>
-                    </div>
+                <div className='flex flex-col gap-2'>
+                  <div>
+                    <h2 className='text-lg  mb-2'>MARBLES</h2>
+                    <div className='flex flex-wrap gap-4'>
+                      {/* Banswara */}
+                      <div className='flex flex-col items-center text-center'>
+                        <Image
+                          width={70}
+                          height={70}
+                          src='/marbles/banswara.webp'
+                          alt='Banswara'
+                          className='aspect-square object-cover'
+                        />
+                        <p className='text-xs w-[80px] mt-2 break-words'>
+                          Banswara
+                        </p>
+                      </div>
 
-                    {/* Indian Black Bheslana */}
-                    <div className='flex flex-col items-center text-center'>
-                      <Image
-                        width={70}
-                        height={70}
-                        src='/marbles/indianblackbheslana.webp'
-                        alt='Indian Black Bheslana'
-                        className='aspect-square object-cover'
-                      />
-                      <p className='text-xs w-[80px] mt-2 break-words'>
-                        Indian Black Bheslana
-                      </p>
-                    </div>
+                      {/* Indian Black Bheslana */}
+                      <div className='flex flex-col items-center text-center'>
+                        <Image
+                          width={70}
+                          height={70}
+                          src='/marbles/indianblackbheslana.webp'
+                          alt='Indian Black Bheslana'
+                          className='aspect-square object-cover'
+                        />
+                        <p className='text-xs w-[80px] mt-2 break-words'>
+                          Indian Black Bheslana
+                        </p>
+                      </div>
 
-                    {/* Indian Rosso Levante */}
-                    <div className='flex flex-col items-center text-center'>
-                      <Image
-                        width={70}
-                        height={70}
-                        src='/marbles/indianrossolevante.webp'
-                        alt='Indian Rosso Levante'
-                        className='aspect-square object-cover'
-                      />
-                      <p className='text-xs w-[80px] mt-2 break-words'>
-                        Indian Rosso Levante
-                      </p>
-                    </div>
+                      {/* Indian Rosso Levante */}
+                      <div className='flex flex-col items-center text-center'>
+                        <Image
+                          width={70}
+                          height={70}
+                          src='/marbles/indianrossolevante.webp'
+                          alt='Indian Rosso Levante'
+                          className='aspect-square object-cover'
+                        />
+                        <p className='text-xs w-[80px] mt-2 break-words'>
+                          Indian Rosso Levante
+                        </p>
+                      </div>
 
-                    {/* Italian Beige Travertine */}
-                    <div className='flex flex-col items-center text-center'>
-                      <Image
-                        width={70}
-                        height={70}
-                        src='/marbles/italianbeigetravertine.webp'
-                        alt='Italian Beige Travertine'
-                        className='aspect-square object-cover'
-                      />
-                      <p className='text-xs w-[80px] mt-2 break-words'>
-                        Italian Beige Travertine
-                      </p>
-                    </div>
+                      {/* Italian Beige Travertine */}
+                      <div className='flex flex-col items-center text-center'>
+                        <Image
+                          width={70}
+                          height={70}
+                          src='/marbles/italianbeigetravertine.webp'
+                          alt='Italian Beige Travertine'
+                          className='aspect-square object-cover'
+                        />
+                        <p className='text-xs w-[80px] mt-2 break-words'>
+                          Italian Beige Travertine
+                        </p>
+                      </div>
 
-                    {/* Marquina */}
-                    <div className='flex flex-col items-center text-center'>
-                      <Image
-                        width={70}
-                        height={70}
-                        src='/marbles/marquina.webp'
-                        alt='Marquina'
-                        className='aspect-square object-cover'
-                      />
-                      <p className='text-xs w-[80px] mt-2 break-words'>
-                        Marquina
-                      </p>
+                      {/* Marquina */}
+                      <div className='flex flex-col items-center text-center'>
+                        <Image
+                          width={70}
+                          height={70}
+                          src='/marbles/marquina.webp'
+                          alt='Marquina'
+                          className='aspect-square object-cover'
+                        />
+                        <p className='text-xs w-[80px] mt-2 break-words'>
+                          Marquina
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    {/* <h2 className='text-lg font-semibold mb-4'>
+                      SPECIAL REQUESTS MARBLES
+                    </h2> */}
+                    <div className='flex flex-wrap gap-4'>
+                      <AccordionMarbles />
                     </div>
                   </div>
                 </div>
