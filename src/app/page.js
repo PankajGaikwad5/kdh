@@ -138,7 +138,7 @@ const page = () => {
           />
         </div>
       </div>
-      <Navbar home={true} />
+      <Navbar />
       {/* <FloatingImagesScene /> */}
       {/* <div ref={floatingImagesRef} tabIndex={-1} className='focus:outline-none'> */}
       <FloatingImagesScene />

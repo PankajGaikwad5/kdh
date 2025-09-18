@@ -5229,40 +5229,28 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUloYwC49DZL6up3G75dgCY2rJjaQFwifBAEky',
+        filePath: '/m22/m22bst.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSovkbYAKnraNxkI5vbez6dT2q8M0osBfR9At',
+        filePath: '/m22/m22bst_2.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUOQGKH4ZXhqs0g964QCxmbwcn2WStleB3MEP5',
+        filePath: '/m22/m22bst_3.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUP9ubolHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUP9ubolHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
+        filePath: '/m22/m22bst_4.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -5296,40 +5284,35 @@ When luxury meets structure like this, it’s not just furniture — it’s a fl
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWzFSFzrSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
+        filePath: '/m22/m22cod.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUbIzQKTxzt13BbVlJhGUR6Ww2eTaj5pASg9NC',
+        filePath: '/m22/m22cod_2.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUjQqWw4UhR95a1yWpqvPz7meuoUTAG8HEOb2I',
+        filePath: '/m22/m22cod_3.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU6f5ue4Rfb3HGeOz01MiLoldKrZaXQIxANWuV',
+        filePath: '/m22/m22cod_4.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUn67ExYbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
+        filePath: '/m22/m22cod_5.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -5357,40 +5340,35 @@ A symbol of restraint, rhythm, and remarkable design.`,
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUj40wlZUhR95a1yWpqvPz7meuoUTAG8HEOb2I',
+        filePath: '/m22/m22cl.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSl8vJDAKnraNxkI5vbez6dT2q8M0osBfR9At',
+        filePath: '/m22/m22cl_2.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUoRaH3VPd43VNTXj27bgOZneCUs9aBiY5x8vw',
+        filePath: '/m22/m22cl_3.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUCDiKYVOX0XaKgNMT1QEmen25RAwc7Sk4UxoJ',
+        filePath: '/m22/m22cl_4.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCL4YhodtZQpOq9no3vVs5yPKXR8gEYuikGU',
+        filePath: '/m22/m22cl_5.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -5566,32 +5544,28 @@ A true collector’s piece, it transforms hallways, entryways, or lounges into c
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8KNqvC64oKUn37W6wsTlRmDBFhGrviIjcMxV',
+        filePath: '/m22/m22ms.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUFKtJBnyvrgRIBMUa1Cwt3nu4PEZOTo0XLQDf',
+        filePath: '/m22/m22ms_2.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSxRz1QAKnraNxkI5vbez6dT2q8M0osBfR9At',
+        filePath: '/m22/m22ms_3.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUVOFd7NxeJz0jfKoyVd9HNhC5wFQ4OrBi2UkD',
+        filePath: '/m22/m22ms_4.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -5625,47 +5599,35 @@ Ideal for spaces that embrace architectural drama with timeless sophistication.`
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9zWJSjs2frimQ5LhFdjbpOHNPEsav1o2Ac0D',
+        filePath: '/m22/m22st.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUYxik30cnVM7iftKIsUSTJx8haC1mEBkZl4Nv',
+        filePath: '/m22/m22st_2.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnNGYGvbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
+        filePath: '/m22/m22st_3.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnNGYGvbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
+        filePath: '/m22/m22st_4.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU3zWgeivb7L0Z2G4mkrAFzE8uQjRclW5px9hX',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/kdadprojects/sidetable2.webp',
+        filePath: '/kdadprojectimages/22sidetable2.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -6125,7 +6087,7 @@ Because even your side table should speak volumes.`,
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/kdadprojects/22teabar.webp',
+        filePath: '/kdadprojectimages/22teabar.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
