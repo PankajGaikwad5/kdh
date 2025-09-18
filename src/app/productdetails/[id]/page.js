@@ -512,7 +512,7 @@ const ProductDetailsPage = () => {
                           height={70}
                           src='/marbles/italianbeigetravertine.webp'
                           alt='Italian Beige Travertine'
-                          className='aspect-square object-cover'
+                          className='aspect-square object-cover rotate-90'
                         />
                         <p className='text-xs w-[80px] mt-2 break-words'>
                           Italian Beige Travertine

@@ -84,7 +84,7 @@ export function AccordionMarbles() {
               height={70}
               src='/marbles/whitetravertine.webp'
               alt='White Travertine'
-              className='aspect-square object-cover'
+              className='aspect-square object-cover rotate-90'
             />
             <p className='text-xs w-[80px] mt-2 break-words'>
               White Travertine
