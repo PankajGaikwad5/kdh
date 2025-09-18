@@ -35,7 +35,7 @@ const SubProductCard = ({ title, img, id, hoveredIndex, setHoveredIndex }) => {
                 group cursor-pointer transform transition flex flex-col justify-center items-center duration-300 hover:scale-[1.02] hover:z-20
                 ${
                   hoveredIndex !== null && hoveredIndex !== id
-                    ? 'blur-[2px]'
+                    ? 'blur-0'
                     : 'blur-0'
                 }
               `}

@@ -13,11 +13,7 @@ const ProductCard = ({ title, img, id, hoveredIndex, setHoveredIndex }) => {
         onMouseLeave={() => setHoveredIndex(null)}
         className={`
           group cursor-pointer transform transition flex flex-col justify-center items-center duration-300 hover:scale-[1.02] hover:z-20
-          ${
-            hoveredIndex !== null && hoveredIndex !== id
-              ? 'blur-[2px]'
-              : 'blur-0'
-          }
+          ${hoveredIndex !== null && hoveredIndex !== id ? 'blur-0' : 'blur-0'}
         `}
       >
         {/* This wrapper allows the image to pop out */}
