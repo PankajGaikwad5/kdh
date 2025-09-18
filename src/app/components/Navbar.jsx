@@ -17,7 +17,7 @@ const montserrat = Montserrat({
   weight: ['100', '200', '300', '400', '600', '700'],
 });
 
-const Navbar = ({ isBgBlack, arrow, escape }) => {
+const Navbar = ({ isBgBlack, arrow, escape, home }) => {
   const router = useRouter();
   const [nav, setNav] = useState(false);
   const [white, setWhite] = useState(false);
@@ -109,7 +109,9 @@ const Navbar = ({ isBgBlack, arrow, escape }) => {
       {/* 🔍 Search icon (top-right) */}
       <button
         onClick={() => setShowSearch(!showSearch)}
-        className='fixed top-6  right-12 z-50 p-2 rounded-full bg-black/20 hover:bg-black/40 text-white transition-all'
+        className={`fixed top-6 ${
+          home ? 'right-7' : 'right-16'
+        }  z-50 p-2 rounded-full bg-black/20 hover:bg-black/40 text-white transition-all`}
       >
         {showSearch ? <X size={20} /> : <Search size={20} />}
       </button>
