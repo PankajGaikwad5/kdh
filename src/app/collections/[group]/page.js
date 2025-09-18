@@ -35,7 +35,7 @@ const GroupProductsPage = () => {
     <div className='min-h-screen flex flex-col bg-black'>
       <div className=' min-h-screen grid grid-rows-[1fr_auto]'>
         <Navbar arrow={true} />
-        <header className='fixed top-4 right-5 w-full flex justify-end items-center p-4 z-30 bg-black/80 backdrop-blur'>
+        <header className='fixed top-3 right-0 w-full flex justify-end items-center p-4 z-30'>
           {/* <a href='/'>
           <Image
             src='/assets/kdhlogo3.png'
@@ -53,7 +53,7 @@ const GroupProductsPage = () => {
           </button>
         </header>
         {/* <Navbar arrow={true} /> */}
-        <div className='pt-20 px-4 sm:px-6 lg:px-8 '>
+        <div className='pt-20 md:pt-7 px-4 sm:px-6 lg:px-8 '>
           <div className='w-full text-center flex justify-center'>
             <h1 className='text-4xl font-bold text-gray-300  pb-8 border-b-2 border-gray-800 uppercase w-full md:max-w-3xl'>
               {group.replace('_', ' ')}

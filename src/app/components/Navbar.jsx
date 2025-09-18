@@ -109,7 +109,7 @@ const Navbar = ({ isBgBlack, arrow, escape }) => {
       {/* 🔍 Search icon (top-right) */}
       <button
         onClick={() => setShowSearch(!showSearch)}
-        className='fixed top-6 right-6 md:top-10 md:right-12 z-50 p-2 rounded-full bg-black/20 hover:bg-black/40 text-white transition-all'
+        className='fixed top-6  right-12 z-50 p-2 rounded-full bg-black/20 hover:bg-black/40 text-white transition-all'
       >
         {showSearch ? <X size={20} /> : <Search size={20} />}
       </button>

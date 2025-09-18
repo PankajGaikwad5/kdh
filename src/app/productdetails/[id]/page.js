@@ -277,7 +277,7 @@ const ProductDetailsPage = () => {
       className={`min-h-screen bg-black text-white font-sans relative ${montserrat.className}`}
     >
       <Navbar />
-      <header className='fixed top-0 right-0 w-full flex justify-end items-center p-4 z-30 bg-black/80 backdrop-blur'>
+      <header className='fixed top-4 right-0 w-full flex justify-end items-center p-3 z-30 bg-black/80 backdrop-blur'>
         {/* <a href='/'>
           <Image
             src='/assets/kdhlogo3.png'
