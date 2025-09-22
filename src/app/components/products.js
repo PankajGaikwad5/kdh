@@ -5222,7 +5222,7 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
     _id: {
       $oid: '3dprintedbar',
     },
-    title: '3d Printed Bar',
+    title: '3D Printed Bar',
     group: 'friends',
     material: 'plastic',
     pdf: '',
