@@ -5265,7 +5265,7 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
     _id: {
       $oid: 'barstool',
     },
-    title: 'Bar Stool',
+    title: '3D Bar Stool',
     group: 'friends',
     material: 'plastic',
     pdf: '',
