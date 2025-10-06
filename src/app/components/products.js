@@ -5263,6 +5263,91 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
   },
   {
     _id: {
+      $oid: 'ffwaterpots',
+    },
+    title: 'Water Pots',
+    group: 'friends',
+    material: 'Marble',
+    pdf: '#',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/ff/pots/1.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/ff/pots/2.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/ff/pots/3.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/ff/pots/4.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/ff/pots/5.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/ff/pots/6.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/ff/pots/7.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/ff/pots/8.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/ff/pots/9.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/ff/pots/10.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: `To be edited`,
+    dimensions:
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO30kW6DYnpyK0DhEV4daf1ZotLM8ROqYkSFNb',
+    __v: 0,
+  },
+  {
+    _id: {
       $oid: 'barstool',
     },
     title: '3D Bar Stool',
