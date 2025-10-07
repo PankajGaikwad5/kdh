@@ -6355,7 +6355,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.1 Center Table',
     group: 'monster_3.1',
     material: 'To be edited',
-    pdf: '',
+    pdf: '#',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -6388,7 +6388,7 @@ Because even your side table should speak volumes.`,
     ],
     description: `To be edited`,
     dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgx2kAPcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOzfSJeD3drRCNOYV7h2kSoeU41wvlAyKEqG0T',
     __v: 0,
   },
   {
@@ -6398,7 +6398,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.1 Coffee Table',
     group: 'monster_3.1',
     material: 'To be edited',
-    pdf: '',
+    pdf: '#',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -6424,7 +6424,7 @@ Because even your side table should speak volumes.`,
     ],
     description: `To be edited`,
     dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgx2kAPcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO0bRlHhIjklJSVsEqOG16wWBN3c0gCZdhrfoX',
     __v: 0,
   },
   {
@@ -6434,7 +6434,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.1 Console',
     group: 'monster_3.1',
     material: 'To be edited',
-    pdf: '',
+    pdf: '#',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -6481,7 +6481,7 @@ Because even your side table should speak volumes.`,
     ],
     description: `To be edited`,
     dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgx2kAPcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOnq2fMA0qR6kZyU7GmuJeNarBLvI3hSCstcbP',
     __v: 0,
   },
   {
@@ -6491,7 +6491,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.1 Console Storage',
     group: 'monster_3.1',
     material: 'To be edited',
-    pdf: '',
+    pdf: '#',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -6524,7 +6524,7 @@ Because even your side table should speak volumes.`,
     ],
     description: `To be edited`,
     dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgx2kAPcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOlR8DjDT4zUERwb0h6yXWIJq45NdKi1MgA7FT',
     __v: 0,
   },
   {
@@ -6534,7 +6534,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.1 Desk',
     group: 'monster_3.1',
     material: 'To be edited',
-    pdf: '',
+    pdf: '#',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -6567,7 +6567,7 @@ Because even your side table should speak volumes.`,
     ],
     description: `To be edited`,
     dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgx2kAPcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOyPpVMpZ1dQPxIVWN2OUq3s8ZBfKHzcmkJpvM',
     __v: 0,
   },
   {
@@ -6577,7 +6577,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.1 Floorlamp',
     group: 'monster_3.1',
     material: 'To be edited',
-    pdf: '',
+    pdf: '#',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -6603,7 +6603,7 @@ Because even your side table should speak volumes.`,
     ],
     description: `To be edited`,
     dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgx2kAPcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgC8emacO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
     __v: 0,
   },
   {
@@ -6613,7 +6613,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.1 Long Dining Table',
     group: 'monster_3.1',
     material: 'To be edited',
-    pdf: '',
+    pdf: '#',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -6653,7 +6653,7 @@ Because even your side table should speak volumes.`,
     ],
     description: `To be edited`,
     dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgx2kAPcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOBYYa55kzYN8aVpJZLF50If4uUdl1vTPgMQEx',
     __v: 0,
   },
   {
@@ -6663,7 +6663,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.1 Mirror',
     group: 'monster_3.1',
     material: 'To be edited',
-    pdf: '',
+    pdf: '#',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -6696,7 +6696,7 @@ Because even your side table should speak volumes.`,
     ],
     description: `To be edited`,
     dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgx2kAPcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOg6NogqcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
     __v: 0,
   },
   {
@@ -6706,7 +6706,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.1 Round Dinig Table',
     group: 'monster_3.1',
     material: 'To be edited',
-    pdf: '',
+    pdf: '#',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -6739,7 +6739,7 @@ Because even your side table should speak volumes.`,
     ],
     description: `To be edited`,
     dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgx2kAPcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO81kDzvJ6OXRnzQocN3dym1xs7Wqkgah8JuVI',
     __v: 0,
   },
   {
@@ -6749,7 +6749,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.1 Single Shelving Unit',
     group: 'monster_3.1',
     material: 'To be edited',
-    pdf: '',
+    pdf: '#',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -6782,7 +6782,7 @@ Because even your side table should speak volumes.`,
     ],
     description: `To be edited`,
     dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgx2kAPcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOTERh6Zkol4fc15PmWSnAqbsUy78gtp2EBGzu',
     __v: 0,
   },
   {
@@ -6792,7 +6792,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.1 Side Table',
     group: 'monster_3.1',
     material: 'To be edited',
-    pdf: '',
+    pdf: '#',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -6825,7 +6825,7 @@ Because even your side table should speak volumes.`,
     ],
     description: `To be edited`,
     dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgx2kAPcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
+      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOHdSddwzF1d3zpmrSIcueZBfQo80E5Ujs7PTG',
     __v: 0,
   },
 ];
