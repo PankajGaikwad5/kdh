@@ -42,25 +42,34 @@ const allImages = imagesData.flatMap((group) =>
 export default function ThreeDCircularGallery() {
   const containerRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [radius, setRadius] = useState(300);
-  const [imgSize, setImgSize] = useState({ width: 200, height: 300 });
+  const [radius, setRadius] = useState(400);
+  const [imgSize, setImgSize] = useState({ width: 250, height: 350 });
   const total = allImages.length;
 
-  // Update radius & image size based on window size
+  // Update radius & image size dynamically based on window width
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
+      let newRadius, newImgSize;
+
       if (width < 640) {
-        setRadius(150);
-        setImgSize({ width: 120, height: 180 });
+        newRadius = 150;
+        newImgSize = { width: 120, height: 180 };
       } else if (width < 1024) {
-        setRadius(250);
-        setImgSize({ width: 180, height: 270 });
+        newRadius = 300;
+        newImgSize = { width: 180, height: 270 };
+      } else if (width < 1440) {
+        newRadius = width * 0.35; // dynamic radius
+        newImgSize = { width: width * 0.18, height: width * 0.25 };
       } else {
-        setRadius(400);
-        setImgSize({ width: 250, height: 350 });
+        newRadius = width * 0.4; // larger radius for 2xl+
+        newImgSize = { width: width * 0.22, height: width * 0.3 };
       }
+
+      setRadius(newRadius);
+      setImgSize(newImgSize);
     };
+
     handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
@@ -75,7 +84,11 @@ export default function ThreeDCircularGallery() {
     const angleStep = 360 / total;
 
     Array.from(items).forEach((item, i) => {
-      const offset = i - currentIndex;
+      let offset = i - currentIndex;
+      // wrap around offsets
+      if (offset > total / 2) offset -= total;
+      if (offset < -total / 2) offset += total;
+
       const angle = offset * angleStep;
 
       gsap.to(item, {
@@ -102,20 +115,20 @@ export default function ThreeDCircularGallery() {
         </button>
       </header>
 
-      <div className='min-h-screen bg-black flex flex-col items-center justify-center p-6 perspective-[1200px]'>
-        <h2 className='text-2xl sm:text-3xl md:text-4xl text-white font-bold mb-6 text-center px-4'>
+      <div className='min-h-screen bg-black flex flex-col w-full items-center justify-center p-6 perspective-[1200px]'>
+        <h2 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-bold mb-8 text-center px-4'>
           {allImages[currentIndex].title}
         </h2>
 
         <div
           ref={containerRef}
-          className='relative w-full max-w-[90vw] h-[60vh] sm:h-[60vh] md:h-[70vh] flex items-center justify-center'
-          style={{ transformStyle: 'preserve-3d' }}
+          className='relative w-full flex items-center justify-center'
+          style={{ height: '70vh', transformStyle: 'preserve-3d' }}
         >
           {allImages.map((img, i) => (
             <div
               key={i}
-              className='absolute rounded-xl overflow-hidden shadow-lg cursor-pointer '
+              className='absolute rounded-xl overflow-hidden shadow-2xl cursor-pointer'
               style={{
                 transformStyle: 'preserve-3d',
                 backfaceVisibility: 'hidden',
@@ -134,16 +147,16 @@ export default function ThreeDCircularGallery() {
           ))}
         </div>
 
-        <div className='flex gap-4 mt-6'>
+        <div className='flex gap-8 mt-10'>
           <button
             onClick={() => rotateGallery(-1)}
-            className='px-5 py-3 rounded-full bg-white/20 hover:bg-white/40 text-white transition'
+            className='px-6 py-3 rounded-full bg-white/20 hover:bg-white/40 text-white transition'
           >
             ◀ Prev
           </button>
           <button
             onClick={() => rotateGallery(1)}
-            className='px-5 py-3 rounded-full bg-white/20 hover:bg-white/40 text-white transition'
+            className='px-6 py-3 rounded-full bg-white/20 hover:bg-white/40 text-white transition'
           >
             Next ▶
           </button>
