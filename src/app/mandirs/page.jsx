@@ -1,5 +1,5 @@
 'use client';
-import React, { useRef, useState, useEffect, useCallback } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import gsap from 'gsap';
 import Navbar from '../components/Navbar';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
@@ -34,163 +34,212 @@ const imagesData = [
   },
 ];
 
-// Flatten all images
-const allImages = imagesData.flatMap((group) =>
-  group.urls.map((url) => ({ url, title: group.title }))
-);
-
 export default function ThreeDCircularGallery() {
   const containerRef = useRef(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const total = allImages.length;
-
-  const [imgSize, setImgSize] = useState({ width: 280, height: 380 });
+  const [collectionIndex, setCollectionIndex] = useState(0);
+  const [imageIndex, setImageIndex] = useState(0);
+  const [imgSize, setImgSize] = useState({ width: 260, height: 260 }); // 1:1
   const [radius, setRadius] = useState(400);
 
-  // 🔹 Responsive scaling
+  // ✅ Responsive sizes
   useEffect(() => {
     const handleResize = () => {
-      const width = window.innerWidth;
-
-      if (width < 640) {
-        setImgSize({ width: 160, height: 220 });
-        setRadius(220);
-      } else if (width < 1024) {
-        setImgSize({ width: 220, height: 300 });
-        setRadius(300);
-      } else if (width < 1440) {
-        setImgSize({ width: 280, height: 380 });
+      const w = window.innerWidth;
+      if (w < 640) {
+        setImgSize({ width: 150, height: 150 });
+        setRadius(200);
+      } else if (w < 1024) {
+        setImgSize({ width: 200, height: 200 });
+        setRadius(280);
+      } else if (w < 1440) {
+        setImgSize({ width: 260, height: 260 });
+        setRadius(360);
+      } else if (w < 1920) {
+        setImgSize({ width: 300, height: 300 });
         setRadius(400);
-      } else if (width < 1920) {
-        setImgSize({ width: 320, height: 440 });
-        setRadius(480);
       } else {
-        setImgSize({ width: 360, height: 480 });
-        setRadius(520);
+        setImgSize({ width: 340, height: 340 });
+        setRadius(460);
       }
     };
-
     handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // 🔹 Rotate gallery
-  const rotateGallery = useCallback(
-    (dir = 1) => {
-      setCurrentIndex((prev) => (prev + dir + total) % total);
-    },
-    [total]
-  );
+  const currentCollection = imagesData[collectionIndex];
+  const total = currentCollection.urls.length;
 
-  // 🔹 Keyboard navigation
+  // ✅ 3D layout animation
   useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (e.key === 'ArrowRight') rotateGallery(1);
-      if (e.key === 'ArrowLeft') rotateGallery(-1);
-    };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [rotateGallery]);
+    const items = containerRef.current?.children;
+    if (!items) return;
 
-  // 🔹 GSAP 3D animation
-  useEffect(() => {
-    const items = containerRef.current.children;
+    const gap = imgSize.width * 0.96; // proper gap, not too big
 
     Array.from(items).forEach((item, i) => {
-      const offset = i - currentIndex;
-      let rotationY = 0;
-      let x = 0;
-      let z = 0;
-      let scale = 1;
-      let opacity = 0;
+      const offset = (i - imageIndex + total) % total;
+      let x = 0,
+        z = 0,
+        rotationY = 0,
+        scale = 1,
+        opacity = 1;
 
       if (offset === 0) {
-        // Center
-        rotationY = 0;
         x = 0;
         z = radius;
+        rotationY = 0;
         scale = 1;
         opacity = 1;
-      } else if (offset === -1 || offset === total - 1) {
-        // Left side
-        rotationY = 20;
-        x = -imgSize.width * 0.9;
+      } else if (offset === 1) {
+        x = gap;
         z = radius * 0.7;
-        scale = 0.8;
+        rotationY = -25;
+        scale = 0.85;
         opacity = 0.8;
-      } else if (offset === 1 || offset === -(total - 1)) {
-        // Right side
-        rotationY = -20;
-        x = imgSize.width * 0.9;
+      } else if (offset === total - 1) {
+        x = -gap;
         z = radius * 0.7;
-        scale = 0.8;
+        rotationY = 25;
+        scale = 0.85;
         opacity = 0.8;
       } else {
+        z = 0;
         opacity = 0;
         scale = 0.6;
-        z = 0;
       }
 
       gsap.to(item, {
-        duration: 0.9,
         x,
         z,
         rotationY,
         scale,
         opacity,
+        duration: 1,
         ease: 'power3.out',
       });
     });
-  }, [currentIndex, imgSize, radius, total]);
+  }, [imageIndex, collectionIndex, imgSize, radius, total]);
+
+  // ✅ Smooth collection transition
+  const changeCollectionSmoothly = (newCollection, newImage) => {
+    const tl = gsap.timeline();
+
+    tl.to(containerRef.current, {
+      scale: 0.8,
+      opacity: 0,
+      filter: 'blur(10px)',
+      duration: 0.5,
+      ease: 'power2.inOut',
+    });
+
+    tl.add(() => {
+      setCollectionIndex(newCollection);
+      setImageIndex(newImage);
+    });
+
+    tl.to(containerRef.current, {
+      scale: 1,
+      opacity: 1,
+      filter: 'blur(0px)',
+      duration: 0.6,
+      ease: 'power2.inOut',
+    });
+  };
+
+  const rotate = (dir = 1) => {
+    const next = imageIndex + dir;
+    if (next >= total) {
+      const newCollection = (collectionIndex + 1) % imagesData.length;
+      changeCollectionSmoothly(newCollection, 0);
+    } else if (next < 0) {
+      const newCollection =
+        (collectionIndex - 1 + imagesData.length) % imagesData.length;
+      const lastImg = imagesData[newCollection].urls.length - 1;
+      changeCollectionSmoothly(newCollection, lastImg);
+    } else {
+      setImageIndex(next);
+    }
+  };
+
+  // ✅ Keyboard nav
+  useEffect(() => {
+    const handleKey = (e) => {
+      if (e.key === 'ArrowRight') rotate(1);
+      if (e.key === 'ArrowLeft') rotate(-1);
+    };
+    window.addEventListener('keydown', handleKey);
+    return () => window.removeEventListener('keydown', handleKey);
+  });
 
   return (
     <>
       <Navbar home={true} />
+      <div className='relative min-h-screen bg-black flex flex-col items-center justify-center overflow-hidden pt-24'>
+        <header className='fixed top-3 right-0 md:right-2 w-full flex justify-end items-center p-4 z-30'>
+          {/* <a href='/'>
+                  <Image
+                    src='/assets/kdhlogo3.png'
+                    alt='Logo'
+                    width={150}
+                    height={40}
+                    className='object-contain'
+                  />
+                </a> */}
+          <button
+            onClick={() => router.back()}
+            className='text-white hover:text-gray-300 transition'
+          >
+            <ArrowLeft size={30} />
+          </button>
+        </header>
+        <div className='fixed top-10 left-0 justify-center items-center w-full flex flex-col gap-10'>
+          <h2 className='text-2xl md:text-4xl font-bold text-gray-300 border-b-2 border-gray-800 uppercase w-full md:max-w-3xl text-center'>
+            Mandirs
+          </h2>
+          <h2 className='text-2xl md:text-3xl lg:text-4xl 2xl:mt-40 text-white font-bold  text-center z-20'>
+            {currentCollection.title}
+          </h2>
+        </div>
 
-      <div className='relative min-h-screen bg-black flex flex-col items-center justify-center overflow-hidden'>
-        <h2 className='text-2xl md:text-4xl lg:text-5xl text-white font-bold md:mb-16 text-center z-20'>
-          {allImages[currentIndex].title}
-        </h2>
-
-        {/* Navigation buttons */}
         <button
-          onClick={() => rotateGallery(-1)}
-          className='absolute left-4 md:left-10 text-white/70 hover:text-white transition z-30'
+          onClick={() => rotate(-1)}
+          className='absolute left-4 md:left-10 text-white/70 hover:text-white z-30'
         >
           <ArrowLeft size={40} />
         </button>
         <button
-          onClick={() => rotateGallery(1)}
-          className='absolute right-4 md:right-10 text-white/70 hover:text-white transition z-30'
+          onClick={() => rotate(1)}
+          className='absolute right-4 md:right-10 text-white/70 hover:text-white z-30'
         >
           <ArrowRight size={40} />
         </button>
 
         <div
           ref={containerRef}
-          className='relative w-full flex items-center justify-center'
+          className='relative flex items-center justify-center'
           style={{
-            height: '65vh',
+            height: '60vh',
+            width: '100%',
             transformStyle: 'preserve-3d',
             perspective: '1300px',
           }}
         >
-          {allImages.map((img, i) => (
+          {currentCollection.urls.map((url, i) => (
             <div
               key={i}
-              className='absolute rounded-2xl overflow-hidden shadow-xl cursor-pointer'
-              onClick={() => setCurrentIndex(i)}
+              className='absolute rounded-xl overflow-hidden shadow-2xl cursor-pointer'
+              onClick={() => rotate(1)}
               style={{
-                backfaceVisibility: 'hidden',
-                transformStyle: 'preserve-3d',
                 width: imgSize.width,
                 height: imgSize.height,
+                backfaceVisibility: 'hidden',
+                transformStyle: 'preserve-3d',
               }}
             >
               <img
-                src={img.url}
-                alt={img.title}
+                src={url}
+                alt={currentCollection.title}
                 draggable={false}
                 className='w-full h-full object-cover'
               />
