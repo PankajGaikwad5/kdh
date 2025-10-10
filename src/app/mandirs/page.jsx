@@ -1,8 +1,8 @@
 'use client';
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect, useCallback } from 'react';
 import gsap from 'gsap';
 import Navbar from '../components/Navbar';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 const imagesData = [
   {
@@ -34,7 +34,7 @@ const imagesData = [
   },
 ];
 
-// Flatten all images with titles
+// Flatten all images
 const allImages = imagesData.flatMap((group) =>
   group.urls.map((url) => ({ url, title: group.title }))
 );
@@ -42,32 +42,32 @@ const allImages = imagesData.flatMap((group) =>
 export default function ThreeDCircularGallery() {
   const containerRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [radius, setRadius] = useState(400);
-  const [imgSize, setImgSize] = useState({ width: 250, height: 350 });
   const total = allImages.length;
 
-  // Update radius & image size dynamically based on window width
+  const [imgSize, setImgSize] = useState({ width: 280, height: 380 });
+  const [radius, setRadius] = useState(400);
+
+  // 🔹 Responsive scaling
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
-      let newRadius, newImgSize;
 
       if (width < 640) {
-        newRadius = 150;
-        newImgSize = { width: 120, height: 180 };
+        setImgSize({ width: 160, height: 220 });
+        setRadius(220);
       } else if (width < 1024) {
-        newRadius = 300;
-        newImgSize = { width: 180, height: 270 };
+        setImgSize({ width: 220, height: 300 });
+        setRadius(300);
       } else if (width < 1440) {
-        newRadius = width * 0.35; // dynamic radius
-        newImgSize = { width: width * 0.18, height: width * 0.25 };
+        setImgSize({ width: 280, height: 380 });
+        setRadius(400);
+      } else if (width < 1920) {
+        setImgSize({ width: 320, height: 440 });
+        setRadius(480);
       } else {
-        newRadius = width * 0.4; // larger radius for 2xl+
-        newImgSize = { width: width * 0.22, height: width * 0.3 };
+        setImgSize({ width: 360, height: 480 });
+        setRadius(520);
       }
-
-      setRadius(newRadius);
-      setImgSize(newImgSize);
     };
 
     handleResize();
@@ -75,91 +75,127 @@ export default function ThreeDCircularGallery() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const rotateGallery = (dir = 1) => {
-    setCurrentIndex((prev) => (prev + dir + total) % total);
-  };
+  // 🔹 Rotate gallery
+  const rotateGallery = useCallback(
+    (dir = 1) => {
+      setCurrentIndex((prev) => (prev + dir + total) % total);
+    },
+    [total]
+  );
 
+  // 🔹 Keyboard navigation
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'ArrowRight') rotateGallery(1);
+      if (e.key === 'ArrowLeft') rotateGallery(-1);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [rotateGallery]);
+
+  // 🔹 GSAP 3D animation
   useEffect(() => {
     const items = containerRef.current.children;
-    const angleStep = 360 / total;
 
     Array.from(items).forEach((item, i) => {
-      let offset = i - currentIndex;
-      // wrap around offsets
-      if (offset > total / 2) offset -= total;
-      if (offset < -total / 2) offset += total;
+      const offset = i - currentIndex;
+      let rotationY = 0;
+      let x = 0;
+      let z = 0;
+      let scale = 1;
+      let opacity = 0;
 
-      const angle = offset * angleStep;
+      if (offset === 0) {
+        // Center
+        rotationY = 0;
+        x = 0;
+        z = radius;
+        scale = 1;
+        opacity = 1;
+      } else if (offset === -1 || offset === total - 1) {
+        // Left side
+        rotationY = 20;
+        x = -imgSize.width * 0.9;
+        z = radius * 0.7;
+        scale = 0.8;
+        opacity = 0.8;
+      } else if (offset === 1 || offset === -(total - 1)) {
+        // Right side
+        rotationY = -20;
+        x = imgSize.width * 0.9;
+        z = radius * 0.7;
+        scale = 0.8;
+        opacity = 0.8;
+      } else {
+        opacity = 0;
+        scale = 0.6;
+        z = 0;
+      }
 
       gsap.to(item, {
-        rotationY: angle,
-        z: radius * Math.cos((angle * Math.PI) / 180),
-        x: radius * Math.sin((angle * Math.PI) / 180),
-        scale: offset === 0 ? 1 : 0.7,
-        opacity: Math.abs(offset) > total / 2 ? 0 : 1,
-        width: imgSize.width,
-        height: imgSize.height,
-        duration: 0.8,
-        transformOrigin: '50% 50%',
+        duration: 0.9,
+        x,
+        z,
+        rotationY,
+        scale,
+        opacity,
         ease: 'power3.out',
       });
     });
-  }, [currentIndex, radius, imgSize]);
+  }, [currentIndex, imgSize, radius, total]);
 
   return (
     <>
       <Navbar home={true} />
-      <header className='fixed top-3 right-0 md:right-2 w-full flex justify-end items-center p-4 z-30'>
-        <button className='text-white hover:text-gray-300 transition'>
-          <ArrowLeft size={30} />
-        </button>
-      </header>
 
-      <div className='min-h-screen bg-black flex flex-col w-full items-center justify-center p-6 perspective-[1200px]'>
-        <h2 className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-bold mb-8 text-center px-4'>
+      <div className='relative min-h-screen bg-black flex flex-col items-center justify-center overflow-hidden'>
+        <h2 className='text-2xl md:text-4xl lg:text-5xl text-white font-bold md:mb-16 text-center z-20'>
           {allImages[currentIndex].title}
         </h2>
+
+        {/* Navigation buttons */}
+        <button
+          onClick={() => rotateGallery(-1)}
+          className='absolute left-4 md:left-10 text-white/70 hover:text-white transition z-30'
+        >
+          <ArrowLeft size={40} />
+        </button>
+        <button
+          onClick={() => rotateGallery(1)}
+          className='absolute right-4 md:right-10 text-white/70 hover:text-white transition z-30'
+        >
+          <ArrowRight size={40} />
+        </button>
 
         <div
           ref={containerRef}
           className='relative w-full flex items-center justify-center'
-          style={{ height: '70vh', transformStyle: 'preserve-3d' }}
+          style={{
+            height: '65vh',
+            transformStyle: 'preserve-3d',
+            perspective: '1300px',
+          }}
         >
           {allImages.map((img, i) => (
             <div
               key={i}
-              className='absolute rounded-xl overflow-hidden shadow-2xl cursor-pointer'
+              className='absolute rounded-2xl overflow-hidden shadow-xl cursor-pointer'
+              onClick={() => setCurrentIndex(i)}
               style={{
-                transformStyle: 'preserve-3d',
                 backfaceVisibility: 'hidden',
+                transformStyle: 'preserve-3d',
                 width: imgSize.width,
                 height: imgSize.height,
               }}
-              onClick={() => setCurrentIndex(i)}
             >
               <img
                 src={img.url}
                 alt={img.title}
                 draggable={false}
-                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                className='w-full h-full object-cover'
               />
             </div>
           ))}
-        </div>
-
-        <div className='flex gap-8 mt-10'>
-          <button
-            onClick={() => rotateGallery(-1)}
-            className='px-6 py-3 rounded-full bg-white/20 hover:bg-white/40 text-white transition'
-          >
-            ◀ Prev
-          </button>
-          <button
-            onClick={() => rotateGallery(1)}
-            className='px-6 py-3 rounded-full bg-white/20 hover:bg-white/40 text-white transition'
-          >
-            Next ▶
-          </button>
         </div>
       </div>
     </>

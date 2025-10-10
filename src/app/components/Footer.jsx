@@ -22,6 +22,7 @@ const bebas = Bebas_Neue({
 const navLinks = [
   { label: 'About', href: '/about' },
   { label: 'Collections', href: '/collections' },
+  { label: 'Mandirs', href: 'mandirs' },
   { label: 'Catalogue', href: '/catalogue' },
   { label: 'Collaborations', href: '/collaborations' },
   { label: 'Contact us', href: '/contact' },
