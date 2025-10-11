@@ -2671,7 +2671,7 @@ It’s not about drinking coffee—it’s about experiencing design, technology,
     title: 'matilda 2024 bench 2',
     group: 'matilda_2024',
     material: 'Marble',
-    pdf: '',
+    pdf: '#',
     images: [
       {
         fileName: '1738927999036-Slide1.JPG',
@@ -4502,7 +4502,7 @@ Designed for those who play to win, this piece turns any corner into a conversat
       },
     ],
     description: `To be edited.`,
-    dimensions: '',
+    dimensions: '#',
     __v: 0,
   },
   {
@@ -5225,7 +5225,7 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
     title: '3D Printed Bar',
     group: 'friends',
     material: 'plastic',
-    pdf: '',
+    pdf: '#',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -5353,7 +5353,7 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
     title: '3D Bar Stool',
     group: 'friends',
     material: 'plastic',
-    pdf: '',
+    pdf: '#',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -6106,7 +6106,7 @@ Because even your side table should speak volumes.`,
     title: 'Matilda 2023 Dining Table',
     group: 'matilda_2023',
     material: 'Marble',
-    pdf: '',
+    pdf: '#',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -6138,7 +6138,7 @@ Because even your side table should speak volumes.`,
       },
     ],
     description: `To be edited.`,
-    dimensions: '',
+    dimensions: '#',
     __v: 0,
   },
   {
@@ -6148,7 +6148,7 @@ Because even your side table should speak volumes.`,
     title: 'Matilda 2023 Console Green',
     group: 'matilda_2023',
     material: 'Marble',
-    pdf: '',
+    pdf: '#',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -6187,7 +6187,7 @@ Because even your side table should speak volumes.`,
       },
     ],
     description: `To be edited.`,
-    dimensions: '',
+    dimensions: '#',
     __v: 0,
   },
 
@@ -6198,7 +6198,7 @@ Because even your side table should speak volumes.`,
     title: 'matilda 2022 Tea Bar',
     group: 'matilda_2022',
     material: 'Marble',
-    pdf: '',
+    pdf: '#',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -6276,7 +6276,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.0 Ottoman',
     group: 'monster_3.0',
     material: 'Burnt Wood & Fur Fabric',
-    pdf: '',
+    pdf: '#',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
