@@ -5396,7 +5396,7 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
     title: 'matilda 2022 bed Side Table',
     group: 'matilda_2022',
     material: 'Marble',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCEKH3sdtZQpOq9no3vVs5yPKXR8gEYuikGU',
+    pdf: '#',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -5451,7 +5451,7 @@ When luxury meets structure like this, it’s not just furniture — it’s a fl
     title: 'matilda 2022 Chest Of Drawer',
     group: 'matilda_2022',
     material: 'Marble',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCEKH3sdtZQpOq9no3vVs5yPKXR8gEYuikGU',
+    pdf: '#',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -5507,7 +5507,7 @@ A symbol of restraint, rhythm, and remarkable design.`,
     title: 'matilda 2022 Chaise Longue',
     group: 'matilda_2022',
     material: 'Marble',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCEKH3sdtZQpOq9no3vVs5yPKXR8gEYuikGU',
+    pdf: '#',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -5583,7 +5583,7 @@ Ideal for spaces where silence, strength, and sophistication are felt.`,
     title: 'matilda 2022 Console',
     group: 'matilda_2022',
     material: 'Resin and Clay',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCEKH3sdtZQpOq9no3vVs5yPKXR8gEYuikGU',
+    pdf: '#',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -5651,7 +5651,7 @@ unapologetic charm.`,
     title: 'matilda 2022 Marble Console',
     group: 'matilda_2022',
     material: 'Marble',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCEKH3sdtZQpOq9no3vVs5yPKXR8gEYuikGU',
+    pdf: '#',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -5711,7 +5711,7 @@ A true collector’s piece, it transforms hallways, entryways, or lounges into c
     title: 'matilda 2022 Marble Screen',
     group: 'matilda_2022',
     material: 'Marble',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCEKH3sdtZQpOq9no3vVs5yPKXR8gEYuikGU',
+    pdf: '#',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -5766,7 +5766,7 @@ Ideal for spaces that embrace architectural drama with timeless sophistication.`
     title: 'matilda 2022 Side Table',
     group: 'matilda_2022',
     material: 'Marble',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCEKH3sdtZQpOq9no3vVs5yPKXR8gEYuikGU',
+    pdf: '#',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -5820,7 +5820,7 @@ curated interiors that appreciate the power of form and function in harmony.`,
     title: 'matilda 2025 Taavdi',
     group: 'matilda_2025',
     material: 'Marble',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCEKH3sdtZQpOq9no3vVs5yPKXR8gEYuikGU',
+    pdf: '#',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
