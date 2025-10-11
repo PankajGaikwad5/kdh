@@ -6354,7 +6354,7 @@ Because even your side table should speak volumes.`,
     },
     title: 'Monster 3.1 Center Table',
     group: 'monster_3.1',
-    material: 'To be edited',
+    material: 'Charred Wood with High Gloss Lacquer',
     pdf: '#',
     images: [
       {
@@ -6397,7 +6397,7 @@ Because even your side table should speak volumes.`,
     },
     title: 'Monster 3.1 Coffee Table',
     group: 'monster_3.1',
-    material: 'To be edited',
+    material: 'Charred Wood with High Gloss Lacquer',
     pdf: '#',
     images: [
       {
@@ -6433,7 +6433,7 @@ Because even your side table should speak volumes.`,
     },
     title: 'Monster 3.1 Console',
     group: 'monster_3.1',
-    material: 'To be edited',
+    material: 'Charred Wood with High Gloss Lacquer',
     pdf: '#',
     images: [
       {
@@ -6490,7 +6490,7 @@ Because even your side table should speak volumes.`,
     },
     title: 'Monster 3.1 Console Storage',
     group: 'monster_3.1',
-    material: 'To be edited',
+    material: 'Charred Wood with High Gloss Lacquer',
     pdf: '#',
     images: [
       {
@@ -6533,7 +6533,7 @@ Because even your side table should speak volumes.`,
     },
     title: 'Monster 3.1 Desk',
     group: 'monster_3.1',
-    material: 'To be edited',
+    material: 'Charred Wood with High Gloss Lacquer',
     pdf: '#',
     images: [
       {
@@ -6576,7 +6576,7 @@ Because even your side table should speak volumes.`,
     },
     title: 'Monster 3.1 Floorlamp',
     group: 'monster_3.1',
-    material: 'To be edited',
+    material: 'Charred Wood with High Gloss Lacquer',
     pdf: '#',
     images: [
       {
@@ -6612,7 +6612,7 @@ Because even your side table should speak volumes.`,
     },
     title: 'Monster 3.1 Long Dining Table',
     group: 'monster_3.1',
-    material: 'To be edited',
+    material: 'Charred Wood with High Gloss Lacquer',
     pdf: '#',
     images: [
       {
@@ -6662,7 +6662,7 @@ Because even your side table should speak volumes.`,
     },
     title: 'Monster 3.1 Mirror',
     group: 'monster_3.1',
-    material: 'To be edited',
+    material: 'Charred Wood with High Gloss Lacquer',
     pdf: '#',
     images: [
       {
@@ -6705,7 +6705,7 @@ Because even your side table should speak volumes.`,
     },
     title: 'Monster 3.1 Round Dinig Table',
     group: 'monster_3.1',
-    material: 'To be edited',
+    material: 'Charred Wood with High Gloss Lacquer',
     pdf: '#',
     images: [
       {
@@ -6748,7 +6748,7 @@ Because even your side table should speak volumes.`,
     },
     title: 'Monster 3.1 Single Shelving Unit',
     group: 'monster_3.1',
-    material: 'To be edited',
+    material: 'Charred Wood with High Gloss Lacquer',
     pdf: '#',
     images: [
       {
@@ -6791,7 +6791,7 @@ Because even your side table should speak volumes.`,
     },
     title: 'Monster 3.1 Side Table',
     group: 'monster_3.1',
-    material: 'To be edited',
+    material: 'Charred Wood with High Gloss Lacquer',
     pdf: '#',
     images: [
       {
