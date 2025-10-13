@@ -5350,7 +5350,7 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
     _id: {
       $oid: 'barstool',
     },
-    title: '3D Bar Stool',
+    title: '3D Printed Bar Stool',
     group: 'friends',
     material: 'plastic',
     pdf: '#',

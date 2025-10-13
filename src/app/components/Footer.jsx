@@ -32,14 +32,14 @@ const Footer = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <div className='flex flex-col bg-black text-sm font-semibold relative z-10 2xl:text-2xl'>
+    <div className='flex flex-col bg-black text-xs md:text-sm font-semibold relative z-10 '>
       <div className='py-2 flex-col w-full flex md:flex-row md:justify-evenly items-center space-x-1 border-t'>
         <div className='flex py-4 justify-center items-center px-4'>
           <Link href='/'>
             <img
               src='/assets/kdhlogo3.png'
               alt=''
-              className='w-48 md:w-40 2xl:w-80'
+              className='w-48 md:w-24 2xl:w-44'
             />
           </Link>
         </div>

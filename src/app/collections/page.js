@@ -65,7 +65,7 @@ const page = () => {
       id: 13,
       title: 'Matilda 2023',
       group: 'matilda_2023',
-      img: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6YGDJhbpQ6Mplf2w0nGeTNo5xsyRHC8DzakUP',
+      img: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6gBXjHSCZerKAITJasY524vLb0iMwnFhmpSEq',
       projects:
         'av console, bench, console, green, travatine, dining table, side table',
     },
