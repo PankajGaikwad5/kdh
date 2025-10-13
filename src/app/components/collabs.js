@@ -5,7 +5,7 @@ export const collabs = [
     },
     title: 'serafini',
     details: 'Salone 2024',
-    moreDetails: '/products/serafini',
+    moreDetails: '/collections/serafini',
     images: [
       {
         fileName: '2.jpg',
@@ -89,7 +89,7 @@ export const collabs = [
     },
     title: 'dimension',
     details: 'ID 2025',
-    moreDetails: '/products/monster_1.0',
+    moreDetails: '/collections/monster_1.0',
     images: [
       {
         fileName: '1.jpg',
@@ -123,7 +123,7 @@ export const collabs = [
     },
     title: 'the quarry',
     details: 'ID 2022',
-    moreDetails: '/products/monster_1.0',
+    moreDetails: '/collections/monster_1.0',
     images: [
       {
         fileName: '1.jpg',
@@ -343,7 +343,7 @@ export const collabs = [
     },
     title: 'marble',
     details: 'ID 2024',
-    moreDetails: '/products/matilda',
+    moreDetails: '/collections/matilda',
     images: [
       {
         fileName: '2.jpg',
@@ -367,7 +367,7 @@ export const collabs = [
     },
     title: 'casa',
     details: 'ID 2024',
-    moreDetails: '/products/matilda',
+    moreDetails: '/collections/matilda',
     images: [
       {
         fileName: '2.jpg',
@@ -421,7 +421,7 @@ export const collabs = [
     },
     title: 'Arjun Rathi Design',
     details: '',
-    moreDetails: '/products/monster_collectibles',
+    moreDetails: '/collections/monster_collectibles',
     images: [
       {
         fileName: '2.jpg',
