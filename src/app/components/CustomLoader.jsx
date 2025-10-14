@@ -1,6 +1,5 @@
-// CustomLoader.js
 'use client';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/planet.scss';
 import { Html, useProgress } from '@react-three/drei';
 import { useThree } from '@react-three/fiber';
@@ -8,77 +7,62 @@ import * as THREE from 'three';
 
 export default function CustomLoader() {
   const { progress } = useProgress();
-  // const { camera } = useThree();
-  const loaderPosition = new THREE.Vector3(0, 6, 0); // Desired position in 3D space
-  // const screenPosition = loaderPosition.clone().project(camera);
+  const [showLoader, setShowLoader] = useState(true);
+  const GIF_DURATION = 2500;
+
+  const loaderPosition = new THREE.Vector3(0, 6, 0);
 
   function getColor(index) {
     const colors = ['#ef4444', '#f97316', '#eab308', '#22c55e', '#3b82f6'];
     return colors[index % colors.length];
   }
-  return (
-    <Html
-      className='z-10'
-      // position={loaderPosition}
-      // style={{
-      //   position: 'absolute',
-      //   top: `${((screenPosition.y + 1) / 2) * 100}%`,
-      //   left: `${((screenPosition.x + 1) / 2) * 100}%`,
-      //   transform: 'translate(-50%, -50%)',
-      //   width: '100%',
-      //   height: '100%',
-      //   display: 'flex',
-      //   justifyContent: 'center',
-      //   alignItems: 'center',
-      // }}
-    >
-      {/* <div className='flex justify-center items-center h-screen w-screen ml-28 -mr-96'>
-        <div className='content'>
-          {Array.from({ length: 16 }).map((_, b) => (
-            <div key={b} className='cuboid'>
-              {Array.from({ length: 6 }).map((_, s) => (
-                <div key={s} className='side'></div>
-              ))}
-            </div>
-          ))}
-        </div>
-      </div> */}
-      {/* <div className='w-full h-screen absolute  flex justify-center items-center'> */}
-      <div className='content z-10'>
-        {/* <div className='planet'>
-          <div className='ring'></div>
-          <div className='cover-ring'></div>
-          <div className='spots'>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div> */}
-        {/* <img
-          src='https://www.icegif.com/wp-content/uploads/2023/07/icegif-1262.gif'
-          alt='loading'
-          className=''
-        /> */}
-        <div className='flex space-x-2'>
-          {[0, 150, 300, 450, 600].map((delay, index) => (
-            <span
-              key={index}
-              className='h-3 w-3 rounded-full animate-bounce'
-              style={{
-                animationDelay: `${delay}ms`,
-                backgroundColor: getColor(index),
-              }}
-            ></span>
-          ))}
-        </div>
 
-        <p>loading</p>
+  useEffect(() => {
+    // Only hide loader when BOTH conditions are met
+    if (progress === 100) {
+      const timer = setTimeout(() => {
+        setShowLoader(false);
+      }, GIF_DURATION);
+      return () => clearTimeout(timer);
+    }
+  }, [progress]);
+
+  if (!showLoader) return null;
+
+  return (
+    <Html className='z-10'>
+      <div className='content z-10'>
+        <div className='relative z-10 font-semibold text-center top-1/2 -mt-28 lg:-mt-8 -translate-y-1/2 text-3xl sm:text-8xl text-white tracking-widest flex flex-col justify-center items-center mb-0'>
+          <div style={{ position: 'relative', display: 'inline-block' }}>
+            <img
+              src={`/sign.gif`}
+              className={`transition-opacity duration-700`}
+              alt='Animated signature representing Karan Desai Architecture'
+              style={{
+                display: 'block',
+                width: '320px',
+                height: 'auto',
+                filter: progress < 100 ? 'grayscale(0.2)' : 'none',
+              }}
+            />
+            <div
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: `${100 - progress}%`,
+                height: '100%',
+                background: 'transparent',
+                transition: 'width 0.4s cubic-bezier(0.4,0,0.2,1)',
+                pointerEvents: 'none',
+              }}
+            />
+          </div>
+        </div>
+        <div style={{ marginTop: 12, color: 'white', pointerEvents: 'none' }}>
+          {Math.round(progress)}%
+        </div>
       </div>
-      {/* </div> */}
     </Html>
   );
 }
