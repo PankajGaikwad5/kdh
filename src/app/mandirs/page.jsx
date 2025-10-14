@@ -6,7 +6,8 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 const imagesData = [
   {
-    title: 'Ashram Mandir',
+    title: 'Ashram',
+    year: '2024',
     urls: [
       '/mandirs/ashram-mandir/1.webp',
       '/mandirs/ashram-mandir/2.webp',
@@ -14,7 +15,8 @@ const imagesData = [
     ],
   },
   {
-    title: 'BCR Mandir',
+    title: 'BCR',
+    year: '2024',
     urls: [
       '/mandirs/bcr-mandir/1.webp',
       '/mandirs/bcr-mandir/2.webp',
@@ -23,7 +25,8 @@ const imagesData = [
     ],
   },
   {
-    title: 'DC Mandir',
+    title: 'DC',
+    year: '2024',
     urls: [
       '/mandirs/dc-mandir/1.webp',
       '/mandirs/dc-mandir/2.webp',
@@ -46,20 +49,20 @@ export default function ThreeDCircularGallery() {
     const handleResize = () => {
       const w = window.innerWidth;
       if (w < 640) {
-        setImgSize({ width: 150, height: 150 });
-        setRadius(200);
+        setImgSize({ width: 220, height: 220 });
+        setRadius(120);
       } else if (w < 1024) {
-        setImgSize({ width: 200, height: 200 });
-        setRadius(280);
+        setImgSize({ width: 320, height: 320 });
+        setRadius(180);
       } else if (w < 1440) {
-        setImgSize({ width: 260, height: 260 });
-        setRadius(360);
+        setImgSize({ width: 420, height: 420 });
+        setRadius(260);
       } else if (w < 1920) {
-        setImgSize({ width: 300, height: 300 });
-        setRadius(400);
+        setImgSize({ width: 520, height: 520 });
+        setRadius(320);
       } else {
-        setImgSize({ width: 340, height: 340 });
-        setRadius(460);
+        setImgSize({ width: 600, height: 600 });
+        setRadius(380);
       }
     };
     handleResize();
@@ -197,9 +200,6 @@ export default function ThreeDCircularGallery() {
           <h2 className='text-2xl md:text-4xl font-bold text-gray-300 border-b-2 border-gray-800 uppercase w-full md:max-w-3xl text-center'>
             Mandirs
           </h2>
-          <h2 className='text-2xl md:text-3xl lg:text-4xl 2xl:mt-40 text-white font-bold  text-center z-20'>
-            {currentCollection.title}
-          </h2>
         </div>
 
         <button
@@ -219,33 +219,45 @@ export default function ThreeDCircularGallery() {
           ref={containerRef}
           className='relative flex items-center justify-center'
           style={{
-            height: '60vh',
+            height: imgSize.height + 40, // add some padding
             width: '100%',
             transformStyle: 'preserve-3d',
             perspective: '1300px',
           }}
         >
-          {currentCollection.urls.map((url, i) => (
-            <div
-              key={i}
-              className='absolute rounded-xl overflow-hidden shadow-2xl cursor-pointer'
-              onClick={() => rotate(1)}
-              style={{
-                width: imgSize.width,
-                height: imgSize.height,
-                backfaceVisibility: 'hidden',
-                transformStyle: 'preserve-3d',
-              }}
-            >
-              <img
-                src={url}
-                alt={currentCollection.title}
-                draggable={false}
-                className='w-full h-full object-cover'
-              />
-            </div>
-          ))}
+          {currentCollection.urls.map((url, i) => {
+            const offset = (i - imageIndex + total) % total;
+            const isActive = offset === 0;
+            return (
+              <div
+                key={i}
+                className='absolute rounded-xl overflow-hidden shadow-2xl cursor-pointer'
+                onClick={() => isActive && rotate(1)}
+                style={{
+                  width: imgSize.width,
+                  height: imgSize.height,
+                  backfaceVisibility: 'hidden',
+                  transformStyle: 'preserve-3d',
+                  zIndex: isActive ? 2 : 1,
+                  pointerEvents: isActive ? 'auto' : 'none',
+                  transition: 'z-index 0.3s',
+                }}
+              >
+                <img
+                  src={url}
+                  alt={currentCollection.title}
+                  draggable={false}
+                  className='w-full h-full object-cover'
+                />
+              </div>
+            );
+          })}
         </div>
+        <h2 className='text-2xl md:text-3xl lg:text-4xl 2xl:mt-40 text-white font-bold pt-6 md:pt-14 xl:pt-20 2xl:pt-0 text-center z-20 flex gap-3'>
+          <span>Mandir</span>
+          <span>{currentCollection.title}</span>
+          <span>{currentCollection.year}</span>
+        </h2>
       </div>
     </>
   );
