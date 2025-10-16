@@ -23,7 +23,7 @@ const navLinks = [
   { label: 'About', href: '/about' },
   { label: 'Collections', href: '/collections' },
   { label: 'Mandirs', href: 'mandirs' },
-  { label: 'Catalogue', href: '/catalogue' },
+  // { label: 'Catalogue', href: '/catalogue' },
   { label: 'Collaborations', href: '/collaborations' },
   { label: 'Contact us', href: '/contact' },
 ];
@@ -32,7 +32,7 @@ const Footer = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <div className='flex flex-col bg-black text-xs md:text-sm font-semibold relative z-10 '>
+    <div className='flex flex-col bg-black text-xs md:text-xs 2xl:text-sm font-semibold relative z-10 '>
       <div className='py-2 flex-col w-full flex md:flex-row md:justify-evenly items-center space-x-1 border-t'>
         <div className='flex py-4 justify-center items-center px-4'>
           <Link href='/'>
