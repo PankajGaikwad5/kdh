@@ -2,33 +2,34 @@
 // import {Giest, Geist_Mono} from 'next'
 import './globals.css';
 import { Inter } from 'next/font/google'; // Use a known Google font
-import { Poppins, Montserrat, Mate } from 'next/font/google';
+import { Montserrat } from 'next/font/google';
+// import { Poppins, Montserrat, Mate } from 'next/font/google';
 import Footer from './components/Footer';
 import Head from 'next/head';
 import Script from 'next/script';
 
 // popins
 // montserrat
-const popins = Poppins({
-  subsets: ['latin'], // Specify subsets
-  weight: ['400', '600', '700'], // Specify weight
-  display: 'swap',
-});
+// const popins = Poppins({
+//   subsets: ['latin'], // Specify subsets
+//   weight: ['400', '600', '700'], // Specify weight
+//   display: 'swap',
+// });
 const montserrat = Montserrat({
   subsets: ['latin'], // Specify subsets
   weight: ['400', '600', '700'], // Specify weight
   display: 'swap',
 });
-const jose = Mate({
-  subsets: ['latin'], // Specify subsets
-  weight: ['400'], // Specify weight
-  display: 'swap',
-});
+// const jose = Mate({
+//   subsets: ['latin'], // Specify subsets
+//   weight: ['400'], // Specify weight
+//   display: 'swap',
+// });
 
-const inter = Inter({
-  variable: '--font-inter',
-  subsets: ['latin'],
-});
+// const inter = Inter({
+//   variable: '--font-inter',
+//   subsets: ['latin'],
+// });
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
