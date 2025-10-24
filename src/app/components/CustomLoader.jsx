@@ -35,7 +35,7 @@ export default function CustomLoader() {
         <div className='relative z-10 font-semibold text-center top-1/2 -mt-28 lg:-mt-8 -translate-y-1/2 text-3xl sm:text-8xl text-white tracking-widest flex flex-col justify-center items-center mb-0'>
           <div style={{ position: 'relative', display: 'inline-block' }}>
             <img
-              src={`/sign.gif`}
+              src={`/optimizedsign.gif`}
               className={`transition-opacity duration-700`}
               alt='Animated signature representing Karan Desai Architecture'
               style={{

@@ -42,9 +42,9 @@ const page = () => {
     <main className='min-h-screen select-none overflow-y-hidden scrollhide overflow-hidden bg-[#232424]'>
       <div className='hidden'>
         <h1>Karan Desai Home</h1>
-        <h1>Karan Desai</h1>
-        <h1>Karan Desai Acrhitect</h1>
-        <h1>Karan Desai Acrhitect + Design</h1>
+        <h2>Karan Desai</h2>
+        <h2>Karan Desai Acrhitect</h2>
+        <h2>Karan Desai Acrhitect + Design</h2>
         <h2>Architect</h2>
         <h2>Designer</h2>
         <h2>Interior Designer</h2>
