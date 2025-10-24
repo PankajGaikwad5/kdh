@@ -12,14 +12,17 @@ import Script from 'next/script';
 const popins = Poppins({
   subsets: ['latin'], // Specify subsets
   weight: ['400', '600', '700'], // Specify weight
+  display: 'swap',
 });
 const montserrat = Montserrat({
   subsets: ['latin'], // Specify subsets
   weight: ['400', '600', '700'], // Specify weight
+  display: 'swap',
 });
 const jose = Mate({
   subsets: ['latin'], // Specify subsets
   weight: ['400'], // Specify weight
+  display: 'swap',
 });
 
 const inter = Inter({
@@ -48,6 +51,21 @@ export const metadata = {
           Ar. Ashiesh Shah during a year drop in 2007, carved a path for his
           career with a clear direction towards his goals & dreams which he
           lives today.`,
+  metadataBase: new URL('https://karandesaihome.com'),
+  openGraph: {
+    title: 'Karan Desai Home',
+    description: 'Award Winning Architecture + Interior Design Studio',
+    url: 'https://karandesaihome.com',
+    images: ['/assets/newkdh.png'],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Karan Desai Home',
+    description:
+      'Discover the innovative architectural designs of Karan Desai Home.',
+    images: ['/assets/newkdh.png'],
+  },
   keywords: [
     'KDH',
     'Karan Desai Home',
@@ -119,16 +137,6 @@ export const metadata = {
     'architects do what',
     'home architects',
     'make architecture',
-    'playing store app',
-    'google play gift card',
-    'redeem google play code',
-    'google play store console developer',
-    'google play card gift card',
-    'console playstore',
-    'google play gift certificate',
-    'google app store gift card',
-    'console google play store',
-    'google play store dev console',
     'home to design',
     'luxury interior design',
     'interior design website',
@@ -155,15 +163,6 @@ export const metadata = {
     'design studio',
     'layout plan',
     'design a studio',
-    'intermittent fasting',
-    'free fasting',
-    'fasting intermittent fasting',
-    'intermittent diet fasting',
-    'fasting and intermittent fasting',
-    'intermittent fasting schedule',
-    'intermittent fasting diet plan',
-    'intermittent fasting times',
-    'intermittent fasting benefits',
     'home decorating',
     'home decorate',
     'interior designers in bangalore',
@@ -196,11 +195,6 @@ export const metadata = {
     'karan desai architecture design',
     'mumbai design',
     'architecture inc',
-    'lab in a lab',
-    'lab in lab',
-    'lab to lab',
-    'lab re',
-    'diagnostic centre in',
     'kitchen furniture',
     'kitchen sets',
     'furniture home',
@@ -239,7 +233,6 @@ export const metadata = {
     'architect firm',
     'home planning',
     'interior design of home',
-    'hafeez contractor architects',
     'interior design for house',
     'house architecture design',
     'modern house',
