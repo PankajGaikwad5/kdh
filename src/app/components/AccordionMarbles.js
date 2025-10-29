@@ -7,15 +7,15 @@ export function AccordionMarbles() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className='flex flex-col items-start justify-start'>
+    <div className='flex flex-col items-start justify-start mt-4'>
       {/* Header */}
       <button
-        className='w-full flex items-center justify-between pt-4 gap-2  text-lg'
+        className='w-full flex items-center justify-between gap-2  text-lg'
         onClick={() => setOpen(!open)}
       >
         SPECIAL REQUESTS MARBLES
         <ChevronDown
-          className={`h-5 w-5 transform transition-transform ${
+          className={`h-5 w-5 transform transition-transform -mt-2 ${
             open ? 'rotate-180' : ''
           }`}
         />
