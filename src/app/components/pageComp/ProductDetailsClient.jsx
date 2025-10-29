@@ -311,7 +311,7 @@ export default function ProductDetailsClient({ product }) {
               </div>
             )}
 
-            <div className='flex flex-col gap-4 text-sm 2xl:space-y-4'>
+            <div className='flex flex-col gap-4 text-sm 2xl:space-y-8'>
               <div className='grid grid-cols-2 md:grid-cols-3 gap-2'>
                 <div>
                   <h4 className='font-semibold text-gray-400 text-xs mb-1'>
