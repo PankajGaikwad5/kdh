@@ -183,6 +183,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import { Playfair_Display, Montserrat } from 'next/font/google';
 
 // Fonts
@@ -259,6 +260,29 @@ const AboutCard = () => {
             </a>
             .
           </p>
+          {/* KDAD Logo */}
+          <section className='px-4 pt-10 pb-16 md:px-14 lg:px-20 bg-black'>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className='flex justify-center'
+            >
+              <a
+                href='https://www.karandesai.in/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <Image
+                  src='/assets/kdadlogo2.png'
+                  alt='KDAD Logo'
+                  width={400}
+                  height={400}
+                  className='object-contain'
+                />
+              </a>
+            </motion.div>
+          </section>
         </div>
       </div>
     </div>

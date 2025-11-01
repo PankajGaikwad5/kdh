@@ -1,86 +1,71 @@
-// app/about/page.jsx
-'use client';
-
-import React from 'react';
 import Image from 'next/image';
 import { Montserrat } from 'next/font/google';
-import { motion } from 'framer-motion';
-import { X } from 'lucide-react';
-
-import Card from '../components/Card';
-import Footer from '../components/Footer';
+import AboutClient from '../components/ClientComp/AboutClient';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['300', '400', '600', '700'],
 });
 
-const AboutPage = () => {
+export const metadata = {
+  title: 'About | Karan Desai Home',
+  description:
+    'Learn about Karan Desai — Award-winning Architecture + Interior Design Studio. Explore creative collections, luxury design philosophy, and craftsmanship at Karan Desai Home.',
+  keywords: [
+    'Karan Desai',
+    'Karan Desai Home',
+    'KDAD',
+    'luxury interior design',
+    'architecture and design',
+    'designer collections',
+    'modern decor',
+    'art-inspired products',
+    'award-winning design studio',
+  ],
+  openGraph: {
+    title: 'About | Karan Desai Home',
+    description:
+      'Award-winning architecture and design studio redefining luxury and creativity.',
+    url: 'https://www.karandesai.in/about',
+    siteName: 'Karan Desai Home',
+    images: [
+      {
+        url: '/assets/profile.jpg',
+        width: 800,
+        height: 800,
+        alt: 'Karan Desai Profile',
+      },
+    ],
+    locale: 'en_IN',
+    type: 'website',
+  },
+};
+
+export default function AboutPage() {
   return (
     <main
-      className={`min-h-screen bg-black z-10 relative text-white font-sans ${montserrat.className}`}
+      className={`min-h-screen bg-black text-white relative ${montserrat.className}`}
     >
       <Navbar />
 
-      {/* Spacer for header */}
-      <div className='h-16' />
-
-      {/* Title */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className='text-center mb-8'
-      >
+      {/* SEO-Friendly Static Title */}
+      <section className='text-center pt-24 mb-10'>
         <h1 className='text-4xl md:text-5xl font-light tracking-tight uppercase'>
           About
         </h1>
-      </motion.div>
-
-      {/* Profile Card */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-        className='max-w-5xl mx-auto'
-      >
-        <Card
-          img='/assets/profile.jpg'
-          imagePosition='left'
-          title='Karan Desai'
-          desc='Award Winning Architecture + Interior Design Studio | TedX Speaker'
-        />
-      </motion.div>
-
-      {/* Content Section */}
-      <section className='px-4 pt-6 pb-12 md:px-14 lg:px-20 relative z-10 bg-black'>
-        {/* KDAD Logo Link */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className='flex justify-center mb-12 z-10 relative'
-        >
-          <a
-            href='https://www.karandesai.in/'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <Image
-              src='/assets/kdadlogo2.png'
-              alt='KDAD Logo'
-              width={400}
-              height={400}
-              className='object-contain'
-            />
-          </a>
-        </motion.div>
+        <p className='mt-3 text-gray-400 max-w-2xl mx-auto text-sm md:text-base'>
+          Award-winning Architecture and Interior Design studio by Karan Desai.
+          Crafting luxury spaces and designer collections inspired by art and
+          innovation.
+        </p>
       </section>
+
+      {/* Interactive + Animated Client Component */}
+      <AboutClient />
 
       <Footer />
     </main>
   );
-};
-
-export default AboutPage;
+}
