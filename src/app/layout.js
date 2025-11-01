@@ -42,16 +42,8 @@ const montserrat = Montserrat({
 // });
 
 export const metadata = {
-  title: `Karan Desai Home `,
-  description: `Discover the innovative architectural designs of Karan Desai Home. Karan Desai Award Winning Architecture + Interior Design Studio | TedX
-          Speaker Karan DesaiBorn in 1987, a passionate founder of his eponymous
-          studio, KARAN DESAI | Architecture + Design, focusing on Architecture,
-          Interiors & furniture designing, KD started off with his individual
-          practice right after he gave his Thesis in 2011 from Pillai’s college
-          of architecture & founded the company in 2012. The internship under
-          Ar. Ashiesh Shah during a year drop in 2007, carved a path for his
-          career with a clear direction towards his goals & dreams which he
-          lives today.`,
+  title: `Karan Desai Home | Luxury Home Décor, Furniture & Lifestyle Products`,
+  description: `Discover award-winning architectural and interior designs by Karan Desai Home – led by TedX Speaker and visionary architect Karan Desai.`,
   metadataBase: new URL('https://karandesaihome.com'),
   openGraph: {
     title: 'Karan Desai Home',
