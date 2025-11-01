@@ -137,7 +137,7 @@ export const metadata = {
   "designer collections India",
   "exclusive decor India",
   "Karan Desai Home India"
-];
+]
 
 };
 
