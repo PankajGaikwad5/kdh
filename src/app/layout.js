@@ -67,7 +67,7 @@ export const metadata = {
       'Discover the innovative architectural designs of Karan Desai Home.',
     images: ['/assets/newkdh.png'],
   },
-  const keywords = [
+  keywords = [
   // Brand & Collections
   "Karan Desai Home",
   "KDH",
