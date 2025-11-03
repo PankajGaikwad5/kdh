@@ -52,16 +52,16 @@ export default function ThreeDCircularGallery() {
         setImgSize({ width: 220, height: 220 });
         setRadius(120);
       } else if (w < 1024) {
-        setImgSize({ width: 320, height: 320 });
+        setImgSize({ width: 300, height: 300 });
         setRadius(180);
       } else if (w < 1440) {
-        setImgSize({ width: 420, height: 420 });
+        setImgSize({ width: 400, height: 400 });
         setRadius(260);
       } else if (w < 1920) {
         setImgSize({ width: 520, height: 520 });
         setRadius(320);
       } else {
-        setImgSize({ width: 600, height: 600 });
+        setImgSize({ width: 480, height: 480 });
         setRadius(380);
       }
     };
@@ -231,7 +231,7 @@ export default function ThreeDCircularGallery() {
             return (
               <div
                 key={i}
-                className='absolute rounded-xl overflow-hidden shadow-2xl cursor-pointer'
+                className='absolute rounded-xl overflow-hidden shadow-2xl '
                 onClick={() => isActive && rotate(1)}
                 style={{
                   width: imgSize.width,

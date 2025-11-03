@@ -10,7 +10,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: 'About | Karan Desai Home',
+  title: 'About Page of Karan Desai Home',
   description:
     'Learn about Karan Desai — Award-winning Architecture + Interior Design Studio. Explore creative collections, luxury design philosophy, and craftsmanship at Karan Desai Home.',
   keywords: [
@@ -25,7 +25,7 @@ export const metadata = {
     'award-winning design studio',
   ],
   openGraph: {
-    title: 'About | Karan Desai Home',
+    title: 'About Page | Karan Desai Home',
     description:
       'Award-winning architecture and design studio redefining luxury and creativity.',
     url: 'https://www.karandesai.in/about',

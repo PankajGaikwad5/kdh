@@ -42,7 +42,7 @@ const montserrat = Montserrat({
 // });
 
 export const metadata = {
-  title: `Karan Desai Home | Luxury Home Décor, Furniture & Lifestyle Products`,
+  title: `Karan Desai Home | Luxury Décor, Furniture & Lifestyle`,
   description: `Discover award-winning architectural and interior designs by Karan Desai Home – led by TedX Speaker and visionary architect Karan Desai.`,
   metadataBase: new URL('https://karandesaihome.com'),
   openGraph: {
@@ -58,6 +58,9 @@ export const metadata = {
     description:
       'Discover the innovative architectural designs of Karan Desai Home.',
     images: ['/assets/newkdh.png'],
+  },
+  alternates: {
+    canonical: 'https://karandesaihome.com',
   },
   keywords: [
     // Brand & Collections
