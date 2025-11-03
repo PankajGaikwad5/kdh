@@ -453,7 +453,7 @@ export const newImagePaths = [
     name: 'Monster Long Dining Table',
     path: '/optimized/m3longdiningtable.webp',
     group: 'Monster 3.1',
-    productId: 'monster3diningtable',
+    productId: 'monster3longdiningtable',
   },
   {
     name: 'Monster Mirror',
@@ -924,7 +924,7 @@ export const newImagePaths = [
         name: 'Monster Long Dining Table',
         path: '/optimized/m3longdiningtable.webp',
         group: 'Monster 3.1',
-        productId: 'monster3diningtable',
+        productId: 'monster3longdiningtable',
       },
       {
         name: 'Monster Mirror',
