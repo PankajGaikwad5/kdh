@@ -52,7 +52,7 @@ export default function ThreeDCircularGallery() {
         setImgSize({ width: 220, height: 220 });
         setRadius(120);
       } else if (w < 1024) {
-        setImgSize({ width: 300, height: 300 });
+        setImgSize({ width: 260, height: 260 });
         setRadius(180);
       } else if (w < 1440) {
         setImgSize({ width: 400, height: 400 });
