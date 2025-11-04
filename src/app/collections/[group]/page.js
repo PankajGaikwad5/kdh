@@ -99,14 +99,14 @@ const GroupProductsPage = () => {
                     width={200}
                     height={200}
                     src={'/assets/kdhlogo3.png'}
-                    className='w-36 md:w-52 2xl:w-96'
+                    className='w-24 sm:w-36 md:w-52 2xl:w-96'
                   />
                   <X className='text-white' size={30} />
                   <Image
                     width={200}
                     height={200}
                     src={image1}
-                    className='  w-36 md:w-52 2xl:w-96'
+                    className='  w-24 sm:w-36 md:w-52 2xl:w-96'
                   />
                   {image2 && (
                     <>
