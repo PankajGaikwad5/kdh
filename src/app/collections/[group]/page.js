@@ -99,14 +99,14 @@ const GroupProductsPage = () => {
                     width={200}
                     height={200}
                     src={'/assets/kdhlogo3.png'}
-                    className='2xl:w-96'
+                    className='w-36 md:w-52 2xl:w-96'
                   />
                   <X className='text-white' size={30} />
                   <Image
                     width={200}
                     height={200}
                     src={image1}
-                    className=' 2xl:w-96'
+                    className='  w-36 md:w-52 2xl:w-96'
                   />
                   {image2 && (
                     <>
@@ -115,7 +115,7 @@ const GroupProductsPage = () => {
                         width={100}
                         height={100}
                         src={image2}
-                        className='mb-6 2xl:w-96'
+                        className='mb-6  w-48 2xl:w-96'
                       />
                     </>
                   )}
