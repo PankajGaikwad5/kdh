@@ -982,7 +982,6 @@ One look, and you know—you’ve arrived.`,
         _id: {
           $oid: '67b59097e03cc2c55c624a55',
         },
-        thumbnail: '/assets/products/thumbnails/table1.jpg',
       },
       {
         fileName: '1739952279063-Id Dining set.161.jpg',
@@ -991,7 +990,6 @@ One look, and you know—you’ve arrived.`,
         _id: {
           $oid: '67b59097e03cc2c55c624a56',
         },
-        thumbnail: '/assets/products/thumbnails/table2.jpg',
       },
       {
         fileName: '1739952279063-Id Dining set.161.jpg',
@@ -1000,7 +998,27 @@ One look, and you know—you’ve arrived.`,
         _id: {
           $oid: '67b59097e03cc2c55c624a56',
         },
-        thumbnail: '/assets/products/thumbnails/table3.jpg',
+      },
+      {
+        fileName: '1739952279063-Id Dining set.161.jpg',
+        filePath: '/new_monster3/table1.jpg',
+        _id: {
+          $oid: '67b59097e03cc2c55c624a56',
+        },
+      },
+      {
+        fileName: '1739952279063-Id Dining set.161.jpg',
+        filePath: '/new_monster3/table2.jpg',
+        _id: {
+          $oid: '67b59097e03cc2c55c624a56',
+        },
+      },
+      {
+        fileName: '1739952279063-Id Dining set.161.jpg',
+        filePath: '/new_monster3/table3.jpg',
+        _id: {
+          $oid: '67b59097e03cc2c55c624a56',
+        },
       },
       {
         fileName: '1739952279063-Id Dining set.161.jpg',
@@ -1008,7 +1026,6 @@ One look, and you know—you’ve arrived.`,
         _id: {
           $oid: '67b59097e03cc2c55c624a56',
         },
-        thumbnail: '/assets/products/thumbnails/table4.jpg',
       },
       {
         fileName: '1739952279063-Id Dining set.161.jpg',
@@ -1016,7 +1033,6 @@ One look, and you know—you’ve arrived.`,
         _id: {
           $oid: '67b59097e03cc2c55c624a56',
         },
-        thumbnail: '/assets/products/thumbnails/table5.jpg',
       },
       {
         fileName: '1739952279063-Id Dining set.161.jpg',
@@ -1024,7 +1040,6 @@ One look, and you know—you’ve arrived.`,
         _id: {
           $oid: '67b59097e03cc2c55c624a56',
         },
-        thumbnail: '/assets/products/thumbnails/table6.jpg',
       },
     ],
     video:
