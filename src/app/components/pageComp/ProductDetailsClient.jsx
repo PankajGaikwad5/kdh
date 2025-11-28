@@ -230,6 +230,7 @@ export default function ProductDetailsClient({ product }) {
                   />
                 ) : (
                   <Image
+                    onClick={toggleFullscreen}
                     src={product.images[currentIndex].filePath}
                     alt={product.title}
                     fill
