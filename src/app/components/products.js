@@ -6032,14 +6032,6 @@ Whether it's hiding cables or holding court, AV means business — and business 
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6Q5KXhHrAEae8yoHbhSkJuscDIK4m7dfTjqZWq',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
     ],
     description: `Understated? Never. Console 1 is pure finesse — all smooth curves and natural swagger, sculpted from warm travertine that looks like it’s been sunbathing in Tuscany for a century. 
 

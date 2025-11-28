@@ -46,6 +46,7 @@ export default function ProductDetailsClient({ product }) {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [loadedImages, setLoadedImages] = useState(new Set());
   const [showThumbnailGrid, setShowThumbnailGrid] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
 
   const totalMedia = (product?.images?.length || 0) + (product?.video ? 1 : 0);
   const isVideoSlide = currentIndex >= (product?.images?.length || 0);
@@ -60,6 +61,10 @@ export default function ProductDetailsClient({ product }) {
       product: '',
     },
   });
+
+  const toggleFullscreen = useCallback(() => {
+    setIsFullscreen(!isFullscreen);
+  }, [isFullscreen]);
 
   const preloadImage = useCallback((src) => {
     const img = new window.Image();
@@ -194,9 +199,17 @@ export default function ProductDetailsClient({ product }) {
       </header>
 
       <div className='grid md:grid-cols-2 pt-14'>
-        <section className='relative p-4 flex items-center justify-center'>
+        <section
+          className={`${
+            isFullscreen ? 'fixed inset-0 z-50 bg-black' : 'relative'
+          } p-4 flex items-center justify-center`}
+        >
           {(product.images?.length > 0 || product.video) && (
-            <div className='relative w-full h-[80vh] rounded-lg overflow-hidden'>
+            <div
+              className={`relative w-full ${
+                isFullscreen ? 'h-screen' : 'h-[80vh]'
+              } rounded-lg overflow-hidden`}
+            >
               {!imageLoaded && (
                 <div className='absolute inset-0 flex items-center justify-center z-10'>
                   <div className='animate-spin rounded-full h-8 w-8 border-b-2 border-white' />
@@ -231,6 +244,30 @@ export default function ProductDetailsClient({ product }) {
                   />
                 )}
               </div>
+
+              {/* Fullscreen Button */}
+              <button
+                onClick={toggleFullscreen}
+                className='absolute top-4 right-4 text-white bg-black/60 rounded-full p-2 hover:bg-white hover:text-black transition-all z-20'
+              >
+                {isFullscreen ? (
+                  <X size={20} />
+                ) : (
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='20'
+                    height='20'
+                    viewBox='0 0 24 24'
+                    fill='none'
+                    stroke='currentColor'
+                    strokeWidth='2'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                  >
+                    <path d='M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3' />
+                  </svg>
+                )}
+              </button>
 
               <ThumbnailGrid
                 images={product.images}
