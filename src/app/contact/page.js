@@ -43,6 +43,7 @@ const formSchema = z.object({
   email: z.string().email('Invalid email address').min(2).max(50),
   message: z.string(),
   subject: z.string(),
+  number: z.string(),
 });
 
 const page = () => {
@@ -53,6 +54,7 @@ const page = () => {
       email: '',
       message: '',
       subject: 'Contact Form',
+      number: '',
     },
   });
 
@@ -139,6 +141,24 @@ const page = () => {
                               className='text-black border border-zinc-400'
                               placeholder='Enter your email'
                               {...field}
+                            />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                    <FormField
+                      control={form.control}
+                      name='number'
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Contact No.</FormLabel>
+                          <FormControl>
+                            <Input
+                              className='text-black border border-zinc-400'
+                              placeholder='Enter No.'
+                              {...field}
+                              type='number'
                             />
                           </FormControl>
                           <FormMessage />

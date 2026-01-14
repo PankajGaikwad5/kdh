@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer';
 
 export async function POST(req) {
   const { values } = await req.json();
-  const { name, email, message, subject, product } = values;
+  const { name, email, message, subject, product, number } = values;
   const transporter = nodemailer.createTransport({
     service: 'gmail', // or another email provider
     auth: {
@@ -17,7 +17,7 @@ export async function POST(req) {
     from: `Karan Desai Home ${subject} Form${email}`, // sender's email
     to: `${process.env.REMAIL}, ${process.env.SECONDEMAIL}`, // recipient's email
     subject: subject,
-    text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}\n${
+    text: `Name: ${name}\nEmail: ${email}\nContact No.: ${number}\nMessage: ${message}\n${
       product ? `product: ${product}` : ''
     }`,
   };
