@@ -32,8 +32,17 @@ export default function CustomLoader() {
   return (
     <Html className='z-10'>
       <div className='content z-10'>
-        <div className='relative z-10 font-semibold text-center top-1/2 -mt-28 lg:-mt-8 -translate-y-1/2 text-3xl sm:text-8xl text-white tracking-widest flex flex-col justify-center items-center mb-0'>
-          <div style={{ position: 'relative', display: 'inline-block' }}>
+        <div className='relative z-10 font-semibold text-center top-1/2 -mt-28 lg:-mt-8 -translate-y-1/2 text-3xl sm:text-4xl text-white tracking-widest flex flex-col justify-center items-center mb-0'>
+          <div
+            style={{ position: 'relative', display: 'inline-block' }}
+            className='flex flex-col justify-center items-center gap-4'
+          >
+            <div
+              style={{ color: 'white', pointerEvents: 'none' }}
+              className='text-center'
+            >
+              {Math.round(progress)}%
+            </div>
             <img
               src={`/optimizedsign.gif`}
               className={`transition-opacity duration-700`}
@@ -58,9 +67,6 @@ export default function CustomLoader() {
               }}
             />
           </div>
-        </div>
-        <div style={{ marginTop: 12, color: 'white', pointerEvents: 'none' }}>
-          {Math.round(progress)}%
         </div>
       </div>
     </Html>

@@ -69,7 +69,7 @@ function Starfield({ count = 400, radius = 200 }) {
       0,
       size / 2,
       size / 2,
-      size / 2
+      size / 2,
     );
     // Use gray gradient so vertex colors can show through
     gradient.addColorStop(0, 'rgba(255, 255, 255, 1)');
@@ -233,7 +233,7 @@ function SphericalGallery({
     raycaster.setFromCamera(mouse, camera);
     const intersects = raycaster.intersectObjects(
       groupRef.current.children,
-      true
+      true,
     );
 
     if (intersects.length > 0) {
@@ -256,7 +256,7 @@ function SphericalGallery({
       const targetScale = currentScale.clone().normalize().multiplyScalar(2.5);
       hoveredImageRef.current.scale.lerp(
         new THREE.Vector3(targetScale.x, targetScale.y, 1),
-        0.1
+        0.1,
       );
     } else {
       if (hoveredImageRef.current) {
@@ -466,7 +466,7 @@ export default function FloatingImagesScene() {
           left: 0,
           width: '100%',
           height: '100%',
-          background: '#000511',
+          background: '#000000',
         }}
       >
         <ambientLight intensity={1} />
@@ -529,7 +529,7 @@ export default function FloatingImagesScene() {
             >
               {item.name}
             </Link>
-          ) : null
+          ) : null,
         )}
       </div>
 
@@ -537,12 +537,13 @@ export default function FloatingImagesScene() {
         .tooltip {
           position: fixed;
           pointer-events: none;
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-            sans-serif;
+          font-family:
+            -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
           z-index: 1000;
           opacity: 0;
           transform: scale(0.95) translateY(4px);
-          transition: opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+          transition:
+            opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1),
             transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
           background: rgba(15, 15, 15, 0.95);
           backdrop-filter: blur(12px);
