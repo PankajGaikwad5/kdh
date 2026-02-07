@@ -1,4 +1,4 @@
-// FloatingImagesScene.jsx - Optimized Version
+// FloatingImagesScene.jsx - Optimized Version with Luxurious Animation
 'use client';
 import React, { useRef, useState, useEffect, useMemo, Suspense } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
@@ -11,12 +11,13 @@ import {
 import * as THREE from 'three';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import gsap from 'gsap';
 import { newImagePaths } from './imagePaths';
 import CustomLoader from './CustomLoader';
 import { Plus, Minus } from 'lucide-react';
+import CollectionOverlay from './CollectionOverlay';
 
-// ─── Starfield with Pronounced Glow ───────────────────────────────────────────
-// Updated Starfield with alternating colors
+// ─── Starfield ───────────────────────────────────────────────────────────────
 function Starfield({ count = 400, radius = 200 }) {
   const pointsRef = useRef();
   const { gl } = useThree();
@@ -37,19 +38,19 @@ function Starfield({ count = 400, radius = 200 }) {
       pos[i * 3 + 1] = offset * Math.sin(theta) * Math.sin(phi);
       pos[i * 3 + 2] = offset * Math.cos(theta);
 
-      // Alternate between different colors
+      // Alternate between different colors: White, Blue-ish, Gold-ish
       if (i % 3 === 0) {
-        col[i * 3] = 1; // R - White
-        col[i * 3 + 1] = 1; // G
-        col[i * 3 + 2] = 1; // B
+        col[i * 3] = 1;
+        col[i * 3 + 1] = 1;
+        col[i * 3 + 2] = 1;
       } else if (i % 3 === 1) {
-        col[i * 3] = 0.2; // R - Blue
-        col[i * 3 + 1] = 0.5; // G
-        col[i * 3 + 2] = 1; // B
+        col[i * 3] = 0.6;
+        col[i * 3 + 1] = 0.8;
+        col[i * 3 + 2] = 1;
       } else {
-        col[i * 3] = 1; // R - Gold
-        col[i * 3 + 1] = 0.8; // G
-        col[i * 3 + 2] = 0.2; // B
+        col[i * 3] = 1;
+        col[i * 3 + 1] = 0.9;
+        col[i * 3 + 2] = 0.5;
       }
     }
     return { positions: pos, colors: col };
@@ -71,11 +72,8 @@ function Starfield({ count = 400, radius = 200 }) {
       size / 2,
       size / 2,
     );
-    // Use gray gradient so vertex colors can show through
     gradient.addColorStop(0, 'rgba(255, 255, 255, 1)');
-    gradient.addColorStop(0.05, 'rgba(255, 255, 255, 0.8)');
-    gradient.addColorStop(0.2, 'rgba(255, 255, 255, 0.3)');
-    gradient.addColorStop(0.5, 'rgba(255, 255, 255, 0.1)');
+    gradient.addColorStop(0.2, 'rgba(255, 255, 255, 0.4)');
     gradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
 
     ctx.fillStyle = gradient;
@@ -85,11 +83,8 @@ function Starfield({ count = 400, radius = 200 }) {
 
     const texture = new THREE.CanvasTexture(canvas);
     texture.needsUpdate = true;
-    texture.magFilter = THREE.LinearFilter;
-    texture.minFilter = THREE.LinearMipMapLinearFilter;
-    texture.anisotropy = gl.capabilities.getMaxAnisotropy();
     return texture;
-  }, [gl.capabilities]);
+  }, []);
 
   useFrame(() => {
     if (pointsRef.current) {
@@ -118,7 +113,7 @@ function Starfield({ count = 400, radius = 200 }) {
         size={3}
         sizeAttenuation
         transparent
-        blending={THREE.AdditiveBlending}
+        // blending={THREE.AdditiveBlending}
         depthWrite={false}
         vertexColors
       />
@@ -126,7 +121,7 @@ function Starfield({ count = 400, radius = 200 }) {
   );
 }
 
-// ─── FloatingImage with Link Integration ──────────────────────────────────────
+// ─── FloatingImage ────────────────────────────────────────────────────────────
 function FloatingImage({
   url,
   position,
@@ -134,7 +129,6 @@ function FloatingImage({
   productId,
   name,
   group,
-  userData,
   onImageClick,
 }) {
   const ref = useRef();
@@ -149,169 +143,258 @@ function FloatingImage({
     }
   }, [texture, gl.capabilities]);
 
-  // Create the href for the link
   const href = productId ? `/productdetails/${productId}` : '/products';
 
   const handleClick = (e) => {
     e.stopPropagation();
-    // Pass the href to the parent so it can handle navigation
     onImageClick({ productId, name, group, href });
   };
 
   return (
-    <group ref={ref} position={position} userData={userData}>
+    <group
+      ref={ref}
+      position={position}
+      userData={{ name, group, originalPosition: position }}
+    >
       <mesh onClick={handleClick}>
         <planeGeometry args={[baseScale * aspectRatio, baseScale, 32]} />
-        <meshBasicMaterial map={texture} transparent alphaTest={0.5} />
+        <meshBasicMaterial map={texture} transparent side={THREE.DoubleSide} />
       </mesh>
     </group>
   );
 }
 
-// ─── ControlsManager ────────────────────────────────────────────────────────
-function ControlsManager({ autoRotateSpeed = 0.5 }) {
-  const controlsRef = useRef();
-  const [isUserInteracting, setIsUserInteracting] = useState(false);
-  const { camera } = useThree();
+// ─── SphericalGallery ─────────────────────────────────────────────────────────
+// ForwardRef to allow parent GSAP control
+const SphericalGallery = React.forwardRef(
+  (
+    { imagePaths, radius = 20, onImageHover, onImageOut, onImageClick },
+    ref,
+  ) => {
+    const scroll = useScroll();
+    const { camera, mouse } = useThree();
+    const raycaster = new THREE.Raycaster();
+    const hoveredImageRef = useRef(null);
 
-  useEffect(() => {
-    const controls = controlsRef.current;
-    if (!controls) return;
+    useFrame(() => {
+      if (!ref.current) return;
 
-    const handleStart = () => setIsUserInteracting(true);
-    const handleEnd = () => {
-      setTimeout(() => {
-        setIsUserInteracting(false);
-      }, 2000);
-    };
+      // Interaction Logic (Hover)
+      // Only raycast if NOT animating explosively (optional optimization)
+      // We can check if any animation is active via a prop or ref, but simple is fine.
 
-    controls.addEventListener('start', handleStart);
-    controls.addEventListener('end', handleEnd);
-    return () => {
-      controls.removeEventListener('start', handleStart);
-      controls.removeEventListener('end', handleEnd);
-    };
-  }, []);
+      raycaster.setFromCamera(mouse, camera);
+      const groups = ref.current.children;
+      // We need to intersect the meshes inside the groups
+      // Note: Assuming FloatingImage structure is Group -> Mesh
+      const meshes = groups.map((g) => g.children[0]).filter(Boolean);
 
-  useFrame(() => {
-    if (controlsRef.current) {
-      controlsRef.current.autoRotate = !isUserInteracting;
-    }
-  });
+      const intersects = raycaster.intersectObjects(meshes, false);
 
-  return (
-    <OrbitControls
-      ref={controlsRef}
-      enableZoom={false}
-      enablePan={false}
-      minPolarAngle={Math.PI / 6}
-      maxPolarAngle={Math.PI - Math.PI / 6}
-      autoRotate
-      autoRotateSpeed={autoRotateSpeed}
-      makeDefault
-    />
-  );
-}
+      if (intersects.length > 0) {
+        const closestMesh = intersects[0].object;
+        const closestGroup = closestMesh.parent;
 
-// ─── SphericalGallery ────────────────────────────────────────────────────────
-function SphericalGallery({
-  imagePaths,
-  radius = 20,
-  onImageHover,
-  onImageOut,
-  onImageClick,
-}) {
-  const groupRef = useRef();
-  const scroll = useScroll();
-  const { camera, mouse } = useThree();
-  const raycaster = new THREE.Raycaster();
-  const hoveredImageRef = useRef(null);
+        if (closestGroup !== hoveredImageRef.current) {
+          if (hoveredImageRef.current) {
+            gsap.to(hoveredImageRef.current.scale, {
+              x: 1,
+              y: 1,
+              z: 1,
+              duration: 0.2,
+            });
+          }
+          hoveredImageRef.current = closestGroup;
+          const { name, group } = closestGroup.userData;
+          if (onImageHover && document.body.style.cursor !== 'none') {
+            onImageHover({ name, group });
+          }
+          document.body.style.cursor = 'pointer';
+        }
 
-  useFrame(() => {
-    if (!groupRef.current) return;
-
-    raycaster.setFromCamera(mouse, camera);
-    const intersects = raycaster.intersectObjects(
-      groupRef.current.children,
-      true,
-    );
-
-    if (intersects.length > 0) {
-      const closest = intersects[0].object;
-      if (closest !== hoveredImageRef.current) {
+        gsap.to(closestGroup.scale, { x: 1.5, y: 1.5, z: 1.5, duration: 0.2 });
+      } else {
         if (hoveredImageRef.current) {
-          const originalScale =
-            hoveredImageRef.current.userData.originalScale ||
-            new THREE.Vector3(1, 1, 1);
-          hoveredImageRef.current.scale.lerp(originalScale, 0.1);
+          gsap.to(hoveredImageRef.current.scale, {
+            x: 1,
+            y: 1,
+            z: 1,
+            duration: 0.2,
+          });
+          hoveredImageRef.current = null;
+          if (onImageOut) onImageOut();
+          document.body.style.cursor = 'auto';
         }
-        hoveredImageRef.current = closest;
-        const { name, group } = closest.parent.userData;
-        if (onImageHover) {
-          onImageHover({ name, group });
-        }
-        document.body.style.cursor = 'pointer';
       }
-      const currentScale = hoveredImageRef.current.scale.clone();
-      const targetScale = currentScale.clone().normalize().multiplyScalar(2.5);
-      hoveredImageRef.current.scale.lerp(
-        new THREE.Vector3(targetScale.x, targetScale.y, 1),
-        0.1,
-      );
-    } else {
-      if (hoveredImageRef.current) {
-        const originalScale =
-          hoveredImageRef.current.userData.originalScale ||
-          new THREE.Vector3(1, 1, 1);
-        hoveredImageRef.current.scale.lerp(originalScale, 0.1);
-        hoveredImageRef.current = null;
-        if (onImageOut) onImageOut();
-        document.body.style.cursor = 'auto';
-      }
-    }
 
-    groupRef.current.children.forEach((child) => {
-      child.lookAt(camera.position);
+      // Billboard effect
+      ref.current.children.forEach((child) => {
+        child.lookAt(camera.position);
+      });
+
+      // Scroll Camera Effect
+      const offset = scroll.offset;
+      const camDist = THREE.MathUtils.lerp(50, 15, offset);
+
+      // Check if camera is being controlled by GSAP (we can use userData flag if needed, or just let it override if not exploded)
+      camera.position.setLength(camDist);
     });
 
-    const offset = scroll.offset;
-    const camDist = THREE.MathUtils.lerp(50, 10, offset);
-    camera.position.setLength(camDist);
-  });
+    return (
+      <group ref={ref}>
+        {imagePaths.map((item, idx) => {
+          const phi = Math.acos(-1 + (2 * idx) / imagePaths.length);
+          const theta = Math.sqrt(imagePaths.length * Math.PI) * phi;
+          const x = radius * Math.cos(theta) * Math.sin(phi);
+          const y = radius * Math.sin(theta) * Math.sin(phi);
+          const z = radius * Math.cos(phi);
+
+          return (
+            <FloatingImage
+              key={idx}
+              url={item.path}
+              position={[x, y, z]}
+              baseScale={2.8}
+              productId={item.productId}
+              name={item.name}
+              group={item.group}
+              onImageClick={onImageClick}
+            />
+          );
+        })}
+      </group>
+    );
+  },
+);
+SphericalGallery.displayName = 'SphericalGallery';
+
+// ─── Animation Manager Component ──────────────────────────────────────────────
+function SceneController({ galleryRef, setOverlayVisible }) {
+  const { camera, scene } = useThree();
+  const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
-    if (groupRef.current) {
-      groupRef.current.children.forEach((child) => {
-        child.userData.originalScale = child.scale.clone();
+    if (hasAnimated) return;
+
+    // Trigger animation sequence (2.5s delay after mount)
+    const delay = setTimeout(() => {
+      startAnimation();
+    }, 50);
+
+    return () => clearTimeout(delay);
+  }, [hasAnimated]);
+
+  const startAnimation = () => {
+    if (!galleryRef.current) return;
+    setHasAnimated(true);
+
+    const tl = gsap.timeline();
+    const group = galleryRef.current;
+
+    // Phase 1: Spin Only
+    tl.to(
+      group.rotation,
+      {
+        y: group.rotation.y + Math.PI * 2, // Fast spin
+        duration: 2.5,
+        ease: 'power3.in',
+      },
+      'start',
+    );
+
+    // Phase 2: EXPLOSION - SLOWED DOWN for luxurious feel
+    tl.addLabel('explode', '-=0.1');
+
+    tl.call(
+      () => {
+        group.children.forEach((child) => {
+          if (child.position) {
+            const direction = child.position.clone().normalize();
+            const distance = 200 + Math.random() * 150;
+
+            // Blast away SLOWER and SMOOTHER
+            gsap.to(child.position, {
+              x: direction.x * distance,
+              y: direction.y * distance,
+              z: direction.z * distance,
+              duration: 3.5, // Increased from 2s to 3.5s
+              ease: 'power2.out', // Smoother easing
+            });
+
+            // Spinning
+            gsap.to(child.rotation, {
+              x: Math.random() * Math.PI * 8,
+              y: Math.random() * Math.PI * 8,
+              z: Math.random() * Math.PI * 8,
+              duration: 3.5,
+              ease: 'power2.out',
+            });
+          }
+        });
+
+        // Reveal Overlay with slight delay
+        setTimeout(() => setOverlayVisible(true), 500);
+      },
+      null,
+      'explode',
+    );
+  };
+
+  // Listen for Close Event
+  useEffect(() => {
+    const restoreHandler = () => {
+      if (!galleryRef.current) return;
+      setOverlayVisible(false);
+      const group = galleryRef.current;
+
+      // Settle group rotation
+      gsap.to(group.rotation, {
+        y: group.rotation.y + Math.PI,
+        duration: 3,
+        ease: 'power2.out',
       });
-    }
-  }, [imagePaths]);
 
-  return (
-    <group ref={groupRef}>
-      {imagePaths.map((item, idx) => {
-        const phi = Math.acos(-1 + (2 * idx) / imagePaths.length);
-        const theta = Math.sqrt(imagePaths.length * Math.PI) * phi;
-        const x = radius * Math.cos(theta) * Math.sin(phi);
-        const y = radius * Math.sin(theta) * Math.sin(phi);
-        const z = radius * Math.cos(phi);
+      // Restore children - Slower reassembly
+      group.children.forEach((child) => {
+        const targetPos = child.userData.originalPosition;
+        if (targetPos) {
+          // Fly back from exploded position to original
+          gsap.to(child.position, {
+            x: targetPos[0],
+            y: targetPos[1],
+            z: targetPos[2],
+            duration: 3, // Slower (3s instead of 2s)
+            ease: 'power3.inOut', // Smooth S-curve
+            delay: 0.2,
+          });
 
-        return (
-          <FloatingImage
-            key={idx}
-            url={item.path}
-            position={[x, y, z]}
-            baseScale={2.8}
-            productId={item.productId}
-            name={item.name}
-            group={item.group}
-            userData={{ name: item.name, group: item.group }}
-            onImageClick={onImageClick}
-          />
-        );
-      })}
-    </group>
-  );
+          // Reverse the spinning
+          gsap.to(child.rotation, {
+            x: 0,
+            y: 0,
+            z: 0,
+            duration: 3,
+            ease: 'power2.inOut',
+            delay: 0.2,
+          });
+
+          // Ensure scale is robust
+          gsap.to(child.scale, {
+            x: 1,
+            y: 1,
+            z: 1,
+            duration: 2,
+            ease: 'power2.out',
+          });
+        }
+      });
+    };
+
+    window.addEventListener('restoreSphere', restoreHandler);
+    return () => window.removeEventListener('restoreSphere', restoreHandler);
+  }, [galleryRef, setOverlayVisible]);
+
+  return null;
 }
 
 // ─── ScrollHandler ───────────────────────────────────────────────────────────
@@ -322,10 +405,10 @@ function ScrollHandler({ onScrollIntoSphere, onScrollOutOfSphere }) {
     const handleResize = () => {
       if (window.innerWidth < 768) {
         setTimeout(() => {
-          scroll.scroll.current = 1;
+          if (scroll.scroll) scroll.scroll.current = 1;
         }, 1000);
       } else {
-        scroll.scroll.current = 0;
+        if (scroll.scroll) scroll.scroll.current = 0;
       }
     };
     handleResize();
@@ -337,17 +420,17 @@ function ScrollHandler({ onScrollIntoSphere, onScrollOutOfSphere }) {
 
   useEffect(() => {
     onScrollIntoSphere.current = () => {
-      scroll.scroll.current = 1;
+      if (scroll.scroll) scroll.scroll.current = 1;
     };
     onScrollOutOfSphere.current = () => {
-      scroll.scroll.current = 0;
+      if (scroll.scroll) scroll.scroll.current = 0;
     };
   }, [scroll, onScrollIntoSphere, onScrollOutOfSphere]);
 
   return null;
 }
 
-// ─── Main FloatingImagesScene ─────────────────────────────────────────────────
+// ─── Main Component ───────────────────────────────────────────────────────────
 export default function FloatingImagesScene() {
   const router = useRouter();
   const [hasMouseMoved, setHasMouseMoved] = useState(false);
@@ -358,23 +441,49 @@ export default function FloatingImagesScene() {
     x: 0,
     y: 0,
   });
+
+  const [overlayVisible, setOverlayVisible] = useState(false);
+  const galleryRef = useRef(null);
+
   const scrollIntoSphereRef = useRef(() => {});
   const scrollOutOfSphereRef = useRef(() => {});
+
+  const upcoming = [
+    {
+      name: 'Gattoo Chair',
+      path: '/new4/4-1.webp',
+      group: 'Monster 3.0',
+      productId: '67b590d0e03cc2c55c624a5e',
+    },
+    {
+      name: 'Monster Bench',
+      path: '/new4/4-2.webp',
+      group: 'Monster 3.0',
+      productId: '67b590b8e03cc2c55c624a5b',
+    },
+  ];
+
+  const monsterProducts = useMemo(() => {
+    return upcoming;
+  }, []);
+
+  // const monsterProducts = useMemo(() => {
+  //   return newImagePaths.filter(
+  //     (p) =>
+  //       p.group &&
+  //       (p.group.includes('Monster 3.1') || p.group.includes('Monster 3.0')),
+  //   );
+  // }, []);
 
   useEffect(() => {
     let animationFrame;
     const handleMouseMove = (e) => {
       cancelAnimationFrame(animationFrame);
       animationFrame = requestAnimationFrame(() => {
-        setTooltip((prev) => ({
-          ...prev,
-          x: e.clientX,
-          y: e.clientY,
-        }));
+        setTooltip((prev) => ({ ...prev, x: e.clientX, y: e.clientY }));
       });
       setHasMouseMoved(true);
     };
-
     window.addEventListener('mousemove', handleMouseMove);
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
@@ -382,65 +491,13 @@ export default function FloatingImagesScene() {
     };
   }, []);
 
-  // Optimized navigation handler with immediate navigation
-  const handleImageClick = ({ productId, name, group, href }) => {
-    // Use window.location for immediate navigation (fastest option)
-    window.location.href = href;
-
-    // Alternative: Use router.push with shallow routing for faster navigation
-    // router.push(href, undefined, { shallow: true });
+  const handleImageClick = ({ productId, href }) => {
+    if (productId) window.location.href = href;
   };
-
-  // Aggressive prefetching strategy
-  useEffect(() => {
-    // Prefetch all product detail pages immediately on mount
-    const prefetchTimer = setTimeout(() => {
-      newImagePaths.forEach((item, index) => {
-        if (item.productId) {
-          // Stagger prefetching to avoid overwhelming the browser
-          setTimeout(() => {
-            router.prefetch(`/productdetails/${item.productId}`);
-          }, index * 50); // 50ms delay between each prefetch
-        }
-      });
-      // Also prefetch the products page
-      router.prefetch('/collections');
-    }, 100); // Start prefetching after component mounts
-
-    return () => clearTimeout(prefetchTimer);
-  }, [router]);
-
-  // Preload critical resources
-  useEffect(() => {
-    // Preload the most commonly accessed product pages
-    const criticalProductIds = newImagePaths
-      .slice(0, 10) // First 10 products are likely most accessed
-      .filter((item) => item.productId)
-      .map((item) => item.productId);
-
-    criticalProductIds.forEach((productId) => {
-      // Create invisible link elements to trigger browser prefetching
-      const link = document.createElement('link');
-      link.rel = 'prefetch';
-      link.href = `/productdetails/${productId}`;
-      document.head.appendChild(link);
-    });
-
-    // Cleanup
-    return () => {
-      const prefetchLinks = document.querySelectorAll('link[rel="prefetch"]');
-      prefetchLinks.forEach((link) => link.remove());
-    };
-  }, []);
 
   const showTooltip = ({ name, group }) => {
     if (!hasMouseMoved) return;
-    setTooltip((prev) => ({
-      ...prev,
-      visible: true,
-      name,
-      group,
-    }));
+    setTooltip((prev) => ({ ...prev, visible: true, name, group }));
   };
 
   const hideTooltip = () => {
@@ -449,17 +506,15 @@ export default function FloatingImagesScene() {
     }, 100);
   };
 
-  const scrollIntoSphere = () => {
-    scrollIntoSphereRef.current();
-  };
-  const scrollOutOfSphere = () => {
-    scrollOutOfSphereRef.current();
+  const handleCloseOverlay = () => {
+    window.dispatchEvent(new Event('restoreSphere'));
   };
 
   return (
     <>
       <Canvas
         camera={{ position: [0, 0, 50], fov: 65, near: 0.1, far: 2000 }}
+        className='canvas-container'
         style={{
           position: 'absolute',
           top: 0,
@@ -470,8 +525,7 @@ export default function FloatingImagesScene() {
         }}
       >
         <ambientLight intensity={1} />
-
-        <Starfield count={280} radius={25} />
+        <Starfield count={350} radius={25} />
 
         <Suspense fallback={<CustomLoader />}>
           <ScrollControls pages={2} damping={0.1}>
@@ -480,58 +534,55 @@ export default function FloatingImagesScene() {
               onScrollOutOfSphere={scrollOutOfSphereRef}
             />
             <SphericalGallery
+              ref={galleryRef}
               imagePaths={newImagePaths}
               onImageHover={showTooltip}
               onImageOut={hideTooltip}
               onImageClick={handleImageClick}
+              radius={20}
             />
           </ScrollControls>
+          <SceneController
+            galleryRef={galleryRef}
+            setOverlayVisible={setOverlayVisible}
+          />
         </Suspense>
 
-        <ControlsManager autoRotateSpeed={0.5} />
+        <OrbitControls
+          enableZoom={false}
+          enablePan={false}
+          autoRotate={!overlayVisible}
+          autoRotateSpeed={0.5}
+          makeDefault
+        />
       </Canvas>
 
-      {/* Tooltip */}
+      <CollectionOverlay
+        isVisible={overlayVisible}
+        onClose={handleCloseOverlay}
+        products={monsterProducts}
+      />
+
       <div
-        className={`tooltip ${
-          tooltip.visible && hasMouseMoved ? 'visible' : ''
-        } hidden md:block`}
-        style={{
-          top: tooltip.y + 15,
-          left: tooltip.x + 15,
-        }}
+        className={`tooltip ${tooltip.visible && hasMouseMoved && !overlayVisible ? 'visible' : ''} hidden md:block`}
+        style={{ top: tooltip.y + 15, left: tooltip.x + 15 }}
       >
         <div className='tooltip-name'>{tooltip.name}</div>
         <div className='tooltip-group'>{tooltip.group}</div>
       </div>
 
-      {/* Mobile navigation buttons */}
-      <div className='navigation-buttons flex justify-center w-full md:hidden whitespace-nowrap'>
-        <button onClick={scrollOutOfSphere}>
-          <Minus size={30} />
-        </button>
-        <button onClick={scrollIntoSphere}>
-          <Plus size={30} />
-        </button>
-      </div>
-
-      {/* Enhanced prefetching with invisible Link components */}
-      <div style={{ display: 'none' }}>
-        <Link href='/products' prefetch={true}>
-          Products
-        </Link>
-        {newImagePaths.map((item) =>
-          item.productId ? (
-            <Link
-              key={item.productId}
-              href={`/productdetails/${item.productId}`}
-              prefetch={true}
-            >
-              {item.name}
-            </Link>
-          ) : null,
-        )}
-      </div>
+      {!overlayVisible && (
+        <div className='navigation-buttons flex justify-center w-full md:hidden whitespace-nowrap'>
+          <button onClick={() => scrollOutOfSphereRef.current()}>
+            {' '}
+            <Minus size={30} />{' '}
+          </button>
+          <button onClick={() => scrollIntoSphereRef.current()}>
+            {' '}
+            <Plus size={30} />{' '}
+          </button>
+        </div>
+      )}
 
       <style jsx>{`
         .tooltip {
@@ -543,15 +594,14 @@ export default function FloatingImagesScene() {
           opacity: 0;
           transform: scale(0.95) translateY(4px);
           transition:
-            opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1),
-            transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+            opacity 0.15s,
+            transform 0.15s;
           background: rgba(15, 15, 15, 0.95);
           backdrop-filter: blur(12px);
           border: 1px solid rgba(255, 255, 255, 0.1);
           border-radius: 8px;
           padding: 8px 12px;
           box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-          max-width: 200px;
         }
         .tooltip.visible {
           opacity: 1;
@@ -561,14 +611,11 @@ export default function FloatingImagesScene() {
           color: white;
           font-size: 13px;
           font-weight: 600;
-          line-height: 1.3;
           margin-bottom: 2px;
         }
         .tooltip-group {
           color: rgba(255, 255, 255, 0.65);
           font-size: 11px;
-          font-weight: 400;
-          line-height: 1.2;
         }
         .navigation-buttons {
           position: fixed;
@@ -582,13 +629,7 @@ export default function FloatingImagesScene() {
           border: none;
           padding: 6px 10px;
           border-radius: 25px;
-          font-family: sans-serif;
-          font-size: 14px;
           cursor: pointer;
-          transition: background 0.3s ease;
-        }
-        .navigation-buttons button:hover {
-          background: rgba(0, 0, 0, 0.8);
         }
       `}</style>
     </>
