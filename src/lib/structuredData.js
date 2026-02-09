@@ -176,6 +176,6 @@ export function getLocalBusinessSchema() {
     url: 'https://karandesaihome.com',
     priceRange: 'Premium',
     servesCuisine: null,
-    openingHours: 'Mo-Sa 10:00-18:00',
+    openingHours: 'Mo-Sa 10:30-19:30',
   };
 }
