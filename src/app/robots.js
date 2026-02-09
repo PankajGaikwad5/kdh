@@ -1,5 +1,5 @@
 export default function robots() {
-  const baseUrl = 'https://karandesai.in';
+  const baseUrl = 'https://karandesaihome.com';
   return {
     rules: [
       {

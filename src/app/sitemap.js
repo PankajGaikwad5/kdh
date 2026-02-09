@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://karandesai.in';
+  const baseUrl = 'https://karandesaihome.com';
 
   return [
     {
@@ -37,6 +37,12 @@ export default function sitemap() {
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/catalogue`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.7,
     },
   ];
 }

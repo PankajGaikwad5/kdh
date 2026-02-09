@@ -136,84 +136,78 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Karan Desai Home',
+    alternateName: ['KDH', 'KDAD', 'Karan Desai Architecture + Design'],
+    url: 'https://karandesaihome.com',
+    logo: 'https://karandesaihome.com/assets/kdhlogo3.png',
+    description:
+      'Award-winning architecture and interior design studio specializing in luxury furniture, designer collections, and functional art. Founded by TedX speaker and visionary architect Karan Desai.',
+    founder: {
+      '@type': 'Person',
+      name: 'Karan Desai',
+      jobTitle: 'Architect and Designer',
+      description: 'TedX Speaker, Award-winning Architect and Designer',
+    },
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Mumbai',
+      addressRegion: 'Maharashtra',
+      addressCountry: 'IN',
+    },
+  };
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What does Karan Desai Home specialize in?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Karan Desai Home specializes in luxury furniture design, designer collections, and functional art pieces. We create meticulously crafted furniture and products that transform everyday spaces into rich, immersive experiences.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Where is Karan Desai Home located?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Karan Desai Home is based in Mumbai, India. The studio has completed projects across India and internationally, including projects in Chicago and Washington, D.C.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What collections does Karan Desai Home offer?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our collections include Monster 1.0, 2.0, 3.0, and 3.1, Matilda collections (2022-2025), Monster Collectibles, KD X Serafini collaboration, and Monsformer. Each features unique, limited-edition designer pieces.',
+        },
+      },
+    ],
+  };
+
   return (
     <html lang='en'>
-      <Head>
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <meta
-          name='description'
-          content={`Discover the innovative product designs of Karan Desai Home. Karan Desai Award Winning Architecture + Interior Design Studio | TedX
-          Speaker Karan DesaiBorn in 1987, a passionate founder of his eponymous
-          studio, KARAN DESAI | Architecture + Design, focusing on Architecture,
-          Interiors & furniture designing, KD started off with his individual
-          practice right after he gave his Thesis in 2011 from Pillai’s college
-          of architecture & founded the company in 2012. The internship under
-          Ar. Ashiesh Shah during a year drop in 2007, carved a path for his
-          career with a clear direction towards his goals & dreams which he
-          lives today. The Studio has spread its wings in Mangalore, Goa, Delhi,
-          Kullu - Manali, Uttarakhand, Kolkata, Chennai and plan to continue.
-          Inspired by contemporary aesthetics and clean lines, the studio
-          beautifies projects both residential and commercial on varying scales.
-          From ideation rooms to offices , homes to private getaways, the team
-          designs projects and products in close association with clients to
-          deliver unique results and reflect personal tastes with consolidating
-          the studio’s vision. We're also doing projects internationally, We've
-          completed working on the order of 20,000 sq.ft. in Chicago and
-          currently working on 15,000 sq.ft Mansion in Washington, D.C.`}
-        />
-        <link rel='canonical' href='https://karandesaihome.com' />
-        <meta
-          property='og:title'
-          content={`Karan Desai Home "Imagine transforming everyday spaces into rich, immersive
-          experiences—what if art became a part of your daily life?" Karan Desai
-          Home is a testament to bringing the experience through meticulously
-          crafted furniture and products. KDH specialises in creating art pieces
-          that are not only visually striking but also serve a functional
-          purpose. Following the success of our Monster collection in 2022, we
-          have consistently expanded our portfolio, collaborating with renowned
-          industry leaders such as The Quarry, Casa Walls, Bharat Flooring, and
-          more. Our dedication to design innovation has earned us international
-          recognition, including a prestigious partnership with Serafini
-          (Italy). With a commitment to global collaborations and a mission to
-          craft extraordinary designs, KDH continues to redefine functional art.
-          Our unique approach and creative philosophy aim to inspire and
-          captivate, bringing exceptional products to life.`}
-        />
-        <meta
-          property='og:description'
-          content="Discover the innovative architectural designs of Karan Desai Home. Karan Desai Award Winning Architecture + Interior Design Studio | TedX
-          Speaker Karan DesaiBorn in 1987, a passionate founder of his eponymous
-          studio, KARAN DESAI | Architecture + Design, focusing on Architecture,
-          Interiors & furniture designing, KD started off with his individual
-          practice right after he gave his Thesis in 2011 from Pillai’s college
-          of architecture & founded the company in 2012. The internship under
-          Ar. Ashiesh Shah during a year drop in 2007, carved a path for his
-          career with a clear direction towards his goals & dreams which he
-          lives today. The Studio has spread its wings in Mangalore, Goa, Delhi,
-          Kullu - Manali, Uttarakhand, Kolkata, Chennai and plan to continue.
-          Inspired by contemporary aesthetics and clean lines, the studio
-          beautifies projects both residential and commercial on varying scales.
-          From ideation rooms to offices , homes to private getaways, the team
-          designs projects and products in close association with clients to
-          deliver unique results and reflect personal tastes with consolidating
-          the studio’s vision. We're also doing projects internationally, We've
-          completed working on the order of 20,000 sq.ft. in Chicago and
-          currently working on 15,000 sq.ft Mansion in Washington, D.C."
-        />
-        <meta property='og:type' content='website' />
-        <meta property='og:url' content='https://karandesaihome.com' />
-        <meta
-          property='og:image'
-          content='https://karandesaihome.com/og-image.jpg'
-        />
-        <meta name='twitter:card' content='summary_large_image' />
-        <meta name='twitter:title' content='Karan Desai Home' />
-        <meta
-          name='twitter:description'
-          content='Discover the innovative architectural designs of Karan Desai Home.'
-        />
-      </Head>
       <body className={`tracking-widest antialiased ${montserrat.className}`}>
+        {/* Structured Data for AEO */}
+        <Script
+          id='organization-schema'
+          type='application/ld+json'
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+        <Script
+          id='faq-schema'
+          type='application/ld+json'
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+
+        {/* Meta Pixel */}
         <Script id='meta-pixel' strategy='afterInteractive'>
           {`
             !function(f,b,e,v,n,t,s)
