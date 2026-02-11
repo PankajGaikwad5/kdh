@@ -216,9 +216,12 @@ export default function CameraControls() {
     camera.position.copy(clampVector.current);
   };
 
+  const tempDirection = useRef(new THREE.Vector3());
+
   useFrame((_, delta) => {
     const speed = moveSpeed * delta;
-    const direction = new THREE.Vector3();
+    const direction = tempDirection.current;
+    direction.set(0, 0, 0);
 
     // Add input directions based on keys
     if (keys.current.KeyW || keys.current.ArrowUp) {
@@ -253,7 +256,7 @@ export default function CameraControls() {
       camera.rotation.x = THREE.MathUtils.clamp(
         newPitch,
         -Math.PI / 2.5,
-        Math.PI / 2.5
+        Math.PI / 2.5,
       );
 
       mouse.current.prevX = mouse.current.x;
@@ -268,11 +271,11 @@ export default function CameraControls() {
       camera.updateMatrixWorld();
       const panRight = new THREE.Vector3().setFromMatrixColumn(
         camera.matrixWorld,
-        0
+        0,
       );
       const panUp = new THREE.Vector3().setFromMatrixColumn(
         camera.matrixWorld,
-        1
+        1,
       );
 
       const panSpeedFactor = moveSpeed * delta * 0.05;

@@ -3,6 +3,15 @@ import React, { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import { X, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
+import { Poppins, Montserrat } from 'next/font/google';
+const popins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '600', '700'],
+});
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['400', '600', '700'],
+});
 
 const CollectionOverlay = ({ isVisible, onClose, products = [] }) => {
   const containerRef = useRef(null);
@@ -65,7 +74,7 @@ const CollectionOverlay = ({ isVisible, onClose, products = [] }) => {
   return (
     <div
       ref={containerRef}
-      className='fixed inset-0 z-50 flex items-center justify-center pointer-events-none hidden'
+      className={`fixed inset-0 z-50 flex items-center justify-center pointer-events-none hidden ${montserrat.className}`}
       style={{ perspective: '1000px' }}
     >
       <div
@@ -86,19 +95,21 @@ const CollectionOverlay = ({ isVisible, onClose, products = [] }) => {
         <div className='relative z-10 flex flex-col items-center text-center space-y-8'>
           {/* Title Section */}
           <div ref={titleRef} className='space-y-2'>
-            <span className='text-xs md:text-sm font-medium tracking-[0.3em]  uppercase'>
+            <span className='text-xs md:text-sm font-medium tracking-[0.3em] text-white uppercase'>
               New Collection Launch
             </span>
             <h2 className='text-3xl md:text-4xl font-light text-white tracking-wide'>
-              Stay tuned,{' '}
-              <span className='font-semibold text-white/90'>Coming soon</span>
+              {/* Monster 4.0 is here,{' '} */}
+              <span className='font-semibold text-white/90 uppercase'>
+                Monster 4.0 is Here
+              </span>
             </h2>
           </div>
 
           {/* Products Grid */}
           <div
             ref={productsRef}
-            className='grid grid-cols-1 md:grid-cols-2 gap-6 w-full mt-4'
+            className='grid grid-cols-1 md:grid-cols-3 gap-6 w-full mt-4'
           >
             {/* We will showcase up to 3 products */}
             {products.slice(0, 3).map((product, idx) => (
@@ -118,15 +129,15 @@ const CollectionOverlay = ({ isVisible, onClose, products = [] }) => {
                     <div className='w-12 h-12 bg-white/10 rounded-full' />
                   )}
                 </div>
-                {/* <h3 className='mt-4 text-sm font-medium text-white/50 group-hover:text-white transition-colors'>
+                <h3 className='mt-4 text-sm font-medium text-white/50 group-hover:text-white transition-colors'>
                   {product.name || `Product ${idx + 1}`}
-                </h3> */}
+                </h3>
               </div>
             ))}
           </div>
 
           {/* CTA Button */}
-          {/* <div ref={buttonRef} className='pt-4'>
+          <div ref={buttonRef} className='pt-4'>
             <button className='group relative px-8 py-3 bg-white text-black font-medium tracking-wider text-sm rounded-full overflow-hidden transition-transform hover:scale-105 active:scale-95'>
               <span className='relative z-10 flex items-center gap-2'>
                 EXPLORE COLLECTION
@@ -137,7 +148,7 @@ const CollectionOverlay = ({ isVisible, onClose, products = [] }) => {
               </span>
               <div className='absolute inset-0 bg-gray-400 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500 ease-out' />
             </button>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>

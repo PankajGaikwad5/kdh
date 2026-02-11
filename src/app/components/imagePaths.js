@@ -479,6 +479,24 @@ export const newImagePaths = [
     group: 'Monster 3.1',
     productId: 'monster3sidetable',
   },
+  {
+    name: 'Monster Yoda Totem',
+    path: '/monster4.1/totem/png.png',
+    group: 'Monster 4.0',
+    productId: 'monster4totem',
+  },
+  {
+    name: 'Monster Yoda Carpet',
+    path: '/monster4.1/yodacarpet/yodacarpet.webp',
+    group: 'Monster 4.0',
+    productId: 'monster4yodacarpet',
+  },
+  {
+    name: 'Monster Carpet Mirror',
+    path: '/monster4.1/mirror/mirrorpng.webp',
+    group: 'Monster 4.0',
+    productId: 'monster4carpetmirror',
+  },
 
   ...Array(2)
     .fill([
@@ -949,6 +967,24 @@ export const newImagePaths = [
         path: '/optimized/m3sidetable.webp',
         group: 'Monster 3.1',
         productId: 'monster3sidetable',
+      },
+      {
+        name: 'Monster Yoda Totem',
+        path: '/monster4.1/totem/png.png',
+        group: 'Monster 4.0',
+        productId: 'monster4totem',
+      },
+      {
+        name: 'Monster Yoda Carpet',
+        path: '/monster4.1/yodacarpet/yodacarpet.webp',
+        group: 'Monster 4.0',
+        productId: 'monster4yodacarpet',
+      },
+      {
+        name: 'Monster Carpet Mirror',
+        path: '/monster4.1/mirror/mirrorpng.webp',
+        group: 'Monster 4.0',
+        productId: 'monster4carpetmirror',
       },
     ])
     .flat(),

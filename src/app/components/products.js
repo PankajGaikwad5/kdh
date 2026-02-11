@@ -6835,4 +6835,214 @@ Because even your side table should speak volumes.`,
       'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOHdSddwzF1d3zpmrSIcueZBfQo80E5Ujs7PTG',
     __v: 0,
   },
+  {
+    _id: {
+      $oid: 'monster4carpetmirror',
+    },
+    title: 'Monster 4.0 Carpet Mirror',
+    group: 'monster_4.0',
+    material: 'Carpet',
+    pdf: '#',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/monster4.1/mirror/1.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/monster4.1/mirror/2.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/monster4.1/mirror/3.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/monster4.1/mirror/4.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/monster4.1/mirror/5.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/monster4.1/mirror/6.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/monster4.1/mirror/7.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/monster4.1/mirror/8.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: `To be edited`,
+    dimensions: '',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: 'monster4totem',
+    },
+    title: 'Monster 4.0 Yoda Totem',
+    group: 'monster_4.0',
+    material: 'Carpet',
+    pdf: '#',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/monster4.1/totem/1.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/monster4.1/totem/2.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/monster4.1/totem/3.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/monster4.1/totem/4.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: `To be edited`,
+    dimensions: '',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: 'monster4yodacarpet',
+    },
+    title: 'Monster 4.0 Yoda Carpet',
+    group: 'monster_4.0',
+    material: 'Carpet',
+    pdf: '#',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/monster4.1/yodacarpet/1.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/monster4.1/yodacarpet/2.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/monster4.1/yodacarpet/3.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/monster4.1/yodacarpet/4.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/monster4.1/yodacarpet/5.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/monster4.1/yodacarpet/6.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/monster4.1/yodacarpet/7.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/monster4.1/yodacarpet/8.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/monster4.1/yodacarpet/9.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/monster4.1/yodacarpet/10.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/monster4.1/yodacarpet/11.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/monster4.1/yodacarpet/12.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: `To be edited`,
+    dimensions: '',
+    __v: 0,
+  },
 ];

@@ -86,6 +86,15 @@ function Starfield({ count = 400, radius = 200 }) {
     return texture;
   }, []);
 
+  // Cleanup texture on unmount to prevent memory leak
+  useEffect(() => {
+    return () => {
+      if (starTexture) {
+        starTexture.dispose();
+      }
+    };
+  }, [starTexture]);
+
   useFrame(() => {
     if (pointsRef.current) {
       pointsRef.current.rotation.y += 0.0005;
@@ -122,7 +131,7 @@ function Starfield({ count = 400, radius = 200 }) {
 }
 
 // ─── FloatingImage ────────────────────────────────────────────────────────────
-function FloatingImage({
+const FloatingImage = React.memo(function FloatingImage({
   url,
   position,
   baseScale = 3,
@@ -162,7 +171,7 @@ function FloatingImage({
       </mesh>
     </group>
   );
-}
+});
 
 // ─── SphericalGallery ─────────────────────────────────────────────────────────
 // ForwardRef to allow parent GSAP control
@@ -272,6 +281,8 @@ SphericalGallery.displayName = 'SphericalGallery';
 function SceneController({ galleryRef, setOverlayVisible }) {
   const { camera, scene } = useThree();
   const [hasAnimated, setHasAnimated] = useState(false);
+  const timelineRef = useRef(null);
+  const activeAnimationsRef = useRef([]);
 
   useEffect(() => {
     if (hasAnimated) return;
@@ -289,6 +300,7 @@ function SceneController({ galleryRef, setOverlayVisible }) {
     setHasAnimated(true);
 
     const tl = gsap.timeline();
+    timelineRef.current = tl;
     const group = galleryRef.current;
 
     // Phase 1: Spin Only
@@ -313,22 +325,24 @@ function SceneController({ galleryRef, setOverlayVisible }) {
             const distance = 200 + Math.random() * 150;
 
             // Blast away SLOWER and SMOOTHER
-            gsap.to(child.position, {
+            const posAnim = gsap.to(child.position, {
               x: direction.x * distance,
               y: direction.y * distance,
               z: direction.z * distance,
               duration: 3.5, // Increased from 2s to 3.5s
               ease: 'power2.out', // Smoother easing
             });
+            activeAnimationsRef.current.push(posAnim);
 
             // Spinning
-            gsap.to(child.rotation, {
+            const rotAnim = gsap.to(child.rotation, {
               x: Math.random() * Math.PI * 8,
               y: Math.random() * Math.PI * 8,
               z: Math.random() * Math.PI * 8,
               duration: 3.5,
               ease: 'power2.out',
             });
+            activeAnimationsRef.current.push(rotAnim);
           }
         });
 
@@ -347,19 +361,24 @@ function SceneController({ galleryRef, setOverlayVisible }) {
       setOverlayVisible(false);
       const group = galleryRef.current;
 
+      // Kill any active animations before starting new ones
+      activeAnimationsRef.current.forEach((anim) => anim.kill());
+      activeAnimationsRef.current = [];
+
       // Settle group rotation
-      gsap.to(group.rotation, {
+      const groupRotAnim = gsap.to(group.rotation, {
         y: group.rotation.y + Math.PI,
         duration: 3,
         ease: 'power2.out',
       });
+      activeAnimationsRef.current.push(groupRotAnim);
 
       // Restore children - Slower reassembly
       group.children.forEach((child) => {
         const targetPos = child.userData.originalPosition;
         if (targetPos) {
           // Fly back from exploded position to original
-          gsap.to(child.position, {
+          const posAnim = gsap.to(child.position, {
             x: targetPos[0],
             y: targetPos[1],
             z: targetPos[2],
@@ -367,9 +386,10 @@ function SceneController({ galleryRef, setOverlayVisible }) {
             ease: 'power3.inOut', // Smooth S-curve
             delay: 0.2,
           });
+          activeAnimationsRef.current.push(posAnim);
 
           // Reverse the spinning
-          gsap.to(child.rotation, {
+          const rotAnim = gsap.to(child.rotation, {
             x: 0,
             y: 0,
             z: 0,
@@ -377,15 +397,17 @@ function SceneController({ galleryRef, setOverlayVisible }) {
             ease: 'power2.inOut',
             delay: 0.2,
           });
+          activeAnimationsRef.current.push(rotAnim);
 
           // Ensure scale is robust
-          gsap.to(child.scale, {
+          const scaleAnim = gsap.to(child.scale, {
             x: 1,
             y: 1,
             z: 1,
             duration: 2,
             ease: 'power2.out',
           });
+          activeAnimationsRef.current.push(scaleAnim);
         }
       });
     };
@@ -393,6 +415,17 @@ function SceneController({ galleryRef, setOverlayVisible }) {
     window.addEventListener('restoreSphere', restoreHandler);
     return () => window.removeEventListener('restoreSphere', restoreHandler);
   }, [galleryRef, setOverlayVisible]);
+
+  // Cleanup all GSAP animations on unmount
+  useEffect(() => {
+    return () => {
+      if (timelineRef.current) {
+        timelineRef.current.kill();
+      }
+      activeAnimationsRef.current.forEach((anim) => anim.kill());
+      activeAnimationsRef.current = [];
+    };
+  }, []);
 
   return null;
 }
@@ -463,17 +496,17 @@ export default function FloatingImagesScene() {
     },
   ];
 
-  const monsterProducts = useMemo(() => {
-    return upcoming;
-  }, []);
-
   // const monsterProducts = useMemo(() => {
-  //   return newImagePaths.filter(
-  //     (p) =>
-  //       p.group &&
-  //       (p.group.includes('Monster 3.1') || p.group.includes('Monster 3.0')),
-  //   );
+  //   return upcoming;
   // }, []);
+
+  const monsterProducts = useMemo(() => {
+    return newImagePaths.filter(
+      (p) =>
+        p.group &&
+        (p.group.includes('Monster 4.1') || p.group.includes('Monster 4.0')),
+    );
+  }, []);
 
   useEffect(() => {
     let animationFrame;
