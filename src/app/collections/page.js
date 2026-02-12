@@ -27,8 +27,8 @@ const page = () => {
   const products = [
     {
       id: 15,
-      title: 'Monster 4.1',
-      group: 'monster_4.1',
+      title: 'Monster 4.0',
+      group: 'monster_4.0',
       img: '/monster4.1/totem/png.png',
       projects: 'Yoda Totem, Yoda Carpet, Mirror Carpet',
     },

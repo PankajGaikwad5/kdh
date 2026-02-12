@@ -4,6 +4,7 @@ import gsap from 'gsap';
 import { X, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import { Poppins, Montserrat } from 'next/font/google';
+import Link from 'next/link';
 const popins = Poppins({
   subsets: ['latin'],
   weight: ['400', '600', '700'],
@@ -139,14 +140,16 @@ const CollectionOverlay = ({ isVisible, onClose, products = [] }) => {
           {/* CTA Button */}
           <div ref={buttonRef} className='pt-4'>
             <button className='group relative px-8 py-3 bg-white text-black font-medium tracking-wider text-sm rounded-full overflow-hidden transition-transform hover:scale-105 active:scale-95'>
-              <span className='relative z-10 flex items-center gap-2'>
-                EXPLORE COLLECTION
-                <ArrowRight
-                  size={16}
-                  className='group-hover:translate-x-1 transition-transform'
-                />
-              </span>
-              <div className='absolute inset-0 bg-gray-400 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500 ease-out' />
+              <Link href='./collections/monster_4.0'>
+                <span className='relative z-10 flex items-center gap-2'>
+                  EXPLORE COLLECTION
+                  <ArrowRight
+                    size={16}
+                    className='group-hover:translate-x-1 transition-transform'
+                  />
+                </span>
+                <div className='absolute inset-0 bg-gray-400 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500 ease-out' />
+              </Link>
             </button>
           </div>
         </div>
