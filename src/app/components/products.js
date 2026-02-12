@@ -6839,7 +6839,7 @@ Because even your side table should speak volumes.`,
     _id: {
       $oid: 'monster4carpetmirror',
     },
-    title: 'Monster 4.0 Carpet Mirror',
+    title: 'MONSTER MEARR',
     group: 'monster_4.0',
     material: 'Carpet',
     pdf: '#',
@@ -6901,7 +6901,15 @@ Because even your side table should speak volumes.`,
         },
       },
     ],
-    description: `To be edited`,
+    description: `Not just a mirror.
+A little monster that lives on your wall.
+
+MONSTER MEARR is wrapped in plush blue yarn, giving it a soft, fuzzy, almost huggable personality. 
+The elongated oval shape stands tall on two playful feet, while the glowing, eye-like details on top give it that cheeky, animated charm, inspired by the quirky world of Monsters Inc.
+
+It’s whimsical without being childish. Bold without being loud.
+
+The tactile yarn frame contrasts beautifully with the clean reflective glass, making it both a design statement and a conversation starter. Perfect for bedrooms, creative spaces, or anywhere that needs a bit of personality.`,
     dimensions: '',
     __v: 0,
   },
@@ -6909,7 +6917,7 @@ Because even your side table should speak volumes.`,
     _id: {
       $oid: 'monster4totem',
     },
-    title: 'Monster 4.0 Yoda Totem',
+    title: 'YODA TOTEM',
     group: 'monster_4.0',
     material: 'Carpet',
     pdf: '#',
@@ -6943,7 +6951,18 @@ Because even your side table should speak volumes.`,
         },
       },
     ],
-    description: `To be edited`,
+    description: `A family, translated into form.
+
+The Yodaa Totem is a sculptural yarn installation that represents the quiet architecture of togetherness, a male, a female, and a baby, stacked in a symbolic vertical embrace.
+
+Each figure is distinct in texture, color, and expression yet inseparable in structure. The male stands grounded and protective. The female radiates vibrancy and individuality. The baby, small and tender, becomes the emotional core, the reason they rise as one.
+
+Crafted entirely in layered yarn, the surface feels soft, almost nostalgic but the composition is strong, almost monumental. It’s a contrast between fragility and permanence. Between playfulness and legacy.
+
+This is not just a decorative object.
+It’s a totem of continuity and of love.
+
+A modern heirloom, wrapped in yarn, built on connection.`,
     dimensions: '',
     __v: 0,
   },
@@ -6951,7 +6970,7 @@ Because even your side table should speak volumes.`,
     _id: {
       $oid: 'monster4yodacarpet',
     },
-    title: 'Monster 4.0 Yoda Carpet',
+    title: 'MONSTER TABLE',
     group: 'monster_4.0',
     material: 'Carpet',
     pdf: '#',
@@ -7041,7 +7060,17 @@ Because even your side table should speak volumes.`,
         },
       },
     ],
-    description: `To be edited`,
+    description: `A creature, holding up your everyday.
+
+The Monster Table is where function meets fantasy. A sleek circular glass top rests delicately above a plush, yarn-wrapped form that almost disappears into its own soft blue carpet. Only two glowing eyes give it away, quiet, watchful, alive.
+
+It feels like the table is being supported by something gentle yet strong.
+Soft in texture. Precise in form.
+
+It’s not loud. It doesn’t shout for attention.
+But once you see it, you can’t unsee it.
+
+A sculptural presence disguised as furniture.d`,
     dimensions: '',
     __v: 0,
   },
