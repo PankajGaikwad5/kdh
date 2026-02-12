@@ -6953,7 +6953,7 @@ The tactile yarn frame contrasts beautifully with the clean reflective glass, ma
     ],
     description: `A family, translated into form.
 
-The Yodaa Totem is a sculptural yarn installation that represents the quiet architecture of togetherness, a male, a female, and a baby, stacked in a symbolic vertical embrace.
+The Yoda Totem is a sculptural yarn installation that represents the quiet architecture of togetherness, a male, a female, and a baby, stacked in a symbolic vertical embrace.
 
 Each figure is distinct in texture, color, and expression yet inseparable in structure. The male stands grounded and protective. The female radiates vibrancy and individuality. The baby, small and tender, becomes the emotional core, the reason they rise as one.
 
@@ -7070,7 +7070,7 @@ Soft in texture. Precise in form.
 It’s not loud. It doesn’t shout for attention.
 But once you see it, you can’t unsee it.
 
-A sculptural presence disguised as furniture.d`,
+A sculptural presence disguised as furniture.`,
     dimensions: '',
     __v: 0,
   },
