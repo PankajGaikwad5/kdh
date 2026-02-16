@@ -459,7 +459,7 @@ export const collabs = [
     images: [
       {
         fileName: '2.jpg',
-        fileUrl: '/collabs/casa.png',
+        fileUrl: '/assets/casa2.png',
         _id: {
           $oid: '6791fe227a5dc4ac2d27e24f',
         },
@@ -513,7 +513,7 @@ export const collabs = [
     images: [
       {
         fileName: '2.jpg',
-        fileUrl: '/collabs/ar.png',
+        fileUrl: '/assets/arjunrathilogo.png',
         _id: {
           $oid: '6791fe227a5dc4ac2d27e24f',
         },

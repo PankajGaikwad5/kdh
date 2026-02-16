@@ -59,7 +59,7 @@ const page = () => {
       <Navbar arrow={true} />
       <div className='w-full pt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-screen '>
         <div className='w-full text-center flex justify-center'>
-          <h1 className='text-4xl font-bold text-gray-200  pb-8 border-b-2 border-gray-800  uppercase w-full md:max-w-3xl'>
+          <h1 className='text-2xl md:text-4xl font-bold text-gray-200  pb-8 border-b-2 border-gray-800  uppercase w-full md:max-w-3xl'>
             Collaborations
           </h1>
         </div>
@@ -83,7 +83,11 @@ const page = () => {
                 <img
                   src={project.images[0]?.fileUrl}
                   alt={project.title}
-                  className={`object-contain cursor-pointer ${sizeClasses} w-full transition-transform duration-300 hover:scale-105`}
+                  className={`object-contain cursor-pointer ${sizeClasses} w-full transition-transform duration-300 hover:scale-105 ${project.title === 'the quarry' && 'scale-75 md:scale-75'}
+                  ${project.title === 'Top Brewer' && 'scale-75 md:scale-100'}
+                  ${project.title === 'casa' && 'scale-75 md:scale-90 -mb-24 md:mb-auto'}
+                  ${project.title === 'serafini' && '-my-32 md:my-auto'}
+                  `}
                   onClick={() => openModal(project)}
                 />
               </div>
