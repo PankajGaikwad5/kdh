@@ -64,21 +64,31 @@ const page = () => {
           </h1>
         </div>
         <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3 p-6 space-y-8 items-center py-10'>
-          {collabs.map((project) => (
-            <div
-              key={project._id.$oid || project._id}
-              className={`flex justify-center items-center ${
-                project.title && '-mb-20'
-              }`}
-            >
-              <img
-                src={project.images[0]?.fileUrl}
-                alt={project.title}
-                className='object-cover cursor-pointer '
-                onClick={() => openModal(project)}
-              />
-            </div>
-          ))}
+          {collabs.map((project) => {
+            // Apply smaller size to these specific large logos
+            const isLargeLogo = ['the quarry', 'Top Brewer', 'bft'].includes(
+              project.title,
+            );
+            const sizeClasses = isLargeLogo
+              ? 'max-w-[280px] max-h-44'
+              : 'max-w-[420px] max-h-72';
+
+            return (
+              <div
+                key={project._id.$oid || project._id}
+                className={`flex justify-center items-center ${
+                  project.title && '-mb-20'
+                }`}
+              >
+                <img
+                  src={project.images[0]?.fileUrl}
+                  alt={project.title}
+                  className={`object-contain cursor-pointer ${sizeClasses} w-full transition-transform duration-300 hover:scale-105`}
+                  onClick={() => openModal(project)}
+                />
+              </div>
+            );
+          })}
         </div>
       </div>
       <Footer />
