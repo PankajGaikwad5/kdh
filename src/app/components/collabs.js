@@ -1,6 +1,88 @@
 export const collabs = [
   {
     _id: {
+      $oid: '20',
+    },
+    title: 'Square Knots',
+    details: 'ID 2026',
+    moreDetails: '/collections/serafini',
+    images: [
+      {
+        fileName: '2.jpg',
+        fileUrl: '/sq/logo2.png',
+        name: '',
+        _id: {
+          $oid: '6791fe227a5dc4ac2d27e24f',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/monster4.1/mirror/1.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/monster4.1/mirror/7.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/monster4.1/mirror/8.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/monster4.1/totem/1.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/monster4.1/totem/2.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/monster4.1/yodacarpet/1.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/monster4.1/yodacarpet/7.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/monster4.1/yodacarpet/8.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/monster4.1/yodacarpet/9.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    __v: 0,
+  },
+  {
+    _id: {
       $oid: '6',
     },
     title: 'serafini',
@@ -78,6 +160,12 @@ export const collabs = [
         fileUrl:
           'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUowsRYTPd43VNTXj27bgOZneCUs9aBiY5x8vw',
         name: 'Salone 2025',
+        _id: '123',
+      },
+      {
+        fileName: 'new',
+        fileUrl: '/serafini/comingsoon.png',
+        name: 'Salone 2026',
         _id: '123',
       },
     ],
@@ -371,7 +459,7 @@ export const collabs = [
     images: [
       {
         fileName: '2.jpg',
-        fileUrl: '/assets/casa2.png',
+        fileUrl: '/collabs/casa.png',
         _id: {
           $oid: '6791fe227a5dc4ac2d27e24f',
         },
@@ -425,7 +513,7 @@ export const collabs = [
     images: [
       {
         fileName: '2.jpg',
-        fileUrl: '/optimized/arjunrathilogo.webp',
+        fileUrl: '/collabs/ar.png',
         _id: {
           $oid: '6791fe227a5dc4ac2d27e24f',
         },

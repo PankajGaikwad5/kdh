@@ -63,38 +63,6 @@ const page = () => {
             Collaborations
           </h1>
         </div>
-        {/* <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 p-6 space-y-16 2xl:space-y-56 items-center'>
-          <div className='flex justify-center items-center'>
-            <img src='/assets/query.png' alt='' className='object-cover' />
-          </div>
-          <div className='flex justify-center items-center mt-5'>
-            <img
-              src='/assets/topb.png'
-              alt='topbrewer'
-              className='object-cover'
-            />
-          </div>
-          <div className='flex justify-center items-center'>
-            <img
-              src='https://3.imimg.com/data3/CH/KI/MY-5246137/bharat-floorings-logo-120x120.jpg'
-              alt=''
-              className='object-cover'
-            />
-          </div>
-          <div className='flex justify-center items-center'>
-            <img
-              src='https://foremostmarbles.com/wp-content/uploads/2021/09/FM-LOGO-copy-1536x292.png'
-              alt=''
-              className='object-cover'
-            />
-          </div>
-          <div className='flex justify-center items-center'>
-            <img src='/assets/casa.png' alt='' className='object-cover' />
-          </div>
-          <div className='flex justify-center items-center  '>
-            <img src='/assets/serafini.png' alt='' className='object-cover ' />
-          </div>
-        </div> */}
         <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3 p-6 space-y-8 items-center py-10'>
           {collabs.map((project) => (
             <div
@@ -106,7 +74,7 @@ const page = () => {
               <img
                 src={project.images[0]?.fileUrl}
                 alt={project.title}
-                className='object-cover cursor-pointer'
+                className='object-cover cursor-pointer '
                 onClick={() => openModal(project)}
               />
             </div>

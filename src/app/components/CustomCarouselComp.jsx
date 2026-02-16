@@ -103,7 +103,9 @@ const CarouselComp = ({ imgArray, onSlideChange }) => {
   return (
     <div
       className={`relative ${
-        isFullscreen ? 'w-screen h-screen' : 'w-full max-w-screen-lg m-0 p-0'
+        isFullscreen
+          ? 'w-screen h-screen'
+          : 'w-full max-w-screen-lg m-0 p-0 select-none'
       }`}
       ref={carouselRef}
     >
