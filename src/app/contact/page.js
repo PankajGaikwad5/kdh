@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -47,6 +47,14 @@ const formSchema = z.object({
 });
 
 const page = () => {
+  // Track when form was loaded (for spam detection)
+  const [formLoadTime, setFormLoadTime] = useState(null);
+  const [honeypot, setHoneypot] = useState('');
+
+  useEffect(() => {
+    setFormLoadTime(Date.now());
+  }, []);
+
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -69,6 +77,8 @@ const page = () => {
         },
         body: JSON.stringify({
           values,
+          honeypot, // Spam detection: should be empty
+          timestamp: formLoadTime, // Spam detection: time form was loaded
         }),
       });
 
@@ -113,6 +123,24 @@ const page = () => {
                     className={`space-y-4 ${popins.className} `}
                     onSubmit={form.handleSubmit(onSubmit)}
                   >
+                    {/* Honeypot field - hidden from users, bots will fill it */}
+                    <input
+                      type='text'
+                      name='website'
+                      value={honeypot}
+                      onChange={(e) => setHoneypot(e.target.value)}
+                      style={{
+                        position: 'absolute',
+                        left: '-9999px',
+                        width: '1px',
+                        height: '1px',
+                        opacity: 0,
+                        pointerEvents: 'none',
+                      }}
+                      tabIndex='-1'
+                      autoComplete='off'
+                      aria-hidden='true'
+                    />
                     <FormField
                       control={form.control}
                       name='name'

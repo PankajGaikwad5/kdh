@@ -48,6 +48,10 @@ export default function ProductDetailsClient({ product }) {
   const [showThumbnailGrid, setShowThumbnailGrid] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
 
+  // Spam protection
+  const [formLoadTime, setFormLoadTime] = useState(null);
+  const [honeypot, setHoneypot] = useState('');
+
   const totalMedia = (product?.images?.length || 0) + (product?.video ? 1 : 0);
   const isVideoSlide = currentIndex >= (product?.images?.length || 0);
 
@@ -74,6 +78,9 @@ export default function ProductDetailsClient({ product }) {
 
   // Consolidated initialization effect
   useEffect(() => {
+    // Set form load time for spam detection
+    setFormLoadTime(Date.now());
+
     // Facebook Pixel
     if (!window.fbq) {
       !(function (f, b, e, v, n, t, s) {
@@ -97,7 +104,7 @@ export default function ProductDetailsClient({ product }) {
         window,
         document,
         'script',
-        'https://connect.facebook.net/en_US/fbevents.js'
+        'https://connect.facebook.net/en_US/fbevents.js',
       );
       window.fbq('init', '1398430317981375');
       window.fbq('track', 'PageView');
@@ -110,7 +117,7 @@ export default function ProductDetailsClient({ product }) {
       product.images
         .slice(1)
         .forEach((img, i) =>
-          setTimeout(() => preloadImage(img.filePath), i * 100)
+          setTimeout(() => preloadImage(img.filePath), i * 100),
         );
     }
 
@@ -124,11 +131,11 @@ export default function ProductDetailsClient({ product }) {
     (index) => {
       setImageLoaded(
         index >= (product?.images?.length || 0) ||
-          loadedImages.has(product.images[index]?.filePath)
+          loadedImages.has(product.images[index]?.filePath),
       );
       setCurrentIndex(index);
     },
-    [product, loadedImages]
+    [product, loadedImages],
   );
 
   const navigate = useCallback(
@@ -139,8 +146,8 @@ export default function ProductDetailsClient({ product }) {
         direction === 'next'
           ? (currentIndex + 1) % totalMedia
           : currentIndex === 0
-          ? totalMedia - 1
-          : currentIndex - 1;
+            ? totalMedia - 1
+            : currentIndex - 1;
       setCurrentIndex(newIndex);
       if (
         newIndex >= (product?.images?.length || 0) ||
@@ -149,7 +156,7 @@ export default function ProductDetailsClient({ product }) {
         setImageLoaded(true);
       }
     },
-    [currentIndex, totalMedia, product, loadedImages]
+    [currentIndex, totalMedia, product, loadedImages],
   );
 
   const onSubmit = async (values) => {
@@ -157,7 +164,11 @@ export default function ProductDetailsClient({ product }) {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ values }),
+        body: JSON.stringify({
+          values,
+          honeypot, // Spam detection: should be empty
+          timestamp: formLoadTime, // Spam detection: time form was loaded
+        }),
       });
       alert(res.ok ? 'Message sent successfully!' : 'Failed to send message');
       if (res.ok) window.location.reload();
@@ -181,7 +192,7 @@ export default function ProductDetailsClient({ product }) {
       },
       { name: 'Marquina', src: '/marbles/marquina.webp' },
     ],
-    []
+    [],
   );
 
   return (
@@ -462,6 +473,24 @@ export default function ProductDetailsClient({ product }) {
                   className='space-y-4 px-4'
                   onSubmit={form.handleSubmit(onSubmit)}
                 >
+                  {/* Honeypot field - hidden from users, bots will fill it */}
+                  <input
+                    type='text'
+                    name='website'
+                    value={honeypot}
+                    onChange={(e) => setHoneypot(e.target.value)}
+                    style={{
+                      position: 'absolute',
+                      left: '-9999px',
+                      width: '1px',
+                      height: '1px',
+                      opacity: 0,
+                      pointerEvents: 'none',
+                    }}
+                    tabIndex='-1'
+                    autoComplete='off'
+                    aria-hidden='true'
+                  />
                   <FormField
                     control={form.control}
                     name='name'
