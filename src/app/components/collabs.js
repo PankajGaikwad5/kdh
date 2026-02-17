@@ -3,13 +3,14 @@ export const collabs = [
     _id: {
       $oid: '20',
     },
-    title: 'Square Knots',
+    title: 'square knots',
     details: 'ID 2026',
-    moreDetails: '/collections/serafini',
+    year: '2026',
+    moreDetails: '/collections/monster_4.0',
     images: [
       {
         fileName: '2.jpg',
-        fileUrl: '/sq/logo2.png',
+        fileUrl: '/updatedcollabs/square_knots.png',
         name: '',
         _id: {
           $oid: '6791fe227a5dc4ac2d27e24f',
@@ -87,11 +88,12 @@ export const collabs = [
     },
     title: 'serafini',
     details: 'Salone 2024',
+    year: '2024, 2025, 2026',
     moreDetails: '/collections/serafini',
     images: [
       {
         fileName: '2.jpg',
-        fileUrl: '/optimized/serafinilogo.webp',
+        fileUrl: '/updatedcollabs/serafini.webp',
         name: '',
         _id: {
           $oid: '6791fe227a5dc4ac2d27e24f',
@@ -177,11 +179,12 @@ export const collabs = [
     },
     title: 'dimension',
     details: 'ID 2025',
+    year: '2025',
     moreDetails: '/collections/monster_1.0',
     images: [
       {
         fileName: '1.jpg',
-        fileUrl: '/assets/dimensions.png',
+        fileUrl: '/updatedcollabs/dimension.png',
         _id: {
           $oid: '6791f5807a5dc4ac2d27e20f',
         },
@@ -211,11 +214,12 @@ export const collabs = [
     },
     title: 'the quarry',
     details: 'ID 2022',
+    year: '2023',
     moreDetails: '/collections/monster_1.0',
     images: [
       {
         fileName: '1.jpg',
-        fileUrl: '/assets/quary.png',
+        fileUrl: '/updatedcollabs/the_quarry.png',
         _id: {
           $oid: '6791f5807a5dc4ac2d27e20f',
         },
@@ -264,13 +268,13 @@ export const collabs = [
     },
     title: 'Top Brewer',
     details: 'ID 2024',
+    year: '2024',
     moreDetails: '/productdetails/67a5eb7e4da9b29cd0f10b69',
     singleProduct: true,
     images: [
       {
         fileName: '2.jpg',
-        fileUrl:
-          'https://www.topbrewernyc.com/wp-content/uploads/2023/06/TopBrewer-logo-white.png',
+        fileUrl: '/updatedcollabs/top_brewer.png',
         _id: {
           $oid: '6791fe227a5dc4ac2d27e24f',
         },
@@ -341,12 +345,13 @@ export const collabs = [
     },
     title: 'bft',
     details: 'ID 2024',
+    year: '2024',
     moreDetails: '/productdetails/67a5eb9f4da9b29cd0f10b71',
     singleProduct: true,
     images: [
       {
         fileName: 'new1.jpg',
-        fileUrl: '/assets/bft.png',
+        fileUrl: '/updatedcollabs/bft.png',
         _id: {
           $oid: '6791fe227a5dc4ac2d27e24f',
         },
@@ -431,11 +436,12 @@ export const collabs = [
     },
     title: 'marble',
     details: 'ID 2024',
+    year: '2024',
     moreDetails: '/collections/matilda',
     images: [
       {
         fileName: '2.jpg',
-        fileUrl: '/assets/fm.png',
+        fileUrl: '/updatedcollabs/marble.png',
         _id: {
           $oid: '6791fe227a5dc4ac2d27e24f',
         },
@@ -455,11 +461,12 @@ export const collabs = [
     },
     title: 'casa',
     details: 'ID 2024',
+    year: '2024',
     moreDetails: '/collections/matilda',
     images: [
       {
         fileName: '2.jpg',
-        fileUrl: '/assets/casa2.png',
+        fileUrl: '/updatedcollabs/casa.png',
         _id: {
           $oid: '6791fe227a5dc4ac2d27e24f',
         },
@@ -509,11 +516,12 @@ export const collabs = [
     },
     title: 'Arjun Rathi Design',
     details: '',
+    year: '2025',
     moreDetails: '/collections/monster_collectibles',
     images: [
       {
         fileName: '2.jpg',
-        fileUrl: '/assets/arjunrathilogo.png',
+        fileUrl: '/updatedcollabs/arjun_rathi.png',
         _id: {
           $oid: '6791fe227a5dc4ac2d27e24f',
         },

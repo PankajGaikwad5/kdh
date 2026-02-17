@@ -76,20 +76,19 @@ const page = () => {
             return (
               <div
                 key={project._id.$oid || project._id}
-                className={`flex justify-center items-center ${
+                className={`flex flex-col justify-center gap-2 items-center ${
                   project.title && '-mb-20'
-                }`}
+                }
+                 `}
               >
                 <img
                   src={project.images[0]?.fileUrl}
                   alt={project.title}
-                  className={`object-contain cursor-pointer ${sizeClasses} w-full transition-transform duration-300 hover:scale-105 ${project.title === 'the quarry' && 'scale-75 md:scale-75'}
-                  ${project.title === 'Top Brewer' && 'scale-75 md:scale-100'}
-                  ${project.title === 'casa' && 'scale-75 md:scale-90 -mb-24 md:mb-auto'}
-                  ${project.title === 'serafini' && '-my-32 md:my-auto'}
+                  className={`object-contain cursor-pointer ${sizeClasses} w-full transition-transform duration-300 hover:scale-105  
                   `}
                   onClick={() => openModal(project)}
                 />
+                <h1 className='text-white'>{project.year}</h1>
               </div>
             );
           })}
