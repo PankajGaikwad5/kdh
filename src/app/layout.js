@@ -7,7 +7,6 @@ import { Montserrat } from 'next/font/google';
 import Footer from './components/Footer';
 import Head from 'next/head';
 import Script from 'next/script';
-import GoogleAnalytics from '../components/GoogleAnalytics';
 
 // popins
 // montserrat
@@ -194,6 +193,20 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body className={`tracking-widest antialiased ${montserrat.className}`}>
+        {/* Google Analytics */}
+        <Script
+          strategy='afterInteractive'
+          src='https://www.googletagmanager.com/gtag/js?id=G-XEBYGBXRVG'
+        />
+        <Script id='google-analytics' strategy='afterInteractive'>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XEBYGBXRVG');
+          `}
+        </Script>
+
         {/* Structured Data for AEO */}
         <Script
           id='organization-schema'
