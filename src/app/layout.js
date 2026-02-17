@@ -241,5 +241,3 @@ export default function RootLayout({ children }) {
   );
 }
 // ${geistSans.variable} ${geistMono.variable}
-}
-// ${geistSans.variable} ${geistMono.variable}
