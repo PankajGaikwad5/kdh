@@ -7,6 +7,7 @@ import { Montserrat } from 'next/font/google';
 import Footer from './components/Footer';
 import Head from 'next/head';
 import Script from 'next/script';
+import GoogleAnalytics from '../components/GoogleAnalytics';
 
 // popins
 // montserrat
@@ -238,5 +239,7 @@ export default function RootLayout({ children }) {
       </body>
     </html>
   );
+}
+// ${geistSans.variable} ${geistMono.variable}
 }
 // ${geistSans.variable} ${geistMono.variable}
