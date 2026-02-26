@@ -59,12 +59,12 @@ export const newImagePaths = [
     group: 'Matilda',
     productId: '67a5ec684da9b29cd0f10b8e',
   },
-  {
-    name: 'Console 2',
-    path: '/optimized/matildaconsole2.webp',
-    group: 'Matilda',
-    productId: '67a5ec804da9b29cd0f10b98',
-  },
+  // {
+  //   name: 'Console 2',
+  //   path: '/optimized/matildaconsole2.webp',
+  //   group: 'Matilda',
+  //   productId: '67a5ec804da9b29cd0f10b98',
+  // },
   {
     name: 'Monster Basin',
     path: '/optimized/monster1basin.webp',
@@ -95,12 +95,12 @@ export const newImagePaths = [
     group: 'Matida',
     productId: '67a5ec084da9b29cd0f10b7e',
   },
-  {
-    name: 'Bench 1',
-    path: '/optimized/matildabench1.webp',
-    group: 'Matilda',
-    productId: '67bc49a855b639fb58349ec7',
-  },
+  // {
+  //   name: 'Bench 1',
+  //   path: '/optimized/matildabench1.webp',
+  //   group: 'Matilda',
+  //   productId: '67bc49a855b639fb58349ec7',
+  // },
   {
     name: 'U-Table',
     path: '/optimized/matildautable.webp',
@@ -560,12 +560,12 @@ export const newImagePaths = [
         group: 'Matilda',
         productId: '67a5ec684da9b29cd0f10b8e',
       },
-      {
-        name: 'Console 2',
-        path: '/optimized/matildaconsole2.webp',
-        group: 'Matilda',
-        productId: '67a5ec804da9b29cd0f10b98',
-      },
+      // {
+      //   name: 'Console 2',
+      //   path: '/optimized/matildaconsole2.webp',
+      //   group: 'Matilda',
+      //   productId: '67a5ec804da9b29cd0f10b98',
+      // },
       {
         name: 'Monster Basin',
         path: '/optimized/monster1basin.webp',
@@ -596,12 +596,12 @@ export const newImagePaths = [
         group: 'Matida',
         productId: '67a5ec084da9b29cd0f10b7e',
       },
-      {
-        name: 'Bench 1',
-        path: '/optimized/matildabench1.webp',
-        group: 'Matilda',
-        productId: '67bc49a855b639fb58349ec7',
-      },
+      // {
+      //   name: 'Bench 1',
+      //   path: '/optimized/matildabench1.webp',
+      //   group: 'Matilda',
+      //   productId: '67bc49a855b639fb58349ec7',
+      // },
       {
         name: 'U-Table',
         path: '/optimized/matildautable.webp',

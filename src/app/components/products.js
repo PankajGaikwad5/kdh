@@ -1260,95 +1260,95 @@ Because when marble meets vision, the result is nothing short of iconic.`,
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUCdwK2EX0XaKgNMT1QEmen25RAwc7Sk4UxoJF',
     __v: 0,
   },
-  {
-    _id: {
-      $oid: '67a5ec804da9b29cd0f10b98',
-    },
-    title: 'matilda 2024 console 2',
-    group: 'matilda_2024',
-    material: 'Marble',
-    collabtext: 'Foremost Marbles',
-    collablink: 'https://foremostmarbles.com/',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUC8rBCeX0XaKgNMT1QEmen25RAwc7Sk4UxoJF',
-    images: [
-      {
-        fileName: '1738927232483-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUUwpAS4BY1Vx48e2bhPHIZJqsnBOSArl5D3MT',
-        _id: {
-          $oid: '67a5ec804da9b29cd0f10b99',
-        },
-      },
-      {
-        fileName: '1738927232483-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQWEsULCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
-        _id: {
-          $oid: '67a5ec804da9b29cd0f10b99',
-        },
-      },
-      {
-        fileName: '1738927232483-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8ydGSv64oKUn37W6wsTlRmDBFhGrviIjcMxV',
-        _id: {
-          $oid: '67a5ec804da9b29cd0f10b99',
-        },
-      },
-      {
-        fileName: '1738927232483-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUR45djGE1fzw0AFxNe2UEaubVBY53GTv7kqpl',
-        _id: {
-          $oid: '67a5ec804da9b29cd0f10b99',
-        },
-      },
-      {
-        fileName: '1738927232483-Slide1.JPG',
-        filePath: '/assets/products/1738927232483-Slide1.JPG',
-        _id: {
-          $oid: '67a5ec804da9b29cd0f10b99',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927232483-Slide1.JPG',
-      },
-      {
-        fileName: '1738927232488-Slide4.JPG',
-        filePath: '/assets/products/1738927232488-Slide4.JPG',
-        _id: {
-          $oid: '67a5ec804da9b29cd0f10b9c',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927232488-Slide4.JPG',
-      },
-      {
-        fileName: '1738927232489-Slide5.JPG',
-        filePath: '/assets/products/1738927232489-Slide5.JPG',
-        _id: {
-          $oid: '67a5ec804da9b29cd0f10b9d',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927232489-Slide5.JPG',
-      },
-      {
-        fileName: '1738927232491-Slide6.JPG',
-        filePath: '/assets/products/1738927232491-Slide6.JPG',
-        _id: {
-          $oid: '67a5ec804da9b29cd0f10b9e',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927232491-Slide6.JPG',
-      },
-    ],
-    video:
-      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCjKPbe9RgMIbl3P4qwyANo9tH2kiZ5dfchuFv',
-    description: `This is more than a center table — it’s a statement of dominance, precision, and presence. 
+  //   {
+  //     _id: {
+  //       $oid: '67a5ec804da9b29cd0f10b98',
+  //     },
+  //     title: 'matilda 2024 console 2',
+  //     group: 'matilda_2024',
+  //     material: 'Marble',
+  //     collabtext: 'Foremost Marbles',
+  //     collablink: 'https://foremostmarbles.com/',
+  //     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUC8rBCeX0XaKgNMT1QEmen25RAwc7Sk4UxoJF',
+  //     images: [
+  //       {
+  //         fileName: '1738927232483-Slide1.JPG',
+  //         filePath:
+  //           'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUUwpAS4BY1Vx48e2bhPHIZJqsnBOSArl5D3MT',
+  //         _id: {
+  //           $oid: '67a5ec804da9b29cd0f10b99',
+  //         },
+  //       },
+  //       {
+  //         fileName: '1738927232483-Slide1.JPG',
+  //         filePath:
+  //           'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQWEsULCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
+  //         _id: {
+  //           $oid: '67a5ec804da9b29cd0f10b99',
+  //         },
+  //       },
+  //       {
+  //         fileName: '1738927232483-Slide1.JPG',
+  //         filePath:
+  //           'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8ydGSv64oKUn37W6wsTlRmDBFhGrviIjcMxV',
+  //         _id: {
+  //           $oid: '67a5ec804da9b29cd0f10b99',
+  //         },
+  //       },
+  //       {
+  //         fileName: '1738927232483-Slide1.JPG',
+  //         filePath:
+  //           'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUR45djGE1fzw0AFxNe2UEaubVBY53GTv7kqpl',
+  //         _id: {
+  //           $oid: '67a5ec804da9b29cd0f10b99',
+  //         },
+  //       },
+  //       {
+  //         fileName: '1738927232483-Slide1.JPG',
+  //         filePath: '/assets/products/1738927232483-Slide1.JPG',
+  //         _id: {
+  //           $oid: '67a5ec804da9b29cd0f10b99',
+  //         },
+  //         thumbnail: '/assets/products/thumbnails/1738927232483-Slide1.JPG',
+  //       },
+  //       {
+  //         fileName: '1738927232488-Slide4.JPG',
+  //         filePath: '/assets/products/1738927232488-Slide4.JPG',
+  //         _id: {
+  //           $oid: '67a5ec804da9b29cd0f10b9c',
+  //         },
+  //         thumbnail: '/assets/products/thumbnails/1738927232488-Slide4.JPG',
+  //       },
+  //       {
+  //         fileName: '1738927232489-Slide5.JPG',
+  //         filePath: '/assets/products/1738927232489-Slide5.JPG',
+  //         _id: {
+  //           $oid: '67a5ec804da9b29cd0f10b9d',
+  //         },
+  //         thumbnail: '/assets/products/thumbnails/1738927232489-Slide5.JPG',
+  //       },
+  //       {
+  //         fileName: '1738927232491-Slide6.JPG',
+  //         filePath: '/assets/products/1738927232491-Slide6.JPG',
+  //         _id: {
+  //           $oid: '67a5ec804da9b29cd0f10b9e',
+  //         },
+  //         thumbnail: '/assets/products/thumbnails/1738927232491-Slide6.JPG',
+  //       },
+  //     ],
+  //     video:
+  //       'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCjKPbe9RgMIbl3P4qwyANo9tH2kiZ5dfchuFv',
+  //     description: `This is more than a center table — it’s a statement of dominance, precision, and presence.
 
-Sculpted from pure white marble, its continuous arch isn’t just design, it’s strategy — bold, seamless, unforgettable. 
-Created by Karan Desai, this piece doesn’t just elevate a room, it commands it. 
+  // Sculpted from pure white marble, its continuous arch isn’t just design, it’s strategy — bold, seamless, unforgettable.
+  // Created by Karan Desai, this piece doesn’t just elevate a room, it commands it.
 
-It tells the world you don’t follow trends — you set them. 
-This is luxury with backbone. Solid, striking, and built to impress.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUGkau59t5PDVekS3148x67aQRtcZvuTwfrOph',
-    __v: 0,
-  },
+  // It tells the world you don’t follow trends — you set them.
+  // This is luxury with backbone. Solid, striking, and built to impress.`,
+  //     dimensions:
+  //       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUGkau59t5PDVekS3148x67aQRtcZvuTwfrOph',
+  //     __v: 0,
+  //   },
   {
     _id: {
       $oid: '67b59041e03cc2c55c624a4b',
@@ -1851,162 +1851,162 @@ For those who don’t decorate—they curate power.`,
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJ2rjROdtZQpOq9no3vVs5yPKXR8gEYuikGUw',
     __v: 0,
   },
-  {
-    _id: {
-      $oid: '67bc49a855b639fb58349ec7',
-    },
-    title: 'matilda 2024 Bench 1',
-    group: 'matilda_2024',
-    material: 'Marble',
-    collabtext: 'Foremost Marbles',
-    collablink: 'https://foremostmarbles.com/',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnw5EEDbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
-    images: [
-      {
-        fileName: '1740392872397-1.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULA7AAADqbauUfVsg4JYrj86xOSilFe5PBo3m',
-        _id: {
-          $oid: '67bc49a855b639fb58349ec8',
-        },
-      },
-      {
-        fileName: '1740392872397-1.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU1SRy5EmcNbALVg2tCIRm5fi0793BwZH8PYyx',
-        _id: {
-          $oid: '67bc49a855b639fb58349ec8',
-        },
-        thumbnail: '/assets/products/thumbnails/1740392872397-1.jpg',
-      },
-      {
-        fileName: '1740392872397-1.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUuHSAkNVvD2FOkC3NsiU7yPRWb18aeZThVzGr',
-        _id: {
-          $oid: '67bc49a855b639fb58349ec8',
-        },
-        thumbnail: '/assets/products/thumbnails/1740392872397-1.jpg',
-      },
-      {
-        fileName: '1740392872397-1.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUCr0QKcX0XaKgNMT1QEmen25RAwc7Sk4UxoJF',
-        _id: {
-          $oid: '67bc49a855b639fb58349ec8',
-        },
-        thumbnail: '/assets/products/thumbnails/1740392872397-1.jpg',
-      },
-      {
-        fileName: '1740392872397-1.jpg',
-        filePath: '/assets/products/1740392872397-1.jpg',
-        _id: {
-          $oid: '67bc49a855b639fb58349ec8',
-        },
-        thumbnail: '/assets/products/thumbnails/1740392872397-1.jpg',
-      },
-      {
-        fileName: '1740392872400-3.jpg',
-        filePath: '/assets/products/1740392872400-3.jpg',
-        _id: {
-          $oid: '67bc49a855b639fb58349ec9',
-        },
-        thumbnail: '/assets/products/thumbnails/1740392872400-3.jpg',
-      },
-      {
-        fileName: '1740392872403-4.jpg',
-        filePath: '/assets/products/1740392872403-4.jpg',
-        _id: {
-          $oid: '67bc49a855b639fb58349eca',
-        },
-        thumbnail: '/assets/products/thumbnails/1740392872403-4.jpg',
-      },
-      {
-        fileName: '1740392872406-5.jpg',
-        filePath: '/assets/products/1740392872406-5.jpg',
-        _id: {
-          $oid: '67bc49a855b639fb58349ecb',
-        },
-        thumbnail: '/assets/products/thumbnails/1740392872406-5.jpg',
-      },
-      {
-        fileName: '1740392872412-6.jpg',
-        filePath: '/assets/products/1740392872412-6.jpg',
-        _id: {
-          $oid: '67bc49a855b639fb58349ecc',
-        },
-        thumbnail: '/assets/products/thumbnails/1740392872412-6.jpg',
-      },
-      {
-        fileName: '1740392872422-7.jpg',
-        filePath: '/assets/products/1740392872422-7.jpg',
-        _id: {
-          $oid: '67bc49a855b639fb58349ecd',
-        },
-        thumbnail: '/assets/products/thumbnails/1740392872422-7.jpg',
-      },
-      {
-        fileName: '1740392872435-8.jpg',
-        filePath: '/assets/products/1740392872435-8.jpg',
-        _id: {
-          $oid: '67bc49a855b639fb58349ece',
-        },
-        thumbnail: '/assets/products/thumbnails/1740392872435-8.jpg',
-      },
-      {
-        fileName: '1740392872438-9.jpg',
-        filePath: '/assets/products/1740392872438-9.jpg',
-        _id: {
-          $oid: '67bc49a855b639fb58349ecf',
-        },
-        thumbnail: '/assets/products/thumbnails/1740392872438-9.jpg',
-      },
-      {
-        fileName: '1740392872443-10.jpg',
-        filePath: '/assets/products/1740392872443-10.jpg',
-        _id: {
-          $oid: '67bc49a855b639fb58349ed0',
-        },
-        thumbnail: '/assets/products/thumbnails/1740392872443-10.jpg',
-      },
-      {
-        fileName: '1740392872447-11.jpg',
-        filePath: '/assets/products/1740392872447-11.jpg',
-        _id: {
-          $oid: '67bc49a855b639fb58349ed1',
-        },
-        thumbnail: '/assets/products/thumbnails/1740392872447-11.jpg',
-      },
-      {
-        fileName: '1740392872450-12.jpg',
-        filePath: '/assets/products/1740392872450-12.jpg',
-        _id: {
-          $oid: '67bc49a855b639fb58349ed2',
-        },
-        thumbnail: '/assets/products/thumbnails/1740392872450-12.jpg',
-      },
-      {
-        fileName: '1740392872453-14.jpg',
-        filePath: '/assets/products/1740392872453-14.jpg',
-        _id: {
-          $oid: '67bc49a855b639fb58349ed3',
-        },
-        thumbnail: '/assets/products/thumbnails/1740392872453-14.jpg',
-      },
-    ],
-    video:
-      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HC489LzLPeVGk63JHrUlZBpzAjR702ThdyPucm',
-    description: `This bench? It's not just a seat—it’s a statement. 
+  //   {
+  //     _id: {
+  //       $oid: '67bc49a855b639fb58349ec7',
+  //     },
+  //     title: 'matilda 2024 Bench 1',
+  //     group: 'matilda_2024',
+  //     material: 'Marble',
+  //     collabtext: 'Foremost Marbles',
+  //     collablink: 'https://foremostmarbles.com/',
+  //     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnw5EEDbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
+  //     images: [
+  //       {
+  //         fileName: '1740392872397-1.jpg',
+  //         filePath:
+  //           'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULA7AAADqbauUfVsg4JYrj86xOSilFe5PBo3m',
+  //         _id: {
+  //           $oid: '67bc49a855b639fb58349ec8',
+  //         },
+  //       },
+  //       {
+  //         fileName: '1740392872397-1.jpg',
+  //         filePath:
+  //           'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU1SRy5EmcNbALVg2tCIRm5fi0793BwZH8PYyx',
+  //         _id: {
+  //           $oid: '67bc49a855b639fb58349ec8',
+  //         },
+  //         thumbnail: '/assets/products/thumbnails/1740392872397-1.jpg',
+  //       },
+  //       {
+  //         fileName: '1740392872397-1.jpg',
+  //         filePath:
+  //           'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUuHSAkNVvD2FOkC3NsiU7yPRWb18aeZThVzGr',
+  //         _id: {
+  //           $oid: '67bc49a855b639fb58349ec8',
+  //         },
+  //         thumbnail: '/assets/products/thumbnails/1740392872397-1.jpg',
+  //       },
+  //       {
+  //         fileName: '1740392872397-1.jpg',
+  //         filePath:
+  //           'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUCr0QKcX0XaKgNMT1QEmen25RAwc7Sk4UxoJF',
+  //         _id: {
+  //           $oid: '67bc49a855b639fb58349ec8',
+  //         },
+  //         thumbnail: '/assets/products/thumbnails/1740392872397-1.jpg',
+  //       },
+  //       {
+  //         fileName: '1740392872397-1.jpg',
+  //         filePath: '/assets/products/1740392872397-1.jpg',
+  //         _id: {
+  //           $oid: '67bc49a855b639fb58349ec8',
+  //         },
+  //         thumbnail: '/assets/products/thumbnails/1740392872397-1.jpg',
+  //       },
+  //       {
+  //         fileName: '1740392872400-3.jpg',
+  //         filePath: '/assets/products/1740392872400-3.jpg',
+  //         _id: {
+  //           $oid: '67bc49a855b639fb58349ec9',
+  //         },
+  //         thumbnail: '/assets/products/thumbnails/1740392872400-3.jpg',
+  //       },
+  //       {
+  //         fileName: '1740392872403-4.jpg',
+  //         filePath: '/assets/products/1740392872403-4.jpg',
+  //         _id: {
+  //           $oid: '67bc49a855b639fb58349eca',
+  //         },
+  //         thumbnail: '/assets/products/thumbnails/1740392872403-4.jpg',
+  //       },
+  //       {
+  //         fileName: '1740392872406-5.jpg',
+  //         filePath: '/assets/products/1740392872406-5.jpg',
+  //         _id: {
+  //           $oid: '67bc49a855b639fb58349ecb',
+  //         },
+  //         thumbnail: '/assets/products/thumbnails/1740392872406-5.jpg',
+  //       },
+  //       {
+  //         fileName: '1740392872412-6.jpg',
+  //         filePath: '/assets/products/1740392872412-6.jpg',
+  //         _id: {
+  //           $oid: '67bc49a855b639fb58349ecc',
+  //         },
+  //         thumbnail: '/assets/products/thumbnails/1740392872412-6.jpg',
+  //       },
+  //       {
+  //         fileName: '1740392872422-7.jpg',
+  //         filePath: '/assets/products/1740392872422-7.jpg',
+  //         _id: {
+  //           $oid: '67bc49a855b639fb58349ecd',
+  //         },
+  //         thumbnail: '/assets/products/thumbnails/1740392872422-7.jpg',
+  //       },
+  //       {
+  //         fileName: '1740392872435-8.jpg',
+  //         filePath: '/assets/products/1740392872435-8.jpg',
+  //         _id: {
+  //           $oid: '67bc49a855b639fb58349ece',
+  //         },
+  //         thumbnail: '/assets/products/thumbnails/1740392872435-8.jpg',
+  //       },
+  //       {
+  //         fileName: '1740392872438-9.jpg',
+  //         filePath: '/assets/products/1740392872438-9.jpg',
+  //         _id: {
+  //           $oid: '67bc49a855b639fb58349ecf',
+  //         },
+  //         thumbnail: '/assets/products/thumbnails/1740392872438-9.jpg',
+  //       },
+  //       {
+  //         fileName: '1740392872443-10.jpg',
+  //         filePath: '/assets/products/1740392872443-10.jpg',
+  //         _id: {
+  //           $oid: '67bc49a855b639fb58349ed0',
+  //         },
+  //         thumbnail: '/assets/products/thumbnails/1740392872443-10.jpg',
+  //       },
+  //       {
+  //         fileName: '1740392872447-11.jpg',
+  //         filePath: '/assets/products/1740392872447-11.jpg',
+  //         _id: {
+  //           $oid: '67bc49a855b639fb58349ed1',
+  //         },
+  //         thumbnail: '/assets/products/thumbnails/1740392872447-11.jpg',
+  //       },
+  //       {
+  //         fileName: '1740392872450-12.jpg',
+  //         filePath: '/assets/products/1740392872450-12.jpg',
+  //         _id: {
+  //           $oid: '67bc49a855b639fb58349ed2',
+  //         },
+  //         thumbnail: '/assets/products/thumbnails/1740392872450-12.jpg',
+  //       },
+  //       {
+  //         fileName: '1740392872453-14.jpg',
+  //         filePath: '/assets/products/1740392872453-14.jpg',
+  //         _id: {
+  //           $oid: '67bc49a855b639fb58349ed3',
+  //         },
+  //         thumbnail: '/assets/products/thumbnails/1740392872453-14.jpg',
+  //       },
+  //     ],
+  //     video:
+  //       'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HC489LzLPeVGk63JHrUlZBpzAjR702ThdyPucm',
+  //     description: `This bench? It's not just a seat—it’s a statement.
 
-Sculpted from striking marble, it turns every moment into a scene straight out of a luxury lifestyle playbook. 
-Two people, one masterpiece. You’re not just sharing coffee—you’re closing deals, creating memories, living large. 
-It’s smooth, it’s solid, and it screams sophistication. This is where connection meets craftsmanship. 
+  // Sculpted from striking marble, it turns every moment into a scene straight out of a luxury lifestyle playbook.
+  // Two people, one masterpiece. You’re not just sharing coffee—you’re closing deals, creating memories, living large.
+  // It’s smooth, it’s solid, and it screams sophistication. This is where connection meets craftsmanship.
 
-Want to elevate your space and your standards? Then take a seat—if you can.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUEhdShVYFi7GYsQA2my03DTouek5wnIJXgjpV',
-    __v: 0,
-  },
+  // Want to elevate your space and your standards? Then take a seat—if you can.`,
+  //     dimensions:
+  //       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUEhdShVYFi7GYsQA2my03DTouek5wnIJXgjpV',
+  //     __v: 0,
+  //   },
   {
     _id: {
       $oid: '67a5eaba4da9b29cd0f10b63',
