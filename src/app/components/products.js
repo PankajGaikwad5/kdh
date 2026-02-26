@@ -6846,56 +6846,56 @@ Because even your side table should speak volumes.`,
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.1/mirror/1.webp',
+        filePath: '/monster4.0/mirror/1.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.1/mirror/2.webp',
+        filePath: '/monster4.0/mirror/2.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.1/mirror/3.webp',
+        filePath: '/monster4.0/mirror/3.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.1/mirror/4.webp',
+        filePath: '/monster4.0/mirror/4.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.1/mirror/5.webp',
+        filePath: '/monster4.0/mirror/5.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.1/mirror/6.webp',
+        filePath: '/monster4.0/mirror/6.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.1/mirror/7.webp',
+        filePath: '/monster4.0/mirror/7.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.1/mirror/8.webp',
+        filePath: '/monster4.0/mirror/8.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -6924,28 +6924,28 @@ The tactile yarn frame contrasts beautifully with the clean reflective glass, ma
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.1/totem/1.webp',
+        filePath: '/monster4.0/totem/1.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.1/totem/2.webp',
+        filePath: '/monster4.0/totem/2.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.1/totem/3.webp',
+        filePath: '/monster4.0/totem/3.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.1/totem/4.webp',
+        filePath: '/monster4.0/totem/4.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -6977,84 +6977,84 @@ A modern heirloom, wrapped in yarn, built on connection.`,
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.1/yodacarpet/1.webp',
+        filePath: '/monster4.0/yodacarpet/1.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.1/yodacarpet/2.webp',
+        filePath: '/monster4.0/yodacarpet/2.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.1/yodacarpet/3.webp',
+        filePath: '/monster4.0/yodacarpet/3.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.1/yodacarpet/4.webp',
+        filePath: '/monster4.0/yodacarpet/4.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.1/yodacarpet/5.webp',
+        filePath: '/monster4.0/yodacarpet/5.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.1/yodacarpet/6.webp',
+        filePath: '/monster4.0/yodacarpet/6.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.1/yodacarpet/7.webp',
+        filePath: '/monster4.0/yodacarpet/7.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.1/yodacarpet/8.webp',
+        filePath: '/monster4.0/yodacarpet/8.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.1/yodacarpet/9.webp',
+        filePath: '/monster4.0/yodacarpet/9.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.1/yodacarpet/10.webp',
+        filePath: '/monster4.0/yodacarpet/10.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.1/yodacarpet/11.webp',
+        filePath: '/monster4.0/yodacarpet/11.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.1/yodacarpet/12.webp',
+        filePath: '/monster4.0/yodacarpet/12.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
