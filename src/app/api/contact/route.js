@@ -83,14 +83,35 @@ export async function POST(req) {
     },
   });
 
+  let locationText = '';
+  try {
+    let fetchUrl = 'http://ip-api.com/json/';
+    // If it's a real IP from a production request, use it.
+    // Otherwise (localhost/unknown), it will use the server's external IP for testing.
+    if (ip && ip !== 'unknown' && ip !== '::1' && ip !== '127.0.0.1') {
+      const cleanIp = ip.split(',')[0].trim();
+      fetchUrl = `http://ip-api.com/json/${cleanIp}`;
+    }
+
+    const geoRes = await fetch(fetchUrl);
+    if (geoRes.ok) {
+      const geoData = await geoRes.json();
+      if (geoData.status === 'success') {
+        locationText = `\nLocation: ${geoData.city}, ${geoData.regionName}`;
+      }
+    }
+  } catch (error) {
+    console.error('Error fetching location:', error);
+  }
+
   // Set up email options
   const mailOptions = {
     from: `Karan Desai Home ${subject} Form${email}`, // sender's email
-    to: `${process.env.REMAIL}, ${process.env.SECONDEMAIL}`, // recipient's email
+    to: `${process.env.REMAIL},  ${process.env.SECONDEMAIL}`, // recipient's email
     subject: subject,
     text: `Name: ${name}\nEmail: ${email}\nContact No.: ${number}\nMessage: ${message}\n${
       product ? `product: ${product}` : ''
-    }`,
+    }${locationText}`,
   };
   try {
     await transporter.sendMail(mailOptions);
