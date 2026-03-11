@@ -6033,7 +6033,7 @@ Whether it's hiding cables or holding court, AV means business — and business 
         },
       },
     ],
-    description: `Understated? Never. Console 1 is pure finesse — all smooth curves and natural swagger, sculpted from warm travertine that looks like it’s been sunbathing in Tuscany for a century. 
+    description: `Understated? Never. Console 2 is pure finesse — all smooth curves and natural swagger, sculpted from warm travertine that looks like it’s been sunbathing in Tuscany for a century. 
 
 Two bold bases — one squared, one curved — balance each other like a masterclass in duality. 
 It’s clean, it’s confident, and it delivers elegance with a side of authority. 
