@@ -6710,7 +6710,7 @@ Because even your side table should speak volumes.`,
     _id: {
       $oid: 'monster3rounddining',
     },
-    title: 'Monster 3.1 Round Dinig Table',
+    title: 'Monster 3.1 Round Dining Table',
     group: 'monster_3.1',
     material: 'Charred Wood with High Gloss Lacquer',
     pdf: '#',
