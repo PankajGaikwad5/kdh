@@ -5449,12 +5449,7 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
         },
       },
     ],
-    description: `This isn’t your average side table — it’s a bold fusion of discipline and design. 
-
-Framed in precision-cut marble and finished with fluted wooden drawers, this piece delivers both edge and elegance in one clean shot. 
-It doesn’t whisper sophistication — it declares it. Functional? Absolutely. But make no mistake — this is a power move in furniture form. 
-
-When luxury meets structure like this, it’s not just furniture — it’s a flex.`,
+    description: `The Matilda Marble Side Table by Karan Desai Home explores sculptural geometry through refined marble and stonecraftsmanship. Handcrafted from natural marble, the arched structure integrates two seamless drawers, bringing together storage and sculptural clarity in a distinctive piece of contemporary furniture. The balance of fluid curves and precise lines introduces architectural rhythm to the interior of a modern home or residence. Designed by Karan Desai and made in India, this statement piece elevates luxury interiors while standing as a distinctive collectible piece within curated spaces.`,
     dimensions:
       'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO3tC2WJLYnpyK0DhEV4daf1ZotLM8ROqYkSFN',
     __v: 0,
@@ -5581,12 +5576,7 @@ A symbol of restraint, rhythm, and remarkable design.`,
         },
       },
     ],
-    description: `Sculpted in a fluid arc of white marble, this Chaise Longue is a poetic interpretation of form and repose. 
-
-Its soft wave-like silhouette invites calm, while the cool, veined stone anchors it in timeless luxury. 
-Designed not just to rest, but to be revered — it’s a chaise that blurs the line between furniture and fine art. 
-
-Ideal for spaces where silence, strength, and sophistication are felt.`,
+    description: `The Matilda Marble Chaise Longue by Karan Desai Home brings together sculptural marble and refined stonecraftsmanship in a poetic expression of contemporary furniture design. Handcrafted from natural marble, its fluid arc and wave-like silhouette introduce a sense of calm movement and architectural elegance to the interior of a modern home or residence. Balancing strength with softness, the form highlights the natural veining of the stone while creating a striking sculptural presence. Designed by Karan Desai and made in India, this distinctive piece elevates luxury interiors while standing as a remarkable collectible piece within curated spaces.`,
     dimensions:
       'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOzuaZgH3drRCNOYV7h2kSoeU41wvlAyKEqG0T',
     __v: 0,
@@ -5648,13 +5638,7 @@ Ideal for spaces where silence, strength, and sophistication are felt.`,
         },
       },
     ],
-    description: `A playful rebellion against convention, this Marble Ball Console fuses luxury with whimsy. 
-
-Each vividly colored sphere is carved from solid marble, stacked with intentional chaos, 
-creating a visual rhythm that feels both sculptural and surreal. 
-
-Topped with a sleek amber surface, it’s a bold expression of creativity — perfect for art-forward interiors that celebrate individuality and 
-unapologetic charm.`,
+    description: `The Matilda Marble Ball Console by Karan Desai Home brings together marble and stone in a playful yet sculptural expression of contemporary furniture design. Handcrafted from natural marble, vividly coloured spheres are stacked to create a bold sense of movement and visual rhythm, introducing character and artistic energy to the interior of a modern home or residence. Designed by Karan Desai and made in India, the console pairs this sculptural base with a refined top surface, making it a distinctive element within luxury interiors and a striking collectible piece for curated spaces.`,
     dimensions:
       'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOPcgRtyKaSjHqmNAIDGdfwbKCW75FER48cVo3',
     __v: 0,
@@ -5709,12 +5693,7 @@ unapologetic charm.`,
         },
       },
     ],
-    description: `A study in contrast and composition, this Marble Console strikes the perfect balance between sophistication and bold design. 
-
-Featuring four distinct marble legs—each in a different finish and shape—this piece blends symmetry with surprise. 
-The translucent smoked-glass top adds a modern edge, allowing the sculptural base to shine. 
-
-A true collector’s piece, it transforms hallways, entryways, or lounges into curated design moments.`,
+    description: `The Matilda Marble Console by Karan Desai Home transforms marble and stone into a sculptural centerpiece for contemporary furniture design. Handcrafted from natural marble, the console stands on four varied legs that introduce contrast and architectural presence to the interior of a modern home or residence. The smoked-glass top adds a refined modern layer, balancing transparency with material richness. Designed by Karan Desai and made in India, this distinctive piece enhances luxury interiors while standing as a remarkable collectible piece.`,
     dimensions:
       'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOXaBMTyuosnbmOpdheGL3EgIPWHwQBAfDiZqX',
     __v: 0,
@@ -5764,12 +5743,7 @@ A true collector’s piece, it transforms hallways, entryways, or lounges into c
         },
       },
     ],
-    description: `A sculptural marvel, this curved marble screen is a striking fusion of form and function. 
-
-Crafted from exquisite veined marble, its undulating wave texture and bold spherical centerpiece create a powerful visual rhythm. 
-Designed as both a divider and an art object, this piece commands attention—turning any interior into a gallery of refined luxury. 
-
-Ideal for spaces that embrace architectural drama with timeless sophistication.`,
+    description: `The Matilda Marble Screen by Karan Desai Home brings together sculptural marble and refined stone craftsmanship in a striking expression of contemporary furniture design. Handcrafted from natural marble, its flowing curved form and rhythmic texture introduce movement, depth, and architectural presence to the interior of a modern home or residence. Designed to function both as a spatial divider and a sculptural element, the piece transforms the interior into a refined design moment. Designed by Karan Desai and made in India, this statement piece enhances luxury interiorswhile standing as a distinctive collectible piece.`,
     dimensions:
       'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOBY3TsfgzYN8aVpJZLF50If4uUdl1vTPgMQEx',
     __v: 0,
@@ -5819,11 +5793,7 @@ Ideal for spaces that embrace architectural drama with timeless sophistication.`
         },
       },
     ],
-    description: `A bold expression of sculptural geometry, this side table reimagines storage through an architectural lens. 
-
-Crafted from richly veined marble, the arched form embraces two seamless drawers, blending utility with fluid design. 
-The interplay of curves and clean lines reflects a refined minimalism, making this piece an icon of modern luxury—ideal for 
-curated interiors that appreciate the power of form and function in harmony.`,
+    description: `The Matilda Marble Side Table by Karan Desai Home brings together marble, stone, and refined detailing in a sculptural expression of contemporary furniture design. Handcrafted from natural marble and paired with fluted wooden drawers, the piece introduces balance, texture, and architectural clarity to the interior of a modern home or residence. Designed by Karan Desai and made in India, this statement side table enhances luxury interiors while standing as a distinctive collectible piece within curated living spaces.`,
     dimensions:
       'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO4UCttXmYLAzci562mjC7NX0nUpdqB8Hf3QEW',
     __v: 0,
