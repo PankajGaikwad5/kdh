@@ -172,14 +172,7 @@ For those who don’t follow the rules—they carve their own.`,
         thumbnail: '/assets/products/thumbnails/1738929795491-Slide3.JPG',
       },
     ],
-    description: `Monster Gum isn’t just lighting—it’s attitude, wrapped in fun.
-
-This golden beast clutching a glossy pink bubble isn’t here to blend in—it’s here to pop. 
-With bold curves and a playful edge, it turns any room from forgettable to unforgettable. It’s eye candy with a purpose, charm with a charge. 
-
-Want lighting that speaks louder than words? Then grab the Monster Gum—and let it do the talking.
-
-`,
+    description: `The Monster Gum Lamp by Karan Desai Home brings together playful sculpture and bold contemporary furniture design in a striking collectible form. Handcrafted with a sculptural golden figure and a glossy bubble detail, the piece introduces character, colour, and visual energy to the interior of a modern home or residence. Designed to blur the line between lighting and art, it transforms illumination into a moment of personality and expression. Designed by Karan Desai and made in India, this distinctive creation enhances luxury interiors while standing as a remarkable collectible piece.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUv1mQj1X0iQtznIlhRaFJ8jZ6p7xPg3bw9OrD',
     __v: 0,
@@ -1540,13 +1533,7 @@ If your space demands character, power, and a touch of rebellion, this is your n
         thumbnail: '/assets/products/thumbnails/1743757629643-3.jpg',
       },
     ],
-    description: `This is Monster Humpty – not just a wall sconce, a conversation starter.
-
-Crafted in bold brass with a frosted glass “bubble,” it’s playful, powerful, and unapologetically original. 
-You don’t hang this on your wall—you make a statement. It’s design with attitude, lighting with charisma. 
-
-Whether it’s your lounge, studio, or office, Monster Humpty turns ordinary into unforgettable. 
-Want ambiance with personality? This little beast delivers—big time.`,
+    description: `The Monster Humpty Wall Sconce by Karan Desai Home reimagines wall lighting as a bold sculptural element within contemporary interiors. Handcrafted in polished brass and paired with a frosted glass globe, the piece introduces warmth, character, and playful presence to the interior of a modern home or residence. Its compact yet expressive form transforms a simple lighting fixture into a striking design moment on the wall. Designed by Karan Desai and made in India, this distinctive creation complements luxury interiors while standing as a remarkable collectible piece.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUohMIiwPd43VNTXj27bgOZneCUs9aBiY5x8vw',
     __v: 0,
@@ -1635,12 +1622,7 @@ Want ambiance with personality? This little beast delivers—big time.`,
         thumbnail: '/assets/products/thumbnails/1738930260212-Slide3.JPG',
       },
     ],
-    description: `Say hello to the Monster Squinty—where weird is wonderful.
-
-This golden little oddball doesn't just light your room—it stares into your soul (with one giant eye and zero apologies). 
-It’s cheeky, it’s charming, and it’s unapologetically different. 
-
-You want personality in your decor? This lamp is personality—wild, wide-eyed, and totally unforgettable.`,
+    description: `The Monster Squinty Lamp by Karan Desai Home brings playful sculpture and contemporary furniture design together in a bold collectible form. Handcrafted with a distinctive single-eye form and sculptural detailing, the piece introduces character, humour, and visual intrigue to the interior of a modern home or residence. Designed to blur the line between lighting and art, it transforms illumination into a statement of personality and expression. Designed by Karan Desai and made in India, this distinctive creation enhances luxury interiors while standing as a remarkable collectible piece.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUFF11zUyvrgRIBMUa1Cwt3nu4PEZOTo0XLQDf',
     __v: 0,
@@ -2852,12 +2834,7 @@ This isn’t just art you admire. It’s art you live in.`,
         thumbnail: '/assets/products/thumbnails/1738930233951-Slide3.JPG',
       },
     ],
-    description: `This is the Monster Grumpy—and it doesn’t care if you like it.
-
-Crafted in solid gold-toned swagger, with a stare that’s part scowl, part genius, it’s not just a lamp—it’s a mood. 
-That striped glow? That’s confidence. This beast doesn’t light up a room—it dominates it. You want ordinary? Walk away. 
-
-You want a statement that growls back? The Monster Grumpy is already watching.`,
+    description: `The Monster Grumpy Lamp by Karan Desai Home transforms lighting into a sculptural collectible with personality. Handcrafted with a bold gold-toned structure and expressive character, the piece introduces energy and attitude to the interior of a modern home or residence. Blurring the line between lighting and furniture, it becomes an artistic object that commands attention. Designed by Karan Desai and made in India, this striking creation enhances luxury interiorswhile standing as a distinctive collectible piece.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDt1neS8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
     __v: 0,
@@ -3531,13 +3508,7 @@ It doesn’t whisper luxury — it roars it. Because when you live big, even you
         thumbnail: '/assets/products/thumbnails/1738929601189-Slide3.JPG',
       },
     ],
-    description: `Meet “Monster Brainy” – your secret weapon for next-level thinking.
-
-This isn’t just design—it’s domination. With a bold aesthetic and head-turning presence, Monster Brainy flips the script on ordinary. 
-It sparks curiosity, fuels innovation, and demands attention. Built to stand out and engineered to inspire, this is where form meets fierce function. 
-
-You don’t just display it—you leverage it. 
-Time to think bigger, move faster, and create smarter. Monster Brainy leads the way`,
+    description: `The Monster Brainy by Karan Desai Home brings together playful sculpture and contemporary furniture design in a bold collectible form. Handcrafted with striking detail, the piece introduces character, curiosity, and visual energy to the interior of a modern home or residence. Designed to spark conversation and creative thinking, it transforms a simple object into a sculptural focal point. Designed by Karan Desai and made in India, this distinctive creation enhances luxury interiors while standing as a remarkable collectible piece.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULT9qlKDqbauUfVsg4JYrj86xOSilFe5PBo3m',
     __v: 0,
@@ -3630,13 +3601,7 @@ Time to think bigger, move faster, and create smarter. Monster Brainy leads the 
         thumbnail: '/assets/products/thumbnails/1738928071416-Slide4.JPG',
       },
     ],
-    description: `This isn’t just a lamp—it’s dessert for the power player. 
-
-The Binty takes playful design and spins it into gold—literally. 
-With a glittering cone, scoops that sparkle, and a bold little character gripping it like treasure, this piece turns heads and melts hearts. 
-
-It’s nostalgia with a luxury twist. Statement lighting? Nah. 
-This is conversation-starting, vibe-setting, spotlight-stealing brilliance. Light it up—and let them know fun just got upgraded.`,
+    description: `The Binty Table Lamp by Karan Desai Home brings together playful sculpture and contemporary furniture design in a bold expression of light and form. Handcrafted with sculptural detailing and finished with striking metallic elements, the lamp transforms lighting into a statement within the interior of a modern home or residence. Its whimsical composition introduces character, contrast, and visual energy to the space, turning illumination into an artistic focal point. Designed by Karan Desai and made in India, this distinctive piece complements luxury interiors while standing as a remarkable collectible piece.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPNbp9DHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
     __v: 0,
@@ -3685,13 +3650,7 @@ This is conversation-starting, vibe-setting, spotlight-stealing brilliance. Ligh
         thumbnail: '/assets/products/thumbnails/1744099947427-3.jpg',
       },
     ],
-    description: `Meet the lamp that doesn’t just light a room—it enlightens it. 
-
-The Monster Buddha is a power move in disguise—playful, yes, but packed with presence. A sculpted brass base echoes calm confidence, 
-while the blown-glass dome casts a soft, golden glow that makes everything—and everyone—look better. 
-
-It’s art, it’s attitude, it’s ambiance with a wink. 
-Put it on your table and watch the room elevate—quietly, but unmistakably.`,
+    description: `The Monster Buddha Lamp by Karan Desai Home transforms sculptural lighting into a refined expression of contemporary furniture and collectible design. Handcrafted with a sculpted brass base and a blown-glass dome, the piece introduces warmth, character, and a calm visual presence to the interior of a modern home or residence. Designed to balance playful artistry with a serene glow, it turns illumination into a moment of quiet focus and atmosphere. Designed by Karan Desai and made in India, this distinctive creation enhances luxury interiors while standing as a remarkable collectible piece.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUzbq9egIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
     __v: 0,
@@ -4101,16 +4060,7 @@ It’s luxury with an edge, comfort with a voice, and design that refuses to sta
         thumbnail: '/assets/products/thumbnails/1738929747420-Slide3.JPG',
       },
     ],
-    description: `Monster Guard isn’t just a lamp—it’s your golden enforcer.
-
-Built like a beast and lit like a legend, this bold design brings heat and attitude to any room. 
-With a blazing glass flame and a loyal stance, it doesn’t just light up the space—it owns it. Playful? 
-Sure. But make no mistake—this piece means business. 
-
-Want protection with personality? Monster Guard’s got your back—and your vibe.. 
-
-You want ordinary? Look elsewhere. You want bold, fearless, unforgettable? Gattooffer delivers—loud and proud. 
-Light your space like you mean it.`,
+    description: `The Monster Guard Lamp by Karan Desai Home transforms sculptural lighting into a bold expression of contemporary furniture and collectible design. Handcrafted with a striking glass flame and a commanding sculptural form, the piece introduces character, energy, and visual drama to the interior of a modern home or residence. Designed to stand as both illumination and art, it brings playful strength and presence to the space. Designed by Karan Desai and made in India, this distinctive creation enhances luxury interiors while standing as a remarkable collectible piece.`,
     dimensions:
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAadKi3J1oeY2wnF0zQbWX83C4KujdSqt6MUT',
     __v: 0,
