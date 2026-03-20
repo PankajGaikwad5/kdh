@@ -7001,7 +7001,7 @@ A sculptural presence disguised as furniture.`,
     title: 'Coffee Table',
     group: 'js',
     material: '',
-    pdf: '',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnie2WirbYcoeRKumWaHxyTj5q3bfMXB6INAU',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -7050,7 +7050,7 @@ A sculptural presence disguised as furniture.`,
     title: 'Totem',
     group: 'js',
     material: '',
-    pdf: '',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9kauxF2frimQ5LhFdjbpOHNPEsav1o2Ac0Dz',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -7117,7 +7117,7 @@ The totem is meant to feel calm, grounded and thoughtful. It carries a quiet pre
     title: 'Dining Table',
     group: 'js',
     material: '',
-    pdf: '',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUN4sR6EG5UuqxLjF0ygrW1ikRpXaHfGVvonDw',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -7183,7 +7183,7 @@ Jina Shilp Dining table is conceived as an object of presence—where form, mate
     title: 'Mirror',
     group: 'js',
     material: '',
-    pdf: '',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUL68AYmPDqbauUfVsg4JYrj86xOSilFe5PBo3',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
