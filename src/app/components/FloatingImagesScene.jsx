@@ -504,7 +504,7 @@ export default function FloatingImagesScene() {
     return newImagePaths.filter(
       (p) =>
         p.group &&
-        (p.group.includes('Monster 4.1') || p.group.includes('Monster 4.0')),
+        (p.group.includes('Jina Shilp') || p.group.includes('Jina Shilp')),
     );
   }, []);
 

@@ -497,6 +497,30 @@ export const newImagePaths = [
     group: 'Monster 4.0',
     productId: 'monster4carpetmirror',
   },
+  {
+    name: 'Jina Shilp Totem',
+    path: '/js/totem/png.webp',
+    group: 'Jina Shilp',
+    productId: 'jina-shilp',
+  },
+  {
+    name: 'Jina Shilp Dining Table',
+    path: '/js/diningtable/png.webp',
+    group: 'Jina Shilp',
+    productId: 'jina-shilp',
+  },
+  {
+    name: 'Jina Shilp Mirror',
+    path: '/js/mirror/png.webp',
+    group: 'Jina Shilp',
+    productId: 'jina-shilp',
+  },
+  {
+    name: 'Jina Shilp Coffee Table',
+    path: '/js/cofeetable/png.webp',
+    group: 'Jina Shilp',
+    productId: 'jina-shilp',
+  },
 
   ...Array(2)
     .fill([
@@ -985,6 +1009,30 @@ export const newImagePaths = [
         path: '/monster4.0/mirror/mirrorpng.webp',
         group: 'Monster 4.0',
         productId: 'monster4carpetmirror',
+      },
+      {
+        name: 'Jina Shilp Totem',
+        path: '/js/totem/png.webp',
+        group: 'Jina Shilp',
+        productId: 'jina-shilp',
+      },
+      {
+        name: 'Jina Shilp Mirror',
+        path: '/js/mirror/png.webp',
+        group: 'Jina Shilp',
+        productId: 'jina-shilp',
+      },
+      {
+        name: 'Jina Shilp Dining Table',
+        path: '/js/diningtable/png.webp',
+        group: 'Jina Shilp',
+        productId: 'jina-shilp',
+      },
+      {
+        name: 'Jina Shilp Coffee Table',
+        path: '/js/cofeetable/png.webp',
+        group: 'Jina Shilp',
+        productId: 'jina-shilp',
       },
     ])
     .flat(),

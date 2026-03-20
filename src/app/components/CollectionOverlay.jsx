@@ -103,7 +103,7 @@ const CollectionOverlay = ({ isVisible, onClose, products = [] }) => {
             <h2 className='text-2xl sm:text-3xl md:text-4xl font-light text-white tracking-wide px-2'>
               {/* Monster 4.0 is here,{' '} */}
               <span className='font-semibold text-white/90 uppercase'>
-                Monster 4.0 is Here
+                Jina Shilp Collection is Here
               </span>
             </h2>
           </div>
@@ -144,7 +144,7 @@ const CollectionOverlay = ({ isVisible, onClose, products = [] }) => {
             className='pt-2 sm:pt-3 md:pt-4 w-full sm:w-auto'
           >
             <button className='group relative px-6 sm:px-8 py-3 sm:py-3.5 bg-white text-black font-medium tracking-wider text-xs sm:text-sm rounded-full overflow-hidden transition-transform hover:scale-105 active:scale-95 w-full sm:w-auto touch-manipulation'>
-              <Link href='./collections/monster_4.0'>
+              <Link href='./collections/js'>
                 <span className='relative z-10 flex items-center justify-center gap-2'>
                   EXPLORE COLLECTION
                   <ArrowRight

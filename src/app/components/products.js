@@ -6994,4 +6994,257 @@ A sculptural presence disguised as furniture.`,
     dimensions: '',
     __v: 0,
   },
+  {
+    _id: {
+      $oid: 'jscofeetable',
+    },
+    title: 'Coffee Table',
+    group: 'js',
+    material: '',
+    pdf: '',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/cofeetable/png.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/cofeetable/1.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/cofeetable/2.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/cofeetable/3.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/cofeetable/4.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: ``,
+    dimensions: '',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: 'jstotem',
+    },
+    title: 'Totem',
+    group: 'js',
+    material: '',
+    pdf: '',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/totem/png.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/totem/1.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/totem/2.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/totem/3.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/totem/4.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/totem/5.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: `
+The Jina Shilp Totem is a sculptural object inspired by the vertical journey seen in Jain temple architecture. The idea comes from the way temple pillars are built in layers, each part carrying meaning and detail. This piece brings those elements together into a single rising form, symbolising growth, balance and inner elevation.
+
+Each segment is treated as an individual piece but carefully composed to work as one form. The proportions are kept grounded at the base and lighter as it moves upward, creating a natural sense of ascent. Traditional carvings are simplified so they feel relevant in a modern space without losing their identity.
+
+A mix of stones is used to build contrast and depth. Green marble forms the base, giving it weight and stability. Lighter stones and richly patterned surfaces are layered above, including carved white stone and deep red tones. Each material is selected to highlight natural textures rather than hide them. The finishes are mostly matte or softly polished to keep the piece tactile and real.
+
+The references come directly from Jain derasars, especially the carved pillars and mandapa elements. The planter integration adds a living layer, allowing plants to grow through the structure and soften the stone.
+
+Technically, the piece is made as stacked modules, ensuring stability while keeping the visual lightness intact. Each block is precisely cut and finished to align seamlessly.
+
+The totem is meant to feel calm, grounded and thoughtful. It carries a quiet presence, where stone and life exist together, reflecting a sense of stillness, growth and cultural continuity.`,
+    dimensions: '',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: 'jsdiningtable',
+    },
+    title: 'Dining Table',
+    group: 'js',
+    material: '',
+    pdf: '',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/diningtable/png.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/diningtable/1.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/diningtable/2.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/diningtable/3.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/diningtable/4.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/diningtable/5.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: `Jina Shilp Dining Table is a sculptural expression rooted in the quiet strength of Jain architecture. It draws from temple pillars that embody balance, discipline, and spiritual order, translating these values into a contemporary context.
+
+The design prioritizes the base as the primary visual and conceptual element. A glass tabletop is introduced to reduce visual weight, allowing the structure beneath to remain fully legible. Its softly contoured edges temper the composition, bringing a sense of fluidity to an otherwise architectural form.
+
+The table is supported by three carved pillars, each distinct yet composed as a unified whole. Their placement is deliberately asymmetrical: a dominant column anchors the form, while two lighter pillars offset and balance it. This arrangement introduces movement without compromising stability.
+
+Materiality is restrained yet expressive. Red travertine offers warmth and surface richness, black lava stone provides depth and grounding, and yellow travertine introduces a lighter, more intricate character. The carvings draw from temple column motifs, executed with precision and control.
+
+Each pillar is crowned with a hand-poured wax candle, casting a soft ambient glow that enhances the spatial experience.
+
+Jina Shilp Dining table is conceived as an object of presence—where form, material, and light converge to create a composed and contemplative dining environment.`,
+    dimensions: '',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: 'jsmirror',
+    },
+    title: 'Mirror',
+    group: 'js',
+    material: '',
+    pdf: '',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/mirror/png.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/mirror/1.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/mirror/2.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/mirror/3.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/mirror/4.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/mirror/5.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/mirror/6.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: `The Jina Shilp Mirror is designed as a tall, floor-standing piece inspired by Jain temple architecture. At seven feet in height, it takes the form of a carved arch, similar to the entrances and frames seen in temples. The idea was to create something that feels calm, grounded, and meaningful, not just decorative.
+
+In Jain philosophy, there is a strong focus on daily introspection, reflecting on your actions, thoughts, and behavior. This mirror is meant to support that idea. It is not just for looking at yourself, but for pausing and thinking inward. The detailed carvings around the frame are inspired by temple craftsmanship and are designed to slow you down visually, making the act of standing in front of it feel more intentional.
+
+The base of the mirror includes a built-in planter. This is an important part of the concept. When people reflect deeply, they often come face to face with their negative thoughts or actions. That process can feel heavy. The planter is there to balance that feeling. The presence of a growing plant adds a sense of life, hope, and movement. It reminds you that growth is always possible and that you should not stay stuck in those low moments.
+
+The mirror is made in Verde Guatemala marble, known for its deep green color and natural veining. This gives the piece a strong, rich presence while still feeling natural and calm. The contrast between the solid stone and the living plant brings together the ideas of stability and growth.
+
+The Jina Shilp Mirror is meant to be more than a functional object. It is a quiet piece that brings together reflection, growth, and everyday awareness in a simple and meaningful way.`,
+    dimensions: '',
+    __v: 0,
+  },
 ];

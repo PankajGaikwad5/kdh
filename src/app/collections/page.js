@@ -26,6 +26,13 @@ const page = () => {
 
   const products = [
     {
+      id: 16,
+      title: 'Jina Shilp',
+      group: 'js',
+      img: '/js/totem/png.webp',
+      projects: 'totem, mirror, dining table',
+    },
+    {
       id: 15,
       title: 'Monster 4.0',
       group: 'monster_4.0',
