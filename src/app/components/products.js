@@ -7039,8 +7039,17 @@ A sculptural presence disguised as furniture.`,
         },
       },
     ],
-    description: ``,
-    dimensions: '',
+    description: `The Jina Shilp Coffee Table is a quiet, grounded piece inspired by the simplicity and balance found in Jain architecture. It is designed to feel calm and stable, with a focus on natural materials and soft forms.
+
+The table has a round glass top that keeps the structure feeling light and open. The base is made of stone, with a central pillar that anchors the design. The pillar is carved with simple, repetitive patterns that echo the feeling of temple carvings, but without being too detailed. This gives the table a sense of rhythm and presence.
+
+There are three small candle holders on the table, each holding a hand-poured wax candle. When lit, they add a soft, warm glow that makes the space feel more intimate and thoughtful.
+
+The materials used are natural and tactile. The stone base has a matte finish that highlights its texture, and the glass top adds a modern touch. The overall feeling is one of balance, simplicity, and quiet strength.
+
+Jina Shilp Coffee Table is meant to be a calm presence in a room—a place where you can gather, reflect, and feel grounded.`,
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnie2WirbYcoeRKumWaHxyTj5q3bfMXB6INAU',
     __v: 0,
   },
   {
@@ -7107,7 +7116,8 @@ The references come directly from Jain derasars, especially the carved pillars a
 Technically, the piece is made as stacked modules, ensuring stability while keeping the visual lightness intact. Each block is precisely cut and finished to align seamlessly.
 
 The totem is meant to feel calm, grounded and thoughtful. It carries a quiet presence, where stone and life exist together, reflecting a sense of stillness, growth and cultural continuity.`,
-    dimensions: '',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9kauxF2frimQ5LhFdjbpOHNPEsav1o2Ac0Dz',
     __v: 0,
   },
   {
@@ -7173,7 +7183,8 @@ Materiality is restrained yet expressive. Red travertine offers warmth and surfa
 Each pillar is crowned with a hand-poured wax candle, casting a soft ambient glow that enhances the spatial experience.
 
 Jina Shilp Dining table is conceived as an object of presence—where form, material, and light converge to create a composed and contemplative dining environment.`,
-    dimensions: '',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUN4sR6EG5UuqxLjF0ygrW1ikRpXaHfGVvonDw',
     __v: 0,
   },
   {
@@ -7244,7 +7255,8 @@ The base of the mirror includes a built-in planter. This is an important part of
 The mirror is made in Verde Guatemala marble, known for its deep green color and natural veining. This gives the piece a strong, rich presence while still feeling natural and calm. The contrast between the solid stone and the living plant brings together the ideas of stability and growth.
 
 The Jina Shilp Mirror is meant to be more than a functional object. It is a quiet piece that brings together reflection, growth, and everyday awareness in a simple and meaningful way.`,
-    dimensions: '',
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUL68AYmPDqbauUfVsg4JYrj86xOSilFe5PBo3',
     __v: 0,
   },
 ];

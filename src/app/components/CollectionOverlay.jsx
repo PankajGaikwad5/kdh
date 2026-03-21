@@ -111,10 +111,10 @@ const CollectionOverlay = ({ isVisible, onClose, products = [] }) => {
           {/* Products Grid */}
           <div
             ref={productsRef}
-            className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-5 md:gap-6 w-full mt-2 sm:mt-3 md:mt-4'
+            className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-5 md:gap-6 w-full mt-2 sm:mt-3 md:mt-4'
           >
             {/* We will showcase up to 3 products */}
-            {products.slice(0, 3).map((product, idx) => (
+            {products.slice(0, 4).map((product, idx) => (
               <div
                 key={idx}
                 className='group relative flex flex-col items-center'
