@@ -28,7 +28,7 @@ const page = () => {
     {
       id: 16,
       title: 'Jina Shilp',
-      group: 'js',
+      group: 'jina_shilp',
       img: '/js/totem/png.webp',
       projects: 'totem, mirror, dining table',
     },

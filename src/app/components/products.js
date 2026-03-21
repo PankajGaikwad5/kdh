@@ -6999,7 +6999,7 @@ A sculptural presence disguised as furniture.`,
       $oid: 'jscofeetable',
     },
     title: 'Coffee Table',
-    group: 'js',
+    group: 'jina_shilp',
     material: '',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnie2WirbYcoeRKumWaHxyTj5q3bfMXB6INAU',
     images: [
@@ -7057,7 +7057,7 @@ Jina Shilp Coffee Table is meant to be a calm presence in a room—a place where
       $oid: 'jstotem',
     },
     title: 'Totem',
-    group: 'js',
+    group: 'jina_shilp',
     material: '',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9kauxF2frimQ5LhFdjbpOHNPEsav1o2Ac0Dz',
     images: [
@@ -7125,7 +7125,7 @@ The totem is meant to feel calm, grounded and thoughtful. It carries a quiet pre
       $oid: 'jsdiningtable',
     },
     title: 'Dining Table',
-    group: 'js',
+    group: 'jina_shilp',
     material: '',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUN4sR6EG5UuqxLjF0ygrW1ikRpXaHfGVvonDw',
     images: [
@@ -7192,7 +7192,7 @@ Jina Shilp Dining table is conceived as an object of presence—where form, mate
       $oid: 'jsmirror',
     },
     title: 'Mirror',
-    group: 'js',
+    group: 'jina_shilp',
     material: '',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUL68AYmPDqbauUfVsg4JYrj86xOSilFe5PBo3',
     images: [
