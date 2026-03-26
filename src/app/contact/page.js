@@ -1,5 +1,6 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import gsap from 'gsap';
 import Navbar from '../components/Navbar';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -50,9 +51,61 @@ const page = () => {
   // Track when form was loaded (for spam detection)
   const [formLoadTime, setFormLoadTime] = useState(null);
   const [honeypot, setHoneypot] = useState('');
+  const pageRef = useRef(null);
+  const headingRef = useRef(null);
+  const formRef = useRef(null);
+  const infoRef = useRef(null);
 
   useEffect(() => {
     setFormLoadTime(Date.now());
+  }, []);
+
+  // GSAP entrance animations
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+
+      // Fade in the whole page
+      tl.fromTo(
+        pageRef.current,
+        { opacity: 0 },
+        { opacity: 1, duration: 1 }
+      );
+
+      // Heading reveal from bottom
+      tl.fromTo(
+        headingRef.current,
+        { clipPath: 'inset(100% 0% 0% 0%)' },
+        { clipPath: 'inset(0% 0% 0% 0%)', duration: 0.9, ease: 'power2.inOut' },
+        0.2
+      );
+
+      // Form section slide up and fade
+      tl.fromTo(
+        formRef.current,
+        { opacity: 0, y: 40 },
+        { opacity: 1, y: 0, duration: 1 },
+        0.35
+      );
+
+      // Info section - reveal each child with stagger
+      const infoEls = infoRef.current?.children;
+      if (infoEls?.length) {
+        tl.fromTo(
+          infoEls,
+          { clipPath: 'inset(100% 0% 0% 0%)' },
+          {
+            clipPath: 'inset(0% 0% 0% 0%)',
+            duration: 0.9,
+            stagger: 0.12,
+            ease: 'power2.inOut',
+          },
+          0.45
+        );
+      }
+    });
+
+    return () => ctx.revert();
   }, []);
 
   const form = useForm({
@@ -95,7 +148,11 @@ const page = () => {
   }
   return (
     <>
-      <div className='min-h-screen flex flex-col bg-gradient-to-b bg-black'>
+      <div
+        ref={pageRef}
+        style={{ opacity: 0 }}
+        className='min-h-screen flex flex-col bg-gradient-to-b bg-black'
+      >
         <div
           className='min-h-screen text-white'
           style={{
@@ -105,12 +162,18 @@ const page = () => {
           <Navbar arrow={true} />
           <main className='pt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
             <div className='w-full text-center flex justify-center'>
-              <h1 className='text-4xl font-bold text-gray-200 pb-8 border-b-2 border-gray-800 uppercase w-full md:max-w-3xl'>
+              <h1
+                ref={headingRef}
+                className='text-4xl font-bold text-gray-200 pb-8 border-b-2 border-gray-800 uppercase w-full md:max-w-3xl'
+              >
                 Contact Us
               </h1>
             </div>
             <div className='w-full text-white flex justify-center items-center flex-col lg:flex-row gap-8 py-12  '>
-              <div className='w-full max-w-lg z-10 tracking-widest p-6 flex flex-col border border-gray-800 hover:border-gray-200 rounded-lg  hover:shadow-2xl transition-all duration-500 '>
+              <div
+                ref={formRef}
+                className='w-full max-w-lg z-10 tracking-widest p-6 flex flex-col border border-gray-800 hover:border-gray-200 rounded-lg  hover:shadow-2xl transition-all duration-500 '
+              >
                 <p
                   className={`text-xs font-bold mb-2 ${montserrat.className} uppercase font-light`}
                 >
@@ -221,7 +284,10 @@ const page = () => {
                 </Form>
               </div>
               {/*  */}
-              <div className='w-full max-w-lg text-xs z-10 font-thin text-white p-4 flex flex-col space-y-4 my-12 py-10'>
+              <div
+                ref={infoRef}
+                className='w-full max-w-lg text-xs z-10 font-thin text-white p-4 flex flex-col space-y-4 my-12 py-10'
+              >
                 <div className='flex flex-wrap items-center gap-8 text-center '>
                   <a
                     href='mailto:info@karandesai.in'

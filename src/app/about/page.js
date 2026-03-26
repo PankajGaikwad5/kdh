@@ -50,19 +50,7 @@ export default function AboutPage() {
     >
       <Navbar />
 
-      {/* SEO-Friendly Static Title */}
-      <section className='text-center pt-24 mb-10'>
-        <h1 className='text-4xl md:text-5xl font-light tracking-tight uppercase'>
-          About
-        </h1>
-        <p className='mt-3 text-gray-400 max-w-2xl mx-auto text-sm md:text-base'>
-          Award-winning Architecture and Interior Design studio by Karan Desai.
-          Crafting luxury spaces and designer collections inspired by art and
-          innovation.
-        </p>
-      </section>
-
-      {/* Interactive + Animated Client Component */}
+      {/* Interactive + Animated Client Component (includes title + card) */}
       <AboutClient />
 
       <Footer />

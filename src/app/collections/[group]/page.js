@@ -1,5 +1,6 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import gsap from 'gsap';
 import { useParams, useRouter } from 'next/navigation';
 import { ArrowLeft } from 'lucide-react';
 import Navbar from '@/app/components/Navbar';
@@ -22,6 +23,9 @@ const GroupProductsPage = () => {
   const [image1, setImage1] = useState();
   const [image2, setImage2] = useState();
   const [year, setYear] = useState('');
+  const pageRef = useRef(null);
+  const headerRef = useRef(null);
+  const gridRef = useRef(null);
 
   useEffect(() => {
     const groupProducts = products.filter((p) => p.group === group);
@@ -33,6 +37,57 @@ const GroupProductsPage = () => {
     setImage2(foundCatalogue ? foundCatalogue.image2 : '');
     setYear(foundCatalogue ? foundCatalogue.year : '');
   }, [group]);
+
+  // GSAP entrance animations
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+
+      // Fade in the whole page
+      tl.fromTo(
+        pageRef.current,
+        { opacity: 0 },
+        { opacity: 1, duration: 1 }
+      );
+
+      // Header content reveal from bottom
+      if (headerRef.current) {
+        const revealEls = headerRef.current.querySelectorAll('.gsap-reveal');
+        if (revealEls.length) {
+          tl.fromTo(
+            revealEls,
+            { clipPath: 'inset(100% 0% 0% 0%)' },
+            {
+              clipPath: 'inset(0% 0% 0% 0%)',
+              duration: 0.9,
+              stagger: 0.12,
+              ease: 'power2.inOut',
+            },
+            0.2
+          );
+        }
+      }
+
+      // Stagger product cards in
+      const cards = gridRef.current?.children;
+      if (cards?.length) {
+        tl.fromTo(
+          cards,
+          { opacity: 0, y: 30 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            stagger: 0.07,
+            ease: 'power2.out',
+          },
+          0.4
+        );
+      }
+    });
+
+    return () => ctx.revert();
+  }, [filteredProducts]);
 
   const handleDownloadClick = () => {
     setShowModal(true);
@@ -68,7 +123,11 @@ const GroupProductsPage = () => {
   };
 
   return (
-    <div className='min-h-screen flex flex-col bg-black'>
+    <div
+      ref={pageRef}
+      style={{ opacity: 0 }}
+      className='min-h-screen flex flex-col bg-black'
+    >
       <div className='min-h-screen grid grid-rows-[1fr_auto]'>
         <Navbar arrow={true} home={true} />
 
@@ -81,10 +140,10 @@ const GroupProductsPage = () => {
           </button>
         </header>
 
-        <div className='pt-20 md:pt-7 px-4 sm:px-6 lg:px-8'>
+        <div ref={headerRef} className='pt-20 md:pt-7 px-4 sm:px-6 lg:px-8'>
           <div className='w-full text-center flex flex-col justify-center items-center'>
             {!pdfLink && (
-              <h1 className='text-4xl font-bold text-gray-300 pb-8 border-b-2 border-gray-800 uppercase w-full md:max-w-3xl'>
+              <h1 className='gsap-reveal text-4xl font-bold text-gray-300 pb-8 border-b-2 border-gray-800 uppercase w-full md:max-w-3xl'>
                 {group.replace('_', ' ')}
               </h1>
             )}
@@ -94,7 +153,7 @@ const GroupProductsPage = () => {
 
             {pdfLink && (
               <>
-                <div className='flex gap-8 2xl:gap-16 items-center pb-2 border-b-2 border-gray-800 w-full max-w-3xl justify-center mb-4'>
+                <div className='gsap-reveal flex gap-8 2xl:gap-16 items-center pb-2 border-b-2 border-gray-800 w-full max-w-3xl justify-center mb-4'>
                   <Image
                     width={200}
                     height={200}
@@ -121,7 +180,7 @@ const GroupProductsPage = () => {
                   )}
                 </div>
 
-                <div className='flex flex-col gap-3'>
+                <div className='gsap-reveal flex flex-col gap-3'>
                   {/* <h1 className='text-xl -mt-6 px-72 text-gray-300 pb-2 border-b-2 border-gray-800 w-full md:max-w-3xl'>
                 presents
               </h1> */}
@@ -177,7 +236,7 @@ const GroupProductsPage = () => {
           </div> */}
 
           <div className='flex justify-center items-center'>
-            <div className='flex-grow grid grid-cols-2 md:grid-cols-4 pt-10 gap-4 p-4'>
+            <div ref={gridRef} className='flex-grow grid grid-cols-2 md:grid-cols-4 pt-10 gap-4 p-4'>
               {filteredProducts.map(({ title, images, _id, index }) => (
                 <ProductCard
                   title={title}
