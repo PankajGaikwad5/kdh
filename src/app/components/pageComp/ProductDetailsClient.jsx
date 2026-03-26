@@ -1,11 +1,13 @@
 'use client';
-import React, { useEffect, useState, useCallback, useMemo } from 'react';
+import React, { useEffect, useRef, useState, useCallback, useMemo } from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { Button } from '@/app/components/ui/button';
 import { X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import gsap from 'gsap';
 import { Montserrat } from 'next/font/google';
+import dynamic from 'next/dynamic';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
@@ -21,7 +23,11 @@ import { Input } from '../../components/ui/input';
 import { Textarea } from '../../components/ui/textarea';
 import ThumbnailGrid from '@/app/components/ThumbnailGrid';
 import Navbar from '@/app/components/Navbar';
-import { AccordionMarbles } from '@/app/components/AccordionMarbles';
+
+const AccordionMarbles = dynamic(
+  () => import('@/app/components/AccordionMarbles').then((mod) => mod.AccordionMarbles),
+  { ssr: false }
+);
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -52,6 +58,10 @@ export default function ProductDetailsClient({ product }) {
   const [formLoadTime, setFormLoadTime] = useState(null);
   const [honeypot, setHoneypot] = useState('');
 
+  const pageRef = useRef(null);
+  const imageRef = useRef(null);
+  const detailsRef = useRef(null);
+
   const totalMedia = (product?.images?.length || 0) + (product?.video ? 1 : 0);
   const isVideoSlide = currentIndex >= (product?.images?.length || 0);
 
@@ -65,6 +75,46 @@ export default function ProductDetailsClient({ product }) {
       product: '',
     },
   });
+
+  // GSAP entrance animations
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+
+      // Fade in the whole page
+      tl.fromTo(
+        pageRef.current,
+        { opacity: 0 },
+        { opacity: 1, duration: 1 }
+      );
+
+      // Fade in image section
+      tl.fromTo(
+        imageRef.current,
+        { opacity: 0, scale: 0.97 },
+        { opacity: 1, scale: 1, duration: 1.2 },
+        0.2
+      );
+
+      // Reveal text elements with clip-path from bottom to top
+      const textEls = detailsRef.current?.querySelectorAll('.gsap-reveal');
+      if (textEls?.length) {
+        tl.fromTo(
+          textEls,
+          { clipPath: 'inset(100% 0% 0% 0%)' },
+          {
+            clipPath: 'inset(0% 0% 0% 0%)',
+            duration: 0.9,
+            stagger: 0.12,
+            ease: 'power2.inOut',
+          },
+          0.3
+        );
+      }
+    });
+
+    return () => ctx.revert();
+  }, []);
 
   const toggleFullscreen = useCallback(() => {
     setIsFullscreen(!isFullscreen);
@@ -81,36 +131,7 @@ export default function ProductDetailsClient({ product }) {
     // Set form load time for spam detection
     setFormLoadTime(Date.now());
 
-    // Facebook Pixel
-    if (!window.fbq) {
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = '2.0';
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(
-        window,
-        document,
-        'script',
-        'https://connect.facebook.net/en_US/fbevents.js',
-      );
-      window.fbq('init', '1398430317981375');
-      window.fbq('track', 'PageView');
-    }
-
-    // Preload images
+    // Preload images first (high priority)
     if (product?.images?.[0]) {
       preloadImage(product.images[0].filePath);
       setImageLoaded(true);
@@ -124,7 +145,42 @@ export default function ProductDetailsClient({ product }) {
     // Escape key handler
     const handleEsc = (e) => e.key === 'Escape' && router.back();
     window.addEventListener('keydown', handleEsc);
-    return () => window.removeEventListener('keydown', handleEsc);
+
+    // Defer Facebook Pixel - load after page is interactive
+    const fbTimeout = setTimeout(() => {
+      if (!window.fbq) {
+        !(function (f, b, e, v, n, t, s) {
+          if (f.fbq) return;
+          n = f.fbq = function () {
+            n.callMethod
+              ? n.callMethod.apply(n, arguments)
+              : n.queue.push(arguments);
+          };
+          if (!f._fbq) f._fbq = n;
+          n.push = n;
+          n.loaded = !0;
+          n.version = '2.0';
+          n.queue = [];
+          t = b.createElement(e);
+          t.async = !0;
+          t.src = v;
+          s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s);
+        })(
+          window,
+          document,
+          'script',
+          'https://connect.facebook.net/en_US/fbevents.js',
+        );
+        window.fbq('init', '1398430317981375');
+        window.fbq('track', 'PageView');
+      }
+    }, 3000);
+
+    return () => {
+      window.removeEventListener('keydown', handleEsc);
+      clearTimeout(fbTimeout);
+    };
   }, [product, router, preloadImage]);
 
   const handleImageSelect = useCallback(
@@ -197,6 +253,8 @@ export default function ProductDetailsClient({ product }) {
 
   return (
     <main
+      ref={pageRef}
+      style={{ opacity: 0 }}
       className={`min-h-screen bg-black text-white ${montserrat.className}`}
     >
       <Navbar home={true} />
@@ -211,6 +269,7 @@ export default function ProductDetailsClient({ product }) {
 
       <div className='grid md:grid-cols-2 pt-14'>
         <section
+          ref={imageRef}
           className={`${
             isFullscreen ? 'fixed inset-0 z-50 bg-black' : 'relative'
           } p-4 flex items-center justify-center`}
@@ -230,7 +289,10 @@ export default function ProductDetailsClient({ product }) {
 
               <div
                 className='relative w-full h-full'
-                style={{ opacity: imageLoaded ? 1 : 0 }}
+                style={{
+                  opacity: imageLoaded ? 1 : 0,
+                  transition: 'opacity 0.4s ease',
+                }}
               >
                 {isVideoSlide && product.video ? (
                   <video
@@ -315,19 +377,17 @@ export default function ProductDetailsClient({ product }) {
           )}
         </section>
 
-        <motion.section
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+        <section
+          ref={detailsRef}
           className='p-4 md:p-10 flex flex-col 2xl:mt-20 justify-between bg-black z-10'
         >
           <div>
-            <h1 className='text-4xl md:text-4xl 2xl:text-6xl 2xl:mb-20 mb-6 capitalize font-light tracking-tight'>
+            <h1 className='gsap-reveal text-4xl md:text-4xl 2xl:text-6xl 2xl:mb-20 mb-6 capitalize font-light tracking-tight'>
               {product.title}
             </h1>
 
             {product.collabtext && (
-              <div className='mb-4 flex items-center'>
+              <div className='gsap-reveal mb-4 flex items-center'>
                 <span className='text-gray-400 text-sm mr-2'>
                   Collaboration with
                 </span>
@@ -361,7 +421,7 @@ export default function ProductDetailsClient({ product }) {
             )}
 
             <div className='flex flex-col gap-4 text-sm 2xl:space-y-8'>
-              <div className='grid grid-cols-2 md:grid-cols-3 gap-2'>
+              <div className='gsap-reveal grid grid-cols-2 md:grid-cols-3 gap-2'>
                 <div>
                   <h4 className='font-semibold text-gray-400 text-xs mb-1'>
                     Dimension
@@ -395,7 +455,7 @@ export default function ProductDetailsClient({ product }) {
               </div>
 
               {product.material === 'Marble' && (
-                <div className='flex flex-col gap-2'>
+                <div className='gsap-reveal flex flex-col gap-2'>
                   <h2 className='text-lg mb-2'>MARBLES</h2>
                   <div className='flex flex-wrap gap-4'>
                     {marbles.map((marble) => (
@@ -422,11 +482,11 @@ export default function ProductDetailsClient({ product }) {
                 </div>
               )}
 
-              <div className='mt-6 border-t border-gray-700 pt-4 text-sm text-white font-light whitespace-pre-line leading-relaxed'>
+              <div className='gsap-reveal mt-6 border-t border-gray-700 pt-4 text-sm text-white font-light whitespace-pre-line leading-relaxed'>
                 {product.description}
               </div>
 
-              <div className='mt-10 flex gap-4 flex-col md:flex-row flex-wrap'>
+              <div className='gsap-reveal mt-10 flex gap-4 flex-col md:flex-row flex-wrap'>
                 <a href={product.pdf} target='_blank' rel='noopener noreferrer'>
                   <Button
                     variant='outline'
@@ -444,7 +504,7 @@ export default function ProductDetailsClient({ product }) {
               </div>
             </div>
           </div>
-        </motion.section>
+        </section>
       </div>
 
       <AnimatePresence>
