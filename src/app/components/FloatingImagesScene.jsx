@@ -363,6 +363,15 @@ export default function FloatingImagesScene() {
   const hasMouseMoved        = useRef(false);
   const [tooltipVisible, setTooltipVisible] = useState(false);
 
+  // Reset zoom state on back-navigation (popstate) or re-mount
+  useEffect(() => {
+    setZoomTarget(null);
+    zoomHrefRef.current = null;
+    const onPopState = () => { setZoomTarget(null); zoomHrefRef.current = null; };
+    window.addEventListener('popstate', onPopState);
+    return () => window.removeEventListener('popstate', onPopState);
+  }, []);
+
   const monsterProducts = useMemo(() =>
     newImagePaths.filter((p) => p.group?.includes('Jina Shilp')), []);
 
