@@ -363,13 +363,22 @@ export default function FloatingImagesScene() {
   const hasMouseMoved        = useRef(false);
   const [tooltipVisible, setTooltipVisible] = useState(false);
 
-  // Reset zoom state on back-navigation (popstate) or re-mount
+  // Force full reload on bfcache restore so the WebGL context + scene reinitialise
   useEffect(() => {
     setZoomTarget(null);
     zoomHrefRef.current = null;
-    const onPopState = () => { setZoomTarget(null); zoomHrefRef.current = null; };
-    window.addEventListener('popstate', onPopState);
-    return () => window.removeEventListener('popstate', onPopState);
+
+    const resetZoom = () => { setZoomTarget(null); zoomHrefRef.current = null; };
+    const onPageShow = (e) => {
+      if (e.persisted) window.location.reload();
+    };
+
+    window.addEventListener('popstate', resetZoom);
+    window.addEventListener('pageshow', onPageShow);
+    return () => {
+      window.removeEventListener('popstate', resetZoom);
+      window.removeEventListener('pageshow', onPageShow);
+    };
   }, []);
 
   const monsterProducts = useMemo(() =>
