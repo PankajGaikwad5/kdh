@@ -48,4 +48,10 @@ export const catalogues = [
     image: '/assets/blum.png',
     year: '2023',
   },
+  {
+    group: 'monster_4.0',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCgGWidtZQpOq9no3vVs5yPKXR8gEYuikGUw',
+    image: '/updatedcollabs/square_knots.png',
+    year: '2026',
+  },
 ];

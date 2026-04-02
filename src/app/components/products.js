@@ -6762,65 +6762,116 @@ Because even your side table should speak volumes.`,
     title: 'MONSTER MEARR',
     group: 'monster_4.0',
     material: 'Carpet',
-    pdf: '#',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQueVcwCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.0/mirror/1.webp',
+        filePath: '/4.0/monstermirror/1.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.0/mirror/2.webp',
+        filePath: '/4.0/monstermirror/2.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.0/mirror/3.webp',
+        filePath: '/4.0/monstermirror/3.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.0/mirror/4.webp',
+        filePath: '/4.0/monstermirror/4.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.0/mirror/5.webp',
+        filePath: '/4.0/monstermirror/5.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.0/mirror/6.webp',
+        filePath: '/4.0/monstermirror/6.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.0/mirror/7.webp',
+        filePath: '/4.0/monstermirror/7.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.0/mirror/8.webp',
+        filePath: '/4.0/monstermirror/8.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/4.0/monstermirror/9.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/4.0/monstermirror/10.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/4.0/monstermirror/11.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/4.0/monstermirror/12.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/4.0/monstermirror/13.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/4.0/monstermirror/14.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/4.0/monstermirror/15.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
     ],
+     video:
+      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCIEyy8y4KW74xlzetoUdfERaY0bgNTvuMiQSj',
     description: `Not just a mirror.
 A little monster that lives on your wall.
 
@@ -6840,37 +6891,159 @@ The tactile yarn frame contrasts beautifully with the clean reflective glass, ma
     title: 'YODA TOTEM',
     group: 'monster_4.0',
     material: 'Carpet',
-    pdf: '#',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUXoz0QILaynKVcYuZHCDm1IeJRfoT4vBxS8i0',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.0/totem/1.webp',
+        filePath: '/4.0/monstertotem/1.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.0/totem/2.webp',
+        filePath: '/4.0/monstertotem/2.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.0/totem/3.webp',
+        filePath: '/4.0/monstertotem/3.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.0/totem/4.webp',
+        filePath: '/4.0/monstertotem/4.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/4.0/monstertotem/5.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/4.0/monstertotem/6.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/4.0/monstertotem/7.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/4.0/monstertotem/8.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/4.0/monstertotem/9.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/4.0/monstertotem/10.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/4.0/monstertotem/11.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/4.0/monstertotem/12.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/4.0/monstertotem/13.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/4.0/monstertotem/14.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/4.0/monstertotem/15.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/4.0/monstertotem/16.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/4.0/monstertotem/17.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/4.0/monstertotem/18.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/4.0/monstertotem/19.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/4.0/monstertotem/20.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/4.0/monstertotem/21.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      
     ],
+    video:
+      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCo4HqdvaFjWsXwrDTuK930HAGvn81cotf7hz4',
     description: `A family, translated into form.
 
 The Yoda Totem is a sculptural yarn installation that represents the quiet architecture of togetherness, a male, a female, and a baby, stacked in a symbolic vertical embrace.
@@ -6893,93 +7066,74 @@ A modern heirloom, wrapped in yarn, built on connection.`,
     title: 'MONSTER TABLE',
     group: 'monster_4.0',
     material: 'Carpet',
-    pdf: '#',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUIfcmHFW6qU3iBow9cLQK4A1kuMTGmF8rel2f',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.0/yodacarpet/1.webp',
+        filePath: '/4.0/monstertable/1.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.0/yodacarpet/2.webp',
+        filePath: '/4.0/monstertable/2.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.0/yodacarpet/3.webp',
+        filePath: '/4.0/monstertable/3.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.0/yodacarpet/4.webp',
+        filePath: '/4.0/monstertable/4.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.0/yodacarpet/5.webp',
+        filePath: '/4.0/monstertable/5.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.0/yodacarpet/6.webp',
+        filePath: '/4.0/monstertable/6.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.0/yodacarpet/7.webp',
+        filePath: '/4.0/monstertable/7.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.0/yodacarpet/8.webp',
+        filePath: '/4.0/monstertable/8.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.0/yodacarpet/9.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.0/yodacarpet/10.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.0/yodacarpet/11.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/monster4.0/yodacarpet/12.webp',
+        filePath: '/4.0/monstertable/9.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
     ],
+    video:
+      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCl9HKlKQzg6WDauGf8esyvqEY9A7IOLlRHrcZ',
     description: `A creature, holding up your everyday.
 
 The Monster Table is where function meets fantasy. A sleek circular glass top rests delicately above a plush, yarn-wrapped form that almost disappears into its own soft blue carpet. Only two glowing eyes give it away, quiet, watchful, alive.
