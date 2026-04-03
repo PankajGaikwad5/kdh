@@ -269,8 +269,167 @@ function CameraAnimator({ zoomTarget, onZoomComplete }) {
   return null;
 }
 
+// ─── IntroTextOverlay ─────────────────────────────────────────────────────────
+function IntroTextOverlay({ isVisible, onComplete }) {
+  const rootRef    = useRef(null);
+  const contentRef = useRef(null);
+  const labelRef   = useRef(null);
+  const eventRef   = useRef(null);
+  const lineRef    = useRef(null);
+  const collabRef  = useRef(null);
+
+  useEffect(() => {
+    if (!isVisible || !rootRef.current) return;
+
+    gsap.set(rootRef.current, { opacity: 0 });
+    gsap.set(contentRef.current, { y: 0, scale: 1, opacity: 1 });
+    gsap.set([labelRef.current, eventRef.current, collabRef.current], { y: 20, opacity: 0 });
+    gsap.set(lineRef.current, { scaleX: 0, opacity: 0, transformOrigin: 'center' });
+
+    const tl = gsap.timeline({
+      onComplete: () => {
+        const exit = gsap.timeline({ onComplete });
+        gsap.set(contentRef.current, { transformOrigin: '50% 50%' });
+        // Step 1 — scale down in place
+        exit.to(contentRef.current, {
+          scale: 0.65,
+          duration: 0.85, ease: 'power2.inOut',
+        });
+        // Step 2 — fly up and fade, starts 0.4s after scale begins
+        exit.to(contentRef.current, {
+          y: '-100vh', opacity: 0,
+          duration: 0.9, ease: 'power2.in',
+        }, '+=0.0');
+        exit.to(rootRef.current, {
+          opacity: 0, duration: 0.45, ease: 'power1.in',
+        }, '-=0.45');
+      },
+    });
+
+    tl.to(rootRef.current,  { opacity: 1, duration: 0.4, ease: 'power2.out' });
+    tl.to(labelRef.current, { y: 0, opacity: 1, duration: 0.5, ease: 'power3.out' }, '+=0.05');
+    tl.to(eventRef.current, { y: 0, opacity: 1, duration: 0.55, ease: 'power3.out' }, '-=0.2');
+    tl.to(lineRef.current,  { scaleX: 1, opacity: 1, duration: 0.45, ease: 'power2.inOut' }, '-=0.05');
+    tl.to(collabRef.current,{ y: 0, opacity: 1, duration: 0.5, ease: 'power3.out' }, '-=0.1');
+    tl.to({}, { duration: 2.2 });
+
+    return () => tl.kill();
+  }, [isVisible, onComplete]);
+
+  if (!isVisible) return null;
+
+  return (
+    <div
+      ref={rootRef}
+      style={{
+        position: 'fixed', inset: 0, zIndex: 90,
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        background: 'rgba(0,0,0,0.91)',
+        pointerEvents: 'none',
+      }}
+    >
+      <div ref={contentRef} style={{
+        textAlign: 'center',
+        fontFamily: "'Montserrat', 'Helvetica Neue', sans-serif",
+        color: '#fff',
+        width: '100%',
+        padding: '0 clamp(20px, 5vw, 60px)',
+        willChange: 'transform, opacity',
+      }}>
+
+        {/* "PRESENTING AT" label */}
+        <p ref={labelRef} style={{
+          margin: '0 0 clamp(14px, 2.5vw, 26px)',
+          fontSize: 'clamp(9px, 1.1vw, 14px)',
+          fontWeight: 500,
+          letterSpacing: '0.32em',
+          textTransform: 'uppercase',
+          color: 'rgba(255,255,255,0.3)',
+          willChange: 'transform,opacity',
+        }}>
+          Presenting at
+        </p>
+
+        {/* Event block — name + location */}
+        <div ref={eventRef} style={{ marginBottom: 'clamp(24px, 4vw, 40px)', willChange: 'transform,opacity' }}>
+          <p style={{
+            margin: '0 0 clamp(6px, 1vw, 12px)',
+            fontSize: 'clamp(28px, 5.2vw, 78px)',
+            fontWeight: 300,
+            letterSpacing: '0.12em',
+            textTransform: 'uppercase',
+            color: '#fff',
+            lineHeight: 1,
+          }}>
+            Salone Raritas
+          </p>
+          <p style={{
+            margin: 0,
+            fontSize: 'clamp(10px, 1.35vw, 17px)',
+            fontWeight: 300,
+            letterSpacing: '0.25em',
+            textTransform: 'uppercase',
+            color: 'rgba(255,255,255,0.38)',
+          }}>
+            Rho Fiera · Milano · 2026
+          </p>
+        </div>
+
+        {/* Divider */}
+        <div ref={lineRef} style={{
+          width: 'clamp(36px, 4vw, 56px)',
+          height: '1px',
+          background: 'rgba(255,255,255,0.18)',
+          margin: '0 auto clamp(24px, 4vw, 40px)',
+          willChange: 'transform,opacity',
+        }} />
+
+        {/* Collaboration block */}
+        <div ref={collabRef} style={{ willChange: 'transform,opacity' }}>
+          <p style={{
+            margin: '0 0 clamp(6px, 1vw, 10px)',
+            fontSize: 'clamp(9px, 1.1vw, 14px)',
+            fontWeight: 400,
+            letterSpacing: '0.32em',
+            textTransform: 'uppercase',
+            color: 'rgba(255,255,255,0.3)',
+          }}>
+            In collaboration with
+          </p>
+          <svg
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 387.98 54.85"
+            xmlns="http://www.w3.org/2000/svg"
+            style={{
+              width: 'clamp(140px, 22vw, 320px)',
+              height: 'auto',
+              opacity: 0.82,
+              display: 'block',
+              margin: '0 auto',
+            }}
+          >
+            <g fill="white">
+              <path d="M0 39.46c.73 4.37 2.44 7.81 5.07 10.24 2.76 2.51 6.33 3.79 10.6 3.79 4.5 0 8.31-1.5 11.34-4.47 3-2.94 4.53-6.72 4.53-11.24 0-3.36-.92-6.23-2.75-8.53-1.85-2.33-4.83-4.33-8.87-5.96l-5.09-2.08c-3.91-1.61-5.89-3.8-5.89-6.52 0-1.97.78-3.62 2.31-4.92 1.5-1.29 3.41-1.95 5.68-1.95 1.84 0 3.37.38 4.56 1.14 1.05.61 2.12 1.82 3.24 3.67l5.3-3.14c-3.2-5.28-7.46-7.85-13.02-7.85-4.2 0-7.76 1.26-10.57 3.76-2.79 2.46-4.21 5.55-4.21 9.2 0 5.49 3.31 9.56 10.13 12.45l4.92 2.05c1.31.56 2.44 1.16 3.39 1.78.96.63 1.76 1.32 2.38 2.05a7.6 7.6 0 0 1 1.39 2.46c.29.88.44 1.85.44 2.9 0 2.61-.85 4.79-2.54 6.5s-3.83 2.58-6.38 2.58c-3.21 0-5.69-1.19-7.39-3.53-.88-1.15-1.5-3.07-1.87-5.87L0 39.45Z"/>
+              <path d="M50.67 53.49h27.05v-6.14H57.27V27.29h19.86v-6.14H57.27V7.79h20.45V1.66H50.67z"/>
+              <path d="M125.04 53.49h8.05l-15.66-21.55.83-.18c3.25-.7 5.9-2.31 7.88-4.79 1.98-2.49 2.99-5.51 2.99-8.98 0-4.43-1.6-9.97-4.76-12.66-2.88-2.43-7.67-3.67-14.25-3.67h-8.47v51.83h6.6V32.61h2.22zm-13.8-26.2h-3V7.79h3.29c7.42 0 11.19 4.73 11.19 10.3 0 5.91-3.86 9.2-11.48 9.2"/>
+              <path d="M188.96 53.49h7.23L172.27.21l-24.82 53.27h7.11l6.1-13.31h22.55l5.75 13.31Zm-8.41-19.45h-17.2l8.8-19.25z"/>
+              <path d="M215.33 53.49h6.59v-26.2h17.15v-6.14h-17.15V7.79h17.78V1.66h-24.37z"/>
+              <path d="M270.22 1.66v51.83h-6.6V1.66z"/>
+              <path d="m300.75 16.02 37.2 38.83V1.65h-6.6v37.27L294.15 0v53.49h6.6z"/>
+              <path d="M368.47 1.66v51.83h-6.6V1.66z"/>
+              <path d="M382.75 2.68c2.28 0 4.14 1.86 4.14 4.14s-1.86 4.14-4.14 4.14-4.14-1.86-4.14-4.14 1.86-4.14 4.14-4.14m0-1.09c-2.89 0-5.23 2.34-5.23 5.23s2.34 5.23 5.23 5.23 5.23-2.34 5.23-5.23-2.34-5.23-5.23-5.23"/>
+              <path d="M385.12 9.06c-.31-.55-.89-1.68-1.02-1.84 1.79-1.03.83-3.28-.66-3.28-1.04 0-2 0-2.34.01-.07 0-.13.06-.13.13v5.09c0 .09.07.16.16.16h.92c.09 0 .16-.06.16-.15V7.37l.63-.02 1 1.97h1.12c.15.01.25-.13.18-.26Zm-1.68-2.78h-1.24V5.02h1.3c.08 0 .51.14.51.66s-.57.61-.57.61Z"/>
+            </g>
+          </svg>
+        </div>
+
+      </div>
+    </div>
+  );
+}
+
 // ─── SceneController ──────────────────────────────────────────────────────────
-function SceneController({ galleryRef, setOverlayVisible }) {
+function SceneController({ galleryRef, setShowIntroText, setOverlayVisible }) {
   const hasAnimated = useRef(false);
   const timelineRef = useRef(null);
   const activeAnims = useRef([]);
@@ -304,13 +463,15 @@ function SceneController({ galleryRef, setOverlayVisible }) {
           }),
         );
       });
-      setTimeout(() => setOverlayVisible(true), 500);
+      // Show cinematic intro text first, then overlay after it completes
+      setTimeout(() => setShowIntroText(true), 500);
     }, null, 'explode');
   }
 
   useEffect(() => {
     const restore = () => {
       if (!galleryRef.current) return;
+      setShowIntroText(false);
       setOverlayVisible(false);
       const group = galleryRef.current;
       activeAnims.current.forEach((a) => a.kill());
@@ -331,7 +492,7 @@ function SceneController({ galleryRef, setOverlayVisible }) {
     };
     window.addEventListener('restoreSphere', restore);
     return () => window.removeEventListener('restoreSphere', restore);
-  }, [galleryRef, setOverlayVisible]);
+  }, [galleryRef, setShowIntroText, setOverlayVisible]);
 
   useEffect(() => () => {
     timelineRef.current?.kill();
@@ -354,6 +515,7 @@ function ScrollHandler({ onScrollIntoSphere, onScrollOutOfSphere }) {
 // ─── Main Component ───────────────────────────────────────────────────────────
 export default function FloatingImagesScene() {
   const [overlayVisible, setOverlayVisible] = useState(false);
+  const [showIntroText, setShowIntroText]  = useState(false);
   const [zoomTarget, setZoomTarget]        = useState(null);
   const zoomHrefRef          = useRef(null);
   const galleryRef           = useRef(null);
@@ -446,7 +608,7 @@ export default function FloatingImagesScene() {
               radius={20}
             />
           </ScrollControls>
-          <SceneController galleryRef={galleryRef} setOverlayVisible={setOverlayVisible} />
+          <SceneController galleryRef={galleryRef} setShowIntroText={setShowIntroText} setOverlayVisible={setOverlayVisible} />
         </Suspense>
 
         <CameraAnimator zoomTarget={zoomTarget} onZoomComplete={handleZoomComplete} />
@@ -456,6 +618,12 @@ export default function FloatingImagesScene() {
       </Canvas>
 
       <div className={`zoom-transition ${zoomTarget ? ' active' : ''}`} />
+
+      <IntroTextOverlay
+        isVisible={showIntroText}
+        onComplete={() => { setShowIntroText(false); setOverlayVisible(true); }}
+      />
+
       <CollectionOverlay isVisible={overlayVisible} onClose={handleCloseOverlay} products={monsterProducts} />
 
       <div

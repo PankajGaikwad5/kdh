@@ -73,6 +73,8 @@ const CollectionOverlay = ({ isVisible, onClose, products = [] }) => {
   if (!products.length && isVisible) return null; // Safety
 
   return (
+    <>
+    <style dangerouslySetInnerHTML={{ __html: "@keyframes floatProduct { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-8px); } }" }} />
     <div
       ref={containerRef}
       className={`fixed inset-0 z-50 flex items-center justify-center pointer-events-none hidden ${montserrat.className}`}
@@ -80,7 +82,7 @@ const CollectionOverlay = ({ isVisible, onClose, products = [] }) => {
     >
       <div
         ref={cardRef}
-        className='relative w-full max-w-4xl mx-3 sm:mx-4 md:mx-6 bg-black/40 backdrop-blur-xl border border-white/10 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-10 lg:p-12 shadow-2xl pointer-events-auto overflow-hidden max-h-[95vh] overflow-y-auto'
+        className='relative w-full max-w-5xl 2xl:max-w-7xl mx-3 sm:mx-6 md:mx-10 backdrop-blur-md rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-12 lg:p-16 shadow-2xl pointer-events-auto overflow-hidden max-h-[95vh] overflow-y-auto'
       >
         {/* Close Button */}
         <button
@@ -92,15 +94,15 @@ const CollectionOverlay = ({ isVisible, onClose, products = [] }) => {
         </button>
 
         {/* Shine Effect Background */}
-        <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/5 to-transparent pointer-events-none' />
+        <div className='absolute top-0 left-0 w-full h-full bg-transparent pointer-events-none' />
 
         <div className='relative z-10 flex flex-col items-center text-center space-y-4 sm:space-y-6 md:space-y-8'>
           {/* Title Section */}
           <div ref={titleRef} className='space-y-1.5 sm:space-y-2 px-2 sm:px-0'>
-            <span className='text-[10px] sm:text-xs md:text-sm font-medium tracking-[0.2em] sm:tracking-[0.3em] text-white uppercase'>
+            <span className='text-[11px] sm:text-sm md:text-base font-medium tracking-[0.2em] sm:tracking-[0.3em] text-white uppercase'>
               New Collection Launch
             </span>
-            <h2 className='text-2xl sm:text-3xl md:text-4xl font-light text-white tracking-wide px-2'>
+            <h2 className='text-3xl sm:text-4xl md:text-4xl 2xl:text-5xl font-light text-white tracking-wide px-2'>
               {/* Monster 4.0 is here,{' '} */}
               <span className='font-semibold text-white/90 uppercase'>
                 Jina Shilp Collection is Here
@@ -111,7 +113,7 @@ const CollectionOverlay = ({ isVisible, onClose, products = [] }) => {
           {/* Products Grid */}
           <div
             ref={productsRef}
-            className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-5 md:gap-6 w-full mt-2 sm:mt-3 md:mt-4'
+            className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 sm:gap-6 md:gap-8 w-full mt-3 sm:mt-4 md:mt-6'
           >
             {/* We will showcase up to 3 products */}
             {products.slice(0, 4).map((product, idx) => (
@@ -119,19 +121,22 @@ const CollectionOverlay = ({ isVisible, onClose, products = [] }) => {
                 key={idx}
                 className='group relative flex flex-col items-center'
               >
-                <div className='relative w-full aspect-square bg-white/5 rounded-xl sm:rounded-2xl overflow-hidden border border-white/5 hover:border-gray-500/30 transition-all duration-500 flex items-center justify-center p-3 sm:p-4'>
-                  {/* Placeholder for Product Image - Assuming we have URLs */}
+                <div className='relative w-full aspect-square bg-transparent rounded-xl sm:rounded-2xl overflow-hidden hover:border-gray-500/30 transition-all duration-500 flex items-center justify-center p-3 sm:p-4'>
                   {product.path ? (
                     <img
                       src={product.path}
                       alt={product.name}
                       className='object-contain w-full h-full transform group-hover:scale-110 transition-transform duration-700'
+                      style={{
+                        animation: `floatProduct 3.6s ease-in-out infinite`,
+                        animationDelay: `${idx * 0.5}s`,
+                      }}
                     />
                   ) : (
                     <div className='w-10 h-10 sm:w-12 sm:h-12 bg-white/10 rounded-full' />
                   )}
                 </div>
-                <h3 className='mt-2.5 sm:mt-3 md:mt-4 text-xs sm:text-sm font-medium text-white/50 group-hover:text-white transition-colors'>
+                <h3 className='mt-3 sm:mt-4 md:mt-5 text-sm sm:text-base 2xl:text-lg font-medium text-white/50 group-hover:text-white transition-colors'>
                   {product.name || `Product ${idx + 1}`}
                 </h3>
               </div>
@@ -143,7 +148,7 @@ const CollectionOverlay = ({ isVisible, onClose, products = [] }) => {
             ref={buttonRef}
             className='pt-2 sm:pt-3 md:pt-4 w-full sm:w-auto'
           >
-            <button className='group relative px-6 sm:px-8 py-3 sm:py-3.5 bg-white text-black font-medium tracking-wider text-xs sm:text-sm rounded-full overflow-hidden transition-transform hover:scale-105 active:scale-95 w-full sm:w-auto touch-manipulation'>
+            <button className='group relative px-8 sm:px-10 py-3.5 sm:py-4 bg-white text-black font-medium tracking-wider text-sm sm:text-base rounded-full overflow-hidden transition-transform hover:scale-105 active:scale-95 w-full sm:w-auto touch-manipulation'>
               <Link href='./collections/js'>
                 <span className='relative z-10 flex items-center justify-center gap-2'>
                   EXPLORE COLLECTION
@@ -159,6 +164,7 @@ const CollectionOverlay = ({ isVisible, onClose, products = [] }) => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
