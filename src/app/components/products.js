@@ -6888,7 +6888,7 @@ The tactile yarn frame contrasts beautifully with the clean reflective glass, ma
     _id: {
       $oid: 'monster4totem',
     },
-    title: 'YODA TOTEM',
+    title: 'monster yodaa miami edition',
     group: 'monster_4.0',
     material: 'Carpet',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUXoz0QILaynKVcYuZHCDm1IeJRfoT4vBxS8i0',
@@ -7063,7 +7063,7 @@ A modern heirloom, wrapped in yarn, built on connection.`,
     _id: {
       $oid: 'monster4yodacarpet',
     },
-    title: 'MONSTER TABLE',
+    title: 'monster rug civilization edit',
     group: 'monster_4.0',
     material: 'Carpet',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUIfcmHFW6qU3iBow9cLQK4A1kuMTGmF8rel2f',

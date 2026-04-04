@@ -480,13 +480,13 @@ export const newImagePaths = [
     productId: 'monster3sidetable',
   },
   {
-    name: 'Yoda Totem',
+    name: 'Monster Yoda Miami Edition',
     path: '/monster4.0/totem/png.png',
     group: 'Monster 4.0',
     productId: 'monster4totem',
   },
   {
-    name: 'Monster Table',
+    name: 'Monster Rug Civilization Edition',
     path: '/monster4.0/yodacarpet/yodacarpet.webp',
     group: 'Monster 4.0',
     productId: 'monster4yodacarpet',
@@ -993,13 +993,13 @@ export const newImagePaths = [
         productId: 'monster3sidetable',
       },
       {
-        name: 'Yoda Totem',
+        name: 'Monster Yodaa Miami Edition',
         path: '/monster4.0/totem/png.png',
         group: 'Monster 4.0',
         productId: 'monster4totem',
       },
       {
-        name: 'Monster Table',
+        name: 'Monster Rug Civilization Editon',
         path: '/monster4.0/yodacarpet/yodacarpet.webp',
         group: 'Monster 4.0',
         productId: 'monster4yodacarpet',
