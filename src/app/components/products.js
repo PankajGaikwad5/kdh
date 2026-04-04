@@ -6881,7 +6881,7 @@ The elongated oval shape stands tall on two playful feet, while the glowing, eye
 It’s whimsical without being childish. Bold without being loud.
 
 The tactile yarn frame contrasts beautifully with the clean reflective glass, making it both a design statement and a conversation starter. Perfect for bedrooms, creative spaces, or anywhere that needs a bit of personality.`,
-    dimensions: '',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8QtKyI64oKUn37W6wsTlRmDBFhGrviIjcMxV',
     __v: 0,
   },
   {
@@ -7056,7 +7056,7 @@ This is not just a decorative object.
 It’s a totem of continuity and of love.
 
 A modern heirloom, wrapped in yarn, built on connection.`,
-    dimensions: '',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSuzN0FAKnraNxkI5vbez6dT2q8M0osBfR9At',
     __v: 0,
   },
   {
@@ -7145,7 +7145,7 @@ It’s not loud. It doesn’t shout for attention.
 But once you see it, you can’t unsee it.
 
 A sculptural presence disguised as furniture.`,
-    dimensions: '',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUucquA9yVvD2FOkC3NsiU7yPRWb18aeZThVzG',
     __v: 0,
   },
   {
