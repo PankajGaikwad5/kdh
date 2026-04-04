@@ -1,13 +1,35 @@
 'use client';
 import React, { useEffect, useState, useRef } from 'react';
+import dynamic from 'next/dynamic';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import FloatingImagesScene from './components/FloatingImagesScene';
 import Image from 'next/image';
+import { newImagePaths } from './components/imagePaths';
+
+const FloatingImagesScene = dynamic(
+  () => import('./components/FloatingImagesScene'),
+  {
+    ssr: false,
+    loading: () => (
+      <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: '#000' }} />
+    ),
+  }
+);
 
 const page = () => {
   const [dimensions, setDimensions] = useState({ width: 200, height: 200 });
   const floatingImagesRef = useRef(null);
+
+  // Kick off texture preloading immediately — while the Three.js chunk is still
+  // downloading, the browser fetches all 88 images into its HTTP cache so that
+  // useTexture() inside FloatingImagesScene gets instant cache-hits.
+  useEffect(() => {
+    const uniquePaths = [...new Set(newImagePaths.map((p) => p.path))];
+    uniquePaths.forEach((src) => {
+      const img = new window.Image();
+      img.src = src;
+    });
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {

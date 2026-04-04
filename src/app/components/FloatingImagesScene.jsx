@@ -514,6 +514,7 @@ function ScrollHandler({ onScrollIntoSphere, onScrollOutOfSphere }) {
 
 // ─── Main Component ───────────────────────────────────────────────────────────
 export default function FloatingImagesScene() {
+  const isMobile = useMemo(() => typeof window !== 'undefined' && window.innerWidth < 768, []);
   const [overlayVisible, setOverlayVisible] = useState(false);
   const [showIntroText, setShowIntroText]  = useState(false);
   const [zoomTarget, setZoomTarget]        = useState(null);
@@ -588,12 +589,12 @@ export default function FloatingImagesScene() {
     <>
       <Canvas
         camera={{ position: [0, 0, 50], fov: 65, near: 0.1, far: 800 }}
-        dpr={[1, 1.5]}
+        dpr={isMobile ? [0.5, 1] : [1, 1.5]}
         gl={{ powerPreference: 'high-performance', antialias: false, stencil: false, depth: true, alpha: false }}
         style={{ position:'absolute', top:0, left:0, width:'100%', height:'100%', background:'#000' }}
       >
         <ambientLight intensity={1} />
-        <Starfield count={200} radius={25} />
+        <Starfield count={isMobile ? 80 : 200} radius={25} />
 
         <Suspense fallback={<CustomLoader />}>
           <ScrollControls pages={2} damping={0.1}>
