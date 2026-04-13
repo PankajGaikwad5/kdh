@@ -149,7 +149,7 @@ const CollectionOverlay = ({ isVisible, onClose, products = [] }) => {
             className='pt-2 sm:pt-3 md:pt-4 w-full sm:w-auto'
           >
             <button className='group relative px-8 sm:px-10 py-3.5 sm:py-4 bg-white text-black font-medium tracking-wider text-sm sm:text-base rounded-full overflow-hidden transition-transform hover:scale-105 active:scale-95 w-full sm:w-auto touch-manipulation'>
-              <Link href='./collections/js'>
+              <Link href='./collections/jina_shilp'>
                 <span className='relative z-10 flex items-center justify-center gap-2'>
                   EXPLORE COLLECTION
                   <ArrowRight
