@@ -297,11 +297,11 @@ function IntroTextOverlay({ isVisible, onComplete }) {
         });
         // Step 2 — fly up and fade, starts 0.4s after scale begins
         exit.to(contentRef.current, {
-          y: '-100vh', opacity: 0,
+          scale: 0, opacity: 0,
           duration: 0.9, ease: 'power2.in',
         }, '+=0.0');
         exit.to(rootRef.current, {
-          opacity: 0, duration: 0.45, ease: 'power1.in',
+          scale: 0,opacity: 0, duration: 0.45, ease: 'power1.in',
         }, '-=0.45');
       },
     });
@@ -324,14 +324,14 @@ function IntroTextOverlay({ isVisible, onComplete }) {
       style={{
         position: 'fixed', inset: 0, zIndex: 90,
         display: 'flex', alignItems: 'center', justifyContent: 'center',
-        background: 'rgba(0,0,0,0.91)',
+        background: 'transparent',
         pointerEvents: 'none',
       }}
     >
       <div ref={contentRef} style={{
         textAlign: 'center',
         fontFamily: "'Montserrat', 'Helvetica Neue', sans-serif",
-        color: '#fff',
+        color: '#111',
         width: '100%',
         padding: '0 clamp(20px, 5vw, 60px)',
         willChange: 'transform, opacity',
@@ -344,7 +344,7 @@ function IntroTextOverlay({ isVisible, onComplete }) {
           fontWeight: 500,
           letterSpacing: '0.32em',
           textTransform: 'uppercase',
-          color: 'rgba(255,255,255,0.3)',
+          color: 'rgba(0,0,0,0.4)',
           willChange: 'transform,opacity',
         }}>
           Presenting at
@@ -358,7 +358,7 @@ function IntroTextOverlay({ isVisible, onComplete }) {
             fontWeight: 300,
             letterSpacing: '0.12em',
             textTransform: 'uppercase',
-            color: '#fff',
+            color: '#111',
             lineHeight: 1,
           }}>
             Salone Raritas
@@ -369,7 +369,7 @@ function IntroTextOverlay({ isVisible, onComplete }) {
             fontWeight: 300,
             letterSpacing: '0.25em',
             textTransform: 'uppercase',
-            color: 'rgba(255,255,255,0.38)',
+            color: 'rgba(0,0,0,0.45)',
           }}>
             Rho Fiera · Milano · 2026
           </p>
@@ -379,7 +379,7 @@ function IntroTextOverlay({ isVisible, onComplete }) {
         <div ref={lineRef} style={{
           width: 'clamp(36px, 4vw, 56px)',
           height: '1px',
-          background: 'rgba(255,255,255,0.18)',
+          background: 'rgba(0,0,0,0.18)',
           margin: '0 auto clamp(24px, 4vw, 40px)',
           willChange: 'transform,opacity',
         }} />
@@ -392,7 +392,7 @@ function IntroTextOverlay({ isVisible, onComplete }) {
             fontWeight: 400,
             letterSpacing: '0.32em',
             textTransform: 'uppercase',
-            color: 'rgba(255,255,255,0.3)',
+            color: 'rgba(0,0,0,0.4)',
           }}>
             In collaboration with
           </p>
@@ -408,7 +408,7 @@ function IntroTextOverlay({ isVisible, onComplete }) {
               margin: '0 auto',
             }}
           >
-            <g fill="white">
+            <g fill="#000">
               <path d="M0 39.46c.73 4.37 2.44 7.81 5.07 10.24 2.76 2.51 6.33 3.79 10.6 3.79 4.5 0 8.31-1.5 11.34-4.47 3-2.94 4.53-6.72 4.53-11.24 0-3.36-.92-6.23-2.75-8.53-1.85-2.33-4.83-4.33-8.87-5.96l-5.09-2.08c-3.91-1.61-5.89-3.8-5.89-6.52 0-1.97.78-3.62 2.31-4.92 1.5-1.29 3.41-1.95 5.68-1.95 1.84 0 3.37.38 4.56 1.14 1.05.61 2.12 1.82 3.24 3.67l5.3-3.14c-3.2-5.28-7.46-7.85-13.02-7.85-4.2 0-7.76 1.26-10.57 3.76-2.79 2.46-4.21 5.55-4.21 9.2 0 5.49 3.31 9.56 10.13 12.45l4.92 2.05c1.31.56 2.44 1.16 3.39 1.78.96.63 1.76 1.32 2.38 2.05a7.6 7.6 0 0 1 1.39 2.46c.29.88.44 1.85.44 2.9 0 2.61-.85 4.79-2.54 6.5s-3.83 2.58-6.38 2.58c-3.21 0-5.69-1.19-7.39-3.53-.88-1.15-1.5-3.07-1.87-5.87L0 39.45Z"/>
               <path d="M50.67 53.49h27.05v-6.14H57.27V27.29h19.86v-6.14H57.27V7.79h20.45V1.66H50.67z"/>
               <path d="M125.04 53.49h8.05l-15.66-21.55.83-.18c3.25-.7 5.9-2.31 7.88-4.79 1.98-2.49 2.99-5.51 2.99-8.98 0-4.43-1.6-9.97-4.76-12.66-2.88-2.43-7.67-3.67-14.25-3.67h-8.47v51.83h6.6V32.61h2.22zm-13.8-26.2h-3V7.79h3.29c7.42 0 11.19 4.73 11.19 10.3 0 5.91-3.86 9.2-11.48 9.2"/>
@@ -525,6 +525,7 @@ export default function FloatingImagesScene() {
   const tooltipRef           = useRef(null);
   const hasMouseMoved        = useRef(false);
   const [tooltipVisible, setTooltipVisible] = useState(false);
+  const rippleRef            = useRef(null);
 
   // Force full reload on bfcache restore so the WebGL context + scene reinitialise
   useEffect(() => {
@@ -541,6 +542,38 @@ export default function FloatingImagesScene() {
     return () => {
       window.removeEventListener('popstate', resetZoom);
       window.removeEventListener('pageshow', onPageShow);
+    };
+  }, []);
+
+  // ── White ripple: expand on explode, contract on restore ──
+  useEffect(() => {
+    const onExplode = () => {
+      if (!rippleRef.current) return;
+      gsap.killTweensOf(rippleRef.current);
+      gsap.set(rippleRef.current, { display: 'block', clipPath: 'circle(0% at 50% 50%)' });
+      gsap.to(rippleRef.current, {
+        clipPath: 'circle(150% at 50% 50%)',
+        duration: 1.1,
+        ease: 'power2.out',
+      });
+    };
+    const onRestore = () => {
+      if (!rippleRef.current) return;
+      gsap.killTweensOf(rippleRef.current);
+      gsap.to(rippleRef.current, {
+        clipPath: 'circle(0% at 50% 50%)',
+        duration: 1.0,
+        ease: 'power2.in',
+        onComplete: () => {
+          if (rippleRef.current) gsap.set(rippleRef.current, { display: 'none' });
+        },
+      });
+    };
+    window.addEventListener('sphereExploded', onExplode);
+    window.addEventListener('restoreSphere',  onRestore);
+    return () => {
+      window.removeEventListener('sphereExploded', onExplode);
+      window.removeEventListener('restoreSphere',  onRestore);
     };
   }, []);
 
@@ -617,6 +650,21 @@ export default function FloatingImagesScene() {
           enabled={!zoomTarget}
           autoRotate={!overlayVisible && !zoomTarget} autoRotateSpeed={0.5} makeDefault />
       </Canvas>
+
+      {/* White ripple background overlay */}
+      <div
+        ref={rippleRef}
+        style={{
+          display: 'none',
+          position: 'fixed',
+          inset: 0,
+          zIndex: 2,
+          background: '#ffffff',
+          clipPath: 'circle(0% at 50% 50%)',
+          pointerEvents: 'none',
+          willChange: 'clip-path',
+        }}
+      />
 
       <div className={`zoom-transition ${zoomTarget ? ' active' : ''}`} />
 
