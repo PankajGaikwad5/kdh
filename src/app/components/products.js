@@ -7166,28 +7166,28 @@ A sculptural presence disguised as furniture.`,
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/js/cofeetable/1.webp',
+        filePath: '/js/updated/coffeetable/1.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/js/cofeetable/2.webp',
+        filePath: '/js/updated/coffeetable/2.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/js/cofeetable/3.webp',
+        filePath: '/js/updated/coffeetable/3.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/js/cofeetable/4.webp',
+        filePath: '/js/updated/coffeetable/4.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -7224,35 +7224,35 @@ Jina Shilp Coffee Table is meant to be a calm presence in a room—a place where
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/js/totem/1.webp',
+        filePath: '/js/updated/totem/1.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/js/totem/2.webp',
+        filePath: '/js/updated/totem/2.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/js/totem/3.webp',
+        filePath: '/js/updated/totem/3.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/js/totem/4.webp',
+        filePath: '/js/updated/totem/4.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/js/totem/5.webp',
+        filePath: '/js/updated/totem/5.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -7292,35 +7292,28 @@ The totem is meant to feel calm, grounded and thoughtful. It carries a quiet pre
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/js/diningtable/1.webp',
+        filePath: '/js/updated/diningtable/1.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/js/diningtable/2.webp',
+        filePath: '/js/updated/diningtable/2.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/js/diningtable/3.webp',
+        filePath: '/js/updated/diningtable/3.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/js/diningtable/4.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/js/diningtable/5.webp',
+        filePath: '/js/updated/diningtable/4.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -7359,42 +7352,21 @@ Jina Shilp Dining table is conceived as an object of presence—where form, mate
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/js/mirror/1.webp',
+        filePath: '/js/updated/mirror/1.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/js/mirror/2.webp',
+        filePath: '/js/updated/mirror/2.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/js/mirror/3.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/js/mirror/4.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/js/mirror/5.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/js/mirror/6.webp',
+        filePath: '/js/updated/mirror/3.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
