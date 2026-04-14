@@ -245,23 +245,23 @@ const CollectionOverlay = ({ isVisible, onClose, products = [] }) => {
       )}
 
       {/* Bottom row — name card left, controls right (matches reference) */}
-      <div className='absolute bottom-8 inset-x-6 sm:inset-x-10 z-30 flex items-end justify-between gap-4'>
+      <div className='absolute bottom-2 md:bottom-8 sm:inset-x-10 z-30 flex flex-col md:flex-row items-start md:items-end justify-between gap-4'>
 
         {/* Name card — only product name, no description */}
         <div
           ref={titleRef}
-          className='rounded-2xl px-6 py-5 text-black'
+          className='rounded-2xl px-2 py-2 text-black '
         >
-          <h2 className='text-xl sm:text-2xl font-semibold text-black'>
+          <h2 className='text-sm sm:text-2xl font-semibold text-black'>
             {items[activeIndex]?.name ?? ''}
           </h2>
-          <p className='text-black font-bold md:text-2xl uppercase tracking-wider text-center' >
+          <p className='text-black font-bold text-sm md:text-2xl uppercase tracking-wider text-center' >
           Jina Shilp Collection
         </p>
         </div>
 
         {/* Controls — right side */}
-        <div ref={controlsRef} className='flex flex-col items-end gap-3'>
+        <div ref={controlsRef} className='flex flex-row md:flex-col items-start mx-2 md:mx-0 md:items-end gap-3'>
           {/* Prev / dots / Next */}
           <div className='flex items-center gap-3 rounded-2xl px-4 py-3 bg-white/92' style={{ backdropFilter: 'blur(12px)' }}>
             <button onClick={goPrev} className='p-1.5 rounded-full hover:bg-gray-100 transition' aria-label='Previous'>
@@ -279,7 +279,7 @@ const CollectionOverlay = ({ isVisible, onClose, products = [] }) => {
 
           {/* Explore button */}
           <Link href='./collections/jina_shilp'>
-            <button className='group relative flex items-center gap-2 text-black border border-black/30 hover:border-none font-semibold rounded-full px-6 py-2.5 overflow-hidden hover:scale-105 active:scale-95 transition-transform shadow-md' style={{ letterSpacing: '0.1em', fontSize: 13 }}>
+            <button className='group relative flex items-center gap-2 text-black border border-black/30 hover:border-none font-semibold rounded-full px-6 py-2.5 overflow-hidden hover:scale-105 bg-{e6e6e6} md:bg-none active:scale-95 transition-transform shadow-md text-[0.5rem] md:text-sm 2xl:text-2xl' >
               <span className='relative z-10 flex items-center gap-2'>
                 EXPLORE COLLECTION
                 <ArrowRight size={13} className='group-hover:translate-x-1 transition-transform' />
