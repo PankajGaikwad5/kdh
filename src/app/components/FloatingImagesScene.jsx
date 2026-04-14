@@ -659,7 +659,7 @@ export default function FloatingImagesScene() {
           position: 'fixed',
           inset: 0,
           zIndex: 2,
-          background: '#ffffff',
+          background: '#e6e6e6',
           clipPath: 'circle(0% at 50% 50%)',
           pointerEvents: 'none',
           willChange: 'clip-path',
