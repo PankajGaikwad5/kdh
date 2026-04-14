@@ -255,7 +255,7 @@ const CollectionOverlay = ({ isVisible, onClose, products = [] }) => {
           <h2 className='text-xl sm:text-2xl font-semibold text-black'>
             {items[activeIndex]?.name ?? ''}
           </h2>
-          <p className='text-black font-bold uppercase tracking-wider text-center' >
+          <p className='text-black font-bold md:text-2xl uppercase tracking-wider text-center' >
           Jina Shilp Collection
         </p>
         </div>
