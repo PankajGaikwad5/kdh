@@ -196,7 +196,7 @@ const GroupProductsPage = () => {
               <div className='flex justify-center mt-8'>
                 <button
                   onClick={handleDownloadClick}
-                  className='px-8 py-3 border border-gray-600 text-gray-300 rounded-lg 
+                  className='px-4 py-1 border border-gray-600 text-gray-300 rounded-lg 
       hover:bg-gray-800 hover:text-white transition-all duration-300'
                 >
                   Download Catalogue

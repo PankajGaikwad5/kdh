@@ -54,4 +54,10 @@ export const catalogues = [
     image: '/updatedcollabs/square_knots.png',
     year: '2026',
   },
+  {
+    group: 'jina_shilp',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUNEigr4G5UuqxLjF0ygrW1ikRpXaHfGVvonDw',
+    image: '/assets/serafini.png',
+    year: '2026',
+  },
 ];
