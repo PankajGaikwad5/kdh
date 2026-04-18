@@ -165,10 +165,132 @@ export const collabs = [
         _id: '123',
       },
       {
-        fileName: 'new',
-        fileUrl: '/serafini/comingsoon.png',
-        name: 'Salone 2026',
-        _id: '123',
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/js/updated/coffeetable/1.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        name: 'Salone Raritas 2026',
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/js/updated/coffeetable/2.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        name: 'Salone Raritas 2026',
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/js/updated/coffeetable/3.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        name: 'Salone Raritas 2026',
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/js/updated/coffeetable/4.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        name: 'Salone Raritas 2026',
+      },
+       {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/js/updated/totem/1.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        name: 'Salone Raritas 2026',
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/js/updated/totem/2.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        name: 'Salone Raritas 2026',
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/js/updated/totem/3.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        name: 'Salone Raritas 2026',
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/js/updated/totem/4.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        name: 'Salone Raritas 2026',
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/js/updated/totem/5.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        name: 'Salone Raritas 2026',
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/js/updated/diningtable/1.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        name: 'Salone Raritas 2026',
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/js/updated/diningtable/2.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        name: 'Salone Raritas 2026',
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/js/updated/diningtable/3.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        name: 'Salone Raritas 2026',
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/js/updated/diningtable/4.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        name: 'Salone Raritas 2026',
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/js/updated/mirror/1.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        name: 'Salone Raritas 2026',
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/js/updated/mirror/2.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        name: 'Salone Raritas 2026',
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/js/updated/mirror/3.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        name: 'Salone Raritas 2026',
       },
     ],
     __v: 0,
