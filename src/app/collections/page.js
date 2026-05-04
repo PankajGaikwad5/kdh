@@ -82,7 +82,7 @@ const page = () => {
       id: 15,
       title: 'Monster 4.0',
       group: 'monster_4.0',
-      img: '/monster4.0/totem/png.png',
+      img: '/4.0/totempng.webp',
       projects: 'Yoda Totem, Yoda Carpet, Mirror Carpet',
     },
     {
