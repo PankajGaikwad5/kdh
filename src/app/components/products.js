@@ -7192,6 +7192,20 @@ A sculptural presence disguised as furniture.`,
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/updated/coffeetable/5.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/updated/coffeetable/6.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
     ],
     description: `The Jina Shilp Coffee Table is a quiet, grounded piece inspired by the simplicity and balance found in Jain architecture. It is designed to feel calm and stable, with a focus on natural materials and soft forms.
 
@@ -7257,6 +7271,34 @@ Jina Shilp Coffee Table is meant to be a calm presence in a room—a place where
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/updated/totem/6.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/updated/totem/7.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/updated/totem/8.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/updated/totem/9.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
     ],
     description: `
 The Jina Shilp Totem is a sculptural object inspired by the vertical journey seen in Jain temple architecture. The idea comes from the way temple pillars are built in layers, each part carrying meaning and detail. This piece brings those elements together into a single rising form, symbolising growth, balance and inner elevation.
@@ -7318,6 +7360,34 @@ The totem is meant to feel calm, grounded and thoughtful. It carries a quiet pre
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/updated/diningtable/5.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/updated/diningtable/6.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/updated/diningtable/7.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/updated/diningtable/8.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
     ],
     description: `Jina Shilp Dining Table is a sculptural expression rooted in the quiet strength of Jain architecture. It draws from temple pillars that embody balance, discipline, and spiritual order, translating these values into a contemporary context.
 
@@ -7367,6 +7437,27 @@ Jina Shilp Dining table is conceived as an object of presence—where form, mate
       {
         fileName: '1738927863060-Slide1.JPG',
         filePath: '/js/updated/mirror/3.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/updated/mirror/4.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/updated/mirror/5.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/updated/mirror/6.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
