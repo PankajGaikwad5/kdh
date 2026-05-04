@@ -50,7 +50,7 @@ export const catalogues = [
   },
   {
     group: 'monster_4.0',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCgGWidtZQpOq9no3vVs5yPKXR8gEYuikGUw',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHtVaA7SaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
     image: '/updatedcollabs/square_knots.png',
     year: '2026',
   },
