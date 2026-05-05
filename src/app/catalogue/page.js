@@ -152,6 +152,25 @@ const page = () => {
                   </a>
                 </span>
               </div>
+              <div className='uppercase flex flex-col gap-3'>
+                <img src='/cata/monster3.1.png' alt='' className='w-72' />
+                <h1 className='font-bold tracking-widest'>monster4.0</h1>
+                <span>
+                  <a
+                    target='_blank'
+                    href='https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHtVaA7SaRuWqD7EedXzJA3Zl95iyhsGU1kwQ'
+                    // onClick={(event) =>
+                    //   handleDownload(
+                    //     event,
+                    //     'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQsSTArCgpKiS14YXmU2JDcwG0vBsCL6dWNyP'
+                    //   )
+                    // }
+                    className='text-blue-600 hover:text-blue-900 transition-all duration-300'
+                  >
+                    view catalogue pdf
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>
