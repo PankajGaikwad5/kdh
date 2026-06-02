@@ -3659,7 +3659,7 @@ It doesn’t whisper luxury — it roars it. Because when you live big, even you
     _id: {
       $oid: '67a5eb9f4da9b29cd0f10b71',
     },
-    title: 'monster 2.0 yoda',
+    title: 'monster 2.0 yodaa',
     group: 'monster_2.0',
     material: 'Concrete Terazzo',
     collabtext: 'Bharat Floorings',
@@ -3743,10 +3743,10 @@ It doesn’t whisper luxury — it roars it. Because when you live big, even you
         thumbnail: '/assets/products/thumbnails/1738927007158-Slide4.JPG',
       },
     ],
-    description: `Meet YODA—a monster totem forged from over a century of Bharat Flooring’s terrazzo brilliance. 
+    description: `Meet YODAA a monster totem forged from over a century of Bharat Flooring’s terrazzo brilliance. 
 
 This is more than design; it’s a bold expression of heritage, material mastery, and fearless form. 
-Every layer tells a story, every curve breaks the mold. YODA doesn’t just stand—it owns the space it’s in. 
+Every layer tells a story, every curve breaks the mold. YODAA doesn’t just stand—it owns the space it’s in. 
 
 It’s vibrant, it’s unapologetic, and it redefines what terrazzo can be. 
 You’re not just looking at art—you’re looking at 100 years of innovation, stacked tall.`,
@@ -7046,7 +7046,7 @@ The tactile yarn frame contrasts beautifully with the clean reflective glass, ma
       'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCo4HqdvaFjWsXwrDTuK930HAGvn81cotf7hz4',
     description: `A family, translated into form.
 
-The Yoda Totem is a sculptural yarn installation that represents the quiet architecture of togetherness, a male, a female, and a baby, stacked in a symbolic vertical embrace.
+The Yodaa Totem is a sculptural yarn installation that represents the quiet architecture of togetherness, a male, a female, and a baby, stacked in a symbolic vertical embrace.
 
 Each figure is distinct in texture, color, and expression yet inseparable in structure. The male stands grounded and protective. The female radiates vibrancy and individuality. The baby, small and tender, becomes the emotional core, the reason they rise as one.
 

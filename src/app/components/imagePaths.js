@@ -156,7 +156,7 @@ export const newImagePaths = [
     productId: '67a5ebf14da9b29cd0f10b77',
   },
   {
-    name: 'Yoda',
+    name: 'Yodaa',
     path: '/optimized/yoda.webp',
     group: 'Monster 2.0',
     productId: '67a5eb9f4da9b29cd0f10b71',
@@ -480,7 +480,7 @@ export const newImagePaths = [
     productId: 'monster3sidetable',
   },
   {
-    name: 'Monster Yoda Miami Edition',
+    name: 'Monster Yodaa Miami Edition',
     path: '/monster4.0/totem/png.png',
     group: 'Monster 4.0',
     productId: 'monster4totem',
@@ -681,7 +681,7 @@ export const newImagePaths = [
         productId: '67a5ebf14da9b29cd0f10b77',
       },
       {
-        name: 'Yoda',
+        name: 'YodaA',
         path: '/optimized/yoda.webp',
         group: 'Monster 2.0',
         productId: '67a5eb9f4da9b29cd0f10b71',
