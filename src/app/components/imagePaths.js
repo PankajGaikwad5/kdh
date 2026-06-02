@@ -681,7 +681,7 @@ export const newImagePaths = [
         productId: '67a5ebf14da9b29cd0f10b77',
       },
       {
-        name: 'YodaA',
+        name: 'Yodaa',
         path: '/optimized/yoda.webp',
         group: 'Monster 2.0',
         productId: '67a5eb9f4da9b29cd0f10b71',
