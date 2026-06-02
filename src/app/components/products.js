@@ -384,6 +384,168 @@ This is Karan Desai at his best — where sculptural form meets unstoppable pres
   },
   {
     _id: {
+      $oid: '67a5ecf94da9b29cd0f10bb6',
+    },
+    title: 'matilda 2024 center table 2',
+    group: 'matilda_2024',
+    material: 'Marble',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUEbuppDLYFi7GYsQA2my03DTouek5wnIJXgjp',
+    images: [
+      {
+        fileName: '1738927353299-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUlaNXX3A9DZL6up3G75dgCY2rJjaQFwifBAEk',
+        _id: {
+          $oid: '67a5ecf94da9b29cd0f10bb7',
+        },
+      },
+      {
+        fileName: '1738927353299-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUa2vVaJzVIx6ZjWFiGhcRQJMUzft1drvPNTbL',
+        _id: {
+          $oid: '67a5ecf94da9b29cd0f10bb7',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927353299-Slide1.JPG',
+      },
+      {
+        fileName: '1738927353299-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUMrh8V2wfQbC4M3ZGkSm6KPAV10HlYU9dinrX',
+        _id: {
+          $oid: '67a5ecf94da9b29cd0f10bb7',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927353299-Slide1.JPG',
+      },
+      {
+        fileName: '1738927353299-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAQEIuaFJ1oeY2wnF0zQbWX83C4KujdSqt6MU',
+        _id: {
+          $oid: '67a5ecf94da9b29cd0f10bb7',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927353299-Slide1.JPG',
+      },
+      {
+        fileName: '1738927353299-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDR6QxI08FYI8sxbtc2ngQN4ZeSPwOKkv5yAj',
+        _id: {
+          $oid: '67a5ecf94da9b29cd0f10bb7',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927353299-Slide1.JPG',
+      },
+      {
+        fileName: '1738927353299-Slide1.JPG',
+        filePath:
+          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUeFv8RCcFPv1kdbg4tT0YfOS529XxhywHpVoU',
+        _id: {
+          $oid: '67a5ecf94da9b29cd0f10bb7',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927353299-Slide1.JPG',
+      },
+      {
+        fileName: '1738927353299-Slide1.JPG',
+        filePath: '/assets/products/1738927353299-Slide1.JPG',
+        _id: {
+          $oid: '67a5ecf94da9b29cd0f10bb7',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927353299-Slide1.JPG',
+      },
+      {
+        fileName: '1738927353301-Slide3.JPG',
+        filePath: '/assets/products/1738927353301-Slide3.JPG',
+        _id: {
+          $oid: '67a5ecf94da9b29cd0f10bb9',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927353301-Slide3.JPG',
+      },
+      {
+        fileName: '1738927353305-Slide6.JPG',
+        filePath: '/assets/products/1738927353305-Slide6.JPG',
+        _id: {
+          $oid: '67a5ecf94da9b29cd0f10bbc',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927353305-Slide6.JPG',
+      },
+      {
+        fileName: '1738927353306-Slide7.JPG',
+        filePath: '/assets/products/1738927353306-Slide7.JPG',
+        _id: {
+          $oid: '67a5ecf94da9b29cd0f10bbd',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927353306-Slide7.JPG',
+      },
+    ],
+    description: `This center table doesn’t just complete a room — it dominates it. 
+
+With a sculptural cross-shaped form carved from seamless white marble, it’s the perfect fusion of architectural audacity and refined taste. 
+Every angle is engineered to impress, every curve is calculated to stand out. 
+
+Designed by Karan Desai, this piece isn’t just furniture — it’s a power statement in stone. 
+Bold. Balanced. Built for spaces that don’t settle for ordinary.`,
+    dimensions:
+      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUE1947WYFi7GYsQA2my03DTouek5wnIJXgjpV',
+    __v: 0,
+  },
+   {
+    _id: {
+      $oid: 'm24centertable3',
+    },
+    title: 'Matilda 2024 Center Table 3',
+    group: 'matilda_2024',
+    material: 'Marble',
+    pdf: '/m23/23ct3.pdf',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m23/23ct3.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m23/23ct3_2.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m23/23ct3_3.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m23/23ct3_4.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m23/23ct3_5.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m23/23ct3_6.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: `To be edited.`,
+    dimensions: '#',
+    __v: 0,
+  },
+  {
+    _id: {
       $oid: '67a5ef304da9b29cd0f10bea',
     },
     title: 'matilda 2024 u-table',
@@ -1047,112 +1209,7 @@ Designed for those who host with flair, this is where luxury meets audacity, and
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnOBMcIbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
     __v: 0,
   },
-  {
-    _id: {
-      $oid: '67a5ecf94da9b29cd0f10bb6',
-    },
-    title: 'matilda 2024 center table 2',
-    group: 'matilda_2024',
-    material: 'Marble',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUEbuppDLYFi7GYsQA2my03DTouek5wnIJXgjp',
-    images: [
-      {
-        fileName: '1738927353299-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUlaNXX3A9DZL6up3G75dgCY2rJjaQFwifBAEk',
-        _id: {
-          $oid: '67a5ecf94da9b29cd0f10bb7',
-        },
-      },
-      {
-        fileName: '1738927353299-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUa2vVaJzVIx6ZjWFiGhcRQJMUzft1drvPNTbL',
-        _id: {
-          $oid: '67a5ecf94da9b29cd0f10bb7',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927353299-Slide1.JPG',
-      },
-      {
-        fileName: '1738927353299-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUMrh8V2wfQbC4M3ZGkSm6KPAV10HlYU9dinrX',
-        _id: {
-          $oid: '67a5ecf94da9b29cd0f10bb7',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927353299-Slide1.JPG',
-      },
-      {
-        fileName: '1738927353299-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAQEIuaFJ1oeY2wnF0zQbWX83C4KujdSqt6MU',
-        _id: {
-          $oid: '67a5ecf94da9b29cd0f10bb7',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927353299-Slide1.JPG',
-      },
-      {
-        fileName: '1738927353299-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDR6QxI08FYI8sxbtc2ngQN4ZeSPwOKkv5yAj',
-        _id: {
-          $oid: '67a5ecf94da9b29cd0f10bb7',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927353299-Slide1.JPG',
-      },
-      {
-        fileName: '1738927353299-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUeFv8RCcFPv1kdbg4tT0YfOS529XxhywHpVoU',
-        _id: {
-          $oid: '67a5ecf94da9b29cd0f10bb7',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927353299-Slide1.JPG',
-      },
-      {
-        fileName: '1738927353299-Slide1.JPG',
-        filePath: '/assets/products/1738927353299-Slide1.JPG',
-        _id: {
-          $oid: '67a5ecf94da9b29cd0f10bb7',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927353299-Slide1.JPG',
-      },
-      {
-        fileName: '1738927353301-Slide3.JPG',
-        filePath: '/assets/products/1738927353301-Slide3.JPG',
-        _id: {
-          $oid: '67a5ecf94da9b29cd0f10bb9',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927353301-Slide3.JPG',
-      },
-      {
-        fileName: '1738927353305-Slide6.JPG',
-        filePath: '/assets/products/1738927353305-Slide6.JPG',
-        _id: {
-          $oid: '67a5ecf94da9b29cd0f10bbc',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927353305-Slide6.JPG',
-      },
-      {
-        fileName: '1738927353306-Slide7.JPG',
-        filePath: '/assets/products/1738927353306-Slide7.JPG',
-        _id: {
-          $oid: '67a5ecf94da9b29cd0f10bbd',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927353306-Slide7.JPG',
-      },
-    ],
-    description: `This center table doesn’t just complete a room — it dominates it. 
-
-With a sculptural cross-shaped form carved from seamless white marble, it’s the perfect fusion of architectural audacity and refined taste. 
-Every angle is engineered to impress, every curve is calculated to stand out. 
-
-Designed by Karan Desai, this piece isn’t just furniture — it’s a power statement in stone. 
-Bold. Balanced. Built for spaces that don’t settle for ordinary.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUE1947WYFi7GYsQA2my03DTouek5wnIJXgjpV',
-    __v: 0,
-  },
+  
   {
     _id: {
       $oid: '67a5e9914da9b29cd0f10b58',
@@ -1752,7 +1809,7 @@ This isn’t about taking your place—it’s about owning it, one confident cur
     _id: {
       $oid: '67a5ec684da9b29cd0f10b8e',
     },
-    title: 'matilda 2024 console 1',
+    title: 'matilda 2024 console',
     group: 'matilda_2024',
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUFE5IdEyvrgRIBMUa1Cwt3nu4PEZOTo0XLQDf',
@@ -2665,7 +2722,7 @@ It’s not about drinking coffee—it’s about experiencing design, technology,
     _id: {
       $oid: '67a5ef7f4da9b29cd0f10c05',
     },
-    title: 'matilda 2024 bench 2',
+    title: 'matilda 2024 bench',
     group: 'matilda_2024',
     material: 'Marble',
     pdf: '#',
@@ -4414,62 +4471,7 @@ Designed for those who play to win, this piece turns any corner into a conversat
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUz8wrsAIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
     __v: 0,
   },
-  {
-    _id: {
-      $oid: 'm24centertable3',
-    },
-    title: 'Matilda 2024 Center Table 3',
-    group: 'matilda_2024',
-    material: 'Marble',
-    pdf: '/m23/23ct3.pdf',
-    images: [
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m23/23ct3.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m23/23ct3_2.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m23/23ct3_3.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m23/23ct3_4.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m23/23ct3_5.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m23/23ct3_6.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-    ],
-    description: `To be edited.`,
-    dimensions: '#',
-    __v: 0,
-  },
+ 
   {
     _id: {
       $oid: '67b590a6e03cc2c55c624a58',
