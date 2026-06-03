@@ -112,7 +112,7 @@ const Navbar = ({ isBgBlack, arrow, escape, home }) => {
         onClick={() => setShowSearch(!showSearch)}
         className={`fixed top-6 ${
           !home ? 'right-7' : 'right-16'
-        }  z-50 p-2 rounded-full bg-black/20 hover:bg-black/40 text-white transition-all`}
+        }  z-40 p-2 rounded-full bg-black/20 hover:bg-black/40 text-white transition-all`}
       >
         {showSearch ? <X size={20} /> : <Search size={20} />}
       </button>

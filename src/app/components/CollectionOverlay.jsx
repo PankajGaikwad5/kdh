@@ -214,7 +214,7 @@ const CollectionOverlay = ({ isVisible, onClose, products = [] }) => {
   if (!items.length) return null;
 
   return (
-    <div ref={overlayRef} className={`fixed inset-0 z-50 ${montserrat.className}`} style={{ display: 'none', opacity: 0, background: 'transparent' }}>
+    <div ref={overlayRef} className={`fixed inset-0 z-40 ${montserrat.className}`} style={{ display: 'none', opacity: 0, background: 'transparent' }}>
 
       {/* Close */}
       <button onClick={onClose} className='bg-black/10 backdrop-blur-sm absolute top-4 right-4 sm:top-6 sm:right-6 z-30 text-black/60 hover:text-black transition-colors p-2 rounded-full' aria-label='Close'>

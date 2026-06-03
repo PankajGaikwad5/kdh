@@ -429,20 +429,21 @@ function IntroTextOverlay({ isVisible, onComplete }) {
 }
 
 // ─── SceneController ──────────────────────────────────────────────────────────
-function SceneController({ galleryRef, setShowIntroText, setOverlayVisible }) {
+function SceneController({ galleryRef, setShowIntroText, setOverlayVisible, skipIntro }) {
   const hasAnimated = useRef(false);
   const timelineRef = useRef(null);
   const activeAnims = useRef([]);
 
   useEffect(() => {
-    if (hasAnimated.current) return;
+    if (skipIntro || hasAnimated.current) return;
     const t = setTimeout(startAnimation, 50);
     return () => clearTimeout(t);
-  }, []);
+  }, [skipIntro]);
 
   function startAnimation() {
     if (!galleryRef.current || hasAnimated.current) return;
     hasAnimated.current = true;
+    try { localStorage.setItem('kdh_visited_date', new Date().toDateString()); } catch {}
     const group = galleryRef.current;
     const tl = gsap.timeline();
     timelineRef.current = tl;
@@ -515,6 +516,10 @@ function ScrollHandler({ onScrollIntoSphere, onScrollOutOfSphere }) {
 // ─── Main Component ───────────────────────────────────────────────────────────
 export default function FloatingImagesScene() {
   const isMobile = useMemo(() => typeof window !== 'undefined' && window.innerWidth < 768, []);
+  const skipIntro = useMemo(() => {
+    if (typeof window === 'undefined') return false;
+    try { return localStorage.getItem('kdh_visited_date') === new Date().toDateString(); } catch { return false; }
+  }, []);
   const [overlayVisible, setOverlayVisible] = useState(false);
   const [showIntroText, setShowIntroText]  = useState(false);
   const [zoomTarget, setZoomTarget]        = useState(null);
@@ -642,7 +647,7 @@ export default function FloatingImagesScene() {
               radius={20}
             />
           </ScrollControls>
-          <SceneController galleryRef={galleryRef} setShowIntroText={setShowIntroText} setOverlayVisible={setOverlayVisible} />
+          <SceneController galleryRef={galleryRef} setShowIntroText={setShowIntroText} setOverlayVisible={setOverlayVisible} skipIntro={skipIntro} />
         </Suspense>
 
         <CameraAnimator zoomTarget={zoomTarget} onZoomComplete={handleZoomComplete} />
