@@ -82,7 +82,7 @@ const Navbar = ({ isBgBlack, arrow, escape, home }) => {
     <>
       {/* Hamburger */}
       <div
-        className={`w-full flex fixed md:m-8 m-6 font-extralight text-xs uppercase tracking-wider text-gray-800 navMenu z-50 cursor-pointer ${
+        className={`w-full flex fixed md:m-8 m-6 font-extralight text-xs uppercase tracking-wider text-gray-800 navMenu z-[60] cursor-pointer ${
           nav && 'open'
         }`}
         onClick={() => {
@@ -220,7 +220,7 @@ const Navbar = ({ isBgBlack, arrow, escape, home }) => {
       {/* Back Arrow */}
       {arrow && (
         <button
-          className='hidden md:block fixed z-50 left-4 md:left-12 bottom-6 md:bottom-10 bg-white/20 hover:bg-white/70 duration-500 transition-all text-white p-2 border-2 border-white/20 hover:text-black rounded-full'
+          className='hidden md:block fixed z-50 left-4 md:left-12 bottom-6 md:bottom-10 hover:bg-white/70 duration-500 transition-all text-white p-2 border-2 border-white/20 hover:text-black rounded-full'
           onClick={handleClick}
         >
           <ArrowLeft size={25} />
