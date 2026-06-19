@@ -12,18 +12,18 @@ const montserrat = Montserrat({
 });
 
 const pressItems = [
-  { id: 1,  name: 'Architectural Digest', link: '#', img: '/press/architectural-digest.png' },
-  { id: 2,  name: 'Wallpaper*',           link: '#', img: '/press/wallpaper.png'            },
-  { id: 3,  name: 'Dezeen',               link: '#', img: '/press/dezeen.png'               },
-  { id: 4,  name: 'T Magazine',           link: '#', img: '/press/t-magazine.png'           },
-  { id: 5,  name: 'Surface',              link: '#', img: '/press/surface.png'              },
-  { id: 6,  name: 'IFDM',                 link: 'https://ifdm.design/2026/02/26/house-of-santal-brings-south-asian-design-to-nyc/', img: '/press/ifdm.png'                 },
-  { id: 7,  name: 'Livingetc.',           link: '#', img: '/press/livingetc.png'            },
-  { id: 8,  name: 'Observer',             link: '#', img: '/press/observer.png'             },
-  { id: 9,  name: 'Business of Home',     link: '#', img: '/press/business-of-home.png'    },
-  { id: 10, name: 'The PR Net',           link: 'https://theprnet.com/news/43334', img: '/press/the-pr-net.png'           },
-  { id: 11, name: 'Trend Hunter',         link: '#', img: '/press/trend-hunter.png'         },
-  { id: 12, name: 'amNY',                 link: '#', img: '/press/amny.png'                 },
+  { id: 1, name: 'Architectural Digest', link: '#' },
+  { id: 2, name: 'Wallpaper*', link: '#' },
+  { id: 3, name: 'Dezeen', link: '#' },
+  { id: 4, name: 'T Magazine', link: '#' },
+  { id: 5, name: 'Surface', link: '#' },
+  { id: 6, name: 'IFDM', link: 'https://ifdm.design/2026/02/26/house-of-santal-brings-south-asian-design-to-nyc/' },
+  { id: 7, name: 'Livingetc.', link: '#' },
+  { id: 8, name: 'Observer', link: '#' },
+  { id: 9, name: 'Business of Home', link: '#' },
+  { id: 10, name: 'The PR Net', link: 'https://theprnet.com/news/43334' },
+  { id: 11, name: 'Trend Hunter', link: '#' },
+  { id: 12, name: 'amNY', link: '#' },
 ];
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -94,7 +94,7 @@ export default function PressPage() {
 
         <div
           ref={pressRef}
-          className="flex flex-wrap justify-center pb-24"
+          className="grid grid-cols-1 gap-y-16 pb-24 pt-10 sm:grid-cols-2 sm:gap-x-8 lg:grid-cols-3 lg:gap-x-10"
         >
           {pressItems.map((item) => (
             <a
@@ -102,13 +102,11 @@ export default function PressPage() {
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="group basis-1/2 md:basis-1/3 flex flex-col items-center justify-center gap-4 py-16 cursor-pointer"
+              className="group flex min-h-36 w-full flex-col items-center justify-center gap-4 px-3 py-4 text-center cursor-pointer sm:min-h-44"
             >
-              <img
-                src={item.img}
-                alt={item.name}
-                className="max-h-10 max-w-[180px] w-full object-contain transition-transform duration-300 group-hover:scale-105"
-              />
+              <span className={`max-w-sm break-normal text-3xl font-semibold uppercase leading-tight tracking-wide text-gray-200 transition-colors duration-300 group-hover:text-white sm:text-2xl md:text-3xl lg:text-3xl 2xl:text-3xl ${montserrat.className}`}>
+                {item.name}
+              </span>
               <span className={`text-[10px] uppercase tracking-widest text-gray-500 group-hover:text-gray-300 transition-colors duration-300 ${montserrat.className}`}>
                 View Article →
               </span>

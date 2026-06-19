@@ -74,7 +74,7 @@ const Navbar = ({ isBgBlack, arrow, escape, home }) => {
     { id: 3, name: 'collections', path: 'collections' },
     { id: 7, name: 'mandirs', path: 'mandirs' },
     { id: 4, name: 'collaborations', path: 'collaborations' },
-    // { id: 5, name: 'catalogue', path: 'catalogue' },
+    { id: 5, name: 'press', path: 'press' },
     { id: 6, name: 'contact us', path: 'contact' },
   ];
 
