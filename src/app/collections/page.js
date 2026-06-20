@@ -14,20 +14,20 @@ const page = () => {
   const headingRef = useRef(null);
   const gridRef = useRef(null);
 
-  const fetchProjects = async () => {
-    try {
-      const response = await fetch(`/api/products`);
-      const data = await response.json();
-      const { products } = data;
-      setImgArray(products);
-    } catch (error) {
-      console.error('Error fetching projects:', error);
-    }
-  };
+  // const fetchProjects = async () => {
+  //   try {
+  //     const response = await fetch(`/api/products`);
+  //     const data = await response.json();
+  //     const { products } = data;
+  //     setImgArray(products);
+  //   } catch (error) {
+  //     console.error('Error fetching projects:', error);
+  //   }
+  // };
 
-  React.useEffect(() => {
-    fetchProjects();
-  }, []);
+  // React.useEffect(() => {
+  //   fetchProjects();
+  // }, []);
 
   // GSAP entrance animations
   useEffect(() => {

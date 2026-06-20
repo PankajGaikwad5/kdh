@@ -82,7 +82,9 @@ export const products = [
         },
         thumbnail: '/assets/products/thumbnails/1738927177039-Slide5.JPG',
       },
+
     ],
+
     video:
       'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCgDKppeFoQ5jtomeZYnhXwDRcaNS8IHVWdJi4',
     description: `This isn’t just a divider—it’s a statement in stone. 
@@ -488,7 +490,7 @@ Bold. Balanced. Built for spaces that don’t settle for ordinary.`,
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUE1947WYFi7GYsQA2my03DTouek5wnIJXgjpV',
     __v: 0,
   },
-   {
+  {
     _id: {
       $oid: 'm24centertable3',
     },
@@ -878,6 +880,32 @@ Light your space like you mean it.`,
         thumbnail: '/assets/products/thumbnails/1738926030383-5.jpg',
       },
     ],
+    marbleImages: {
+      'indianblackbheslana': [
+        '/marbles/monster1/monster1basin/indianblackbheslana/1.webp',
+        '/marbles/monster1/monster1basin/indianblackbheslana/2.webp',
+        '/marbles/monster1/monster1basin/indianblackbheslana/3.webp',
+        '/marbles/monster1/monster1basin/indianblackbheslana/4.webp',
+      ],
+      'indianrossolevante': [
+        '/marbles/monster1/monster1basin/indianrossolevante/1.webp',
+        '/marbles/monster1/monster1basin/indianrossolevante/2.webp',
+        '/marbles/monster1/monster1basin/indianrossolevante/3.webp',
+        '/marbles/monster1/monster1basin/indianrossolevante/4.webp',
+      ],
+      'italianbeigetravertine': [
+        '/marbles/monster1/monster1basin/italianbeigetravertine/1.webp',
+        '/marbles/monster1/monster1basin/italianbeigetravertine/2.webp',
+        '/marbles/monster1/monster1basin/italianbeigetravertine/3.webp',
+        '/marbles/monster1/monster1basin/italianbeigetravertine/4.webp',
+      ],
+      'marquina': [
+        '/marbles/monster1/monster1basin/marquina/1.webp',
+        '/marbles/monster1/monster1basin/marquina/2.webp',
+        '/marbles/monster1/monster1basin/marquina/3.webp',
+        '/marbles/monster1/monster1basin/marquina/4.webp',
+      ],
+    },
     video:
       'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCajdlk8JDhG5HCzPb3QlFJuiAr4j6p0c7eDEq',
     description: `This isn’t just a basin—it’s a bold move. Sculpted like art, built for impact. 
@@ -1209,7 +1237,7 @@ Designed for those who host with flair, this is where luxury meets audacity, and
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnOBMcIbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
     __v: 0,
   },
-  
+
   {
     _id: {
       $oid: '67a5e9914da9b29cd0f10b58',
@@ -1297,6 +1325,28 @@ Designed for those who host with flair, this is where luxury meets audacity, and
         thumbnail: '/assets/products/thumbnails/1738926481093-Slide7.JPG',
       },
     ],
+    marbleImages: {
+      'indianblackbheslana': [
+        '/marbles/monster1/monster1bathtub/indianblackbheslana/1.webp',
+        '/marbles/monster1/monster1bathtub/indianblackbheslana/2.webp',
+        '/marbles/monster1/monster1bathtub/indianblackbheslana/3.webp',
+      ],
+      'indianrossolevante': [
+        '/marbles/monster1/monster1bathtub/indianrossolevante/1.webp',
+        '/marbles/monster1/monster1bathtub/indianrossolevante/2.webp',
+        '/marbles/monster1/monster1bathtub/indianrossolevante/3.webp',
+      ],
+      'italianbeigetravertine': [
+        '/marbles/monster1/monster1bathtub/italianbeigetravertine/1.webp',
+        '/marbles/monster1/monster1bathtub/italianbeigetravertine/2.webp',
+        '/marbles/monster1/monster1bathtub/italianbeigetravertine/3.webp',
+      ],
+      'marquina': [
+        '/marbles/monster1/monster1bathtub/marquina/1.webp',
+        '/marbles/monster1/monster1bathtub/marquina/2.webp',
+        '/marbles/monster1/monster1bathtub/marquina/3.webp',
+      ],
+    },
     video:
       'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCaXJhNuDhG5HCzPb3QlFJuiAr4j6p0c7eDEqX',
     description: `This isn’t just a bathtub—it’s a marble masterpiece. 
@@ -2138,6 +2188,32 @@ For those who don’t decorate—they curate power.`,
         },
       },
     ],
+    marbleImages: {
+      'indianblackbheslana': [
+        '/marbles/monster1/monster1console/indianblackbheslana/1.webp',
+        '/marbles/monster1/monster1console/indianblackbheslana/2.webp',
+        '/marbles/monster1/monster1console/indianblackbheslana/3.webp',
+        '/marbles/monster1/monster1console/indianblackbheslana/4.webp',
+      ],
+      'indianrossolevante': [
+        '/marbles/monster1/monster1console/indianrossolevante/1.webp',
+        '/marbles/monster1/monster1console/indianrossolevante/2.webp',
+        '/marbles/monster1/monster1console/indianrossolevante/3.webp',
+        '/marbles/monster1/monster1console/indianrossolevante/4.webp',
+      ],
+      'italianbeigetravertine': [
+        '/marbles/monster1/monster1console/italianbeigetravertine/1.webp',
+        '/marbles/monster1/monster1console/italianbeigetravertine/2.webp',
+        '/marbles/monster1/monster1console/italianbeigetravertine/3.webp',
+        '/marbles/monster1/monster1console/italianbeigetravertine/4.webp',
+      ],
+      'marquina': [
+        '/marbles/monster1/monster1console/marquina/1.webp',
+        '/marbles/monster1/monster1console/marquina/2.webp',
+        '/marbles/monster1/monster1console/marquina/3.webp',
+        '/marbles/monster1/monster1console/marquina/4.webp',
+      ],
+    },
     description:
       "Discover the magic of marble like never before!\n\nImagine one big block turning into three useful and beautiful pieces.\n\nThey're not just furniture, they have cool lights, speakers, and a sleek design.\n\nYour space, but way more awesome!\n\nWelcome to a world where marble becomes something extraordinary.",
     dimensions:
@@ -4471,7 +4547,7 @@ Designed for those who play to win, this piece turns any corner into a conversat
       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUz8wrsAIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
     __v: 0,
   },
- 
+
   {
     _id: {
       $oid: '67b590a6e03cc2c55c624a58',
@@ -6872,7 +6948,7 @@ Because even your side table should speak volumes.`,
         },
       },
     ],
-     video:
+    video:
       'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCIEyy8y4KW74xlzetoUdfERaY0bgNTvuMiQSj',
     description: `Not just a mirror.
 A little monster that lives on your wall.
@@ -7042,7 +7118,7 @@ The tactile yarn frame contrasts beautifully with the clean reflective glass, ma
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
-      
+
     ],
     video:
       'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCo4HqdvaFjWsXwrDTuK930HAGvn81cotf7hz4',

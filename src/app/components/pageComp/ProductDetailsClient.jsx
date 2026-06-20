@@ -42,6 +42,14 @@ const formSchema = z.object({
   product: z.string(),
 });
 
+const normalizeKey = (str) => {
+  if (!str) return '';
+  return str
+    .toLowerCase()
+    .replace(/\s+/g, '')
+    .replace(/lavante/g, 'levante');
+};
+
 // ThumbnailGrid Component (keeping original external component structure)
 // This should be in a separate ThumbnailGrid.tsx file
 
@@ -53,6 +61,34 @@ export default function ProductDetailsClient({ product }) {
   const [loadedImages, setLoadedImages] = useState(new Set());
   const [showThumbnailGrid, setShowThumbnailGrid] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [selectedMarble, setSelectedMarble] = useState(
+    product?.material === 'Marble' ? 'Banswara' : null
+  );
+
+  // Calculate active images based on the selected marble variant
+  const activeImages = useMemo(() => {
+    if (selectedMarble && product?.marbleImages) {
+      const targetKey = normalizeKey(selectedMarble);
+      const matchedKey = Object.keys(product.marbleImages).find(
+        (key) => normalizeKey(key) === targetKey
+      );
+      const marbleImagesData = matchedKey ? product.marbleImages[matchedKey] : null;
+      if (marbleImagesData && marbleImagesData.length > 0) {
+        return marbleImagesData.map((img, idx) => {
+          if (typeof img === 'string') {
+            return {
+              filePath: img,
+              fileName: `${selectedMarble}-${idx}`,
+              _id: { $oid: `${selectedMarble}-${idx}` },
+              thumbnail: img,
+            };
+          }
+          return img;
+        });
+      }
+    }
+    return product?.images || [];
+  }, [product, selectedMarble]);
 
   // Spam protection
   const [formLoadTime, setFormLoadTime] = useState(null);
@@ -62,8 +98,8 @@ export default function ProductDetailsClient({ product }) {
   const imageRef = useRef(null);
   const detailsRef = useRef(null);
 
-  const totalMedia = (product?.images?.length || 0) + (product?.video ? 1 : 0);
-  const isVideoSlide = currentIndex >= (product?.images?.length || 0);
+  const totalMedia = (activeImages?.length || 0) + (product?.video ? 1 : 0);
+  const isVideoSlide = currentIndex >= (activeImages?.length || 0);
 
   const form = useForm({
     resolver: zodResolver(formSchema),
@@ -131,17 +167,6 @@ export default function ProductDetailsClient({ product }) {
     // Set form load time for spam detection
     setFormLoadTime(Date.now());
 
-    // Preload images first (high priority)
-    if (product?.images?.[0]) {
-      preloadImage(product.images[0].filePath);
-      setImageLoaded(true);
-      product.images
-        .slice(1)
-        .forEach((img, i) =>
-          setTimeout(() => preloadImage(img.filePath), i * 100),
-        );
-    }
-
     // Escape key handler
     const handleEsc = (e) => e.key === 'Escape' && router.back();
     window.addEventListener('keydown', handleEsc);
@@ -181,17 +206,39 @@ export default function ProductDetailsClient({ product }) {
       window.removeEventListener('keydown', handleEsc);
       clearTimeout(fbTimeout);
     };
-  }, [product, router, preloadImage]);
+  }, [router]);
+
+  // Preload active images whenever they change (e.g. when marble is selected)
+  useEffect(() => {
+    if (activeImages?.[0]) {
+      setImageLoaded(false);
+      preloadImage(activeImages[0].filePath);
+      if (loadedImages.has(activeImages[0].filePath)) {
+        setImageLoaded(true);
+      }
+      activeImages
+        .slice(1)
+        .forEach((img, i) =>
+          setTimeout(() => preloadImage(img.filePath), i * 100),
+        );
+    }
+  }, [activeImages, preloadImage, loadedImages]);
+
+  const handleSelectMarble = useCallback((marbleName) => {
+    setSelectedMarble((prev) => (prev === marbleName ? 'Banswara' : marbleName));
+    setCurrentIndex(0);
+    setImageLoaded(false);
+  }, []);
 
   const handleImageSelect = useCallback(
     (index) => {
       setImageLoaded(
-        index >= (product?.images?.length || 0) ||
-          loadedImages.has(product.images[index]?.filePath),
+        index >= (activeImages?.length || 0) ||
+          loadedImages.has(activeImages[index]?.filePath),
       );
       setCurrentIndex(index);
     },
-    [product, loadedImages],
+    [activeImages, loadedImages],
   );
 
   const navigate = useCallback(
@@ -206,13 +253,13 @@ export default function ProductDetailsClient({ product }) {
             : currentIndex - 1;
       setCurrentIndex(newIndex);
       if (
-        newIndex >= (product?.images?.length || 0) ||
-        loadedImages.has(product.images[newIndex]?.filePath)
+        newIndex >= (activeImages?.length || 0) ||
+        loadedImages.has(activeImages[newIndex]?.filePath)
       ) {
         setImageLoaded(true);
       }
     },
-    [currentIndex, totalMedia, product, loadedImages],
+    [currentIndex, totalMedia, activeImages, loadedImages],
   );
 
   const onSubmit = async (values) => {
@@ -274,7 +321,7 @@ export default function ProductDetailsClient({ product }) {
             isFullscreen ? 'fixed inset-0 z-50 bg-black' : 'relative'
           } p-4 flex items-center justify-center`}
         >
-          {(product.images?.length > 0 || product.video) && (
+          {(activeImages?.length > 0 || product.video) && (
             <div
               className={`relative w-full ${
                 isFullscreen ? 'h-screen' : 'h-[80vh]'
@@ -302,20 +349,22 @@ export default function ProductDetailsClient({ product }) {
                     onLoadedData={() => setImageLoaded(true)}
                   />
                 ) : (
-                  <Image
-                    onClick={toggleFullscreen}
-                    src={product.images[currentIndex].filePath}
-                    alt={product.title}
-                    fill
-                    className='object-contain'
-                    sizes='(max-width: 768px) 100vw, 50vw'
-                    priority={currentIndex === 0}
-                    quality={75}
-                    unoptimized={product.images[
-                      currentIndex
-                    ].filePath.startsWith('http')}
-                    onLoad={() => setImageLoaded(true)}
-                  />
+                  activeImages[currentIndex] && (
+                    <Image
+                      onClick={toggleFullscreen}
+                      src={activeImages[currentIndex].filePath}
+                      alt={product.title}
+                      fill
+                      className='object-contain'
+                      sizes='(max-width: 768px) 100vw, 50vw'
+                      priority={currentIndex === 0}
+                      quality={75}
+                      unoptimized={activeImages[
+                        currentIndex
+                      ].filePath.startsWith('http')}
+                      onLoad={() => setImageLoaded(true)}
+                    />
+                  )
                 )}
               </div>
 
@@ -344,7 +393,7 @@ export default function ProductDetailsClient({ product }) {
               </button>
 
               <ThumbnailGrid
-                images={product.images}
+                images={activeImages}
                 video={product.video}
                 currentIndex={currentIndex}
                 onImageSelect={handleImageSelect}
@@ -458,27 +507,66 @@ export default function ProductDetailsClient({ product }) {
                 <div className='gsap-reveal flex flex-col gap-2'>
                   <h2 className='text-lg mb-2'>MARBLES</h2>
                   <div className='flex flex-wrap gap-4'>
-                    {marbles.map((marble) => (
-                      <div
-                        key={marble.name}
-                        className='flex flex-col items-center text-center'
-                      >
-                        <Image
-                          width={70}
-                          height={70}
-                          src={marble.src}
-                          alt={marble.name}
-                          className={`aspect-square object-cover ${
-                            marble.rotate ? 'rotate-90' : ''
-                          }`}
-                        />
-                        <p className='text-xs w-[80px] mt-2 break-words'>
-                          {marble.name}
-                        </p>
-                      </div>
-                    ))}
+                    {marbles.map((marble) => {
+                      const isSelected = selectedMarble === marble.name;
+                      const hasCustomImages = !!(
+                        product.marbleImages &&
+                        (() => {
+                          const targetKey = normalizeKey(marble.name);
+                          const matchedKey = Object.keys(product.marbleImages).find(
+                            (key) => normalizeKey(key) === targetKey
+                          );
+                          return matchedKey ? product.marbleImages[matchedKey].length > 0 : false;
+                        })()
+                      );
+                      return (
+                        <button
+                          key={marble.name}
+                          onClick={() => handleSelectMarble(marble.name)}
+                          className='flex flex-col items-center text-center focus:outline-none group relative transition-transform duration-200 hover:scale-105'
+                          title={
+                            hasCustomImages
+                              ? `Click to view product in ${marble.name}`
+                              : `View ${marble.name} option`
+                          }
+                        >
+                          <div className='relative w-[70px] h-[70px] overflow-hidden rounded-md'>
+                            <Image
+                              width={70}
+                              height={70}
+                              src={marble.src}
+                              alt={marble.name}
+                              className={`aspect-square object-cover transition-all duration-300 ${
+                                marble.rotate ? 'rotate-90' : ''
+                              } ${
+                                isSelected
+                                  ? 'ring-2 ring-white ring-offset-2 ring-offset-black scale-95 opacity-100'
+                                  : 'opacity-85 group-hover:opacity-100'
+                              }`}
+                            />
+                            {/* Subtle dot to indicate this marble option has custom photos */}
+                            {hasCustomImages && !isSelected && (
+                              <span className='absolute bottom-1 right-1 w-2.5 h-2.5 bg-white border border-black rounded-full shadow' />
+                            )}
+                          </div>
+                          <p
+                            className={`text-xs w-[80px] mt-2 break-words transition-colors duration-200 ${
+                              isSelected
+                                ? 'text-white font-semibold'
+                                : 'text-gray-400 group-hover:text-white'
+                            }`}
+                          >
+                            {marble.name}
+                          </p>
+                        </button>
+                      );
+                    })}
                   </div>
-                  <AccordionMarbles />
+                  <AccordionMarbles
+                    selectedMarble={selectedMarble}
+                    onSelectMarble={handleSelectMarble}
+                    product={product}
+                  />
                 </div>
               )}
 
