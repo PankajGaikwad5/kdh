@@ -33,6 +33,7 @@ const magazines = [
 ];
 
 const pressItems = [
+  { id: 0, name: 'India Today', link: 'https://www.indiatoday.in/magazine/supplement/story/20260629-stone-and-soul-jinashilp-collection-2929024-2026-06-19' },
   { id: 1, name: 'Architectural Digest', link: '#' },
   { id: 2, name: 'Wallpaper*', link: '#' },
   { id: 3, name: 'Dezeen', link: '#' },
@@ -282,7 +283,7 @@ export default function PressPage() {
                 {/* Cover Spread */}
                 <div className="w-full md:w-1/2 flex flex-col items-center">
                   <span className="text-[10px] uppercase tracking-widest text-zinc-500 mb-2 font-semibold">Magazine Cover</span>
-                  <div 
+                  <div
                     onClick={() => { setZoomedImage(selectedMagazine.coverImage); setIsZoomedIn(false); }}
                     className="relative w-full max-w-[320px] aspect-[3/4] rounded-lg overflow-hidden border border-zinc-800/80 shadow-2xl cursor-zoom-in hover:opacity-95 transition-opacity duration-300"
                   >
@@ -308,7 +309,7 @@ export default function PressPage() {
                 {/* Feature Spread */}
                 <div className="w-full md:w-1/2 flex flex-col items-center">
                   <span className="text-[10px] uppercase tracking-widest text-zinc-500 mb-2 font-semibold">Featured Page</span>
-                  <div 
+                  <div
                     onClick={() => { setZoomedImage(selectedMagazine.featuredImage); setIsZoomedIn(false); }}
                     className="relative w-full max-w-[320px] aspect-[3/4] rounded-lg overflow-hidden border border-zinc-800/80 shadow-2xl cursor-zoom-in hover:opacity-95 transition-opacity duration-300"
                   >
@@ -345,7 +346,7 @@ export default function PressPage() {
       {zoomedImage && (
         <div className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/95 backdrop-blur-sm transition-opacity duration-300">
           <div className="absolute inset-0 cursor-zoom-out" onClick={closeZoom} />
-          
+
           <div className="relative w-full max-w-5xl max-h-[90vh] z-10 flex flex-col items-center justify-center">
             {/* Close Button */}
             <button
@@ -357,21 +358,20 @@ export default function PressPage() {
             </button>
 
             {/* Responsive containment of image with hover panning zoom */}
-            <div 
+            <div
               ref={zoomContainerRef}
               onMouseMove={handleMouseMove}
               onMouseLeave={() => isZoomedIn && setMousePos({ x: 0.5, y: 0.5 })}
               className="relative w-[90vw] h-[80vh] max-w-4xl max-h-[80vh] overflow-hidden select-none rounded-lg bg-black/20"
             >
-              <div 
+              <div
                 onClick={() => setIsZoomedIn(!isZoomedIn)}
                 style={{
                   transformOrigin: isZoomedIn ? `${mousePos.x * 100}% ${mousePos.y * 100}%` : 'center',
                   transition: isZoomedIn ? 'transform 0.25s ease-out' : 'transform 0.3s ease-out, transform-origin 0.3s ease-out',
                 }}
-                className={`relative w-full h-full ${
-                  isZoomedIn ? 'scale-[1.8] cursor-zoom-out' : 'scale-100 cursor-zoom-in'
-                }`}
+                className={`relative w-full h-full ${isZoomedIn ? 'scale-[1.8] cursor-zoom-out' : 'scale-100 cursor-zoom-in'
+                  }`}
               >
                 <Image
                   src={zoomedImage}
