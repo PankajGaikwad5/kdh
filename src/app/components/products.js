@@ -5477,6 +5477,31 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
         },
       },
     ],
+    marbleImages: {
+      'indianblackbheslana': [
+        '/marbles/matilda2022/bedsidetable/indianblackbheslana/1.webp',
+        '/marbles/matilda2022/bedsidetable/indianblackbheslana/2.webp',
+        '/marbles/matilda2022/bedsidetable/indianblackbheslana/3.webp',
+        '/marbles/matilda2022/bedsidetable/indianblackbheslana/4.webp',
+      ],
+      'indianrossolevante': [
+        '/marbles/matilda2022/bedsidetable/indianrossolevante/1.webp',
+        '/marbles/matilda2022/bedsidetable/indianrossolevante/2.webp',
+        '/marbles/matilda2022/bedsidetable/indianrossolevante/3.webp',
+        '/marbles/matilda2022/bedsidetable/indianrossolevante/4.webp',
+      ],
+      'italianbeigetravertine': [
+        '/marbles/matilda2022/bedsidetable/italianbeigetravertine/1.webp',
+        '/marbles/matilda2022/bedsidetable/italianbeigetravertine/2.webp',
+        '/marbles/matilda2022/bedsidetable/italianbeigetravertine/3.webp',
+        '/marbles/matilda2022/bedsidetable/italianbeigetravertine/4.webp',
+      ],
+      'marquina': [
+        '/marbles/matilda2022/bedsidetable/marquina/1.webp',
+        '/marbles/matilda2022/bedsidetable/marquina/2.webp',
+        '/marbles/matilda2022/bedsidetable/marquina/3.webp',
+      ],
+    },
     description: `The Matilda Marble Side Table by Karan Desai Home explores sculptural geometry through refined marble and stonecraftsmanship. Handcrafted from natural marble, the arched structure integrates two seamless drawers, bringing together storage and sculptural clarity in a distinctive piece of contemporary furniture. The balance of fluid curves and precise lines introduces architectural rhythm to the interior of a modern home or residence. Designed by Karan Desai and made in India, this statement piece elevates luxury interiors while standing as a distinctive collectible piece within curated spaces.`,
     dimensions:
       'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO3tC2WJLYnpyK0DhEV4daf1ZotLM8ROqYkSFN',
@@ -5527,6 +5552,36 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
         },
       },
     ],
+    marbleImages: {
+      'indianblackbheslana': [
+        '/marbles/matilda2022/chestofdrawer/indianblackbheslana/1.webp',
+        '/marbles/matilda2022/chestofdrawer/indianblackbheslana/2.webp',
+        '/marbles/matilda2022/chestofdrawer/indianblackbheslana/3.webp',
+        '/marbles/matilda2022/chestofdrawer/indianblackbheslana/4.webp',
+        '/marbles/matilda2022/chestofdrawer/indianblackbheslana/5.webp',
+      ],
+      'indianrossolevante': [
+        '/marbles/matilda2022/chestofdrawer/indianrossolevante/1.webp',
+        '/marbles/matilda2022/chestofdrawer/indianrossolevante/2.webp',
+        '/marbles/matilda2022/chestofdrawer/indianrossolevante/3.webp',
+        '/marbles/matilda2022/chestofdrawer/indianrossolevante/4.webp',
+        '/marbles/matilda2022/chestofdrawer/indianrossolevante/5.webp',
+      ],
+      'italianbeigetravertine': [
+        '/marbles/matilda2022/chestofdrawer/italianbeigetravertine/1.webp',
+        '/marbles/matilda2022/chestofdrawer/italianbeigetravertine/2.webp',
+        '/marbles/matilda2022/chestofdrawer/italianbeigetravertine/3.webp',
+        '/marbles/matilda2022/chestofdrawer/italianbeigetravertine/4.webp',
+        '/marbles/matilda2022/chestofdrawer/italianbeigetravertine/5.webp',
+      ],
+      'marquina': [
+        '/marbles/matilda2022/chestofdrawer/marquina/1.webp',
+        '/marbles/matilda2022/chestofdrawer/marquina/2.webp',
+        '/marbles/matilda2022/chestofdrawer/marquina/3.webp',
+        '/marbles/matilda2022/chestofdrawer/marquina/4.webp',
+        '/marbles/matilda2022/chestofdrawer/marquina/5.webp',
+      ],
+    },
     description: `This is where functionality meets architectural finesse. 
 
 Encased in a sculpted body of elegant white marble, its fluid curves are contrasted by 
@@ -5604,6 +5659,25 @@ A symbol of restraint, rhythm, and remarkable design.`,
         },
       },
     ],
+    marbleImages: {
+      'indianblackbheslana': [
+        '/marbles/matilda2022/chaiselongue/indianblackbheslana/1.webp',
+        '/marbles/matilda2022/chaiselongue/indianblackbheslana/2.webp',
+        '/marbles/matilda2022/chaiselongue/indianblackbheslana/3.webp',
+        '/marbles/matilda2022/chaiselongue/indianblackbheslana/4.webp',
+      ],
+      'indianrossolevante': [
+        '/marbles/matilda2022/chaiselongue/indianrossolevante/1.webp',
+        '/marbles/matilda2022/chaiselongue/indianrossolevante/2.webp',
+        '/marbles/matilda2022/chaiselongue/indianrossolevante/3.webp',
+        '/marbles/matilda2022/chaiselongue/indianrossolevante/4.webp',
+      ],
+      'italianbeigetravertine': [
+        '/marbles/matilda2022/chaiselongue/italianbeigetravertine/1.webp',
+        '/marbles/matilda2022/chaiselongue/italianbeigetravertine/2.webp',
+        '/marbles/matilda2022/chaiselongue/italianbeigetravertine/3.webp',
+      ],
+    },
     description: `The Matilda Marble Chaise Longue by Karan Desai Home brings together sculptural marble and refined stonecraftsmanship in a poetic expression of contemporary furniture design. Handcrafted from natural marble, its fluid arc and wave-like silhouette introduce a sense of calm movement and architectural elegance to the interior of a modern home or residence. Balancing strength with softness, the form highlights the natural veining of the stone while creating a striking sculptural presence. Designed by Karan Desai and made in India, this distinctive piece elevates luxury interiors while standing as a remarkable collectible piece within curated spaces.`,
     dimensions:
       'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOzuaZgH3drRCNOYV7h2kSoeU41wvlAyKEqG0T',
@@ -5666,6 +5740,7 @@ A symbol of restraint, rhythm, and remarkable design.`,
         },
       },
     ],
+
     description: `The Matilda Marble Ball Console by Karan Desai Home brings together marble and stone in a playful yet sculptural expression of contemporary furniture design. Handcrafted from natural marble, vividly coloured spheres are stacked to create a bold sense of movement and visual rhythm, introducing character and artistic energy to the interior of a modern home or residence. Designed by Karan Desai and made in India, the console pairs this sculptural base with a refined top surface, making it a distinctive element within luxury interiors and a striking collectible piece for curated spaces.`,
     dimensions:
       'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOPcgRtyKaSjHqmNAIDGdfwbKCW75FER48cVo3',
@@ -5721,6 +5796,7 @@ A symbol of restraint, rhythm, and remarkable design.`,
         },
       },
     ],
+
     description: `The Matilda Marble Console by Karan Desai Home transforms marble and stone into a sculptural centerpiece for contemporary furniture design. Handcrafted from natural marble, the console stands on four varied legs that introduce contrast and architectural presence to the interior of a modern home or residence. The smoked-glass top adds a refined modern layer, balancing transparency with material richness. Designed by Karan Desai and made in India, this distinctive piece enhances luxury interiors while standing as a remarkable collectible piece.`,
     dimensions:
       'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOXaBMTyuosnbmOpdheGL3EgIPWHwQBAfDiZqX',
@@ -5771,6 +5847,32 @@ A symbol of restraint, rhythm, and remarkable design.`,
         },
       },
     ],
+    marbleImages: {
+      'indianblackbheslana': [
+        '/marbles/matilda2022/marblescreen/indianblackbheslana/1.webp',
+        '/marbles/matilda2022/marblescreen/indianblackbheslana/2.webp',
+        '/marbles/matilda2022/marblescreen/indianblackbheslana/3.webp',
+        '/marbles/matilda2022/marblescreen/indianblackbheslana/4.webp',
+      ],
+      'indianrossolevante': [
+        '/marbles/matilda2022/marblescreen/indianrossolevante/1.webp',
+        '/marbles/matilda2022/marblescreen/indianrossolevante/2.webp',
+        '/marbles/matilda2022/marblescreen/indianrossolevante/3.webp',
+        '/marbles/matilda2022/marblescreen/indianrossolevante/4.webp',
+      ],
+      'italianbeigetravertine': [
+        '/marbles/matilda2022/marblescreen/italianbeigetravertine/1.webp',
+        '/marbles/matilda2022/marblescreen/italianbeigetravertine/2.webp',
+        '/marbles/matilda2022/marblescreen/italianbeigetravertine/3.webp',
+        '/marbles/matilda2022/marblescreen/italianbeigetravertine/4.webp',
+      ],
+      'marquina': [
+        '/marbles/matilda2022/marblescreen/marquina/1.webp',
+        '/marbles/matilda2022/marblescreen/marquina/2.webp',
+        '/marbles/matilda2022/marblescreen/marquina/3.webp',
+        '/marbles/matilda2022/marblescreen/marquina/4.webp',
+      ],
+    },
     description: `The Matilda Marble Screen by Karan Desai Home brings together sculptural marble and refined stone craftsmanship in a striking expression of contemporary furniture design. Handcrafted from natural marble, its flowing curved form and rhythmic texture introduce movement, depth, and architectural presence to the interior of a modern home or residence. Designed to function both as a spatial divider and a sculptural element, the piece transforms the interior into a refined design moment. Designed by Karan Desai and made in India, this statement piece enhances luxury interiorswhile standing as a distinctive collectible piece.`,
     dimensions:
       'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOBY3TsfgzYN8aVpJZLF50If4uUdl1vTPgMQEx',
@@ -5821,6 +5923,27 @@ A symbol of restraint, rhythm, and remarkable design.`,
         },
       },
     ],
+    marbleImages: {
+      'indianblackbheslana': [
+        '/marbles/matilda2022/sidetable/indianblackbheslana/1.webp',
+        '/marbles/matilda2022/sidetable/indianblackbheslana/2.webp',
+      ],
+      'indianrossolevante': [
+        '/marbles/matilda2022/sidetable/indianrossolevante/1.webp',
+      ],
+      'italianbeigetravertine': [
+        '/marbles/matilda2022/sidetable/italianbeigetravertine/1.webp',
+        '/marbles/matilda2022/sidetable/italianbeigetravertine/2.webp',
+        '/marbles/matilda2022/sidetable/italianbeigetravertine/3.webp',
+        '/marbles/matilda2022/sidetable/italianbeigetravertine/4.webp',
+      ],
+      'marquina': [
+        '/marbles/matilda2022/sidetable/marquina/1.webp',
+        '/marbles/matilda2022/sidetable/marquina/2.webp',
+        '/marbles/matilda2022/sidetable/marquina/3.webp',
+        '/marbles/matilda2022/sidetable/marquina/4.webp',
+      ],
+    },
     description: `The Matilda Marble Side Table by Karan Desai Home brings together marble, stone, and refined detailing in a sculptural expression of contemporary furniture design. Handcrafted from natural marble and paired with fluted wooden drawers, the piece introduces balance, texture, and architectural clarity to the interior of a modern home or residence. Designed by Karan Desai and made in India, this statement side table enhances luxury interiors while standing as a distinctive collectible piece within curated living spaces.`,
     dimensions:
       'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO4UCttXmYLAzci562mjC7NX0nUpdqB8Hf3QEW',
@@ -6269,6 +6392,20 @@ Because even your side table should speak volumes.`,
         },
       },
     ],
+    marbleImages: {
+      'indianblackbheslana': [
+        '/marbles/matilda2022/teabar/indianblackbheslana/1.webp',
+      ],
+      'indianrossolevante': [
+        '/marbles/matilda2022/teabar/indianrossolevante/1.webp',
+      ],
+      'italianbeigetravertine': [
+        '/marbles/matilda2022/teabar/italianbeigetravertine/1.webp',
+      ],
+      'marquina': [
+        '/marbles/matilda2022/teabar/marquina/1.webp',
+      ],
+    },
     description: `To be edited`,
     dimensions:
       'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOjnwUKeNQNhsYReup8oqCmaiw71dHbWcUIX5f',
