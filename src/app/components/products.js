@@ -84,6 +84,26 @@ export const products = [
       },
 
     ],
+    marbleImages: {
+      'indianblackbheslana': [
+        '/marbles/matilda2024/partitionscreen/indianblackbheslana/1.webp',
+        '/marbles/matilda2024/partitionscreen/indianblackbheslana/2.webp',
+        '/marbles/matilda2024/partitionscreen/indianblackbheslana/3.webp',
+        '/marbles/matilda2024/partitionscreen/indianblackbheslana/4.webp',
+      ],
+      'indianrossolevante': [
+        '/marbles/matilda2024/partitionscreen/indianrossolevante/1.webp',
+        '/marbles/matilda2024/partitionscreen/indianrossolevante/2.webp',
+      ],
+      'italianbeigetravertine': [
+        '/marbles/matilda2024/partitionscreen/italianbeigetravertine/1.webp',
+        '/marbles/matilda2024/partitionscreen/italianbeigetravertine/2.webp',
+      ],
+      'marquina': [
+        '/marbles/matilda2024/partitionscreen/marquina/1.webp',
+        '/marbles/matilda2024/partitionscreen/marquina/2.webp',
+      ],
+    },
 
     video:
       'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCgDKppeFoQ5jtomeZYnhXwDRcaNS8IHVWdJi4',
@@ -374,6 +394,11 @@ Grounded in strength and softened with indulgence, this bench proves that the bo
         thumbnail: '/assets/products/thumbnails/1738927330516-Slide6.JPG',
       },
     ],
+    marbleImages: {
+      'indianblackbheslana': [
+        '/marbles/matilda2024/centertable1/indianblackbheslana/1.webp',
+      ],
+    },
     description: `This center table isn’t just furniture — it’s a power play in pure marble. 
 
 Featuring a bold U-shaped curve and wrapped in flawless white veining, it’s the kind of piece that anchors a room and owns attention. 
@@ -479,6 +504,35 @@ This is Karan Desai at his best — where sculptural form meets unstoppable pres
         thumbnail: '/assets/products/thumbnails/1738927353306-Slide7.JPG',
       },
     ],
+    marbleImages: {
+      'indianblackbheslana': [
+        '/marbles/matilda2024/centertable2/indianblackbheslana/1.webp',
+        '/marbles/matilda2024/centertable2/indianblackbheslana/2.webp',
+        '/marbles/matilda2024/centertable2/indianblackbheslana/3.webp',
+        '/marbles/matilda2024/centertable2/indianblackbheslana/4.webp',
+        '/marbles/matilda2024/centertable2/indianblackbheslana/5.webp',
+        '/marbles/matilda2024/centertable2/indianblackbheslana/6.webp',
+      ],
+      'indianrossolevante': [
+        '/marbles/matilda2024/centertable2/indianrossolevante/1.webp',
+        '/marbles/matilda2024/centertable2/indianrossolevante/2.webp',
+        '/marbles/matilda2024/centertable2/indianrossolevante/3.webp',
+        '/marbles/matilda2024/centertable2/indianrossolevante/4.webp',
+      ],
+      'italianbeigetravertine': [
+        '/marbles/matilda2024/centertable2/italianbeigetravertine/1.webp',
+        '/marbles/matilda2024/centertable2/italianbeigetravertine/2.webp',
+        '/marbles/matilda2024/centertable2/italianbeigetravertine/3.webp',
+      ],
+      'marquina': [
+        '/marbles/matilda2024/centertable2/marquina/1.webp',
+        '/marbles/matilda2024/centertable2/marquina/2.webp',
+        '/marbles/matilda2024/centertable2/marquina/3.webp',
+        '/marbles/matilda2024/centertable2/marquina/4.webp',
+        '/marbles/matilda2024/centertable2/marquina/5.webp',
+        '/marbles/matilda2024/centertable2/marquina/6.webp',
+      ],
+    },
     description: `This center table doesn’t just complete a room — it dominates it. 
 
 With a sculptural cross-shaped form carved from seamless white marble, it’s the perfect fusion of architectural audacity and refined taste. 
@@ -542,6 +596,7 @@ Bold. Balanced. Built for spaces that don’t settle for ordinary.`,
         },
       },
     ],
+
     description: `To be edited.`,
     dimensions: '#',
     __v: 0,
@@ -660,6 +715,33 @@ Bold. Balanced. Built for spaces that don’t settle for ordinary.`,
         thumbnail: '/assets/products/thumbnails/1738927920707-Slide8.JPG',
       },
     ],
+    marbleImages: {
+      'indianblackbheslana': [
+        '/marbles/matilda2024/utable/indianblackbheslana/1.webp',
+        '/marbles/matilda2024/utable/indianblackbheslana/2.webp',
+        '/marbles/matilda2024/utable/indianblackbheslana/3.webp',
+        '/marbles/matilda2024/utable/indianblackbheslana/4.webp',
+        '/marbles/matilda2024/utable/indianblackbheslana/5.webp',
+      ],
+      'indianrossolevante': [
+        '/marbles/matilda2024/utable/indianrossolevante/1.webp',
+        '/marbles/matilda2024/utable/indianrossolevante/2.webp',
+        '/marbles/matilda2024/utable/indianrossolevante/3.webp',
+        '/marbles/matilda2024/utable/indianrossolevante/4.webp',
+        '/marbles/matilda2024/utable/indianrossolevante/5.webp',
+      ],
+      'italianbeigetravertine': [
+        '/marbles/matilda2024/utable/italianbeigetravertine/1.webp',
+        '/marbles/matilda2024/utable/italianbeigetravertine/2.webp',
+      ],
+      'marquina': [
+        '/marbles/matilda2024/utable/marquina/1.webp',
+        '/marbles/matilda2024/utable/marquina/2.webp',
+        '/marbles/matilda2024/utable/marquina/3.webp',
+        '/marbles/matilda2024/utable/marquina/4.webp',
+        '/marbles/matilda2024/utable/marquina/5.webp',
+      ],
+    },
     video:
       'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCc6u0KpnvRqiwA2cnJ9Zhf78sxCamS5tDUFQr',
     description: `This isn’t just a U-shaped table — it’s a masterstroke in marble. 
@@ -1127,6 +1209,27 @@ When style meets structure like this, luxury becomes non-negotiable.
         thumbnail: '/assets/products/thumbnails/1738927974901-Slide7.JPG',
       },
     ],
+    marbleImages: {
+      'indianblackbheslana': [
+        '/marbles/matilda2024/chair/indianblackbheslana/1.webp',
+        '/marbles/matilda2024/chair/indianblackbheslana/2.webp',
+        '/marbles/matilda2024/chair/indianblackbheslana/3.webp',
+        '/marbles/matilda2024/chair/indianblackbheslana/4.webp',
+        '/marbles/matilda2024/chair/indianblackbheslana/5.webp',
+      ],
+      'indianrossolevante': [
+        '/marbles/matilda2024/chair/indianrossolevante/1.webp',
+        '/marbles/matilda2024/chair/indianrossolevante/2.webp',
+        '/marbles/matilda2024/chair/indianrossolevante/3.webp',
+        '/marbles/matilda2024/chair/indianrossolevante/4.webp',
+        '/marbles/matilda2024/chair/indianrossolevante/5.webp',
+      ],
+      'marquina': [
+        '/marbles/matilda2024/chair/marquina/1.webp',
+        '/marbles/matilda2024/chair/marquina/2.webp',
+        '/marbles/matilda2024/chair/marquina/3.webp',
+      ],
+    },
     description: `Listen closely. This isn’t just a chair—it’s a power move carved from pure white marble. 
 
 Sleek, sculptural, and impossibly elegant, this masterpiece commands attention in any room. 
