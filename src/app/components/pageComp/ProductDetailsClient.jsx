@@ -61,9 +61,12 @@ export default function ProductDetailsClient({ product }) {
   const [loadedImages, setLoadedImages] = useState(new Set());
   const [showThumbnailGrid, setShowThumbnailGrid] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
-  const [selectedMarble, setSelectedMarble] = useState(
-    product?.material === 'Marble' ? 'Banswara' : null
-  );
+  const [selectedMarble, setSelectedMarble] = useState(() => {
+    if (product?.material !== 'Marble') return null;
+    // If the product explicitly sets defaultMarble (even to null), use that value
+    // This allows products whose base isn't Banswara to start unselected (null → shows product.images)
+    return 'defaultMarble' in (product || {}) ? product.defaultMarble : 'Banswara';
+  });
 
   // Calculate active images based on the selected marble variant
   const activeImages = useMemo(() => {
@@ -225,16 +228,18 @@ export default function ProductDetailsClient({ product }) {
   }, [activeImages, preloadImage, loadedImages]);
 
   const handleSelectMarble = useCallback((marbleName) => {
-    setSelectedMarble((prev) => (prev === marbleName ? 'Banswara' : marbleName));
+    // Determine what the "default" state for this product is
+    const productDefault = 'defaultMarble' in (product || {}) ? product.defaultMarble : 'Banswara';
+    setSelectedMarble((prev) => (prev === marbleName ? productDefault : marbleName));
     setCurrentIndex(0);
     setImageLoaded(false);
-  }, []);
+  }, [product]);
 
   const handleImageSelect = useCallback(
     (index) => {
       setImageLoaded(
         index >= (activeImages?.length || 0) ||
-          loadedImages.has(activeImages[index]?.filePath),
+        loadedImages.has(activeImages[index]?.filePath),
       );
       setCurrentIndex(index);
     },
@@ -317,15 +322,13 @@ export default function ProductDetailsClient({ product }) {
       <div className='grid md:grid-cols-2 pt-14'>
         <section
           ref={imageRef}
-          className={`${
-            isFullscreen ? 'fixed inset-0 z-50 bg-black' : 'relative'
-          } p-4 flex items-center justify-center`}
+          className={`${isFullscreen ? 'fixed inset-0 z-50 bg-black' : 'relative'
+            } p-4 flex items-center justify-center`}
         >
           {(activeImages?.length > 0 || product.video) && (
             <div
-              className={`relative w-full ${
-                isFullscreen ? 'h-screen' : 'h-[80vh]'
-              } rounded-lg overflow-hidden`}
+              className={`relative w-full ${isFullscreen ? 'h-screen' : 'h-[80vh]'
+                } rounded-lg overflow-hidden`}
             >
               {!imageLoaded && (
                 <div className='absolute inset-0 flex items-center justify-center z-10'>
@@ -536,13 +539,11 @@ export default function ProductDetailsClient({ product }) {
                               height={70}
                               src={marble.src}
                               alt={marble.name}
-                              className={`aspect-square object-cover transition-all duration-300 ${
-                                marble.rotate ? 'rotate-90' : ''
-                              } ${
-                                isSelected
+                              className={`aspect-square object-cover transition-all duration-300 ${marble.rotate ? 'rotate-90' : ''
+                                } ${isSelected
                                   ? 'ring-2 ring-white ring-offset-2 ring-offset-black scale-95 opacity-100'
                                   : 'opacity-85 group-hover:opacity-100'
-                              }`}
+                                }`}
                             />
                             {/* Subtle dot to indicate this marble option has custom photos */}
                             {hasCustomImages && !isSelected && (
@@ -550,11 +551,10 @@ export default function ProductDetailsClient({ product }) {
                             )}
                           </div>
                           <p
-                            className={`text-xs w-[80px] mt-2 break-words transition-colors duration-200 ${
-                              isSelected
+                            className={`text-xs w-[80px] mt-2 break-words transition-colors duration-200 ${isSelected
                                 ? 'text-white font-semibold'
                                 : 'text-gray-400 group-hover:text-white'
-                            }`}
+                              }`}
                           >
                             {marble.name}
                           </p>

@@ -6147,6 +6147,24 @@ Because when you invest in details like this, you’re not just upgrading your s
         },
       },
     ],
+    marbleImages: {
+      'indianblackbheslana': [
+        '/marbles/matilda2023/console1/indianblackbheslana/1.webp',
+        '/marbles/matilda2023/console1/indianblackbheslana/2.webp',
+        '/marbles/matilda2023/console1/indianblackbheslana/3.webp',
+        '/marbles/matilda2023/console1/indianblackbheslana/4.webp',
+      ],
+      'italianbeigetravertine': [
+        '/marbles/matilda2023/console1/italianbeigetravertine/1.webp',
+        '/marbles/matilda2023/console1/italianbeigetravertine/2.webp',
+        '/marbles/matilda2023/console1/italianbeigetravertine/3.webp',
+        '/marbles/matilda2023/console1/italianbeigetravertine/4.webp',
+      ],
+      'marquina': [
+        '/marbles/matilda2023/console1/marquina/1.webp',
+        '/marbles/matilda2023/console1/marquina/2.webp',
+      ],
+    },
     description: `This isn’t just a console — it’s confidence, carved in stone. 
 
 The AV Console takes clean lines and luxury materials, then throws subtlety out the window. 
@@ -6167,6 +6185,7 @@ Whether it's hiding cables or holding court, AV means business — and business 
     title: 'matilda 2023 Bench',
     group: 'matilda_2023',
     material: 'Marble',
+    defaultMarble: null,
     pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgzsaPScO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
     images: [
       {
@@ -6210,6 +6229,38 @@ Whether it's hiding cables or holding court, AV means business — and business 
         },
       },
     ],
+    marbleImages: {
+      'banswara': [
+        '/marbles/matilda2023/bench/banswara/1.webp',
+        '/marbles/matilda2023/bench/banswara/2.webp',
+        '/marbles/matilda2023/bench/banswara/3.webp',
+        '/marbles/matilda2023/bench/banswara/4.webp',
+        '/marbles/matilda2023/bench/banswara/5.webp',
+      ],
+      'indianblackbheslana': [
+        '/marbles/matilda2023/bench/indianblackbheslana/1.webp',
+        '/marbles/matilda2023/bench/indianblackbheslana/2.webp',
+        '/marbles/matilda2023/bench/indianblackbheslana/3.webp',
+      ],
+      'indianrossolevante': [
+        '/marbles/matilda2023/bench/indianrossolevante/1.webp',
+        '/marbles/matilda2023/bench/indianrossolevante/2.webp',
+        '/marbles/matilda2023/bench/indianrossolevante/3.webp',
+        '/marbles/matilda2023/bench/indianrossolevante/4.webp',
+        '/marbles/matilda2023/bench/indianrossolevante/5.webp',
+      ],
+      'italianbeigetravertine': [
+        '/marbles/matilda2023/bench/italianbeigetravertine/1.webp',
+        '/marbles/matilda2023/bench/italianbeigetravertine/2.webp',
+        '/marbles/matilda2023/bench/italianbeigetravertine/3.webp',
+        '/marbles/matilda2023/bench/italianbeigetravertine/4.webp',
+      ],
+      'marquina': [
+        '/marbles/matilda2023/bench/marquina/1.webp',
+        '/marbles/matilda2023/bench/marquina/2.webp',
+        '/marbles/matilda2023/bench/marquina/3.webp',
+      ],
+    },
     description: `To be edited.`,
     dimensions:
       'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgzsaPScO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
@@ -6227,7 +6278,7 @@ Whether it's hiding cables or holding court, AV means business — and business 
       {
         fileName: '1738927863060-Slide1.JPG',
         filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6YGDJhbpQ6Mplf2w0nGeTNo5xsyRHC8DzakUP',
+          '/marbles/matilda2023/console2/banswara/1.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -6235,7 +6286,7 @@ Whether it's hiding cables or holding court, AV means business — and business 
       {
         fileName: '1738927863060-Slide1.JPG',
         filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6MJfDueb1lcT5et2R98E1p3obFqIMhKPHkOGX',
+          '/marbles/matilda2023/console2/banswara/2.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -6243,7 +6294,7 @@ Whether it's hiding cables or holding court, AV means business — and business 
       {
         fileName: '1738927863060-Slide1.JPG',
         filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6ZvGRLVnztXfi7NrOjVYyq8TUbv1HSJhxCEsF',
+          '/marbles/matilda2023/console2/banswara/3.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -6251,12 +6302,35 @@ Whether it's hiding cables or holding court, AV means business — and business 
       {
         fileName: '1738927863060-Slide1.JPG',
         filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6Ki2lKgG1IjYTEqDxft0rBZkyuJnXG3FKod5e',
+          '/marbles/matilda2023/console2/banswara/4.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
     ],
+    marbleImages: {
+      'indianblackbheslana': [
+        '/marbles/matilda2023/console2/indianblackbheslana/1.webp',
+        '/marbles/matilda2023/console2/indianblackbheslana/2.webp',
+        '/marbles/matilda2023/console2/indianblackbheslana/3.webp',
+      ],
+      'indianrossolevante': [
+        '/marbles/matilda2023/console2/indianrossolevante/1.webp',
+        '/marbles/matilda2023/console2/indianrossolevante/2.webp',
+      ],
+      'italianbeigetravertine': [
+        '/marbles/matilda2023/console2/italianbeigetravertine/1.webp',
+        '/marbles/matilda2023/console2/italianbeigetravertine/2.webp',
+        '/marbles/matilda2023/console2/italianbeigetravertine/3.webp',
+        '/marbles/matilda2023/console2/italianbeigetravertine/4.webp',
+      ],
+      'marquina': [
+        '/marbles/matilda2023/console2/marquina/1.webp',
+        '/marbles/matilda2023/console2/marquina/2.webp',
+        '/marbles/matilda2023/console2/marquina/3.webp',
+        '/marbles/matilda2023/console2/marquina/4.webp',
+      ],
+    },
     description: `Understated? Never. Console 2 is pure finesse — all smooth curves and natural swagger, sculpted from warm travertine that looks like it’s been sunbathing in Tuscany for a century. 
 
 Two bold bases — one squared, one curved — balance each other like a masterclass in duality. 
@@ -6281,7 +6355,7 @@ Place it in your entryway, gallery, or corner office — this piece doesn’t ju
       {
         fileName: '1738927863060-Slide1.JPG',
         filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6SO7Dkd8zaXZkiDGfjl7Bco4E3528bMxICHhd',
+          '/marbles/matilda2023/sidetable/banswara/1.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -6289,7 +6363,7 @@ Place it in your entryway, gallery, or corner office — this piece doesn’t ju
       {
         fileName: '1738927863060-Slide1.JPG',
         filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6oIs9oMWEjDF2ULYwO4TC6vlbt5HPqp1suxyV',
+          '/marbles/matilda2023/sidetable/banswara/2.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -6297,7 +6371,7 @@ Place it in your entryway, gallery, or corner office — this piece doesn’t ju
       {
         fileName: '1738927863060-Slide1.JPG',
         filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6tazmp1ZyMXp4DZUB5duPNHnOk0vqFAbeaVch',
+          '/marbles/matilda2023/sidetable/banswara/3.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -6305,7 +6379,7 @@ Place it in your entryway, gallery, or corner office — this piece doesn’t ju
       {
         fileName: '1738927863060-Slide1.JPG',
         filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6dHHzAUj5nQHCxdAwKzgMiNoO8BVZTP3fJuq1',
+          '/marbles/matilda2023/sidetable/banswara/4.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -6313,12 +6387,21 @@ Place it in your entryway, gallery, or corner office — this piece doesn’t ju
       {
         fileName: '1738927863060-Slide1.JPG',
         filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6yPtn0jAAvzOemNhFRJkaS3KXZ0LMo1E2ijgW',
+          '/marbles/matilda2023/sidetable/banswara/5.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
     ],
+    marbleImages: {
+      'indianblackbheslana': [
+        '/marbles/matilda2023/sidetable/indianblackbheslana/1.webp',
+        '/marbles/matilda2023/sidetable/indianblackbheslana/2.webp',
+        '/marbles/matilda2023/sidetable/indianblackbheslana/3.webp',
+        '/marbles/matilda2023/sidetable/indianblackbheslana/4.webp',
+      ],
+
+    },
     description: `You think this is just a side table? Think again. This is geometry with swagger. 
 Precision-cut marble cubes, separated by a jet-black bridge — bold, minimal, and absolutely unapologetic. 
 
@@ -6379,6 +6462,7 @@ Because even your side table should speak volumes.`,
     title: 'Matilda 2023 Console Green',
     group: 'matilda_2023',
     material: 'Marble',
+    defaultMarble: null,
     pdf: '#',
     images: [
       {
@@ -6417,6 +6501,34 @@ Because even your side table should speak volumes.`,
         },
       },
     ],
+    marbleImages: {
+      'banswara': [
+        '/marbles/matilda2023/console3/banswara/1.webp',
+        '/marbles/matilda2023/console3/banswara/2.webp',
+        '/marbles/matilda2023/console3/banswara/3.webp',
+        '/marbles/matilda2023/console3/banswara/4.webp',
+      ],
+      'indianblackbheslana': [
+        '/marbles/matilda2023/console3/indianblackbheslana/1.webp',
+        '/marbles/matilda2023/console3/indianblackbheslana/2.webp',
+        '/marbles/matilda2023/console3/indianblackbheslana/3.webp',
+        '/marbles/matilda2023/console3/indianblackbheslana/4.webp',
+      ],
+      'italianbeigetravertine': [
+        '/marbles/matilda2023/console3/italianbeigetravertine/1.webp',
+        '/marbles/matilda2023/console3/italianbeigetravertine/2.webp',
+        '/marbles/matilda2023/console3/italianbeigetravertine/3.webp',
+        '/marbles/matilda2023/console3/italianbeigetravertine/4.webp',
+        '/marbles/matilda2023/console3/italianbeigetravertine/5.webp',
+      ],
+      'marquina': [
+        '/marbles/matilda2023/console3/marquina/1.webp',
+        '/marbles/matilda2023/console3/marquina/2.webp',
+        '/marbles/matilda2023/console3/marquina/3.webp',
+        '/marbles/matilda2023/console3/marquina/4.webp',
+        '/marbles/matilda2023/console3/marquina/5.webp',
+      ],
+    },
     description: `To be edited.`,
     dimensions: '#',
     __v: 0,
