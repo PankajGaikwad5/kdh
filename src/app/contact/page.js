@@ -20,6 +20,7 @@ import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
 import { Poppins, Montserrat, Bebas_Neue } from 'next/font/google';
 import Footer from '../components/Footer';
+import Link from 'next/link';
 
 // popins
 // montserrat
@@ -274,9 +275,19 @@ const page = () => {
                         </FormItem>
                       )}
                     />
+                    <div className='text-[10px] text-zinc-500 font-light leading-relaxed tracking-wider pt-2'>
+                      By submitting this form, you consent to our processing of your personal data as outlined in our{' '}
+                      <Link href='/privacy-policy' className='underline hover:text-white transition-colors duration-300'>
+                        Privacy Policy
+                      </Link>{' '}
+                      and agree to our{' '}
+                      <Link href='/terms-and-conditions' className='underline hover:text-white transition-colors duration-300'>
+                        Terms & Conditions
+                      </Link>.
+                    </div>
                     <Button
                       type='submit'
-                      className='bg-white uppercase text-gray-900 hover:bg-black hover:text-white transition-all duration-500 ease-in-out  border-zinc-600 rounded-none border px-5 tracking-normal font-medium'
+                      className='bg-white uppercase text-gray-900 hover:bg-black hover:text-white transition-all duration-500 ease-in-out  border-zinc-600 rounded-none border px-5 tracking-normal font-medium mt-2'
                     >
                       Submit
                     </Button>

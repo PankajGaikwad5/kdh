@@ -7,6 +7,7 @@ import { Montserrat } from 'next/font/google';
 import Footer from './components/Footer';
 import Head from 'next/head';
 import Script from 'next/script';
+import CookieConsent from './components/CookieConsent';
 
 // popins
 // montserrat
@@ -248,6 +249,7 @@ export default function RootLayout({ children }) {
           />
         </noscript>
         {children}
+        <CookieConsent />
         {/* <Footer /> */}
       </body>
     </html>
