@@ -34,18 +34,18 @@ const magazines = [
 
 const pressItems = [
   { id: 0, name: 'India Today', link: 'https://www.indiatoday.in/magazine/supplement/story/20260629-stone-and-soul-jinashilp-collection-2929024-2026-06-19' },
-  { id: 1, name: 'Architectural Digest', link: '#' },
-  { id: 2, name: 'Wallpaper*', link: '#' },
-  { id: 3, name: 'Dezeen', link: '#' },
-  { id: 4, name: 'T Magazine', link: '#' },
-  { id: 5, name: 'Surface', link: '#' },
+  { id: 1, name: 'Architectural Digest', link: 'https://www.architecturaldigest.com/story/lena-dunhams-designer-on-championing-your-inner-child' },
+  { id: 2, name: 'Wallpaper*', link: 'https://www.wallpaper.com/design-interiors/house-of-santal-south-asian-design-gallery-new-york' },
+  { id: 3, name: 'Dezeen', link: 'https://www.dezeen.com/2026/02/23/house-of-santal-new-york-city-edition-1/' },
+  { id: 4, name: 'T Magazine', link: 'https://www.nytimes.com/2026/02/19/t-magazine/sauna-new-zealand.html' },
+  { id: 5, name: 'Surface', link: 'https://www.surfacemag.com/articles/house-of-santal-new-york-south-asian-design-gallery/' },
   { id: 6, name: 'IFDM', link: 'https://ifdm.design/2026/02/26/house-of-santal-brings-south-asian-design-to-nyc/' },
-  { id: 7, name: 'Livingetc.', link: '#' },
-  { id: 8, name: 'Observer', link: '#' },
-  { id: 9, name: 'Business of Home', link: '#' },
+  { id: 7, name: 'Livingetc.', link: 'https://www.livingetc.com/features/design-diary-march-2026' },
+  { id: 8, name: 'Observer', link: 'https://observer.com/2026/03/interview-raksha-sanikam-house-of-santal-nyc-south-asian-design-furniture-luxury/' },
+  { id: 9, name: 'Business of Home', link: 'https://businessofhome.com/articles/man-wah-makes-a-58-7-million-acquisition-tiktok-has-a-new-us-owner-and-more#' },
   { id: 10, name: 'The PR Net', link: 'https://theprnet.com/news/43334' },
-  { id: 11, name: 'Trend Hunter', link: '#' },
-  { id: 12, name: 'amNY', link: '#' },
+  { id: 11, name: 'Trend Hunter', link: 'https://www.trendhunter.com/trends/house-of-santal' },
+  { id: 12, name: 'amNY', link: 'https://www.amny.com/entertainment/house-of-santal-south-asian-craftsmanship-midtown/' },
 ];
 
 // ─────────────────────────────────────────────────────────────────────────────
