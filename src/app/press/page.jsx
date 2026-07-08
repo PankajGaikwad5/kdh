@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, Fragment } from 'react';
 import gsap from 'gsap';
 import { Montserrat } from 'next/font/google';
 import Image from 'next/image';
@@ -16,18 +16,26 @@ const montserrat = Montserrat({
 const magazines = [
   {
     id: 1,
-    name: 'India Today Home',
+    name: 'Cover',
     issue: 'June 2026 Issue',
-    coverImage: '/press/mags/ithome1.webp',
-    featuredImage: '/press/mags/ithome2.webp',
-    description: 'Featuring the custom KDH Marble Console collection and minimal design aesthetics in a high-end luxury residence.',
+    coverImage: '/press/mags/cover1.webp',
+    featuredImages: ['/press/mags/cover2.webp', '/press/mags/cover3.webp'],
+    description: 'A special feature showcasing the unique design details across multiple editorial spreads.',
   },
   {
     id: 2,
+    name: 'India Today Home',
+    issue: 'June 2026 Issue',
+    coverImage: '/press/mags/ithome1.webp',
+    featuredImages: ['/press/mags/ithome2.webp'],
+    description: 'Featuring the custom KDH Marble Console collection and minimal design aesthetics in a high-end luxury residence.',
+  },
+  {
+    id: 3,
     name: 'Architects Fortune India',
     issue: 'June 2026 Issue',
     coverImage: '/press/mags/fortune1.webp',
-    featuredImage: '/press/mags/fortune2.webp',
+    featuredImages: ['/press/mags/fortune2.webp'],
     description: 'An exclusive feature highlighting the handcrafted brass details and futuristic design of the new Monster lighting series.',
   },
 ];
@@ -279,9 +287,9 @@ export default function PressPage() {
             <div className="flex-1 overflow-y-auto p-6 md:p-8 flex flex-col items-center justify-start md:justify-center">
 
               {/* Spread layout - stacked on mobile, side-by-side on desktop */}
-              <div className="w-full flex flex-col md:flex-row gap-8 justify-center items-center max-w-4xl">
+              <div className="w-full flex flex-col md:flex-row gap-8 justify-center items-stretch max-w-4xl">
                 {/* Cover Spread */}
-                <div className="w-full md:w-1/2 flex flex-col items-center">
+                <div className="w-full md:flex-1 flex flex-col items-center justify-center">
                   <span className="text-[10px] uppercase tracking-widest text-zinc-500 mb-2 font-semibold">Magazine Cover</span>
                   <div
                     onClick={() => { setZoomedImage(selectedMagazine.coverImage); setIsZoomedIn(false); }}
@@ -303,31 +311,37 @@ export default function PressPage() {
                   </div>
                 </div>
 
-                {/* Vertical Divider */}
-                <div className="hidden md:block w-px self-stretch bg-zinc-800/60 my-4" />
+                {selectedMagazine.featuredImages.map((imgUrl, index) => (
+                  <Fragment key={index}>
+                    {/* Vertical Divider */}
+                    <div className="hidden md:block w-px self-stretch bg-zinc-800/60 my-4" />
 
-                {/* Feature Spread */}
-                <div className="w-full md:w-1/2 flex flex-col items-center">
-                  <span className="text-[10px] uppercase tracking-widest text-zinc-500 mb-2 font-semibold">Featured Page</span>
-                  <div
-                    onClick={() => { setZoomedImage(selectedMagazine.featuredImage); setIsZoomedIn(false); }}
-                    className="relative w-full max-w-[320px] aspect-[3/4] rounded-lg overflow-hidden border border-zinc-800/80 shadow-2xl cursor-zoom-in hover:opacity-95 transition-opacity duration-300"
-                  >
-                    {!loadedImages[`modal-${selectedMagazine.id}-feature`] && (
-                      <div className="absolute inset-0 bg-zinc-900 animate-pulse flex items-center justify-center">
-                        <span className="text-[10px] uppercase tracking-widest text-zinc-600">Loading...</span>
+                    {/* Feature Spread */}
+                    <div className="w-full md:flex-1 flex flex-col items-center justify-center">
+                      <span className="text-[10px] uppercase tracking-widest text-zinc-500 mb-2 font-semibold">
+                        Featured Page {selectedMagazine.featuredImages.length > 1 ? index + 1 : ''}
+                      </span>
+                      <div
+                        onClick={() => { setZoomedImage(imgUrl); setIsZoomedIn(false); }}
+                        className="relative w-full max-w-[320px] aspect-[3/4] rounded-lg overflow-hidden border border-zinc-800/80 shadow-2xl cursor-zoom-in hover:opacity-95 transition-opacity duration-300"
+                      >
+                        {!loadedImages[`modal-${selectedMagazine.id}-feature-${index}`] && (
+                          <div className="absolute inset-0 bg-zinc-900 animate-pulse flex items-center justify-center">
+                            <span className="text-[10px] uppercase tracking-widest text-zinc-600">Loading...</span>
+                          </div>
+                        )}
+                        <Image
+                          src={imgUrl}
+                          alt={`${selectedMagazine.name} Feature ${index + 1}`}
+                          fill
+                          priority
+                          className="object-cover"
+                          onLoad={() => handleImageLoad(`modal-${selectedMagazine.id}-feature-${index}`)}
+                        />
                       </div>
-                    )}
-                    <Image
-                      src={selectedMagazine.featuredImage}
-                      alt={`${selectedMagazine.name} Feature`}
-                      fill
-                      priority
-                      className="object-cover"
-                      onLoad={() => handleImageLoad(`modal-${selectedMagazine.id}-feature`)}
-                    />
-                  </div>
-                </div>
+                    </div>
+                  </Fragment>
+                ))}
               </div>
 
               {/* Description */}
