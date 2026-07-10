@@ -32,7 +32,7 @@ const magazines = [
   },
   {
     id: 3,
-    name: 'Architects Fortune India',
+    name: 'Fortune India',
     issue: 'June 2026 Issue',
     coverImage: '/press/mags/fortune1.webp',
     featuredImages: ['/press/mags/fortune2.webp'],
