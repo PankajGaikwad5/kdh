@@ -4944,6 +4944,32 @@ It's architecture with attitude.`,
         thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
       },
     ],
+    marbleImages: {
+      'indianblackbheslana': [
+        '/marbles/matilda2025/kddesk/indianblackbheslana/1.webp',
+        '/marbles/matilda2025/kddesk/indianblackbheslana/2.webp',
+        '/marbles/matilda2025/kddesk/indianblackbheslana/3.webp',
+        '/marbles/matilda2025/kddesk/indianblackbheslana/4.webp',
+      ],
+      'indianrossolevante': [
+        '/marbles/matilda2025/kddesk/indianrossolevante/1.webp',
+        '/marbles/matilda2025/kddesk/indianrossolevante/2.webp',
+        '/marbles/matilda2025/kddesk/indianrossolevante/3.webp',
+        '/marbles/matilda2025/kddesk/indianrossolevante/4.webp',
+      ],
+      'italianbeigetravertine': [
+        '/marbles/matilda2025/kddesk/italianbeigetravertine/1.webp',
+        '/marbles/matilda2025/kddesk/italianbeigetravertine/2.webp',
+        '/marbles/matilda2025/kddesk/italianbeigetravertine/3.webp',
+        '/marbles/matilda2025/kddesk/italianbeigetravertine/4.webp',
+      ],
+      'marquina': [
+        '/marbles/matilda2025/kddesk/marquina/1.webp',
+        '/marbles/matilda2025/kddesk/marquina/2.webp',
+        '/marbles/matilda2025/kddesk/marquina/3.webp',
+        '/marbles/matilda2025/kddesk/marquina/4.webp',
+      ],
+    },
     description: `This isn’t a desk—it’s a power platform. 
 
 Crafted from rich white marble with a bold, asymmetrical silhouette, it doesn't just sit in a room—it dominates it. 
@@ -5008,6 +5034,36 @@ Want to own the room before you even speak? Start here.`,
         thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
       },
     ],
+     marbleImages: {
+      'indianblackbheslana': [
+        '/marbles/matilda2025/mirror/indianblackbheslana/1.webp',
+        '/marbles/matilda2025/mirror/indianblackbheslana/2.webp',
+        '/marbles/matilda2025/mirror/indianblackbheslana/3.webp',
+        '/marbles/matilda2025/mirror/indianblackbheslana/4.webp',
+        '/marbles/matilda2025/mirror/indianblackbheslana/5.webp',
+      ],
+      'indianrossolevante': [
+        '/marbles/matilda2025/mirror/indianrossolevante/1.webp',
+        '/marbles/matilda2025/mirror/indianrossolevante/2.webp',
+        '/marbles/matilda2025/mirror/indianrossolevante/3.webp',
+        '/marbles/matilda2025/mirror/indianrossolevante/4.webp',
+        '/marbles/matilda2025/mirror/indianrossolevante/5.webp',
+      ],
+      'italianbeigetravertine': [
+        '/marbles/matilda2025/mirror/italianbeigetravertine/1.webp',
+        '/marbles/matilda2025/mirror/italianbeigetravertine/2.webp',
+        '/marbles/matilda2025/mirror/italianbeigetravertine/3.webp',
+        '/marbles/matilda2025/mirror/italianbeigetravertine/4.webp',
+        '/marbles/matilda2025/mirror/italianbeigetravertine/5.webp',
+      ],
+      'marquina': [
+        '/marbles/matilda2025/mirror/marquina/1.webp',
+        '/marbles/matilda2025/mirror/marquina/2.webp',
+        '/marbles/matilda2025/mirror/marquina/3.webp',
+        '/marbles/matilda2025/mirror/marquina/4.webp',
+        '/marbles/matilda2025/mirror/marquina/5.webp',
+      ],
+    },
     description: `This isn’t just a mirror—it’s your daily check-in with greatness. 
 
 Wrapped in precision-cut marble and standing tall with quiet authority, the Office Mirror brings clarity, presence, and power to any executive space. 
@@ -5080,6 +5136,40 @@ This is the kind of mirror that doesn’t flatter. It affirms.
         thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
       },
     ],
+     marbleImages: {
+      'indianblackbheslana': [
+        '/marbles/matilda2025/washbasin/indianblackbheslana/1.webp',
+        '/marbles/matilda2025/washbasin/indianblackbheslana/2.webp',
+        '/marbles/matilda2025/washbasin/indianblackbheslana/3.webp',
+        '/marbles/matilda2025/washbasin/indianblackbheslana/4.webp',
+        '/marbles/matilda2025/washbasin/indianblackbheslana/5.webp',
+        '/marbles/matilda2025/washbasin/indianblackbheslana/6.webp',
+      ],
+      'indianrossolevante': [
+        '/marbles/matilda2025/washbasin/indianrossolevante/1.webp',
+        '/marbles/matilda2025/washbasin/indianrossolevante/2.webp',
+        '/marbles/matilda2025/washbasin/indianrossolevante/3.webp',
+        '/marbles/matilda2025/washbasin/indianrossolevante/4.webp',
+        '/marbles/matilda2025/washbasin/indianrossolevante/5.webp',
+        '/marbles/matilda2025/washbasin/indianrossolevante/6.webp',
+      ],
+      'italianbeigetravertine': [
+        '/marbles/matilda2025/washbasin/italianbeigetravertine/1.webp',
+        '/marbles/matilda2025/washbasin/italianbeigetravertine/2.webp',
+        '/marbles/matilda2025/washbasin/italianbeigetravertine/3.webp',
+        '/marbles/matilda2025/washbasin/italianbeigetravertine/4.webp',
+        '/marbles/matilda2025/washbasin/italianbeigetravertine/5.webp',
+        '/marbles/matilda2025/washbasin/italianbeigetravertine/6.webp',
+      ],
+      'marquina': [
+        '/marbles/matilda2025/washbasin/marquina/1.webp',
+        '/marbles/matilda2025/washbasin/marquina/2.webp',
+        '/marbles/matilda2025/washbasin/marquina/3.webp',
+        '/marbles/matilda2025/washbasin/marquina/4.webp',
+        '/marbles/matilda2025/washbasin/marquina/5.webp',
+        '/marbles/matilda2025/washbasin/marquina/6.webp',
+      ],
+    },
     description: `This isn’t just a wash basin—it’s a flex in stone. 
 
 Carved from a solid block of premium marble, it’s smooth, sculpted, and impossible to ignore. 
@@ -5207,6 +5297,36 @@ Ideal for contemporary lounges, hospitality spaces, or high-end offices — the 
         thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
       },
     ],
+     marbleImages: {
+      'indianblackbheslana': [
+        '/marbles/matilda2025/conferencetable/indianblackbheslana/1.webp',
+        '/marbles/matilda2025/conferencetable/indianblackbheslana/2.webp',
+        '/marbles/matilda2025/conferencetable/indianblackbheslana/3.webp',
+        '/marbles/matilda2025/conferencetable/indianblackbheslana/4.webp',
+        '/marbles/matilda2025/conferencetable/indianblackbheslana/5.webp',
+      ],
+      'indianrossolevante': [
+        '/marbles/matilda2025/conferencetable/indianrossolevante/1.webp',
+        '/marbles/matilda2025/conferencetable/indianrossolevante/2.webp',
+        '/marbles/matilda2025/conferencetable/indianrossolevante/3.webp',
+        '/marbles/matilda2025/conferencetable/indianrossolevante/4.webp',
+        '/marbles/matilda2025/conferencetable/indianrossolevante/5.webp',
+      ],
+      'italianbeigetravertine': [
+        '/marbles/matilda2025/conferencetable/italianbeigetravertine/1.webp',
+        '/marbles/matilda2025/conferencetable/italianbeigetravertine/2.webp',
+        '/marbles/matilda2025/conferencetable/italianbeigetravertine/3.webp',
+        '/marbles/matilda2025/conferencetable/italianbeigetravertine/4.webp',
+        '/marbles/matilda2025/conferencetable/italianbeigetravertine/5.webp',
+      ],
+      'marquina': [
+        '/marbles/matilda2025/conferencetable/marquina/1.webp',
+        '/marbles/matilda2025/conferencetable/marquina/2.webp',
+        '/marbles/matilda2025/conferencetable/marquina/3.webp',
+        '/marbles/matilda2025/conferencetable/marquina/4.webp',
+        '/marbles/matilda2025/conferencetable/marquina/5.webp',
+      ],
+    },
     description: `Make a bold statement in your meeting room with the Monster Conference Table. Crafted entirely from solid marble, 
 this piece blends sculptural artistry with executive function. 
 The organically shaped legs give the table a dynamic presence, as if it's alive and ready to take charge of the room.
@@ -6086,6 +6206,29 @@ A symbol of restraint, rhythm, and remarkable design.`,
         },
       },
     ],
+    marbleImages: {
+      'indianblackbheslana': [
+        '/marbles/matilda2025/taavdi/indianblackbheslana/1.webp',
+        '/marbles/matilda2025/taavdi/indianblackbheslana/2.webp',
+        '/marbles/matilda2025/taavdi/indianblackbheslana/3.webp',
+      ],
+      'indianrossolevante': [
+        '/marbles/matilda2025/taavdi/indianrossolevante/1.webp',
+        '/marbles/matilda2025/taavdi/indianrossolevante/2.webp',
+        '/marbles/matilda2025/taavdi/indianrossolevante/3.webp',
+      ],
+      'italianbeigetravertine': [
+        '/marbles/matilda2025/taavdi/italianbeigetravertine/1.webp',
+        '/marbles/matilda2025/taavdi/italianbeigetravertine/2.webp',
+        '/marbles/matilda2025/taavdi/italianbeigetravertine/3.webp',
+      ],
+      'marquina': [
+        '/marbles/matilda2025/taavdi/marquina/1.webp',
+        '/marbles/matilda2025/taavdi/marquina/2.webp',
+        '/marbles/matilda2025/taavdi/marquina/3.webp',
+      ],
+    },
+    
     description: `You’re not just looking at basins — you’re looking at a power move in stone.
 
 This dual-basin setup isn’t here to blend in. It’s here to dominate. Crafted in precision-cut marble and set on a layered tray of raw elegance, this piece screams taste, control, and status. 
