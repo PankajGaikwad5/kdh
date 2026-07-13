@@ -40,21 +40,21 @@ const magazines = [
   },
 ];
 
-const pressItems = [
-  { id: 0, name: 'India Today', link: 'https://www.indiatoday.in/magazine/supplement/story/20260629-stone-and-soul-jinashilp-collection-2929024-2026-06-19' },
-  { id: 1, name: 'Architectural Digest', link: 'https://www.architecturaldigest.com/story/lena-dunhams-designer-on-championing-your-inner-child' },
-  { id: 2, name: 'Wallpaper*', link: 'https://www.wallpaper.com/design-interiors/house-of-santal-south-asian-design-gallery-new-york' },
-  { id: 3, name: 'Dezeen', link: 'https://www.dezeen.com/2026/02/23/house-of-santal-new-york-city-edition-1/' },
-  { id: 4, name: 'T Magazine', link: 'https://www.nytimes.com/2026/02/19/t-magazine/sauna-new-zealand.html' },
-  { id: 5, name: 'Surface', link: 'https://www.surfacemag.com/articles/house-of-santal-new-york-south-asian-design-gallery/' },
-  { id: 6, name: 'IFDM', link: 'https://ifdm.design/2026/02/26/house-of-santal-brings-south-asian-design-to-nyc/' },
-  { id: 7, name: 'Livingetc.', link: 'https://www.livingetc.com/features/design-diary-march-2026' },
-  { id: 8, name: 'Observer', link: 'https://observer.com/2026/03/interview-raksha-sanikam-house-of-santal-nyc-south-asian-design-furniture-luxury/' },
-  { id: 9, name: 'Business of Home', link: 'https://businessofhome.com/articles/man-wah-makes-a-58-7-million-acquisition-tiktok-has-a-new-us-owner-and-more#' },
-  { id: 10, name: 'The PR Net', link: 'https://theprnet.com/news/43334' },
-  { id: 11, name: 'Trend Hunter', link: 'https://www.trendhunter.com/trends/house-of-santal' },
-  { id: 12, name: 'amNY', link: 'https://www.amny.com/entertainment/house-of-santal-south-asian-craftsmanship-midtown/' },
-];
+// const pressItems = [
+//   { id: 0, name: 'India Today', link: 'https://www.indiatoday.in/magazine/supplement/story/20260629-stone-and-soul-jinashilp-collection-2929024-2026-06-19' },
+//   { id: 1, name: 'Architectural Digest', link: 'https://www.architecturaldigest.com/story/lena-dunhams-designer-on-championing-your-inner-child' },
+//   { id: 2, name: 'Wallpaper*', link: 'https://www.wallpaper.com/design-interiors/house-of-santal-south-asian-design-gallery-new-york' },
+//   { id: 3, name: 'Dezeen', link: 'https://www.dezeen.com/2026/02/23/house-of-santal-new-york-city-edition-1/' },
+//   { id: 4, name: 'T Magazine', link: 'https://www.nytimes.com/2026/02/19/t-magazine/sauna-new-zealand.html' },
+//   { id: 5, name: 'Surface', link: 'https://www.surfacemag.com/articles/house-of-santal-new-york-south-asian-design-gallery/' },
+//   { id: 6, name: 'IFDM', link: 'https://ifdm.design/2026/02/26/house-of-santal-brings-south-asian-design-to-nyc/' },
+//   { id: 7, name: 'Livingetc.', link: 'https://www.livingetc.com/features/design-diary-march-2026' },
+//   { id: 8, name: 'Observer', link: 'https://observer.com/2026/03/interview-raksha-sanikam-house-of-santal-nyc-south-asian-design-furniture-luxury/' },
+//   { id: 9, name: 'Business of Home', link: 'https://businessofhome.com/articles/man-wah-makes-a-58-7-million-acquisition-tiktok-has-a-new-us-owner-and-more#' },
+//   { id: 10, name: 'The PR Net', link: 'https://theprnet.com/news/43334' },
+//   { id: 11, name: 'Trend Hunter', link: 'https://www.trendhunter.com/trends/house-of-santal' },
+//   { id: 12, name: 'amNY', link: 'https://www.amny.com/entertainment/house-of-santal-south-asian-craftsmanship-midtown/' },
+// ];
 
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -226,35 +226,6 @@ export default function PressPage() {
           ))}
         </div>
 
-        {/* Digital Coverage Section */}
-        <div className="mt-8 mb-6 flex items-center gap-4">
-          <span className={`text-xs uppercase tracking-widest text-zinc-500 whitespace-nowrap ${montserrat.className}`}>
-            Online Coverage
-          </span>
-          <div className="flex-1 h-px bg-zinc-800" />
-        </div>
-
-        <div
-          ref={pressRef}
-          className="grid grid-cols-1 gap-y-16 pb-24 pt-10 sm:grid-cols-2 sm:gap-x-8 lg:grid-cols-3 lg:gap-x-10"
-        >
-          {pressItems.map((item) => (
-            <a
-              key={item.id}
-              href={item.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex min-h-36 w-full flex-col items-center justify-center gap-4 px-3 py-4 text-center cursor-pointer sm:min-h-44"
-            >
-              <span className={`max-w-sm break-normal text-3xl font-semibold uppercase leading-tight tracking-wide text-gray-200 transition-colors duration-300 group-hover:text-white sm:text-2xl md:text-3xl lg:text-3xl 2xl:text-3xl ${montserrat.className}`}>
-                {item.name}
-              </span>
-              <span className={`text-[10px] uppercase tracking-widest text-zinc-500 group-hover:text-zinc-300 transition-colors duration-300 ${montserrat.className}`}>
-                View Article →
-              </span>
-            </a>
-          ))}
-        </div>
 
       </div>
 
