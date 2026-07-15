@@ -23,6 +23,7 @@ import { Input } from '../../components/ui/input';
 import { Textarea } from '../../components/ui/textarea';
 import ThumbnailGrid from '@/app/components/ThumbnailGrid';
 import Navbar from '@/app/components/Navbar';
+import { useCart } from '@/app/context/CartContext';
 
 const AccordionMarbles = dynamic(
   () => import('@/app/components/AccordionMarbles').then((mod) => mod.AccordionMarbles),
@@ -55,6 +56,7 @@ const normalizeKey = (str) => {
 
 export default function ProductDetailsClient({ product }) {
   const router = useRouter();
+  const { addToCart, removeFromCart, isInCart } = useCart();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showModal, setShowModal] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -575,16 +577,33 @@ export default function ProductDetailsClient({ product }) {
               </div>
 
               <div className='gsap-reveal mt-10 flex gap-4 flex-col md:flex-row flex-wrap'>
-                <a href={product.pdf} target='_blank' rel='noopener noreferrer'>
+                {product.pdf && (
+                  <a href={product.pdf} target='_blank' rel='noopener noreferrer' className='w-full md:w-auto'>
+                    <Button
+                      variant='outline'
+                      className='px-6 py-2 border w-full border-white text-black rounded-none hover:bg-white/80'
+                    >
+                      Download Spec Sheet
+                    </Button>
+                  </a>
+                )}
+                {isInCart(product._id.$oid, selectedMarble) ? (
                   <Button
-                    variant='outline'
-                    className='px-6 py-2 border w-full md:w-auto border-white text-black rounded-none hover:bg-white/80'
+                    className='px-6 py-2 border w-full md:w-auto border-red-500 bg-red-500/10 text-red-500 rounded-none hover:bg-red-500 hover:text-white transition-all duration-300 font-medium'
+                    onClick={() => removeFromCart(product._id.$oid, selectedMarble)}
                   >
-                    Download Spec Sheet
+                    Remove from Cart
                   </Button>
-                </a>
+                ) : (
+                  <Button
+                    className='px-6 py-2 border w-full md:w-auto border-white bg-white text-black rounded-none hover:bg-transparent hover:text-white transition-all duration-300 font-medium'
+                    onClick={() => addToCart(product, selectedMarble)}
+                  >
+                    Add to Cart
+                  </Button>
+                )}
                 <Button
-                  className='px-6 py-2 border w-full md:w-auto border-white bg-transparent text-white rounded-none hover:bg-white hover:text-black'
+                  className='px-6 py-2 border w-full md:w-auto border-white bg-transparent text-white rounded-none hover:bg-white hover:text-black transition-all duration-300'
                   onClick={() => setShowModal(true)}
                 >
                   Enquire

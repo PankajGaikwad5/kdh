@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Head from 'next/head';
 import Script from 'next/script';
 import CookieConsent from './components/CookieConsent';
+import { CartProvider } from './context/CartContext';
 
 // popins
 // montserrat
@@ -248,8 +249,10 @@ export default function RootLayout({ children }) {
             alt=''
           />
         </noscript>
-        {children}
-        <CookieConsent />
+        <CartProvider>
+          {children}
+          <CookieConsent />
+        </CartProvider>
         {/* <Footer /> */}
       </body>
     </html>

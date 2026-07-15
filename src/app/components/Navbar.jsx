@@ -3,9 +3,10 @@ import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import { Poppins, Montserrat } from 'next/font/google';
 import { useRouter } from 'next/navigation';
-import { ArrowLeft, Search, X } from 'lucide-react';
+import { ArrowLeft, Search, X, ShoppingBag } from 'lucide-react';
 import Link from 'next/link';
 import { products } from './products'; // adjust path if needed
+import { useCart } from '@/app/context/CartContext';
 
 // Fonts
 const popins = Poppins({
@@ -24,6 +25,7 @@ const Navbar = ({ isBgBlack, arrow, escape, home }) => {
   const [showSearch, setShowSearch] = useState(false);
   const [query, setQuery] = useState('');
   const [results, setResults] = useState([]);
+  const { cartCount, isInitialized } = useCart();
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -75,6 +77,7 @@ const Navbar = ({ isBgBlack, arrow, escape, home }) => {
     { id: 7, name: 'mandirs', path: 'mandirs' },
     { id: 4, name: 'collaborations', path: 'collaborations' },
     { id: 5, name: 'press', path: 'press' },
+    { id: 8, name: 'cart', path: 'cart' },
     { id: 6, name: 'contact us', path: 'contact' },
   ];
 
@@ -107,15 +110,34 @@ const Navbar = ({ isBgBlack, arrow, escape, home }) => {
         />
       </div>
 
-      {/* 🔍 Search icon (top-right) */}
-      <button
-        onClick={() => setShowSearch(!showSearch)}
+      {/* Top-right Actions (Cart & Search) */}
+      <div
         className={`fixed top-6 ${
           !home ? 'right-7' : 'right-16'
-        }  z-40 p-2 rounded-full bg-black/20 hover:bg-black/40 text-white transition-all`}
+        } z-40 flex items-center gap-3`}
       >
-        {showSearch ? <X size={20} /> : <Search size={20} />}
-      </button>
+        {/* Shopping Cart Button */}
+        <Link
+          href='/cart'
+          className='p-2 rounded-full bg-black/20 hover:bg-black/40 text-white transition-all relative flex items-center justify-center'
+          title='View Cart'
+        >
+          <ShoppingBag size={20} />
+          {isInitialized && cartCount > 0 && (
+            <span className='absolute -top-1 -right-1 bg-white text-black text-[9px] font-bold rounded-full w-5 h-5 flex items-center justify-center shadow-md'>
+              {cartCount}
+            </span>
+          )}
+        </Link>
+
+        {/* 🔍 Search icon */}
+        <button
+          onClick={() => setShowSearch(!showSearch)}
+          className='p-2 rounded-full bg-black/20 hover:bg-black/40 text-white transition-all flex items-center justify-center'
+        >
+          {showSearch ? <X size={20} /> : <Search size={20} />}
+        </button>
+      </div>
 
       {/* Search overlay */}
       {showSearch && (
