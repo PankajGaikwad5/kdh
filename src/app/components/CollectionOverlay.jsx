@@ -2,13 +2,11 @@
 import React, { useRef, useEffect, useState, useMemo, useCallback, Suspense } from 'react';
 import gsap from 'gsap';
 import { X, ArrowRight } from 'lucide-react';
-import { Montserrat } from 'next/font/google';
 import Link from 'next/link';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { useTexture } from '@react-three/drei';
 import * as THREE from 'three';
 
-const montserrat = Montserrat({ subsets: ['latin'], weight: ['400', '600', '700'] });
 
 // Shared — allocated once, never recreated
 const PLANE_GEO = new THREE.PlaneGeometry(1, 1);
@@ -214,7 +212,7 @@ const CollectionOverlay = ({ isVisible, onClose, products = [] }) => {
   if (!items.length) return null;
 
   return (
-    <div ref={overlayRef} className={`fixed inset-0 z-40 ${montserrat.className}`} style={{ display: 'none', opacity: 0, background: 'transparent' }}>
+    <div ref={overlayRef} className="fixed inset-0 z-40" style={{ display: 'none', opacity: 0, background: 'transparent' }}>
 
       {/* Close */}
       <button onClick={onClose} className='bg-black/10 backdrop-blur-sm absolute top-4 right-4 sm:top-6 sm:right-6 z-30 text-black/60 hover:text-black transition-colors p-2 rounded-full' aria-label='Close'>

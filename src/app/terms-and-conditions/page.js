@@ -4,17 +4,7 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { Poppins, Montserrat } from 'next/font/google';
 
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['300', '400', '600', '700'],
-});
-
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-});
 
 const TermsAndConditions = () => {
   const containerRef = useRef(null);
@@ -68,7 +58,7 @@ const TermsAndConditions = () => {
           <div className="w-full text-center flex justify-center mb-12">
             <h1
               ref={headerRef}
-              className={`text-3xl sm:text-4xl font-bold text-gray-200 pb-6 border-b border-zinc-800 uppercase tracking-widest w-full md:max-w-2xl ${montserrat.className}`}
+              className='text-3xl sm:text-4xl font-bold text-gray-200 pb-6 border-b border-zinc-800 uppercase tracking-widest w-full md:max-w-2xl'
             >
               Terms & Conditions
             </h1>
@@ -76,7 +66,7 @@ const TermsAndConditions = () => {
 
           <div
             ref={contentRef}
-            className={`space-y-10 text-sm tracking-wide leading-relaxed text-zinc-300 ${poppins.className}`}
+            className='space-y-10 text-sm tracking-wide leading-relaxed text-zinc-300'
           >
             <section className="space-y-3">
               <p className="font-light">
@@ -90,7 +80,7 @@ const TermsAndConditions = () => {
             <hr className="border-zinc-900" />
 
             <section className="space-y-4">
-              <h2 className={`text-lg font-semibold text-white uppercase tracking-wider ${montserrat.className}`}>
+              <h2 className='text-lg font-semibold text-white uppercase tracking-wider'>
                 1. Acceptance of Terms
               </h2>
               <p className="font-light">
@@ -101,7 +91,7 @@ const TermsAndConditions = () => {
             <hr className="border-zinc-900" />
 
             <section className="space-y-4">
-              <h2 className={`text-lg font-semibold text-white uppercase tracking-wider ${montserrat.className}`}>
+              <h2 className='text-lg font-semibold text-white uppercase tracking-wider'>
                 2. Intellectual Property Rights
               </h2>
               <p className="font-light text-zinc-300">
@@ -115,7 +105,7 @@ const TermsAndConditions = () => {
             <hr className="border-zinc-900" />
 
             <section className="space-y-4">
-              <h2 className={`text-lg font-semibold text-white uppercase tracking-wider ${montserrat.className}`}>
+              <h2 className='text-lg font-semibold text-white uppercase tracking-wider'>
                 3. User Submissions & Contact Forms
               </h2>
               <p className="font-light">
@@ -133,7 +123,7 @@ const TermsAndConditions = () => {
             <hr className="border-zinc-900" />
 
             <section className="space-y-4">
-              <h2 className={`text-lg font-semibold text-white uppercase tracking-wider ${montserrat.className}`}>
+              <h2 className='text-lg font-semibold text-white uppercase tracking-wider'>
                 4. Third-Party Links & Analytics Tools
               </h2>
               <p className="font-light text-zinc-300">
@@ -144,7 +134,7 @@ const TermsAndConditions = () => {
             <hr className="border-zinc-900" />
 
             <section className="space-y-4">
-              <h2 className={`text-lg font-semibold text-white uppercase tracking-wider ${montserrat.className}`}>
+              <h2 className='text-lg font-semibold text-white uppercase tracking-wider'>
                 5. Disclaimer of Warranties & Limitation of Liability
               </h2>
               <p className="font-light text-zinc-300">
@@ -158,7 +148,7 @@ const TermsAndConditions = () => {
             <hr className="border-zinc-900" />
 
             <section className="space-y-4">
-              <h2 className={`text-lg font-semibold text-white uppercase tracking-wider ${montserrat.className}`}>
+              <h2 className='text-lg font-semibold text-white uppercase tracking-wider'>
                 6. Governing Law & Jurisdiction
               </h2>
               <p className="font-light text-zinc-300">
@@ -169,7 +159,7 @@ const TermsAndConditions = () => {
             <hr className="border-zinc-900" />
 
             <section className="space-y-4">
-              <h2 className={`text-lg font-semibold text-white uppercase tracking-wider ${montserrat.className}`}>
+              <h2 className='text-lg font-semibold text-white uppercase tracking-wider'>
                 7. Contact Information
               </h2>
               <p className="font-light">

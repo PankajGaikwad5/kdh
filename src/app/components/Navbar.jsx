@@ -1,22 +1,12 @@
 'use client';
 import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
-import { Poppins, Montserrat } from 'next/font/google';
 import { useRouter } from 'next/navigation';
 import { ArrowLeft, Search, X, ShoppingBag } from 'lucide-react';
 import Link from 'next/link';
 import { products } from './products'; // adjust path if needed
 import { useCart } from '@/app/context/CartContext';
 
-// Fonts
-const popins = Poppins({
-  subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '600', '700'],
-});
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '600', '700'],
-});
 
 const Navbar = ({ isBgBlack, arrow, escape, home }) => {
   const router = useRouter();
@@ -218,7 +208,7 @@ const Navbar = ({ isBgBlack, arrow, escape, home }) => {
         }
       >
         <ul
-          className={`flex flex-col font-semibold text-sm 2xl:text-3xl ${popins.className}`}
+          className='flex flex-col font-semibold text-sm 2xl:text-3xl'
         >
           <Link
             href='/'

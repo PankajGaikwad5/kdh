@@ -22,22 +22,7 @@ import {
   FormMessage,
 } from '../components/ui/form';
 import gsap from 'gsap';
-import { Poppins, Montserrat, Bebas_Neue } from 'next/font/google';
 
-const popins = Poppins({
-  subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '600', '700'],
-});
-
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'],
-});
-
-const bebas = Bebas_Neue({
-  subsets: ['latin'],
-  weight: ['400'],
-});
 
 const formSchema = z.object({
   name: z
@@ -218,7 +203,7 @@ export default function CartPage() {
                   ref={itemsRef}
                   className='w-full lg:max-w-xl z-10 tracking-widest p-6 flex flex-col border border-gray-800 hover:border-gray-200 rounded-lg hover:shadow-2xl transition-all duration-500 space-y-6'
                 >
-                  <p className={`text-xs font-bold ${montserrat.className} uppercase font-light border-b border-gray-800 pb-2`}>
+                  <p className='text-xs font-bold uppercase font-light border-b border-gray-800 pb-2'>
                     Items Selected ({cart.length})
                   </p>
                   
@@ -242,11 +227,11 @@ export default function CartPage() {
                           <h2 className='text-sm font-semibold tracking-wider text-gray-200 capitalize truncate mb-1'>
                             {item.title}
                           </h2>
-                          <p className={`text-xs text-gray-400 tracking-normal ${popins.className} font-light`}>
+                          <p className='text-xs text-gray-400 tracking-normal font-light'>
                             Material: <span className='text-white'>{item.material}</span>
                           </p>
                           {item.selectedMarble && (
-                            <p className={`text-xs text-gray-400 tracking-normal mt-0.5 ${popins.className} font-light`}>
+                            <p className='text-xs text-gray-400 tracking-normal mt-0.5 font-light'>
                               Variant: <span className='text-white'>{item.selectedMarble}</span>
                             </p>
                           )}
@@ -269,14 +254,14 @@ export default function CartPage() {
                   ref={formRef}
                   className='w-full lg:max-w-lg z-10 tracking-widest p-6 flex flex-col border border-gray-800 hover:border-gray-200 rounded-lg hover:shadow-2xl transition-all duration-500'
                 >
-                  <p className={`text-xs font-bold mb-2 ${montserrat.className} uppercase font-light`}>
+                  <p className='text-xs font-bold mb-2 uppercase font-light'>
                     Inquiry details
                   </p>
                   
                   <Form {...form}>
                     <form
                       onSubmit={form.handleSubmit(onSubmit)}
-                      className={`space-y-4 ${popins.className}`}
+                      className='space-y-4'
                     >
                       {/* Honeypot field for bot/spam check */}
                       <input

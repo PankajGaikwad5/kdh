@@ -184,17 +184,12 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Playfair_Display, Montserrat } from 'next/font/google';
+import { Playfair_Display } from 'next/font/google';
 
 // Fonts
 const playfair = Playfair_Display({
   subsets: ['latin'],
   weight: ['700'],
-});
-
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  weight: ['300', '400', '600'],
 });
 
 const AboutCard = () => {
@@ -226,14 +221,14 @@ const AboutCard = () => {
 
         {/* Subtitle */}
         <p
-          className={`uppercase text-sm text-gray-400 ${montserrat.className}`}
+          className='uppercase text-sm text-gray-400'
         >
           Architecture &amp; Interiors | TEDx Speaker
         </p>
 
         {/* Body text */}
         <div
-          className={`mt-6 space-y-4 text-gray-300 leading-relaxed ${montserrat.className}`}
+          className='mt-6 space-y-4 text-gray-300 leading-relaxed'
         >
           <p>
             Born in 1987, Karan Desai founded KDAD Studio in 2012 after

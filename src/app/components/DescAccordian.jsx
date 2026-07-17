@@ -22,18 +22,7 @@ import {
 } from '../components/ui/form';
 import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
-import { Poppins, Montserrat } from 'next/font/google';
 
-// popins
-// montserrat
-const popins = Poppins({
-  subsets: ['latin'], // Specify subsets
-  weight: ['100', '200', '300', '400', '600', '700'], // Specify weight
-});
-const montserrat = Montserrat({
-  subsets: ['latin'], // Specify subsets
-  weight: ['400', '600', '700'], // Specify weight
-});
 
 const formSchema = z.object({
   name: z
@@ -186,7 +175,7 @@ const DescAccordian = ({ scrollPosition, desc, title, dimensions, pdf }) => {
                 <form
                   // action='https://getform.io/f/bjjjprgb'
                   // method='POST'
-                  className={`space-y-4 px-4 ${popins.className}`}
+                  className='space-y-4 px-4'
                   onSubmit={form.handleSubmit(onSubmit)}
                 >
                   <h1 className='font-semibold uppercase'>

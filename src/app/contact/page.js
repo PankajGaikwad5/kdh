@@ -18,20 +18,10 @@ import {
 } from '../components/ui/form';
 import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
-import { Poppins, Montserrat, Bebas_Neue } from 'next/font/google';
+import { Bebas_Neue } from 'next/font/google';
 import Footer from '../components/Footer';
 import Link from 'next/link';
 
-// popins
-// montserrat
-const popins = Poppins({
-  subsets: ['latin'], // Specify subsets
-  weight: ['100', '200', '300', '400', '600', '700'], // Specify weight
-});
-const montserrat = Montserrat({
-  subsets: ['latin'], // Specify subsets
-  weight: ['400', '600', '700'], // Specify weight
-});
 const bebas = Bebas_Neue({
   subsets: ['latin'], // Specify subsets
   weight: ['400'], // Specify weight
@@ -176,7 +166,7 @@ const page = () => {
                 className='w-full max-w-lg z-10 tracking-widest p-6 flex flex-col border border-gray-800 hover:border-gray-200 rounded-lg  hover:shadow-2xl transition-all duration-500 '
               >
                 <p
-                  className={`text-xs font-bold mb-2 ${montserrat.className} uppercase font-light`}
+                  className='text-xs font-bold mb-2 uppercase font-light'
                 >
                   By appointment only*
                 </p>
@@ -184,7 +174,7 @@ const page = () => {
                   <form
                     // action='https://getform.io/f/bjjjprgb'
                     // method='POST'
-                    className={`space-y-4 ${popins.className} `}
+                    className='space-y-4'
                     onSubmit={form.handleSubmit(onSubmit)}
                   >
                     {/* Honeypot field - hidden from users, bots will fill it */}
@@ -302,7 +292,7 @@ const page = () => {
                 <div className='flex flex-wrap items-center gap-8 text-center '>
                   <a
                     href='mailto:info@karandesai.in'
-                    className={`flex flex-col underline pt-2 text-xl md:text-xs ${popins.className} font-extralight`}
+                    className='flex flex-col underline pt-2 text-xl md:text-xs font-extralight'
                   >
                     info@karandesai.in
                   </a>
@@ -315,7 +305,7 @@ const page = () => {
 
                 <div className='flex flex-col sm:flex-row gap-4 sm:gap-12 items-start sm:items-center pb-4 text-start sm:text-left'>
                   <p
-                    className={`flex flex-col ${popins.className} text-sm md:text-xs font-light`}
+                    className='flex flex-col text-sm md:text-xs font-light'
                   >
                     <a
                       href='https://maps.app.goo.gl/LDt3TN9yLwB5n6yg7'
@@ -356,7 +346,7 @@ const page = () => {
                 </div>
 
                 <div
-                  className={`flex flex-col gap-4 sm:flex-row sm:gap-6 font-normal  sm:text-left ${popins.className} tracking-widest`}
+                  className='flex flex-col gap-4 sm:flex-row sm:gap-6 font-normal sm:text-left tracking-widest'
                 >
                   <p className='text-green-400'>
                     We are not a normal team of architects and interior

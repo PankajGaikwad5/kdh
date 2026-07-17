@@ -1,23 +1,8 @@
 'use client';
 import React, { useState } from 'react';
-import { Poppins, Montserrat, Bebas_Neue } from 'next/font/google';
 import { Instagram } from 'lucide-react';
 import { FaWhatsapp, FaLinkedin } from 'react-icons/fa';
 import Link from 'next/link';
-
-// Fonts
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'],
-});
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'],
-});
-const bebas = Bebas_Neue({
-  subsets: ['latin'],
-  weight: ['400'],
-});
 
 const navLinks = [
   { label: 'About', href: '/about' },

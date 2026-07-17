@@ -1,13 +1,7 @@
 import Image from 'next/image';
-import { Montserrat } from 'next/font/google';
 import AboutClient from '../components/ClientComp/AboutClient';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  weight: ['300', '400', '600', '700'],
-});
 
 export const metadata = {
   title: 'About Page of Karan Desai Home',
@@ -46,7 +40,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <main
-      className={`min-h-screen bg-black text-white relative ${montserrat.className}`}
+      className='min-h-screen bg-black text-white relative'
     >
       <Navbar />
 

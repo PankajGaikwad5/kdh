@@ -1,8 +1,7 @@
 // import { Geist, Geist_Mono } from "next/font/google";
 // import {Giest, Geist_Mono} from 'next'
 import './globals.css';
-import { Inter } from 'next/font/google'; // Use a known Google font
-import { Montserrat } from 'next/font/google';
+import { League_Spartan } from 'next/font/google';
 // import { Poppins, Montserrat, Mate } from 'next/font/google';
 import Footer from './components/Footer';
 import Head from 'next/head';
@@ -17,9 +16,9 @@ import { CartProvider } from './context/CartContext';
 //   weight: ['400', '600', '700'], // Specify weight
 //   display: 'swap',
 // });
-const montserrat = Montserrat({
-  subsets: ['latin'], // Specify subsets
-  weight: ['400', '600', '700'], // Specify weight
+const leagueSpartan = League_Spartan({
+  subsets: ['latin'],
+  variable: '--font-league-spartan',
   display: 'swap',
 });
 // const jose = Mate({
@@ -193,8 +192,8 @@ export default function RootLayout({ children }) {
   };
 
   return (
-    <html lang='en'>
-      <body className={`tracking-widest antialiased ${montserrat.className}`}>
+    <html lang='en' className={leagueSpartan.variable}>
+      <body className='tracking-widest antialiased font-sans'>
         {/* Google Analytics */}
         <Script
           strategy='afterInteractive'

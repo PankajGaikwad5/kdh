@@ -213,7 +213,7 @@ const page = () => {
           className='flex-grow grid grid-cols-2 md:grid-cols-4 pt-10 gap-4 p-4 md:mx-14 my-10 md:my-6 '
           onMouseLeave={() => setHoveredIndex(null)}
         >
-          {products.map(({ title, img, group, id, index }) => (
+          {products.map(({ title, img, group, id }, index) => (
             <SubProductCard
               key={index}
               title={title}

@@ -6,7 +6,6 @@ import { Button } from '@/app/components/ui/button';
 import { X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import gsap from 'gsap';
-import { Montserrat } from 'next/font/google';
 import dynamic from 'next/dynamic';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -30,10 +29,6 @@ const AccordionMarbles = dynamic(
   { ssr: false }
 );
 
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  weight: ['300', '400', '600', '700'],
-});
 
 const formSchema = z.object({
   name: z.string().min(2, 'name must be at least 2 characters').max(50),
@@ -309,7 +304,7 @@ export default function ProductDetailsClient({ product }) {
     <main
       ref={pageRef}
       style={{ opacity: 0 }}
-      className={`min-h-screen bg-black text-white ${montserrat.className}`}
+      className='min-h-screen bg-black text-white'
     >
       <Navbar home={true} />
       <header className='fixed top-3 right-2 w-full flex justify-end p-4 z-30'>

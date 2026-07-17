@@ -6,12 +6,7 @@ import { useParams, useRouter } from 'next/navigation';
 import { Button } from '@/app/components/ui/button';
 import { X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Montserrat } from 'next/font/google';
 
-const montserrat = Montserrat({
-  subsets: ['latin'], // Specify subsets
-  weight: ['300', '400', '600', '700'], // Specify weight
-});
 
 const ProductDetailsPage = () => {
   const params = useParams();
@@ -65,7 +60,7 @@ const ProductDetailsPage = () => {
 
   return (
     <main
-      className={`min-h-screen bg-white text-black font-sans relative ${montserrat.className}`}
+      className='min-h-screen bg-white text-black font-sans relative'
     >
       {/* Header with logo and close button */}
       <header className='fixed top-0 left-0 w-full flex justify-between items-center p-4 z-50 bg-white/80 backdrop-blur border-b border-gray-200'>

@@ -2,16 +2,11 @@
 
 import { useEffect, useRef, useState, Fragment } from 'react';
 import gsap from 'gsap';
-import { Montserrat } from 'next/font/google';
 import Image from 'next/image';
 import { X, BookOpen } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '600', '700'],
-});
 
 const magazines = [
   {
@@ -159,7 +154,7 @@ export default function PressPage() {
         <div className="w-full text-center flex justify-center">
           <h1
             ref={headingRef}
-            className={`text-2xl md:text-4xl font-bold text-gray-200 pb-8 border-b-2 border-gray-800 uppercase w-full md:max-w-3xl ${montserrat.className}`}
+            className='text-2xl md:text-4xl font-bold text-gray-200 pb-8 border-b-2 border-gray-800 uppercase w-full md:max-w-3xl'
           >
             Press
           </h1>
@@ -167,7 +162,7 @@ export default function PressPage() {
 
         {/* Magazines Section */}
         <div className="mt-16 mb-8 flex items-center gap-4">
-          <span className={`text-xs uppercase tracking-widest text-zinc-500 whitespace-nowrap ${montserrat.className}`}>
+          <span className='text-xs uppercase tracking-widest text-zinc-500 whitespace-nowrap'>
             Featured Publications
           </span>
           <div className="flex-1 h-px bg-zinc-800" />
@@ -212,10 +207,10 @@ export default function PressPage() {
 
               {/* Title & Info */}
               <div className="p-5 flex flex-col gap-1.5 border-t border-zinc-900">
-                <span className={`text-[10px] uppercase tracking-widest text-zinc-500 font-semibold ${montserrat.className}`}>
+                <span className='text-[10px] uppercase tracking-widest text-zinc-500 font-semibold'>
                   {mag.issue}
                 </span>
-                <h3 className={`text-base font-bold text-zinc-200 group-hover:text-white transition-colors duration-300 uppercase tracking-wide ${montserrat.className}`}>
+                <h3 className='text-base font-bold text-zinc-200 group-hover:text-white transition-colors duration-300 uppercase tracking-wide'>
                   {mag.name}
                 </h3>
                 {/* <p className="text-xs text-zinc-400 mt-1 line-clamp-2 leading-relaxed font-light">
@@ -238,7 +233,7 @@ export default function PressPage() {
             {/* Header */}
             <div className="flex items-center justify-between p-5 border-b border-zinc-900 bg-zinc-950/50 backdrop-blur-md">
               <div>
-                <h3 className={`text-lg font-bold text-white uppercase tracking-wider ${montserrat.className}`}>
+                <h3 className='text-lg font-bold text-white uppercase tracking-wider'>
                   {selectedMagazine.name}
                 </h3>
                 <p className="text-xs text-zinc-500 tracking-widest uppercase mt-0.5 font-semibold">
