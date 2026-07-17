@@ -73,16 +73,16 @@ const page = () => {
   const products = [
     {
       id: 16,
-      title: 'Jina Shilp',
+      title: 'Jina Shilp X Serafini',
       group: 'jina_shilp',
       img: '/js/totem/png.webp',
       projects: 'totem, mirror, dining table',
     },
     {
       id: 15,
-      title: 'Monster 4.0',
+      title: 'Monster 4.0 X Square Knots',
       group: 'monster_4.0',
-      img: '/4.0/totempng.webp',
+      img: '/monster4.0/mirror/mirrorpng.webp',
       projects: 'Yoda Totem, Yoda Carpet, Mirror Carpet',
     },
     {
@@ -155,7 +155,7 @@ const page = () => {
     },
     {
       id: 6,
-      title: 'KD X Serafini',
+      title: 'Samaveta X Serafini',
       group: 'serafini',
       img: '/group/6.png',
       projects: 'serafini',
