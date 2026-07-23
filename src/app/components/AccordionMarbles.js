@@ -8,7 +8,8 @@ const normalizeKey = (str) => {
   return str
     .toLowerCase()
     .replace(/\s+/g, '')
-    .replace(/lavante/g, 'levante');
+    .replace(/lavante/g, 'levante')
+    .replace(/greenspider/g, 'spidergreen');
 };
 
 export function AccordionMarbles({ selectedMarble, onSelectMarble, product }) {

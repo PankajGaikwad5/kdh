@@ -43,7 +43,8 @@ const normalizeKey = (str) => {
   return str
     .toLowerCase()
     .replace(/\s+/g, '')
-    .replace(/lavante/g, 'levante');
+    .replace(/lavante/g, 'levante')
+    .replace(/greenspider/g, 'spidergreen');
 };
 
 // ThumbnailGrid Component (keeping original external component structure)
@@ -296,6 +297,7 @@ export default function ProductDetailsClient({ product }) {
         rotate: true,
       },
       { name: 'Marquina', src: '/marbles/marquina.webp' },
+      { name: 'Green Spider', src: '/marbles/spidergreen.webp' },
     ],
     [],
   );
