@@ -5390,14 +5390,14 @@ Sleek, commanding, and completely unexpected—this table doesn’t just support
         },
         thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
       },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/optimized/newsconsole.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
-      },
+      // {
+      //   fileName: '1738927863060-Slide1.JPG',
+      //   filePath: '/optimized/newsconsole.webp',
+      //   _id: {
+      //     $oid: '67a5eef74da9b29cd0f10be2',
+      //   },
+      //   thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
+      // },
       {
         fileName: '1738927863060-Slide1.JPG',
         filePath: '/optimized/newsconsole1.webp',
@@ -5430,14 +5430,14 @@ Sleek, commanding, and completely unexpected—this table doesn’t just support
         },
         thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
       },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/optimized/newsconsole5.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
-      },
+      // {
+      //   fileName: '1738927863060-Slide1.JPG',
+      //   filePath: '/optimized/newsconsole5.webp',
+      //   _id: {
+      //     $oid: '67a5eef74da9b29cd0f10be2',
+      //   },
+      //   thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
+      // },
     ],
     description: `A poetic fusion of form and material, the Samaveta Console is a sculptural piece born from a creative collaboration between Karan Desai and Serafini.
 
