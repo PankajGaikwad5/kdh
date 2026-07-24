@@ -297,7 +297,7 @@ export default function ProductDetailsClient({ product }) {
         rotate: true,
       },
       { name: 'Marquina', src: '/marbles/marquina.webp' },
-      { name: 'Green Spider', src: '/marbles/spidergreen.webp' },
+      { name: 'Spider Green', src: '/marbles/spidergreen.webp' },
     ],
     [],
   );
