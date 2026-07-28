@@ -12,32 +12,28 @@ export const products = [
     images: [
       {
         fileName: '1738927177034-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUrifT6XNnDI67jcCaomXhZLsJd91f4YGitMHP',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUrifT6XNnDI67jcCaomXhZLsJd91f4YGitMHP',
         _id: {
           $oid: '67a5ec494da9b29cd0f10b88',
         },
       },
       {
         fileName: '1738927177034-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUX5vd9HLaynKVcYuZHCDm1IeJRfoT4vBxS8i0',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUX5vd9HLaynKVcYuZHCDm1IeJRfoT4vBxS8i0',
         _id: {
           $oid: '67a5ec494da9b29cd0f10b88',
         },
       },
       {
         fileName: '1738927177034-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUveejO70iQtznIlhRaFJ8jZ6p7xPg3bw9OrDV',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUveejO70iQtznIlhRaFJ8jZ6p7xPg3bw9OrDV',
         _id: {
           $oid: '67a5ec494da9b29cd0f10b88',
         },
       },
       {
         fileName: '1738927177034-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUx0rkGliPUt8w7TpsY9iaCJZ03LNVMQzoX6l4',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUx0rkGliPUt8w7TpsY9iaCJZ03LNVMQzoX6l4',
         _id: {
           $oid: '67a5ec494da9b29cd0f10b88',
         },
@@ -82,31 +78,40 @@ export const products = [
         },
         thumbnail: '/assets/products/thumbnails/1738927177039-Slide5.JPG',
       },
-
     ],
     marbleImages: {
-      'indianblackbheslana': [
-        '/marbles/matilda2024/partitionscreen/indianblackbheslana/1.webp',
-        '/marbles/matilda2024/partitionscreen/indianblackbheslana/2.webp',
-        '/marbles/matilda2024/partitionscreen/indianblackbheslana/3.webp',
-        '/marbles/matilda2024/partitionscreen/indianblackbheslana/4.webp',
+      indianblackbheslana: [
+        '/marbles/newmatilda2024/partition_screen/indianblackbheslana/1.webp',
+        '/marbles/newmatilda2024/partition_screen/indianblackbheslana/2.webp',
+        '/marbles/newmatilda2024/partition_screen/indianblackbheslana/3.webp',
+        '/marbles/newmatilda2024/partition_screen/indianblackbheslana/4.webp',
       ],
-      'indianrossolevante': [
-        '/marbles/matilda2024/partitionscreen/indianrossolevante/1.webp',
-        '/marbles/matilda2024/partitionscreen/indianrossolevante/2.webp',
+      indianrossolevante: [
+        '/marbles/newmatilda2024/partition_screen/indianrossolevante/1.webp',
+        '/marbles/newmatilda2024/partition_screen/indianrossolevante/2.webp',
+        '/marbles/newmatilda2024/partition_screen/indianrossolevante/3.webp',
+        '/marbles/newmatilda2024/partition_screen/indianrossolevante/4.webp',
       ],
-      'italianbeigetravertine': [
-        '/marbles/matilda2024/partitionscreen/italianbeigetravertine/1.webp',
-        '/marbles/matilda2024/partitionscreen/italianbeigetravertine/2.webp',
+      italianbeigetravertine: [
+        '/marbles/newmatilda2024/partition_screen/italianbeigetravertine/1.webp',
+        '/marbles/newmatilda2024/partition_screen/italianbeigetravertine/2.webp',
+        '/marbles/newmatilda2024/partition_screen/italianbeigetravertine/3.webp',
+        '/marbles/newmatilda2024/partition_screen/italianbeigetravertine/4.webp',
       ],
-      'marquina': [
-        '/marbles/matilda2024/partitionscreen/marquina/1.webp',
-        '/marbles/matilda2024/partitionscreen/marquina/2.webp',
+      marquina: [
+        '/marbles/newmatilda2024/partition_screen/marquina/1.webp',
+        '/marbles/newmatilda2024/partition_screen/marquina/2.webp',
+        '/marbles/newmatilda2024/partition_screen/marquina/3.webp',
+        '/marbles/newmatilda2024/partition_screen/marquina/4.webp',
+      ],
+      spidergreen: [
+        '/marbles/newmatilda2024/partition_screen/spidergreen/1.webp',
+        '/marbles/newmatilda2024/partition_screen/spidergreen/2.webp',
+        '/marbles/newmatilda2024/partition_screen/spidergreen/3.webp',
+        '/marbles/newmatilda2024/partition_screen/spidergreen/4.webp',
       ],
     },
-
-    video:
-      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCgDKppeFoQ5jtomeZYnhXwDRcaNS8IHVWdJi4',
+    video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCgDKppeFoQ5jtomeZYnhXwDRcaNS8IHVWdJi4',
     description: `This isn’t just a divider—it’s a statement in stone. 
 
 The Monster Partition Screen turns solid marble into pure fluidity, sculpted with curves that flow like confidence. 
@@ -114,8 +119,7 @@ Its cutout rhythm and all-white finish bring structure and softness into perfect
 
 Precision-crafted and impossible to ignore, this piece brings presence, poise, and quiet power. 
 For those who don’t follow the rules—they carve their own.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUOeq1JXZXhqs0g964QCxmbwcn2WStleB3MEP5',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUOeq1JXZXhqs0g964QCxmbwcn2WStleB3MEP5',
     __v: 0,
   },
   {
@@ -131,40 +135,35 @@ For those who don’t follow the rules—they carve their own.`,
     images: [
       {
         fileName: '1738929795488-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUmg4WbuEMgck96WhX7TGdaslL58YeZAnUDbwo',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUmg4WbuEMgck96WhX7TGdaslL58YeZAnUDbwo',
         _id: {
           $oid: '67a5f6834da9b29cd0f10c28',
         },
       },
       {
         fileName: '1738929795488-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUw1d53Cgi1vXhd2AYtoGrDFy59EOsBzTnN6eW',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUw1d53Cgi1vXhd2AYtoGrDFy59EOsBzTnN6eW',
         _id: {
           $oid: '67a5f6834da9b29cd0f10c28',
         },
       },
       {
         fileName: '1738929795488-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULc3y1gDqbauUfVsg4JYrj86xOSilFe5PBo3m',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULc3y1gDqbauUfVsg4JYrj86xOSilFe5PBo3m',
         _id: {
           $oid: '67a5f6834da9b29cd0f10c28',
         },
       },
       {
         fileName: '1738929795488-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUgvhLf4lLdSN8CY5rJGOAxcqQpM9fjoh4etX6',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUgvhLf4lLdSN8CY5rJGOAxcqQpM9fjoh4etX6',
         _id: {
           $oid: '67a5f6834da9b29cd0f10c28',
         },
       },
       {
         fileName: '1738929795488-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUNJDRNFG5UuqxLjF0ygrW1ikRpXaHfGVvonDw',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUNJDRNFG5UuqxLjF0ygrW1ikRpXaHfGVvonDw',
         _id: {
           $oid: '67a5f6834da9b29cd0f10c28',
         },
@@ -194,9 +193,8 @@ For those who don’t follow the rules—they carve their own.`,
         thumbnail: '/assets/products/thumbnails/1738929795491-Slide3.JPG',
       },
     ],
-    description: `The Monster Gum Lamp by Karan Desai Home brings together playful sculpture and bold contemporary furniture design in a striking collectible form. Handcrafted with a sculptural golden figure and a glossy bubble detail, the piece introduces character, colour, and visual energy to the interior of a modern home or residence. Designed to blur the line between lighting and art, it transforms illumination into a moment of personality and expression. Designed by Karan Desai and made in India, this distinctive creation enhances luxury interiors while standing as a remarkable collectible piece.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUv1mQj1X0iQtznIlhRaFJ8jZ6p7xPg3bw9OrD',
+    description: 'The Monster Gum Lamp by Karan Desai Home brings together playful sculpture and bold contemporary furniture design in a striking collectible form. Handcrafted with a sculptural golden figure and a glossy bubble detail, the piece introduces character, colour, and visual energy to the interior of a modern home or residence. Designed to blur the line between lighting and art, it transforms illumination into a moment of personality and expression. Designed by Karan Desai and made in India, this distinctive creation enhances luxury interiors while standing as a remarkable collectible piece.',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUv1mQj1X0iQtznIlhRaFJ8jZ6p7xPg3bw9OrD',
     __v: 0,
   },
   {
@@ -207,8 +205,7 @@ For those who don’t follow the rules—they carve their own.`,
     group: 'monster_3.0',
     material: 'Burnt Wood & Fur Fabric',
     collabtext: 'Dimensions',
-    collablink:
-      'https://dimensionsfurniture.in/collections/monster-collection/',
+    collablink: 'https://dimensionsfurniture.in/collections/monster-collection/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9zGTRgx2frimQ5LhFdjbpOHNPEsav1o2Ac0D',
     images: [
       {
@@ -300,16 +297,14 @@ For those who don’t follow the rules—they carve their own.`,
         thumbnail: '/assets/products/thumbnails/bench11.jpg',
       },
     ],
-    video:
-      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCiPUXo2cmlRJdGy18r5wqFbNcEQKfVHC9IjX2',
+    video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCiPUXo2cmlRJdGy18r5wqFbNcEQKfVHC9IjX2',
     description: `This isn’t just a bench—it’s a quiet disruptor. 
 
 Anchored by heavy, sculpted wood and topped with a plush, fur-like form, it blurs the lines between function and statement. 
 Minimal in appearance, maximal in impact. It invites you to sit, but demands you notice. 
 
 Grounded in strength and softened with indulgence, this bench proves that the boldest moves don’t need to shout—they just need to exist.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUdXEaLleQLipXnNcaZzTWOmKke9BGF7gf2xIh',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUdXEaLleQLipXnNcaZzTWOmKke9BGF7gf2xIh',
     __v: 0,
   },
   {
@@ -323,40 +318,35 @@ Grounded in strength and softened with indulgence, this bench proves that the bo
     images: [
       {
         fileName: '1738927330509-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUN5D4oQMG5UuqxLjF0ygrW1ikRpXaHfGVvonD',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUN5D4oQMG5UuqxLjF0ygrW1ikRpXaHfGVvonD',
         _id: {
           $oid: '67a5ece24da9b29cd0f10bad',
         },
       },
       {
         fileName: '1738927330509-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUY35stpnVM7iftKIsUSTJx8haC1mEBkZl4NvR',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUY35stpnVM7iftKIsUSTJx8haC1mEBkZl4NvR',
         _id: {
           $oid: '67a5ece24da9b29cd0f10bad',
         },
       },
       {
         fileName: '1738927330509-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUM0kmF4wfQbC4M3ZGkSm6KPAV10HlYU9dinrX',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUM0kmF4wfQbC4M3ZGkSm6KPAV10HlYU9dinrX',
         _id: {
           $oid: '67a5ece24da9b29cd0f10bad',
         },
       },
       {
         fileName: '1738927330509-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUamKpgazVIx6ZjWFiGhcRQJMUzft1drvPNTbL',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUamKpgazVIx6ZjWFiGhcRQJMUzft1drvPNTbL',
         _id: {
           $oid: '67a5ece24da9b29cd0f10bad',
         },
       },
       {
         fileName: '1738927330509-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULg6XboDqbauUfVsg4JYrj86xOSilFe5PBo3m',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULg6XboDqbauUfVsg4JYrj86xOSilFe5PBo3m',
         _id: {
           $oid: '67a5ece24da9b29cd0f10bad',
         },
@@ -395,8 +385,40 @@ Grounded in strength and softened with indulgence, this bench proves that the bo
       },
     ],
     marbleImages: {
-      'indianblackbheslana': [
-        '/marbles/matilda2024/centertable1/indianblackbheslana/1.webp',
+      indianblackbheslana: [
+        '/marbles/newmatilda2024/center_table_1/indianblackbheslana/1.webp',
+        '/marbles/newmatilda2024/center_table_1/indianblackbheslana/2.webp',
+        '/marbles/newmatilda2024/center_table_1/indianblackbheslana/3.webp',
+        '/marbles/newmatilda2024/center_table_1/indianblackbheslana/4.webp',
+        '/marbles/newmatilda2024/center_table_1/indianblackbheslana/5.webp',
+      ],
+      indianrossolevante: [
+        '/marbles/newmatilda2024/center_table_1/indianrossolevante/1.webp',
+        '/marbles/newmatilda2024/center_table_1/indianrossolevante/2.webp',
+        '/marbles/newmatilda2024/center_table_1/indianrossolevante/3.webp',
+        '/marbles/newmatilda2024/center_table_1/indianrossolevante/4.webp',
+        '/marbles/newmatilda2024/center_table_1/indianrossolevante/5.webp',
+      ],
+      italianbeigetravertine: [
+        '/marbles/newmatilda2024/center_table_1/italianbeigetravertine/1.webp',
+        '/marbles/newmatilda2024/center_table_1/italianbeigetravertine/2.webp',
+        '/marbles/newmatilda2024/center_table_1/italianbeigetravertine/3.webp',
+        '/marbles/newmatilda2024/center_table_1/italianbeigetravertine/4.webp',
+        '/marbles/newmatilda2024/center_table_1/italianbeigetravertine/5.webp',
+      ],
+      marquina: [
+        '/marbles/newmatilda2024/center_table_1/marquina/1.webp',
+        '/marbles/newmatilda2024/center_table_1/marquina/2.webp',
+        '/marbles/newmatilda2024/center_table_1/marquina/3.webp',
+        '/marbles/newmatilda2024/center_table_1/marquina/4.webp',
+        '/marbles/newmatilda2024/center_table_1/marquina/5.webp',
+      ],
+      spidergreen: [
+        '/marbles/newmatilda2024/center_table_1/spidergreen/1.webp',
+        '/marbles/newmatilda2024/center_table_1/spidergreen/2.webp',
+        '/marbles/newmatilda2024/center_table_1/spidergreen/3.webp',
+        '/marbles/newmatilda2024/center_table_1/spidergreen/4.webp',
+        '/marbles/newmatilda2024/center_table_1/spidergreen/5.webp',
       ],
     },
     description: `This center table isn’t just furniture — it’s a power play in pure marble. 
@@ -405,8 +427,7 @@ Featuring a bold U-shaped curve and wrapped in flawless white veining, it’s th
 Designed for those who appreciate dominance in design, every angle speaks precision, confidence, and high-level taste. 
 
 This is Karan Desai at his best — where sculptural form meets unstoppable presence in your living space.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUzrPAA9MIQShtkIwJflF6rAvm7LBdDHgWeNPU',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUzrPAA9MIQShtkIwJflF6rAvm7LBdDHgWeNPU',
     __v: 0,
   },
   {
@@ -420,25 +441,14 @@ This is Karan Desai at his best — where sculptural form meets unstoppable pres
     images: [
       {
         fileName: '1738927353299-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUlaNXX3A9DZL6up3G75dgCY2rJjaQFwifBAEk',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUlaNXX3A9DZL6up3G75dgCY2rJjaQFwifBAEk',
         _id: {
           $oid: '67a5ecf94da9b29cd0f10bb7',
         },
       },
       {
         fileName: '1738927353299-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUa2vVaJzVIx6ZjWFiGhcRQJMUzft1drvPNTbL',
-        _id: {
-          $oid: '67a5ecf94da9b29cd0f10bb7',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927353299-Slide1.JPG',
-      },
-      {
-        fileName: '1738927353299-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUMrh8V2wfQbC4M3ZGkSm6KPAV10HlYU9dinrX',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUa2vVaJzVIx6ZjWFiGhcRQJMUzft1drvPNTbL',
         _id: {
           $oid: '67a5ecf94da9b29cd0f10bb7',
         },
@@ -446,8 +456,7 @@ This is Karan Desai at his best — where sculptural form meets unstoppable pres
       },
       {
         fileName: '1738927353299-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAQEIuaFJ1oeY2wnF0zQbWX83C4KujdSqt6MU',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUMrh8V2wfQbC4M3ZGkSm6KPAV10HlYU9dinrX',
         _id: {
           $oid: '67a5ecf94da9b29cd0f10bb7',
         },
@@ -455,8 +464,7 @@ This is Karan Desai at his best — where sculptural form meets unstoppable pres
       },
       {
         fileName: '1738927353299-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDR6QxI08FYI8sxbtc2ngQN4ZeSPwOKkv5yAj',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAQEIuaFJ1oeY2wnF0zQbWX83C4KujdSqt6MU',
         _id: {
           $oid: '67a5ecf94da9b29cd0f10bb7',
         },
@@ -464,8 +472,15 @@ This is Karan Desai at his best — where sculptural form meets unstoppable pres
       },
       {
         fileName: '1738927353299-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUeFv8RCcFPv1kdbg4tT0YfOS529XxhywHpVoU',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDR6QxI08FYI8sxbtc2ngQN4ZeSPwOKkv5yAj',
+        _id: {
+          $oid: '67a5ecf94da9b29cd0f10bb7',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927353299-Slide1.JPG',
+      },
+      {
+        fileName: '1738927353299-Slide1.JPG',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUeFv8RCcFPv1kdbg4tT0YfOS529XxhywHpVoU',
         _id: {
           $oid: '67a5ecf94da9b29cd0f10bb7',
         },
@@ -505,32 +520,45 @@ This is Karan Desai at his best — where sculptural form meets unstoppable pres
       },
     ],
     marbleImages: {
-      'indianblackbheslana': [
-        '/marbles/matilda2024/centertable2/indianblackbheslana/1.webp',
-        '/marbles/matilda2024/centertable2/indianblackbheslana/2.webp',
-        '/marbles/matilda2024/centertable2/indianblackbheslana/3.webp',
-        '/marbles/matilda2024/centertable2/indianblackbheslana/4.webp',
-        '/marbles/matilda2024/centertable2/indianblackbheslana/5.webp',
-        '/marbles/matilda2024/centertable2/indianblackbheslana/6.webp',
+      indianblackbheslana: [
+        '/marbles/newmatilda2024/center_table_2/indianblackbheslana/1.webp',
+        '/marbles/newmatilda2024/center_table_2/indianblackbheslana/2.webp',
+        '/marbles/newmatilda2024/center_table_2/indianblackbheslana/3.webp',
+        '/marbles/newmatilda2024/center_table_2/indianblackbheslana/4.webp',
+        '/marbles/newmatilda2024/center_table_2/indianblackbheslana/5.webp',
+        '/marbles/newmatilda2024/center_table_2/indianblackbheslana/6.webp',
       ],
-      'indianrossolevante': [
-        '/marbles/matilda2024/centertable2/indianrossolevante/1.webp',
-        '/marbles/matilda2024/centertable2/indianrossolevante/2.webp',
-        '/marbles/matilda2024/centertable2/indianrossolevante/3.webp',
-        '/marbles/matilda2024/centertable2/indianrossolevante/4.webp',
+      indianrossolevante: [
+        '/marbles/newmatilda2024/center_table_2/indianrossolevante/1.webp',
+        '/marbles/newmatilda2024/center_table_2/indianrossolevante/2.webp',
+        '/marbles/newmatilda2024/center_table_2/indianrossolevante/3.webp',
+        '/marbles/newmatilda2024/center_table_2/indianrossolevante/4.webp',
+        '/marbles/newmatilda2024/center_table_2/indianrossolevante/5.webp',
+        '/marbles/newmatilda2024/center_table_2/indianrossolevante/6.webp',
       ],
-      'italianbeigetravertine': [
-        '/marbles/matilda2024/centertable2/italianbeigetravertine/1.webp',
-        '/marbles/matilda2024/centertable2/italianbeigetravertine/2.webp',
-        '/marbles/matilda2024/centertable2/italianbeigetravertine/3.webp',
+      italianbeigetravertine: [
+        '/marbles/newmatilda2024/center_table_2/italianbeigetravertine/1.webp',
+        '/marbles/newmatilda2024/center_table_2/italianbeigetravertine/2.webp',
+        '/marbles/newmatilda2024/center_table_2/italianbeigetravertine/3.webp',
+        '/marbles/newmatilda2024/center_table_2/italianbeigetravertine/4.webp',
+        '/marbles/newmatilda2024/center_table_2/italianbeigetravertine/5.webp',
+        '/marbles/newmatilda2024/center_table_2/italianbeigetravertine/6.webp',
       ],
-      'marquina': [
-        '/marbles/matilda2024/centertable2/marquina/1.webp',
-        '/marbles/matilda2024/centertable2/marquina/2.webp',
-        '/marbles/matilda2024/centertable2/marquina/3.webp',
-        '/marbles/matilda2024/centertable2/marquina/4.webp',
-        '/marbles/matilda2024/centertable2/marquina/5.webp',
-        '/marbles/matilda2024/centertable2/marquina/6.webp',
+      marquina: [
+        '/marbles/newmatilda2024/center_table_2/marquina/1.webp',
+        '/marbles/newmatilda2024/center_table_2/marquina/2.webp',
+        '/marbles/newmatilda2024/center_table_2/marquina/3.webp',
+        '/marbles/newmatilda2024/center_table_2/marquina/4.webp',
+        '/marbles/newmatilda2024/center_table_2/marquina/5.webp',
+        '/marbles/newmatilda2024/center_table_2/marquina/6.webp',
+      ],
+      spidergreen: [
+        '/marbles/newmatilda2024/center_table_2/spidergreen/1.webp',
+        '/marbles/newmatilda2024/center_table_2/spidergreen/2.webp',
+        '/marbles/newmatilda2024/center_table_2/spidergreen/3.webp',
+        '/marbles/newmatilda2024/center_table_2/spidergreen/4.webp',
+        '/marbles/newmatilda2024/center_table_2/spidergreen/5.webp',
+        '/marbles/newmatilda2024/center_table_2/spidergreen/6.webp',
       ],
     },
     description: `This center table doesn’t just complete a room — it dominates it. 
@@ -540,8 +568,7 @@ Every angle is engineered to impress, every curve is calculated to stand out.
 
 Designed by Karan Desai, this piece isn’t just furniture — it’s a power statement in stone. 
 Bold. Balanced. Built for spaces that don’t settle for ordinary.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUE1947WYFi7GYsQA2my03DTouek5wnIJXgjpV',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUE1947WYFi7GYsQA2my03DTouek5wnIJXgjpV',
     __v: 0,
   },
   {
@@ -596,8 +623,7 @@ Bold. Balanced. Built for spaces that don’t settle for ordinary.`,
         },
       },
     ],
-
-    description: `To be edited.`,
+    description: 'To be edited.',
     dimensions: '#',
     __v: 0,
   },
@@ -612,40 +638,35 @@ Bold. Balanced. Built for spaces that don’t settle for ordinary.`,
     images: [
       {
         fileName: '1738927920698-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU69BZDQRfb3HGeOz01MiLoldKrZaXQIxANWuV',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU69BZDQRfb3HGeOz01MiLoldKrZaXQIxANWuV',
         _id: {
           $oid: '67a5ef304da9b29cd0f10beb',
         },
       },
       {
         fileName: '1738927920698-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUhxlftZ12SwytWkz6IGrxaTC8A1jUN5RndblJ',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUhxlftZ12SwytWkz6IGrxaTC8A1jUN5RndblJ',
         _id: {
           $oid: '67a5ef304da9b29cd0f10beb',
         },
       },
       {
         fileName: '1738927920698-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9zSCQk02frimQ5LhFdjbpOHNPEsav1o2Ac0D',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9zSCQk02frimQ5LhFdjbpOHNPEsav1o2Ac0D',
         _id: {
           $oid: '67a5ef304da9b29cd0f10beb',
         },
       },
       {
         fileName: '1738927920698-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUlu66rW9DZL6up3G75dgCY2rJjaQFwifBAEky',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUlu66rW9DZL6up3G75dgCY2rJjaQFwifBAEky',
         _id: {
           $oid: '67a5ef304da9b29cd0f10beb',
         },
       },
       {
         fileName: '1738927920698-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8Qj4WN64oKUn37W6wsTlRmDBFhGrviIjcMxV',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8Qj4WN64oKUn37W6wsTlRmDBFhGrviIjcMxV',
         _id: {
           $oid: '67a5ef304da9b29cd0f10beb',
         },
@@ -716,34 +737,43 @@ Bold. Balanced. Built for spaces that don’t settle for ordinary.`,
       },
     ],
     marbleImages: {
-      'indianblackbheslana': [
-        '/marbles/matilda2024/utable/indianblackbheslana/1.webp',
-        '/marbles/matilda2024/utable/indianblackbheslana/2.webp',
-        '/marbles/matilda2024/utable/indianblackbheslana/3.webp',
-        '/marbles/matilda2024/utable/indianblackbheslana/4.webp',
-        '/marbles/matilda2024/utable/indianblackbheslana/5.webp',
+      indianblackbheslana: [
+        '/marbles/newmatilda2024/u-table/indianblackbheslana/1.webp',
+        '/marbles/newmatilda2024/u-table/indianblackbheslana/2.webp',
+        '/marbles/newmatilda2024/u-table/indianblackbheslana/3.webp',
+        '/marbles/newmatilda2024/u-table/indianblackbheslana/4.webp',
+        '/marbles/newmatilda2024/u-table/indianblackbheslana/5.webp',
       ],
-      'indianrossolevante': [
-        '/marbles/matilda2024/utable/indianrossolevante/1.webp',
-        '/marbles/matilda2024/utable/indianrossolevante/2.webp',
-        '/marbles/matilda2024/utable/indianrossolevante/3.webp',
-        '/marbles/matilda2024/utable/indianrossolevante/4.webp',
-        '/marbles/matilda2024/utable/indianrossolevante/5.webp',
+      indianrossolevante: [
+        '/marbles/newmatilda2024/u-table/indianrossolevante/1.webp',
+        '/marbles/newmatilda2024/u-table/indianrossolevante/2.webp',
+        '/marbles/newmatilda2024/u-table/indianrossolevante/3.webp',
+        '/marbles/newmatilda2024/u-table/indianrossolevante/4.webp',
+        '/marbles/newmatilda2024/u-table/indianrossolevante/5.webp',
       ],
-      'italianbeigetravertine': [
-        '/marbles/matilda2024/utable/italianbeigetravertine/1.webp',
-        '/marbles/matilda2024/utable/italianbeigetravertine/2.webp',
+      italianbeigetravertine: [
+        '/marbles/newmatilda2024/u-table/italianbeigetravertine/1.webp',
+        '/marbles/newmatilda2024/u-table/italianbeigetravertine/2.webp',
+        '/marbles/newmatilda2024/u-table/italianbeigetravertine/3.webp',
+        '/marbles/newmatilda2024/u-table/italianbeigetravertine/4.webp',
+        '/marbles/newmatilda2024/u-table/italianbeigetravertine/5.webp',
       ],
-      'marquina': [
-        '/marbles/matilda2024/utable/marquina/1.webp',
-        '/marbles/matilda2024/utable/marquina/2.webp',
-        '/marbles/matilda2024/utable/marquina/3.webp',
-        '/marbles/matilda2024/utable/marquina/4.webp',
-        '/marbles/matilda2024/utable/marquina/5.webp',
+      marquina: [
+        '/marbles/newmatilda2024/u-table/marquina/1.webp',
+        '/marbles/newmatilda2024/u-table/marquina/2.webp',
+        '/marbles/newmatilda2024/u-table/marquina/3.webp',
+        '/marbles/newmatilda2024/u-table/marquina/4.webp',
+        '/marbles/newmatilda2024/u-table/marquina/5.webp',
+      ],
+      spidergreen: [
+        '/marbles/newmatilda2024/u-table/spidergreen/1.webp',
+        '/marbles/newmatilda2024/u-table/spidergreen/2.webp',
+        '/marbles/newmatilda2024/u-table/spidergreen/3.webp',
+        '/marbles/newmatilda2024/u-table/spidergreen/4.webp',
+        '/marbles/newmatilda2024/u-table/spidergreen/5.webp',
       ],
     },
-    video:
-      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCc6u0KpnvRqiwA2cnJ9Zhf78sxCamS5tDUFQr',
+    video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCc6u0KpnvRqiwA2cnJ9Zhf78sxCamS5tDUFQr',
     description: `This isn’t just a U-shaped table — it’s a masterstroke in marble. 
 
 Sculpted with flawless precision, its flowing curves bend the rules of traditional design. 
@@ -753,8 +783,7 @@ Whether in a luxe lounge or a modern workspace, it delivers a sharp mix of sophi
 One glance, and you know — this is the real deal.
 
 `,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUltkpqe9DZL6up3G75dgCY2rJjaQFwifBAEky',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUltkpqe9DZL6up3G75dgCY2rJjaQFwifBAEky',
     __v: 0,
   },
   {
@@ -770,25 +799,14 @@ One glance, and you know — this is the real deal.
     images: [
       {
         fileName: '1738929642727-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUgWssIUlLdSN8CY5rJGOAxcqQpM9fjoh4etX6',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUgWssIUlLdSN8CY5rJGOAxcqQpM9fjoh4etX6',
         _id: {
           $oid: '67a5f5ea4da9b29cd0f10c1d',
         },
       },
       {
         fileName: '1738929642727-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUe7JHIKcFPv1kdbg4tT0YfOS529XxhywHpVoU',
-        _id: {
-          $oid: '67a5f5ea4da9b29cd0f10c1d',
-        },
-        thumbnail: '/assets/products/thumbnails/1738929642727-Slide1.JPG',
-      },
-      {
-        fileName: '1738929642727-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUbqgbqdxzt13BbVlJhGUR6Ww2eTaj5pASg9NC',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUe7JHIKcFPv1kdbg4tT0YfOS529XxhywHpVoU',
         _id: {
           $oid: '67a5f5ea4da9b29cd0f10c1d',
         },
@@ -796,8 +814,7 @@ One glance, and you know — this is the real deal.
       },
       {
         fileName: '1738929642727-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUeZu0L7cFPv1kdbg4tT0YfOS529XxhywHpVoU',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUbqgbqdxzt13BbVlJhGUR6Ww2eTaj5pASg9NC',
         _id: {
           $oid: '67a5f5ea4da9b29cd0f10c1d',
         },
@@ -805,18 +822,23 @@ One glance, and you know — this is the real deal.
       },
       {
         fileName: '1738929642727-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUrtTiSpNnDI67jcCaomXhZLsJd91f4YGitMHP',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUeZu0L7cFPv1kdbg4tT0YfOS529XxhywHpVoU',
         _id: {
           $oid: '67a5f5ea4da9b29cd0f10c1d',
         },
         thumbnail: '/assets/products/thumbnails/1738929642727-Slide1.JPG',
       },
-
       {
         fileName: '1738929642727-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSdQwBqzAKnraNxkI5vbez6dT2q8M0osBfR9A',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUrtTiSpNnDI67jcCaomXhZLsJd91f4YGitMHP',
+        _id: {
+          $oid: '67a5f5ea4da9b29cd0f10c1d',
+        },
+        thumbnail: '/assets/products/thumbnails/1738929642727-Slide1.JPG',
+      },
+      {
+        fileName: '1738929642727-Slide1.JPG',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSdQwBqzAKnraNxkI5vbez6dT2q8M0osBfR9A',
         _id: {
           $oid: '67a5f5ea4da9b29cd0f10c1d',
         },
@@ -862,8 +884,7 @@ It’s art, it’s attitude, and it owns every room it enters.
 
 You want ordinary? Look elsewhere. You want bold, fearless, unforgettable? Gattooffer delivers—loud and proud. 
 Light your space like you mean it.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8hOcOm64oKUn37W6wsTlRmDBFhGrviIjcMxV',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8hOcOm64oKUn37W6wsTlRmDBFhGrviIjcMxV',
     __v: 0,
   },
   {
@@ -879,25 +900,14 @@ Light your space like you mean it.`,
     images: [
       {
         fileName: '1738926030310-1.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUF0ZdrIyvrgRIBMUa1Cwt3nu4PEZOTo0XLQDf',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUF0ZdrIyvrgRIBMUa1Cwt3nu4PEZOTo0XLQDf',
         _id: {
           $oid: '67a5e7ce4da9b29cd0f10b52',
         },
       },
       {
         fileName: '1738926030310-1.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPAx8MpLHpFycKMiw1UGhN9DdQXjCZogfvR4z',
-        _id: {
-          $oid: '67a5e7ce4da9b29cd0f10b52',
-        },
-        thumbnail: '/assets/products/thumbnails/1738926030310-1.jpg',
-      },
-      {
-        fileName: '1738926030310-1.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUmJr28qMgck96WhX7TGdaslL58YeZAnUDbwov',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPAx8MpLHpFycKMiw1UGhN9DdQXjCZogfvR4z',
         _id: {
           $oid: '67a5e7ce4da9b29cd0f10b52',
         },
@@ -905,8 +915,7 @@ Light your space like you mean it.`,
       },
       {
         fileName: '1738926030310-1.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUmULoG2Mgck96WhX7TGdaslL58YeZAnUDbwov',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUmJr28qMgck96WhX7TGdaslL58YeZAnUDbwov',
         _id: {
           $oid: '67a5e7ce4da9b29cd0f10b52',
         },
@@ -914,8 +923,15 @@ Light your space like you mean it.`,
       },
       {
         fileName: '1738926030310-1.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSvuMPVAKnraNxkI5vbez6dT2q8M0osBfR9At',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUmULoG2Mgck96WhX7TGdaslL58YeZAnUDbwov',
+        _id: {
+          $oid: '67a5e7ce4da9b29cd0f10b52',
+        },
+        thumbnail: '/assets/products/thumbnails/1738926030310-1.jpg',
+      },
+      {
+        fileName: '1738926030310-1.jpg',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSvuMPVAKnraNxkI5vbez6dT2q8M0osBfR9At',
         _id: {
           $oid: '67a5e7ce4da9b29cd0f10b52',
         },
@@ -963,41 +979,39 @@ Light your space like you mean it.`,
       },
     ],
     marbleImages: {
-      'indianblackbheslana': [
+      indianblackbheslana: [
         '/marbles/monster1/monster1basin/indianblackbheslana/1.webp',
         '/marbles/monster1/monster1basin/indianblackbheslana/2.webp',
         '/marbles/monster1/monster1basin/indianblackbheslana/3.webp',
         '/marbles/monster1/monster1basin/indianblackbheslana/4.webp',
       ],
-      'indianrossolevante': [
+      indianrossolevante: [
         '/marbles/monster1/monster1basin/indianrossolevante/1.webp',
         '/marbles/monster1/monster1basin/indianrossolevante/2.webp',
         '/marbles/monster1/monster1basin/indianrossolevante/3.webp',
         '/marbles/monster1/monster1basin/indianrossolevante/4.webp',
       ],
-      'italianbeigetravertine': [
+      italianbeigetravertine: [
         '/marbles/monster1/monster1basin/italianbeigetravertine/1.webp',
         '/marbles/monster1/monster1basin/italianbeigetravertine/2.webp',
         '/marbles/monster1/monster1basin/italianbeigetravertine/3.webp',
         '/marbles/monster1/monster1basin/italianbeigetravertine/4.webp',
       ],
-      'marquina': [
+      marquina: [
         '/marbles/monster1/monster1basin/marquina/1.webp',
         '/marbles/monster1/monster1basin/marquina/2.webp',
         '/marbles/monster1/monster1basin/marquina/3.webp',
         '/marbles/monster1/monster1basin/marquina/4.webp',
       ],
     },
-    video:
-      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCajdlk8JDhG5HCzPb3QlFJuiAr4j6p0c7eDEq',
+    video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCajdlk8JDhG5HCzPb3QlFJuiAr4j6p0c7eDEq',
     description: `This isn’t just a basin—it’s a bold move. Sculpted like art, built for impact. 
 
 It turns any bathroom into a conversation starter. Pair it with a sleek bathtub and you’ve got a 
 setup that’s stylish, smart, and seriously impressive. 
 
 Luxury isn’t optional. It’s essential. Own it.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUgPpkpBlLdSN8CY5rJGOAxcqQpM9fjoh4etX6',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUgPpkpBlLdSN8CY5rJGOAxcqQpM9fjoh4etX6',
     __v: 0,
   },
   {
@@ -1011,25 +1025,14 @@ Luxury isn’t optional. It’s essential. Own it.`,
     images: [
       {
         fileName: '1738927948144-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUxALIhqiPUt8w7TpsY9iaCJZ03LNVMQzoX6l4',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUxALIhqiPUt8w7TpsY9iaCJZ03LNVMQzoX6l4',
         _id: {
           $oid: '67a5ef4c4da9b29cd0f10bf5',
         },
       },
       {
         fileName: '1738927948144-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnywj9VbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
-        _id: {
-          $oid: '67a5ef4c4da9b29cd0f10bf5',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927948144-Slide1.JPG',
-      },
-      {
-        fileName: '1738927948144-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUFA5TAYyvrgRIBMUa1Cwt3nu4PEZOTo0XLQDf',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnywj9VbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
         _id: {
           $oid: '67a5ef4c4da9b29cd0f10bf5',
         },
@@ -1037,8 +1040,7 @@ Luxury isn’t optional. It’s essential. Own it.`,
       },
       {
         fileName: '1738927948144-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUgDH5VrlLdSN8CY5rJGOAxcqQpM9fjoh4etX6',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUFA5TAYyvrgRIBMUa1Cwt3nu4PEZOTo0XLQDf',
         _id: {
           $oid: '67a5ef4c4da9b29cd0f10bf5',
         },
@@ -1046,8 +1048,7 @@ Luxury isn’t optional. It’s essential. Own it.`,
       },
       {
         fileName: '1738927948144-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPACzAp3HpFycKMiw1UGhN9DdQXjCZogfvR4z',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUgDH5VrlLdSN8CY5rJGOAxcqQpM9fjoh4etX6',
         _id: {
           $oid: '67a5ef4c4da9b29cd0f10bf5',
         },
@@ -1055,8 +1056,7 @@ Luxury isn’t optional. It’s essential. Own it.`,
       },
       {
         fileName: '1738927948144-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUrUhGmUNnDI67jcCaomXhZLsJd91f4YGitMHP',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPACzAp3HpFycKMiw1UGhN9DdQXjCZogfvR4z',
         _id: {
           $oid: '67a5ef4c4da9b29cd0f10bf5',
         },
@@ -1064,8 +1064,15 @@ Luxury isn’t optional. It’s essential. Own it.`,
       },
       {
         fileName: '1738927948144-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUEG5lH3YFi7GYsQA2my03DTouek5wnIJXgjpV',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUrUhGmUNnDI67jcCaomXhZLsJd91f4YGitMHP',
+        _id: {
+          $oid: '67a5ef4c4da9b29cd0f10bf5',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927948144-Slide1.JPG',
+      },
+      {
+        fileName: '1738927948144-Slide1.JPG',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUEG5lH3YFi7GYsQA2my03DTouek5wnIJXgjpV',
         _id: {
           $oid: '67a5ef4c4da9b29cd0f10bf5',
         },
@@ -1121,9 +1128,55 @@ Precision meets presence in a design that’s as commanding as it is calming. It
 When style meets structure like this, luxury becomes non-negotiable.
 
 `,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDWJFkL8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDWJFkL8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
     __v: 0,
+    marbleImages: {
+      indianblackbheslana: [
+        '/marbles/newmatilda2024/bathtub/indianblackbheslana/1.webp',
+        '/marbles/newmatilda2024/bathtub/indianblackbheslana/2.webp',
+        '/marbles/newmatilda2024/bathtub/indianblackbheslana/3.webp',
+        '/marbles/newmatilda2024/bathtub/indianblackbheslana/4.webp',
+        '/marbles/newmatilda2024/bathtub/indianblackbheslana/5.webp',
+        '/marbles/newmatilda2024/bathtub/indianblackbheslana/6.webp',
+        '/marbles/newmatilda2024/bathtub/indianblackbheslana/7.webp',
+      ],
+      indianrossolevante: [
+        '/marbles/newmatilda2024/bathtub/indianrossolevante/1.webp',
+        '/marbles/newmatilda2024/bathtub/indianrossolevante/2.webp',
+        '/marbles/newmatilda2024/bathtub/indianrossolevante/3.webp',
+        '/marbles/newmatilda2024/bathtub/indianrossolevante/4.webp',
+        '/marbles/newmatilda2024/bathtub/indianrossolevante/5.webp',
+        '/marbles/newmatilda2024/bathtub/indianrossolevante/6.webp',
+        '/marbles/newmatilda2024/bathtub/indianrossolevante/7.webp',
+      ],
+      italianbeigetravertine: [
+        '/marbles/newmatilda2024/bathtub/italianbeigetravertine/1.webp',
+        '/marbles/newmatilda2024/bathtub/italianbeigetravertine/2.webp',
+        '/marbles/newmatilda2024/bathtub/italianbeigetravertine/3.webp',
+        '/marbles/newmatilda2024/bathtub/italianbeigetravertine/4.webp',
+        '/marbles/newmatilda2024/bathtub/italianbeigetravertine/5.webp',
+        '/marbles/newmatilda2024/bathtub/italianbeigetravertine/6.webp',
+        '/marbles/newmatilda2024/bathtub/italianbeigetravertine/7.webp',
+      ],
+      marquina: [
+        '/marbles/newmatilda2024/bathtub/marquina/1.webp',
+        '/marbles/newmatilda2024/bathtub/marquina/2.webp',
+        '/marbles/newmatilda2024/bathtub/marquina/3.webp',
+        '/marbles/newmatilda2024/bathtub/marquina/4.webp',
+        '/marbles/newmatilda2024/bathtub/marquina/5.webp',
+        '/marbles/newmatilda2024/bathtub/marquina/6.webp',
+        '/marbles/newmatilda2024/bathtub/marquina/7.webp',
+      ],
+      spidergreen: [
+        '/marbles/newmatilda2024/bathtub/spidergreen/1.webp',
+        '/marbles/newmatilda2024/bathtub/spidergreen/2.webp',
+        '/marbles/newmatilda2024/bathtub/spidergreen/3.webp',
+        '/marbles/newmatilda2024/bathtub/spidergreen/4.webp',
+        '/marbles/newmatilda2024/bathtub/spidergreen/5.webp',
+        '/marbles/newmatilda2024/bathtub/spidergreen/6.webp',
+        '/marbles/newmatilda2024/bathtub/spidergreen/7.webp',
+      ],
+    },
   },
   {
     _id: {
@@ -1138,40 +1191,35 @@ When style meets structure like this, luxury becomes non-negotiable.
     images: [
       {
         fileName: '1738927974894-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPZiDMtHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPZiDMtHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
         _id: {
           $oid: '67a5ef664da9b29cd0f10bfc',
         },
       },
       {
         fileName: '1738927974894-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU0bST3IhhiHbrpSCkBA8lKn64duFxNeTWLcq5',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU0bST3IhhiHbrpSCkBA8lKn64duFxNeTWLcq5',
         _id: {
           $oid: '67a5ef664da9b29cd0f10bfc',
         },
       },
       {
         fileName: '1738927974894-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUtTSxspL5Bu7NntcLbi8k4ldwr62VXy3PODz9',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUtTSxspL5Bu7NntcLbi8k4ldwr62VXy3PODz9',
         _id: {
           $oid: '67a5ef664da9b29cd0f10bfc',
         },
       },
       {
         fileName: '1738927974894-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUv3nb2l0iQtznIlhRaFJ8jZ6p7xPg3bw9OrDV',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUv3nb2l0iQtznIlhRaFJ8jZ6p7xPg3bw9OrDV',
         _id: {
           $oid: '67a5ef664da9b29cd0f10bfc',
         },
       },
       {
         fileName: '1738927974894-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQPBL6zCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQPBL6zCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
         _id: {
           $oid: '67a5ef664da9b29cd0f10bfc',
         },
@@ -1210,24 +1258,40 @@ When style meets structure like this, luxury becomes non-negotiable.
       },
     ],
     marbleImages: {
-      'indianblackbheslana': [
-        '/marbles/matilda2024/chair/indianblackbheslana/1.webp',
-        '/marbles/matilda2024/chair/indianblackbheslana/2.webp',
-        '/marbles/matilda2024/chair/indianblackbheslana/3.webp',
-        '/marbles/matilda2024/chair/indianblackbheslana/4.webp',
-        '/marbles/matilda2024/chair/indianblackbheslana/5.webp',
+      indianblackbheslana: [
+        '/marbles/newmatilda2024/chair/indianblackbheslana/1.webp',
+        '/marbles/newmatilda2024/chair/indianblackbheslana/2.webp',
+        '/marbles/newmatilda2024/chair/indianblackbheslana/3.webp',
+        '/marbles/newmatilda2024/chair/indianblackbheslana/4.webp',
+        '/marbles/newmatilda2024/chair/indianblackbheslana/5.webp',
       ],
-      'indianrossolevante': [
-        '/marbles/matilda2024/chair/indianrossolevante/1.webp',
-        '/marbles/matilda2024/chair/indianrossolevante/2.webp',
-        '/marbles/matilda2024/chair/indianrossolevante/3.webp',
-        '/marbles/matilda2024/chair/indianrossolevante/4.webp',
-        '/marbles/matilda2024/chair/indianrossolevante/5.webp',
+      indianrossolevante: [
+        '/marbles/newmatilda2024/chair/indianrossolevante/1.webp',
+        '/marbles/newmatilda2024/chair/indianrossolevante/2.webp',
+        '/marbles/newmatilda2024/chair/indianrossolevante/3.webp',
+        '/marbles/newmatilda2024/chair/indianrossolevante/4.webp',
+        '/marbles/newmatilda2024/chair/indianrossolevante/5.webp',
       ],
-      'marquina': [
-        '/marbles/matilda2024/chair/marquina/1.webp',
-        '/marbles/matilda2024/chair/marquina/2.webp',
-        '/marbles/matilda2024/chair/marquina/3.webp',
+      italianbeigetravertine: [
+        '/marbles/newmatilda2024/chair/italianbeigetravertine/1.webp',
+        '/marbles/newmatilda2024/chair/italianbeigetravertine/2.webp',
+        '/marbles/newmatilda2024/chair/italianbeigetravertine/3.webp',
+        '/marbles/newmatilda2024/chair/italianbeigetravertine/4.webp',
+        '/marbles/newmatilda2024/chair/italianbeigetravertine/5.webp',
+      ],
+      marquina: [
+        '/marbles/newmatilda2024/chair/marquina/1.webp',
+        '/marbles/newmatilda2024/chair/marquina/2.webp',
+        '/marbles/newmatilda2024/chair/marquina/3.webp',
+        '/marbles/newmatilda2024/chair/marquina/4.webp',
+        '/marbles/newmatilda2024/chair/marquina/5.webp',
+      ],
+      spidergreen: [
+        '/marbles/newmatilda2024/chair/spidergreen/1.webp',
+        '/marbles/newmatilda2024/chair/spidergreen/2.webp',
+        '/marbles/newmatilda2024/chair/spidergreen/3.webp',
+        '/marbles/newmatilda2024/chair/spidergreen/4.webp',
+        '/marbles/newmatilda2024/chair/spidergreen/5.webp',
       ],
     },
     description: `Listen closely. This isn’t just a chair—it’s a power move carved from pure white marble. 
@@ -1237,8 +1301,7 @@ It’s not just about sitting—it’s about making a statement. Precision-craft
 
 You don’t just own it—you showcase it. This is how leaders decorate. 
 One look, and you know—you’ve arrived.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUcFPDsNOzfU0v5mZaj1HWcAwKFCxykrE2NGSI',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUcFPDsNOzfU0v5mZaj1HWcAwKFCxykrE2NGSI',
     __v: 0,
   },
   {
@@ -1249,38 +1312,33 @@ One look, and you know—you’ve arrived.`,
     group: 'monster_3.0',
     material: 'Burnt Wood',
     collabtext: 'Dimensions',
-    collablink:
-      'https://dimensionsfurniture.in/collections/monster-collection/',
+    collablink: 'https://dimensionsfurniture.in/collections/monster-collection/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8t2Fwv64oKUn37W6wsTlRmDBFhGrviIjcMxV',
     images: [
       {
         fileName: '1739952279061-Id Dining set.156.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQLYqKEECgpKiS14YXmU2JDcwG0vBsCL6dWNy',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQLYqKEECgpKiS14YXmU2JDcwG0vBsCL6dWNy',
         _id: {
           $oid: '67b59097e03cc2c55c624a55',
         },
       },
       {
         fileName: '1739952279061-Id Dining set.156.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQLn8Rg0CgpKiS14YXmU2JDcwG0vBsCL6dWNy',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQLn8Rg0CgpKiS14YXmU2JDcwG0vBsCL6dWNy',
         _id: {
           $oid: '67b59097e03cc2c55c624a55',
         },
       },
       {
         fileName: '1739952279063-Id Dining set.161.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUL6KVuzdDqbauUfVsg4JYrj86xOSilFe5PBo3',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUL6KVuzdDqbauUfVsg4JYrj86xOSilFe5PBo3',
         _id: {
           $oid: '67b59097e03cc2c55c624a56',
         },
       },
       {
         fileName: '1739952279063-Id Dining set.161.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDmwdiK8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDmwdiK8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
         _id: {
           $oid: '67b59097e03cc2c55c624a56',
         },
@@ -1328,19 +1386,16 @@ One look, and you know—you’ve arrived.`,
         },
       },
     ],
-    video:
-      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCuKKdD4jcQlz4hvfIqLCiaOSx10dMWRDKZYPn',
+    video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCuKKdD4jcQlz4hvfIqLCiaOSx10dMWRDKZYPn',
     description: `Forget dinner conversations—this table is the conversation. 
 
 Sculpted from rich wood and elevated with fearless design, the Monster Dining Table doesn’t just anchor a room—it defines it. 
 With powerful curves and a presence that commands attention, it invites connection, conversation, and curiosity. 
 
 Designed for those who host with flair, this is where luxury meets audacity, and every gathering becomes a bold expression of style.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnOBMcIbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnOBMcIbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
     __v: 0,
   },
-
   {
     _id: {
       $oid: '67a5e9914da9b29cd0f10b58',
@@ -1354,25 +1409,14 @@ Designed for those who host with flair, this is where luxury meets audacity, and
     images: [
       {
         fileName: '1738926481003-Slide2.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUreGqMKNnDI67jcCaomXhZLsJd91f4YGitMHP',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUreGqMKNnDI67jcCaomXhZLsJd91f4YGitMHP',
         _id: {
           $oid: '67a5e9914da9b29cd0f10b5a',
         },
       },
       {
         fileName: '1738926481003-Slide2.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUBEmIPh3qeoXrYV82Q6T5Enb4WD1LwdAJjzPk',
-        _id: {
-          $oid: '67a5e9914da9b29cd0f10b5a',
-        },
-        thumbnail: '/assets/products/thumbnails/1738926481003-Slide2.JPG',
-      },
-      {
-        fileName: '1738926481003-Slide2.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8PlKS64oKUn37W6wsTlRmDBFhGrviIjcMxVa',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUBEmIPh3qeoXrYV82Q6T5Enb4WD1LwdAJjzPk',
         _id: {
           $oid: '67a5e9914da9b29cd0f10b5a',
         },
@@ -1380,8 +1424,15 @@ Designed for those who host with flair, this is where luxury meets audacity, and
       },
       {
         fileName: '1738926481003-Slide2.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUbzYkQExzt13BbVlJhGUR6Ww2eTaj5pASg9NC',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8PlKS64oKUn37W6wsTlRmDBFhGrviIjcMxVa',
+        _id: {
+          $oid: '67a5e9914da9b29cd0f10b5a',
+        },
+        thumbnail: '/assets/products/thumbnails/1738926481003-Slide2.JPG',
+      },
+      {
+        fileName: '1738926481003-Slide2.JPG',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUbzYkQExzt13BbVlJhGUR6Ww2eTaj5pASg9NC',
         _id: {
           $oid: '67a5e9914da9b29cd0f10b5a',
         },
@@ -1429,29 +1480,28 @@ Designed for those who host with flair, this is where luxury meets audacity, and
       },
     ],
     marbleImages: {
-      'indianblackbheslana': [
+      indianblackbheslana: [
         '/marbles/monster1/monster1bathtub/indianblackbheslana/1.webp',
         '/marbles/monster1/monster1bathtub/indianblackbheslana/2.webp',
         '/marbles/monster1/monster1bathtub/indianblackbheslana/3.webp',
       ],
-      'indianrossolevante': [
+      indianrossolevante: [
         '/marbles/monster1/monster1bathtub/indianrossolevante/1.webp',
         '/marbles/monster1/monster1bathtub/indianrossolevante/2.webp',
         '/marbles/monster1/monster1bathtub/indianrossolevante/3.webp',
       ],
-      'italianbeigetravertine': [
+      italianbeigetravertine: [
         '/marbles/monster1/monster1bathtub/italianbeigetravertine/1.webp',
         '/marbles/monster1/monster1bathtub/italianbeigetravertine/2.webp',
         '/marbles/monster1/monster1bathtub/italianbeigetravertine/3.webp',
       ],
-      'marquina': [
+      marquina: [
         '/marbles/monster1/monster1bathtub/marquina/1.webp',
         '/marbles/monster1/monster1bathtub/marquina/2.webp',
         '/marbles/monster1/monster1bathtub/marquina/3.webp',
       ],
     },
-    video:
-      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCaXJhNuDhG5HCzPb3QlFJuiAr4j6p0c7eDEqX',
+    video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCaXJhNuDhG5HCzPb3QlFJuiAr4j6p0c7eDEqX',
     description: `This isn’t just a bathtub—it’s a marble masterpiece. 
 
 Bold, sculptural, and built for two, it blends textured leather finesse with sheer size and elegance. 
@@ -1459,99 +1509,9 @@ Designed to impress indoors or out, it doubles as a luxury planter that commands
 
 It breaks tradition and rewrites the rules. You’re not just buying a tub—you’re making a statement. 
 Because when marble meets vision, the result is nothing short of iconic.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUCdwK2EX0XaKgNMT1QEmen25RAwc7Sk4UxoJF',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUCdwK2EX0XaKgNMT1QEmen25RAwc7Sk4UxoJF',
     __v: 0,
   },
-  //   {
-  //     _id: {
-  //       $oid: '67a5ec804da9b29cd0f10b98',
-  //     },
-  //     title: 'matilda 2024 console 2',
-  //     group: 'matilda_2024',
-  //     material: 'Marble',
-  //     collabtext: 'Foremost Marbles',
-  //     collablink: 'https://foremostmarbles.com/',
-  //     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUC8rBCeX0XaKgNMT1QEmen25RAwc7Sk4UxoJF',
-  //     images: [
-  //       {
-  //         fileName: '1738927232483-Slide1.JPG',
-  //         filePath:
-  //           'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUUwpAS4BY1Vx48e2bhPHIZJqsnBOSArl5D3MT',
-  //         _id: {
-  //           $oid: '67a5ec804da9b29cd0f10b99',
-  //         },
-  //       },
-  //       {
-  //         fileName: '1738927232483-Slide1.JPG',
-  //         filePath:
-  //           'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQWEsULCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
-  //         _id: {
-  //           $oid: '67a5ec804da9b29cd0f10b99',
-  //         },
-  //       },
-  //       {
-  //         fileName: '1738927232483-Slide1.JPG',
-  //         filePath:
-  //           'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8ydGSv64oKUn37W6wsTlRmDBFhGrviIjcMxV',
-  //         _id: {
-  //           $oid: '67a5ec804da9b29cd0f10b99',
-  //         },
-  //       },
-  //       {
-  //         fileName: '1738927232483-Slide1.JPG',
-  //         filePath:
-  //           'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUR45djGE1fzw0AFxNe2UEaubVBY53GTv7kqpl',
-  //         _id: {
-  //           $oid: '67a5ec804da9b29cd0f10b99',
-  //         },
-  //       },
-  //       {
-  //         fileName: '1738927232483-Slide1.JPG',
-  //         filePath: '/assets/products/1738927232483-Slide1.JPG',
-  //         _id: {
-  //           $oid: '67a5ec804da9b29cd0f10b99',
-  //         },
-  //         thumbnail: '/assets/products/thumbnails/1738927232483-Slide1.JPG',
-  //       },
-  //       {
-  //         fileName: '1738927232488-Slide4.JPG',
-  //         filePath: '/assets/products/1738927232488-Slide4.JPG',
-  //         _id: {
-  //           $oid: '67a5ec804da9b29cd0f10b9c',
-  //         },
-  //         thumbnail: '/assets/products/thumbnails/1738927232488-Slide4.JPG',
-  //       },
-  //       {
-  //         fileName: '1738927232489-Slide5.JPG',
-  //         filePath: '/assets/products/1738927232489-Slide5.JPG',
-  //         _id: {
-  //           $oid: '67a5ec804da9b29cd0f10b9d',
-  //         },
-  //         thumbnail: '/assets/products/thumbnails/1738927232489-Slide5.JPG',
-  //       },
-  //       {
-  //         fileName: '1738927232491-Slide6.JPG',
-  //         filePath: '/assets/products/1738927232491-Slide6.JPG',
-  //         _id: {
-  //           $oid: '67a5ec804da9b29cd0f10b9e',
-  //         },
-  //         thumbnail: '/assets/products/thumbnails/1738927232491-Slide6.JPG',
-  //       },
-  //     ],
-  //     video:
-  //       'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCjKPbe9RgMIbl3P4qwyANo9tH2kiZ5dfchuFv',
-  //     description: `This is more than a center table — it’s a statement of dominance, precision, and presence.
-
-  // Sculpted from pure white marble, its continuous arch isn’t just design, it’s strategy — bold, seamless, unforgettable.
-  // Created by Karan Desai, this piece doesn’t just elevate a room, it commands it.
-
-  // It tells the world you don’t follow trends — you set them.
-  // This is luxury with backbone. Solid, striking, and built to impress.`,
-  //     dimensions:
-  //       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUGkau59t5PDVekS3148x67aQRtcZvuTwfrOph',
-  //     __v: 0,
-  //   },
   {
     _id: {
       $oid: '67b59041e03cc2c55c624a4b',
@@ -1560,22 +1520,19 @@ Because when marble meets vision, the result is nothing short of iconic.`,
     group: 'monster_3.0',
     material: 'Burnt Wood',
     collabtext: 'Dimensions',
-    collablink:
-      'https://dimensionsfurniture.in/collections/monster-collection/',
+    collablink: 'https://dimensionsfurniture.in/collections/monster-collection/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUvwL3aR0iQtznIlhRaFJ8jZ6p7xPg3bw9OrDV',
     images: [
       {
         fileName: '1739952193181-1.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUysEWFrjvoD5bj92PLzxBdul6nT8GrEAS30eN',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUysEWFrjvoD5bj92PLzxBdul6nT8GrEAS30eN',
         _id: {
           $oid: '67b59041e03cc2c55c624a4c',
         },
       },
       {
         fileName: '1739952193181-1.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPPKO8MHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPPKO8MHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
         _id: {
           $oid: '67b59041e03cc2c55c624a4c',
         },
@@ -1583,8 +1540,7 @@ Because when marble meets vision, the result is nothing short of iconic.`,
       },
       {
         fileName: '1739952193181-1.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUvfFWrv0iQtznIlhRaFJ8jZ6p7xPg3bw9OrDV',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUvfFWrv0iQtznIlhRaFJ8jZ6p7xPg3bw9OrDV',
         _id: {
           $oid: '67b59041e03cc2c55c624a4c',
         },
@@ -1592,8 +1548,7 @@ Because when marble meets vision, the result is nothing short of iconic.`,
       },
       {
         fileName: '1739952193181-1.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSdXRuniAKnraNxkI5vbez6dT2q8M0osBfR9A',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSdXRuniAKnraNxkI5vbez6dT2q8M0osBfR9A',
         _id: {
           $oid: '67b59041e03cc2c55c624a4c',
         },
@@ -1601,8 +1556,7 @@ Because when marble meets vision, the result is nothing short of iconic.`,
       },
       {
         fileName: '1739952193181-1.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUfjaB8HlFreUiploh17Cx6dSMgtF0NPTW8vq2',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUfjaB8HlFreUiploh17Cx6dSMgtF0NPTW8vq2',
         _id: {
           $oid: '67b59041e03cc2c55c624a4c',
         },
@@ -1641,8 +1595,7 @@ Because when marble meets vision, the result is nothing short of iconic.`,
         thumbnail: '/assets/products/thumbnails/console8.jpg',
       },
     ],
-    video:
-      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCgze5OXoQ5jtomeZYnhXwDRcaNS8IHVWdJi4s',
+    video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCgze5OXoQ5jtomeZYnhXwDRcaNS8IHVWdJi4s',
     description: `It’s not just a console—it’s a bold sculptural force. 
 The Monster Console turns heads with unapologetic presence and primal confidence. 
 
@@ -1650,8 +1603,7 @@ Crafted from raw, textured wood and sculpted into a form that defies the ordinar
 Refined yet untamed, structured yet wild—this piece doesn’t blend in, it takes over. 
 
 If your space demands character, power, and a touch of rebellion, this is your next move.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUtJTy2o5Bu7NntcLbi8k4ldwr62VXy3PODz9j',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUtJTy2o5Bu7NntcLbi8k4ldwr62VXy3PODz9j',
     __v: 0,
   },
   {
@@ -1675,8 +1627,7 @@ If your space demands character, power, and a touch of rebellion, this is your n
       },
       {
         fileName: '1743757629639-1.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUBWqc6q3qeoXrYV82Q6T5Enb4WD1LwdAJjzPk',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUBWqc6q3qeoXrYV82Q6T5Enb4WD1LwdAJjzPk',
         _id: {
           $oid: '67efa13d38f60435b89ba292',
         },
@@ -1684,8 +1635,7 @@ If your space demands character, power, and a touch of rebellion, this is your n
       },
       {
         fileName: '1743757629639-1.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWXoOG4rSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWXoOG4rSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
         _id: {
           $oid: '67efa13d38f60435b89ba292',
         },
@@ -1693,8 +1643,7 @@ If your space demands character, power, and a touch of rebellion, this is your n
       },
       {
         fileName: '1743757629639-1.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUte63Oq5Bu7NntcLbi8k4ldwr62VXy3PODz9j',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUte63Oq5Bu7NntcLbi8k4ldwr62VXy3PODz9j',
         _id: {
           $oid: '67efa13d38f60435b89ba292',
         },
@@ -1702,8 +1651,7 @@ If your space demands character, power, and a touch of rebellion, this is your n
       },
       {
         fileName: '1743757629639-1.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUoMncgQPd43VNTXj27bgOZneCUs9aBiY5x8vw',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUoMncgQPd43VNTXj27bgOZneCUs9aBiY5x8vw',
         _id: {
           $oid: '67efa13d38f60435b89ba292',
         },
@@ -1711,8 +1659,7 @@ If your space demands character, power, and a touch of rebellion, this is your n
       },
       {
         fileName: '1743757629639-1.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU31wCqJvb7L0Z2G4mkrAFzE8uQjRclW5px9hX',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU31wCqJvb7L0Z2G4mkrAFzE8uQjRclW5px9hX',
         _id: {
           $oid: '67efa13d38f60435b89ba292',
         },
@@ -1743,9 +1690,8 @@ If your space demands character, power, and a touch of rebellion, this is your n
         thumbnail: '/assets/products/thumbnails/1743757629643-3.jpg',
       },
     ],
-    description: `The Monster Humpty Wall Sconce by Karan Desai Home reimagines wall lighting as a bold sculptural element within contemporary interiors. Handcrafted in polished brass and paired with a frosted glass globe, the piece introduces warmth, character, and playful presence to the interior of a modern home or residence. Its compact yet expressive form transforms a simple lighting fixture into a striking design moment on the wall. Designed by Karan Desai and made in India, this distinctive creation complements luxury interiors while standing as a remarkable collectible piece.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUohMIiwPd43VNTXj27bgOZneCUs9aBiY5x8vw',
+    description: 'The Monster Humpty Wall Sconce by Karan Desai Home reimagines wall lighting as a bold sculptural element within contemporary interiors. Handcrafted in polished brass and paired with a frosted glass globe, the piece introduces warmth, character, and playful presence to the interior of a modern home or residence. Its compact yet expressive form transforms a simple lighting fixture into a striking design moment on the wall. Designed by Karan Desai and made in India, this distinctive creation complements luxury interiors while standing as a remarkable collectible piece.',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUohMIiwPd43VNTXj27bgOZneCUs9aBiY5x8vw',
     __v: 0,
   },
   {
@@ -1761,48 +1707,42 @@ If your space demands character, power, and a touch of rebellion, this is your n
     images: [
       {
         fileName: '1738930260208-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUr9wURxNnDI67jcCaomXhZLsJd91f4YGitMHP',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUr9wURxNnDI67jcCaomXhZLsJd91f4YGitMHP',
         _id: {
           $oid: '67a5f8544da9b29cd0f10c32',
         },
       },
       {
         fileName: '1738930260208-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnyLWHlbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnyLWHlbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
         _id: {
           $oid: '67a5f8544da9b29cd0f10c32',
         },
       },
       {
         fileName: '1738930260208-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUYxxOfJcnVM7iftKIsUSTJx8haC1mEBkZl4Nv',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUYxxOfJcnVM7iftKIsUSTJx8haC1mEBkZl4Nv',
         _id: {
           $oid: '67a5f8544da9b29cd0f10c32',
         },
       },
       {
         fileName: '1738930260208-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUoSdJCpyPd43VNTXj27bgOZneCUs9aBiY5x8v',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUoSdJCpyPd43VNTXj27bgOZneCUs9aBiY5x8v',
         _id: {
           $oid: '67a5f8544da9b29cd0f10c32',
         },
       },
       {
         fileName: '1738930260208-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAKHmEPJ1oeY2wnF0zQbWX83C4KujdSqt6MUT',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAKHmEPJ1oeY2wnF0zQbWX83C4KujdSqt6MUT',
         _id: {
           $oid: '67a5f8544da9b29cd0f10c32',
         },
       },
       {
         fileName: '1738930260208-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUx9Yh0SiPUt8w7TpsY9iaCJZ03LNVMQzoX6l4',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUx9Yh0SiPUt8w7TpsY9iaCJZ03LNVMQzoX6l4',
         _id: {
           $oid: '67a5f8544da9b29cd0f10c32',
         },
@@ -1832,9 +1772,8 @@ If your space demands character, power, and a touch of rebellion, this is your n
         thumbnail: '/assets/products/thumbnails/1738930260212-Slide3.JPG',
       },
     ],
-    description: `The Monster Squinty Lamp by Karan Desai Home brings playful sculpture and contemporary furniture design together in a bold collectible form. Handcrafted with a distinctive single-eye form and sculptural detailing, the piece introduces character, humour, and visual intrigue to the interior of a modern home or residence. Designed to blur the line between lighting and art, it transforms illumination into a statement of personality and expression. Designed by Karan Desai and made in India, this distinctive creation enhances luxury interiors while standing as a remarkable collectible piece.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUFF11zUyvrgRIBMUa1Cwt3nu4PEZOTo0XLQDf',
+    description: 'The Monster Squinty Lamp by Karan Desai Home brings playful sculpture and contemporary furniture design together in a bold collectible form. Handcrafted with a distinctive single-eye form and sculptural detailing, the piece introduces character, humour, and visual intrigue to the interior of a modern home or residence. Designed to blur the line between lighting and art, it transforms illumination into a statement of personality and expression. Designed by Karan Desai and made in India, this distinctive creation enhances luxury interiors while standing as a remarkable collectible piece.',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUFF11zUyvrgRIBMUa1Cwt3nu4PEZOTo0XLQDf',
     __v: 0,
   },
   {
@@ -1845,14 +1784,12 @@ If your space demands character, power, and a touch of rebellion, this is your n
     group: 'monster_3.0',
     material: 'Burnt Wood & Fur Fabric',
     collabtext: 'Dimensions',
-    collablink:
-      'https://dimensionsfurniture.in/collections/monster-collection/',
+    collablink: 'https://dimensionsfurniture.in/collections/monster-collection/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUVOfTglleJz0jfKoyVd9HNhC5wFQ4OrBi2UkD',
     images: [
       {
         fileName: '1739952224055-Dining chair set.10.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDREVUe78FYI8sxbtc2ngQN4ZeSPwOKkv5yAj',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDREVUe78FYI8sxbtc2ngQN4ZeSPwOKkv5yAj',
         _id: {
           $oid: '67b59060e03cc2c55c624a4f',
         },
@@ -1946,16 +1883,14 @@ If your space demands character, power, and a touch of rebellion, this is your n
         thumbnail: '/assets/products/thumbnails/dining4.jpg',
       },
     ],
-    video:
-      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCOy3I6NvCdTRXkKq6It0VBFyceAso73JQWwnO',
+    video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCOy3I6NvCdTRXkKq6It0VBFyceAso73JQWwnO',
     description: `Not just a chair—a throne for the unapologetic. The Monster Dining Chair isn’t here to blend in; it’s here to dominate the table. 
 
 With its sculptural stance and indulgently textured surface, it redefines dining with drama and depth. 
 Bold yet comforting, it invites conversation, demands attention, and elevates every seat into a statement. 
 
 This isn’t about taking your place—it’s about owning it, one confident curve at a time.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQr4b0hCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQr4b0hCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
     __v: 0,
   },
   {
@@ -1969,32 +1904,28 @@ This isn’t about taking your place—it’s about owning it, one confident cur
     images: [
       {
         fileName: '1738927208522-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU13QEwhmcNbALVg2tCIRm5fi0793BwZH8PYyx',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU13QEwhmcNbALVg2tCIRm5fi0793BwZH8PYyx',
         _id: {
           $oid: '67a5ec684da9b29cd0f10b8f',
         },
       },
       {
         fileName: '1738927208522-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUrLJEAKNnDI67jcCaomXhZLsJd91f4YGitMHP',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUrLJEAKNnDI67jcCaomXhZLsJd91f4YGitMHP',
         _id: {
           $oid: '67a5ec684da9b29cd0f10b8f',
         },
       },
       {
         fileName: '1738927208522-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUwQQR1pgi1vXhd2AYtoGrDFy59EOsBzTnN6eW',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUwQQR1pgi1vXhd2AYtoGrDFy59EOsBzTnN6eW',
         _id: {
           $oid: '67a5ec684da9b29cd0f10b8f',
         },
       },
       {
         fileName: '1738927208522-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUrZIWQcNnDI67jcCaomXhZLsJd91f4YGitMHP',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUrZIWQcNnDI67jcCaomXhZLsJd91f4YGitMHP',
         _id: {
           $oid: '67a5ec684da9b29cd0f10b8f',
         },
@@ -2039,166 +1970,41 @@ Carved from pristine white marble and built to impress, it doesn’t play by the
 
 Precision meets personality in a piece that’s equal parts design and dominance. 
 For those who don’t decorate—they curate power.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJ2rjROdtZQpOq9no3vVs5yPKXR8gEYuikGUw',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJ2rjROdtZQpOq9no3vVs5yPKXR8gEYuikGUw',
     __v: 0,
+    marbleImages: {
+      indianblackbheslana: [
+        '/marbles/newmatilda2024/console/indianblackbheslana/1.webp',
+        '/marbles/newmatilda2024/console/indianblackbheslana/2.webp',
+        '/marbles/newmatilda2024/console/indianblackbheslana/3.webp',
+        '/marbles/newmatilda2024/console/indianblackbheslana/4.webp',
+      ],
+      indianrossolevante: [
+        '/marbles/newmatilda2024/console/indianrossolevante/1.webp',
+        '/marbles/newmatilda2024/console/indianrossolevante/2.webp',
+        '/marbles/newmatilda2024/console/indianrossolevante/3.webp',
+        '/marbles/newmatilda2024/console/indianrossolevante/4.webp',
+      ],
+      italianbeigetravertine: [
+        '/marbles/newmatilda2024/console/italianbeigetravertine/1.webp',
+        '/marbles/newmatilda2024/console/italianbeigetravertine/2.webp',
+        '/marbles/newmatilda2024/console/italianbeigetravertine/3.webp',
+        '/marbles/newmatilda2024/console/italianbeigetravertine/4.webp',
+      ],
+      marquina: [
+        '/marbles/newmatilda2024/console/marquina/1.webp',
+        '/marbles/newmatilda2024/console/marquina/2.webp',
+        '/marbles/newmatilda2024/console/marquina/3.webp',
+        '/marbles/newmatilda2024/console/marquina/4.webp',
+      ],
+      spidergreen: [
+        '/marbles/newmatilda2024/console/spidergreen/1.webp',
+        '/marbles/newmatilda2024/console/spidergreen/2.webp',
+        '/marbles/newmatilda2024/console/spidergreen/3.webp',
+        '/marbles/newmatilda2024/console/spidergreen/4.webp',
+      ],
+    },
   },
-  //   {
-  //     _id: {
-  //       $oid: '67bc49a855b639fb58349ec7',
-  //     },
-  //     title: 'matilda 2024 Bench 1',
-  //     group: 'matilda_2024',
-  //     material: 'Marble',
-  //     collabtext: 'Foremost Marbles',
-  //     collablink: 'https://foremostmarbles.com/',
-  //     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnw5EEDbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
-  //     images: [
-  //       {
-  //         fileName: '1740392872397-1.jpg',
-  //         filePath:
-  //           'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULA7AAADqbauUfVsg4JYrj86xOSilFe5PBo3m',
-  //         _id: {
-  //           $oid: '67bc49a855b639fb58349ec8',
-  //         },
-  //       },
-  //       {
-  //         fileName: '1740392872397-1.jpg',
-  //         filePath:
-  //           'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU1SRy5EmcNbALVg2tCIRm5fi0793BwZH8PYyx',
-  //         _id: {
-  //           $oid: '67bc49a855b639fb58349ec8',
-  //         },
-  //         thumbnail: '/assets/products/thumbnails/1740392872397-1.jpg',
-  //       },
-  //       {
-  //         fileName: '1740392872397-1.jpg',
-  //         filePath:
-  //           'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUuHSAkNVvD2FOkC3NsiU7yPRWb18aeZThVzGr',
-  //         _id: {
-  //           $oid: '67bc49a855b639fb58349ec8',
-  //         },
-  //         thumbnail: '/assets/products/thumbnails/1740392872397-1.jpg',
-  //       },
-  //       {
-  //         fileName: '1740392872397-1.jpg',
-  //         filePath:
-  //           'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUCr0QKcX0XaKgNMT1QEmen25RAwc7Sk4UxoJF',
-  //         _id: {
-  //           $oid: '67bc49a855b639fb58349ec8',
-  //         },
-  //         thumbnail: '/assets/products/thumbnails/1740392872397-1.jpg',
-  //       },
-  //       {
-  //         fileName: '1740392872397-1.jpg',
-  //         filePath: '/assets/products/1740392872397-1.jpg',
-  //         _id: {
-  //           $oid: '67bc49a855b639fb58349ec8',
-  //         },
-  //         thumbnail: '/assets/products/thumbnails/1740392872397-1.jpg',
-  //       },
-  //       {
-  //         fileName: '1740392872400-3.jpg',
-  //         filePath: '/assets/products/1740392872400-3.jpg',
-  //         _id: {
-  //           $oid: '67bc49a855b639fb58349ec9',
-  //         },
-  //         thumbnail: '/assets/products/thumbnails/1740392872400-3.jpg',
-  //       },
-  //       {
-  //         fileName: '1740392872403-4.jpg',
-  //         filePath: '/assets/products/1740392872403-4.jpg',
-  //         _id: {
-  //           $oid: '67bc49a855b639fb58349eca',
-  //         },
-  //         thumbnail: '/assets/products/thumbnails/1740392872403-4.jpg',
-  //       },
-  //       {
-  //         fileName: '1740392872406-5.jpg',
-  //         filePath: '/assets/products/1740392872406-5.jpg',
-  //         _id: {
-  //           $oid: '67bc49a855b639fb58349ecb',
-  //         },
-  //         thumbnail: '/assets/products/thumbnails/1740392872406-5.jpg',
-  //       },
-  //       {
-  //         fileName: '1740392872412-6.jpg',
-  //         filePath: '/assets/products/1740392872412-6.jpg',
-  //         _id: {
-  //           $oid: '67bc49a855b639fb58349ecc',
-  //         },
-  //         thumbnail: '/assets/products/thumbnails/1740392872412-6.jpg',
-  //       },
-  //       {
-  //         fileName: '1740392872422-7.jpg',
-  //         filePath: '/assets/products/1740392872422-7.jpg',
-  //         _id: {
-  //           $oid: '67bc49a855b639fb58349ecd',
-  //         },
-  //         thumbnail: '/assets/products/thumbnails/1740392872422-7.jpg',
-  //       },
-  //       {
-  //         fileName: '1740392872435-8.jpg',
-  //         filePath: '/assets/products/1740392872435-8.jpg',
-  //         _id: {
-  //           $oid: '67bc49a855b639fb58349ece',
-  //         },
-  //         thumbnail: '/assets/products/thumbnails/1740392872435-8.jpg',
-  //       },
-  //       {
-  //         fileName: '1740392872438-9.jpg',
-  //         filePath: '/assets/products/1740392872438-9.jpg',
-  //         _id: {
-  //           $oid: '67bc49a855b639fb58349ecf',
-  //         },
-  //         thumbnail: '/assets/products/thumbnails/1740392872438-9.jpg',
-  //       },
-  //       {
-  //         fileName: '1740392872443-10.jpg',
-  //         filePath: '/assets/products/1740392872443-10.jpg',
-  //         _id: {
-  //           $oid: '67bc49a855b639fb58349ed0',
-  //         },
-  //         thumbnail: '/assets/products/thumbnails/1740392872443-10.jpg',
-  //       },
-  //       {
-  //         fileName: '1740392872447-11.jpg',
-  //         filePath: '/assets/products/1740392872447-11.jpg',
-  //         _id: {
-  //           $oid: '67bc49a855b639fb58349ed1',
-  //         },
-  //         thumbnail: '/assets/products/thumbnails/1740392872447-11.jpg',
-  //       },
-  //       {
-  //         fileName: '1740392872450-12.jpg',
-  //         filePath: '/assets/products/1740392872450-12.jpg',
-  //         _id: {
-  //           $oid: '67bc49a855b639fb58349ed2',
-  //         },
-  //         thumbnail: '/assets/products/thumbnails/1740392872450-12.jpg',
-  //       },
-  //       {
-  //         fileName: '1740392872453-14.jpg',
-  //         filePath: '/assets/products/1740392872453-14.jpg',
-  //         _id: {
-  //           $oid: '67bc49a855b639fb58349ed3',
-  //         },
-  //         thumbnail: '/assets/products/thumbnails/1740392872453-14.jpg',
-  //       },
-  //     ],
-  //     video:
-  //       'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HC489LzLPeVGk63JHrUlZBpzAjR702ThdyPucm',
-  //     description: `This bench? It's not just a seat—it’s a statement.
-
-  // Sculpted from striking marble, it turns every moment into a scene straight out of a luxury lifestyle playbook.
-  // Two people, one masterpiece. You’re not just sharing coffee—you’re closing deals, creating memories, living large.
-  // It’s smooth, it’s solid, and it screams sophistication. This is where connection meets craftsmanship.
-
-  // Want to elevate your space and your standards? Then take a seat—if you can.`,
-  //     dimensions:
-  //       'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUEhdShVYFi7GYsQA2my03DTouek5wnIJXgjpV',
-  //     __v: 0,
-  //   },
   {
     _id: {
       $oid: '67a5eaba4da9b29cd0f10b63',
@@ -2212,25 +2018,14 @@ For those who don’t decorate—they curate power.`,
     images: [
       {
         fileName: '1738926778781-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUYYE36bnVM7iftKIsUSTJx8haC1mEBkZl4NvR',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUYYE36bnVM7iftKIsUSTJx8haC1mEBkZl4NvR',
         _id: {
           $oid: '67a5eaba4da9b29cd0f10b64',
         },
       },
       {
         fileName: '1738926778781-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUVTPrjPeJz0jfKoyVd9HNhC5wFQ4OrBi2UkDx',
-        _id: {
-          $oid: '67a5eaba4da9b29cd0f10b64',
-        },
-        thumbnail: '/assets/products/thumbnails/1738926778781-Slide1.JPG',
-      },
-      {
-        fileName: '1738926778781-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU80sNCo64oKUn37W6wsTlRmDBFhGrviIjcMxV',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUVTPrjPeJz0jfKoyVd9HNhC5wFQ4OrBi2UkDx',
         _id: {
           $oid: '67a5eaba4da9b29cd0f10b64',
         },
@@ -2238,8 +2033,15 @@ For those who don’t decorate—they curate power.`,
       },
       {
         fileName: '1738926778781-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU0mzeJuYhhiHbrpSCkBA8lKn64duFxNeTWLcq',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU80sNCo64oKUn37W6wsTlRmDBFhGrviIjcMxV',
+        _id: {
+          $oid: '67a5eaba4da9b29cd0f10b64',
+        },
+        thumbnail: '/assets/products/thumbnails/1738926778781-Slide1.JPG',
+      },
+      {
+        fileName: '1738926778781-Slide1.JPG',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU0mzeJuYhhiHbrpSCkBA8lKn64duFxNeTWLcq',
         _id: {
           $oid: '67a5eaba4da9b29cd0f10b64',
         },
@@ -2292,35 +2094,41 @@ For those who don’t decorate—they curate power.`,
       },
     ],
     marbleImages: {
-      'indianblackbheslana': [
+      indianblackbheslana: [
         '/marbles/monster1/monster1console/indianblackbheslana/1.webp',
         '/marbles/monster1/monster1console/indianblackbheslana/2.webp',
         '/marbles/monster1/monster1console/indianblackbheslana/3.webp',
         '/marbles/monster1/monster1console/indianblackbheslana/4.webp',
       ],
-      'indianrossolevante': [
+      indianrossolevante: [
         '/marbles/monster1/monster1console/indianrossolevante/1.webp',
         '/marbles/monster1/monster1console/indianrossolevante/2.webp',
         '/marbles/monster1/monster1console/indianrossolevante/3.webp',
         '/marbles/monster1/monster1console/indianrossolevante/4.webp',
       ],
-      'italianbeigetravertine': [
+      italianbeigetravertine: [
         '/marbles/monster1/monster1console/italianbeigetravertine/1.webp',
         '/marbles/monster1/monster1console/italianbeigetravertine/2.webp',
         '/marbles/monster1/monster1console/italianbeigetravertine/3.webp',
         '/marbles/monster1/monster1console/italianbeigetravertine/4.webp',
       ],
-      'marquina': [
+      marquina: [
         '/marbles/monster1/monster1console/marquina/1.webp',
         '/marbles/monster1/monster1console/marquina/2.webp',
         '/marbles/monster1/monster1console/marquina/3.webp',
         '/marbles/monster1/monster1console/marquina/4.webp',
       ],
     },
-    description:
-      "Discover the magic of marble like never before!\n\nImagine one big block turning into three useful and beautiful pieces.\n\nThey're not just furniture, they have cool lights, speakers, and a sleek design.\n\nYour space, but way more awesome!\n\nWelcome to a world where marble becomes something extraordinary.",
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnl32aIbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
+    description: `Discover the magic of marble like never before!
+
+Imagine one big block turning into three useful and beautiful pieces.
+
+They're not just furniture, they have cool lights, speakers, and a sleek design.
+
+Your space, but way more awesome!
+
+Welcome to a world where marble becomes something extraordinary.`,
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnl32aIbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
     __v: 0,
   },
   {
@@ -2336,24 +2144,21 @@ For those who don’t decorate—they curate power.`,
     images: [
       {
         fileName: '1738927300847-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUaWWk8w7zVIx6ZjWFiGhcRQJMUzft1drvPNTb',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUaWWk8w7zVIx6ZjWFiGhcRQJMUzft1drvPNTb',
         _id: {
           $oid: '67a5ecc44da9b29cd0f10ba3',
         },
       },
       {
         fileName: '1738927300847-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU1w2gp0amcNbALVg2tCIRm5fi0793BwZH8PYy',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU1w2gp0amcNbALVg2tCIRm5fi0793BwZH8PYy',
         _id: {
           $oid: '67a5ecc44da9b29cd0f10ba3',
         },
       },
       {
         fileName: '1738927300847-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDzQLYU8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDzQLYU8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
         _id: {
           $oid: '67a5ecc44da9b29cd0f10ba3',
         },
@@ -2398,9 +2203,35 @@ Created by Karan Desai, this piece doesn’t just elevate a room, it commands it
 
 It tells the world you don’t follow trends — you set them. 
 This is luxury with backbone. Solid, striking, and built to impress.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUIGKf4uW6qU3iBow9cLQK4A1kuMTGmF8rel2f',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUIGKf4uW6qU3iBow9cLQK4A1kuMTGmF8rel2f',
     __v: 0,
+    marbleImages: {
+      indianblackbheslana: [
+        '/marbles/newmatilda2024/coffee_table/indianblackbheslana/1.webp',
+        '/marbles/newmatilda2024/coffee_table/indianblackbheslana/2.webp',
+        '/marbles/newmatilda2024/coffee_table/indianblackbheslana/3.webp',
+      ],
+      indianrossolevante: [
+        '/marbles/newmatilda2024/coffee_table/indianrossolevante/1.webp',
+        '/marbles/newmatilda2024/coffee_table/indianrossolevante/2.webp',
+        '/marbles/newmatilda2024/coffee_table/indianrossolevante/3.webp',
+      ],
+      italianbeigetravertine: [
+        '/marbles/newmatilda2024/coffee_table/italianbeigetravertine/1.webp',
+        '/marbles/newmatilda2024/coffee_table/italianbeigetravertine/2.webp',
+        '/marbles/newmatilda2024/coffee_table/italianbeigetravertine/3.webp',
+      ],
+      marquina: [
+        '/marbles/newmatilda2024/coffee_table/marquina/1.webp',
+        '/marbles/newmatilda2024/coffee_table/marquina/2.webp',
+        '/marbles/newmatilda2024/coffee_table/marquina/3.webp',
+      ],
+      spidergreen: [
+        '/marbles/newmatilda2024/coffee_table/spidergreen/1.webp',
+        '/marbles/newmatilda2024/coffee_table/spidergreen/2.webp',
+        '/marbles/newmatilda2024/coffee_table/spidergreen/3.webp',
+      ],
+    },
   },
   {
     _id: {
@@ -2415,25 +2246,14 @@ This is luxury with backbone. Solid, striking, and built to impress.`,
     images: [
       {
         fileName: '1738928023191-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQst98FCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQst98FCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
         _id: {
           $oid: '67a5ef974da9b29cd0f10c0b',
         },
       },
       {
         fileName: '1738928023191-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUc9J9SmOzfU0v5mZaj1HWcAwKFCxykrE2NGSI',
-        _id: {
-          $oid: '67a5ef974da9b29cd0f10c0b',
-        },
-        thumbnail: '/assets/products/thumbnails/1738928023191-Slide1.JPG',
-      },
-      {
-        fileName: '1738928023191-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUUO8ClhBY1Vx48e2bhPHIZJqsnBOSArl5D3MT',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUc9J9SmOzfU0v5mZaj1HWcAwKFCxykrE2NGSI',
         _id: {
           $oid: '67a5ef974da9b29cd0f10c0b',
         },
@@ -2441,8 +2261,7 @@ This is luxury with backbone. Solid, striking, and built to impress.`,
       },
       {
         fileName: '1738928023191-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUrtTQz3hNnDI67jcCaomXhZLsJd91f4YGitMH',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUUO8ClhBY1Vx48e2bhPHIZJqsnBOSArl5D3MT',
         _id: {
           $oid: '67a5ef974da9b29cd0f10c0b',
         },
@@ -2450,8 +2269,7 @@ This is luxury with backbone. Solid, striking, and built to impress.`,
       },
       {
         fileName: '1738928023191-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU1dtia4mcNbALVg2tCIRm5fi0793BwZH8PYyx',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUrtTQz3hNnDI67jcCaomXhZLsJd91f4YGitMH',
         _id: {
           $oid: '67a5ef974da9b29cd0f10c0b',
         },
@@ -2459,8 +2277,15 @@ This is luxury with backbone. Solid, striking, and built to impress.`,
       },
       {
         fileName: '1738928023191-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAnyEeWJ1oeY2wnF0zQbWX83C4KujdSqt6MUT',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU1dtia4mcNbALVg2tCIRm5fi0793BwZH8PYyx',
+        _id: {
+          $oid: '67a5ef974da9b29cd0f10c0b',
+        },
+        thumbnail: '/assets/products/thumbnails/1738928023191-Slide1.JPG',
+      },
+      {
+        fileName: '1738928023191-Slide1.JPG',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAnyEeWJ1oeY2wnF0zQbWX83C4KujdSqt6MUT',
         _id: {
           $oid: '67a5ef974da9b29cd0f10c0b',
         },
@@ -2507,8 +2332,7 @@ This is luxury with backbone. Solid, striking, and built to impress.`,
         thumbnail: '/assets/products/thumbnails/1738928023197-Slide5.JPG',
       },
     ],
-    video:
-      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HC9rpjN5cbKmaUnRuGY8rZ2WhpOsLIyt9Hq65V',
+    video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HC9rpjN5cbKmaUnRuGY8rZ2WhpOsLIyt9Hq65V',
     description: `This isn’t just a lamp—it’s pure presence. 
 
 Carved from rich, veined marble and arched like a gateway to luxury, it doesn’t light a room—it transforms it. 
@@ -2518,9 +2342,50 @@ Every inch screams craftsmanship. This is how you tell the world you’ve arrive
 Want elegance? Want impact? Flip the switch—and let marble do the talking.
 
 `,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDO9d0Q8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDO9d0Q8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
     __v: 0,
+    marbleImages: {
+      indianblackbheslana: [
+        '/marbles/newmatilda2024/floor_lamp/indianblackbheslana/1.webp',
+        '/marbles/newmatilda2024/floor_lamp/indianblackbheslana/2.webp',
+        '/marbles/newmatilda2024/floor_lamp/indianblackbheslana/3.webp',
+        '/marbles/newmatilda2024/floor_lamp/indianblackbheslana/4.webp',
+        '/marbles/newmatilda2024/floor_lamp/indianblackbheslana/5.webp',
+        '/marbles/newmatilda2024/floor_lamp/indianblackbheslana/6.webp',
+      ],
+      indianrossolevante: [
+        '/marbles/newmatilda2024/floor_lamp/indianrossolevante/1.webp',
+        '/marbles/newmatilda2024/floor_lamp/indianrossolevante/2.webp',
+        '/marbles/newmatilda2024/floor_lamp/indianrossolevante/3.webp',
+        '/marbles/newmatilda2024/floor_lamp/indianrossolevante/4.webp',
+        '/marbles/newmatilda2024/floor_lamp/indianrossolevante/5.webp',
+        '/marbles/newmatilda2024/floor_lamp/indianrossolevante/6.webp',
+      ],
+      italianbeigetravertine: [
+        '/marbles/newmatilda2024/floor_lamp/italianbeigetravertine/1.webp',
+        '/marbles/newmatilda2024/floor_lamp/italianbeigetravertine/2.webp',
+        '/marbles/newmatilda2024/floor_lamp/italianbeigetravertine/3.webp',
+        '/marbles/newmatilda2024/floor_lamp/italianbeigetravertine/4.webp',
+        '/marbles/newmatilda2024/floor_lamp/italianbeigetravertine/5.webp',
+        '/marbles/newmatilda2024/floor_lamp/italianbeigetravertine/6.webp',
+      ],
+      marquina: [
+        '/marbles/newmatilda2024/floor_lamp/marquina/1.webp',
+        '/marbles/newmatilda2024/floor_lamp/marquina/2.webp',
+        '/marbles/newmatilda2024/floor_lamp/marquina/3.webp',
+        '/marbles/newmatilda2024/floor_lamp/marquina/4.webp',
+        '/marbles/newmatilda2024/floor_lamp/marquina/5.webp',
+        '/marbles/newmatilda2024/floor_lamp/marquina/6.webp',
+      ],
+      spidergreen: [
+        '/marbles/newmatilda2024/floor_lamp/spidergreen/1.webp',
+        '/marbles/newmatilda2024/floor_lamp/spidergreen/2.webp',
+        '/marbles/newmatilda2024/floor_lamp/spidergreen/3.webp',
+        '/marbles/newmatilda2024/floor_lamp/spidergreen/4.webp',
+        '/marbles/newmatilda2024/floor_lamp/spidergreen/5.webp',
+        '/marbles/newmatilda2024/floor_lamp/spidergreen/6.webp',
+      ],
+    },
   },
   {
     _id: {
@@ -2535,40 +2400,35 @@ Want elegance? Want impact? Flip the switch—and let marble do the talking.
     images: [
       {
         fileName: '1738927112883-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSdCYMG1AKnraNxkI5vbez6dT2q8M0osBfR9A',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSdCYMG1AKnraNxkI5vbez6dT2q8M0osBfR9A',
         _id: {
           $oid: '67a5ec084da9b29cd0f10b7f',
         },
       },
       {
         fileName: '1738927112883-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAnyEeWJ1oeY2wnF0zQbWX83C4KujdSqt6MUT',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAnyEeWJ1oeY2wnF0zQbWX83C4KujdSqt6MUT',
         _id: {
           $oid: '67a5ec084da9b29cd0f10b7f',
         },
       },
       {
         fileName: '1738927112883-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUbSIC6fxzt13BbVlJhGUR6Ww2eTaj5pASg9NC',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUbSIC6fxzt13BbVlJhGUR6Ww2eTaj5pASg9NC',
         _id: {
           $oid: '67a5ec084da9b29cd0f10b7f',
         },
       },
       {
         fileName: '1738927112883-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUfj9z2WEFreUiploh17Cx6dSMgtF0NPTW8vq2',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUfj9z2WEFreUiploh17Cx6dSMgtF0NPTW8vq2',
         _id: {
           $oid: '67a5ec084da9b29cd0f10b7f',
         },
       },
       {
         fileName: '1738927112883-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUNEZoyqG5UuqxLjF0ygrW1ikRpXaHfGVvonDw',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUNEZoyqG5UuqxLjF0ygrW1ikRpXaHfGVvonDw',
         _id: {
           $oid: '67a5ec084da9b29cd0f10b7f',
         },
@@ -2636,9 +2496,45 @@ The Monster Shelf fuses form and function with bold curves and architectural con
 Every line is intentional. Every shelf, a statement. It's not here to blend in—it’s built to elevate, anchor, and lead the room. 
 
 A piece like this doesn’t just hold your collection—it defines your taste. For those who don’t just store ideas—they live them.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDcPdoS8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDcPdoS8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
     __v: 0,
+    marbleImages: {
+      indianblackbheslana: [
+        '/marbles/newmatilda2024/library/indianblackbheslana/1.webp',
+        '/marbles/newmatilda2024/library/indianblackbheslana/2.webp',
+        '/marbles/newmatilda2024/library/indianblackbheslana/3.webp',
+        '/marbles/newmatilda2024/library/indianblackbheslana/4.webp',
+        '/marbles/newmatilda2024/library/indianblackbheslana/5.webp',
+      ],
+      indianrossolevante: [
+        '/marbles/newmatilda2024/library/indianrossolevante/1.webp',
+        '/marbles/newmatilda2024/library/indianrossolevante/2.webp',
+        '/marbles/newmatilda2024/library/indianrossolevante/3.webp',
+        '/marbles/newmatilda2024/library/indianrossolevante/4.webp',
+        '/marbles/newmatilda2024/library/indianrossolevante/5.webp',
+      ],
+      italianbeigetravertine: [
+        '/marbles/newmatilda2024/library/italianbeigetravertine/1.webp',
+        '/marbles/newmatilda2024/library/italianbeigetravertine/2.webp',
+        '/marbles/newmatilda2024/library/italianbeigetravertine/3.webp',
+        '/marbles/newmatilda2024/library/italianbeigetravertine/4.webp',
+        '/marbles/newmatilda2024/library/italianbeigetravertine/5.webp',
+      ],
+      marquina: [
+        '/marbles/newmatilda2024/library/marquina/1.webp',
+        '/marbles/newmatilda2024/library/marquina/2.webp',
+        '/marbles/newmatilda2024/library/marquina/3.webp',
+        '/marbles/newmatilda2024/library/marquina/4.webp',
+        '/marbles/newmatilda2024/library/marquina/5.webp',
+      ],
+      spidergreen: [
+        '/marbles/newmatilda2024/library/spidergreen/1.webp',
+        '/marbles/newmatilda2024/library/spidergreen/2.webp',
+        '/marbles/newmatilda2024/library/spidergreen/3.webp',
+        '/marbles/newmatilda2024/library/spidergreen/4.webp',
+        '/marbles/newmatilda2024/library/spidergreen/5.webp',
+      ],
+    },
   },
   {
     _id: {
@@ -2653,56 +2549,49 @@ A piece like this doesn’t just hold your collection—it defines your taste. F
     images: [
       {
         fileName: '1738926974582-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUctEAWROzfU0v5mZaj1HWcAwKFCxykrE2NGSI',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUctEAWROzfU0v5mZaj1HWcAwKFCxykrE2NGSI',
         _id: {
           $oid: '67a5eb7e4da9b29cd0f10b6a',
         },
       },
       {
         fileName: '1738926974582-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUYKfMsFnVM7iftKIsUSTJx8haC1mEBkZl4NvR',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUYKfMsFnVM7iftKIsUSTJx8haC1mEBkZl4NvR',
         _id: {
           $oid: '67a5eb7e4da9b29cd0f10b6a',
         },
       },
       {
         fileName: '1738926974582-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUP8VPeoHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUP8VPeoHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
         _id: {
           $oid: '67a5eb7e4da9b29cd0f10b6a',
         },
       },
       {
         fileName: '1738926974582-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWGPimuBrSVLpqPbsdCUAMXZB0lT2vrWw4RhO',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWGPimuBrSVLpqPbsdCUAMXZB0lT2vrWw4RhO',
         _id: {
           $oid: '67a5eb7e4da9b29cd0f10b6a',
         },
       },
       {
         fileName: '1738926974582-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUa5NIZizVIx6ZjWFiGhcRQJMUzft1drvPNTbL',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUa5NIZizVIx6ZjWFiGhcRQJMUzft1drvPNTbL',
         _id: {
           $oid: '67a5eb7e4da9b29cd0f10b6a',
         },
       },
       {
         fileName: '1738926974582-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUX8Rqb1RLaynKVcYuZHCDm1IeJRfoT4vBxS8i',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUX8Rqb1RLaynKVcYuZHCDm1IeJRfoT4vBxS8i',
         _id: {
           $oid: '67a5eb7e4da9b29cd0f10b6a',
         },
       },
       {
         fileName: '1738926974582-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUMeOsVlwfQbC4M3ZGkSm6KPAV10HlYU9dinrX',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUMeOsVlwfQbC4M3ZGkSm6KPAV10HlYU9dinrX',
         _id: {
           $oid: '67a5eb7e4da9b29cd0f10b6a',
         },
@@ -2756,16 +2645,14 @@ A piece like this doesn’t just hold your collection—it defines your taste. F
         thumbnail: '/assets/products/thumbnails/1738926974590-Slide6.JPG',
       },
     ],
-    video:
-      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCjraUcJRgMIbl3P4qwyANo9tH2kiZ5dfchuFv',
+    video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCjraUcJRgMIbl3P4qwyANo9tH2kiZ5dfchuFv',
     description: `Born from a shared obsession with precision, Karan Desai and TopBrewer India present Monster 2.0—where architecture meets exceptional coffee. 
 
 This isn’t just a machine; it’s a sculpture with purpose. 
 Bold in form, smart in function, it celebrates those who think bigger, live bolder, and turn routines into rituals. 
 
 It’s not about drinking coffee—it’s about experiencing design, technology, and taste in one powerful moment.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUD5ZmhT8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUD5ZmhT8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
     __v: 0,
   },
   {
@@ -2776,22 +2663,19 @@ It’s not about drinking coffee—it’s about experiencing design, technology,
     group: 'monster_3.0',
     material: 'Burnt Wood',
     collabtext: 'Dimensions',
-    collablink:
-      'https://dimensionsfurniture.in/collections/monster-collection/',
+    collablink: 'https://dimensionsfurniture.in/collections/monster-collection/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKURWr6TYE1fzw0AFxNe2UEaubVBY53GTv7kqpl',
     images: [
       {
         fileName: '1739952401888-Monster Planter_2.17.png',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8tT38j64oKUn37W6wsTlRmDBFhGrviIjcMxV',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8tT38j64oKUn37W6wsTlRmDBFhGrviIjcMxV',
         _id: {
           $oid: '67b59111e03cc2c55c624a65',
         },
       },
       {
         fileName: '1739952401888-Monster Planter_2.17.png',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQdGe7ACgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQdGe7ACgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
         _id: {
           $oid: '67b59111e03cc2c55c624a65',
         },
@@ -2799,8 +2683,7 @@ It’s not about drinking coffee—it’s about experiencing design, technology,
       },
       {
         fileName: '1739952401888-Monster Planter_2.17.png',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUmoOrI1Mgck96WhX7TGdaslL58YeZAnUDbwov',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUmoOrI1Mgck96WhX7TGdaslL58YeZAnUDbwov',
         _id: {
           $oid: '67b59111e03cc2c55c624a35',
         },
@@ -2808,8 +2691,7 @@ It’s not about drinking coffee—it’s about experiencing design, technology,
       },
       {
         fileName: '1739952401888-Monster Planter_2.17.png',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUyBm67aijvoD5bj92PLzxBdul6nT8GrEAS30e',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUyBm67aijvoD5bj92PLzxBdul6nT8GrEAS30e',
         _id: {
           $oid: '67b59111e03cc2c55c624a15',
         },
@@ -2817,8 +2699,7 @@ It’s not about drinking coffee—it’s about experiencing design, technology,
       },
       {
         fileName: '1739952401888-Monster Planter_2.17.png',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUgrtZgTlLdSN8CY5rJGOAxcqQpM9fjoh4etX6',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUgrtZgTlLdSN8CY5rJGOAxcqQpM9fjoh4etX6',
         _id: {
           $oid: '67b59111e03cc2c55c624a25',
         },
@@ -2889,12 +2770,13 @@ It’s not about drinking coffee—it’s about experiencing design, technology,
         thumbnail: '/assets/products/thumbnails/planter8.jpg',
       },
     ],
-    video:
-      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCE3laOFMxgSbMyfoC091qPNkZsU38XhOrtR6a',
-    description:
-      'Why should plants have all the peace? The Monster\nPlanter reimagines botanical displays with an\navant-garde, feral aesthetic. Sculptural yet organic, it’s a\nfusion of life and art—because even nature deserves to\nbe bold.',
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUdXDc4ymQLipXnNcaZzTWOmKke9BGF7gf2xIh',
+    video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCE3laOFMxgSbMyfoC091qPNkZsU38XhOrtR6a',
+    description: `Why should plants have all the peace? The Monster
+Planter reimagines botanical displays with an
+avant-garde, feral aesthetic. Sculptural yet organic, it’s a
+fusion of life and art—because even nature deserves to
+be bold.`,
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUdXDc4ymQLipXnNcaZzTWOmKke9BGF7gf2xIh',
     __v: 0,
   },
   {
@@ -2908,25 +2790,14 @@ It’s not about drinking coffee—it’s about experiencing design, technology,
     images: [
       {
         fileName: '1738927999036-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULbLOLiDqbauUfVsg4JYrj86xOSilFe5PBo3m',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULbLOLiDqbauUfVsg4JYrj86xOSilFe5PBo3m',
         _id: {
           $oid: '67a5ef7f4da9b29cd0f10c06',
         },
       },
       {
         fileName: '1738927999036-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUv1hECvm0iQtznIlhRaFJ8jZ6p7xPg3bw9OrD',
-        _id: {
-          $oid: '67a5ef7f4da9b29cd0f10c06',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927999036-Slide1.JPG',
-      },
-      {
-        fileName: '1738927999036-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUH1kNroSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUv1hECvm0iQtznIlhRaFJ8jZ6p7xPg3bw9OrD',
         _id: {
           $oid: '67a5ef7f4da9b29cd0f10c06',
         },
@@ -2934,8 +2805,7 @@ It’s not about drinking coffee—it’s about experiencing design, technology,
       },
       {
         fileName: '1738927999036-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDOXNQL8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUH1kNroSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
         _id: {
           $oid: '67a5ef7f4da9b29cd0f10c06',
         },
@@ -2943,8 +2813,15 @@ It’s not about drinking coffee—it’s about experiencing design, technology,
       },
       {
         fileName: '1738927999036-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUc73dWP9OzfU0v5mZaj1HWcAwKFCxykrE2NGS',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDOXNQL8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+        _id: {
+          $oid: '67a5ef7f4da9b29cd0f10c06',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927999036-Slide1.JPG',
+      },
+      {
+        fileName: '1738927999036-Slide1.JPG',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUc73dWP9OzfU0v5mZaj1HWcAwKFCxykrE2NGS',
         _id: {
           $oid: '67a5ef7f4da9b29cd0f10c06',
         },
@@ -2982,9 +2859,55 @@ Whether it’s coffee, conversation, or closing a deal with a glance, this piece
 
 You’re not just buying furniture—you’re investing in timeless chemistry. 
 This isn’t just art you admire. It’s art you live in.`,
-    dimensions:
-      'https://imgs.search.brave.com/iVjI8zr3e5IndwkFtM2PVy-uMhc949oudpKHRM6MEOk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzExLzA3LzEwLzc2/LzM2MF9GXzExMDcx/MDc2ODRfbnBSOURr/M0FtbHZzc0JFN01H/d0tUd0h6UnJFZ2Rs/emwuanBn',
+    dimensions: 'https://imgs.search.brave.com/iVjI8zr3e5IndwkFtM2PVy-uMhc949oudpKHRM6MEOk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzExLzA3LzEwLzc2/LzM2MF9GXzExMDcx/MDc2ODRfbnBSOURr/M0FtbHZzc0JFN01H/d0tUd0h6UnJFZ2Rs/emwuanBn',
     __v: 0,
+    marbleImages: {
+      indianblackbheslana: [
+        '/marbles/newmatilda2024/bench/indianblackbheslana/1.webp',
+        '/marbles/newmatilda2024/bench/indianblackbheslana/2.webp',
+        '/marbles/newmatilda2024/bench/indianblackbheslana/3.webp',
+        '/marbles/newmatilda2024/bench/indianblackbheslana/4.webp',
+        '/marbles/newmatilda2024/bench/indianblackbheslana/5.webp',
+        '/marbles/newmatilda2024/bench/indianblackbheslana/6.webp',
+        '/marbles/newmatilda2024/bench/indianblackbheslana/7.webp',
+      ],
+      indianrossolevante: [
+        '/marbles/newmatilda2024/bench/indianrossolevante/1.webp',
+        '/marbles/newmatilda2024/bench/indianrossolevante/2.webp',
+        '/marbles/newmatilda2024/bench/indianrossolevante/3.webp',
+        '/marbles/newmatilda2024/bench/indianrossolevante/4.webp',
+        '/marbles/newmatilda2024/bench/indianrossolevante/5.webp',
+        '/marbles/newmatilda2024/bench/indianrossolevante/6.webp',
+        '/marbles/newmatilda2024/bench/indianrossolevante/7.webp',
+      ],
+      italianbeigetravertine: [
+        '/marbles/newmatilda2024/bench/italianbeigetravertine/1.webp',
+        '/marbles/newmatilda2024/bench/italianbeigetravertine/2.webp',
+        '/marbles/newmatilda2024/bench/italianbeigetravertine/3.webp',
+        '/marbles/newmatilda2024/bench/italianbeigetravertine/4.webp',
+        '/marbles/newmatilda2024/bench/italianbeigetravertine/5.webp',
+        '/marbles/newmatilda2024/bench/italianbeigetravertine/6.webp',
+        '/marbles/newmatilda2024/bench/italianbeigetravertine/7.webp',
+      ],
+      marquina: [
+        '/marbles/newmatilda2024/bench/marquina/1.webp',
+        '/marbles/newmatilda2024/bench/marquina/2.webp',
+        '/marbles/newmatilda2024/bench/marquina/3.webp',
+        '/marbles/newmatilda2024/bench/marquina/4.webp',
+        '/marbles/newmatilda2024/bench/marquina/5.webp',
+        '/marbles/newmatilda2024/bench/marquina/6.webp',
+        '/marbles/newmatilda2024/bench/marquina/7.webp',
+      ],
+      spidergreen: [
+        '/marbles/newmatilda2024/bench/spidergreen/1.webp',
+        '/marbles/newmatilda2024/bench/spidergreen/2.webp',
+        '/marbles/newmatilda2024/bench/spidergreen/3.webp',
+        '/marbles/newmatilda2024/bench/spidergreen/4.webp',
+        '/marbles/newmatilda2024/bench/spidergreen/5.webp',
+        '/marbles/newmatilda2024/bench/spidergreen/6.webp',
+        '/marbles/newmatilda2024/bench/spidergreen/7.webp',
+      ],
+    },
   },
   {
     _id: {
@@ -2999,48 +2922,42 @@ This isn’t just art you admire. It’s art you live in.`,
     images: [
       {
         fileName: '1738930233947-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDrE3aJ8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDrE3aJ8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
         _id: {
           $oid: '67a5f8394da9b29cd0f10c2d',
         },
       },
       {
         fileName: '1738930233947-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUD5AqI48FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUD5AqI48FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
         _id: {
           $oid: '67a5f8394da9b29cd0f10c2d',
         },
       },
       {
         fileName: '1738930233947-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU0m5wBRrhhiHbrpSCkBA8lKn64duFxNeTWLcq',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU0m5wBRrhhiHbrpSCkBA8lKn64duFxNeTWLcq',
         _id: {
           $oid: '67a5f8394da9b29cd0f10c2d',
         },
       },
       {
         fileName: '1738930233947-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9DUedI2frimQ5LhFdjbpOHNPEsav1o2Ac0Dz',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9DUedI2frimQ5LhFdjbpOHNPEsav1o2Ac0Dz',
         _id: {
           $oid: '67a5f8394da9b29cd0f10c2d',
         },
       },
       {
         fileName: '1738930233947-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUEsp59LYFi7GYsQA2my03DTouek5wnIJXgjpV',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUEsp59LYFi7GYsQA2my03DTouek5wnIJXgjpV',
         _id: {
           $oid: '67a5f8394da9b29cd0f10c2d',
         },
       },
       {
         fileName: '1738930233947-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUtGN7Ss5Bu7NntcLbi8k4ldwr62VXy3PODz9j',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUtGN7Ss5Bu7NntcLbi8k4ldwr62VXy3PODz9j',
         _id: {
           $oid: '67a5f8394da9b29cd0f10c2d',
         },
@@ -3070,9 +2987,8 @@ This isn’t just art you admire. It’s art you live in.`,
         thumbnail: '/assets/products/thumbnails/1738930233951-Slide3.JPG',
       },
     ],
-    description: `The Monster Grumpy Lamp by Karan Desai Home transforms lighting into a sculptural collectible with personality. Handcrafted with a bold gold-toned structure and expressive character, the piece introduces energy and attitude to the interior of a modern home or residence. Blurring the line between lighting and furniture, it becomes an artistic object that commands attention. Designed by Karan Desai and made in India, this striking creation enhances luxury interiorswhile standing as a distinctive collectible piece.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDt1neS8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+    description: 'The Monster Grumpy Lamp by Karan Desai Home transforms lighting into a sculptural collectible with personality. Handcrafted with a bold gold-toned structure and expressive character, the piece introduces energy and attitude to the interior of a modern home or residence. Blurring the line between lighting and furniture, it becomes an artistic object that commands attention. Designed by Karan Desai and made in India, this striking creation enhances luxury interiorswhile standing as a distinctive collectible piece.',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDt1neS8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
     __v: 0,
   },
   {
@@ -3088,25 +3004,14 @@ This isn’t just art you admire. It’s art you live in.`,
     images: [
       {
         fileName: '1738927839144-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUbusAEKsxzt13BbVlJhGUR6Ww2eTaj5pASg9N',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUbusAEKsxzt13BbVlJhGUR6Ww2eTaj5pASg9N',
         _id: {
           $oid: '67a5eedf4da9b29cd0f10bd1',
         },
       },
       {
         fileName: '1738927839144-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDQGYBi8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
-        _id: {
-          $oid: '67a5eedf4da9b29cd0f10bd1',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927839144-Slide1.JPG',
-      },
-      {
-        fileName: '1738927839144-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUCE2RQBX0XaKgNMT1QEmen25RAwc7Sk4UxoJF',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDQGYBi8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
         _id: {
           $oid: '67a5eedf4da9b29cd0f10bd1',
         },
@@ -3114,8 +3019,7 @@ This isn’t just art you admire. It’s art you live in.`,
       },
       {
         fileName: '1738927839144-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAnpz7MJ1oeY2wnF0zQbWX83C4KujdSqt6MUT',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUCE2RQBX0XaKgNMT1QEmen25RAwc7Sk4UxoJF',
         _id: {
           $oid: '67a5eedf4da9b29cd0f10bd1',
         },
@@ -3123,8 +3027,15 @@ This isn’t just art you admire. It’s art you live in.`,
       },
       {
         fileName: '1738927839144-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUW0DeParSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAnpz7MJ1oeY2wnF0zQbWX83C4KujdSqt6MUT',
+        _id: {
+          $oid: '67a5eedf4da9b29cd0f10bd1',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927839144-Slide1.JPG',
+      },
+      {
+        fileName: '1738927839144-Slide1.JPG',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUW0DeParSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
         _id: {
           $oid: '67a5eedf4da9b29cd0f10bd1',
         },
@@ -3250,18 +3161,8 @@ This isn’t just art you admire. It’s art you live in.`,
         },
         thumbnail: '/assets/products/thumbnails/1738927839163-Slide15.JPG',
       },
-      // {
-      //   fileName: '1738927839163-Slide15.JPG',
-      //   filePath:
-      //     'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HC550WYE2zZEnj4uh9TVHdL6YlaGR3JgyF0cWr',
-      //   _id: {
-      //     $oid: '67a5eedf4da9b29cd0f10bdf',
-      //   },
-      //   thumbnail: '/assets/products/thumbnails/1738927839163-Slide15.JPG',
-      // },
     ],
-    video:
-      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HC550WYE2zZEnj4uh9TVHdL6YlaGR3JgyF0cWr',
+    video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HC550WYE2zZEnj4uh9TVHdL6YlaGR3JgyF0cWr',
     description: `This planter box isn’t just elegant — it’s engineered to impress. 
 
 Sculpted from richly veined marble, its bold U-shaped design commands attention from every angle. 
@@ -3269,9 +3170,45 @@ It’s not here to quietly blend in — it’s here to redefine what “luxury�
 
 Designed with purpose and executed with precision, this is a piece that turns raw stone into a statement of refined power. 
 Plant life never had a stage this strong.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUrt5sfTMNnDI67jcCaomXhZLsJd91f4YGitMH',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUrt5sfTMNnDI67jcCaomXhZLsJd91f4YGitMH',
     __v: 0,
+    marbleImages: {
+      indianblackbheslana: [
+        '/marbles/newmatilda2024/planter/indianblackbheslana/1.webp',
+        '/marbles/newmatilda2024/planter/indianblackbheslana/2.webp',
+        '/marbles/newmatilda2024/planter/indianblackbheslana/3.webp',
+        '/marbles/newmatilda2024/planter/indianblackbheslana/4.webp',
+        '/marbles/newmatilda2024/planter/indianblackbheslana/5.webp',
+      ],
+      indianrossolevante: [
+        '/marbles/newmatilda2024/planter/indianrossolevante/1.webp',
+        '/marbles/newmatilda2024/planter/indianrossolevante/2.webp',
+        '/marbles/newmatilda2024/planter/indianrossolevante/3.webp',
+        '/marbles/newmatilda2024/planter/indianrossolevante/4.webp',
+        '/marbles/newmatilda2024/planter/indianrossolevante/5.webp',
+      ],
+      italianbeigetravertine: [
+        '/marbles/newmatilda2024/planter/italianbeigetravertine/1.webp',
+        '/marbles/newmatilda2024/planter/italianbeigetravertine/2.webp',
+        '/marbles/newmatilda2024/planter/italianbeigetravertine/3.webp',
+        '/marbles/newmatilda2024/planter/italianbeigetravertine/4.webp',
+        '/marbles/newmatilda2024/planter/italianbeigetravertine/5.webp',
+      ],
+      marquina: [
+        '/marbles/newmatilda2024/planter/marquina/1.webp',
+        '/marbles/newmatilda2024/planter/marquina/2.webp',
+        '/marbles/newmatilda2024/planter/marquina/3.webp',
+        '/marbles/newmatilda2024/planter/marquina/4.webp',
+        '/marbles/newmatilda2024/planter/marquina/5.webp',
+      ],
+      spidergreen: [
+        '/marbles/newmatilda2024/planter/spidergreen/1.webp',
+        '/marbles/newmatilda2024/planter/spidergreen/2.webp',
+        '/marbles/newmatilda2024/planter/spidergreen/3.webp',
+        '/marbles/newmatilda2024/planter/spidergreen/4.webp',
+        '/marbles/newmatilda2024/planter/spidergreen/5.webp',
+      ],
+    },
   },
   {
     _id: {
@@ -3286,8 +3223,7 @@ Plant life never had a stage this strong.`,
     images: [
       {
         fileName: '1743750415386-1.png',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAQCwvE1J1oeY2wnF0zQbWX83C4KujdSqt6MU',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAQCwvE1J1oeY2wnF0zQbWX83C4KujdSqt6MU',
         _id: {
           $oid: '67ef850f629882967f3fbb3e',
         },
@@ -3295,8 +3231,7 @@ Plant life never had a stage this strong.`,
       },
       {
         fileName: '1743750415386-1.png',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9zTq3nt2frimQ5LhFdjbpOHNPEsav1o2Ac0D',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9zTq3nt2frimQ5LhFdjbpOHNPEsav1o2Ac0D',
         _id: {
           $oid: '67ef850f629882967f3fbb3e',
         },
@@ -3304,8 +3239,7 @@ Plant life never had a stage this strong.`,
       },
       {
         fileName: '1743750415386-1.png',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWYvBftrSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWYvBftrSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
         _id: {
           $oid: '67ef850f629882967f3fbb3e',
         },
@@ -3352,8 +3286,7 @@ Plant life never had a stage this strong.`,
         thumbnail: '/assets/products/thumbnails/1743750415407-5.png',
       },
     ],
-    video:
-      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCrAAqEATm3Xw2n8KRLyesC1pDh0NbcqkHFIGS',
+    video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCrAAqEATm3Xw2n8KRLyesC1pDh0NbcqkHFIGS',
     description: `This isn’t a dining table—it’s the centerpiece of influence. 
 
 Sculpted from pure white marble with a bold conical base, it commands the room without saying a word. 
@@ -3363,9 +3296,35 @@ This is where deals are struck, guests are impressed, and legacy begins.
 You don’t dine on it—you build your empire around it.
 
 `,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUINP1NBMW6qU3iBow9cLQK4A1kuMTGmF8rel2',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUINP1NBMW6qU3iBow9cLQK4A1kuMTGmF8rel2',
     __v: 0,
+    marbleImages: {
+      indianblackbheslana: [
+        '/marbles/newmatilda2024/dining_table/indianblackbheslana/1.webp',
+        '/marbles/newmatilda2024/dining_table/indianblackbheslana/2.webp',
+        '/marbles/newmatilda2024/dining_table/indianblackbheslana/3.webp',
+      ],
+      indianrossolevante: [
+        '/marbles/newmatilda2024/dining_table/indianrossolevante/1.webp',
+        '/marbles/newmatilda2024/dining_table/indianrossolevante/2.webp',
+        '/marbles/newmatilda2024/dining_table/indianrossolevante/3.webp',
+      ],
+      italianbeigetravertine: [
+        '/marbles/newmatilda2024/dining_table/italianbeigetravertine/1.webp',
+        '/marbles/newmatilda2024/dining_table/italianbeigetravertine/2.webp',
+        '/marbles/newmatilda2024/dining_table/italianbeigetravertine/3.webp',
+      ],
+      marquina: [
+        '/marbles/newmatilda2024/dining_table/marquina/1.webp',
+        '/marbles/newmatilda2024/dining_table/marquina/2.webp',
+        '/marbles/newmatilda2024/dining_table/marquina/3.webp',
+      ],
+      spidergreen: [
+        '/marbles/newmatilda2024/dining_table/spidergreen/1.webp',
+        '/marbles/newmatilda2024/dining_table/spidergreen/2.webp',
+        '/marbles/newmatilda2024/dining_table/spidergreen/3.webp',
+      ],
+    },
   },
   {
     _id: {
@@ -3378,40 +3337,35 @@ You don’t dine on it—you build your empire around it.
     images: [
       {
         fileName: '1738927518491-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAiSsUwJ1oeY2wnF0zQbWX83C4KujdSqt6MUT',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAiSsUwJ1oeY2wnF0zQbWX83C4KujdSqt6MUT',
         _id: {
           $oid: '67a5ed9e4da9b29cd0f10bc7',
         },
       },
       {
         fileName: '1738927518491-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8EiNDjF64oKUn37W6wsTlRmDBFhGrviIjcMx',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8EiNDjF64oKUn37W6wsTlRmDBFhGrviIjcMx',
         _id: {
           $oid: '67a5ed9e4da9b29cd0f10bc7',
         },
       },
       {
         fileName: '1738927518491-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUmusUJ5Mgck96WhX7TGdaslL58YeZAnUDbwov',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUmusUJ5Mgck96WhX7TGdaslL58YeZAnUDbwov',
         _id: {
           $oid: '67a5ed9e4da9b29cd0f10bc7',
         },
       },
       {
         fileName: '1738927518491-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUrY05bKNnDI67jcCaomXhZLsJd91f4YGitMHP',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUrY05bKNnDI67jcCaomXhZLsJd91f4YGitMHP',
         _id: {
           $oid: '67a5ed9e4da9b29cd0f10bc7',
         },
       },
       {
         fileName: '1738927518491-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAcpxZdJ1oeY2wnF0zQbWX83C4KujdSqt6MUT',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAcpxZdJ1oeY2wnF0zQbWX83C4KujdSqt6MUT',
         _id: {
           $oid: '67a5ed9e4da9b29cd0f10bc7',
         },
@@ -3487,9 +3441,45 @@ Designed with razor-sharp precision and bold architectural curves, it’s built 
 The floral display? That’s just the bonus. What you’re really showing off is control, taste, and presence. 
 
 Crafted by Karan Desai, this vase is where fine art meets fearless form — the kind of piece that doesn’t just hold flowers, it holds attention.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUaA2lXGzVIx6ZjWFiGhcRQJMUzft1drvPNTbL',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUaA2lXGzVIx6ZjWFiGhcRQJMUzft1drvPNTbL',
     __v: 0,
+    marbleImages: {
+      indianblackbheslana: [
+        '/marbles/newmatilda2024/flower_vase/indianblackbheslana/1.webp',
+        '/marbles/newmatilda2024/flower_vase/indianblackbheslana/2.webp',
+        '/marbles/newmatilda2024/flower_vase/indianblackbheslana/3.webp',
+        '/marbles/newmatilda2024/flower_vase/indianblackbheslana/4.webp',
+        '/marbles/newmatilda2024/flower_vase/indianblackbheslana/5.webp',
+      ],
+      indianrossolevante: [
+        '/marbles/newmatilda2024/flower_vase/indianrossolevante/1.webp',
+        '/marbles/newmatilda2024/flower_vase/indianrossolevante/2.webp',
+        '/marbles/newmatilda2024/flower_vase/indianrossolevante/3.webp',
+        '/marbles/newmatilda2024/flower_vase/indianrossolevante/4.webp',
+        '/marbles/newmatilda2024/flower_vase/indianrossolevante/5.webp',
+      ],
+      italianbeigetravertine: [
+        '/marbles/newmatilda2024/flower_vase/italianbeigetravertine/1.webp',
+        '/marbles/newmatilda2024/flower_vase/italianbeigetravertine/2.webp',
+        '/marbles/newmatilda2024/flower_vase/italianbeigetravertine/3.webp',
+        '/marbles/newmatilda2024/flower_vase/italianbeigetravertine/4.webp',
+        '/marbles/newmatilda2024/flower_vase/italianbeigetravertine/5.webp',
+      ],
+      marquina: [
+        '/marbles/newmatilda2024/flower_vase/marquina/1.webp',
+        '/marbles/newmatilda2024/flower_vase/marquina/2.webp',
+        '/marbles/newmatilda2024/flower_vase/marquina/3.webp',
+        '/marbles/newmatilda2024/flower_vase/marquina/4.webp',
+        '/marbles/newmatilda2024/flower_vase/marquina/5.webp',
+      ],
+      spidergreen: [
+        '/marbles/newmatilda2024/flower_vase/spidergreen/1.webp',
+        '/marbles/newmatilda2024/flower_vase/spidergreen/2.webp',
+        '/marbles/newmatilda2024/flower_vase/spidergreen/3.webp',
+        '/marbles/newmatilda2024/flower_vase/spidergreen/4.webp',
+        '/marbles/newmatilda2024/flower_vase/spidergreen/5.webp',
+      ],
+    },
   },
   {
     _id: {
@@ -3499,31 +3489,19 @@ Crafted by Karan Desai, this vase is where fine art meets fearless form — the 
     group: 'serafini',
     material: 'Marble',
     collabtext: 'Serafini',
-    collablink:
-      'https://www.serafini.com/products-page/samaveta-luxury-marble-bench',
+    collablink: 'https://www.serafini.com/products-page/samaveta-luxury-marble-bench',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUCDnRdrPX0XaKgNMT1QEmen25RAwc7Sk4UxoJ',
     images: [
       {
         fileName: '1738930706115-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDRVbUDg8FYI8sxbtc2ngQN4ZeSPwOKkv5yAj',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDRVbUDg8FYI8sxbtc2ngQN4ZeSPwOKkv5yAj',
         _id: {
           $oid: '67a5fa124da9b29cd0f10c37',
         },
       },
       {
         fileName: '1738930706115-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUOqSdFBZXhqs0g964QCxmbwcn2WStleB3MEP5',
-        _id: {
-          $oid: '67a5fa124da9b29cd0f10c37',
-        },
-        thumbnail: '/assets/products/thumbnails/1738930706115-Slide1.JPG',
-      },
-      {
-        fileName: '1738930706115-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDHpCwE8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUOqSdFBZXhqs0g964QCxmbwcn2WStleB3MEP5',
         _id: {
           $oid: '67a5fa124da9b29cd0f10c37',
         },
@@ -3531,8 +3509,7 @@ Crafted by Karan Desai, this vase is where fine art meets fearless form — the 
       },
       {
         fileName: '1738930706115-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUvLJwuC0iQtznIlhRaFJ8jZ6p7xPg3bw9OrDV',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDHpCwE8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
         _id: {
           $oid: '67a5fa124da9b29cd0f10c37',
         },
@@ -3540,8 +3517,15 @@ Crafted by Karan Desai, this vase is where fine art meets fearless form — the 
       },
       {
         fileName: '1738930706115-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQTop6ZCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUvLJwuC0iQtznIlhRaFJ8jZ6p7xPg3bw9OrDV',
+        _id: {
+          $oid: '67a5fa124da9b29cd0f10c37',
+        },
+        thumbnail: '/assets/products/thumbnails/1738930706115-Slide1.JPG',
+      },
+      {
+        fileName: '1738930706115-Slide1.JPG',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQTop6ZCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
         _id: {
           $oid: '67a5fa124da9b29cd0f10c37',
         },
@@ -3570,8 +3554,7 @@ Its sculpted form offers ergonomic seating, a flat surface for essentials, and a
 Equally at home inside or out, the bench marries strength with softness, blending Italian craftsmanship with Indian storytelling. 
 
 More than functional, Samaveta symbolizes unity, empathy, and the beauty of cross-cultural design—transforming any space it inhabits with intention, elegance, and quiet impact.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUV965cLeJz0jfKoyVd9HNhC5wFQ4OrBi2UkDx',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUV965cLeJz0jfKoyVd9HNhC5wFQ4OrBi2UkDx',
     __v: 0,
   },
   {
@@ -3587,40 +3570,35 @@ More than functional, Samaveta symbolizes unity, empathy, and the beauty of cros
     images: [
       {
         fileName: '1738927420322-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU3gwRaRvb7L0Z2G4mkrAFzE8uQjRclW5px9hX',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU3gwRaRvb7L0Z2G4mkrAFzE8uQjRclW5px9hX',
         _id: {
           $oid: '67a5ed3c4da9b29cd0f10bc0',
         },
       },
       {
         fileName: '1738927420322-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUwwSMhgi1vXhd2AYtoGrDFy59EOsBzTnN6eWH',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUwwSMhgi1vXhd2AYtoGrDFy59EOsBzTnN6eWH',
         _id: {
           $oid: '67a5ed3c4da9b29cd0f10bc0',
         },
       },
       {
         fileName: '1738927420322-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU1t1NPjmcNbALVg2tCIRm5fi0793BwZH8PYyx',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU1t1NPjmcNbALVg2tCIRm5fi0793BwZH8PYyx',
         _id: {
           $oid: '67a5ed3c4da9b29cd0f10bc0',
         },
       },
       {
         fileName: '1738927420322-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKURPQ0HTE1fzw0AFxNe2UEaubVBY53GTv7kqpl',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKURPQ0HTE1fzw0AFxNe2UEaubVBY53GTv7kqpl',
         _id: {
           $oid: '67a5ed3c4da9b29cd0f10bc0',
         },
       },
       {
         fileName: '1738927420322-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUbuuCR0rxzt13BbVlJhGUR6Ww2eTaj5pASg9N',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUbuuCR0rxzt13BbVlJhGUR6Ww2eTaj5pASg9N',
         _id: {
           $oid: '67a5ed3c4da9b29cd0f10bc0',
         },
@@ -3656,9 +3634,45 @@ Carved from pure white marble with an architectural arch and sculpted bowl cente
 Precision-cut, flawlessly balanced, and impossible to ignore — this piece by Karan Desai transforms a space into a scene. 
 
 It doesn’t whisper luxury — it roars it. Because when you live big, even your basin has to make a statement.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQeyDy6CgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQeyDy6CgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
     __v: 0,
+    marbleImages: {
+      indianblackbheslana: [
+        '/marbles/newmatilda2024/basin/indianblackbheslana/1.webp',
+        '/marbles/newmatilda2024/basin/indianblackbheslana/2.webp',
+        '/marbles/newmatilda2024/basin/indianblackbheslana/3.webp',
+        '/marbles/newmatilda2024/basin/indianblackbheslana/4.webp',
+        '/marbles/newmatilda2024/basin/indianblackbheslana/5.webp',
+      ],
+      indianrossolevante: [
+        '/marbles/newmatilda2024/basin/indianrossolevante/1.webp',
+        '/marbles/newmatilda2024/basin/indianrossolevante/2.webp',
+        '/marbles/newmatilda2024/basin/indianrossolevante/3.webp',
+        '/marbles/newmatilda2024/basin/indianrossolevante/4.webp',
+        '/marbles/newmatilda2024/basin/indianrossolevante/5.webp',
+      ],
+      italianbeigetravertine: [
+        '/marbles/newmatilda2024/basin/italianbeigetravertine/1.webp',
+        '/marbles/newmatilda2024/basin/italianbeigetravertine/2.webp',
+        '/marbles/newmatilda2024/basin/italianbeigetravertine/3.webp',
+        '/marbles/newmatilda2024/basin/italianbeigetravertine/4.webp',
+        '/marbles/newmatilda2024/basin/italianbeigetravertine/5.webp',
+      ],
+      marquina: [
+        '/marbles/newmatilda2024/basin/marquina/1.webp',
+        '/marbles/newmatilda2024/basin/marquina/2.webp',
+        '/marbles/newmatilda2024/basin/marquina/3.webp',
+        '/marbles/newmatilda2024/basin/marquina/4.webp',
+        '/marbles/newmatilda2024/basin/marquina/5.webp',
+      ],
+      spidergreen: [
+        '/marbles/newmatilda2024/basin/spidergreen/1.webp',
+        '/marbles/newmatilda2024/basin/spidergreen/2.webp',
+        '/marbles/newmatilda2024/basin/spidergreen/3.webp',
+        '/marbles/newmatilda2024/basin/spidergreen/4.webp',
+        '/marbles/newmatilda2024/basin/spidergreen/5.webp',
+      ],
+    },
   },
   {
     _id: {
@@ -3673,40 +3687,35 @@ It doesn’t whisper luxury — it roars it. Because when you live big, even you
     images: [
       {
         fileName: '1738929601187-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUUvWcAzyBY1Vx48e2bhPHIZJqsnBOSArl5D3M',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUUvWcAzyBY1Vx48e2bhPHIZJqsnBOSArl5D3M',
         _id: {
           $oid: '67a5f5c14da9b29cd0f10c18',
         },
       },
       {
         fileName: '1738929601187-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUN5CTg21G5UuqxLjF0ygrW1ikRpXaHfGVvonD',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUN5CTg21G5UuqxLjF0ygrW1ikRpXaHfGVvonD',
         _id: {
           $oid: '67a5f5c14da9b29cd0f10c18',
         },
       },
       {
         fileName: '1738929601187-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUyB1NXerjvoD5bj92PLzxBdul6nT8GrEAS30e',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUyB1NXerjvoD5bj92PLzxBdul6nT8GrEAS30e',
         _id: {
           $oid: '67a5f5c14da9b29cd0f10c18',
         },
       },
       {
         fileName: '1738929601187-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUdXegE4iQLipXnNcaZzTWOmKke9BGF7gf2xIh',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUdXegE4iQLipXnNcaZzTWOmKke9BGF7gf2xIh',
         _id: {
           $oid: '67a5f5c14da9b29cd0f10c18',
         },
       },
       {
         fileName: '1738929601187-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUFtINUGyvrgRIBMUa1Cwt3nu4PEZOTo0XLQDf',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUFtINUGyvrgRIBMUa1Cwt3nu4PEZOTo0XLQDf',
         _id: {
           $oid: '67a5f5c14da9b29cd0f10c18',
         },
@@ -3744,9 +3753,8 @@ It doesn’t whisper luxury — it roars it. Because when you live big, even you
         thumbnail: '/assets/products/thumbnails/1738929601189-Slide3.JPG',
       },
     ],
-    description: `The Monster Brainy by Karan Desai Home brings together playful sculpture and contemporary furniture design in a bold collectible form. Handcrafted with striking detail, the piece introduces character, curiosity, and visual energy to the interior of a modern home or residence. Designed to spark conversation and creative thinking, it transforms a simple object into a sculptural focal point. Designed by Karan Desai and made in India, this distinctive creation enhances luxury interiors while standing as a remarkable collectible piece.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULT9qlKDqbauUfVsg4JYrj86xOSilFe5PBo3m',
+    description: 'The Monster Brainy by Karan Desai Home brings together playful sculpture and contemporary furniture design in a bold collectible form. Handcrafted with striking detail, the piece introduces character, curiosity, and visual energy to the interior of a modern home or residence. Designed to spark conversation and creative thinking, it transforms a simple object into a sculptural focal point. Designed by Karan Desai and made in India, this distinctive creation enhances luxury interiors while standing as a remarkable collectible piece.',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULT9qlKDqbauUfVsg4JYrj86xOSilFe5PBo3m',
     __v: 0,
   },
   {
@@ -3762,25 +3770,14 @@ It doesn’t whisper luxury — it roars it. Because when you live big, even you
     images: [
       {
         fileName: '1738928071412-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8C1mTl64oKUn37W6wsTlRmDBFhGrviIjcMxV',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8C1mTl64oKUn37W6wsTlRmDBFhGrviIjcMxV',
         _id: {
           $oid: '67a5efc74da9b29cd0f10c12',
         },
       },
       {
         fileName: '1738928071412-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUaW4WYTczVIx6ZjWFiGhcRQJMUzft1drvPNTb',
-        _id: {
-          $oid: '67a5efc74da9b29cd0f10c12',
-        },
-        thumbnail: '/assets/products/thumbnails/1738928071412-Slide1.JPG',
-      },
-      {
-        fileName: '1738928071412-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUz00Sd4IQShtkIwJflF6rAvm7LBdDHgWeNPU8',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUaW4WYTczVIx6ZjWFiGhcRQJMUzft1drvPNTb',
         _id: {
           $oid: '67a5efc74da9b29cd0f10c12',
         },
@@ -3788,8 +3785,7 @@ It doesn’t whisper luxury — it roars it. Because when you live big, even you
       },
       {
         fileName: '1738928071412-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAfqOmLJ1oeY2wnF0zQbWX83C4KujdSqt6MUT',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUz00Sd4IQShtkIwJflF6rAvm7LBdDHgWeNPU8',
         _id: {
           $oid: '67a5efc74da9b29cd0f10c12',
         },
@@ -3797,8 +3793,15 @@ It doesn’t whisper luxury — it roars it. Because when you live big, even you
       },
       {
         fileName: '1738928071412-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUokW97lPd43VNTXj27bgOZneCUs9aBiY5x8vw',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAfqOmLJ1oeY2wnF0zQbWX83C4KujdSqt6MUT',
+        _id: {
+          $oid: '67a5efc74da9b29cd0f10c12',
+        },
+        thumbnail: '/assets/products/thumbnails/1738928071412-Slide1.JPG',
+      },
+      {
+        fileName: '1738928071412-Slide1.JPG',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUokW97lPd43VNTXj27bgOZneCUs9aBiY5x8vw',
         _id: {
           $oid: '67a5efc74da9b29cd0f10c12',
         },
@@ -3837,9 +3840,8 @@ It doesn’t whisper luxury — it roars it. Because when you live big, even you
         thumbnail: '/assets/products/thumbnails/1738928071416-Slide4.JPG',
       },
     ],
-    description: `The Binty Table Lamp by Karan Desai Home brings together playful sculpture and contemporary furniture design in a bold expression of light and form. Handcrafted with sculptural detailing and finished with striking metallic elements, the lamp transforms lighting into a statement within the interior of a modern home or residence. Its whimsical composition introduces character, contrast, and visual energy to the space, turning illumination into an artistic focal point. Designed by Karan Desai and made in India, this distinctive piece complements luxury interiors while standing as a remarkable collectible piece.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPNbp9DHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
+    description: 'The Binty Table Lamp by Karan Desai Home brings together playful sculpture and contemporary furniture design in a bold expression of light and form. Handcrafted with sculptural detailing and finished with striking metallic elements, the lamp transforms lighting into a statement within the interior of a modern home or residence. Its whimsical composition introduces character, contrast, and visual energy to the space, turning illumination into an artistic focal point. Designed by Karan Desai and made in India, this distinctive piece complements luxury interiors while standing as a remarkable collectible piece.',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPNbp9DHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
     __v: 0,
   },
   {
@@ -3886,9 +3888,8 @@ It doesn’t whisper luxury — it roars it. Because when you live big, even you
         thumbnail: '/assets/products/thumbnails/1744099947427-3.jpg',
       },
     ],
-    description: `The Monster Buddha Lamp by Karan Desai Home transforms sculptural lighting into a refined expression of contemporary furniture and collectible design. Handcrafted with a sculpted brass base and a blown-glass dome, the piece introduces warmth, character, and a calm visual presence to the interior of a modern home or residence. Designed to balance playful artistry with a serene glow, it turns illumination into a moment of quiet focus and atmosphere. Designed by Karan Desai and made in India, this distinctive creation enhances luxury interiors while standing as a remarkable collectible piece.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUzbq9egIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
+    description: 'The Monster Buddha Lamp by Karan Desai Home transforms sculptural lighting into a refined expression of contemporary furniture and collectible design. Handcrafted with a sculpted brass base and a blown-glass dome, the piece introduces warmth, character, and a calm visual presence to the interior of a modern home or residence. Designed to balance playful artistry with a serene glow, it turns illumination into a moment of quiet focus and atmosphere. Designed by Karan Desai and made in India, this distinctive creation enhances luxury interiors while standing as a remarkable collectible piece.',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUzbq9egIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
     __v: 0,
   },
   {
@@ -3904,25 +3905,14 @@ It doesn’t whisper luxury — it roars it. Because when you live big, even you
     images: [
       {
         fileName: '1738927007154-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSwGCHZAKnraNxkI5vbez6dT2q8M0osBfR9At',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSwGCHZAKnraNxkI5vbez6dT2q8M0osBfR9At',
         _id: {
           $oid: '67a5eb9f4da9b29cd0f10b72',
         },
       },
       {
         fileName: '1738927007154-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUrfCmRWNnDI67jcCaomXhZLsJd91f4YGitMHP',
-        _id: {
-          $oid: '67a5eb9f4da9b29cd0f10b72',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927007154-Slide1.JPG',
-      },
-      {
-        fileName: '1738927007154-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUX88qHrzLaynKVcYuZHCDm1IeJRfoT4vBxS8i',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUrfCmRWNnDI67jcCaomXhZLsJd91f4YGitMHP',
         _id: {
           $oid: '67a5eb9f4da9b29cd0f10b72',
         },
@@ -3930,8 +3920,7 @@ It doesn’t whisper luxury — it roars it. Because when you live big, even you
       },
       {
         fileName: '1738927007154-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUo8Lh75Pd43VNTXj27bgOZneCUs9aBiY5x8vw',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUX88qHrzLaynKVcYuZHCDm1IeJRfoT4vBxS8i',
         _id: {
           $oid: '67a5eb9f4da9b29cd0f10b72',
         },
@@ -3939,8 +3928,15 @@ It doesn’t whisper luxury — it roars it. Because when you live big, even you
       },
       {
         fileName: '1738927007154-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUY4zIbonVM7iftKIsUSTJx8haC1mEBkZl4NvR',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUo8Lh75Pd43VNTXj27bgOZneCUs9aBiY5x8vw',
+        _id: {
+          $oid: '67a5eb9f4da9b29cd0f10b72',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927007154-Slide1.JPG',
+      },
+      {
+        fileName: '1738927007154-Slide1.JPG',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUY4zIbonVM7iftKIsUSTJx8haC1mEBkZl4NvR',
         _id: {
           $oid: '67a5eb9f4da9b29cd0f10b72',
         },
@@ -3986,8 +3982,7 @@ Every layer tells a story, every curve breaks the mold. YODAA doesn’t just sta
 
 It’s vibrant, it’s unapologetic, and it redefines what terrazzo can be. 
 You’re not just looking at art—you’re looking at 100 years of innovation, stacked tall.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUrT6FLUNnDI67jcCaomXhZLsJd91f4YGitMHP',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUrT6FLUNnDI67jcCaomXhZLsJd91f4YGitMHP',
     __v: 0,
   },
   {
@@ -3998,46 +3993,40 @@ You’re not just looking at art—you’re looking at 100 years of innovation, 
     group: 'monster_3.0',
     material: 'Fur Fabric',
     collabtext: 'Dimensions',
-    collablink:
-      'https://dimensionsfurniture.in/collections/monster-collection/',
+    collablink: 'https://dimensionsfurniture.in/collections/monster-collection/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUVOfTglleJz0jfKoyVd9HNhC5wFQ4OrBi2UkD',
     images: [
       {
         fileName: '1',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6GLjBya6qkvfmjiKDC4Xl80sHEdpQJGBAFYbh',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6GLjBya6qkvfmjiKDC4Xl80sHEdpQJGBAFYbh',
         _id: {
           $oid: '67b5e69de03cc2c55c62bd23',
         },
       },
       {
         fileName: '2',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6UMwbbFJlAmewIM0JczhqK9S4CkO27T5b3NuV',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6UMwbbFJlAmewIM0JczhqK9S4CkO27T5b3NuV',
         _id: {
           $oid: '67b5e69de03cc2c55c62bd23',
         },
       },
       {
         fileName: '3',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6gJx87HCZerKAITJasY524vLb0iMwnFhmpSEq',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6gJx87HCZerKAITJasY524vLb0iMwnFhmpSEq',
         _id: {
           $oid: '67b5e69de03cc2c55c62bd23',
         },
       },
       {
         fileName: '4',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6Fn4BnEctnPM3mXfpc1SBakLQqAlTVoE0twgr',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6Fn4BnEctnPM3mXfpc1SBakLQqAlTVoE0twgr',
         _id: {
           $oid: '67b5e69de03cc2c55c62bd23',
         },
       },
       {
         fileName: '5',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6gS5z9pMCZerKAITJasY524vLb0iMwnFhmpSE',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6gS5z9pMCZerKAITJasY524vLb0iMwnFhmpSE',
         _id: {
           $oid: '67b5e69de03cc2c55c62bd23',
         },
@@ -4058,8 +4047,7 @@ It doesn’t quietly blend in—it leads. Sink into its plush comfort and feel t
 Designed for those who don’t follow trends—they create them. 
 
 When you take your seat here, you’re not part of the room. You become the focus.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQr4b0hCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQr4b0hCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
     __v: 0,
   },
   {
@@ -4070,31 +4058,19 @@ When you take your seat here, you’re not part of the room. You become the focu
     group: 'monster_3.0',
     material: 'Burnt Wood & Fur Fabric',
     collabtext: 'Dimensions',
-    collablink:
-      'https://dimensionsfurniture.in/collections/monster-collection/',
+    collablink: 'https://dimensionsfurniture.in/collections/monster-collection/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSOlRnmAKnraNxkI5vbez6dT2q8M0osBfR9At',
     images: [
       {
         fileName: '1739952336217-Monster chai Opt 1.52.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUmzLgXSMgck96WhX7TGdaslL58YeZAnUDbwov',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUmzLgXSMgck96WhX7TGdaslL58YeZAnUDbwov',
         _id: {
           $oid: '67b590d0e03cc2c55c624a5f',
         },
       },
       {
         fileName: '1739952336217-Monster chai Opt 1.52.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnNgoHWbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
-        _id: {
-          $oid: '67b590d0e03cc2c55c624a5f',
-        },
-        thumbnail: '/assets/products/thumbnails/gchair1.jpg',
-      },
-      {
-        fileName: '1739952336217-Monster chai Opt 1.52.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUXrgGRWLaynKVcYuZHCDm1IeJRfoT4vBxS8i0',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnNgoHWbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
         _id: {
           $oid: '67b590d0e03cc2c55c624a5f',
         },
@@ -4102,8 +4078,7 @@ When you take your seat here, you’re not part of the room. You become the focu
       },
       {
         fileName: '1739952336217-Monster chai Opt 1.52.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULRr5ykDqbauUfVsg4JYrj86xOSilFe5PBo3m',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUXrgGRWLaynKVcYuZHCDm1IeJRfoT4vBxS8i0',
         _id: {
           $oid: '67b590d0e03cc2c55c624a5f',
         },
@@ -4111,8 +4086,15 @@ When you take your seat here, you’re not part of the room. You become the focu
       },
       {
         fileName: '1739952336217-Monster chai Opt 1.52.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUruuOaQNnDI67jcCaomXhZLsJd91f4YGitMHP',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULRr5ykDqbauUfVsg4JYrj86xOSilFe5PBo3m',
+        _id: {
+          $oid: '67b590d0e03cc2c55c624a5f',
+        },
+        thumbnail: '/assets/products/thumbnails/gchair1.jpg',
+      },
+      {
+        fileName: '1739952336217-Monster chai Opt 1.52.jpg',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUruuOaQNnDI67jcCaomXhZLsJd91f4YGitMHP',
         _id: {
           $oid: '67b590d0e03cc2c55c624a5f',
         },
@@ -4207,8 +4189,7 @@ When you take your seat here, you’re not part of the room. You become the focu
         thumbnail: '/assets/products/thumbnails/gchair11.jpg',
       },
     ],
-    video:
-      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HC1F6dwF9qTbodORhsaUxn8lAzV0u4LC9EkfG3',
+    video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HC1F6dwF9qTbodORhsaUxn8lAzV0u4LC9EkfG3',
     description: `The Gatoo Chair isn’t just a seat—it’s a bold rebellion in fur. 
 
 Sculpted to command attention, it pairs plush comfort with unapologetically powerful form. 
@@ -4216,8 +4197,7 @@ Sink into its embrace, but know this: softness doesn’t mean surrender. It mean
 
 Gatoo challenges expectations—where every curve speaks of attitude, and every detail dares to be different. 
 It’s luxury with an edge, comfort with a voice, and design that refuses to stay quiet.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDssaFE8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDssaFE8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
     __v: 0,
   },
   {
@@ -4233,40 +4213,35 @@ It’s luxury with an edge, comfort with a voice, and design that refuses to sta
     images: [
       {
         fileName: '1738929747418-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnng337bYcoeRKumWaHxyTj5q3bfMXB6INAUz',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnng337bYcoeRKumWaHxyTj5q3bfMXB6INAUz',
         _id: {
           $oid: '67a5f6534da9b29cd0f10c23',
         },
       },
       {
         fileName: '1738929747418-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUuIS8OOVvD2FOkC3NsiU7yPRWb18aeZThVzGr',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUuIS8OOVvD2FOkC3NsiU7yPRWb18aeZThVzGr',
         _id: {
           $oid: '67a5f6534da9b29cd0f10c23',
         },
       },
       {
         fileName: '1738929747418-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUM0V54BwfQbC4M3ZGkSm6KPAV10HlYU9dinrX',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUM0V54BwfQbC4M3ZGkSm6KPAV10HlYU9dinrX',
         _id: {
           $oid: '67a5f6534da9b29cd0f10c23',
         },
       },
       {
         fileName: '1738929747418-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUVMQJI7eJz0jfKoyVd9HNhC5wFQ4OrBi2UkDx',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUVMQJI7eJz0jfKoyVd9HNhC5wFQ4OrBi2UkDx',
         _id: {
           $oid: '67a5f6534da9b29cd0f10c23',
         },
       },
       {
         fileName: '1738929747418-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAxtKTUJ1oeY2wnF0zQbWX83C4KujdSqt6MUT',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAxtKTUJ1oeY2wnF0zQbWX83C4KujdSqt6MUT',
         _id: {
           $oid: '67a5f6534da9b29cd0f10c23',
         },
@@ -4296,9 +4271,8 @@ It’s luxury with an edge, comfort with a voice, and design that refuses to sta
         thumbnail: '/assets/products/thumbnails/1738929747420-Slide3.JPG',
       },
     ],
-    description: `The Monster Guard Lamp by Karan Desai Home transforms sculptural lighting into a bold expression of contemporary furniture and collectible design. Handcrafted with a striking glass flame and a commanding sculptural form, the piece introduces character, energy, and visual drama to the interior of a modern home or residence. Designed to stand as both illumination and art, it brings playful strength and presence to the space. Designed by Karan Desai and made in India, this distinctive creation enhances luxury interiors while standing as a remarkable collectible piece.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAadKi3J1oeY2wnF0zQbWX83C4KujdSqt6MUT',
+    description: 'The Monster Guard Lamp by Karan Desai Home transforms sculptural lighting into a bold expression of contemporary furniture and collectible design. Handcrafted with a striking glass flame and a commanding sculptural form, the piece introduces character, energy, and visual drama to the interior of a modern home or residence. Designed to stand as both illumination and art, it brings playful strength and presence to the space. Designed by Karan Desai and made in India, this distinctive creation enhances luxury interiors while standing as a remarkable collectible piece.',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAadKi3J1oeY2wnF0zQbWX83C4KujdSqt6MUT',
     __v: 0,
   },
   {
@@ -4314,8 +4288,7 @@ It’s luxury with an edge, comfort with a voice, and design that refuses to sta
     images: [
       {
         fileName: '1738930738989-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJw4h4udtZQpOq9no3vVs5yPKXR8gEYuikGUw',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJw4h4udtZQpOq9no3vVs5yPKXR8gEYuikGUw',
         _id: {
           $oid: '67a5fa324da9b29cd0f10c3b',
         },
@@ -4361,8 +4334,7 @@ It’s luxury with an edge, comfort with a voice, and design that refuses to sta
         thumbnail: '/assets/products/thumbnails/1738930738997-Slide5.JPG',
       },
     ],
-    video:
-      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCHhlvxgVZ2z9ndleWYNv0FOLVQfpArj5MGE8q',
+    video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCHhlvxgVZ2z9ndleWYNv0FOLVQfpArj5MGE8q',
     description: `ENTER IF YOU DARE: MONS-FORMER IS WAITING
 
 Last year, he was just a friendly farmer.
@@ -4378,8 +4350,7 @@ But remember… he's got unfinished business.
 
 Think you can outrun the Mons-Former?
 Let’s find out.`,
-    dimensions:
-      'https://imgs.search.brave.com/iVjI8zr3e5IndwkFtM2PVy-uMhc949oudpKHRM6MEOk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzExLzA3LzEwLzc2/LzM2MF9GXzExMDcx/MDc2ODRfbnBSOURr/M0FtbHZzc0JFN01H/d0tUd0h6UnJFZ2Rs/emwuanBn',
+    dimensions: 'https://imgs.search.brave.com/iVjI8zr3e5IndwkFtM2PVy-uMhc949oudpKHRM6MEOk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzExLzA3LzEwLzc2/LzM2MF9GXzExMDcx/MDc2ODRfbnBSOURr/M0FtbHZzc0JFN01H/d0tUd0h6UnJFZ2Rs/emwuanBn',
     __v: 0,
   },
   {
@@ -4395,25 +4366,14 @@ Let’s find out.`,
     images: [
       {
         fileName: '1738927089671-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUonnAgrPd43VNTXj27bgOZneCUs9aBiY5x8vw',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUonnAgrPd43VNTXj27bgOZneCUs9aBiY5x8vw',
         _id: {
           $oid: '67a5ebf14da9b29cd0f10b78',
         },
       },
       {
         fileName: '1738927089671-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU6YZfzL4Rfb3HGeOz01MiLoldKrZaXQIxANWu',
-        _id: {
-          $oid: '67a5ebf14da9b29cd0f10b78',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927089671-Slide1.JPG',
-      },
-      {
-        fileName: '1738927089671-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJfQMpCdtZQpOq9no3vVs5yPKXR8gEYuikGUw',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU6YZfzL4Rfb3HGeOz01MiLoldKrZaXQIxANWu',
         _id: {
           $oid: '67a5ebf14da9b29cd0f10b78',
         },
@@ -4421,8 +4381,7 @@ Let’s find out.`,
       },
       {
         fileName: '1738927089671-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUBk8Z0q3qeoXrYV82Q6T5Enb4WD1LwdAJjzPk',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJfQMpCdtZQpOq9no3vVs5yPKXR8gEYuikGUw',
         _id: {
           $oid: '67a5ebf14da9b29cd0f10b78',
         },
@@ -4430,8 +4389,15 @@ Let’s find out.`,
       },
       {
         fileName: '1738927089671-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUXvJvhLaynKVcYuZHCDm1IeJRfoT4vBxS8i0j',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUBk8Z0q3qeoXrYV82Q6T5Enb4WD1LwdAJjzPk',
+        _id: {
+          $oid: '67a5ebf14da9b29cd0f10b78',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927089671-Slide1.JPG',
+      },
+      {
+        fileName: '1738927089671-Slide1.JPG',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUXvJvhLaynKVcYuZHCDm1IeJRfoT4vBxS8i0j',
         _id: {
           $oid: '67a5ebf14da9b29cd0f10b78',
         },
@@ -4478,8 +4444,7 @@ Let’s find out.`,
         thumbnail: '/assets/products/thumbnails/1738927089676-Slide5.JPG',
       },
     ],
-    video:
-      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCb7IvhiUPLMp7CSHgZ1FoRv8cNKmaY5nb0V34',
+    video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCb7IvhiUPLMp7CSHgZ1FoRv8cNKmaY5nb0V34',
     description: `This isn’t just a lamp—it’s sculpture with swagger. 
 Carved with precision and presence, the Monster Table Lamp pairs fluid curves with raw stone power. 
 
@@ -4487,9 +4452,45 @@ It doesn’t quietly light a corner—it elevates the entire room.
 Refined, architectural, and impossible to ignore, it’s built for those who know real luxury lies in the details. 
 
 You don’t just decorate with this piece—you make a statement without saying a word.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQLRjq6wCgpKiS14YXmU2JDcwG0vBsCL6dWNy',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQLRjq6wCgpKiS14YXmU2JDcwG0vBsCL6dWNy',
     __v: 0,
+    marbleImages: {
+      indianblackbheslana: [
+        '/marbles/newmatilda2024/table_lamp/indianblackbheslana/1.webp',
+        '/marbles/newmatilda2024/table_lamp/indianblackbheslana/2.webp',
+        '/marbles/newmatilda2024/table_lamp/indianblackbheslana/3.webp',
+        '/marbles/newmatilda2024/table_lamp/indianblackbheslana/4.webp',
+        '/marbles/newmatilda2024/table_lamp/indianblackbheslana/5.webp',
+      ],
+      indianrossolevante: [
+        '/marbles/newmatilda2024/table_lamp/indianrossolevante/1.webp',
+        '/marbles/newmatilda2024/table_lamp/indianrossolevante/2.webp',
+        '/marbles/newmatilda2024/table_lamp/indianrossolevante/3.webp',
+        '/marbles/newmatilda2024/table_lamp/indianrossolevante/4.webp',
+        '/marbles/newmatilda2024/table_lamp/indianrossolevante/5.webp',
+      ],
+      italianbeigetravertine: [
+        '/marbles/newmatilda2024/table_lamp/italianbeigetravertine/1.webp',
+        '/marbles/newmatilda2024/table_lamp/italianbeigetravertine/2.webp',
+        '/marbles/newmatilda2024/table_lamp/italianbeigetravertine/3.webp',
+        '/marbles/newmatilda2024/table_lamp/italianbeigetravertine/4.webp',
+        '/marbles/newmatilda2024/table_lamp/italianbeigetravertine/5.webp',
+      ],
+      marquina: [
+        '/marbles/newmatilda2024/table_lamp/marquina/1.webp',
+        '/marbles/newmatilda2024/table_lamp/marquina/2.webp',
+        '/marbles/newmatilda2024/table_lamp/marquina/3.webp',
+        '/marbles/newmatilda2024/table_lamp/marquina/4.webp',
+        '/marbles/newmatilda2024/table_lamp/marquina/5.webp',
+      ],
+      spidergreen: [
+        '/marbles/newmatilda2024/table_lamp/spidergreen/1.webp',
+        '/marbles/newmatilda2024/table_lamp/spidergreen/2.webp',
+        '/marbles/newmatilda2024/table_lamp/spidergreen/3.webp',
+        '/marbles/newmatilda2024/table_lamp/spidergreen/4.webp',
+        '/marbles/newmatilda2024/table_lamp/spidergreen/5.webp',
+      ],
+    },
   },
   {
     _id: {
@@ -4499,57 +4500,47 @@ You don’t just decorate with this piece—you make a statement without saying 
     group: 'monster_3.0',
     material: 'Burnt Wood & Fur Fabric',
     collabtext: 'Dimensions',
-    collablink:
-      'https://dimensionsfurniture.in/collections/monster-collection/',
+    collablink: 'https://dimensionsfurniture.in/collections/monster-collection/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU2PfjIgaDNvkE7HG39CYgFqmlMw2jVAoxdcnf',
     images: [
       {
         fileName: '1739952360039-Monster Light installation.179.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUj3g1wm0UhR95a1yWpqvPz7meuoUTAG8HEOb2',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUj3g1wm0UhR95a1yWpqvPz7meuoUTAG8HEOb2',
         _id: {
           $oid: '67b590e8e03cc2c55c624a62',
         },
       },
       {
         fileName: '1739952360039-Monster Light installation.179.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8OVICD64oKUn37W6wsTlRmDBFhGrviIjcMxV',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8OVICD64oKUn37W6wsTlRmDBFhGrviIjcMxV',
         _id: {
           $oid: '67b590e8e03cc2c55c624a62',
         },
-        thumbnail:
-          '/assets/products/thumbnails/1739952360039-Monster Light installation.179.jpg',
+        thumbnail: '/assets/products/thumbnails/1739952360039-Monster Light installation.179.jpg',
       },
       {
         fileName: '1739952360039-Monster Light installation.179.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUijwhRyutvKDOET5eW3SHhqPAcFjuRb8YMGi7',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUijwhRyutvKDOET5eW3SHhqPAcFjuRb8YMGi7',
         _id: {
           $oid: '67b590e8e03cc2c55c624a62',
         },
-        thumbnail:
-          '/assets/products/thumbnails/1739952360039-Monster Light installation.179.jpg',
+        thumbnail: '/assets/products/thumbnails/1739952360039-Monster Light installation.179.jpg',
       },
       {
         fileName: '1739952360039-Monster Light installation.179.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAFFnUlJ1oeY2wnF0zQbWX83C4KujdSqt6MUT',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAFFnUlJ1oeY2wnF0zQbWX83C4KujdSqt6MUT',
         _id: {
           $oid: '67b590e8e03cc2c55c624a62',
         },
-        thumbnail:
-          '/assets/products/thumbnails/1739952360039-Monster Light installation.179.jpg',
+        thumbnail: '/assets/products/thumbnails/1739952360039-Monster Light installation.179.jpg',
       },
       {
         fileName: '1739952360039-Monster Light installation.179.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUUv2jG7jBY1Vx48e2bhPHIZJqsnBOSArl5D3M',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUUv2jG7jBY1Vx48e2bhPHIZJqsnBOSArl5D3M',
         _id: {
           $oid: '67b590e8e03cc2c55c624a62',
         },
-        thumbnail:
-          '/assets/products/thumbnails/1739952360039-Monster Light installation.179.jpg',
+        thumbnail: '/assets/products/thumbnails/1739952360039-Monster Light installation.179.jpg',
       },
     ],
     description: `This isn’t a chandelier—it’s a spectacle in midair. 
@@ -4559,8 +4550,7 @@ It doesn’t just light the room—it steals the spotlight.
 
 Soft, sculptural, and wildly unexpected, it’s made for those who crave drama, depth, and design that speaks louder than words. 
 You don’t just switch it on—you ignite the atmosphere.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUtF0l465Bu7NntcLbi8k4ldwr62VXy3PODz9j',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUtF0l465Bu7NntcLbi8k4ldwr62VXy3PODz9j',
     __v: 0,
   },
   {
@@ -4574,25 +4564,14 @@ You don’t just switch it on—you ignite the atmosphere.`,
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUEbcbsxAYFi7GYsQA2my03DTouek5wnIJXgjp',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUEbcbsxAYFi7GYsQA2my03DTouek5wnIJXgjp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUdrzECHQLipXnNcaZzTWOmKke9BGF7gf2xIhq',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPd2WzXHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUdrzECHQLipXnNcaZzTWOmKke9BGF7gf2xIhq',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -4600,8 +4579,15 @@ You don’t just switch it on—you ignite the atmosphere.`,
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9lcurr2frimQ5LhFdjbpOHNPEsav1o2Ac0Dz',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPd2WzXHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9lcurr2frimQ5LhFdjbpOHNPEsav1o2Ac0Dz',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -4646,11 +4632,41 @@ Sculpted from flawless white marble, it fuses form and function with unapologeti
 A commanding arched silhouette, subtle shelving, and a statement vase top—it’s not just about looking good, it’s about owning the space. 
 
 Designed for those who play to win, this piece turns any corner into a conversation, and any room into a showcase.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUz8wrsAIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUz8wrsAIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
     __v: 0,
+    marbleImages: {
+      indianblackbheslana: [
+        '/marbles/newmatilda2024/side_table/indianblackbheslana/1.webp',
+        '/marbles/newmatilda2024/side_table/indianblackbheslana/2.webp',
+        '/marbles/newmatilda2024/side_table/indianblackbheslana/3.webp',
+        '/marbles/newmatilda2024/side_table/indianblackbheslana/4.webp',
+      ],
+      indianrossolevante: [
+        '/marbles/newmatilda2024/side_table/indianrossolevante/1.webp',
+        '/marbles/newmatilda2024/side_table/indianrossolevante/2.webp',
+        '/marbles/newmatilda2024/side_table/indianrossolevante/3.webp',
+        '/marbles/newmatilda2024/side_table/indianrossolevante/4.webp',
+      ],
+      italianbeigetravertine: [
+        '/marbles/newmatilda2024/side_table/italianbeigetravertine/1.webp',
+        '/marbles/newmatilda2024/side_table/italianbeigetravertine/2.webp',
+        '/marbles/newmatilda2024/side_table/italianbeigetravertine/3.webp',
+        '/marbles/newmatilda2024/side_table/italianbeigetravertine/4.webp',
+      ],
+      marquina: [
+        '/marbles/newmatilda2024/side_table/marquina/1.webp',
+        '/marbles/newmatilda2024/side_table/marquina/2.webp',
+        '/marbles/newmatilda2024/side_table/marquina/3.webp',
+        '/marbles/newmatilda2024/side_table/marquina/4.webp',
+      ],
+      spidergreen: [
+        '/marbles/newmatilda2024/side_table/spidergreen/1.webp',
+        '/marbles/newmatilda2024/side_table/spidergreen/2.webp',
+        '/marbles/newmatilda2024/side_table/spidergreen/3.webp',
+        '/marbles/newmatilda2024/side_table/spidergreen/4.webp',
+      ],
+    },
   },
-
   {
     _id: {
       $oid: '67b590a6e03cc2c55c624a58',
@@ -4659,46 +4675,40 @@ Designed for those who play to win, this piece turns any corner into a conversat
     group: 'monster_3.0',
     material: 'Burnt Wood',
     collabtext: 'Dimensions',
-    collablink:
-      'https://dimensionsfurniture.in/collections/monster-collection/',
+    collablink: 'https://dimensionsfurniture.in/collections/monster-collection/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUeJWNLScFPv1kdbg4tT0YfOS529XxhywHpVoU',
     images: [
       {
         fileName: '1739952294985-Library_1.19.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJ1j5gKdtZQpOq9no3vVs5yPKXR8gEYuikGUw',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJ1j5gKdtZQpOq9no3vVs5yPKXR8gEYuikGUw',
         _id: {
           $oid: '67b590a6e03cc2c55c624a59',
         },
       },
       {
         fileName: '1739952294985-Library_1.19.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU3UKlyivb7L0Z2G4mkrAFzE8uQjRclW5px9hX',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU3UKlyivb7L0Z2G4mkrAFzE8uQjRclW5px9hX',
         _id: {
           $oid: '67b590a6e03cc2c55c624a59',
         },
       },
       {
         fileName: '1739952294985-Library_1.19.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU1f3WscmcNbALVg2tCIRm5fi0793BwZH8PYyx',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU1f3WscmcNbALVg2tCIRm5fi0793BwZH8PYyx',
         _id: {
           $oid: '67b590a6e03cc2c55c624a59',
         },
       },
       {
         fileName: '1739952294985-Library_1.19.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUe4bAxycFPv1kdbg4tT0YfOS529XxhywHpVoU',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUe4bAxycFPv1kdbg4tT0YfOS529XxhywHpVoU',
         _id: {
           $oid: '67b590a6e03cc2c55c624a59',
         },
       },
       {
         fileName: '1739952294985-Library_1.19.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUS7SioUAKnraNxkI5vbez6dT2q8M0osBfR9At',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUS7SioUAKnraNxkI5vbez6dT2q8M0osBfR9At',
         _id: {
           $oid: '67b590a6e03cc2c55c624a59',
         },
@@ -4808,8 +4818,7 @@ Designed for those who play to win, this piece turns any corner into a conversat
         thumbnail: '/assets/products/thumbnails/library13.jpg',
       },
     ],
-    video:
-      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCRJsIBrz87BdYKwzVbskge2pAtoyQOrc3vUTl',
+    video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCRJsIBrz87BdYKwzVbskge2pAtoyQOrc3vUTl',
     description: `This isn’t just a library—it’s a conversation starter. 
 
 The Monster Library breaks the mold with its sculptural chaos and commanding silhouette. 
@@ -4817,8 +4826,7 @@ It doesn’t just store books—it holds energy, curiosity, and unapologetic att
 
 Raw, bold, and perfectly imperfect, this piece proves that disorder can be a form of design brilliance. 
 You’re not organizing a space—you’re curating an experience. For those who live by instinct, not instruction—this is your statement shelf.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUuEphv8VvD2FOkC3NsiU7yPRWb18aeZThVzGr',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUuEphv8VvD2FOkC3NsiU7yPRWb18aeZThVzGr',
     __v: 0,
   },
   {
@@ -4829,62 +4837,54 @@ You’re not organizing a space—you’re curating an experience. For those who
     group: 'monster_3.0',
     material: 'Burnt Wood',
     collabtext: 'Dimensions',
-    collablink:
-      'https://dimensionsfurniture.in/collections/monster-collection/',
+    collablink: 'https://dimensionsfurniture.in/collections/monster-collection/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUeJWNLScFPv1kdbg4tT0YfOS529XxhywHpVoU',
     images: [
       {
         fileName: '1739952294985-Library_1.19.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWaW2nLrSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWaW2nLrSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
         _id: {
           $oid: '67b590a6e03cc2c55c624a59',
         },
       },
       {
         fileName: '1739952294985-Library_1.19.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUYVkMrsnVM7iftKIsUSTJx8haC1mEBkZl4NvR',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUYVkMrsnVM7iftKIsUSTJx8haC1mEBkZl4NvR',
         _id: {
           $oid: '67b590a6e03cc2c55c624a59',
         },
       },
       {
         fileName: '1739952294985-Library_1.19.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUzVPs3gIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUzVPs3gIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
         _id: {
           $oid: '67b590a6e03cc2c55c624a59',
         },
       },
       {
         fileName: '1739952294985-Library_1.19.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUCPVGB8X0XaKgNMT1QEmen25RAwc7Sk4UxoJF',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUCPVGB8X0XaKgNMT1QEmen25RAwc7Sk4UxoJF',
         _id: {
           $oid: '67b590a6e03cc2c55c624a59',
         },
       },
       {
         fileName: '1739952294985-Library_1.19.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU0AKjf9hhiHbrpSCkBA8lKn64duFxNeTWLcq5',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU0AKjf9hhiHbrpSCkBA8lKn64duFxNeTWLcq5',
         _id: {
           $oid: '67b590a6e03cc2c55c624a59',
         },
       },
       {
         fileName: '1739952294985-Library_1.19.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU35xZ1bvb7L0Z2G4mkrAFzE8uQjRclW5px9hX',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU35xZ1bvb7L0Z2G4mkrAFzE8uQjRclW5px9hX',
         _id: {
           $oid: '67b590a6e03cc2c55c624a59',
         },
       },
       {
         fileName: '1739952294985-Library_1.19.jpg',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSp6ypoAKnraNxkI5vbez6dT2q8M0osBfR9At',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSp6ypoAKnraNxkI5vbez6dT2q8M0osBfR9At',
         _id: {
           $oid: '67b590a6e03cc2c55c624a59',
         },
@@ -4897,8 +4897,7 @@ With sculptural asymmetry, bold primary hues, and integrated lighting that feels
 
 Crafted for the provocateurs, the aesthetes, and the visionaries—this edition isn't just a shelf.
 It's architecture with attitude.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUuEphv8VvD2FOkC3NsiU7yPRWb18aeZThVzGr',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUuEphv8VvD2FOkC3NsiU7yPRWb18aeZThVzGr',
     __v: 0,
   },
   {
@@ -4912,32 +4911,28 @@ It's architecture with attitude.`,
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWsDqoIrSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWsDqoIrSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUY7gTSdnVM7iftKIsUSTJx8haC1mEBkZl4NvR',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUY7gTSdnVM7iftKIsUSTJx8haC1mEBkZl4NvR',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8GNUPV64oKUn37W6wsTlRmDBFhGrviIjcMxV',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8GNUPV64oKUn37W6wsTlRmDBFhGrviIjcMxV',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUEWAilkYFi7GYsQA2my03DTouek5wnIJXgjpV',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUEWAilkYFi7GYsQA2my03DTouek5wnIJXgjpV',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -4945,25 +4940,25 @@ It's architecture with attitude.`,
       },
     ],
     marbleImages: {
-      'indianblackbheslana': [
+      indianblackbheslana: [
         '/marbles/matilda2025/kddesk/indianblackbheslana/1.webp',
         '/marbles/matilda2025/kddesk/indianblackbheslana/2.webp',
         '/marbles/matilda2025/kddesk/indianblackbheslana/3.webp',
         '/marbles/matilda2025/kddesk/indianblackbheslana/4.webp',
       ],
-      'indianrossolevante': [
+      indianrossolevante: [
         '/marbles/matilda2025/kddesk/indianrossolevante/1.webp',
         '/marbles/matilda2025/kddesk/indianrossolevante/2.webp',
         '/marbles/matilda2025/kddesk/indianrossolevante/3.webp',
         '/marbles/matilda2025/kddesk/indianrossolevante/4.webp',
       ],
-      'italianbeigetravertine': [
+      italianbeigetravertine: [
         '/marbles/matilda2025/kddesk/italianbeigetravertine/1.webp',
         '/marbles/matilda2025/kddesk/italianbeigetravertine/2.webp',
         '/marbles/matilda2025/kddesk/italianbeigetravertine/3.webp',
         '/marbles/matilda2025/kddesk/italianbeigetravertine/4.webp',
       ],
-      'marquina': [
+      marquina: [
         '/marbles/matilda2025/kddesk/marquina/1.webp',
         '/marbles/matilda2025/kddesk/marquina/2.webp',
         '/marbles/matilda2025/kddesk/marquina/3.webp',
@@ -4978,8 +4973,7 @@ Clean, commanding, and cut like it belongs in the office of a market-moving mogu
 
 It's not just about work—it's about presence. 
 Want to own the room before you even speak? Start here.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUlmDkYQ9DZL6up3G75dgCY2rJjaQFwifBAEky',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUlmDkYQ9DZL6up3G75dgCY2rJjaQFwifBAEky',
     __v: 0,
   },
   {
@@ -4993,32 +4987,28 @@ Want to own the room before you even speak? Start here.`,
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUoSJQki3Pd43VNTXj27bgOZneCUs9aBiY5x8v',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUoSJQki3Pd43VNTXj27bgOZneCUs9aBiY5x8v',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUwtUNjegi1vXhd2AYtoGrDFy59EOsBzTnN6eW',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUwtUNjegi1vXhd2AYtoGrDFy59EOsBzTnN6eW',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8Pgq0764oKUn37W6wsTlRmDBFhGrviIjcMxV',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8Pgq0764oKUn37W6wsTlRmDBFhGrviIjcMxV',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQBXwDhCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQBXwDhCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -5026,37 +5016,36 @@ Want to own the room before you even speak? Start here.`,
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUyQPCE7jvoD5bj92PLzxBdul6nT8GrEAS30eN',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUyQPCE7jvoD5bj92PLzxBdul6nT8GrEAS30eN',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
         thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
       },
     ],
-     marbleImages: {
-      'indianblackbheslana': [
+    marbleImages: {
+      indianblackbheslana: [
         '/marbles/matilda2025/mirror/indianblackbheslana/1.webp',
         '/marbles/matilda2025/mirror/indianblackbheslana/2.webp',
         '/marbles/matilda2025/mirror/indianblackbheslana/3.webp',
         '/marbles/matilda2025/mirror/indianblackbheslana/4.webp',
         '/marbles/matilda2025/mirror/indianblackbheslana/5.webp',
       ],
-      'indianrossolevante': [
+      indianrossolevante: [
         '/marbles/matilda2025/mirror/indianrossolevante/1.webp',
         '/marbles/matilda2025/mirror/indianrossolevante/2.webp',
         '/marbles/matilda2025/mirror/indianrossolevante/3.webp',
         '/marbles/matilda2025/mirror/indianrossolevante/4.webp',
         '/marbles/matilda2025/mirror/indianrossolevante/5.webp',
       ],
-      'italianbeigetravertine': [
+      italianbeigetravertine: [
         '/marbles/matilda2025/mirror/italianbeigetravertine/1.webp',
         '/marbles/matilda2025/mirror/italianbeigetravertine/2.webp',
         '/marbles/matilda2025/mirror/italianbeigetravertine/3.webp',
         '/marbles/matilda2025/mirror/italianbeigetravertine/4.webp',
         '/marbles/matilda2025/mirror/italianbeigetravertine/5.webp',
       ],
-      'marquina': [
+      marquina: [
         '/marbles/matilda2025/mirror/marquina/1.webp',
         '/marbles/matilda2025/mirror/marquina/2.webp',
         '/marbles/matilda2025/mirror/marquina/3.webp',
@@ -5071,8 +5060,7 @@ It’s where ambition meets reflection.
 You don’t just see yourself—you see the leader, the closer, the game-changer. Bold, refined, unapologetically sharp—just like you. 
 This is the kind of mirror that doesn’t flatter. It affirms.
 `,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSdXB8mYAKnraNxkI5vbez6dT2q8M0osBfR9A',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSdXB8mYAKnraNxkI5vbez6dT2q8M0osBfR9A',
     __v: 0,
   },
   {
@@ -5086,32 +5074,28 @@ This is the kind of mirror that doesn’t flatter. It affirms.
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUFUgtKtkyvrgRIBMUa1Cwt3nu4PEZOTo0XLQD',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUFUgtKtkyvrgRIBMUa1Cwt3nu4PEZOTo0XLQD',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9jounJ2frimQ5LhFdjbpOHNPEsav1o2Ac0Dz',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9jounJ2frimQ5LhFdjbpOHNPEsav1o2Ac0Dz',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU0cmKYyhhiHbrpSCkBA8lKn64duFxNeTWLcq5',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU0cmKYyhhiHbrpSCkBA8lKn64duFxNeTWLcq5',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKURp0Xm8E1fzw0AFxNe2UEaubVBY53GTv7kqpl',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKURp0Xm8E1fzw0AFxNe2UEaubVBY53GTv7kqpl',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -5119,8 +5103,7 @@ This is the kind of mirror that doesn’t flatter. It affirms.
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUB2Mo7c3qeoXrYV82Q6T5Enb4WD1LwdAJjzPk',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUB2Mo7c3qeoXrYV82Q6T5Enb4WD1LwdAJjzPk',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -5128,16 +5111,15 @@ This is the kind of mirror that doesn’t flatter. It affirms.
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQrVNmpCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQrVNmpCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
         thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
       },
     ],
-     marbleImages: {
-      'indianblackbheslana': [
+    marbleImages: {
+      indianblackbheslana: [
         '/marbles/matilda2025/washbasin/indianblackbheslana/1.webp',
         '/marbles/matilda2025/washbasin/indianblackbheslana/2.webp',
         '/marbles/matilda2025/washbasin/indianblackbheslana/3.webp',
@@ -5145,7 +5127,7 @@ This is the kind of mirror that doesn’t flatter. It affirms.
         '/marbles/matilda2025/washbasin/indianblackbheslana/5.webp',
         '/marbles/matilda2025/washbasin/indianblackbheslana/6.webp',
       ],
-      'indianrossolevante': [
+      indianrossolevante: [
         '/marbles/matilda2025/washbasin/indianrossolevante/1.webp',
         '/marbles/matilda2025/washbasin/indianrossolevante/2.webp',
         '/marbles/matilda2025/washbasin/indianrossolevante/3.webp',
@@ -5153,7 +5135,7 @@ This is the kind of mirror that doesn’t flatter. It affirms.
         '/marbles/matilda2025/washbasin/indianrossolevante/5.webp',
         '/marbles/matilda2025/washbasin/indianrossolevante/6.webp',
       ],
-      'italianbeigetravertine': [
+      italianbeigetravertine: [
         '/marbles/matilda2025/washbasin/italianbeigetravertine/1.webp',
         '/marbles/matilda2025/washbasin/italianbeigetravertine/2.webp',
         '/marbles/matilda2025/washbasin/italianbeigetravertine/3.webp',
@@ -5161,7 +5143,7 @@ This is the kind of mirror that doesn’t flatter. It affirms.
         '/marbles/matilda2025/washbasin/italianbeigetravertine/5.webp',
         '/marbles/matilda2025/washbasin/italianbeigetravertine/6.webp',
       ],
-      'marquina': [
+      marquina: [
         '/marbles/matilda2025/washbasin/marquina/1.webp',
         '/marbles/matilda2025/washbasin/marquina/2.webp',
         '/marbles/matilda2025/washbasin/marquina/3.webp',
@@ -5177,8 +5159,7 @@ Every curve is confidence, every angle—precision. It doesn’t just belong in 
 
 You’re not washing up—you’re stepping into ritual, power, and presence. 
 This is what success looks like... even when you're rinsing your hands.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU1V3L8TmcNbALVg2tCIRm5fi0793BwZH8PYyx',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU1V3L8TmcNbALVg2tCIRm5fi0793BwZH8PYyx',
     __v: 0,
   },
   {
@@ -5192,32 +5173,28 @@ This is what success looks like... even when you're rinsing your hands.`,
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUXh1MqVLaynKVcYuZHCDm1IeJRfoT4vBxS8i0',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUXh1MqVLaynKVcYuZHCDm1IeJRfoT4vBxS8i0',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUMlIpqXXwfQbC4M3ZGkSm6KPAV10HlYU9dinr',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUMlIpqXXwfQbC4M3ZGkSm6KPAV10HlYU9dinr',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUOHOO2eZXhqs0g964QCxmbwcn2WStleB3MEP5',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUOHOO2eZXhqs0g964QCxmbwcn2WStleB3MEP5',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUzAmkYrIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUzAmkYrIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -5225,8 +5202,7 @@ This is what success looks like... even when you're rinsing your hands.`,
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUw20WCLgi1vXhd2AYtoGrDFy59EOsBzTnN6eW',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUw20WCLgi1vXhd2AYtoGrDFy59EOsBzTnN6eW',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -5241,8 +5217,7 @@ Equipped with refrigerated storage, a wine cooler, and ample concealed cabinetry
 it’s designed to serve effortlessly while making a bold visual statement.
 
 Ideal for contemporary lounges, hospitality spaces, or high-end offices — the EA Bar is where design meets utility, flawlessly.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUyXBkZujvoD5bj92PLzxBdul6nT8GrEAS30eN',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUyXBkZujvoD5bj92PLzxBdul6nT8GrEAS30eN',
     __v: 0,
   },
   {
@@ -5256,32 +5231,28 @@ Ideal for contemporary lounges, hospitality spaces, or high-end offices — the 
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSbVP7zAKnraNxkI5vbez6dT2q8M0osBfR9At',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSbVP7zAKnraNxkI5vbez6dT2q8M0osBfR9At',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAVbLvbJ1oeY2wnF0zQbWX83C4KujdSqt6MUT',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAVbLvbJ1oeY2wnF0zQbWX83C4KujdSqt6MUT',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUyB28ZV9jvoD5bj92PLzxBdul6nT8GrEAS30e',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUyB28ZV9jvoD5bj92PLzxBdul6nT8GrEAS30e',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUdNGcauQLipXnNcaZzTWOmKke9BGF7gf2xIhq',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUdNGcauQLipXnNcaZzTWOmKke9BGF7gf2xIhq',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -5289,37 +5260,36 @@ Ideal for contemporary lounges, hospitality spaces, or high-end offices — the 
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUwBqqfkgi1vXhd2AYtoGrDFy59EOsBzTnN6eW',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUwBqqfkgi1vXhd2AYtoGrDFy59EOsBzTnN6eW',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
         thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
       },
     ],
-     marbleImages: {
-      'indianblackbheslana': [
+    marbleImages: {
+      indianblackbheslana: [
         '/marbles/matilda2025/conferencetable/indianblackbheslana/1.webp',
         '/marbles/matilda2025/conferencetable/indianblackbheslana/2.webp',
         '/marbles/matilda2025/conferencetable/indianblackbheslana/3.webp',
         '/marbles/matilda2025/conferencetable/indianblackbheslana/4.webp',
         '/marbles/matilda2025/conferencetable/indianblackbheslana/5.webp',
       ],
-      'indianrossolevante': [
+      indianrossolevante: [
         '/marbles/matilda2025/conferencetable/indianrossolevante/1.webp',
         '/marbles/matilda2025/conferencetable/indianrossolevante/2.webp',
         '/marbles/matilda2025/conferencetable/indianrossolevante/3.webp',
         '/marbles/matilda2025/conferencetable/indianrossolevante/4.webp',
         '/marbles/matilda2025/conferencetable/indianrossolevante/5.webp',
       ],
-      'italianbeigetravertine': [
+      italianbeigetravertine: [
         '/marbles/matilda2025/conferencetable/italianbeigetravertine/1.webp',
         '/marbles/matilda2025/conferencetable/italianbeigetravertine/2.webp',
         '/marbles/matilda2025/conferencetable/italianbeigetravertine/3.webp',
         '/marbles/matilda2025/conferencetable/italianbeigetravertine/4.webp',
         '/marbles/matilda2025/conferencetable/italianbeigetravertine/5.webp',
       ],
-      'marquina': [
+      marquina: [
         '/marbles/matilda2025/conferencetable/marquina/1.webp',
         '/marbles/matilda2025/conferencetable/marquina/2.webp',
         '/marbles/matilda2025/conferencetable/marquina/3.webp',
@@ -5332,8 +5302,7 @@ this piece blends sculptural artistry with executive function.
 The organically shaped legs give the table a dynamic presence, as if it's alive and ready to take charge of the room.
 
 Sleek, commanding, and completely unexpected—this table doesn’t just support ideas, it inspires them.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUUvvIwiABY1Vx48e2bhPHIZJqsnBOSArl5D3M',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUUvvIwiABY1Vx48e2bhPHIZJqsnBOSArl5D3M',
     __v: 0,
   },
   {
@@ -5344,38 +5313,33 @@ Sleek, commanding, and completely unexpected—this table doesn’t just support
     group: 'serafini',
     material: 'Marble',
     collabtext: 'Serafini',
-    collablink:
-      'https://www.serafini.com/products-page/samaveta-marble-console',
+    collablink: 'https://www.serafini.com/products-page/samaveta-marble-console',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHr4HFVSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPs2jLOHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPs2jLOHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUzlGNrAIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUzlGNrAIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUowsRYTPd43VNTXj27bgOZneCUs9aBiY5x8vw',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUowsRYTPd43VNTXj27bgOZneCUs9aBiY5x8vw',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUmJqgJAMgck96WhX7TGdaslL58YeZAnUDbwov',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUmJqgJAMgck96WhX7TGdaslL58YeZAnUDbwov',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -5383,21 +5347,12 @@ Sleek, commanding, and completely unexpected—this table doesn’t just support
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUt9CiSk5Bu7NntcLbi8k4ldwr62VXy3PODz9j',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUt9CiSk5Bu7NntcLbi8k4ldwr62VXy3PODz9j',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
         thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
       },
-      // {
-      //   fileName: '1738927863060-Slide1.JPG',
-      //   filePath: '/optimized/newsconsole.webp',
-      //   _id: {
-      //     $oid: '67a5eef74da9b29cd0f10be2',
-      //   },
-      //   thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
-      // },
       {
         fileName: '1738927863060-Slide1.JPG',
         filePath: '/optimized/newsconsole1.webp',
@@ -5430,14 +5385,6 @@ Sleek, commanding, and completely unexpected—this table doesn’t just support
         },
         thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
       },
-      // {
-      //   fileName: '1738927863060-Slide1.JPG',
-      //   filePath: '/optimized/newsconsole5.webp',
-      //   _id: {
-      //     $oid: '67a5eef74da9b29cd0f10be2',
-      //   },
-      //   thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
-      // },
     ],
     description: `A poetic fusion of form and material, the Samaveta Console is a sculptural piece born from a creative collaboration between Karan Desai and Serafini.
 
@@ -5445,8 +5392,7 @@ Part of the Monster series, its name—drawn from the Sanskrit Samaveta, meaning
 Crafted in rich stone with Serafini’s signature finesse and architectural sensibility, the console balances organic fluidity with bold geometry. 
 
 With its monolithic silhouette and tactile surface, Samaveta anchors any space with quiet strength, becoming both a functional piece and a visual statement. A refined testament to material storytelling and design synergy.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHr4HFVSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHr4HFVSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
     __v: 0,
   },
   {
@@ -5460,16 +5406,14 @@ With its monolithic silhouette and tactile surface, Samaveta anchors any space w
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUw9Nbw65gi1vXhd2AYtoGrDFy59EOsBzTnN6e',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUw9Nbw65gi1vXhd2AYtoGrDFy59EOsBzTnN6e',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULCssOhDqbauUfVsg4JYrj86xOSilFe5PBo3m',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULCssOhDqbauUfVsg4JYrj86xOSilFe5PBo3m',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -5480,8 +5424,7 @@ in delicate precision across its surface.
 This circular mirror transforms your wall into a celestial map, glowing softly with constellation points that capture the mystery of the night sky.
 
 Minimalist yet mesmerizing, it brings both reflection and wonder into your space — ideal for those drawn to the stars and the stories they tell.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHr4HFVSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHr4HFVSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
     __v: 0,
   },
   {
@@ -5522,9 +5465,8 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
         },
       },
     ],
-    description: `To be edited.`,
-    dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOWUVsxbnC73Sji8N9ZsFzumlXMPrJwbGI2hdO',
+    description: 'To be edited.',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOWUVsxbnC73Sji8N9ZsFzumlXMPrJwbGI2hdO',
     __v: 0,
   },
   {
@@ -5607,9 +5549,8 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
         },
       },
     ],
-    description: `To be edited`,
-    dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO30kW6DYnpyK0DhEV4daf1ZotLM8ROqYkSFNb',
+    description: 'To be edited',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO30kW6DYnpyK0DhEV4daf1ZotLM8ROqYkSFNb',
     __v: 0,
   },
   {
@@ -5650,9 +5591,8 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
         },
       },
     ],
-    description: `To be edited`,
-    dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO30kW6DYnpyK0DhEV4daf1ZotLM8ROqYkSFNb',
+    description: 'To be edited',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO30kW6DYnpyK0DhEV4daf1ZotLM8ROqYkSFNb',
     __v: 0,
   },
   {
@@ -5701,40 +5641,39 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
       },
     ],
     marbleImages: {
-      'indianblackbheslana': [
+      indianblackbheslana: [
         '/marbles/matilda2022/bedsidetable/indianblackbheslana/1.webp',
         '/marbles/matilda2022/bedsidetable/indianblackbheslana/2.webp',
         '/marbles/matilda2022/bedsidetable/indianblackbheslana/3.webp',
         '/marbles/matilda2022/bedsidetable/indianblackbheslana/4.webp',
       ],
-      'indianrossolevante': [
+      indianrossolevante: [
         '/marbles/matilda2022/bedsidetable/indianrossolevante/1.webp',
         '/marbles/matilda2022/bedsidetable/indianrossolevante/2.webp',
         '/marbles/matilda2022/bedsidetable/indianrossolevante/3.webp',
         '/marbles/matilda2022/bedsidetable/indianrossolevante/4.webp',
       ],
-      'italianbeigetravertine': [
+      italianbeigetravertine: [
         '/marbles/matilda2022/bedsidetable/italianbeigetravertine/1.webp',
         '/marbles/matilda2022/bedsidetable/italianbeigetravertine/2.webp',
         '/marbles/matilda2022/bedsidetable/italianbeigetravertine/3.webp',
         '/marbles/matilda2022/bedsidetable/italianbeigetravertine/4.webp',
       ],
-      'marquina': [
+      marquina: [
         '/marbles/matilda2022/bedsidetable/marquina/1.webp',
         '/marbles/matilda2022/bedsidetable/marquina/2.webp',
         '/marbles/matilda2022/bedsidetable/marquina/3.webp',
         '/marbles/matilda2022/bedsidetable/marquina/4.webp',
       ],
-      'spidergreen': [
+      spidergreen: [
         '/marbles/matilda2022/bedsidetable/spidergreen/1.webp',
         '/marbles/matilda2022/bedsidetable/spidergreen/2.webp',
         '/marbles/matilda2022/bedsidetable/spidergreen/3.webp',
         '/marbles/matilda2022/bedsidetable/spidergreen/4.webp',
       ],
     },
-    description: `The Matilda Marble Side Table by Karan Desai Home explores sculptural geometry through refined marble and stonecraftsmanship. Handcrafted from natural marble, the arched structure integrates two seamless drawers, bringing together storage and sculptural clarity in a distinctive piece of contemporary furniture. The balance of fluid curves and precise lines introduces architectural rhythm to the interior of a modern home or residence. Designed by Karan Desai and made in India, this statement piece elevates luxury interiors while standing as a distinctive collectible piece within curated spaces.`,
-    dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO3tC2WJLYnpyK0DhEV4daf1ZotLM8ROqYkSFN',
+    description: 'The Matilda Marble Side Table by Karan Desai Home explores sculptural geometry through refined marble and stonecraftsmanship. Handcrafted from natural marble, the arched structure integrates two seamless drawers, bringing together storage and sculptural clarity in a distinctive piece of contemporary furniture. The balance of fluid curves and precise lines introduces architectural rhythm to the interior of a modern home or residence. Designed by Karan Desai and made in India, this statement piece elevates luxury interiors while standing as a distinctive collectible piece within curated spaces.',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO3tC2WJLYnpyK0DhEV4daf1ZotLM8ROqYkSFN',
     __v: 0,
   },
   {
@@ -5783,35 +5722,35 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
       },
     ],
     marbleImages: {
-      'indianblackbheslana': [
+      indianblackbheslana: [
         '/marbles/matilda2022/chestofdrawer/indianblackbheslana/1.webp',
         '/marbles/matilda2022/chestofdrawer/indianblackbheslana/2.webp',
         '/marbles/matilda2022/chestofdrawer/indianblackbheslana/3.webp',
         '/marbles/matilda2022/chestofdrawer/indianblackbheslana/4.webp',
         '/marbles/matilda2022/chestofdrawer/indianblackbheslana/5.webp',
       ],
-      'indianrossolevante': [
+      indianrossolevante: [
         '/marbles/matilda2022/chestofdrawer/indianrossolevante/1.webp',
         '/marbles/matilda2022/chestofdrawer/indianrossolevante/2.webp',
         '/marbles/matilda2022/chestofdrawer/indianrossolevante/3.webp',
         '/marbles/matilda2022/chestofdrawer/indianrossolevante/4.webp',
         '/marbles/matilda2022/chestofdrawer/indianrossolevante/5.webp',
       ],
-      'italianbeigetravertine': [
+      italianbeigetravertine: [
         '/marbles/matilda2022/chestofdrawer/italianbeigetravertine/1.webp',
         '/marbles/matilda2022/chestofdrawer/italianbeigetravertine/2.webp',
         '/marbles/matilda2022/chestofdrawer/italianbeigetravertine/3.webp',
         '/marbles/matilda2022/chestofdrawer/italianbeigetravertine/4.webp',
         '/marbles/matilda2022/chestofdrawer/italianbeigetravertine/5.webp',
       ],
-      'marquina': [
+      marquina: [
         '/marbles/matilda2022/chestofdrawer/marquina/1.webp',
         '/marbles/matilda2022/chestofdrawer/marquina/2.webp',
         '/marbles/matilda2022/chestofdrawer/marquina/3.webp',
         '/marbles/matilda2022/chestofdrawer/marquina/4.webp',
         '/marbles/matilda2022/chestofdrawer/marquina/5.webp',
       ],
-      'spidergreen': [
+      spidergreen: [
         '/marbles/matilda2022/chestofdrawer/spidergreen/1.webp',
         '/marbles/matilda2022/chestofdrawer/spidergreen/2.webp',
         '/marbles/matilda2022/chestofdrawer/spidergreen/3.webp',
@@ -5826,8 +5765,7 @@ deep charcoal ribbed drawers — a tactile detail that speaks volumes without sa
 Whether placed in a master suite or a statement hallway, this piece isn’t just storage — it’s a sculptural presence. 
 
 A symbol of restraint, rhythm, and remarkable design.`,
-    dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOq1Aido7NLjmh9XDF3ngvZxi87QRBuOfyKs60',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOq1Aido7NLjmh9XDF3ngvZxi87QRBuOfyKs60',
     __v: 0,
   },
   {
@@ -5897,35 +5835,35 @@ A symbol of restraint, rhythm, and remarkable design.`,
       },
     ],
     marbleImages: {
-      'indianblackbheslana': [
+      indianblackbheslana: [
         '/marbles/matilda2022/chaiselongue/indianblackbheslana/1.webp',
         '/marbles/matilda2022/chaiselongue/indianblackbheslana/2.webp',
         '/marbles/matilda2022/chaiselongue/indianblackbheslana/3.webp',
         '/marbles/matilda2022/chaiselongue/indianblackbheslana/4.webp',
         '/marbles/matilda2022/chaiselongue/indianblackbheslana/5.webp',
       ],
-      'indianrossolevante': [
+      indianrossolevante: [
         '/marbles/matilda2022/chaiselongue/indianrossolevante/1.webp',
         '/marbles/matilda2022/chaiselongue/indianrossolevante/2.webp',
         '/marbles/matilda2022/chaiselongue/indianrossolevante/3.webp',
         '/marbles/matilda2022/chaiselongue/indianrossolevante/4.webp',
         '/marbles/matilda2022/chaiselongue/indianrossolevante/5.webp',
       ],
-      'italianbeigetravertine': [
+      italianbeigetravertine: [
         '/marbles/matilda2022/chaiselongue/italianbeigetravertine/1.webp',
         '/marbles/matilda2022/chaiselongue/italianbeigetravertine/2.webp',
         '/marbles/matilda2022/chaiselongue/italianbeigetravertine/3.webp',
         '/marbles/matilda2022/chaiselongue/italianbeigetravertine/4.webp',
         '/marbles/matilda2022/chaiselongue/italianbeigetravertine/5.webp',
       ],
-      'marquina': [
+      marquina: [
         '/marbles/matilda2022/chaiselongue/marquina/1.webp',
         '/marbles/matilda2022/chaiselongue/marquina/2.webp',
         '/marbles/matilda2022/chaiselongue/marquina/3.webp',
         '/marbles/matilda2022/chaiselongue/marquina/4.webp',
         '/marbles/matilda2022/chaiselongue/marquina/5.webp',
       ],
-      'spidergreen': [
+      spidergreen: [
         '/marbles/matilda2022/chaiselongue/spidergreen/1.webp',
         '/marbles/matilda2022/chaiselongue/spidergreen/2.webp',
         '/marbles/matilda2022/chaiselongue/spidergreen/3.webp',
@@ -5933,9 +5871,8 @@ A symbol of restraint, rhythm, and remarkable design.`,
         '/marbles/matilda2022/chaiselongue/spidergreen/5.webp',
       ],
     },
-    description: `The Matilda Marble Chaise Longue by Karan Desai Home brings together sculptural marble and refined stonecraftsmanship in a poetic expression of contemporary furniture design. Handcrafted from natural marble, its fluid arc and wave-like silhouette introduce a sense of calm movement and architectural elegance to the interior of a modern home or residence. Balancing strength with softness, the form highlights the natural veining of the stone while creating a striking sculptural presence. Designed by Karan Desai and made in India, this distinctive piece elevates luxury interiors while standing as a remarkable collectible piece within curated spaces.`,
-    dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOzuaZgH3drRCNOYV7h2kSoeU41wvlAyKEqG0T',
+    description: 'The Matilda Marble Chaise Longue by Karan Desai Home brings together sculptural marble and refined stonecraftsmanship in a poetic expression of contemporary furniture design. Handcrafted from natural marble, its fluid arc and wave-like silhouette introduce a sense of calm movement and architectural elegance to the interior of a modern home or residence. Balancing strength with softness, the form highlights the natural veining of the stone while creating a striking sculptural presence. Designed by Karan Desai and made in India, this distinctive piece elevates luxury interiors while standing as a remarkable collectible piece within curated spaces.',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOzuaZgH3drRCNOYV7h2kSoeU41wvlAyKEqG0T',
     __v: 0,
   },
   {
@@ -5949,40 +5886,35 @@ A symbol of restraint, rhythm, and remarkable design.`,
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUX4MctaLaynKVcYuZHCDm1IeJRfoT4vBxS8i0',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUX4MctaLaynKVcYuZHCDm1IeJRfoT4vBxS8i0',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUXemCdILaynKVcYuZHCDm1IeJRfoT4vBxS8i0',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUXemCdILaynKVcYuZHCDm1IeJRfoT4vBxS8i0',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUX699fWLaynKVcYuZHCDm1IeJRfoT4vBxS8i0',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUX699fWLaynKVcYuZHCDm1IeJRfoT4vBxS8i0',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUY4cpOHnVM7iftKIsUSTJx8haC1mEBkZl4NvR',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUY4cpOHnVM7iftKIsUSTJx8haC1mEBkZl4NvR',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCnisW6dtZQpOq9no3vVs5yPKXR8gEYuikGU',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCnisW6dtZQpOq9no3vVs5yPKXR8gEYuikGU',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -5995,10 +5927,8 @@ A symbol of restraint, rhythm, and remarkable design.`,
         },
       },
     ],
-
-    description: `The Matilda Marble Ball Console by Karan Desai Home brings together marble and stone in a playful yet sculptural expression of contemporary furniture design. Handcrafted from natural marble, vividly coloured spheres are stacked to create a bold sense of movement and visual rhythm, introducing character and artistic energy to the interior of a modern home or residence. Designed by Karan Desai and made in India, the console pairs this sculptural base with a refined top surface, making it a distinctive element within luxury interiors and a striking collectible piece for curated spaces.`,
-    dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOPcgRtyKaSjHqmNAIDGdfwbKCW75FER48cVo3',
+    description: 'The Matilda Marble Ball Console by Karan Desai Home brings together marble and stone in a playful yet sculptural expression of contemporary furniture design. Handcrafted from natural marble, vividly coloured spheres are stacked to create a bold sense of movement and visual rhythm, introducing character and artistic energy to the interior of a modern home or residence. Designed by Karan Desai and made in India, the console pairs this sculptural base with a refined top surface, making it a distinctive element within luxury interiors and a striking collectible piece for curated spaces.',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOPcgRtyKaSjHqmNAIDGdfwbKCW75FER48cVo3',
     __v: 0,
   },
   {
@@ -6012,49 +5942,42 @@ A symbol of restraint, rhythm, and remarkable design.`,
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUUqNvDDBY1Vx48e2bhPHIZJqsnBOSArl5D3MT',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUUqNvDDBY1Vx48e2bhPHIZJqsnBOSArl5D3MT',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUlP4spx9DZL6up3G75dgCY2rJjaQFwifBAEky',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUlP4spx9DZL6up3G75dgCY2rJjaQFwifBAEky',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUNzcqSNG5UuqxLjF0ygrW1ikRpXaHfGVvonDw',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUNzcqSNG5UuqxLjF0ygrW1ikRpXaHfGVvonDw',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUn0IdC8bYcoeRKumWaHxyTj5q3bfMXB6INAUz',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUn0IdC8bYcoeRKumWaHxyTj5q3bfMXB6INAUz',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUc7srztvOzfU0v5mZaj1HWcAwKFCxykrE2NGS',
+        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUc7srztvOzfU0v5mZaj1HWcAwKFCxykrE2NGS',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
     ],
-
-    description: `The Matilda Marble Console by Karan Desai Home transforms marble and stone into a sculptural centerpiece for contemporary furniture design. Handcrafted from natural marble, the console stands on four varied legs that introduce contrast and architectural presence to the interior of a modern home or residence. The smoked-glass top adds a refined modern layer, balancing transparency with material richness. Designed by Karan Desai and made in India, this distinctive piece enhances luxury interiors while standing as a remarkable collectible piece.`,
-    dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOXaBMTyuosnbmOpdheGL3EgIPWHwQBAfDiZqX',
+    description: 'The Matilda Marble Console by Karan Desai Home transforms marble and stone into a sculptural centerpiece for contemporary furniture design. Handcrafted from natural marble, the console stands on four varied legs that introduce contrast and architectural presence to the interior of a modern home or residence. The smoked-glass top adds a refined modern layer, balancing transparency with material richness. Designed by Karan Desai and made in India, this distinctive piece enhances luxury interiors while standing as a remarkable collectible piece.',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOXaBMTyuosnbmOpdheGL3EgIPWHwQBAfDiZqX',
     __v: 0,
   },
   {
@@ -6103,40 +6026,39 @@ A symbol of restraint, rhythm, and remarkable design.`,
       },
     ],
     marbleImages: {
-      'indianblackbheslana': [
+      indianblackbheslana: [
         '/marbles/matilda2022/marblescreen/indianblackbheslana/1.webp',
         '/marbles/matilda2022/marblescreen/indianblackbheslana/2.webp',
         '/marbles/matilda2022/marblescreen/indianblackbheslana/3.webp',
         '/marbles/matilda2022/marblescreen/indianblackbheslana/4.webp',
       ],
-      'indianrossolevante': [
+      indianrossolevante: [
         '/marbles/matilda2022/marblescreen/indianrossolevante/1.webp',
         '/marbles/matilda2022/marblescreen/indianrossolevante/2.webp',
         '/marbles/matilda2022/marblescreen/indianrossolevante/3.webp',
         '/marbles/matilda2022/marblescreen/indianrossolevante/4.webp',
       ],
-      'italianbeigetravertine': [
+      italianbeigetravertine: [
         '/marbles/matilda2022/marblescreen/italianbeigetravertine/1.webp',
         '/marbles/matilda2022/marblescreen/italianbeigetravertine/2.webp',
         '/marbles/matilda2022/marblescreen/italianbeigetravertine/3.webp',
         '/marbles/matilda2022/marblescreen/italianbeigetravertine/4.webp',
       ],
-      'marquina': [
+      marquina: [
         '/marbles/matilda2022/marblescreen/marquina/1.webp',
         '/marbles/matilda2022/marblescreen/marquina/2.webp',
         '/marbles/matilda2022/marblescreen/marquina/3.webp',
         '/marbles/matilda2022/marblescreen/marquina/4.webp',
       ],
-      'spidergreen': [
+      spidergreen: [
         '/marbles/matilda2022/marblescreen/spidergreen/1.webp',
         '/marbles/matilda2022/marblescreen/spidergreen/2.webp',
         '/marbles/matilda2022/marblescreen/spidergreen/3.webp',
         '/marbles/matilda2022/marblescreen/spidergreen/4.webp',
       ],
     },
-    description: `The Matilda Marble Screen by Karan Desai Home brings together sculptural marble and refined stone craftsmanship in a striking expression of contemporary furniture design. Handcrafted from natural marble, its flowing curved form and rhythmic texture introduce movement, depth, and architectural presence to the interior of a modern home or residence. Designed to function both as a spatial divider and a sculptural element, the piece transforms the interior into a refined design moment. Designed by Karan Desai and made in India, this statement piece enhances luxury interiorswhile standing as a distinctive collectible piece.`,
-    dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOBY3TsfgzYN8aVpJZLF50If4uUdl1vTPgMQEx',
+    description: 'The Matilda Marble Screen by Karan Desai Home brings together sculptural marble and refined stone craftsmanship in a striking expression of contemporary furniture design. Handcrafted from natural marble, its flowing curved form and rhythmic texture introduce movement, depth, and architectural presence to the interior of a modern home or residence. Designed to function both as a spatial divider and a sculptural element, the piece transforms the interior into a refined design moment. Designed by Karan Desai and made in India, this statement piece enhances luxury interiorswhile standing as a distinctive collectible piece.',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOBY3TsfgzYN8aVpJZLF50If4uUdl1vTPgMQEx',
     __v: 0,
   },
   {
@@ -6185,40 +6107,39 @@ A symbol of restraint, rhythm, and remarkable design.`,
       },
     ],
     marbleImages: {
-      'indianblackbheslana': [
+      indianblackbheslana: [
         '/marbles/matilda2022/sidetable/indianblackbheslana/1.webp',
         '/marbles/matilda2022/sidetable/indianblackbheslana/2.webp',
         '/marbles/matilda2022/sidetable/indianblackbheslana/3.webp',
         '/marbles/matilda2022/sidetable/indianblackbheslana/4.webp',
       ],
-      'indianrossolevante': [
+      indianrossolevante: [
         '/marbles/matilda2022/sidetable/indianrossolevante/1.webp',
         '/marbles/matilda2022/sidetable/indianrossolevante/2.webp',
         '/marbles/matilda2022/sidetable/indianrossolevante/3.webp',
         '/marbles/matilda2022/sidetable/indianrossolevante/4.webp',
       ],
-      'italianbeigetravertine': [
+      italianbeigetravertine: [
         '/marbles/matilda2022/sidetable/italianbeigetravertine/1.webp',
         '/marbles/matilda2022/sidetable/italianbeigetravertine/2.webp',
         '/marbles/matilda2022/sidetable/italianbeigetravertine/3.webp',
         '/marbles/matilda2022/sidetable/italianbeigetravertine/4.webp',
       ],
-      'marquina': [
+      marquina: [
         '/marbles/matilda2022/sidetable/marquina/1.webp',
         '/marbles/matilda2022/sidetable/marquina/2.webp',
         '/marbles/matilda2022/sidetable/marquina/3.webp',
         '/marbles/matilda2022/sidetable/marquina/4.webp',
       ],
-      'spidergreen': [
+      spidergreen: [
         '/marbles/matilda2022/sidetable/spidergreen/1.webp',
         '/marbles/matilda2022/sidetable/spidergreen/2.webp',
         '/marbles/matilda2022/sidetable/spidergreen/3.webp',
         '/marbles/matilda2022/sidetable/spidergreen/4.webp',
       ],
     },
-    description: `The Matilda Marble Side Table by Karan Desai Home brings together marble, stone, and refined detailing in a sculptural expression of contemporary furniture design. Handcrafted from natural marble and paired with fluted wooden drawers, the piece introduces balance, texture, and architectural clarity to the interior of a modern home or residence. Designed by Karan Desai and made in India, this statement side table enhances luxury interiors while standing as a distinctive collectible piece within curated living spaces.`,
-    dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO4UCttXmYLAzci562mjC7NX0nUpdqB8Hf3QEW',
+    description: 'The Matilda Marble Side Table by Karan Desai Home brings together marble, stone, and refined detailing in a sculptural expression of contemporary furniture design. Handcrafted from natural marble and paired with fluted wooden drawers, the piece introduces balance, texture, and architectural clarity to the interior of a modern home or residence. Designed by Karan Desai and made in India, this statement side table enhances luxury interiors while standing as a distinctive collectible piece within curated living spaces.',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO4UCttXmYLAzci562mjC7NX0nUpdqB8Hf3QEW',
     __v: 0,
   },
   {
@@ -6232,52 +6153,48 @@ A symbol of restraint, rhythm, and remarkable design.`,
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6i13aArFz4iH7WfGTVpvldeUXscEPgYyhMN6x',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6i13aArFz4iH7WfGTVpvldeUXscEPgYyhMN6x',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6I3wkF6sxbsjpAT301gKUZ9diywRSNXatVuBG',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6I3wkF6sxbsjpAT301gKUZ9diywRSNXatVuBG',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6vhBkzTfBFZnrWTzhGMHUEmpQfVdIuNOjwvsx',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6vhBkzTfBFZnrWTzhGMHUEmpQfVdIuNOjwvsx',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
     ],
     marbleImages: {
-      'indianblackbheslana': [
+      indianblackbheslana: [
         '/marbles/matilda2025/taavdi/indianblackbheslana/1.webp',
         '/marbles/matilda2025/taavdi/indianblackbheslana/2.webp',
         '/marbles/matilda2025/taavdi/indianblackbheslana/3.webp',
       ],
-      'indianrossolevante': [
+      indianrossolevante: [
         '/marbles/matilda2025/taavdi/indianrossolevante/1.webp',
         '/marbles/matilda2025/taavdi/indianrossolevante/2.webp',
         '/marbles/matilda2025/taavdi/indianrossolevante/3.webp',
       ],
-      'italianbeigetravertine': [
+      italianbeigetravertine: [
         '/marbles/matilda2025/taavdi/italianbeigetravertine/1.webp',
         '/marbles/matilda2025/taavdi/italianbeigetravertine/2.webp',
         '/marbles/matilda2025/taavdi/italianbeigetravertine/3.webp',
       ],
-      'marquina': [
+      marquina: [
         '/marbles/matilda2025/taavdi/marquina/1.webp',
         '/marbles/matilda2025/taavdi/marquina/2.webp',
         '/marbles/matilda2025/taavdi/marquina/3.webp',
       ],
     },
-    
     description: `You’re not just looking at basins — you’re looking at a power move in stone.
 
 This dual-basin setup isn’t here to blend in. It’s here to dominate. Crafted in precision-cut marble and set on a layered tray of raw elegance, this piece screams taste, control, and status. 
@@ -6285,8 +6202,7 @@ The contrast? Deliberate. The proportions? Spot on. Whether it’s for your pent
 
 Functional? Absolutely. But more than that — it’s unforgettable. 
 Because when you invest in details like this, you’re not just upgrading your space — you’re owning it.`,
-    dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO4UCttXmYLAzci562mjC7NX0nUpdqB8Hf3QEW',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO4UCttXmYLAzci562mjC7NX0nUpdqB8Hf3QEW',
     __v: 0,
   },
   {
@@ -6300,75 +6216,70 @@ Because when you invest in details like this, you’re not just upgrading your s
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6351hDNkO70Cba5AdxRUpojYnlNeJ2mGDHhtk',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6351hDNkO70Cba5AdxRUpojYnlNeJ2mGDHhtk',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6CUfPe95TgwS23nFkaclOAiM4YpJ6GKdsHR1h',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6CUfPe95TgwS23nFkaclOAiM4YpJ6GKdsHR1h',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ68D6Lg7Q7kSH4j3OdAFgERmY21KxqyNofLiQJ',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ68D6Lg7Q7kSH4j3OdAFgERmY21KxqyNofLiQJ',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ645GGdNXgkHJgyXSOw8Nt1rLICdZhDa3cx560',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ645GGdNXgkHJgyXSOw8Nt1rLICdZhDa3cx560',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6YQUwDXpQ6Mplf2w0nGeTNo5xsyRHC8DzakUP',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6YQUwDXpQ6Mplf2w0nGeTNo5xsyRHC8DzakUP',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
     ],
     marbleImages: {
-      'indianblackbheslana': [
+      indianblackbheslana: [
         '/marbles/matilda2023/console1/indianblackbheslana/1.webp',
         '/marbles/matilda2023/console1/indianblackbheslana/2.webp',
         '/marbles/matilda2023/console1/indianblackbheslana/3.webp',
         '/marbles/matilda2023/console1/indianblackbheslana/4.webp',
         '/marbles/matilda2023/console1/indianblackbheslana/5.webp',
       ],
-      'indianrossolevante': [
+      indianrossolevante: [
         '/marbles/matilda2023/console1/indianrossolevante/1.webp',
         '/marbles/matilda2023/console1/indianrossolevante/2.webp',
         '/marbles/matilda2023/console1/indianrossolevante/3.webp',
         '/marbles/matilda2023/console1/indianrossolevante/4.webp',
         '/marbles/matilda2023/console1/indianrossolevante/5.webp',
       ],
-      'italianbeigetravertine': [
+      italianbeigetravertine: [
         '/marbles/matilda2023/console1/italianbeigetravertine/1.webp',
         '/marbles/matilda2023/console1/italianbeigetravertine/2.webp',
         '/marbles/matilda2023/console1/italianbeigetravertine/3.webp',
         '/marbles/matilda2023/console1/italianbeigetravertine/4.webp',
         '/marbles/matilda2023/console1/italianbeigetravertine/5.webp',
       ],
-      'marquina': [
+      marquina: [
         '/marbles/matilda2023/console1/marquina/1.webp',
         '/marbles/matilda2023/console1/marquina/2.webp',
         '/marbles/matilda2023/console1/marquina/3.webp',
         '/marbles/matilda2023/console1/marquina/4.webp',
         '/marbles/matilda2023/console1/marquina/5.webp',
       ],
-      'spidergreen': [
+      spidergreen: [
         '/marbles/matilda2023/console1/spidergreen/1.webp',
         '/marbles/matilda2023/console1/spidergreen/2.webp',
         '/marbles/matilda2023/console1/spidergreen/3.webp',
@@ -6385,8 +6296,7 @@ Rounded edges, seamless detailing, and a finish so polished it practically mirro
 This is the kind of piece that tells the room who’s in charge — even before you say a word. 
 
 Whether it's hiding cables or holding court, AV means business — and business looks damn good.`,
-    dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOxznN0KtfzZMOQ82F9V3XlUqPn6kstdYmWcTr',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOxznN0KtfzZMOQ82F9V3XlUqPn6kstdYmWcTr',
     __v: 0,
   },
   {
@@ -6401,82 +6311,77 @@ Whether it's hiding cables or holding court, AV means business — and business 
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6gBXjHSCZerKAITJasY524vLb0iMwnFhmpSEq',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6gBXjHSCZerKAITJasY524vLb0iMwnFhmpSEq',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6upUdYBDuc7iI6TAzg1V9OZvQdq2xWe0UJsBK',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6upUdYBDuc7iI6TAzg1V9OZvQdq2xWe0UJsBK',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6OIV0KluHEwqX8ryijeQWIxhs7f4S2KPznVcF',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6OIV0KluHEwqX8ryijeQWIxhs7f4S2KPznVcF',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ67mMW1MFzKGPvw5r90X863RfNEIjsCLM7n1qm',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ67mMW1MFzKGPvw5r90X863RfNEIjsCLM7n1qm',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6gXrHBvCZerKAITJasY524vLb0iMwnFhmpSEq',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6gXrHBvCZerKAITJasY524vLb0iMwnFhmpSEq',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
     ],
     marbleImages: {
-      'banswara': [
+      banswara: [
         '/marbles/matilda2023/bench/banswara/1.webp',
         '/marbles/matilda2023/bench/banswara/2.webp',
         '/marbles/matilda2023/bench/banswara/3.webp',
         '/marbles/matilda2023/bench/banswara/4.webp',
         '/marbles/matilda2023/bench/banswara/5.webp',
       ],
-      'indianblackbheslana': [
+      indianblackbheslana: [
         '/marbles/matilda2023/bench/indianblackbheslana/1.webp',
         '/marbles/matilda2023/bench/indianblackbheslana/2.webp',
         '/marbles/matilda2023/bench/indianblackbheslana/3.webp',
         '/marbles/matilda2023/bench/indianblackbheslana/4.webp',
         '/marbles/matilda2023/bench/indianblackbheslana/5.webp',
       ],
-      'indianrossolevante': [
+      indianrossolevante: [
         '/marbles/matilda2023/bench/indianrossolevante/1.webp',
         '/marbles/matilda2023/bench/indianrossolevante/2.webp',
         '/marbles/matilda2023/bench/indianrossolevante/3.webp',
         '/marbles/matilda2023/bench/indianrossolevante/4.webp',
         '/marbles/matilda2023/bench/indianrossolevante/5.webp',
       ],
-      'italianbeigetravertine': [
+      italianbeigetravertine: [
         '/marbles/matilda2023/bench/italianbeigetravertine/1.webp',
         '/marbles/matilda2023/bench/italianbeigetravertine/2.webp',
         '/marbles/matilda2023/bench/italianbeigetravertine/3.webp',
         '/marbles/matilda2023/bench/italianbeigetravertine/4.webp',
         '/marbles/matilda2023/bench/italianbeigetravertine/5.webp',
       ],
-      'marquina': [
+      marquina: [
         '/marbles/matilda2023/bench/marquina/1.webp',
         '/marbles/matilda2023/bench/marquina/2.webp',
         '/marbles/matilda2023/bench/marquina/3.webp',
         '/marbles/matilda2023/bench/marquina/4.webp',
         '/marbles/matilda2023/bench/marquina/5.webp',
       ],
-      'spidergreen': [
+      spidergreen: [
         '/marbles/matilda2023/bench/spidergreen/1.webp',
         '/marbles/matilda2023/bench/spidergreen/2.webp',
         '/marbles/matilda2023/bench/spidergreen/3.webp',
@@ -6484,9 +6389,8 @@ Whether it's hiding cables or holding court, AV means business — and business 
         '/marbles/matilda2023/bench/spidergreen/5.webp',
       ],
     },
-    description: `To be edited.`,
-    dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgzsaPScO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
+    description: 'To be edited.',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgzsaPScO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
     __v: 0,
   },
   {
@@ -6500,63 +6404,59 @@ Whether it's hiding cables or holding court, AV means business — and business 
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          '/marbles/matilda2023/console2/banswara/1.webp',
+        filePath: '/marbles/matilda2023/console2/banswara/1.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          '/marbles/matilda2023/console2/banswara/2.webp',
+        filePath: '/marbles/matilda2023/console2/banswara/2.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          '/marbles/matilda2023/console2/banswara/3.webp',
+        filePath: '/marbles/matilda2023/console2/banswara/3.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          '/marbles/matilda2023/console2/banswara/4.webp',
+        filePath: '/marbles/matilda2023/console2/banswara/4.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
     ],
     marbleImages: {
-      'indianblackbheslana': [
+      indianblackbheslana: [
         '/marbles/matilda2023/console2/indianblackbheslana/1.webp',
         '/marbles/matilda2023/console2/indianblackbheslana/2.webp',
         '/marbles/matilda2023/console2/indianblackbheslana/3.webp',
         '/marbles/matilda2023/console2/indianblackbheslana/4.webp',
       ],
-      'indianrossolevante': [
+      indianrossolevante: [
         '/marbles/matilda2023/console2/indianrossolevante/1.webp',
         '/marbles/matilda2023/console2/indianrossolevante/2.webp',
         '/marbles/matilda2023/console2/indianrossolevante/3.webp',
         '/marbles/matilda2023/console2/indianrossolevante/4.webp',
       ],
-      'italianbeigetravertine': [
+      italianbeigetravertine: [
         '/marbles/matilda2023/console2/italianbeigetravertine/1.webp',
         '/marbles/matilda2023/console2/italianbeigetravertine/2.webp',
         '/marbles/matilda2023/console2/italianbeigetravertine/3.webp',
         '/marbles/matilda2023/console2/italianbeigetravertine/4.webp',
       ],
-      'marquina': [
+      marquina: [
         '/marbles/matilda2023/console2/marquina/1.webp',
         '/marbles/matilda2023/console2/marquina/2.webp',
         '/marbles/matilda2023/console2/marquina/3.webp',
         '/marbles/matilda2023/console2/marquina/4.webp',
       ],
-      'spidergreen': [
+      spidergreen: [
         '/marbles/matilda2023/console2/spidergreen/1.webp',
         '/marbles/matilda2023/console2/spidergreen/2.webp',
         '/marbles/matilda2023/console2/spidergreen/3.webp',
@@ -6572,8 +6472,7 @@ It’s clean, it’s confident, and it delivers elegance with a side of authorit
 Place it in your entryway, gallery, or corner office — this piece doesn’t just complement the space, it upgrades the entire narrative. You don’t just walk past this console. You feel it.
 
 `,
-    dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOaBhQfedghAWJf0RpD5MNGad48yOCqt7roLni',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOaBhQfedghAWJf0RpD5MNGad48yOCqt7roLni',
     __v: 0,
   },
   {
@@ -6587,75 +6486,70 @@ Place it in your entryway, gallery, or corner office — this piece doesn’t ju
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          '/marbles/matilda2023/sidetable/banswara/1.webp',
+        filePath: '/marbles/matilda2023/sidetable/banswara/1.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          '/marbles/matilda2023/sidetable/banswara/2.webp',
+        filePath: '/marbles/matilda2023/sidetable/banswara/2.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          '/marbles/matilda2023/sidetable/banswara/3.webp',
+        filePath: '/marbles/matilda2023/sidetable/banswara/3.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          '/marbles/matilda2023/sidetable/banswara/4.webp',
+        filePath: '/marbles/matilda2023/sidetable/banswara/4.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          '/marbles/matilda2023/sidetable/banswara/5.webp',
+        filePath: '/marbles/matilda2023/sidetable/banswara/5.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
     ],
     marbleImages: {
-      'indianblackbheslana': [
+      indianblackbheslana: [
         '/marbles/matilda2023/sidetable/indianblackbheslana/1.webp',
         '/marbles/matilda2023/sidetable/indianblackbheslana/2.webp',
         '/marbles/matilda2023/sidetable/indianblackbheslana/3.webp',
         '/marbles/matilda2023/sidetable/indianblackbheslana/4.webp',
         '/marbles/matilda2023/sidetable/indianblackbheslana/5.webp',
       ],
-      'indianrossolevante': [
+      indianrossolevante: [
         '/marbles/matilda2023/sidetable/indianrossolevante/1.webp',
         '/marbles/matilda2023/sidetable/indianrossolevante/2.webp',
         '/marbles/matilda2023/sidetable/indianrossolevante/3.webp',
         '/marbles/matilda2023/sidetable/indianrossolevante/4.webp',
         '/marbles/matilda2023/sidetable/indianrossolevante/5.webp',
       ],
-      'italianbeigetravertine': [
+      italianbeigetravertine: [
         '/marbles/matilda2023/sidetable/italianbeigetravertine/1.webp',
         '/marbles/matilda2023/sidetable/italianbeigetravertine/2.webp',
         '/marbles/matilda2023/sidetable/italianbeigetravertine/3.webp',
         '/marbles/matilda2023/sidetable/italianbeigetravertine/4.webp',
         '/marbles/matilda2023/sidetable/italianbeigetravertine/5.webp',
       ],
-      'marquina': [
+      marquina: [
         '/marbles/matilda2023/sidetable/marquina/1.webp',
         '/marbles/matilda2023/sidetable/marquina/2.webp',
         '/marbles/matilda2023/sidetable/marquina/3.webp',
         '/marbles/matilda2023/sidetable/marquina/4.webp',
         '/marbles/matilda2023/sidetable/marquina/5.webp',
       ],
-      'spidergreen': [
+      spidergreen: [
         '/marbles/matilda2023/sidetable/spidergreen/1.webp',
         '/marbles/matilda2023/sidetable/spidergreen/2.webp',
         '/marbles/matilda2023/sidetable/spidergreen/3.webp',
@@ -6670,8 +6564,7 @@ It’s not playing the sidekick, it’s co-starring. One part sculpture, one par
 Clean lines, killer contrast, and a presence that says: I don’t follow the room, I anchor it.
 
 Because even your side table should speak volumes.`,
-    dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOrRQRBFbmfJY4ltsd2gZzTFGVu5iCAoIxpKya',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOrRQRBFbmfJY4ltsd2gZzTFGVu5iCAoIxpKya',
     __v: 0,
   },
   {
@@ -6712,7 +6605,7 @@ Because even your side table should speak volumes.`,
         },
       },
     ],
-    description: `To be edited.`,
+    description: 'To be edited.',
     dimensions: '#',
     __v: 0,
   },
@@ -6763,42 +6656,42 @@ Because even your side table should speak volumes.`,
       },
     ],
     marbleImages: {
-      'banswara': [
+      banswara: [
         '/marbles/matilda2023/console3/banswara/1.webp',
         '/marbles/matilda2023/console3/banswara/2.webp',
         '/marbles/matilda2023/console3/banswara/3.webp',
         '/marbles/matilda2023/console3/banswara/4.webp',
         '/marbles/matilda2023/console3/banswara/5.webp',
       ],
-      'indianblackbheslana': [
+      indianblackbheslana: [
         '/marbles/matilda2023/console3/indianblackbheslana/1.webp',
         '/marbles/matilda2023/console3/indianblackbheslana/2.webp',
         '/marbles/matilda2023/console3/indianblackbheslana/3.webp',
         '/marbles/matilda2023/console3/indianblackbheslana/4.webp',
         '/marbles/matilda2023/console3/indianblackbheslana/5.webp',
       ],
-      'indianrossolevante': [
+      indianrossolevante: [
         '/marbles/matilda2023/console3/indianrossolevante/1.webp',
         '/marbles/matilda2023/console3/indianrossolevante/2.webp',
         '/marbles/matilda2023/console3/indianrossolevante/3.webp',
         '/marbles/matilda2023/console3/indianrossolevante/4.webp',
         '/marbles/matilda2023/console3/indianrossolevante/5.webp',
       ],
-      'italianbeigetravertine': [
+      italianbeigetravertine: [
         '/marbles/matilda2023/console3/italianbeigetravertine/1.webp',
         '/marbles/matilda2023/console3/italianbeigetravertine/2.webp',
         '/marbles/matilda2023/console3/italianbeigetravertine/3.webp',
         '/marbles/matilda2023/console3/italianbeigetravertine/4.webp',
         '/marbles/matilda2023/console3/italianbeigetravertine/5.webp',
       ],
-      'marquina': [
+      marquina: [
         '/marbles/matilda2023/console3/marquina/1.webp',
         '/marbles/matilda2023/console3/marquina/2.webp',
         '/marbles/matilda2023/console3/marquina/3.webp',
         '/marbles/matilda2023/console3/marquina/4.webp',
         '/marbles/matilda2023/console3/marquina/5.webp',
       ],
-      'spidergreen': [
+      spidergreen: [
         '/marbles/matilda2023/console3/spidergreen/1.webp',
         '/marbles/matilda2023/console3/spidergreen/2.webp',
         '/marbles/matilda2023/console3/spidergreen/3.webp',
@@ -6806,11 +6699,10 @@ Because even your side table should speak volumes.`,
         '/marbles/matilda2023/console3/spidergreen/5.webp',
       ],
     },
-    description: `To be edited.`,
+    description: 'To be edited.',
     dimensions: '#',
     __v: 0,
   },
-
   {
     _id: {
       $oid: 'tdp-tea-bar',
@@ -6822,56 +6714,49 @@ Because even your side table should speak volumes.`,
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6vLe7PDfBFZnrWTzhGMHUEmpQfVdIuNOjwvsx',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6vLe7PDfBFZnrWTzhGMHUEmpQfVdIuNOjwvsx',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6O72zJsuHEwqX8ryijeQWIxhs7f4S2KPznVcF',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6O72zJsuHEwqX8ryijeQWIxhs7f4S2KPznVcF',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6r00xac2LAoRbwEXW8aLYzdOU9uNSG45lIpvj',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6r00xac2LAoRbwEXW8aLYzdOU9uNSG45lIpvj',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6EWGJP3vfBbIaKPCgLGxqndpNv5DjmeSowJ92',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6EWGJP3vfBbIaKPCgLGxqndpNv5DjmeSowJ92',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6vGYtXSfBFZnrWTzhGMHUEmpQfVdIuNOjwvsx',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6vGYtXSfBFZnrWTzhGMHUEmpQfVdIuNOjwvsx',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6Ql7yYQWrAEae8yoHbhSkJuscDIK4m7dfTjqZ',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6Ql7yYQWrAEae8yoHbhSkJuscDIK4m7dfTjqZ',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ66vrQSJ3jRledxo3hIaUpzVs7H2gCbEfBZ8Gk',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ66vrQSJ3jRledxo3hIaUpzVs7H2gCbEfBZ8Gk',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -6885,7 +6770,7 @@ Because even your side table should speak volumes.`,
       },
     ],
     marbleImages: {
-      'indianblackbheslana': [
+      indianblackbheslana: [
         '/marbles/matilda2022/teabar/indianblackbheslana/1.webp',
         '/marbles/matilda2022/teabar/indianblackbheslana/2.webp',
         '/marbles/matilda2022/teabar/indianblackbheslana/3.webp',
@@ -6895,7 +6780,7 @@ Because even your side table should speak volumes.`,
         '/marbles/matilda2022/teabar/indianblackbheslana/7.webp',
         '/marbles/matilda2022/teabar/indianblackbheslana/8.webp',
       ],
-      'indianrossolevante': [
+      indianrossolevante: [
         '/marbles/matilda2022/teabar/indianrossolevante/1.webp',
         '/marbles/matilda2022/teabar/indianrossolevante/2.webp',
         '/marbles/matilda2022/teabar/indianrossolevante/3.webp',
@@ -6905,7 +6790,7 @@ Because even your side table should speak volumes.`,
         '/marbles/matilda2022/teabar/indianrossolevante/7.webp',
         '/marbles/matilda2022/teabar/indianrossolevante/8.webp',
       ],
-      'italianbeigetravertine': [
+      italianbeigetravertine: [
         '/marbles/matilda2022/teabar/italianbeigetravertine/1.webp',
         '/marbles/matilda2022/teabar/italianbeigetravertine/2.webp',
         '/marbles/matilda2022/teabar/italianbeigetravertine/3.webp',
@@ -6915,7 +6800,7 @@ Because even your side table should speak volumes.`,
         '/marbles/matilda2022/teabar/italianbeigetravertine/7.webp',
         '/marbles/matilda2022/teabar/italianbeigetravertine/8.webp',
       ],
-      'marquina': [
+      marquina: [
         '/marbles/matilda2022/teabar/marquina/1.webp',
         '/marbles/matilda2022/teabar/marquina/2.webp',
         '/marbles/matilda2022/teabar/marquina/3.webp',
@@ -6925,7 +6810,7 @@ Because even your side table should speak volumes.`,
         '/marbles/matilda2022/teabar/marquina/7.webp',
         '/marbles/matilda2022/teabar/marquina/8.webp',
       ],
-      'spidergreen': [
+      spidergreen: [
         '/marbles/matilda2022/teabar/spidergreen/1.webp',
         '/marbles/matilda2022/teabar/spidergreen/2.webp',
         '/marbles/matilda2022/teabar/spidergreen/3.webp',
@@ -6936,9 +6821,8 @@ Because even your side table should speak volumes.`,
         '/marbles/matilda2022/teabar/spidergreen/8.webp',
       ],
     },
-    description: `To be edited`,
-    dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOjnwUKeNQNhsYReup8oqCmaiw71dHbWcUIX5f',
+    description: 'To be edited',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOjnwUKeNQNhsYReup8oqCmaiw71dHbWcUIX5f',
     __v: 0,
   },
   {
@@ -6952,72 +6836,63 @@ Because even your side table should speak volumes.`,
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6ENEwIVvfBbIaKPCgLGxqndpNv5DjmeSowJ92',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6ENEwIVvfBbIaKPCgLGxqndpNv5DjmeSowJ92',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6UzHFtaJlAmewIM0JczhqK9S4CkO27T5b3NuV',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6UzHFtaJlAmewIM0JczhqK9S4CkO27T5b3NuV',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6spPiES9vFBgSUW0cX9kRd8PDVGquOawNHiYT',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6spPiES9vFBgSUW0cX9kRd8PDVGquOawNHiYT',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6sCmNBq9vFBgSUW0cX9kRd8PDVGquOawNHiYT',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6sCmNBq9vFBgSUW0cX9kRd8PDVGquOawNHiYT',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6EU2Qr5vfBbIaKPCgLGxqndpNv5DjmeSowJ92',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6EU2Qr5vfBbIaKPCgLGxqndpNv5DjmeSowJ92',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6Ed9aU8cvfBbIaKPCgLGxqndpNv5DjmeSowJ9',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6Ed9aU8cvfBbIaKPCgLGxqndpNv5DjmeSowJ9',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6TI6zUu4l5c29SVtCBxOUDevPXhKIyTMj1qrL',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6TI6zUu4l5c29SVtCBxOUDevPXhKIyTMj1qrL',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath:
-          'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6M2oLJ41lcT5et2R98E1p3obFqIMhKPHkOGXS',
+        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6M2oLJ41lcT5et2R98E1p3obFqIMhKPHkOGXS',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
     ],
-    description: `To be edited`,
-    dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgx2kAPcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
+    description: 'To be edited',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgx2kAPcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
     __v: 0,
   },
   {
@@ -7058,9 +6933,8 @@ Because even your side table should speak volumes.`,
         },
       },
     ],
-    description: `To be edited`,
-    dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOzfSJeD3drRCNOYV7h2kSoeU41wvlAyKEqG0T',
+    description: 'To be edited',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOzfSJeD3drRCNOYV7h2kSoeU41wvlAyKEqG0T',
     __v: 0,
   },
   {
@@ -7094,9 +6968,8 @@ Because even your side table should speak volumes.`,
         },
       },
     ],
-    description: `To be edited`,
-    dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO0bRlHhIjklJSVsEqOG16wWBN3c0gCZdhrfoX',
+    description: 'To be edited',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO0bRlHhIjklJSVsEqOG16wWBN3c0gCZdhrfoX',
     __v: 0,
   },
   {
@@ -7151,9 +7024,8 @@ Because even your side table should speak volumes.`,
         },
       },
     ],
-    description: `To be edited`,
-    dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOnq2fMA0qR6kZyU7GmuJeNarBLvI3hSCstcbP',
+    description: 'To be edited',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOnq2fMA0qR6kZyU7GmuJeNarBLvI3hSCstcbP',
     __v: 0,
   },
   {
@@ -7194,9 +7066,8 @@ Because even your side table should speak volumes.`,
         },
       },
     ],
-    description: `To be edited`,
-    dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOlR8DjDT4zUERwb0h6yXWIJq45NdKi1MgA7FT',
+    description: 'To be edited',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOlR8DjDT4zUERwb0h6yXWIJq45NdKi1MgA7FT',
     __v: 0,
   },
   {
@@ -7237,9 +7108,8 @@ Because even your side table should speak volumes.`,
         },
       },
     ],
-    description: `To be edited`,
-    dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOyPpVMpZ1dQPxIVWN2OUq3s8ZBfKHzcmkJpvM',
+    description: 'To be edited',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOyPpVMpZ1dQPxIVWN2OUq3s8ZBfKHzcmkJpvM',
     __v: 0,
   },
   {
@@ -7273,9 +7143,8 @@ Because even your side table should speak volumes.`,
         },
       },
     ],
-    description: `To be edited`,
-    dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgC8emacO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
+    description: 'To be edited',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgC8emacO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
     __v: 0,
   },
   {
@@ -7323,9 +7192,8 @@ Because even your side table should speak volumes.`,
         },
       },
     ],
-    description: `To be edited`,
-    dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOBYYa55kzYN8aVpJZLF50If4uUdl1vTPgMQEx',
+    description: 'To be edited',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOBYYa55kzYN8aVpJZLF50If4uUdl1vTPgMQEx',
     __v: 0,
   },
   {
@@ -7366,9 +7234,8 @@ Because even your side table should speak volumes.`,
         },
       },
     ],
-    description: `To be edited`,
-    dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOg6NogqcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
+    description: 'To be edited',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOg6NogqcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
     __v: 0,
   },
   {
@@ -7409,9 +7276,8 @@ Because even your side table should speak volumes.`,
         },
       },
     ],
-    description: `To be edited`,
-    dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO81kDzvJ6OXRnzQocN3dym1xs7Wqkgah8JuVI',
+    description: 'To be edited',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO81kDzvJ6OXRnzQocN3dym1xs7Wqkgah8JuVI',
     __v: 0,
   },
   {
@@ -7452,9 +7318,8 @@ Because even your side table should speak volumes.`,
         },
       },
     ],
-    description: `To be edited`,
-    dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOTERh6Zkol4fc15PmWSnAqbsUy78gtp2EBGzu',
+    description: 'To be edited',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOTERh6Zkol4fc15PmWSnAqbsUy78gtp2EBGzu',
     __v: 0,
   },
   {
@@ -7495,9 +7360,8 @@ Because even your side table should speak volumes.`,
         },
       },
     ],
-    description: `To be edited`,
-    dimensions:
-      'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOHdSddwzF1d3zpmrSIcueZBfQo80E5Ujs7PTG',
+    description: 'To be edited',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOHdSddwzF1d3zpmrSIcueZBfQo80E5Ujs7PTG',
     __v: 0,
   },
   {
@@ -7615,8 +7479,7 @@ Because even your side table should speak volumes.`,
         },
       },
     ],
-    video:
-      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCIEyy8y4KW74xlzetoUdfERaY0bgNTvuMiQSj',
+    video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCIEyy8y4KW74xlzetoUdfERaY0bgNTvuMiQSj',
     description: `Not just a mirror.
 A little monster that lives on your wall.
 
@@ -7785,10 +7648,8 @@ The tactile yarn frame contrasts beautifully with the clean reflective glass, ma
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
-
     ],
-    video:
-      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCo4HqdvaFjWsXwrDTuK930HAGvn81cotf7hz4',
+    video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCo4HqdvaFjWsXwrDTuK930HAGvn81cotf7hz4',
     description: `A family, translated into form.
 
 The Yodaa Totem is a sculptural yarn installation that represents the quiet architecture of togetherness, a male, a female, and a baby, stacked in a symbolic vertical embrace.
@@ -7877,8 +7738,7 @@ A modern heirloom, wrapped in yarn, built on connection.`,
         },
       },
     ],
-    video:
-      'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCl9HKlKQzg6WDauGf8esyvqEY9A7IOLlRHrcZ',
+    video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCl9HKlKQzg6WDauGf8esyvqEY9A7IOLlRHrcZ',
     description: `A creature, holding up your everyday.
 
 The Monster Table is where function meets fantasy. A sleek circular glass top rests delicately above a plush, yarn-wrapped form that almost disappears into its own soft blue carpet. Only two glowing eyes give it away, quiet, watchful, alive.
@@ -7961,8 +7821,7 @@ There are three small candle holders on the table, each holding a hand-poured wa
 The materials used are natural and tactile. The stone base has a matte finish that highlights its texture, and the glass top adds a modern touch. The overall feeling is one of balance, simplicity, and quiet strength.
 
 Jina Shilp Coffee Table is meant to be a calm presence in a room—a place where you can gather, reflect, and feel grounded.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnie2WirbYcoeRKumWaHxyTj5q3bfMXB6INAU',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnie2WirbYcoeRKumWaHxyTj5q3bfMXB6INAU',
     __v: 0,
   },
   {
@@ -8057,8 +7916,7 @@ The references come directly from Jain derasars, especially the carved pillars a
 Technically, the piece is made as stacked modules, ensuring stability while keeping the visual lightness intact. Each block is precisely cut and finished to align seamlessly.
 
 The totem is meant to feel calm, grounded and thoughtful. It carries a quiet presence, where stone and life exist together, reflecting a sense of stillness, growth and cultural continuity.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9kauxF2frimQ5LhFdjbpOHNPEsav1o2Ac0Dz',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9kauxF2frimQ5LhFdjbpOHNPEsav1o2Ac0Dz',
     __v: 0,
   },
   {
@@ -8145,8 +8003,7 @@ Materiality is restrained yet expressive. Red travertine offers warmth and surfa
 Each pillar is crowned with a hand-poured wax candle, casting a soft ambient glow that enhances the spatial experience.
 
 Jina Shilp Dining table is conceived as an object of presence—where form, material, and light converge to create a composed and contemplative dining environment.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUN4sR6EG5UuqxLjF0ygrW1ikRpXaHfGVvonDw',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUN4sR6EG5UuqxLjF0ygrW1ikRpXaHfGVvonDw',
     __v: 0,
   },
   {
@@ -8217,8 +8074,7 @@ The base of the mirror includes a built-in planter. This is an important part of
 The mirror is made in Verde Guatemala marble, known for its deep green color and natural veining. This gives the piece a strong, rich presence while still feeling natural and calm. The contrast between the solid stone and the living plant brings together the ideas of stability and growth.
 
 The Jina Shilp Mirror is meant to be more than a functional object. It is a quiet piece that brings together reflection, growth, and everyday awareness in a simple and meaningful way.`,
-    dimensions:
-      'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUL68AYmPDqbauUfVsg4JYrj86xOSilFe5PBo3',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUL68AYmPDqbauUfVsg4JYrj86xOSilFe5PBo3',
     __v: 0,
   },
 ];

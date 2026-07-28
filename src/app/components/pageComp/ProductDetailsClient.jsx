@@ -361,9 +361,6 @@ export default function ProductDetailsClient({ product }) {
                       sizes='(max-width: 768px) 100vw, 50vw'
                       priority={currentIndex === 0}
                       quality={75}
-                      unoptimized={activeImages[
-                        currentIndex
-                      ].filePath.startsWith('http')}
                       onLoad={() => setImageLoaded(true)}
                     />
                   )
