@@ -153,7 +153,7 @@ const GroupProductsPage = () => {
 
             {pdfLink && (
               <>
-                <div className='gsap-reveal flex gap-8 2xl:gap-16 items-center pb-2 border-b-2 border-gray-800 w-full max-w-3xl justify-center mb-4'>
+                <div className='gsap-reveal flex gap-8 2xl:gap-16 items-center pb-2 border-b-2 border-gray-800 w-full max-w-3xl 2xl:max-w-5xl justify-center mb-4'>
                   <Image
                     width={200}
                     height={200}
