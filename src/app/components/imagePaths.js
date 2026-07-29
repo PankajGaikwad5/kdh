@@ -336,10 +336,10 @@ export const newImagePaths = [
     productId: '86-chest-of-drawer',
   },
   {
-    name: 'Chaise Longue',
+    name: 'Chaise lounge',
     path: '/optimized/chaiselongue.webp',
     group: 'Matilda',
-    productId: 'chaise-longue',
+    productId: 'chaise-lounge',
   },
   {
     name: 'Marble Ball Console',
@@ -849,10 +849,10 @@ export const newImagePaths = [
         productId: '86-chest-of-drawer',
       },
       {
-        name: 'Chaise Longue',
+        name: 'Chaise lounge',
         path: '/optimized/chaiselongue.webp',
         group: 'Matilda',
-        productId: 'chaise-longue',
+        productId: 'chaise-lounge',
       },
       {
         name: 'Marble Ball Console',
