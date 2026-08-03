@@ -211,6 +211,7 @@ export default function ProductDetailsClient({ product }) {
 
   // Preload active images whenever they change (e.g. when marble is selected)
   useEffect(() => {
+    const timers = [];
     if (activeImages?.[0]) {
       setImageLoaded(false);
       preloadImage(activeImages[0].filePath);
@@ -219,10 +220,12 @@ export default function ProductDetailsClient({ product }) {
       }
       activeImages
         .slice(1)
-        .forEach((img, i) =>
-          setTimeout(() => preloadImage(img.filePath), i * 100),
-        );
+        .forEach((img, i) => {
+          const t = setTimeout(() => preloadImage(img.filePath), i * 100);
+          timers.push(t);
+        });
     }
+    return () => timers.forEach(clearTimeout);
   }, [activeImages, preloadImage, loadedImages]);
 
   const handleSelectMarble = useCallback((marbleName) => {

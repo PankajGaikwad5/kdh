@@ -20,15 +20,37 @@ const page = () => {
   const [dimensions, setDimensions] = useState({ width: 200, height: 200 });
   const floatingImagesRef = useRef(null);
 
-  // Kick off texture preloading immediately — while the Three.js chunk is still
-  // downloading, the browser fetches all 88 images into its HTTP cache so that
-  // useTexture() inside FloatingImagesScene gets instant cache-hits.
+  // Kick off texture preloading progressively during idle time — while the Three.js chunk is still
+  // downloading, the browser fetches images into its HTTP cache without memory spikes.
   useEffect(() => {
     const uniquePaths = [...new Set(newImagePaths.map((p) => p.path))];
-    uniquePaths.forEach((src) => {
-      const img = new window.Image();
-      img.src = src;
-    });
+    let cancelled = false;
+    
+    // Batch load images during idle time or short timeouts
+    const loadBatch = (index) => {
+      if (cancelled || index >= uniquePaths.length) return;
+      const batchSize = 6;
+      const nextIndex = index + batchSize;
+      
+      for (let i = index; i < Math.min(nextIndex, uniquePaths.length); i++) {
+        const img = new window.Image();
+        img.src = uniquePaths[i];
+      }
+
+      if ('requestIdleCallback' in window) {
+        window.requestIdleCallback(() => loadBatch(nextIndex));
+      } else {
+        setTimeout(() => loadBatch(nextIndex), 50);
+      }
+    };
+
+    if ('requestIdleCallback' in window) {
+      window.requestIdleCallback(() => loadBatch(0));
+    } else {
+      setTimeout(() => loadBatch(0), 100);
+    }
+
+    return () => { cancelled = true; };
   }, []);
 
   useEffect(() => {

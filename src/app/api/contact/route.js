@@ -93,7 +93,12 @@ export async function POST(req) {
       fetchUrl = `http://ip-api.com/json/${cleanIp}`;
     }
 
-    const geoRes = await fetch(fetchUrl);
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 3000);
+
+    const geoRes = await fetch(fetchUrl, { signal: controller.signal });
+    clearTimeout(timeoutId);
+
     if (geoRes.ok) {
       const geoData = await geoRes.json();
       if (geoData.status === 'success') {
@@ -101,7 +106,7 @@ export async function POST(req) {
       }
     }
   } catch (error) {
-    console.error('Error fetching location:', error);
+    console.error('Error fetching location:', error.name === 'AbortError' ? 'Geolocation lookup timed out' : error);
   }
 
   // Set up email options

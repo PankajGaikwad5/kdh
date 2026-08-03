@@ -108,6 +108,7 @@ export function validateEmail(email) {
  * In production, use Redis or database
  */
 const submissionTracker = new Map();
+let lastCleanup = Date.now();
 
 export function checkRateLimit(
   identifier,
@@ -115,6 +116,13 @@ export function checkRateLimit(
   windowMs = 3600000,
 ) {
   const now = Date.now();
+  
+  // Lazily clean up old rate limit entries every 10 minutes without unmanaged top-level timers
+  if (now - lastCleanup > 600000) {
+    cleanupRateLimiter();
+    lastCleanup = now;
+  }
+
   const key = identifier;
 
   if (!submissionTracker.has(key)) {
@@ -141,7 +149,7 @@ export function checkRateLimit(
 }
 
 /**
- * Clean up old entries from rate limiter (call periodically)
+ * Clean up old entries from rate limiter
  */
 export function cleanupRateLimiter() {
   const now = Date.now();
@@ -156,6 +164,3 @@ export function cleanupRateLimiter() {
     }
   }
 }
-
-// Clean up every 10 minutes
-setInterval(cleanupRateLimiter, 600000);

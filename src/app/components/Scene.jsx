@@ -249,6 +249,16 @@ export default function Scene() {
     position: [0, 0],
   });
 
+  const [isTabVisible, setIsTabVisible] = useState(true);
+
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      setIsTabVisible(document.visibilityState === 'visible');
+    };
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    return () => document.removeEventListener('visibilitychange', handleVisibilityChange);
+  }, []);
+
   // Mobile redirect on resize.
   useEffect(() => {
     const handleResize = () => {
@@ -273,6 +283,7 @@ export default function Scene() {
   return (
     <>
       <Canvas
+        frameloop={isTabVisible ? 'always' : 'never'}
         gl={{ antialias: true, powerPreference: 'high-performance' }}
         camera={{ position: [0, 0, 17], fov: 75 }}
         className='w-full h-full z-0'

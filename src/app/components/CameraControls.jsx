@@ -218,6 +218,9 @@ export default function CameraControls() {
 
   const tempDirection = useRef(new THREE.Vector3());
 
+  const panRightScratch = useRef(new THREE.Vector3());
+  const panUpScratch = useRef(new THREE.Vector3());
+
   useFrame((_, delta) => {
     const speed = moveSpeed * delta;
     const direction = tempDirection.current;
@@ -269,11 +272,11 @@ export default function CameraControls() {
       const deltaY = mouse.current.y - mouse.current.prevY;
 
       camera.updateMatrixWorld();
-      const panRight = new THREE.Vector3().setFromMatrixColumn(
+      const panRight = panRightScratch.current.setFromMatrixColumn(
         camera.matrixWorld,
         0,
       );
-      const panUp = new THREE.Vector3().setFromMatrixColumn(
+      const panUp = panUpScratch.current.setFromMatrixColumn(
         camera.matrixWorld,
         1,
       );

@@ -173,7 +173,7 @@ export default function ThreeDCircularGallery() {
     };
     window.addEventListener('keydown', handleKey);
     return () => window.removeEventListener('keydown', handleKey);
-  });
+  }, [imageIndex, collectionIndex, total]);
 
   return (
     <>

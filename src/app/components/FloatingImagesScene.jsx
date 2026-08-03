@@ -146,10 +146,14 @@ const SphericalGallery = React.forwardRef(
       ];
     }), [imagePaths, radius]);
 
-    // ── Cleanup materials on unmount ──
+    // ── Cleanup materials and textures on unmount ──
     useEffect(() => () => {
-      materialMap.forEach((mat) => mat.dispose());
-    }, [materialMap]);
+      materialMap.forEach((mat) => {
+        if (mat.map) mat.map.dispose();
+        mat.dispose();
+      });
+      useTexture.clear(uniqueUrls);
+    }, [materialMap, uniqueUrls]);
 
     useFrame(() => {
       if (!ref.current) return;
@@ -278,6 +282,17 @@ export default function FloatingImagesScene() {
   const hasMouseMoved        = useRef(false);
   const [tooltipVisible, setTooltipVisible] = useState(false);
 
+  const [isTabVisible, setIsTabVisible] = useState(true);
+
+  // Pause rendering loops when tab is hidden to save memory and CPU/GPU resources
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      setIsTabVisible(document.visibilityState === 'visible');
+    };
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    return () => document.removeEventListener('visibilitychange', handleVisibilityChange);
+  }, []);
+
   // Force full reload on bfcache restore so the WebGL context + scene reinitialise
   useEffect(() => {
     setZoomTarget(null);
@@ -336,6 +351,7 @@ export default function FloatingImagesScene() {
   return (
     <>
       <Canvas
+        frameloop={isTabVisible ? 'always' : 'never'}
         camera={{ position: [0, 0, 50], fov: 65, near: 0.1, far: 800 }}
         dpr={isMobile ? [0.5, 1] : [1, 1.5]}
         gl={{ powerPreference: 'high-performance', antialias: false, stencil: false, depth: true, alpha: false }}
@@ -363,8 +379,8 @@ export default function FloatingImagesScene() {
         <OrbitControls
           enableZoom={false}
           enablePan={false}
-          enabled={!zoomTarget}
-          autoRotate={!zoomTarget}
+          enabled={!zoomTarget && isTabVisible}
+          autoRotate={!zoomTarget && isTabVisible}
           autoRotateSpeed={0.5}
           makeDefault
         />

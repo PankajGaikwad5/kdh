@@ -56,7 +56,12 @@ function CarouselScene({ products, selectedIndex, onFrontChange }) {
     return new THREE.MeshBasicMaterial({ map: tex, transparent: true, depthWrite: false, side: THREE.DoubleSide });
   }), [textures]);
 
-  useEffect(() => () => materials.forEach((m) => m.dispose()), [materials]);
+  useEffect(() => () => {
+    materials.forEach((m) => {
+      if (m.map) m.map.dispose();
+      m.dispose();
+    });
+  }, [materials]);
 
   // Rank: how far item i is from the selected item (-2…+2)
   const getRank = (i, sel) => {
@@ -203,11 +208,21 @@ const CollectionOverlay = ({ isVisible, onClose, products = [] }) => {
   const goTo   = useCallback((i) => { bump(); setActiveIndex(i); }, []);
   const onFrontChange = useCallback((i) => { bump(); setActiveIndex(i); }, []);
 
+  const [isTabVisible, setIsTabVisible] = useState(true);
+
   useEffect(() => {
-    if (!isVisible || !items.length) return;
+    const handleVisibilityChange = () => {
+      setIsTabVisible(document.visibilityState === 'visible');
+    };
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    return () => document.removeEventListener('visibilitychange', handleVisibilityChange);
+  }, []);
+
+  useEffect(() => {
+    if (!isVisible || !items.length || !isTabVisible) return;
     const id = setInterval(() => { if (Date.now() - lastInteract.current >= 2000) setActiveIndex((i) => (i + 1) % items.length); }, 2000);
     return () => clearInterval(id);
-  }, [isVisible, items.length]);
+  }, [isVisible, items.length, isTabVisible]);
 
   if (!items.length) return null;
 
@@ -231,6 +246,7 @@ const CollectionOverlay = ({ isVisible, onClose, products = [] }) => {
       {canvasMounted && (
         <div className='absolute inset-0' style={{ cursor: 'grab' }}>
           <Canvas
+            frameloop={isTabVisible ? 'always' : 'never'}
             camera={{ position: [0, 0.5, 5], fov: 40 }}
             gl={{ alpha: true, antialias: true }}
             style={{ width: '100%', height: '100%' }}

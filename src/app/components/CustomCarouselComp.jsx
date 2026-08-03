@@ -27,23 +27,31 @@ const MediaRenderer = ({ url, alt }) => {
 
   useEffect(() => {
     if (mediaType === 'unknown') {
-      // Attempt a HEAD request to determine the content type.
-      fetch(url, { method: 'HEAD' })
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 3000);
+
+      // Attempt a HEAD request with 3s timeout to determine the content type.
+      fetch(url, { method: 'HEAD', signal: controller.signal })
         .then((response) => {
+          clearTimeout(timeoutId);
           const contentType = response.headers.get('content-type');
           if (contentType && contentType.includes('video')) {
             setMediaType('video');
           } else if (contentType && contentType.includes('image')) {
             setMediaType('image');
           } else {
-            // Fallback: assume image if we're not sure.
             setMediaType('image');
           }
         })
         .catch(() => {
-          // If the HEAD request fails, fallback to image.
+          clearTimeout(timeoutId);
           setMediaType('image');
         });
+
+      return () => {
+        clearTimeout(timeoutId);
+        controller.abort();
+      };
     }
   }, [url, mediaType]);
 
