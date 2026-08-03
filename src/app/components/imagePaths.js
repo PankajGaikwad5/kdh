@@ -521,6 +521,12 @@ export const newImagePaths = [
     group: 'Jina Shilp',
     productId: 'jscofeetable',
   },
+  {
+    name: 'Pillar Bench',
+    path: '/js/pillarbench/png.webp',
+    group: 'Jina Shilp',
+    productId: 'jspillarbench',
+  },
 
   ...Array(2)
     .fill([
@@ -1033,6 +1039,12 @@ export const newImagePaths = [
         path: '/js/cofeetable/png.webp',
         group: 'Jina Shilp',
         productId: 'jscofeetable',
+      },
+      {
+        name: 'Pillar Bench',
+        path: '/js/pillarbench/png.webp',
+        group: 'Jina Shilp',
+        productId: 'jspillarbench',
       },
     ])
     .flat(),

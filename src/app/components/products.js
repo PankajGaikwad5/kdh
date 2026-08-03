@@ -8077,4 +8077,46 @@ The Jina Shilp Mirror is meant to be more than a functional object. It is a quie
     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUL68AYmPDqbauUfVsg4JYrj86xOSilFe5PBo3',
     __v: 0,
   },
+  {
+    _id: {
+      $oid: 'jspillarbench',
+    },
+    title: 'Pillar Bench',
+    group: 'jina_shilp',
+    material: '',
+    pdf: '',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/pillarbench/png.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/pillarbench/1.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/pillarbench/2.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/js/pillarbench/3.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: `JinaShilp and Pillar bench is conceived as a physical and symbolic intersection between two distinct cultural identities. Designed by Karan Desai and Spinzi for Serafini, the piece brings together two design approaches into a single continuous form. One side reflects the vertical, layered and introspective language of JinaShilp, while the other expresses the architectural rhythm and modular clarity of Pillar. The bench becomes a point of transition where these two worlds meet without losing their individuality. JinaShilp and Pillar bench is not simply a seating object but a narrative of coexistence, where design becomes a medium for dialogue. Produced by Serafini, it embodies a vision of marble design that celebrates diversity while finding unity through form.`,
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUwDjhUugi1vXhd2AYtoGrDFy59EOsBzTnN6eW',
+    __v: 0,
+  },
 ];
