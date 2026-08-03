@@ -1,6 +1,87 @@
 export const products = [
   {
     _id: {
+      $oid: 'matilda_2024_pendant_lights',
+    },
+    title: 'Pendant Lights',
+    group: 'matilda_2024',
+    material: 'Marble',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU1wNCWhgmcNbALVg2tCIRm5fi0793BwZH8PYy',
+    images: [
+      {
+        fileName: '1.webp',
+        filePath: '/marbles/matilda2024/pendantlights/1.webp',
+        _id: {
+          $oid: 'm24_pl_1',
+        },
+      },
+      {
+        fileName: '2.webp',
+        filePath: '/marbles/matilda2024/pendantlights/2.webp',
+        _id: {
+          $oid: 'm24_pl_2',
+        },
+      },
+      {
+        fileName: '3.webp',
+        filePath: '/marbles/matilda2024/pendantlights/3.webp',
+        _id: {
+          $oid: 'm24_pl_3',
+        },
+      },
+      {
+        fileName: '4.webp',
+        filePath: '/marbles/matilda2024/pendantlights/4.webp',
+        _id: {
+          $oid: 'm24_pl_4',
+        },
+      },
+      {
+        fileName: '5.webp',
+        filePath: '/marbles/matilda2024/pendantlights/5.webp',
+        _id: {
+          $oid: 'm24_pl_5',
+        },
+      },
+      {
+        fileName: '6.webp',
+        filePath: '/marbles/matilda2024/pendantlights/6.webp',
+        _id: {
+          $oid: 'm24_pl_6',
+        },
+      },
+      {
+        fileName: '7.webp',
+        filePath: '/marbles/matilda2024/pendantlights/7.webp',
+        _id: {
+          $oid: 'm24_pl_7',
+        },
+      },
+      {
+        fileName: '8.webp',
+        filePath: '/marbles/matilda2024/pendantlights/8.webp',
+        _id: {
+          $oid: 'm24_pl_8',
+        },
+      },
+    ],
+    marbleImages: {
+      indianblackbheslana: [
+        '/marbles/matilda2024/pendantlights/1.webp',
+        '/marbles/matilda2024/pendantlights/2.webp',
+        '/marbles/matilda2024/pendantlights/3.webp',
+        '/marbles/matilda2024/pendantlights/4.webp',
+        '/marbles/matilda2024/pendantlights/5.webp',
+        '/marbles/matilda2024/pendantlights/6.webp',
+        '/marbles/matilda2024/pendantlights/7.webp',
+        '/marbles/matilda2024/pendantlights/8.webp',
+      ],
+    },
+    description: '',
+    __v: 0,
+  },
+  {
+    _id: {
       $oid: '67a5ec494da9b29cd0f10b87',
     },
     title: 'Matilda 2024 partition screen',
@@ -7362,6 +7443,98 @@ Because even your side table should speak volumes.`,
     ],
     description: 'To be edited',
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOHdSddwzF1d3zpmrSIcueZBfQo80E5Ujs7PTG',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: 'monster3diningchair',
+    },
+    title: 'Monster 3.1 Dining Chair',
+    group: 'monster_3.1',
+    material: 'Burnt Wood & Fur Fabric',
+    collabtext: 'Dimensions',
+    collablink: 'https://dimensionsfurniture.in/collections/monster-collection/',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUVOfTglleJz0jfKoyVd9HNhC5wFQ4OrBi2UkD',
+    images: [
+      {
+        fileName: '1.webp',
+        filePath: '/m3/chair/1.webp',
+        _id: {
+          $oid: 'm3_chair_1',
+        },
+      },
+      {
+        fileName: '2.webp',
+        filePath: '/m3/chair/2.webp',
+        _id: {
+          $oid: 'm3_chair_2',
+        },
+      },
+      {
+        fileName: '3.webp',
+        filePath: '/m3/chair/3.webp',
+        _id: {
+          $oid: 'm3_chair_3',
+        },
+      },
+      {
+        fileName: '4.webp',
+        filePath: '/m3/chair/4.webp',
+        _id: {
+          $oid: 'm3_chair_4',
+        },
+      },
+      {
+        fileName: '14.webp',
+        filePath: '/m3/chair/14.webp',
+        _id: {
+          $oid: 'm3_chair_14',
+        },
+      },
+      {
+        fileName: '15.webp',
+        filePath: '/m3/chair/15.webp',
+        _id: {
+          $oid: 'm3_chair_15',
+        },
+      },
+      {
+        fileName: '16.webp',
+        filePath: '/m3/chair/16.webp',
+        _id: {
+          $oid: 'm3_chair_16',
+        },
+      },
+      {
+        fileName: '17.webp',
+        filePath: '/m3/chair/17.webp',
+        _id: {
+          $oid: 'm3_chair_17',
+        },
+      },
+      {
+        fileName: '18.webp',
+        filePath: '/m3/chair/18.webp',
+        _id: {
+          $oid: 'm3_chair_18',
+        },
+      },
+      {
+        fileName: '19.webp',
+        filePath: '/m3/chair/19.webp',
+        _id: {
+          $oid: 'm3_chair_19',
+        },
+      },
+    ],
+    video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCOy3I6NvCdTRXkKq6It0VBFyceAso73JQWwnO',
+    description: `Not just a chair—a throne for the unapologetic. The Monster Dining Chair isn’t here to blend in; it’s here to dominate the table. 
+
+With its sculptural stance and indulgently textured surface, it redefines dining with drama and depth. 
+Bold yet comforting, it invites conversation, demands attention, and elevates every seat into a statement. 
+
+This isn’t about taking your place—it’s about owning it, one confident curve at a time.`,
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQr4b0hCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
     __v: 0,
   },
   {

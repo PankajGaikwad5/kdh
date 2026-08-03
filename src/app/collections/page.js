@@ -135,7 +135,7 @@ const page = () => {
       group: 'matilda_2024',
       img: '/group/4.png',
       projects:
-        'table lamp, library, partition screen, console 1, console 2, coffee table, center table 1, center table 2, basin, flower vase, planter, side table, u table, bathtub, chair, bench floor lamp',
+        'pendant lights, table lamp, library, partition screen, console 1, console 2, coffee table, center table 1, center table 2, basin, flower vase, planter, side table, u table, bathtub, chair, bench floor lamp',
     },
     {
       id: 11,

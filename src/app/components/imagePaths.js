@@ -59,6 +59,12 @@ export const newImagePaths = [
     group: 'Matilda',
     productId: '67a5ec684da9b29cd0f10b8e',
   },
+  {
+    name: 'Pendant Lights',
+    path: '/marbles/matilda2024/pendantlights/1.webp',
+    group: 'Matilda',
+    productId: 'matilda_2024_pendant_lights',
+  },
   // {
   //   name: 'Console 2',
   //   path: '/optimized/matildaconsole2.webp',
@@ -478,6 +484,12 @@ export const newImagePaths = [
     path: '/optimized/m3sidetable.webp',
     group: 'Monster 3.1',
     productId: 'monster3sidetable',
+  },
+  {
+    name: 'Monster Dining Chair',
+    path: '/m3/chair/1.webp',
+    group: 'Monster 3.1',
+    productId: 'monster3diningchair',
   },
   {
     name: 'Monster Yodaa Miami Edition',
