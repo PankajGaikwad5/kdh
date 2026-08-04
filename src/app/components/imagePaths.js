@@ -30,6 +30,12 @@ export const newImagePaths = [
     productId: '67b5e69de03cc2c55c62bd22',
   },
   {
+    name: 'Monster 3.0 Charwood Chair',
+    path: '/monster_3/dchair.png',
+    group: 'Monster 3.0',
+    productId: 'monster30charwoodchair',
+  },
+  {
     name: 'Monster Planter',
     path: '/optimized/monster3planter.webp',
     group: 'Monster 3.0',
@@ -406,6 +412,12 @@ export const newImagePaths = [
     path: '/optimized/monsterdiningkidschair.webp',
     group: 'Monster 3.0',
     productId: '67b5e69de03cc2c55c62bd22',
+  },
+  {
+    name: 'Monster 3.0 Charwood Chair',
+    path: '/monster_3/dchair.png',
+    group: 'Monster 3.0',
+    productId: 'monster30charwoodchair',
   },
   {
     name: 'Monster Ottoman',

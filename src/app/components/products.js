@@ -4133,6 +4133,94 @@ When you take your seat here, you’re not part of the room. You become the focu
   },
   {
     _id: {
+      $oid: 'monster30charwoodchair',
+    },
+    title: 'Monster 3.0 Charwood Chair',
+    group: 'monster_3.0',
+    material: 'Burnt Wood & Fur Fabric',
+    collabtext: 'Dimensions',
+    collablink: 'https://dimensionsfurniture.in/collections/monster-collection/',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUVOfTglleJz0jfKoyVd9HNhC5wFQ4OrBi2UkD',
+    images: [
+      {
+        fileName: 'dchair.png',
+        filePath: '/monster_3/dchair.png',
+        _id: {
+          $oid: 'm30_charwood_dchair',
+        },
+      },
+      {
+        fileName: 'dchair1.jpg',
+        filePath: '/monster_3/dchair1.jpg',
+        _id: {
+          $oid: 'm30_charwood_dchair1',
+        },
+      },
+      {
+        fileName: 'dchair2.jpg',
+        filePath: '/monster_3/dchair2.jpg',
+        _id: {
+          $oid: 'm30_charwood_dchair2',
+        },
+      },
+      {
+        fileName: 'dchair3.jpg',
+        filePath: '/monster_3/dchair3.jpg',
+        _id: {
+          $oid: 'm30_charwood_dchair3',
+        },
+      },
+      {
+        fileName: 'dchair4.jpg',
+        filePath: '/monster_3/dchair4.jpg',
+        _id: {
+          $oid: 'm30_charwood_dchair4',
+        },
+      },
+      {
+        fileName: 'dchair5.jpg',
+        filePath: '/monster_3/dchair5.jpg',
+        _id: {
+          $oid: 'm30_charwood_dchair5',
+        },
+      },
+      {
+        fileName: 'dchair6.jpg',
+        filePath: '/monster_3/dchair6.jpg',
+        _id: {
+          $oid: 'm30_charwood_dchair6',
+        },
+      },
+      {
+        fileName: 'dchair7.jpg',
+        filePath: '/monster_3/dchair7.jpg',
+        _id: {
+          $oid: 'm30_charwood_dchair7',
+        },
+      },
+      {
+        fileName: 'dchair8.jpg',
+        filePath: '/monster_3/dchair8.jpg',
+        _id: {
+          $oid: 'm30_charwood_dchair8',
+        },
+      },
+      {
+        fileName: 'dchair9.jpg',
+        filePath: '/monster_3/dchair9.jpg',
+        _id: {
+          $oid: 'm30_charwood_dchair9',
+        },
+      },
+    ],
+    description: `Defined by bold curves and raw gradients, the Monster Chair embodies
+primal comfort and sculptural presence. A design that commands
+attention while grounding any space with its elemental form`,
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU1LwB9ZmcNbALVg2tCIRm5fi0793BwZH8PYyx',
+    __v: 0,
+  },
+  {
+    _id: {
       $oid: '67b590d0e03cc2c55c624a5e',
     },
     title: 'monster 3.0 Gattoo Chair',
