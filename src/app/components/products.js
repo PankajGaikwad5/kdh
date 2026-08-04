@@ -1687,94 +1687,94 @@ If your space demands character, power, and a touch of rebellion, this is your n
     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUtJTy2o5Bu7NntcLbi8k4ldwr62VXy3PODz9j',
     __v: 0,
   },
-  {
-    _id: {
-      $oid: '67efa13d38f60435b89ba291',
-    },
-    title: 'monster humpty',
-    group: 'monster_collectibles',
-    material: 'Sand Casted Brass and Hand Blown Glass',
-    collabtext: 'Arjun Rathi',
-    collablink: 'https://www.arjunrathi.com/',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUohMIiwPd43VNTXj27bgOZneCUs9aBiY5x8vw',
-    images: [
-      {
-        fileName: '1743757629639-1.jpg',
-        filePath: '/assets/humpty.png',
-        _id: {
-          $oid: '67efa13d38f60435b89ba292',
-        },
-        thumbnail: '/assets/products/thumbnails/humpty.png',
-      },
-      {
-        fileName: '1743757629639-1.jpg',
-        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUBWqc6q3qeoXrYV82Q6T5Enb4WD1LwdAJjzPk',
-        _id: {
-          $oid: '67efa13d38f60435b89ba292',
-        },
-        thumbnail: '/assets/products/thumbnails/humpty.png',
-      },
-      {
-        fileName: '1743757629639-1.jpg',
-        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWXoOG4rSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
-        _id: {
-          $oid: '67efa13d38f60435b89ba292',
-        },
-        thumbnail: '/assets/products/thumbnails/humpty.png',
-      },
-      {
-        fileName: '1743757629639-1.jpg',
-        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUte63Oq5Bu7NntcLbi8k4ldwr62VXy3PODz9j',
-        _id: {
-          $oid: '67efa13d38f60435b89ba292',
-        },
-        thumbnail: '/assets/products/thumbnails/humpty.png',
-      },
-      {
-        fileName: '1743757629639-1.jpg',
-        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUoMncgQPd43VNTXj27bgOZneCUs9aBiY5x8vw',
-        _id: {
-          $oid: '67efa13d38f60435b89ba292',
-        },
-        thumbnail: '/assets/products/thumbnails/humpty.png',
-      },
-      {
-        fileName: '1743757629639-1.jpg',
-        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU31wCqJvb7L0Z2G4mkrAFzE8uQjRclW5px9hX',
-        _id: {
-          $oid: '67efa13d38f60435b89ba292',
-        },
-        thumbnail: '/assets/products/thumbnails/humpty.png',
-      },
-      {
-        fileName: '1743757629639-1.jpg',
-        filePath: '/assets/products/1743757629639-1.jpg',
-        _id: {
-          $oid: '67efa13d38f60435b89ba292',
-        },
-        thumbnail: '/assets/products/thumbnails/1743757629639-1.jpg',
-      },
-      {
-        fileName: '1743757629642-2.jpg',
-        filePath: '/assets/products/1743757629642-2.jpg',
-        _id: {
-          $oid: '67efa13d38f60435b89ba293',
-        },
-        thumbnail: '/assets/products/thumbnails/1743757629642-2.jpg',
-      },
-      {
-        fileName: '1743757629643-3.jpg',
-        filePath: '/assets/products/1743757629643-3.jpg',
-        _id: {
-          $oid: '67efa13d38f60435b89ba294',
-        },
-        thumbnail: '/assets/products/thumbnails/1743757629643-3.jpg',
-      },
-    ],
-    description: 'The Monster Humpty Wall Sconce by Karan Desai Home reimagines wall lighting as a bold sculptural element within contemporary interiors. Handcrafted in polished brass and paired with a frosted glass globe, the piece introduces warmth, character, and playful presence to the interior of a modern home or residence. Its compact yet expressive form transforms a simple lighting fixture into a striking design moment on the wall. Designed by Karan Desai and made in India, this distinctive creation complements luxury interiors while standing as a remarkable collectible piece.',
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUohMIiwPd43VNTXj27bgOZneCUs9aBiY5x8vw',
-    __v: 0,
-  },
+  // {
+  //   _id: {
+  //     $oid: '67efa13d38f60435b89ba291',
+  //   },
+  //   title: 'monster humpty',
+  //   group: 'monster_collectibles',
+  //   material: 'Sand Casted Brass and Hand Blown Glass',
+  //   collabtext: 'Arjun Rathi',
+  //   collablink: 'https://www.arjunrathi.com/',
+  //   pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUohMIiwPd43VNTXj27bgOZneCUs9aBiY5x8vw',
+  //   images: [
+  //     {
+  //       fileName: '1743757629639-1.jpg',
+  //       filePath: '/assets/humpty.png',
+  //       _id: {
+  //         $oid: '67efa13d38f60435b89ba292',
+  //       },
+  //       thumbnail: '/assets/products/thumbnails/humpty.png',
+  //     },
+  //     {
+  //       fileName: '1743757629639-1.jpg',
+  //       filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUBWqc6q3qeoXrYV82Q6T5Enb4WD1LwdAJjzPk',
+  //       _id: {
+  //         $oid: '67efa13d38f60435b89ba292',
+  //       },
+  //       thumbnail: '/assets/products/thumbnails/humpty.png',
+  //     },
+  //     {
+  //       fileName: '1743757629639-1.jpg',
+  //       filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWXoOG4rSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
+  //       _id: {
+  //         $oid: '67efa13d38f60435b89ba292',
+  //       },
+  //       thumbnail: '/assets/products/thumbnails/humpty.png',
+  //     },
+  //     {
+  //       fileName: '1743757629639-1.jpg',
+  //       filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUte63Oq5Bu7NntcLbi8k4ldwr62VXy3PODz9j',
+  //       _id: {
+  //         $oid: '67efa13d38f60435b89ba292',
+  //       },
+  //       thumbnail: '/assets/products/thumbnails/humpty.png',
+  //     },
+  //     {
+  //       fileName: '1743757629639-1.jpg',
+  //       filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUoMncgQPd43VNTXj27bgOZneCUs9aBiY5x8vw',
+  //       _id: {
+  //         $oid: '67efa13d38f60435b89ba292',
+  //       },
+  //       thumbnail: '/assets/products/thumbnails/humpty.png',
+  //     },
+  //     {
+  //       fileName: '1743757629639-1.jpg',
+  //       filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU31wCqJvb7L0Z2G4mkrAFzE8uQjRclW5px9hX',
+  //       _id: {
+  //         $oid: '67efa13d38f60435b89ba292',
+  //       },
+  //       thumbnail: '/assets/products/thumbnails/humpty.png',
+  //     },
+  //     {
+  //       fileName: '1743757629639-1.jpg',
+  //       filePath: '/assets/products/1743757629639-1.jpg',
+  //       _id: {
+  //         $oid: '67efa13d38f60435b89ba292',
+  //       },
+  //       thumbnail: '/assets/products/thumbnails/1743757629639-1.jpg',
+  //     },
+  //     {
+  //       fileName: '1743757629642-2.jpg',
+  //       filePath: '/assets/products/1743757629642-2.jpg',
+  //       _id: {
+  //         $oid: '67efa13d38f60435b89ba293',
+  //       },
+  //       thumbnail: '/assets/products/thumbnails/1743757629642-2.jpg',
+  //     },
+  //     {
+  //       fileName: '1743757629643-3.jpg',
+  //       filePath: '/assets/products/1743757629643-3.jpg',
+  //       _id: {
+  //         $oid: '67efa13d38f60435b89ba294',
+  //       },
+  //       thumbnail: '/assets/products/thumbnails/1743757629643-3.jpg',
+  //     },
+  //   ],
+  //   description: 'The Monster Humpty Wall Sconce by Karan Desai Home reimagines wall lighting as a bold sculptural element within contemporary interiors. Handcrafted in polished brass and paired with a frosted glass globe, the piece introduces warmth, character, and playful presence to the interior of a modern home or residence. Its compact yet expressive form transforms a simple lighting fixture into a striking design moment on the wall. Designed by Karan Desai and made in India, this distinctive creation complements luxury interiors while standing as a remarkable collectible piece.',
+  //   dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUohMIiwPd43VNTXj27bgOZneCUs9aBiY5x8vw',
+  //   __v: 0,
+  // },
   {
     _id: {
       $oid: '67a5f8544da9b29cd0f10c31',

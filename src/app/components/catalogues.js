@@ -27,7 +27,7 @@ export const catalogues = [
   {
     group: 'serafini',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKURhBZLLE1fzw0AFxNe2UEaubVBY53GTv7kqpl',
-    image: '/assets/serafini.png',
+    image: '/serafinilogo.png',
     year: '2024-25',
   },
   {
@@ -57,7 +57,7 @@ export const catalogues = [
   {
     group: 'jina_shilp',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUNEigr4G5UuqxLjF0ygrW1ikRpXaHfGVvonDw',
-    image: '/assets/serafini.png',
+    image: '/serafinilogo.png',
     year: '2026',
   },
 ];

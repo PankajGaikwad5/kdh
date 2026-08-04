@@ -293,12 +293,12 @@ export const newImagePaths = [
     group: 'Monster Collectibles',
     productId: '67f4da6bd5986748ae8f34fe',
   },
-  {
-    name: 'Monster Humpty',
-    path: '/optimized/humpty.webp',
-    group: 'Monster Collectibles',
-    productId: '67efa13d38f60435b89ba291',
-  },
+  // {
+  //   name: 'Monster Humpty',
+  //   path: '/optimized/humpty.webp',
+  //   group: 'Monster Collectibles',
+  //   productId: '67efa13d38f60435b89ba291',
+  // },
   {
     name: 'KD Desk',
     path: '/optimized/kddesk.webp',
@@ -842,12 +842,12 @@ export const newImagePaths = [
         group: 'Monster Collectibles',
         productId: '67f4da6bd5986748ae8f34fe',
       },
-      {
-        name: 'Monster Humpty',
-        path: '/optimized/humpty.webp',
-        group: 'Monster Collectibles',
-        productId: '67efa13d38f60435b89ba291',
-      },
+      // {
+      //   name: 'Monster Humpty',
+      //   path: '/optimized/humpty.webp',
+      //   group: 'Monster Collectibles',
+      //   productId: '67efa13d38f60435b89ba291',
+      // },
       {
         name: 'KD Desk',
         path: '/optimized/kddesk.webp',
