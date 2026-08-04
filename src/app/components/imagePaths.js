@@ -486,10 +486,16 @@ export const newImagePaths = [
     productId: 'monster3sidetable',
   },
   {
-    name: 'Monster Dining Chair',
+    name: 'MONSTER DINING CHAIR BURNT OMBRÉ',
     path: '/m3/chair/1.webp',
     group: 'Monster 3.1',
-    productId: 'monster3diningchair',
+    productId: 'monster3diningchairburntombre',
+  },
+  {
+    name: 'MONSTER DINING CHAIR UPHOLSTERED',
+    path: '/m3/chair/14.webp',
+    group: 'Monster 3.1',
+    productId: 'monster3diningchairupholstered',
   },
   {
     name: 'Monster Yodaa Miami Edition',

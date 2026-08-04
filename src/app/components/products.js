@@ -7447,9 +7447,9 @@ Because even your side table should speak volumes.`,
   },
   {
     _id: {
-      $oid: 'monster3diningchair',
+      $oid: 'monster3diningchairburntombre',
     },
-    title: 'Monster 3.1 Dining Chair',
+    title: 'MONSTER DINING CHAIR BURNT OMBRÉ',
     group: 'monster_3.1',
     material: 'Burnt Wood & Fur Fabric',
     collabtext: 'Dimensions',
@@ -7484,6 +7484,25 @@ Because even your side table should speak volumes.`,
           $oid: 'm3_chair_4',
         },
       },
+    ],
+   
+    description: `Defined by bold curves and raw gradients, the Monster Chair embodies
+primal comfort and sculptural presence. A design that commands
+attention while grounding any space with its elemental form`,
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU1LwB9ZmcNbALVg2tCIRm5fi0793BwZH8PYyx',
+    __v: 0,
+  },
+  {
+    _id: {
+      $oid: 'monster3diningchairupholstered',
+    },
+    title: 'MONSTER DINING CHAIR UPHOLSTERED',
+    group: 'monster_3.1',
+    material: 'Burnt Wood & Fur Fabric',
+    collabtext: 'Dimensions',
+    collablink: 'https://dimensionsfurniture.in/collections/monster-collection/',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUVOfTglleJz0jfKoyVd9HNhC5wFQ4OrBi2UkD',
+    images: [
       {
         fileName: '14.webp',
         filePath: '/m3/chair/14.webp',
@@ -7527,14 +7546,11 @@ Because even your side table should speak volumes.`,
         },
       },
     ],
-    video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCOy3I6NvCdTRXkKq6It0VBFyceAso73JQWwnO',
-    description: `Not just a chair—a throne for the unapologetic. The Monster Dining Chair isn’t here to blend in; it’s here to dominate the table. 
-
-With its sculptural stance and indulgently textured surface, it redefines dining with drama and depth. 
-Bold yet comforting, it invites conversation, demands attention, and elevates every seat into a statement. 
-
-This isn’t about taking your place—it’s about owning it, one confident curve at a time.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQr4b0hCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
+  
+    description: `Defined by bold curves and raw gradients, the Monster Chair embodies
+primal comfort and sculptural presence. A design that commands
+attention while grounding any space with its elemental form`,
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUdsc7S7QLipXnNcaZzTWOmKke9BGF7gf2xIhq',
     __v: 0,
   },
   {
