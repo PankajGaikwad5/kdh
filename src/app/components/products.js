@@ -5937,6 +5937,7 @@ A symbol of restraint, rhythm, and remarkable design.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOq1Aido7NLjmh9XDF3ngvZxi87QRBuOfyKs60',
     __v: 0,
   },
+  /*
   {
     _id: {
       $oid: 'chaise-lounge',
@@ -6044,6 +6045,7 @@ A symbol of restraint, rhythm, and remarkable design.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOzuaZgH3drRCNOYV7h2kSoeU41wvlAyKEqG0T',
     __v: 0,
   },
+  */
   {
     _id: {
       $oid: 'marble-ball-console',

@@ -347,12 +347,12 @@ export const newImagePaths = [
     group: 'Matilda',
     productId: '86-chest-of-drawer',
   },
-  {
-    name: 'Chaise lounge',
-    path: '/optimized/chaiselongue.webp',
-    group: 'Matilda',
-    productId: 'chaise-lounge',
-  },
+  // {
+  //   name: 'Chaise lounge',
+  //   path: '/optimized/chaiselongue.webp',
+  //   group: 'Matilda',
+  //   productId: 'chaise-lounge',
+  // },
   {
     name: 'Marble Ball Console',
     path: '/optimized/marbleballconsole.webp',
@@ -884,12 +884,12 @@ export const newImagePaths = [
         group: 'Matilda',
         productId: '86-chest-of-drawer',
       },
-      {
-        name: 'Chaise lounge',
-        path: '/optimized/chaiselongue.webp',
-        group: 'Matilda',
-        productId: 'chaise-lounge',
-      },
+      // {
+      //   name: 'Chaise lounge',
+      //   path: '/optimized/chaiselongue.webp',
+      //   group: 'Matilda',
+      //   productId: 'chaise-lounge',
+      // },
       {
         name: 'Marble Ball Console',
         path: '/optimized/marbleballconsole.webp',
