@@ -42,7 +42,10 @@ const normalizeKey = (str) => {
   if (!str) return '';
   return str
     .toLowerCase()
+    .replace(/monstermearr/g, '')
     .replace(/\s+/g, '')
+    .replace(/and/g, '')
+    .replace(/bush/g, 'brush')
     .replace(/lavante/g, 'levante')
     .replace(/greenspider/g, 'spidergreen');
 };
@@ -60,20 +63,21 @@ export default function ProductDetailsClient({ product }) {
   const [showThumbnailGrid, setShowThumbnailGrid] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [selectedMarble, setSelectedMarble] = useState(() => {
-    if (product?.material !== 'Marble') return null;
+    if (product?.material !== 'Marble' && !product?.colorImages && !product?.colors) return null;
     // If the product explicitly sets defaultMarble (even to null), use that value
     // This allows products whose base isn't Banswara to start unselected (null → shows product.images)
-    return 'defaultMarble' in (product || {}) ? product.defaultMarble : 'Banswara';
+    return 'defaultMarble' in (product || {}) ? product.defaultMarble : (product?.material === 'Marble' ? 'Banswara' : null);
   });
 
-  // Calculate active images based on the selected marble variant
+  // Calculate active images based on the selected marble/color variant
   const activeImages = useMemo(() => {
-    if (selectedMarble && product?.marbleImages) {
+    const imagesSource = product?.marbleImages || product?.colorImages;
+    if (selectedMarble && imagesSource) {
       const targetKey = normalizeKey(selectedMarble);
-      const matchedKey = Object.keys(product.marbleImages).find(
+      const matchedKey = Object.keys(imagesSource).find(
         (key) => normalizeKey(key) === targetKey
       );
-      const marbleImagesData = matchedKey ? product.marbleImages[matchedKey] : null;
+      const marbleImagesData = matchedKey ? imagesSource[matchedKey] : null;
       if (marbleImagesData && marbleImagesData.length > 0) {
         return marbleImagesData.map((img, idx) => {
           if (typeof img === 'string') {
@@ -230,7 +234,7 @@ export default function ProductDetailsClient({ product }) {
 
   const handleSelectMarble = useCallback((marbleName) => {
     // Determine what the "default" state for this product is
-    const productDefault = 'defaultMarble' in (product || {}) ? product.defaultMarble : 'Banswara';
+    const productDefault = 'defaultMarble' in (product || {}) ? product.defaultMarble : (product?.material === 'Marble' ? 'Banswara' : null);
     setSelectedMarble((prev) => (prev === marbleName ? productDefault : marbleName));
     setCurrentIndex(0);
     setImageLoaded(false);
@@ -505,46 +509,49 @@ export default function ProductDetailsClient({ product }) {
                 </div>
               </div>
 
-              {product.material === 'Marble' && (
+              {(product.material === 'Marble' || (product.colors && product.colors.length > 0) || product.colorImages) && (
                 <div className='gsap-reveal flex flex-col gap-2'>
-                  <h2 className='text-lg mb-2'>MARBLES</h2>
+                  <h2 className='text-lg mb-2 uppercase tracking-wide font-medium'>
+                    {product.colors || product.colorImages ? 'COLOR VARIATIONS' : 'MARBLES'}
+                  </h2>
                   <div className='flex flex-wrap gap-4'>
-                    {marbles.map((marble) => {
-                      const isSelected = selectedMarble === marble.name;
+                    {(product.colors || marbles).map((option) => {
+                      const isSelected = selectedMarble === option.name;
+                      const imagesSource = product.colorImages || product.marbleImages;
                       const hasCustomImages = !!(
-                        product.marbleImages &&
+                        imagesSource &&
                         (() => {
-                          const targetKey = normalizeKey(marble.name);
-                          const matchedKey = Object.keys(product.marbleImages).find(
+                          const targetKey = normalizeKey(option.name);
+                          const matchedKey = Object.keys(imagesSource).find(
                             (key) => normalizeKey(key) === targetKey
                           );
-                          return matchedKey ? product.marbleImages[matchedKey].length > 0 : false;
+                          return matchedKey ? imagesSource[matchedKey].length > 0 : false;
                         })()
                       );
                       return (
                         <button
-                          key={marble.name}
-                          onClick={() => handleSelectMarble(marble.name)}
+                          key={option.name}
+                          onClick={() => handleSelectMarble(option.name)}
                           className='flex flex-col items-center text-center focus:outline-none group relative transition-transform duration-200 hover:scale-105'
                           title={
                             hasCustomImages
-                              ? `Click to view product in ${marble.name}`
-                              : `View ${marble.name} option`
+                              ? `Click to view product in ${option.name}`
+                              : `View ${option.name} option`
                           }
                         >
                           <div className='relative w-[70px] h-[70px] overflow-hidden rounded-md'>
                             <Image
                               width={70}
                               height={70}
-                              src={marble.src}
-                              alt={marble.name}
-                              className={`aspect-square object-cover transition-all duration-300 ${marble.rotate ? 'rotate-90' : ''
+                              src={option.src}
+                              alt={option.name}
+                              className={`aspect-square object-cover transition-all duration-300 ${option.rotate ? 'rotate-90' : ''
                                 } ${isSelected
                                   ? 'ring-2 ring-white ring-offset-2 ring-offset-black scale-95 opacity-100'
                                   : 'opacity-85 group-hover:opacity-100'
                                 }`}
                             />
-                            {/* Subtle dot to indicate this marble option has custom photos */}
+                            {/* Subtle dot to indicate this option has custom photos */}
                             {hasCustomImages && !isSelected && (
                               <span className='absolute bottom-1 right-1 w-2.5 h-2.5 bg-white border border-black rounded-full shadow' />
                             )}
@@ -555,17 +562,19 @@ export default function ProductDetailsClient({ product }) {
                                 : 'text-gray-400 group-hover:text-white'
                               }`}
                           >
-                            {marble.name}
+                            {option.name}
                           </p>
                         </button>
                       );
                     })}
                   </div>
-                  <AccordionMarbles
-                    selectedMarble={selectedMarble}
-                    onSelectMarble={handleSelectMarble}
-                    product={product}
-                  />
+                  {product.material === 'Marble' && (
+                    <AccordionMarbles
+                      selectedMarble={selectedMarble}
+                      onSelectMarble={handleSelectMarble}
+                      product={product}
+                    />
+                  )}
                 </div>
               )}
 

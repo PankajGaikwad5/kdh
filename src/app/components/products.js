@@ -7769,6 +7769,150 @@ It’s whimsical without being childish. Bold without being loud.
 
 The tactile yarn frame contrasts beautifully with the clean reflective glass, making it both a design statement and a conversation starter. Perfect for bedrooms, creative spaces, or anywhere that needs a bit of personality.`,
     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8QtKyI64oKUn37W6wsTlRmDBFhGrviIjcMxV',
+    colorImages: {
+      "originalblue": [
+            "/4.0/monstermirror/1.webp",
+            "/4.0/monstermirror/2.webp",
+            "/4.0/monstermirror/3.webp",
+            "/4.0/monstermirror/4.webp",
+            "/4.0/monstermirror/5.webp",
+            "/4.0/monstermirror/6.webp",
+            "/4.0/monstermirror/7.webp",
+            "/4.0/monstermirror/8.webp",
+            "/4.0/monstermirror/9.webp",
+            "/4.0/monstermirror/10.webp",
+            "/4.0/monstermirror/11.webp",
+            "/4.0/monstermirror/12.webp",
+            "/4.0/monstermirror/13.webp",
+            "/4.0/monstermirror/14.webp",
+            "/4.0/monstermirror/15.webp"
+      ],
+      "dalmatian": [
+            "/4.0/monstermirror/monstermearrdalmatian/mirror-44.webp",
+            "/4.0/monstermirror/monstermearrdalmatian/mirror-45.webp",
+            "/4.0/monstermirror/monstermearrdalmatian/mirror-53.webp"
+      ],
+      "emeraldgreen": [
+            "/4.0/monstermirror/monstermearremeraldgreen/mirroe-56.webp",
+            "/4.0/monstermirror/monstermearremeraldgreen/mirror-44.webp",
+            "/4.0/monstermirror/monstermearremeraldgreen/mirror-45.webp",
+            "/4.0/monstermirror/monstermearremeraldgreen/mirror-46.webp",
+            "/4.0/monstermirror/monstermearremeraldgreen/mirror-47.webp",
+            "/4.0/monstermirror/monstermearremeraldgreen/mirror-48.webp",
+            "/4.0/monstermirror/monstermearremeraldgreen/mirror-49.webp",
+            "/4.0/monstermirror/monstermearremeraldgreen/mirror-50.webp",
+            "/4.0/monstermirror/monstermearremeraldgreen/mirror-51.webp",
+            "/4.0/monstermirror/monstermearremeraldgreen/mirror-52.webp",
+            "/4.0/monstermirror/monstermearremeraldgreen/mirror-53.webp",
+            "/4.0/monstermirror/monstermearremeraldgreen/mirror-54.webp",
+            "/4.0/monstermirror/monstermearremeraldgreen/mirror-55.webp",
+            "/4.0/monstermirror/monstermearremeraldgreen/mirror-57.webp",
+            "/4.0/monstermirror/monstermearremeraldgreen/mirror-58.webp",
+            "/4.0/monstermirror/monstermearremeraldgreen/mirror-59.webp"
+      ],
+      "gold": [
+            "/4.0/monstermirror/monstermearrgold/mirror-44.webp",
+            "/4.0/monstermirror/monstermearrgold/mirror-45.webp",
+            "/4.0/monstermirror/monstermearrgold/mirror-46.webp",
+            "/4.0/monstermirror/monstermearrgold/mirror-47.webp",
+            "/4.0/monstermirror/monstermearrgold/mirror-48.webp",
+            "/4.0/monstermirror/monstermearrgold/mirror-49.webp",
+            "/4.0/monstermirror/monstermearrgold/mirror-50.webp",
+            "/4.0/monstermirror/monstermearrgold/mirror-51.webp",
+            "/4.0/monstermirror/monstermearrgold/mirror-52.webp",
+            "/4.0/monstermirror/monstermearrgold/mirror-53.webp",
+            "/4.0/monstermirror/monstermearrgold/mirror-54.webp",
+            "/4.0/monstermirror/monstermearrgold/mirror-55.webp",
+            "/4.0/monstermirror/monstermearrgold/mirror-56.webp",
+            "/4.0/monstermirror/monstermearrgold/mirror-57.webp",
+            "/4.0/monstermirror/monstermearrgold/mirror-58.webp",
+            "/4.0/monstermirror/monstermearrgold/mirror-59.webp"
+      ],
+      "grassandbrush": [
+            "/4.0/monstermirror/monstermearrgrassbush/mirror-44.webp",
+            "/4.0/monstermirror/monstermearrgrassbush/mirror-45.webp",
+            "/4.0/monstermirror/monstermearrgrassbush/mirror-46.webp",
+            "/4.0/monstermirror/monstermearrgrassbush/mirror-48.webp",
+            "/4.0/monstermirror/monstermearrgrassbush/mirror-49.webp",
+            "/4.0/monstermirror/monstermearrgrassbush/mirror-50.webp",
+            "/4.0/monstermirror/monstermearrgrassbush/mirror-51.webp",
+            "/4.0/monstermirror/monstermearrgrassbush/mirror-52.webp",
+            "/4.0/monstermirror/monstermearrgrassbush/mirror-53.webp",
+            "/4.0/monstermirror/monstermearrgrassbush/mirror-54.webp",
+            "/4.0/monstermirror/monstermearrgrassbush/mirror-55.webp",
+            "/4.0/monstermirror/monstermearrgrassbush/mirror-56.webp",
+            "/4.0/monstermirror/monstermearrgrassbush/mirror-57.webp",
+            "/4.0/monstermirror/monstermearrgrassbush/mirror-58.webp",
+            "/4.0/monstermirror/monstermearrgrassbush/mirror-59.webp",
+            "/4.0/monstermirror/monstermearrgrassbush/mirror47.webp"
+      ],
+      "silver": [
+            "/4.0/monstermirror/monstermearrsilver/mirror 44.webp",
+            "/4.0/monstermirror/monstermearrsilver/mirror-45.webp",
+            "/4.0/monstermirror/monstermearrsilver/mirror-46.webp",
+            "/4.0/monstermirror/monstermearrsilver/mirror-47.webp",
+            "/4.0/monstermirror/monstermearrsilver/mirror-48.webp",
+            "/4.0/monstermirror/monstermearrsilver/mirror-49.webp",
+            "/4.0/monstermirror/monstermearrsilver/mirror-50.webp",
+            "/4.0/monstermirror/monstermearrsilver/mirror-51.webp",
+            "/4.0/monstermirror/monstermearrsilver/mirror-52.webp",
+            "/4.0/monstermirror/monstermearrsilver/mirror-53.webp",
+            "/4.0/monstermirror/monstermearrsilver/mirror-54.webp",
+            "/4.0/monstermirror/monstermearrsilver/mirror-55.webp",
+            "/4.0/monstermirror/monstermearrsilver/mirror-56.webp",
+            "/4.0/monstermirror/monstermearrsilver/mirror-57.webp",
+            "/4.0/monstermirror/monstermearrsilver/mirror-58.webp",
+            "/4.0/monstermirror/monstermearrsilver/mirror-59.webp"
+      ],
+      "wine": [
+            "/4.0/monstermirror/monstermearrwine/mirror-44.webp",
+            "/4.0/monstermirror/monstermearrwine/mirror-48.webp",
+            "/4.0/monstermirror/monstermearrwine/mirror-49.webp",
+            "/4.0/monstermirror/monstermearrwine/mirror-50.webp",
+            "/4.0/monstermirror/monstermearrwine/mirror-51.webp",
+            "/4.0/monstermirror/monstermearrwine/mirror-52.webp",
+            "/4.0/monstermirror/monstermearrwine/mirror-53.webp",
+            "/4.0/monstermirror/monstermearrwine/mirror-54.webp",
+            "/4.0/monstermirror/monstermearrwine/mirror-55.webp",
+            "/4.0/monstermirror/monstermearrwine/mirror-56.webp",
+            "/4.0/monstermirror/monstermearrwine/mirror-57.webp",
+            "/4.0/monstermirror/monstermearrwine/mirror-58.webp",
+            "/4.0/monstermirror/monstermearrwine/mirror-59.webp",
+            "/4.0/monstermirror/monstermearrwine/mirror45.webp",
+            "/4.0/monstermirror/monstermearrwine/mirror46.webp",
+            "/4.0/monstermirror/monstermearrwine/mirror47.webp"
+      ]
+},
+    colors: [
+      {
+            "name": "Blue",
+            "src": "/4.0/monstermirror/1.webp"
+      },
+      {
+            "name": "Dalmatian",
+            "src": "/4.0/monstermirror/monstermearrdalmatian/mirror-44.webp"
+      },
+      {
+            "name": "Emerald Green",
+            "src": "/4.0/monstermirror/monstermearremeraldgreen/mirroe-56.webp"
+      },
+      {
+            "name": "Gold",
+            "src": "/4.0/monstermirror/monstermearrgold/mirror-44.webp"
+      },
+      {
+            "name": "Grass and Brush",
+            "src": "/4.0/monstermirror/monstermearrgrassbush/mirror-44.webp"
+      },
+      {
+            "name": "Silver",
+            "src": "/4.0/monstermirror/monstermearrsilver/mirror 44.webp"
+      },
+      {
+            "name": "Wine",
+            "src": "/4.0/monstermirror/monstermearrwine/mirror-44.webp"
+      }
+],
     __v: 0,
   },
   {
