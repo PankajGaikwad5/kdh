@@ -44,33 +44,10 @@ const normalizeKey = (str) => {
     .toLowerCase()
     .replace(/monstermearr/g, '')
     .replace(/\s+/g, '')
-    .replace(/^blue$/, 'originalblue')
     .replace(/and/g, '')
     .replace(/bush/g, 'brush')
     .replace(/lavante/g, 'levante')
     .replace(/greenspider/g, 'spidergreen');
-};
-
-const swipeConfidenceThreshold = 10000;
-const swipePower = (offset, velocity) => {
-  return Math.abs(offset) * velocity;
-};
-
-const slideVariants = {
-  enter: (direction) => ({
-    x: direction > 0 ? 1000 : -1000,
-    opacity: 0,
-  }),
-  center: {
-    zIndex: 1,
-    x: 0,
-    opacity: 1,
-  },
-  exit: (direction) => ({
-    zIndex: 0,
-    x: direction < 0 ? 1000 : -1000,
-    opacity: 0,
-  }),
 };
 
 // ThumbnailGrid Component (keeping original external component structure)
@@ -80,7 +57,6 @@ export default function ProductDetailsClient({ product }) {
   const router = useRouter();
   const { addToCart, removeFromCart, isInCart } = useCart();
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [direction, setDirection] = useState(0);
   const [showModal, setShowModal] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
   const [loadedImages, setLoadedImages] = useState(new Set());
@@ -196,13 +172,9 @@ export default function ProductDetailsClient({ product }) {
     // Set form load time for spam detection
     setFormLoadTime(Date.now());
 
-    // Keydown handlers
-    const handleKeyDown = (e) => {
-      if (e.key === 'Escape') router.back();
-      if (e.key === 'ArrowLeft') navigate('prev');
-      if (e.key === 'ArrowRight') navigate('next');
-    };
-    window.addEventListener('keydown', handleKeyDown);
+    // Escape key handler
+    const handleEsc = (e) => e.key === 'Escape' && router.back();
+    window.addEventListener('keydown', handleEsc);
 
     // Defer Facebook Pixel - load after page is interactive
     const fbTimeout = setTimeout(() => {
@@ -236,10 +208,10 @@ export default function ProductDetailsClient({ product }) {
     }, 3000);
 
     return () => {
-      window.removeEventListener('keydown', handleKeyDown);
+      window.removeEventListener('keydown', handleEsc);
       clearTimeout(fbTimeout);
     };
-  }, [router, navigate]);
+  }, [router]);
 
   // Preload active images whenever they change (e.g. when marble is selected)
   useEffect(() => {
@@ -280,13 +252,11 @@ export default function ProductDetailsClient({ product }) {
   );
 
   const navigate = useCallback(
-    (dir) => {
+    (direction) => {
       if (!totalMedia) return;
-      const isNext = dir === 'next';
-      setDirection(isNext ? 1 : -1);
       setImageLoaded(false);
       const newIndex =
-        isNext
+        direction === 'next'
           ? (currentIndex + 1) % totalMedia
           : currentIndex === 0
             ? totalMedia - 1
@@ -373,56 +343,35 @@ export default function ProductDetailsClient({ product }) {
                 </div>
               )}
 
-              <div className='relative w-full h-full overflow-hidden'>
-                <AnimatePresence initial={false} custom={direction} mode='popLayout'>
-                  <motion.div
-                    key={currentIndex}
-                    custom={direction}
-                    variants={slideVariants}
-                    initial='enter'
-                    animate='center'
-                    exit='exit'
-                    transition={{
-                      x: { type: 'spring', stiffness: 300, damping: 30 },
-                      opacity: { duration: 0.2 },
-                    }}
-                    drag='x'
-                    dragConstraints={{ left: 0, right: 0 }}
-                    dragElastic={1}
-                    onDragEnd={(e, { offset, velocity }) => {
-                      const swipe = swipePower(offset.x, velocity.x);
-                      if (swipe < -swipeConfidenceThreshold) {
-                        navigate('next');
-                      } else if (swipe > swipeConfidenceThreshold) {
-                        navigate('prev');
-                      }
-                    }}
-                    className='absolute inset-0 w-full h-full flex items-center justify-center'
-                  >
-                    {isVideoSlide && product.video ? (
-                      <video
-                        src={product.video}
-                        className='w-full h-full object-contain'
-                        controls
-                        onLoadedData={() => setImageLoaded(true)}
-                      />
-                    ) : (
-                      activeImages[currentIndex] && (
-                        <Image
-                          onClick={toggleFullscreen}
-                          src={activeImages[currentIndex].filePath}
-                          alt={product.title}
-                          fill
-                          className='object-contain cursor-pointer'
-                          sizes='(max-width: 768px) 100vw, 50vw'
-                          priority={true}
-                          quality={75}
-                          onLoad={() => setImageLoaded(true)}
-                        />
-                      )
-                    )}
-                  </motion.div>
-                </AnimatePresence>
+              <div
+                className='relative w-full h-full'
+                style={{
+                  opacity: imageLoaded ? 1 : 0,
+                  transition: 'opacity 0.4s ease',
+                }}
+              >
+                {isVideoSlide && product.video ? (
+                  <video
+                    src={product.video}
+                    className='w-full h-full object-contain'
+                    controls
+                    onLoadedData={() => setImageLoaded(true)}
+                  />
+                ) : (
+                  activeImages[currentIndex] && (
+                    <Image
+                      onClick={toggleFullscreen}
+                      src={activeImages[currentIndex].filePath}
+                      alt={product.title}
+                      fill
+                      className='object-contain'
+                      sizes='(max-width: 768px) 100vw, 50vw'
+                      priority={currentIndex === 0}
+                      quality={75}
+                      onLoad={() => setImageLoaded(true)}
+                    />
+                  )
+                )}
               </div>
 
               {/* Fullscreen Button */}
