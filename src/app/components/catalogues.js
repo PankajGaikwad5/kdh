@@ -32,7 +32,7 @@ export const catalogues = [
   },
   {
     group: 'monster_collectibles',
-    pdf: 'not available',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUvr2Zu70iQtznIlhRaFJ8jZ6p7xPg3bw9OrDV',
     image: '/assets/arjunrathilogo.png',
     year: '2024',
   },
