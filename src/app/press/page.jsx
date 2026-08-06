@@ -11,6 +11,14 @@ import Footer from '../components/Footer';
 const magazines = [
   {
     id: 1,
+    name: 'Living Etc',
+    issue: 'June 2026 Issue',
+    coverImage: '/press/mags/livingetcjunecover.webp',
+    featuredImages: ['/press/mags/livingetcjunefeature.webp'],
+    description: 'Living Etc featuring Jina shilp Collection',
+  },
+  {
+    id: 2,
     name: 'Cover',
     issue: 'June 2026 Issue',
     coverImage: '/press/mags/cover1.webp',
@@ -18,7 +26,7 @@ const magazines = [
     description: 'A special feature showcasing the unique design details across multiple editorial spreads.',
   },
   {
-    id: 2,
+    id: 3,
     name: 'India Today Home',
     issue: 'June 2026 Issue',
     coverImage: '/press/mags/ithome1.webp',
@@ -26,7 +34,7 @@ const magazines = [
     description: 'Featuring the custom KDH Marble Console collection and minimal design aesthetics in a high-end luxury residence.',
   },
   {
-    id: 3,
+    id: 4,
     name: 'Fortune India',
     issue: 'June 2026 Issue',
     coverImage: '/press/mags/fortune1.webp',
