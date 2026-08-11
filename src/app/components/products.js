@@ -705,7 +705,7 @@ Bold. Balanced. Built for spaces that don’t settle for ordinary.`,
       },
     ],
     description: 'To be edited.',
-    dimensions: '#',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUlaNCJNc9DZL6up3G75dgCY2rJjaQFwifBAEk',
     __v: 0,
   },
   {
