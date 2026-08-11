@@ -1,5 +1,6 @@
 'use client';
 import React, { createContext, useContext, useState, useEffect } from 'react';
+import { getCollectionName } from '@/lib/utils';
 
 const CartContext = createContext();
 
@@ -28,20 +29,25 @@ export function CartProvider({ children }) {
   }, [cart, isInitialized]);
 
   const addToCart = (product, selectedMarble) => {
+    const productId = product._id?.$oid || product._id || product.id;
+    const collectionName = getCollectionName(product);
+
     setCart((prev) => {
       // check if item already exists with the same marble selection
       const exists = prev.some(
-        (item) => item.id === product._id.$oid && item.selectedMarble === selectedMarble
+        (item) => item.id === productId && item.selectedMarble === selectedMarble
       );
       if (exists) return prev;
       return [
         ...prev,
         {
-          id: product._id.$oid,
+          id: productId,
           title: product.title,
-          image: product.images?.[0]?.filePath || '/placeholder.png',
+          image: product.images?.[0]?.filePath || product.image || '/placeholder.png',
           selectedMarble: selectedMarble || null,
           material: product.material,
+          group: product.group || '',
+          collectionName: collectionName,
         },
       ];
     });

@@ -1,11 +1,19 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import dns from 'dns';
 import {
   validateName,
   validateEmail,
   validateMessage,
   checkRateLimit,
 } from '../../utils/spamDetection';
+
+// Force Node to prefer IPv4 over IPv6 to resolve DNS lookup failures on Windows (getaddrinfo ENOTFOUND / ETIMEDOUT smtp.gmail.com)
+try {
+  dns.setDefaultResultOrder('ipv4first');
+} catch (e) {
+  // Ignore in older Node versions
+}
 
 export async function POST(req) {
   const { values, honeypot, timestamp } = await req.json();
@@ -37,7 +45,7 @@ export async function POST(req) {
     req.headers.get('x-forwarded-for') ||
     req.headers.get('x-real-ip') ||
     'unknown';
-  const rateLimitCheck = checkRateLimit(ip, 3, 3600000); // 3 submissions per hour
+  const rateLimitCheck = checkRateLimit(ip, 10, 3600000); // Allow up to 10 submissions per hour in testing
 
   if (!rateLimitCheck.allowed) {
     console.log('Spam detected: Rate limit exceeded for IP:', ip);
@@ -75,64 +83,89 @@ export async function POST(req) {
       );
     }
   }
+
+  // Sanitize environment variables by stripping quotes
+  const emailUser = (process.env.EMAIL || '').replace(/['"]/g, '').trim();
+  const emailPass = (process.env.PASS || '').replace(/['"]/g, '').trim();
+  const recipient1 = (process.env.REMAIL || '').replace(/['"]/g, '').trim();
+  const recipient2 = (process.env.SECONDEMAIL || '').replace(/['"]/g, '').trim();
+
+  const recipients = [recipient1, recipient2].filter(Boolean).join(', ');
+
   const transporter = nodemailer.createTransport({
-    service: 'gmail', // or another email provider
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
     auth: {
-      user: process.env.EMAIL, // your email address
-      pass: process.env.PASS, // app-specific password
+      user: emailUser,
+      pass: emailPass,
     },
+    connectionTimeout: 8000,
+    greetingTimeout: 8000,
+    socketTimeout: 8000,
   });
 
   let locationText = '';
-  try {
-    let fetchUrl = 'http://ip-api.com/json/';
-    // If it's a real IP from a production request, use it.
-    // Otherwise (localhost/unknown), it will use the server's external IP for testing.
-    if (ip && ip !== 'unknown' && ip !== '::1' && ip !== '127.0.0.1') {
+  // Only attempt geolocation lookup for real remote IP addresses (not localhost)
+  if (ip && ip !== 'unknown' && ip !== '::1' && ip !== '127.0.0.1' && !ip.includes('localhost')) {
+    try {
       const cleanIp = ip.split(',')[0].trim();
-      fetchUrl = `http://ip-api.com/json/${cleanIp}`;
-    }
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 2000);
 
-    const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 3000);
+      const geoRes = await fetch(`http://ip-api.com/json/${cleanIp}`, { signal: controller.signal });
+      clearTimeout(timeoutId);
 
-    const geoRes = await fetch(fetchUrl, { signal: controller.signal });
-    clearTimeout(timeoutId);
-
-    if (geoRes.ok) {
-      const geoData = await geoRes.json();
-      if (geoData.status === 'success') {
-        locationText = `\nLocation: ${geoData.city}, ${geoData.regionName}`;
+      if (geoRes.ok) {
+        const geoData = await geoRes.json();
+        if (geoData.status === 'success') {
+          locationText = `\nLocation: ${geoData.city}, ${geoData.regionName}`;
+        }
       }
+    } catch (error) {
+      console.error('Error fetching location:', error.name === 'AbortError' ? 'Geolocation lookup timed out' : error);
     }
-  } catch (error) {
-    console.error('Error fetching location:', error.name === 'AbortError' ? 'Geolocation lookup timed out' : error);
   }
 
   // Set up email options
   const mailOptions = {
-    from: `Karan Desai Home ${subject} Form${email}`, // sender's email
-    to: `${process.env.REMAIL},  ${process.env.SECONDEMAIL}`, // recipient's email
-    subject: subject,
-    text: `Name: ${name}\nEmail: ${email}\nContact No.: ${number}\nMessage: ${message}\n${
-      product ? `product: ${product}` : ''
+    from: `Karan Desai Home <${emailUser}>`,
+    to: recipients || emailUser,
+    replyTo: email,
+    subject: subject || 'Cart Inquiry',
+    text: `Name: ${name}\nEmail: ${email}\nContact No.: ${number}\nMessage: ${message || ''}\n${
+      product ? `Product(s): ${product}` : ''
     }${locationText}`,
   };
+
   try {
     await transporter.sendMail(mailOptions);
     return NextResponse.json(
       { msg: 'Email sent successfully!' },
       { status: 200 },
     );
-
-    // await connectMongoDB();
-
-    return NextResponse.json({ msg: 'Project saved successfully' });
   } catch (error) {
-    console.error('Error saving project:', error);
+    console.error('Error sending email:', error);
+
+    // Fallback for development mode when SMTP is unreachable or fails
+    if (process.env.NODE_ENV === 'development') {
+      console.log('[DEV FALLBACK] Enquiry received:', {
+        name,
+        email,
+        number,
+        product,
+        message,
+      });
+      return NextResponse.json(
+        { msg: 'Enquiry submitted successfully! (Development Mode)' },
+        { status: 200 },
+      );
+    }
+
     return NextResponse.json(
-      { error: 'Error saving project' },
+      { error: 'Failed to send email. Please try again later.' },
       { status: 500 },
     );
   }
 }
+

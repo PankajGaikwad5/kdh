@@ -23,6 +23,7 @@ import { Textarea } from '../../components/ui/textarea';
 import ThumbnailGrid from '@/app/components/ThumbnailGrid';
 import Navbar from '@/app/components/Navbar';
 import { useCart } from '@/app/context/CartContext';
+import { getCollectionName } from '@/lib/utils';
 
 const AccordionMarbles = dynamic(
   () => import('@/app/components/AccordionMarbles').then((mod) => mod.AccordionMarbles),
@@ -68,6 +69,8 @@ export default function ProductDetailsClient({ product }) {
     // This allows products whose base isn't Banswara to start unselected (null → shows product.images)
     return 'defaultMarble' in (product || {}) ? product.defaultMarble : (product?.material === 'Marble' ? 'Banswara' : null);
   });
+
+  const collectionName = useMemo(() => getCollectionName(product), [product]);
 
   // Calculate active images based on the selected marble/color variant
   const activeImages = useMemo(() => {
@@ -116,6 +119,16 @@ export default function ProductDetailsClient({ product }) {
       product: '',
     },
   });
+
+  useEffect(() => {
+    if (product) {
+      const details = [];
+      if (collectionName) details.push(`Collection: ${collectionName}`);
+      if (selectedMarble) details.push(`Variant: ${selectedMarble}`);
+      const productStr = `${product.title}${details.length ? ` (${details.join(', ')})` : ''}`;
+      form.setValue('product', productStr);
+    }
+  }, [product, selectedMarble, collectionName, form]);
 
   // GSAP entrance animations
   useEffect(() => {

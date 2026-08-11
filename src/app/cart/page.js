@@ -7,6 +7,7 @@ import { Trash2 } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { useCart } from '../context/CartContext';
+import { getCollectionName } from '@/lib/utils';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
@@ -112,7 +113,11 @@ export default function CartPage() {
   async function onSubmit(values) {
     setLoading(true);
     const productNames = cart.map(item => {
-      return `${item.title}${item.selectedMarble ? ` (${item.selectedMarble})` : ''}`;
+      const collectionName = item.collectionName || getCollectionName(item);
+      const details = [];
+      if (collectionName) details.push(`Collection: ${collectionName}`);
+      if (item.selectedMarble) details.push(`Variant: ${item.selectedMarble}`);
+      return `${item.title}${details.length ? ` (${details.join(', ')})` : ''}`;
     }).join(', ');
 
     try {
@@ -208,44 +213,54 @@ export default function CartPage() {
                   </p>
                   
                   <div className='space-y-4 max-h-[50vh] overflow-y-auto pr-2 custom-scrollbar'>
-                    {cart.map((item, index) => (
-                      <div
-                        key={`${item.id}-${item.selectedMarble || index}`}
-                        className='flex gap-4 p-3 border border-gray-800 rounded-md items-center relative group transition-all duration-300 hover:border-gray-600 bg-black/40'
-                      >
-                        <div className='relative w-20 h-20 bg-black overflow-hidden border border-gray-800 rounded-sm flex-shrink-0'>
-                          <Image
-                            src={item.image}
-                            alt={item.title}
-                            fill
-                            className='object-contain'
-                            sizes='80px'
-                          />
-                        </div>
-
-                        <div className='flex-1 min-w-0 pr-8'>
-                          <h2 className='text-sm font-semibold tracking-wider text-gray-200 capitalize truncate mb-1'>
-                            {item.title}
-                          </h2>
-                          <p className='text-xs text-gray-400 tracking-normal font-light'>
-                            Material: <span className='text-white'>{item.material}</span>
-                          </p>
-                          {item.selectedMarble && (
-                            <p className='text-xs text-gray-400 tracking-normal mt-0.5 font-light'>
-                              Variant: <span className='text-white'>{item.selectedMarble}</span>
-                            </p>
-                          )}
-                        </div>
-
-                        <button
-                          onClick={() => removeFromCart(item.id, item.selectedMarble)}
-                          className='text-gray-500 hover:text-red-500 transition-colors p-2 absolute right-2 top-1/2 -translate-y-1/2'
-                          title='Remove item'
+                    {cart.map((item, index) => {
+                      const collectionName = item.collectionName || getCollectionName(item);
+                      return (
+                        <div
+                          key={`${item.id}-${item.selectedMarble || index}`}
+                          className='flex gap-4 p-3 border border-gray-800 rounded-md items-center relative group transition-all duration-300 hover:border-gray-600 bg-black/40'
                         >
-                          <Trash2 size={16} />
-                        </button>
-                      </div>
-                    ))}
+                          <div className='relative w-20 h-20 bg-black overflow-hidden border border-gray-800 rounded-sm flex-shrink-0'>
+                            <Image
+                              src={item.image}
+                              alt={item.title}
+                              fill
+                              className='object-contain'
+                              sizes='80px'
+                            />
+                          </div>
+
+                          <div className='flex-1 min-w-0 pr-8'>
+                            <h2 className='text-sm font-semibold tracking-wider text-gray-200 capitalize truncate mb-1'>
+                              {item.title}
+                            </h2>
+                            {collectionName && (
+                              <p className='text-xs text-gray-400 tracking-normal font-light mb-0.5'>
+                                Collection: <span className='text-white'>{collectionName}</span>
+                              </p>
+                            )}
+                            {item.material && (
+                              <p className='text-xs text-gray-400 tracking-normal font-light'>
+                                Material: <span className='text-white'>{item.material}</span>
+                              </p>
+                            )}
+                            {item.selectedMarble && (
+                              <p className='text-xs text-gray-400 tracking-normal mt-0.5 font-light'>
+                                Variant: <span className='text-white'>{item.selectedMarble}</span>
+                              </p>
+                            )}
+                          </div>
+
+                          <button
+                            onClick={() => removeFromCart(item.id, item.selectedMarble)}
+                            className='text-gray-500 hover:text-red-500 transition-colors p-2 absolute right-2 top-1/2 -translate-y-1/2'
+                            title='Remove item'
+                          >
+                            <Trash2 size={16} />
+                          </button>
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
 
