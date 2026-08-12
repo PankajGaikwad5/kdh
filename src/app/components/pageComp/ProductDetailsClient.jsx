@@ -338,11 +338,11 @@ export default function ProductDetailsClient({ product }) {
         </button>
       </header>
 
-      <div className='grid md:grid-cols-2 pt-14'>
+      <div className='grid md:grid-cols-2 items-start pt-14'>
         <section
           ref={imageRef}
           className={`${isFullscreen ? 'fixed inset-0 z-50 bg-black' : 'relative'
-            } p-4 flex items-center justify-center`}
+            } p-4 flex items-center justify-center mt-4`}
         >
           {(activeImages?.length > 0 || product.video) && (
             <div
