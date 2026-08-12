@@ -38,7 +38,7 @@ export const catalogues = [
   },
   {
     group: 'matilda_2024',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUD2vKH58FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU2ISdq3XaDNvkE7HG39CYgFqmlMw2jVAoxdcn',
     image: '/assets/fm.png',
     year: '2024',
   },
