@@ -15,7 +15,7 @@ const magazines = [
     issue: 'August 2026 Issue',
     coverImage: '/press/mags/ezineaug26cover.webp',
     featuredImages: ['/press/mags/ezineaug262.webp','/press/mags/ezineaug263.webp',],
-    description: 'Living Etc featuring Jina shilp Collection',
+    description: 'Ezine Magazine featuring Monster 3.0 Collection',
   },
   {
     id: 2,
