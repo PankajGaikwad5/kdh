@@ -660,6 +660,73 @@ Bold. Balanced. Built for spaces that don’t settle for ordinary.`,
     group: 'matilda_2024',
     material: 'Marble',
     pdf: '/m23/23ct3.pdf',
+    defaultMarble: 'Both Banswara',
+    marbles: [
+      {
+        name: 'Both Banswara',
+        src: '/marbles/banswara.webp',
+      },
+      {
+        name: 'Both Rosso Levante',
+        src: '/marbles/indianrossolevante.webp',
+      },
+      {
+        name: 'Banswara & Beige',
+        swatches: [
+          '/marbles/banswara.webp',
+          '/marbles/italianbeigetravertine.webp',
+        ],
+      },
+      {
+        name: 'Banswara & Black Bheslana',
+        swatches: [
+          '/marbles/banswara.webp',
+          '/marbles/indianblackbheslana.webp',
+        ],
+      },
+      {
+        name: 'Banswara & Rosso Levante',
+        swatches: [
+          '/marbles/banswara.webp',
+          '/marbles/indianrossolevante.webp',
+        ],
+      },
+      {
+        name: 'Banswara & Spider Green',
+        swatches: [
+          '/marbles/banswara.webp',
+          '/marbles/spidergreen.webp',
+        ],
+      },
+      {
+        name: 'Indian Black Bheslana & Rosso Levante',
+        swatches: [
+          '/marbles/indianblackbheslana.webp',
+          '/marbles/indianrossolevante.webp',
+        ],
+      },
+      {
+        name: 'Italian Beige Travertine & Rosso Levante',
+        swatches: [
+          '/marbles/italianbeigetravertine.webp',
+          '/marbles/indianrossolevante.webp',
+        ],
+      },
+      {
+        name: 'Marquina & Banswara',
+        swatches: [
+          '/marbles/marquina.webp',
+          '/marbles/banswara.webp',
+        ],
+      },
+      {
+        name: 'Marquina & Rosso Levante',
+        swatches: [
+          '/marbles/marquina.webp',
+          '/marbles/indianrossolevante.webp',
+        ],
+      },
+    ],
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -704,6 +771,57 @@ Bold. Balanced. Built for spaces that don’t settle for ordinary.`,
         },
       },
     ],
+    marbleImages: {
+      bothbanswara: [
+        '/marbles/newmatilda2024/center_table_3/both banswara/1.webp',
+        '/marbles/newmatilda2024/center_table_3/both banswara/2.webp',
+        '/marbles/newmatilda2024/center_table_3/both banswara/3.webp',
+      ],
+      bothrossolevante: [
+        '/marbles/newmatilda2024/center_table_3/both rosso levante/1.webp',
+        '/marbles/newmatilda2024/center_table_3/both rosso levante/2.webp',
+        '/marbles/newmatilda2024/center_table_3/both rosso levante/3.webp',
+      ],
+      banswarabeige: [
+        '/marbles/newmatilda2024/center_table_3/banswara and beige/1.webp',
+        '/marbles/newmatilda2024/center_table_3/banswara and beige/2.webp',
+        '/marbles/newmatilda2024/center_table_3/banswara and beige/3.webp',
+      ],
+      banswarablackbheslana: [
+        '/marbles/newmatilda2024/center_table_3/banswara and black bheslana/1.webp',
+        '/marbles/newmatilda2024/center_table_3/banswara and black bheslana/2.webp',
+        '/marbles/newmatilda2024/center_table_3/banswara and black bheslana/3.webp',
+      ],
+      banswararossolevante: [
+        '/marbles/newmatilda2024/center_table_3/banswara and rosso levante/1.webp',
+        '/marbles/newmatilda2024/center_table_3/banswara and rosso levante/2.webp',
+        '/marbles/newmatilda2024/center_table_3/banswara and rosso levante/3.webp',
+      ],
+      banswaraspidergreen: [
+        '/marbles/newmatilda2024/center_table_3/banswara and spider green/1.webp',
+        '/marbles/newmatilda2024/center_table_3/banswara and spider green/2.webp',
+      ],
+      indianblackbheslanarossolevante: [
+        '/marbles/newmatilda2024/center_table_3/indian black bheslana and roso levante/1.webp',
+        '/marbles/newmatilda2024/center_table_3/indian black bheslana and roso levante/2.webp',
+        '/marbles/newmatilda2024/center_table_3/indian black bheslana and roso levante/3.webp',
+      ],
+      italianbeigetravertinerossolevante: [
+        '/marbles/newmatilda2024/center_table_3/italian beige travertine and rosso levante/1.webp',
+        '/marbles/newmatilda2024/center_table_3/italian beige travertine and rosso levante/2.webp',
+        '/marbles/newmatilda2024/center_table_3/italian beige travertine and rosso levante/3.webp',
+      ],
+      marquinabanswara: [
+        '/marbles/newmatilda2024/center_table_3/marquina and banswara/1.webp',
+        '/marbles/newmatilda2024/center_table_3/marquina and banswara/2.webp',
+        '/marbles/newmatilda2024/center_table_3/marquina and banswara/3.webp',
+      ],
+      marquinarossolevante: [
+        '/marbles/newmatilda2024/center_table_3/marquina and rosso levante/1.webp',
+        '/marbles/newmatilda2024/center_table_3/marquina and rosso levante/2.webp',
+        '/marbles/newmatilda2024/center_table_3/marquina and rosso levante/3.webp',
+      ],
+    },
     description: 'Contrasting stones come together in a fluid architectural composition in the Matilda 2024 Center Table 3. Its carved curves and defined edges create a strong visual balance between movement and solidity. Handcrafted by Karan Desai, every table carries its own natural stone variations, making each piece entirely individual.',
     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUlaNCJNc9DZL6up3G75dgCY2rJjaQFwifBAEk',
     __v: 0,

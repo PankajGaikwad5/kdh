@@ -44,10 +44,12 @@ const normalizeKey = (str) => {
   return str
     .toLowerCase()
     .replace(/monstermearr/g, '')
-    .replace(/\s+/g, '')
+    .replace(/&/g, '')
     .replace(/and/g, '')
+    .replace(/\s+/g, '')
     .replace(/bush/g, 'brush')
     .replace(/lavante/g, 'levante')
+    .replace(/roso/g, 'rosso')
     .replace(/greenspider/g, 'spidergreen');
 };
 
@@ -64,10 +66,14 @@ export default function ProductDetailsClient({ product }) {
   const [showThumbnailGrid, setShowThumbnailGrid] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [selectedMarble, setSelectedMarble] = useState(() => {
-    if (product?.material !== 'Marble' && !product?.colorImages && !product?.colors) return null;
+    if (product?.material !== 'Marble' && !product?.colorImages && !product?.colors && !product?.marbles) return null;
     // If the product explicitly sets defaultMarble (even to null), use that value
     // This allows products whose base isn't Banswara to start unselected (null → shows product.images)
-    return 'defaultMarble' in (product || {}) ? product.defaultMarble : (product?.material === 'Marble' ? 'Banswara' : null);
+    return 'defaultMarble' in (product || {}) 
+      ? product.defaultMarble 
+      : (product?.marbles && product.marbles.length > 0)
+        ? product.marbles[0].name
+        : (product?.material === 'Marble' ? 'Banswara' : null);
   });
 
   const collectionName = useMemo(() => getCollectionName(product), [product]);
@@ -247,7 +253,11 @@ export default function ProductDetailsClient({ product }) {
 
   const handleSelectMarble = useCallback((marbleName) => {
     // Determine what the "default" state for this product is
-    const productDefault = 'defaultMarble' in (product || {}) ? product.defaultMarble : (product?.material === 'Marble' ? 'Banswara' : null);
+    const productDefault = 'defaultMarble' in (product || {}) 
+      ? product.defaultMarble 
+      : (product?.marbles && product.marbles.length > 0)
+        ? product.marbles[0].name
+        : (product?.material === 'Marble' ? 'Banswara' : null);
     setSelectedMarble((prev) => (prev === marbleName ? productDefault : marbleName));
     setCurrentIndex(0);
     setImageLoaded(false);
@@ -522,13 +532,17 @@ export default function ProductDetailsClient({ product }) {
                 </div>
               </div>
 
-              {(product.material === 'Marble' || (product.colors && product.colors.length > 0) || product.colorImages) && (
+              {(product.material === 'Marble' || (product.colors && product.colors.length > 0) || product.colorImages || (product.marbles && product.marbles.length > 0)) && (
                 <div className='gsap-reveal flex flex-col gap-2'>
                   <h2 className='text-lg mb-2 uppercase tracking-wide font-medium'>
-                    {product.colors || product.colorImages ? 'COLOR VARIATIONS' : 'MARBLES'}
+                    {product.colors || product.colorImages
+                      ? 'COLOR VARIATIONS'
+                      : product.marbles
+                        ? 'MARBLE COMBINATIONS'
+                        : 'MARBLES'}
                   </h2>
                   <div className='flex flex-wrap gap-4'>
-                    {(product.colors || marbles).map((option) => {
+                    {(product.marbles || product.colors || marbles).map((option) => {
                       const isSelected = selectedMarble === option.name;
                       const imagesSource = product.colorImages || product.marbleImages;
                       const hasCustomImages = !!(
@@ -552,28 +566,64 @@ export default function ProductDetailsClient({ product }) {
                               : `View ${option.name} option`
                           }
                         >
-                          <div className='relative w-[70px] h-[70px] overflow-hidden rounded-md'>
-                            <Image
-                              width={70}
-                              height={70}
-                              src={option.src}
-                              alt={option.name}
-                              className={`aspect-square object-cover transition-all duration-300 ${option.rotate ? 'rotate-90' : ''
-                                } ${isSelected
+                          {option.swatches && option.swatches.length === 2 ? (
+                            <div
+                              className={`relative w-[70px] h-[70px] overflow-hidden rounded-md flex transition-all duration-300 ${
+                                isSelected
                                   ? 'ring-2 ring-white ring-offset-2 ring-offset-black scale-95 opacity-100'
                                   : 'opacity-85 group-hover:opacity-100'
+                              }`}
+                            >
+                              <div className='relative w-1/2 h-full overflow-hidden border-r border-black/40'>
+                                <Image
+                                  src={option.swatches[0]}
+                                  alt={`${option.name} 1`}
+                                  fill
+                                  className='object-cover'
+                                  sizes='35px'
+                                />
+                              </div>
+                              <div className='relative w-1/2 h-full overflow-hidden'>
+                                <Image
+                                  src={option.swatches[1]}
+                                  alt={`${option.name} 2`}
+                                  fill
+                                  className='object-cover'
+                                  sizes='35px'
+                                />
+                              </div>
+                              {/* Subtle dot to indicate this option has custom photos */}
+                              {hasCustomImages && !isSelected && (
+                                <span className='absolute bottom-1 right-1 w-2.5 h-2.5 bg-white border border-black rounded-full shadow z-10' />
+                              )}
+                            </div>
+                          ) : (
+                            <div className='relative w-[70px] h-[70px] overflow-hidden rounded-md'>
+                              <Image
+                                width={70}
+                                height={70}
+                                src={option.src || option.swatches?.[0]}
+                                alt={option.name}
+                                className={`aspect-square object-cover transition-all duration-300 ${
+                                  option.rotate ? 'rotate-90' : ''
+                                } ${
+                                  isSelected
+                                    ? 'ring-2 ring-white ring-offset-2 ring-offset-black scale-95 opacity-100'
+                                    : 'opacity-85 group-hover:opacity-100'
                                 }`}
-                            />
-                            {/* Subtle dot to indicate this option has custom photos */}
-                            {hasCustomImages && !isSelected && (
-                              <span className='absolute bottom-1 right-1 w-2.5 h-2.5 bg-white border border-black rounded-full shadow' />
-                            )}
-                          </div>
+                              />
+                              {/* Subtle dot to indicate this option has custom photos */}
+                              {hasCustomImages && !isSelected && (
+                                <span className='absolute bottom-1 right-1 w-2.5 h-2.5 bg-white border border-black rounded-full shadow' />
+                              )}
+                            </div>
+                          )}
                           <p
-                            className={`text-xs w-[80px] mt-2 break-words transition-colors duration-200 ${isSelected
+                            className={`text-xs w-[85px] mt-2 break-words leading-tight transition-colors duration-200 ${
+                              isSelected
                                 ? 'text-white font-semibold'
                                 : 'text-gray-400 group-hover:text-white'
-                              }`}
+                            }`}
                           >
                             {option.name}
                           </p>
@@ -581,7 +631,7 @@ export default function ProductDetailsClient({ product }) {
                       );
                     })}
                   </div>
-                  {product.material === 'Marble' && (
+                  {product.material === 'Marble' && !product.marbles && (
                     <AccordionMarbles
                       selectedMarble={selectedMarble}
                       onSelectMarble={handleSelectMarble}

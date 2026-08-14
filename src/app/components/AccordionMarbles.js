@@ -7,8 +7,13 @@ const normalizeKey = (str) => {
   if (!str) return '';
   return str
     .toLowerCase()
+    .replace(/monstermearr/g, '')
+    .replace(/&/g, '')
+    .replace(/and/g, '')
     .replace(/\s+/g, '')
+    .replace(/bush/g, 'brush')
     .replace(/lavante/g, 'levante')
+    .replace(/roso/g, 'rosso')
     .replace(/greenspider/g, 'spidergreen');
 };
 
