@@ -122,6 +122,15 @@ const GroupProductsPage = () => {
     }
   };
 
+  const hasPdf = Boolean(
+    pdfLink &&
+      pdfLink !== 'not-available' &&
+      pdfLink !== '#' &&
+      pdfLink.trim() !== '' &&
+      !pdfLink.toLowerCase().includes('not-available') &&
+      (pdfLink.startsWith('http://') || pdfLink.startsWith('https://') || pdfLink.startsWith('/'))
+  );
+
   return (
     <div
       ref={pageRef}
@@ -188,7 +197,7 @@ const GroupProductsPage = () => {
               </h1>
             )}
 
-            {pdfLink && pdfLink !== 'not-available' && (
+            {hasPdf && (
               <div className='flex justify-center mt-8'>
                 <button
                   onClick={handleDownloadClick}
