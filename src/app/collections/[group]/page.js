@@ -142,21 +142,13 @@ const GroupProductsPage = () => {
 
         <div ref={headerRef} className='pt-20 md:pt-7 px-4 sm:px-6 lg:px-8'>
           <div className='w-full text-center flex flex-col justify-center items-center'>
-            {!pdfLink && (
-              <h1 className='gsap-reveal text-4xl font-bold text-gray-300 pb-8 border-b-2 border-gray-800 uppercase w-full md:max-w-3xl'>
-                {group.replace('_', ' ')}
-              </h1>
-            )}
-            {/* <h1 className='text-4xl font-bold text-gray-300 pb-8 border-b-2 border-gray-800 uppercase w-full md:max-w-3xl'>
-              {group.replace('_', ' ')}
-            </h1> */}
-
-            {pdfLink && (
+            {image1 ? (
               <>
                 <div className='gsap-reveal flex gap-8 2xl:gap-8 items-center pb-2 border-b-2 border-gray-800 w-full max-w-3xl 2xl:max-w-5xl justify-center mb-4'>
                   <Image
                     width={200}
                     height={200}
+                    alt='KDH Logo'
                     src={'/assets/kdhlogo3.png'}
                     className='w-24 sm:w-36 md:w-52 2xl:w-60'
                   />
@@ -164,6 +156,7 @@ const GroupProductsPage = () => {
                   <Image
                     width={200}
                     height={200}
+                    alt='Collaborator Logo'
                     src={image1}
                     className='  w-24 sm:w-36 md:w-52 2xl:w-60'
                   />
@@ -173,6 +166,7 @@ const GroupProductsPage = () => {
                       <Image
                         width={100}
                         height={100}
+                        alt='Collaborator Logo 2'
                         src={image2}
                         className='mb-6  w-48 2xl:w-60'
                       />
@@ -181,18 +175,20 @@ const GroupProductsPage = () => {
                 </div>
 
                 <div className='gsap-reveal flex flex-col gap-3'>
-                  {/* <h1 className='text-xl -mt-6 px-72 text-gray-300 pb-2 border-b-2 border-gray-800 w-full md:max-w-3xl'>
-                presents
-              </h1> */}
-                  <h1 className='text-4xl font-bold text-gray-300  uppercase w-full md:max-w-3xl'>
+                  <h1 className='text-4xl font-bold text-gray-300 uppercase w-full md:max-w-3xl'>
                     {group.replace('_', ' ')}
-                    <p className='text-white text-xs font-normal'>{`(${year})`}</p>
+                    {year && <p className='text-white text-xs font-normal'>{`(${year})`}</p>}
                   </h1>
                 </div>
               </>
+            ) : (
+              <h1 className='gsap-reveal text-4xl font-bold text-gray-300 pb-8 border-b-2 border-gray-800 uppercase w-full md:max-w-3xl'>
+                {group.replace('_', ' ')}
+                {year && <span className='block text-white text-xs font-normal mt-2 tracking-normal'>{`(${year})`}</span>}
+              </h1>
             )}
 
-            {pdfLink && (
+            {pdfLink && pdfLink !== 'not-available' && (
               <div className='flex justify-center mt-8'>
                 <button
                   onClick={handleDownloadClick}

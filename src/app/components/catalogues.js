@@ -37,10 +37,25 @@ export const catalogues = [
     year: '2024',
   },
   {
+    group: 'matilda_2022',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUlKbUac9DZL6up3G75dgCY2rJjaQFwifBAEky',
+    year: '2022',
+  },
+  {
+    group: 'matilda_2023',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU1YtzMRmcNbALVg2tCIRm5fi0793BwZH8PYyx',
+    year: '2023',
+  },
+  {
     group: 'matilda_2024',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU2ISdq3XaDNvkE7HG39CYgFqmlMw2jVAoxdcn',
     image: '/assets/fm.png',
     year: '2024',
+  },
+  {
+    group: 'matilda_2025',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU6CiyufRfb3HGeOz01MiLoldKrZaXQIxANWuV',
+    year: '2025',
   },
   {
     group: 'monsformer',
