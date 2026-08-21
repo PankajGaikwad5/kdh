@@ -17,7 +17,7 @@ try {
 
 export async function POST(req) {
   const { values, honeypot, timestamp } = await req.json();
-  const { name, email, message, subject, product, number } = values;
+  const { name, email, message, subject, product, number, location: clientLocation } = values || {};
 
   // 1. Honeypot check - if filled, it's a bot
   if (honeypot) {
@@ -25,13 +25,13 @@ export async function POST(req) {
     return NextResponse.json({ error: 'Submission rejected' }, { status: 400 });
   }
 
-  // 2. Time-based check - form should take at least 3 seconds to fill
+  // 2. Time-based check - form should take at least 1.5 seconds to fill
   if (timestamp) {
     const submissionTime = Date.now();
     const timeTaken = submissionTime - timestamp;
 
-    // If submitted in less than 3 seconds, likely a bot
-    if (timeTaken < 3000) {
+    // If submitted in less than 1.5 seconds, likely a bot
+    if (timeTaken < 1500) {
       console.log('Spam detected: Form submitted too quickly');
       return NextResponse.json(
         { error: 'Please take your time filling out the form' },
@@ -106,8 +106,10 @@ export async function POST(req) {
   });
 
   let locationText = '';
-  // Only attempt geolocation lookup for real remote IP addresses (not localhost)
-  if (ip && ip !== 'unknown' && ip !== '::1' && ip !== '127.0.0.1' && !ip.includes('localhost')) {
+  // Use client-sent location if available, otherwise attempt server-side IP geolocation
+  if (clientLocation && clientLocation.trim()) {
+    locationText = `\nLocation: ${clientLocation.trim()}`;
+  } else if (ip && ip !== 'unknown' && ip !== '::1' && ip !== '127.0.0.1' && !ip.includes('localhost')) {
     try {
       const cleanIp = ip.split(',')[0].trim();
       const controller = new AbortController();

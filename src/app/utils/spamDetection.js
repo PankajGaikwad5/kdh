@@ -61,7 +61,7 @@ export function validateName(name) {
  * @returns {object} - { valid: boolean, reason: string }
  */
 export function validateMessage(message) {
-  if (!message || message.trim().length < 5) {
+  if (!message || message.trim().length < 2) {
     return { valid: false, reason: 'Message is too short' };
   }
 
@@ -71,7 +71,7 @@ export function validateMessage(message) {
 
   // Check for at least some spaces (real messages have words)
   const words = message.trim().split(/\s+/);
-  if (words.length < 2 && message.length > 20) {
+  if (words.length < 2 && message.length > 30) {
     return { valid: false, reason: 'Message appears to be invalid' };
   }
 

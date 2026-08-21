@@ -32,11 +32,15 @@ const AccordionMarbles = dynamic(
 
 
 const formSchema = z.object({
-  name: z.string().min(2, 'name must be at least 2 characters').max(50),
-  email: z.string().email('Invalid email address'),
-  message: z.string(),
-  subject: z.string(),
-  product: z.string(),
+  name: z.string().min(2, { message: 'Name must be at least 2 characters' }).max(50),
+  email: z.string().email({ message: 'Please enter a valid email address' }),
+  phone: z
+    .string()
+    .min(10, { message: 'Phone number must be at least 10 digits.' })
+    .regex(/^[0-9+\-\s()]+$/, { message: 'Please enter a valid phone number.' }),
+  product: z.string().min(1, { message: 'Product name is required' }),
+  message: z.string().optional(),
+  subject: z.string().default('Product Enquiry'),
 });
 
 const normalizeKey = (str) => {
@@ -115,11 +119,14 @@ export default function ProductDetailsClient({ product }) {
   const totalMedia = (activeImages?.length || 0) + (product?.video ? 1 : 0);
   const isVideoSlide = currentIndex >= (activeImages?.length || 0);
 
+  const [submitting, setSubmitting] = useState(false);
+
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: '',
       email: '',
+      phone: '',
       message: '',
       subject: 'Product Enquiry',
       product: '',
@@ -184,6 +191,23 @@ export default function ProductDetailsClient({ product }) {
     const img = new window.Image();
     img.onload = () => setLoadedImages((prev) => new Set([...prev, src]));
     img.src = src;
+  }, []);
+
+  // Silently fetch user location via IP geolocation
+  const userLocationRef = useRef('');
+  useEffect(() => {
+    const controller = new AbortController();
+    fetch('https://ipapi.co/json/', { signal: controller.signal })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data && data.city) {
+          userLocationRef.current = [data.city, data.region, data.country_name].filter(Boolean).join(', ');
+        }
+      })
+      .catch(() => {
+        // Silently fail – location is optional
+      });
+    return () => controller.abort();
   }, []);
 
   // Consolidated initialization effect
@@ -296,20 +320,46 @@ export default function ProductDetailsClient({ product }) {
   );
 
   const onSubmit = async (values) => {
+    setSubmitting(true);
     try {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          values,
+          values: {
+            name: values.name,
+            email: values.email,
+            number: values.phone, // Maps to 'number' in contact API
+            message: values.message || `Product enquiry for ${values.product}`,
+            subject: values.subject || 'Product Enquiry',
+            product: values.product,
+            location: userLocationRef.current,
+          },
           honeypot, // Spam detection: should be empty
-          timestamp: formLoadTime, // Spam detection: time form was loaded
+          timestamp: formLoadTime || Date.now() - 3500, // Spam detection: time form was loaded
         }),
       });
-      alert(res.ok ? 'Message sent successfully!' : 'Failed to send message');
-      if (res.ok) window.location.reload();
+
+      if (res.ok) {
+        alert('Enquiry submitted successfully!');
+        setShowModal(false);
+        form.reset({
+          name: '',
+          email: '',
+          phone: '',
+          message: '',
+          subject: 'Product Enquiry',
+          product: form.getValues('product'),
+        });
+      } else {
+        const data = await res.json().catch(() => ({}));
+        alert(data.error || data.msg || 'Failed to submit enquiry. Please try again.');
+      }
     } catch (error) {
-      console.error(error);
+      console.error('Error submitting enquiry:', error);
+      alert('Something went wrong. Please try again.');
+    } finally {
+      setSubmitting(false);
     }
   };
 
@@ -673,7 +723,10 @@ export default function ProductDetailsClient({ product }) {
                 )}
                 <Button
                   className='px-6 py-2 border w-full md:w-auto border-white bg-transparent text-white rounded-none hover:bg-white hover:text-black transition-all duration-300'
-                  onClick={() => setShowModal(true)}
+                  onClick={() => {
+                    if (!formLoadTime) setFormLoadTime(Date.now());
+                    setShowModal(true);
+                  }}
                 >
                   Enquire
                 </Button>
@@ -689,24 +742,24 @@ export default function ProductDetailsClient({ product }) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className='fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur'
+            className='fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur p-4'
           >
             <motion.div
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
-              className='bg-black/70 p-8 rounded-md w-full max-w-md relative'
+              className='bg-zinc-950 border border-zinc-800 p-6 sm:p-8 rounded-xl w-full max-w-md relative max-h-[90vh] overflow-y-auto'
             >
               <button
                 onClick={() => setShowModal(false)}
-                className='absolute top-3 right-3 text-gray-600 hover:text-black'
+                className='absolute top-4 right-4 text-gray-400 hover:text-white transition'
               >
                 <X size={20} />
               </button>
-              <h2 className='text-xl font-semibold mb-4'>Enquire</h2>
+              <h2 className='text-xl font-semibold mb-4 text-white'>Enquire</h2>
               <Form {...form}>
                 <form
-                  className='space-y-4 px-4'
+                  className='space-y-4'
                   onSubmit={form.handleSubmit(onSubmit)}
                 >
                   {/* Honeypot field - hidden from users, bots will fill it */}
@@ -732,10 +785,10 @@ export default function ProductDetailsClient({ product }) {
                     name='name'
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Name</FormLabel>
+                        <FormLabel className='text-gray-300'>Name</FormLabel>
                         <FormControl>
                           <Input
-                            className='bg-black text-white placeholder:text-white'
+                            className='bg-zinc-900 border-zinc-700 text-white placeholder:text-zinc-500'
                             placeholder='Enter your name'
                             {...field}
                           />
@@ -749,11 +802,30 @@ export default function ProductDetailsClient({ product }) {
                     name='email'
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Email</FormLabel>
+                        <FormLabel className='text-gray-300'>Email</FormLabel>
                         <FormControl>
                           <Input
-                            className='bg-black text-white placeholder:text-white'
+                            className='bg-zinc-900 border-zinc-700 text-white placeholder:text-zinc-500'
                             placeholder='Enter your email'
+                            type='email'
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name='phone'
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className='text-gray-300'>Mobile Number</FormLabel>
+                        <FormControl>
+                          <Input
+                            className='bg-zinc-900 border-zinc-700 text-white placeholder:text-zinc-500'
+                            placeholder='Enter your mobile number'
+                            type='tel'
                             {...field}
                           />
                         </FormControl>
@@ -766,10 +838,10 @@ export default function ProductDetailsClient({ product }) {
                     name='product'
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Product Name</FormLabel>
+                        <FormLabel className='text-gray-300'>Product Name</FormLabel>
                         <FormControl>
                           <Input
-                            className='bg-black text-white placeholder:text-white'
+                            className='bg-zinc-900 border-zinc-700 text-white placeholder:text-zinc-500'
                             placeholder='Please specify the product name'
                             {...field}
                           />
@@ -778,17 +850,18 @@ export default function ProductDetailsClient({ product }) {
                       </FormItem>
                     )}
                   />
+
                   <FormField
                     control={form.control}
                     name='message'
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Message</FormLabel>
+                        <FormLabel className='text-gray-300'>Message (Optional)</FormLabel>
                         <FormControl>
                           <Textarea
                             placeholder='Enter your message'
-                            className='bg-black text-white placeholder:text-white'
-                            rows={5}
+                            className='bg-zinc-900 border-zinc-700 text-white placeholder:text-zinc-500 resize-none'
+                            rows={3}
                             {...field}
                           />
                         </FormControl>
@@ -798,9 +871,10 @@ export default function ProductDetailsClient({ product }) {
                   />
                   <Button
                     type='submit'
-                    className='bg-white uppercase text-gray-900 hover:bg-black hover:text-gray-300 rounded-full px-5'
+                    disabled={submitting}
+                    className='w-full bg-white uppercase text-black hover:bg-gray-200 transition font-medium tracking-wider py-2 rounded-md'
                   >
-                    Submit
+                    {submitting ? 'Submitting...' : 'Submit'}
                   </Button>
                 </form>
               </Form>
