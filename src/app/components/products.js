@@ -1592,7 +1592,7 @@ Sculpted from rich wood and elevated with fearless design, the Monster Dining Ta
 With powerful curves and a presence that commands attention, it invites connection, conversation, and curiosity. 
 
 Designed for those who host with flair, this is where luxury meets audacity, and every gathering becomes a bold expression of style.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnOBMcIbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOd6AH5NvXmWSn1eIpy3d0vtl4fEkq579rjMLs',
     __v: 0,
   },
   {
@@ -1802,7 +1802,7 @@ Crafted from raw, textured wood and sculpted into a form that defies the ordinar
 Refined yet untamed, structured yet wild—this piece doesn’t blend in, it takes over. 
 
 If your space demands character, power, and a touch of rebellion, this is your next move.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUtJTy2o5Bu7NntcLbi8k4ldwr62VXy3PODz9j',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOYuTOJWxq6dLIzbPjGW4oiU2MEvH0hptTwnDc',
     __v: 0,
   },
   // {
@@ -2089,7 +2089,7 @@ With its sculptural stance and indulgently textured surface, it redefines dining
 Bold yet comforting, it invites conversation, demands attention, and elevates every seat into a statement. 
 
 This isn’t about taking your place—it’s about owning it, one confident curve at a time.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQr4b0hCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgzn1b3ZcO9jlyr24LDs3RmTkWCeUAipGbH1Z',
     __v: 0,
   },
   {
@@ -2975,7 +2975,7 @@ Planter reimagines botanical displays with an
 avant-garde, feral aesthetic. Sculptural yet organic, it’s a
 fusion of life and art—because even nature deserves to
 be bold.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUdXDc4ymQLipXnNcaZzTWOmKke9BGF7gf2xIh',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOcFYGhHBCHDUBWS0rVfuRb4mIL69ZFEnpQezk',
     __v: 0,
   },
   {
@@ -4484,7 +4484,7 @@ Sink into its embrace, but know this: softness doesn’t mean surrender. It mean
 
 Gatoo challenges expectations—where every curve speaks of attitude, and every detail dares to be different. 
 It’s luxury with an edge, comfort with a voice, and design that refuses to stay quiet.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDssaFE8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOPo3bZaSjHqmNAIDGdfwbKCW75FER48cVo3u2',
     __v: 0,
   },
   {
@@ -4837,7 +4837,7 @@ It doesn’t just light the room—it steals the spotlight.
 
 Soft, sculptural, and wildly unexpected, it’s made for those who crave drama, depth, and design that speaks louder than words. 
 You don’t just switch it on—you ignite the atmosphere.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUtF0l465Bu7NntcLbi8k4ldwr62VXy3PODz9j',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOjqRnmDNQNhsYReup8oqCmaiw71dHbWcUIX5f',
     __v: 0,
   },
   {
@@ -5113,7 +5113,7 @@ It doesn’t just store books—it holds energy, curiosity, and unapologetic att
 
 Raw, bold, and perfectly imperfect, this piece proves that disorder can be a form of design brilliance. 
 You’re not organizing a space—you’re curating an experience. For those who live by instinct, not instruction—this is your statement shelf.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUuEphv8VvD2FOkC3NsiU7yPRWb18aeZThVzGr',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOYcw9WIxq6dLIzbPjGW4oiU2MEvH0hptTwnDc',
     __v: 0,
   },
   {
@@ -5184,7 +5184,7 @@ With sculptural asymmetry, bold primary hues, and integrated lighting that feels
 
 Crafted for the provocateurs, the aesthetes, and the visionaries—this edition isn't just a shelf.
 It's architecture with attitude.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUuEphv8VvD2FOkC3NsiU7yPRWb18aeZThVzGr',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOXP7JJSuosnbmOpdheGL3EgIPWHwQBAfDiZqX',
     __v: 0,
   },
   {
@@ -7181,7 +7181,7 @@ Because even your side table should speak volumes.`,
       },
     ],
     description: 'A sculptural ottoman defined by its rounded silhouette, plush textured upholstery, and distinctive deep-green cracked-finish base. Designed as a bold companion piece within the Monster 3.0 collection, it combines tactile softness with an expressive, sculptural form.',
-    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgx2kAPcO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO6WYulzTgmyYdxBZk9OWub4XEJaA1zR2CTiMc',
     __v: 0,
   },
   {
