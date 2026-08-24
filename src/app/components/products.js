@@ -2985,7 +2985,7 @@ be bold.`,
     title: 'matilda 2024 bench',
     group: 'matilda_2024',
     material: 'Marble',
-    pdf: '#',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUyBmAVajvoD5bj92PLzxBdul6nT8GrEAS30eN',
     images: [
       {
         fileName: '1738927999036-Slide1.JPG',
@@ -5721,7 +5721,7 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
     title: '3D Printed Bar',
     group: 'friends',
     material: 'plastic',
-    pdf: '#',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUer5rygcFPv1kdbg4tT0YfOS529XxhywHpVoU',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -5763,7 +5763,7 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
     title: 'Water Pots',
     group: 'friends',
     material: 'Marble',
-    pdf: '#',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU82ddUw64oKUn37W6wsTlRmDBFhGrviIjcMxV',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -5847,7 +5847,7 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
     title: '3D Printed Bar Stool',
     group: 'friends',
     material: 'plastic',
-    pdf: '#',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUuI3NLHVvD2FOkC3NsiU7yPRWb18aeZThVzGr',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -6438,7 +6438,7 @@ A symbol of restraint, rhythm, and remarkable design.`,
     title: 'matilda 2025 Taavdi',
     group: 'matilda_2025',
     material: 'Marble',
-    pdf: '#',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUL6Y8nYiDqbauUfVsg4JYrj86xOSilFe5PBo3',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
