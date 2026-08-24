@@ -58,6 +58,11 @@ export const catalogues = [
     year: '2025',
   },
   {
+    group: 'friends',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUL6xX4r7DqbauUfVsg4JYrj86xOSilFe5PBo3',
+    // year: '2026',
+  },
+  {
     group: 'monsformer',
     pdf: 'not-available',
     image: '/assets/blum.png',

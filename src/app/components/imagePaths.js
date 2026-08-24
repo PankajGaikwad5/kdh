@@ -318,9 +318,9 @@ export const newImagePaths = [
     productId: '67a5eef74da9b29cd0f10be22191',
   },
   {
-    name: 'EA Bar',
+    name: 'Bar Counter',
     path: '/optimized/eabar.webp',
-    group: 'EA_Bar',
+    group: 'friends',
     productId: '67a5eef74da9b29cd0f10be221912',
   },
   {

@@ -5453,7 +5453,7 @@ This is what success looks like... even when you're rinsing your hands.`,
     _id: {
       $oid: '67a5eef74da9b29cd0f10be221912',
     },
-    title: 'Bar',
+    title: 'Bar Counter',
     group: 'friends',
     material: 'Marble',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUyXBkZujvoD5bj92PLzxBdul6nT8GrEAS30eN',
