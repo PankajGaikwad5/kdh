@@ -5889,7 +5889,7 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
     title: 'matilda 2022 bed Side Table',
     group: 'matilda_2022',
     material: 'Marble',
-    pdf: '#',
+    pdf: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6Ed9BYq8vfBbIaKPCgLGxqndpNv5DjmeSowJ9',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -5970,7 +5970,7 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
     title: 'matilda 2022 Chest Of Drawer',
     group: 'matilda_2022',
     material: 'Marble',
-    pdf: '#',
+    pdf: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6swU1OB9vFBgSUW0cX9kRd8PDVGquOawNHiYT',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -6171,7 +6171,7 @@ A symbol of restraint, rhythm, and remarkable design.`,
     title: 'matilda 2022 Console',
     group: 'matilda_2022',
     material: 'Resin and Clay',
-    pdf: '#',
+    pdf: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6TSgc3m4l5c29SVtCBxOUDevPXhKIyTMj1qrL',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -6227,7 +6227,7 @@ A symbol of restraint, rhythm, and remarkable design.`,
     title: 'matilda 2022 Marble Console',
     group: 'matilda_2022',
     material: 'Marble',
-    pdf: '#',
+    pdf: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6X3O0cnqNcjaPH8TOvun7r2FplmxtqbKMIzf0',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -6276,7 +6276,7 @@ A symbol of restraint, rhythm, and remarkable design.`,
     title: 'matilda 2022 Marble Screen',
     group: 'matilda_2022',
     material: 'Marble',
-    pdf: '#',
+    pdf: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6johOGZBAw10EOsPhxvgoy23lzpjKfG8iW4LD',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -6357,7 +6357,7 @@ A symbol of restraint, rhythm, and remarkable design.`,
     title: 'matilda 2022 Side Table',
     group: 'matilda_2022',
     material: 'Marble',
-    pdf: '#',
+    pdf: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6Ed9BYq8vfBbIaKPCgLGxqndpNv5DjmeSowJ9',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -6863,7 +6863,7 @@ Because even your side table should speak volumes.`,
     title: 'Matilda 2023 Dining Table',
     group: 'matilda_2023',
     material: 'Marble',
-    pdf: '#',
+    pdf: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ63H9BP0kO70Cba5AdxRUpojYnlNeJ2mGDHhtk',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -6906,7 +6906,7 @@ Because even your side table should speak volumes.`,
     group: 'matilda_2023',
     material: 'Marble',
     defaultMarble: null,
-    pdf: '#',
+    pdf: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6iW4dbZFz4iH7WfGTVpvldeUXscEPgYyhMN6x',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -6999,7 +6999,7 @@ Because even your side table should speak volumes.`,
     title: 'matilda 2022 Tea Bar',
     group: 'matilda_2022',
     material: 'Marble',
-    pdf: '#',
+    pdf: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6cIMh6UyZdMxEUp6Ra5hHXyADko0YJOeK4Pzn',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -7191,7 +7191,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.1 Center Table',
     group: 'monster_3.1',
     material: 'Charred Wood with High Gloss Lacquer',
-    pdf: '#',
+    pdf: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ66L2v0P3jRledxo3hIaUpzVs7H2gCbEfBZ8Gk',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -7233,7 +7233,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.1 Coffee Table',
     group: 'monster_3.1',
     material: 'Charred Wood with High Gloss Lacquer',
-    pdf: '#',
+    pdf: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6Q48E3UrAEae8yoHbhSkJuscDIK4m7dfTjqZW',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -7268,7 +7268,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.1 Console',
     group: 'monster_3.1',
     material: 'Charred Wood with High Gloss Lacquer',
-    pdf: '#',
+    pdf: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6O7gUUkuHEwqX8ryijeQWIxhs7f4S2KPznVcF',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -7324,7 +7324,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.1 Console Storage',
     group: 'monster_3.1',
     material: 'Charred Wood with High Gloss Lacquer',
-    pdf: '#',
+    pdf: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6TiGQ554l5c29SVtCBxOUDevPXhKIyTMj1qrL',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -7366,7 +7366,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.1 Desk',
     group: 'monster_3.1',
     material: 'Charred Wood with High Gloss Lacquer',
-    pdf: '#',
+    pdf: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6yVnze0AAvzOemNhFRJkaS3KXZ0LMo1E2ijgW',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -7408,7 +7408,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.1 Floorlamp',
     group: 'monster_3.1',
     material: 'Charred Wood with High Gloss Lacquer',
-    pdf: '#',
+    pdf: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6FRcjQtnPM3mXfpc1SBakLQqAlTVoE0twgruR',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -7443,7 +7443,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.1 Long Dining Table',
     group: 'monster_3.1',
     material: 'Charred Wood with High Gloss Lacquer',
-    pdf: '#',
+    pdf: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6BTTZGyeRHXuCZT2y3OdBkMADUJe8lpWrPthn',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -7492,7 +7492,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.1 Mirror',
     group: 'monster_3.1',
     material: 'Charred Wood with High Gloss Lacquer',
-    pdf: '#',
+    pdf: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6Db3o5g79lTEUmF6fdNKHtjJSZsbWXiezhB0I',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -7534,7 +7534,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.1 Round Dining Table',
     group: 'monster_3.1',
     material: 'Charred Wood with High Gloss Lacquer',
-    pdf: '#',
+    pdf: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6pg3KN8bTL34HCtozJKF1vMsEy08j6bxYOPRn',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -7576,7 +7576,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.1 Single Shelving Unit',
     group: 'monster_3.1',
     material: 'Charred Wood with High Gloss Lacquer',
-    pdf: '#',
+    pdf: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6dEh2V9j5nQHCxdAwKzgMiNoO8BVZTP3fJuq1',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -7618,7 +7618,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.1 Side Table',
     group: 'monster_3.1',
     material: 'Charred Wood with High Gloss Lacquer',
-    pdf: '#',
+    pdf: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6JfqSYIEXjBOH8Lgb3Dl6QsSrvVaGt4h5xzZn',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -7662,7 +7662,7 @@ Because even your side table should speak volumes.`,
     material: 'Burnt Wood & Fur Fabric',
     collabtext: 'Dimensions',
     collablink: 'https://dimensionsfurniture.in/collections/monster-collection/',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUVOfTglleJz0jfKoyVd9HNhC5wFQ4OrBi2UkD',
+    pdf: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6Y4QARBNpQ6Mplf2w0nGeTNo5xsyRHC8DzakU',
     images: [
       {
         fileName: '1.webp',
@@ -7709,7 +7709,7 @@ attention while grounding any space with its elemental form`,
     material: 'Burnt Wood & Fur Fabric',
     collabtext: 'Dimensions',
     collablink: 'https://dimensionsfurniture.in/collections/monster-collection/',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUVOfTglleJz0jfKoyVd9HNhC5wFQ4OrBi2UkD',
+    pdf: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6fBjcFK3dX3iuge2BlpHcswktmGnrUNdoFZQP',
     images: [
       {
         fileName: '14.webp',
