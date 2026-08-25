@@ -7186,6 +7186,41 @@ Because even your side table should speak volumes.`,
   },
   {
     _id: {
+      $oid: 'monster-coffeetable',
+    },
+    title: 'Monster 3.0 Coffee Table',
+    group: 'monster_3.0',
+    material: 'Burnt Wood & Fur Fabric',
+    pdf: '#',
+    images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/new_monster3/1.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/new_monster3/1.webp',,
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/new_monster3/1.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    description: 'Built to hold its ground, the Monster Coffee Table brings a bold personality to the room. Its rounded form and sculpted pedestal create a strong, almost organic silhouette, while the rich green texture gives it an unexpected sense of depth and character. Grounded yet expressive, it turns an everyday coffee table into a distinctive piece with a wild side.',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUyAoFT2jvoD5bj92PLzxBdul6nT8GrEAS30eN',
+    __v: 0,
+  },
+  {
+    _id: {
       $oid: 'monster3centertable',
     },
     title: 'Monster 3.1 Center Table',
