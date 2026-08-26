@@ -7121,7 +7121,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.0 Ottoman',
     group: 'monster_3.0',
     material: 'Burnt Wood & Fur Fabric',
-    pdf: '#',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUXJ46umLaynKVcYuZHCDm1IeJRfoT4vBxS8i0',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -7191,25 +7191,25 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.0 Coffee Table',
     group: 'monster_3.0',
     material: 'Burnt Wood & Fur Fabric',
-    pdf: '#',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWE77gCrSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/new_monster3/1.webp',
+        filePath: '/new_monster3/coffeetable1.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/new_monster3/1.webp',,
+        filePath: '/new_monster3/coffeetable2.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/new_monster3/1.webp',
+        filePath: '/new_monster3/coffeetable3.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
