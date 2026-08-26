@@ -1377,132 +1377,132 @@ When style meets structure like this, luxury becomes non-negotiable.
       ],
     },
   },
-  {
-    _id: {
-      $oid: '67a5ef664da9b29cd0f10bfb',
-    },
-    title: 'matilda 2024 chair',
-    group: 'matilda_2024',
-    material: 'Marble',
-    collabtext: 'Foremost Marbles',
-    collablink: 'https://foremostmarbles.com/',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUfRZ9Y2FreUiploh17Cx6dSMgtF0NPTW8vq2I',
-    images: [
-      {
-        fileName: '1738927974894-Slide1.JPG',
-        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPZiDMtHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
-        _id: {
-          $oid: '67a5ef664da9b29cd0f10bfc',
-        },
-      },
-      {
-        fileName: '1738927974894-Slide1.JPG',
-        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU0bST3IhhiHbrpSCkBA8lKn64duFxNeTWLcq5',
-        _id: {
-          $oid: '67a5ef664da9b29cd0f10bfc',
-        },
-      },
-      {
-        fileName: '1738927974894-Slide1.JPG',
-        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUtTSxspL5Bu7NntcLbi8k4ldwr62VXy3PODz9',
-        _id: {
-          $oid: '67a5ef664da9b29cd0f10bfc',
-        },
-      },
-      {
-        fileName: '1738927974894-Slide1.JPG',
-        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUv3nb2l0iQtznIlhRaFJ8jZ6p7xPg3bw9OrDV',
-        _id: {
-          $oid: '67a5ef664da9b29cd0f10bfc',
-        },
-      },
-      {
-        fileName: '1738927974894-Slide1.JPG',
-        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQPBL6zCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
-        _id: {
-          $oid: '67a5ef664da9b29cd0f10bfc',
-        },
-      },
-      {
-        fileName: '1738927974894-Slide1.JPG',
-        filePath: '/assets/products/1738927974894-Slide1.JPG',
-        _id: {
-          $oid: '67a5ef664da9b29cd0f10bfc',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927974894-Slide1.JPG',
-      },
-      {
-        fileName: '1738927974898-Slide5.JPG',
-        filePath: '/assets/products/1738927974898-Slide5.JPG',
-        _id: {
-          $oid: '67a5ef664da9b29cd0f10c00',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927974898-Slide5.JPG',
-      },
-      {
-        fileName: '1738927974899-Slide6.JPG',
-        filePath: '/assets/products/1738927974899-Slide6.JPG',
-        _id: {
-          $oid: '67a5ef664da9b29cd0f10c01',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927974899-Slide6.JPG',
-      },
-      {
-        fileName: '1738927974901-Slide7.JPG',
-        filePath: '/assets/products/1738927974901-Slide7.JPG',
-        _id: {
-          $oid: '67a5ef664da9b29cd0f10c02',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927974901-Slide7.JPG',
-      },
-    ],
-    marbleImages: {
-      indianblackbheslana: [
-        '/marbles/newmatilda2024/chair/indianblackbheslana/1.webp',
-        '/marbles/newmatilda2024/chair/indianblackbheslana/2.webp',
-        '/marbles/newmatilda2024/chair/indianblackbheslana/3.webp',
-        '/marbles/newmatilda2024/chair/indianblackbheslana/4.webp',
-        '/marbles/newmatilda2024/chair/indianblackbheslana/5.webp',
-      ],
-      indianrossolevante: [
-        '/marbles/newmatilda2024/chair/indianrossolevante/1.webp',
-        '/marbles/newmatilda2024/chair/indianrossolevante/2.webp',
-        '/marbles/newmatilda2024/chair/indianrossolevante/3.webp',
-        '/marbles/newmatilda2024/chair/indianrossolevante/4.webp',
-        '/marbles/newmatilda2024/chair/indianrossolevante/5.webp',
-      ],
-      italianbeigetravertine: [
-        '/marbles/newmatilda2024/chair/italianbeigetravertine/1.webp',
-        '/marbles/newmatilda2024/chair/italianbeigetravertine/2.webp',
-        '/marbles/newmatilda2024/chair/italianbeigetravertine/3.webp',
-        '/marbles/newmatilda2024/chair/italianbeigetravertine/4.webp',
-        '/marbles/newmatilda2024/chair/italianbeigetravertine/5.webp',
-      ],
-      marquina: [
-        '/marbles/newmatilda2024/chair/marquina/1.webp',
-        '/marbles/newmatilda2024/chair/marquina/2.webp',
-        '/marbles/newmatilda2024/chair/marquina/3.webp',
-        '/marbles/newmatilda2024/chair/marquina/4.webp',
-        '/marbles/newmatilda2024/chair/marquina/5.webp',
-      ],
-      spidergreen: [
-        '/marbles/newmatilda2024/chair/spidergreen/1.webp',
-        '/marbles/newmatilda2024/chair/spidergreen/2.webp',
-        '/marbles/newmatilda2024/chair/spidergreen/3.webp',
-        '/marbles/newmatilda2024/chair/spidergreen/4.webp',
-        '/marbles/newmatilda2024/chair/spidergreen/5.webp',
-      ],
-    },
-    description: `Listen closely. This isn’t just a chair—it’s a power move carved from pure white marble. 
+//   {
+//     _id: {
+//       $oid: '67a5ef664da9b29cd0f10bfb',
+//     },
+//     title: 'matilda 2024 chair',
+//     group: 'matilda_2024',
+//     material: 'Marble',
+//     collabtext: 'Foremost Marbles',
+//     collablink: 'https://foremostmarbles.com/',
+//     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUfRZ9Y2FreUiploh17Cx6dSMgtF0NPTW8vq2I',
+//     images: [
+//       {
+//         fileName: '1738927974894-Slide1.JPG',
+//         filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUPZiDMtHpFycKMiw1UGhN9DdQXjCZogfvR4zs',
+//         _id: {
+//           $oid: '67a5ef664da9b29cd0f10bfc',
+//         },
+//       },
+//       {
+//         fileName: '1738927974894-Slide1.JPG',
+//         filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU0bST3IhhiHbrpSCkBA8lKn64duFxNeTWLcq5',
+//         _id: {
+//           $oid: '67a5ef664da9b29cd0f10bfc',
+//         },
+//       },
+//       {
+//         fileName: '1738927974894-Slide1.JPG',
+//         filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUtTSxspL5Bu7NntcLbi8k4ldwr62VXy3PODz9',
+//         _id: {
+//           $oid: '67a5ef664da9b29cd0f10bfc',
+//         },
+//       },
+//       {
+//         fileName: '1738927974894-Slide1.JPG',
+//         filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUv3nb2l0iQtznIlhRaFJ8jZ6p7xPg3bw9OrDV',
+//         _id: {
+//           $oid: '67a5ef664da9b29cd0f10bfc',
+//         },
+//       },
+//       {
+//         fileName: '1738927974894-Slide1.JPG',
+//         filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQPBL6zCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
+//         _id: {
+//           $oid: '67a5ef664da9b29cd0f10bfc',
+//         },
+//       },
+//       {
+//         fileName: '1738927974894-Slide1.JPG',
+//         filePath: '/assets/products/1738927974894-Slide1.JPG',
+//         _id: {
+//           $oid: '67a5ef664da9b29cd0f10bfc',
+//         },
+//         thumbnail: '/assets/products/thumbnails/1738927974894-Slide1.JPG',
+//       },
+//       {
+//         fileName: '1738927974898-Slide5.JPG',
+//         filePath: '/assets/products/1738927974898-Slide5.JPG',
+//         _id: {
+//           $oid: '67a5ef664da9b29cd0f10c00',
+//         },
+//         thumbnail: '/assets/products/thumbnails/1738927974898-Slide5.JPG',
+//       },
+//       {
+//         fileName: '1738927974899-Slide6.JPG',
+//         filePath: '/assets/products/1738927974899-Slide6.JPG',
+//         _id: {
+//           $oid: '67a5ef664da9b29cd0f10c01',
+//         },
+//         thumbnail: '/assets/products/thumbnails/1738927974899-Slide6.JPG',
+//       },
+//       {
+//         fileName: '1738927974901-Slide7.JPG',
+//         filePath: '/assets/products/1738927974901-Slide7.JPG',
+//         _id: {
+//           $oid: '67a5ef664da9b29cd0f10c02',
+//         },
+//         thumbnail: '/assets/products/thumbnails/1738927974901-Slide7.JPG',
+//       },
+//     ],
+//     marbleImages: {
+//       indianblackbheslana: [
+//         '/marbles/newmatilda2024/chair/indianblackbheslana/1.webp',
+//         '/marbles/newmatilda2024/chair/indianblackbheslana/2.webp',
+//         '/marbles/newmatilda2024/chair/indianblackbheslana/3.webp',
+//         '/marbles/newmatilda2024/chair/indianblackbheslana/4.webp',
+//         '/marbles/newmatilda2024/chair/indianblackbheslana/5.webp',
+//       ],
+//       indianrossolevante: [
+//         '/marbles/newmatilda2024/chair/indianrossolevante/1.webp',
+//         '/marbles/newmatilda2024/chair/indianrossolevante/2.webp',
+//         '/marbles/newmatilda2024/chair/indianrossolevante/3.webp',
+//         '/marbles/newmatilda2024/chair/indianrossolevante/4.webp',
+//         '/marbles/newmatilda2024/chair/indianrossolevante/5.webp',
+//       ],
+//       italianbeigetravertine: [
+//         '/marbles/newmatilda2024/chair/italianbeigetravertine/1.webp',
+//         '/marbles/newmatilda2024/chair/italianbeigetravertine/2.webp',
+//         '/marbles/newmatilda2024/chair/italianbeigetravertine/3.webp',
+//         '/marbles/newmatilda2024/chair/italianbeigetravertine/4.webp',
+//         '/marbles/newmatilda2024/chair/italianbeigetravertine/5.webp',
+//       ],
+//       marquina: [
+//         '/marbles/newmatilda2024/chair/marquina/1.webp',
+//         '/marbles/newmatilda2024/chair/marquina/2.webp',
+//         '/marbles/newmatilda2024/chair/marquina/3.webp',
+//         '/marbles/newmatilda2024/chair/marquina/4.webp',
+//         '/marbles/newmatilda2024/chair/marquina/5.webp',
+//       ],
+//       spidergreen: [
+//         '/marbles/newmatilda2024/chair/spidergreen/1.webp',
+//         '/marbles/newmatilda2024/chair/spidergreen/2.webp',
+//         '/marbles/newmatilda2024/chair/spidergreen/3.webp',
+//         '/marbles/newmatilda2024/chair/spidergreen/4.webp',
+//         '/marbles/newmatilda2024/chair/spidergreen/5.webp',
+//       ],
+//     },
+//     description: `Listen closely. This isn’t just a chair—it’s a power move carved from pure white marble. 
 
-Sleek, sculptural, and impossibly elegant, this masterpiece commands attention in any room. 
-It’s not just about sitting—it’s about making a statement. Precision-crafted to perfection, it blends art, design, and status into one jaw-dropping piece. 
+// Sleek, sculptural, and impossibly elegant, this masterpiece commands attention in any room. 
+// It’s not just about sitting—it’s about making a statement. Precision-crafted to perfection, it blends art, design, and status into one jaw-dropping piece. 
 
-You don’t just own it—you showcase it. This is how leaders decorate. 
-One look, and you know—you’ve arrived.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUcFPDsNOzfU0v5mZaj1HWcAwKFCxykrE2NGSI',
-    __v: 0,
-  },
+// You don’t just own it—you showcase it. This is how leaders decorate. 
+// One look, and you know—you’ve arrived.`,
+//     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUcFPDsNOzfU0v5mZaj1HWcAwKFCxykrE2NGSI',
+//     __v: 0,
+//   },
   {
     _id: {
       $oid: '67b59097e03cc2c55c624a54',
@@ -2978,136 +2978,136 @@ be bold.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOcFYGhHBCHDUBWS0rVfuRb4mIL69ZFEnpQezk',
     __v: 0,
   },
-  {
-    _id: {
-      $oid: '67a5ef7f4da9b29cd0f10c05',
-    },
-    title: 'matilda 2024 bench',
-    group: 'matilda_2024',
-    material: 'Marble',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUyBmAVajvoD5bj92PLzxBdul6nT8GrEAS30eN',
-    images: [
-      {
-        fileName: '1738927999036-Slide1.JPG',
-        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULbLOLiDqbauUfVsg4JYrj86xOSilFe5PBo3m',
-        _id: {
-          $oid: '67a5ef7f4da9b29cd0f10c06',
-        },
-      },
-      {
-        fileName: '1738927999036-Slide1.JPG',
-        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUv1hECvm0iQtznIlhRaFJ8jZ6p7xPg3bw9OrD',
-        _id: {
-          $oid: '67a5ef7f4da9b29cd0f10c06',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927999036-Slide1.JPG',
-      },
-      {
-        fileName: '1738927999036-Slide1.JPG',
-        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUH1kNroSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
-        _id: {
-          $oid: '67a5ef7f4da9b29cd0f10c06',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927999036-Slide1.JPG',
-      },
-      {
-        fileName: '1738927999036-Slide1.JPG',
-        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDOXNQL8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
-        _id: {
-          $oid: '67a5ef7f4da9b29cd0f10c06',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927999036-Slide1.JPG',
-      },
-      {
-        fileName: '1738927999036-Slide1.JPG',
-        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUc73dWP9OzfU0v5mZaj1HWcAwKFCxykrE2NGS',
-        _id: {
-          $oid: '67a5ef7f4da9b29cd0f10c06',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927999036-Slide1.JPG',
-      },
-      {
-        fileName: '1738927999036-Slide1.JPG',
-        filePath: '/assets/products/1738927999036-Slide1.JPG',
-        _id: {
-          $oid: '67a5ef7f4da9b29cd0f10c06',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927999036-Slide1.JPG',
-      },
-      {
-        fileName: '1738927999037-Slide2.JPG',
-        filePath: '/assets/products/1738927999037-Slide2.JPG',
-        _id: {
-          $oid: '67a5ef7f4da9b29cd0f10c07',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927999037-Slide2.JPG',
-      },
-      {
-        fileName: '1738927999039-Slide3.JPG',
-        filePath: '/assets/products/1738927999039-Slide3.JPG',
-        _id: {
-          $oid: '67a5ef7f4da9b29cd0f10c08',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927999039-Slide3.JPG',
-      },
-    ],
-    description: `This bench doesn’t just seat two—it seals the bond. 
+//   {
+//     _id: {
+//       $oid: '67a5ef7f4da9b29cd0f10c05',
+//     },
+//     title: 'matilda 2024 bench',
+//     group: 'matilda_2024',
+//     material: 'Marble',
+//     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUyBmAVajvoD5bj92PLzxBdul6nT8GrEAS30eN',
+//     images: [
+//       {
+//         fileName: '1738927999036-Slide1.JPG',
+//         filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKULbLOLiDqbauUfVsg4JYrj86xOSilFe5PBo3m',
+//         _id: {
+//           $oid: '67a5ef7f4da9b29cd0f10c06',
+//         },
+//       },
+//       {
+//         fileName: '1738927999036-Slide1.JPG',
+//         filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUv1hECvm0iQtznIlhRaFJ8jZ6p7xPg3bw9OrD',
+//         _id: {
+//           $oid: '67a5ef7f4da9b29cd0f10c06',
+//         },
+//         thumbnail: '/assets/products/thumbnails/1738927999036-Slide1.JPG',
+//       },
+//       {
+//         fileName: '1738927999036-Slide1.JPG',
+//         filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUH1kNroSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
+//         _id: {
+//           $oid: '67a5ef7f4da9b29cd0f10c06',
+//         },
+//         thumbnail: '/assets/products/thumbnails/1738927999036-Slide1.JPG',
+//       },
+//       {
+//         fileName: '1738927999036-Slide1.JPG',
+//         filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDOXNQL8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+//         _id: {
+//           $oid: '67a5ef7f4da9b29cd0f10c06',
+//         },
+//         thumbnail: '/assets/products/thumbnails/1738927999036-Slide1.JPG',
+//       },
+//       {
+//         fileName: '1738927999036-Slide1.JPG',
+//         filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUc73dWP9OzfU0v5mZaj1HWcAwKFCxykrE2NGS',
+//         _id: {
+//           $oid: '67a5ef7f4da9b29cd0f10c06',
+//         },
+//         thumbnail: '/assets/products/thumbnails/1738927999036-Slide1.JPG',
+//       },
+//       {
+//         fileName: '1738927999036-Slide1.JPG',
+//         filePath: '/assets/products/1738927999036-Slide1.JPG',
+//         _id: {
+//           $oid: '67a5ef7f4da9b29cd0f10c06',
+//         },
+//         thumbnail: '/assets/products/thumbnails/1738927999036-Slide1.JPG',
+//       },
+//       {
+//         fileName: '1738927999037-Slide2.JPG',
+//         filePath: '/assets/products/1738927999037-Slide2.JPG',
+//         _id: {
+//           $oid: '67a5ef7f4da9b29cd0f10c07',
+//         },
+//         thumbnail: '/assets/products/thumbnails/1738927999037-Slide2.JPG',
+//       },
+//       {
+//         fileName: '1738927999039-Slide3.JPG',
+//         filePath: '/assets/products/1738927999039-Slide3.JPG',
+//         _id: {
+//           $oid: '67a5ef7f4da9b29cd0f10c08',
+//         },
+//         thumbnail: '/assets/products/thumbnails/1738927999039-Slide3.JPG',
+//       },
+//     ],
+//     description: `This bench doesn’t just seat two—it seals the bond. 
 
-Carved from luxurious white marble with a design that dares to be different, it’s where bold form meets intimate function. 
-Whether it’s coffee, conversation, or closing a deal with a glance, this piece turns sitting into a shared experience of style and success. 
+// Carved from luxurious white marble with a design that dares to be different, it’s where bold form meets intimate function. 
+// Whether it’s coffee, conversation, or closing a deal with a glance, this piece turns sitting into a shared experience of style and success. 
 
-You’re not just buying furniture—you’re investing in timeless chemistry. 
-This isn’t just art you admire. It’s art you live in.`,
-    dimensions: 'https://imgs.search.brave.com/iVjI8zr3e5IndwkFtM2PVy-uMhc949oudpKHRM6MEOk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzExLzA3LzEwLzc2/LzM2MF9GXzExMDcx/MDc2ODRfbnBSOURr/M0FtbHZzc0JFN01H/d0tUd0h6UnJFZ2Rs/emwuanBn',
-    __v: 0,
-    marbleImages: {
-      indianblackbheslana: [
-        '/marbles/newmatilda2024/bench/indianblackbheslana/1.webp',
-        '/marbles/newmatilda2024/bench/indianblackbheslana/2.webp',
-        '/marbles/newmatilda2024/bench/indianblackbheslana/3.webp',
-        '/marbles/newmatilda2024/bench/indianblackbheslana/4.webp',
-        '/marbles/newmatilda2024/bench/indianblackbheslana/5.webp',
-        '/marbles/newmatilda2024/bench/indianblackbheslana/6.webp',
-        '/marbles/newmatilda2024/bench/indianblackbheslana/7.webp',
-      ],
-      indianrossolevante: [
-        '/marbles/newmatilda2024/bench/indianrossolevante/1.webp',
-        '/marbles/newmatilda2024/bench/indianrossolevante/2.webp',
-        '/marbles/newmatilda2024/bench/indianrossolevante/3.webp',
-        '/marbles/newmatilda2024/bench/indianrossolevante/4.webp',
-        '/marbles/newmatilda2024/bench/indianrossolevante/5.webp',
-        '/marbles/newmatilda2024/bench/indianrossolevante/6.webp',
-        '/marbles/newmatilda2024/bench/indianrossolevante/7.webp',
-      ],
-      italianbeigetravertine: [
-        '/marbles/newmatilda2024/bench/italianbeigetravertine/1.webp',
-        '/marbles/newmatilda2024/bench/italianbeigetravertine/2.webp',
-        '/marbles/newmatilda2024/bench/italianbeigetravertine/3.webp',
-        '/marbles/newmatilda2024/bench/italianbeigetravertine/4.webp',
-        '/marbles/newmatilda2024/bench/italianbeigetravertine/5.webp',
-        '/marbles/newmatilda2024/bench/italianbeigetravertine/6.webp',
-        '/marbles/newmatilda2024/bench/italianbeigetravertine/7.webp',
-      ],
-      marquina: [
-        '/marbles/newmatilda2024/bench/marquina/1.webp',
-        '/marbles/newmatilda2024/bench/marquina/2.webp',
-        '/marbles/newmatilda2024/bench/marquina/3.webp',
-        '/marbles/newmatilda2024/bench/marquina/4.webp',
-        '/marbles/newmatilda2024/bench/marquina/5.webp',
-        '/marbles/newmatilda2024/bench/marquina/6.webp',
-        '/marbles/newmatilda2024/bench/marquina/7.webp',
-      ],
-      spidergreen: [
-        '/marbles/newmatilda2024/bench/spidergreen/1.webp',
-        '/marbles/newmatilda2024/bench/spidergreen/2.webp',
-        '/marbles/newmatilda2024/bench/spidergreen/3.webp',
-        '/marbles/newmatilda2024/bench/spidergreen/4.webp',
-        '/marbles/newmatilda2024/bench/spidergreen/5.webp',
-        '/marbles/newmatilda2024/bench/spidergreen/6.webp',
-        '/marbles/newmatilda2024/bench/spidergreen/7.webp',
-      ],
-    },
-  },
+// You’re not just buying furniture—you’re investing in timeless chemistry. 
+// This isn’t just art you admire. It’s art you live in.`,
+//     dimensions: 'https://imgs.search.brave.com/iVjI8zr3e5IndwkFtM2PVy-uMhc949oudpKHRM6MEOk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzExLzA3LzEwLzc2/LzM2MF9GXzExMDcx/MDc2ODRfbnBSOURr/M0FtbHZzc0JFN01H/d0tUd0h6UnJFZ2Rs/emwuanBn',
+//     __v: 0,
+//     marbleImages: {
+//       indianblackbheslana: [
+//         '/marbles/newmatilda2024/bench/indianblackbheslana/1.webp',
+//         '/marbles/newmatilda2024/bench/indianblackbheslana/2.webp',
+//         '/marbles/newmatilda2024/bench/indianblackbheslana/3.webp',
+//         '/marbles/newmatilda2024/bench/indianblackbheslana/4.webp',
+//         '/marbles/newmatilda2024/bench/indianblackbheslana/5.webp',
+//         '/marbles/newmatilda2024/bench/indianblackbheslana/6.webp',
+//         '/marbles/newmatilda2024/bench/indianblackbheslana/7.webp',
+//       ],
+//       indianrossolevante: [
+//         '/marbles/newmatilda2024/bench/indianrossolevante/1.webp',
+//         '/marbles/newmatilda2024/bench/indianrossolevante/2.webp',
+//         '/marbles/newmatilda2024/bench/indianrossolevante/3.webp',
+//         '/marbles/newmatilda2024/bench/indianrossolevante/4.webp',
+//         '/marbles/newmatilda2024/bench/indianrossolevante/5.webp',
+//         '/marbles/newmatilda2024/bench/indianrossolevante/6.webp',
+//         '/marbles/newmatilda2024/bench/indianrossolevante/7.webp',
+//       ],
+//       italianbeigetravertine: [
+//         '/marbles/newmatilda2024/bench/italianbeigetravertine/1.webp',
+//         '/marbles/newmatilda2024/bench/italianbeigetravertine/2.webp',
+//         '/marbles/newmatilda2024/bench/italianbeigetravertine/3.webp',
+//         '/marbles/newmatilda2024/bench/italianbeigetravertine/4.webp',
+//         '/marbles/newmatilda2024/bench/italianbeigetravertine/5.webp',
+//         '/marbles/newmatilda2024/bench/italianbeigetravertine/6.webp',
+//         '/marbles/newmatilda2024/bench/italianbeigetravertine/7.webp',
+//       ],
+//       marquina: [
+//         '/marbles/newmatilda2024/bench/marquina/1.webp',
+//         '/marbles/newmatilda2024/bench/marquina/2.webp',
+//         '/marbles/newmatilda2024/bench/marquina/3.webp',
+//         '/marbles/newmatilda2024/bench/marquina/4.webp',
+//         '/marbles/newmatilda2024/bench/marquina/5.webp',
+//         '/marbles/newmatilda2024/bench/marquina/6.webp',
+//         '/marbles/newmatilda2024/bench/marquina/7.webp',
+//       ],
+//       spidergreen: [
+//         '/marbles/newmatilda2024/bench/spidergreen/1.webp',
+//         '/marbles/newmatilda2024/bench/spidergreen/2.webp',
+//         '/marbles/newmatilda2024/bench/spidergreen/3.webp',
+//         '/marbles/newmatilda2024/bench/spidergreen/4.webp',
+//         '/marbles/newmatilda2024/bench/spidergreen/5.webp',
+//         '/marbles/newmatilda2024/bench/spidergreen/6.webp',
+//         '/marbles/newmatilda2024/bench/spidergreen/7.webp',
+//       ],
+//     },
+//   },
   {
     _id: {
       $oid: '67a5f8394da9b29cd0f10c2c',
