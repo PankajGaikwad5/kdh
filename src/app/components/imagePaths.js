@@ -131,12 +131,12 @@ export const newImagePaths = [
     group: 'Monster Collectibles',
     productId: '67a5efc74da9b29cd0f10c11',
   },
-  {
-    name: 'Chair',
-    path: '/optimized/matildachair.webp',
-    group: 'Matilda',
-    productId: '67a5ef664da9b29cd0f10bfb',
-  },
+  // {
+  //   name: 'Chair',
+  //   path: '/optimized/matildachair.webp',
+  //   group: 'Matilda',
+  //   productId: '67a5ef664da9b29cd0f10bfb',
+  // },
   {
     name: 'Monster Squinty',
     path: '/optimized/monstersquinty.webp',
@@ -275,12 +275,12 @@ export const newImagePaths = [
     group: 'Monster 3.0',
     productId: '67b59111e03cc2c55c624a64',
   },
-  {
-    name: 'Bench 2',
-    path: '/optimized/matildabench2.webp',
-    group: 'Matilda',
-    productId: '67a5ef7f4da9b29cd0f10c05',
-  },
+  // {
+  //   name: 'Bench 2',
+  //   path: '/optimized/matildabench2.webp',
+  //   group: 'Matilda',
+  //   productId: '67a5ef7f4da9b29cd0f10c05',
+  // },
   {
     name: 'Dining Table',
     path: '/optimized/matildadining.webp',
@@ -680,12 +680,12 @@ export const newImagePaths = [
         group: 'Monster Collectibles',
         productId: '67a5efc74da9b29cd0f10c11',
       },
-      {
-        name: 'Chair',
-        path: '/optimized/matildachair.webp',
-        group: 'Matilda',
-        productId: '67a5ef664da9b29cd0f10bfb',
-      },
+      // {
+      //   name: 'Chair',
+      //   path: '/optimized/matildachair.webp',
+      //   group: 'Matilda',
+      //   productId: '67a5ef664da9b29cd0f10bfb',
+      // },
       {
         name: 'Monster Squinty',
         path: '/optimized/monstersquinty.webp',
@@ -824,12 +824,12 @@ export const newImagePaths = [
         group: 'Monster 3.0',
         productId: '67b59111e03cc2c55c624a64',
       },
-      {
-        name: 'Bench 2',
-        path: '/optimized/matildabench2.webp',
-        group: 'Matilda',
-        productId: '67a5ef7f4da9b29cd0f10c05',
-      },
+      // {
+      //   name: 'Bench 2',
+      //   path: '/optimized/matildabench2.webp',
+      //   group: 'Matilda',
+      //   productId: '67a5ef7f4da9b29cd0f10c05',
+      // },
       {
         name: 'Dining Table',
         path: '/optimized/matildadining.webp',
