@@ -508,7 +508,7 @@ Featuring a bold U-shaped curve and wrapped in flawless white veining, it’s th
 Designed for those who appreciate dominance in design, every angle speaks precision, confidence, and high-level taste. 
 
 This is Karan Desai at his best — where sculptural form meets unstoppable presence in your living space.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUzrPAA9MIQShtkIwJflF6rAvm7LBdDHgWeNPU',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOTPovzUkol4fc15PmWSnAqbsUy78gtp2EBGzu',
     __v: 0,
   },
   {
@@ -2541,7 +2541,7 @@ Every inch screams craftsmanship. This is how you tell the world you’ve arrive
 Want elegance? Want impact? Flip the switch—and let marble do the talking.
 
 `,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDO9d0Q8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOauMrVKghAWJf0RpD5MNGad48yOCqt7roLniB',
     __v: 0,
     marbleImages: {
       indianblackbheslana: [
@@ -3495,7 +3495,7 @@ This is where deals are struck, guests are impressed, and legacy begins.
 You don’t dine on it—you build your empire around it.
 
 `,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUINP1NBMW6qU3iBow9cLQK4A1kuMTGmF8rel2',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOJfeO4ziC7rhemSRXDGyNvQ13FExfqigzH8Bn',
     __v: 0,
     marbleImages: {
       indianblackbheslana: [
@@ -4739,7 +4739,7 @@ It doesn’t quietly light a corner—it elevates the entire room.
 Refined, architectural, and impossible to ignore, it’s built for those who know real luxury lies in the details. 
 
 You don’t just decorate with this piece—you make a statement without saying a word.`,
-    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO4Leg2HUmYLAzci562mjC7NX0nUpdqB8Hf3QEy',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO4Leg2HUmYLAzci562mjC7NX0nUpdqB8Hf3QE',
     __v: 0,
     marbleImages: {
       indianblackbheslana: [
