@@ -4569,8 +4569,8 @@ It’s luxury with an edge, comfort with a voice, and design that refuses to sta
     title: 'monsformer',
     group: 'monsformer',
     material: 'Hinges',
-    collabtext: 'Blum',
-    collablink: 'https://www.blum.com/us/en/',
+    // collabtext: 'Blum',
+    // collablink: 'https://www.blum.com/us/en/',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU2YRm87aDNvkE7HG39CYgFqmlMw2jVAoxdcnf',
     images: [
       {
