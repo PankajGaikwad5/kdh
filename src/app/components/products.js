@@ -3495,7 +3495,7 @@ This is where deals are struck, guests are impressed, and legacy begins.
 You don’t dine on it—you build your empire around it.
 
 `,
-    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOJfeO4ziC7rhemSRXDGyNvQ13FExfqigzH8Bn',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOcr7HkWBCHDUBWS0rVfuRb4mIL69ZFEnpQezk',
     __v: 0,
     marbleImages: {
       indianblackbheslana: [
