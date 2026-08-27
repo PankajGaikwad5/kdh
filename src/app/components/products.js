@@ -200,7 +200,7 @@ Its cutout rhythm and all-white finish bring structure and softness into perfect
 
 Precision-crafted and impossible to ignore, this piece brings presence, poise, and quiet power. 
 For those who don’t follow the rules—they carve their own.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUOeq1JXZXhqs0g964QCxmbwcn2WStleB3MEP5',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOPcBRemVaSjHqmNAIDGdfwbKCW75FER48cVo3',
     __v: 0,
   },
   {
