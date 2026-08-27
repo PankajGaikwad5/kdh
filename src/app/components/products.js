@@ -649,7 +649,7 @@ Every angle is engineered to impress, every curve is calculated to stand out.
 
 Designed by Karan Desai, this piece isn’t just furniture — it’s a power statement in stone. 
 Bold. Balanced. Built for spaces that don’t settle for ordinary.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUE1947WYFi7GYsQA2my03DTouek5wnIJXgjpV',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOntKqza0qR6kZyU7GmuJeNarBLvI3hSCstcbP',
     __v: 0,
   },
   {
@@ -982,7 +982,7 @@ Whether in a luxe lounge or a modern workspace, it delivers a sharp mix of sophi
 One glance, and you know — this is the real deal.
 
 `,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUltkpqe9DZL6up3G75dgCY2rJjaQFwifBAEky',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOsDlNdYnhkQgeHN65xqpRcP27TmMVv0LByWJD',
     __v: 0,
   },
   {
@@ -1327,7 +1327,7 @@ Precision meets presence in a design that’s as commanding as it is calming. It
 When style meets structure like this, luxury becomes non-negotiable.
 
 `,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDWJFkL8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOrdsp9QbmfJY4ltsd2gZzTFGVu5iCAoIxpKya',
     __v: 0,
     marbleImages: {
       indianblackbheslana: [
@@ -2169,7 +2169,7 @@ Carved from pristine white marble and built to impress, it doesn’t play by the
 
 Precision meets personality in a piece that’s equal parts design and dominance. 
 For those who don’t decorate—they curate power.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJ2rjROdtZQpOq9no3vVs5yPKXR8gEYuikGUw',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOTPovzUkol4fc15PmWSnAqbsUy78gtp2EBGzu',
     __v: 0,
     marbleImages: {
       indianblackbheslana: [
@@ -2402,7 +2402,7 @@ Created by Karan Desai, this piece doesn’t just elevate a room, it commands it
 
 It tells the world you don’t follow trends — you set them. 
 This is luxury with backbone. Solid, striking, and built to impress.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUIGKf4uW6qU3iBow9cLQK4A1kuMTGmF8rel2f',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOzGdK1s3drRCNOYV7h2kSoeU41wvlAyKEqG0T',
     __v: 0,
     marbleImages: {
       indianblackbheslana: [
@@ -2695,7 +2695,7 @@ The Monster Shelf fuses form and function with bold curves and architectural con
 Every line is intentional. Every shelf, a statement. It's not here to blend in—it’s built to elevate, anchor, and lead the room. 
 
 A piece like this doesn’t just hold your collection—it defines your taste. For those who don’t just store ideas—they live them.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDcPdoS8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOvjb6QRekjwaDBhVEJ7igmtKTMdWo6qU8cb3X',
     __v: 0,
     marbleImages: {
       indianblackbheslana: [
@@ -3369,7 +3369,7 @@ It’s not here to quietly blend in — it’s here to redefine what “luxury�
 
 Designed with purpose and executed with precision, this is a piece that turns raw stone into a statement of refined power. 
 Plant life never had a stage this strong.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUrt5sfTMNnDI67jcCaomXhZLsJd91f4YGitMH',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOj4UxmyINQNhsYReup8oqCmaiw71dHbWcUIX5',
     __v: 0,
     marbleImages: {
       indianblackbheslana: [
@@ -3833,7 +3833,7 @@ Carved from pure white marble with an architectural arch and sculpted bowl cente
 Precision-cut, flawlessly balanced, and impossible to ignore — this piece by Karan Desai transforms a space into a scene. 
 
 It doesn’t whisper luxury — it roars it. Because when you live big, even your basin has to make a statement.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQeyDy6CgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOuowg0d6MRVaZitrSyHezsoA0vp7q8GnxWE2C',
     __v: 0,
     marbleImages: {
       indianblackbheslana: [
@@ -4739,7 +4739,7 @@ It doesn’t quietly light a corner—it elevates the entire room.
 Refined, architectural, and impossible to ignore, it’s built for those who know real luxury lies in the details. 
 
 You don’t just decorate with this piece—you make a statement without saying a word.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQLRjq6wCgpKiS14YXmU2JDcwG0vBsCL6dWNy',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO4Leg2HUmYLAzci562mjC7NX0nUpdqB8Hf3QEy',
     __v: 0,
     marbleImages: {
       indianblackbheslana: [
@@ -4919,7 +4919,7 @@ Sculpted from flawless white marble, it fuses form and function with unapologeti
 A commanding arched silhouette, subtle shelving, and a statement vase top—it’s not just about looking good, it’s about owning the space. 
 
 Designed for those who play to win, this piece turns any corner into a conversation, and any room into a showcase.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUz8wrsAIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMODa400HORANbs7xnj4mUgJXStW8dGvEMKyLVa',
     __v: 0,
     marbleImages: {
       indianblackbheslana: [
