@@ -64,7 +64,7 @@ export const catalogues = [
   },
   {
     group: 'monsformer',
-    pdf: 'not-available',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUlRWolM9DZL6up3G75dgCY2rJjaQFwifBAEky',
     image: '/assets/blum.png',
     year: '2023',
   },
