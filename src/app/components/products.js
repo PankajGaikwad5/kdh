@@ -3640,7 +3640,7 @@ Designed with razor-sharp precision and bold architectural curves, it’s built 
 The floral display? That’s just the bonus. What you’re really showing off is control, taste, and presence. 
 
 Crafted by Karan Desai, this vase is where fine art meets fearless form — the kind of piece that doesn’t just hold flowers, it holds attention.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUaA2lXGzVIx6ZjWFiGhcRQJMUzft1drvPNTbL',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOJfeO4ziC7rhemSRXDGyNvQ13FExfqigzH8Bn',
     __v: 0,
     marbleImages: {
       indianblackbheslana: [
