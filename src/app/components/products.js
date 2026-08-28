@@ -3753,7 +3753,7 @@ Its sculpted form offers ergonomic seating, a flat surface for essentials, and a
 Equally at home inside or out, the bench marries strength with softness, blending Italian craftsmanship with Indian storytelling. 
 
 More than functional, Samaveta symbolizes unity, empathy, and the beauty of cross-cultural design—transforming any space it inhabits with intention, elegance, and quiet impact.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUV965cLeJz0jfKoyVd9HNhC5wFQ4OrBi2UkDx',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOJfeO4ziC7rhemSRXDGyNvQ13FExfqigzH8Bn',
     __v: 0,
   },
   {
