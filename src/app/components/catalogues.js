@@ -14,7 +14,7 @@ export const catalogues = [
   },
   {
     group: 'monster_3.0',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUuyfI12VvD2FOkC3NsiU7yPRWb18aeZThVzGr',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOcmxNOYBCHDUBWS0rVfuRb4mIL69ZFEnpQezk',
     image: '/assets/dimensions1.png',
     year: '2025',
   },

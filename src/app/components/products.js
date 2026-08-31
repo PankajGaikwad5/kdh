@@ -7121,7 +7121,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.0 Ottoman',
     group: 'monster_3.0',
     material: 'Burnt Wood & Fur Fabric',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUXJ46umLaynKVcYuZHCDm1IeJRfoT4vBxS8i0',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOlRLWch34zUERwb0h6yXWIJq45NdKi1MgA7FT',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -7191,7 +7191,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.0 Coffee Table',
     group: 'monster_3.0',
     material: 'Burnt Wood & Fur Fabric',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWE77gCrSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOH92YxuF1d3zpmrSIcueZBfQo80E5Ujs7PTGg',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
