@@ -4571,7 +4571,7 @@ It’s luxury with an edge, comfort with a voice, and design that refuses to sta
     material: 'Hinges',
     // collabtext: 'Blum',
     // collablink: 'https://www.blum.com/us/en/',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU2YRm87aDNvkE7HG39CYgFqmlMw2jVAoxdcnf',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOEkZT4VWG6mlRhLjyZzHQE75KS9IwnJaWcFNg',
     images: [
       {
         fileName: '1738930738989-Slide1.JPG',
