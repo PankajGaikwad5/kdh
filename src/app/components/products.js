@@ -6501,7 +6501,7 @@ Because when you invest in details like this, you’re not just upgrading your s
     title: 'matilda 2023 Console',
     group: 'matilda_2023',
     material: 'Marble',
-    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOxznN0KtfzZMOQ82F9V3XlUqPn6kstdYmWcTr',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOtACPKTECNT82uVeHGxrbtQFfsJc75Uigz9SX',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -6596,7 +6596,7 @@ Whether it's hiding cables or holding court, AV means business — and business 
     group: 'matilda_2023',
     material: 'Marble',
     defaultMarble: null,
-    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgzsaPScO9jlyr24LDs3RmTkWCeUAipGbH1ZJ',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOHHVUdwF1d3zpmrSIcueZBfQo80E5Ujs7PTGg',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -6689,7 +6689,7 @@ Whether it's hiding cables or holding court, AV means business — and business 
     title: 'matilda 2023 Console 2',
     group: 'matilda_2023',
     material: 'Marble',
-    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOaBhQfedghAWJf0RpD5MNGad48yOCqt7roLni',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOuX4i9r6MRVaZitrSyHezsoA0vp7q8GnxWE2C',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -6771,7 +6771,7 @@ Place it in your entryway, gallery, or corner office — this piece doesn’t ju
     title: 'matilda 2023 Side Table',
     group: 'matilda_2023',
     material: 'Marble',
-    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOrRQRBFbmfJY4ltsd2gZzTFGVu5iCAoIxpKya',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMORj0mpwL357SWXL80wNJFzAsgpUhoDGPVxkTY',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
