@@ -5456,7 +5456,7 @@ This is what success looks like... even when you're rinsing your hands.`,
     title: 'Bar Counter',
     group: 'friends',
     material: 'Marble',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUyXBkZujvoD5bj92PLzxBdul6nT8GrEAS30eN',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO6jARcBTgmyYdxBZk9OWub4XEJaA1zR2CTiMc',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -5689,7 +5689,7 @@ With its monolithic silhouette and tactile surface, Samaveta anchors any space w
     title: 'Constelletion Mirror',
     group: 'friends',
     material: 'Mirror',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCEKH3sdtZQpOq9no3vVs5yPKXR8gEYuikGU',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOj3hQnnNQNhsYReup8oqCmaiw71dHbWcUIX5f',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
