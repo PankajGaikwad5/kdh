@@ -671,7 +671,7 @@ Bold. Balanced. Built for spaces that don’t settle for ordinary.`,
         src: '/marbles/indianrossolevante.webp',
       },
       {
-        name: 'Banswara & Beige',
+        name: 'Banswara & Italian Beige Travertine',
         swatches: [
           '/marbles/banswara.webp',
           '/marbles/italianbeigetravertine.webp',
@@ -8334,7 +8334,7 @@ A sculptural presence disguised as furniture.`,
     title: 'Coffee Table',
     group: 'jina_shilp',
     material: '',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnie2WirbYcoeRKumWaHxyTj5q3bfMXB6INAU',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMONGDCQOllKuEFGqiHYwx1vdgXShVApaDPkJnO',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -8405,7 +8405,7 @@ Jina Shilp Coffee Table is meant to be a calm presence in a room—a place where
     title: 'Totem',
     group: 'jina_shilp',
     material: '',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9kauxF2frimQ5LhFdjbpOHNPEsav1o2Ac0Dz',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO83MLyOJ6OXRnzQocN3dym1xs7Wqkgah8JuVI',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -8500,7 +8500,7 @@ The totem is meant to feel calm, grounded and thoughtful. It carries a quiet pre
     title: 'Dining Table',
     group: 'jina_shilp',
     material: '',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUN4sR6EG5UuqxLjF0ygrW1ikRpXaHfGVvonDw',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOT7pWBLBkol4fc15PmWSnAqbsUy78gtp2EBGz',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -8587,7 +8587,7 @@ Jina Shilp Dining table is conceived as an object of presence—where form, mate
     title: 'Mirror',
     group: 'jina_shilp',
     material: '',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUL68AYmPDqbauUfVsg4JYrj86xOSilFe5PBo3',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOpkIWloP3rNhAZbyusfUHIiaBK09J5xzpGSRo',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
