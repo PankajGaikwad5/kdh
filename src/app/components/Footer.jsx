@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { Instagram } from 'lucide-react';
-import { FaWhatsapp, FaLinkedin } from 'react-icons/fa';
+import { FaWhatsapp, FaLinkedin, FaYoutube } from 'react-icons/fa';
 import Link from 'next/link';
 
 const navLinks = [
@@ -55,6 +55,13 @@ const Footer = () => {
               className='hover:text-pink-600 transition-all duration-500'
             >
               <Instagram />
+            </Link>
+            <Link
+              href='https://www.youtube.com/@KarandesaiAD'
+              target='_blank'
+              className='hover:text-pink-600 transition-all duration-500'
+            >
+              <FaYoutube />
             </Link>
             <Link
               href='https://wa.me/+917977112242'
