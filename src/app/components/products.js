@@ -5889,7 +5889,7 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
     title: 'matilda 2022 bed Side Table',
     group: 'matilda_2022',
     material: 'Marble',
-    pdf: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6Ed9BYq8vfBbIaKPCgLGxqndpNv5DjmeSowJ9',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOpgcFJFBP3rNhAZbyusfUHIiaBK09J5xzpGSR',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
