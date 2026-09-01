@@ -38,12 +38,12 @@ export const catalogues = [
   },
   {
     group: 'matilda_2022',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUWuFq1orSVLpqPbsdCUAMXZB0lT2vrWw4RhOu',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUbCQo6Ixzt13BbVlJhGUR6Ww2eTaj5pASg9NC',
     year: '2022',
   },
   {
     group: 'matilda_2023',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUOioCNSZXhqs0g964QCxmbwcn2WStleB3MEP5',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQ5UmIKCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
     year: '2023',
   },
   {
@@ -54,7 +54,7 @@ export const catalogues = [
   },
   {
     group: 'matilda_2025',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUdLDEIaQLipXnNcaZzTWOmKke9BGF7gf2xIhq',
+    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQPpUZqCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
     year: '2025',
   },
   {
