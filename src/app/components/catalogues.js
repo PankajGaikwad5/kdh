@@ -26,7 +26,7 @@ export const catalogues = [
   },
   {
     group: 'serafini',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKURhBZLLE1fzw0AFxNe2UEaubVBY53GTv7kqpl',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMODblDS3IORANbs7xnj4mUgJXStW8dGvEMKyLV',
     image: '/serafinilogo.png',
     year: '2024-25',
   },
