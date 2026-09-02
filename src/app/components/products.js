@@ -5601,7 +5601,7 @@ Sleek, commanding, and completely unexpected—this table doesn’t just support
     material: 'Marble',
     collabtext: 'Serafini',
     collablink: 'https://www.serafini.com/products-page/samaveta-marble-console',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHr4HFVSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOYnR9Y9xq6dLIzbPjGW4oiU2MEvH0hptTwnDc',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
