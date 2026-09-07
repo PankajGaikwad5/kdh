@@ -6491,7 +6491,7 @@ The contrast? Deliberate. The proportions? Spot on. Whether it’s for your pent
 
 Functional? Absolutely. But more than that — it’s unforgettable. 
 Because when you invest in details like this, you’re not just upgrading your space — you’re owning it.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUr9qyDANnDI67jcCaomXhZLsJd91f4YGitMHP',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUCr8mlyX0XaKgNMT1QEmen25RAwc7Sk4UxoJF',
     __v: 0,
   },
   {
