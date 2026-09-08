@@ -6269,87 +6269,87 @@ A symbol of restraint, rhythm, and remarkable design.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOXaBMTyuosnbmOpdheGL3EgIPWHwQBAfDiZqX',
     __v: 0,
   },
-  {
-    _id: {
-      $oid: 'marble-screen',
-    },
-    title: 'matilda 2022 Marble Screen',
-    group: 'matilda_2022',
-    material: 'Marble',
-    pdf: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6johOGZBAw10EOsPhxvgoy23lzpjKfG8iW4LD',
-    images: [
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m22/m22ms.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m22/m22ms_2.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m22/m22ms_3.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m22/m22ms_4.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/kdadprojectimages/mscreen.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-    ],
-    marbleImages: {
-      indianblackbheslana: [
-        '/marbles/matilda2022/marblescreen/indianblackbheslana/1.webp',
-        '/marbles/matilda2022/marblescreen/indianblackbheslana/2.webp',
-        '/marbles/matilda2022/marblescreen/indianblackbheslana/3.webp',
-        '/marbles/matilda2022/marblescreen/indianblackbheslana/4.webp',
-      ],
-      indianrossolevante: [
-        '/marbles/matilda2022/marblescreen/indianrossolevante/1.webp',
-        '/marbles/matilda2022/marblescreen/indianrossolevante/2.webp',
-        '/marbles/matilda2022/marblescreen/indianrossolevante/3.webp',
-        '/marbles/matilda2022/marblescreen/indianrossolevante/4.webp',
-      ],
-      italianbeigetravertine: [
-        '/marbles/matilda2022/marblescreen/italianbeigetravertine/1.webp',
-        '/marbles/matilda2022/marblescreen/italianbeigetravertine/2.webp',
-        '/marbles/matilda2022/marblescreen/italianbeigetravertine/3.webp',
-        '/marbles/matilda2022/marblescreen/italianbeigetravertine/4.webp',
-      ],
-      marquina: [
-        '/marbles/matilda2022/marblescreen/marquina/1.webp',
-        '/marbles/matilda2022/marblescreen/marquina/2.webp',
-        '/marbles/matilda2022/marblescreen/marquina/3.webp',
-        '/marbles/matilda2022/marblescreen/marquina/4.webp',
-      ],
-      spidergreen: [
-        '/marbles/matilda2022/marblescreen/spidergreen/1.webp',
-        '/marbles/matilda2022/marblescreen/spidergreen/2.webp',
-        '/marbles/matilda2022/marblescreen/spidergreen/3.webp',
-        '/marbles/matilda2022/marblescreen/spidergreen/4.webp',
-      ],
-    },
-    description: 'The Matilda Marble Screen by Karan Desai Home brings together sculptural marble and refined stone craftsmanship in a striking expression of contemporary furniture design. Handcrafted from natural marble, its flowing curved form and rhythmic texture introduce movement, depth, and architectural presence to the interior of a modern home or residence. Designed to function both as a spatial divider and a sculptural element, the piece transforms the interior into a refined design moment. Designed by Karan Desai and made in India, this statement piece enhances luxury interiorswhile standing as a distinctive collectible piece.',
-    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOBY3TsfgzYN8aVpJZLF50If4uUdl1vTPgMQEx',
-    __v: 0,
-  },
+  // {
+  //   _id: {
+  //     $oid: 'marble-screen',
+  //   },
+  //   title: 'matilda 2022 Marble Screen',
+  //   group: 'matilda_2022',
+  //   material: 'Marble',
+  //   pdf: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6johOGZBAw10EOsPhxvgoy23lzpjKfG8iW4LD',
+  //   images: [
+  //     {
+  //       fileName: '1738927863060-Slide1.JPG',
+  //       filePath: '/m22/m22ms.webp',
+  //       _id: {
+  //         $oid: '67a5eef74da9b29cd0f10be2',
+  //       },
+  //     },
+  //     {
+  //       fileName: '1738927863060-Slide1.JPG',
+  //       filePath: '/m22/m22ms_2.webp',
+  //       _id: {
+  //         $oid: '67a5eef74da9b29cd0f10be2',
+  //       },
+  //     },
+  //     {
+  //       fileName: '1738927863060-Slide1.JPG',
+  //       filePath: '/m22/m22ms_3.webp',
+  //       _id: {
+  //         $oid: '67a5eef74da9b29cd0f10be2',
+  //       },
+  //     },
+  //     {
+  //       fileName: '1738927863060-Slide1.JPG',
+  //       filePath: '/m22/m22ms_4.webp',
+  //       _id: {
+  //         $oid: '67a5eef74da9b29cd0f10be2',
+  //       },
+  //     },
+  //     {
+  //       fileName: '1738927863060-Slide1.JPG',
+  //       filePath: '/kdadprojectimages/mscreen.webp',
+  //       _id: {
+  //         $oid: '67a5eef74da9b29cd0f10be2',
+  //       },
+  //     },
+  //   ],
+  //   marbleImages: {
+  //     indianblackbheslana: [
+  //       '/marbles/matilda2022/marblescreen/indianblackbheslana/1.webp',
+  //       '/marbles/matilda2022/marblescreen/indianblackbheslana/2.webp',
+  //       '/marbles/matilda2022/marblescreen/indianblackbheslana/3.webp',
+  //       '/marbles/matilda2022/marblescreen/indianblackbheslana/4.webp',
+  //     ],
+  //     indianrossolevante: [
+  //       '/marbles/matilda2022/marblescreen/indianrossolevante/1.webp',
+  //       '/marbles/matilda2022/marblescreen/indianrossolevante/2.webp',
+  //       '/marbles/matilda2022/marblescreen/indianrossolevante/3.webp',
+  //       '/marbles/matilda2022/marblescreen/indianrossolevante/4.webp',
+  //     ],
+  //     italianbeigetravertine: [
+  //       '/marbles/matilda2022/marblescreen/italianbeigetravertine/1.webp',
+  //       '/marbles/matilda2022/marblescreen/italianbeigetravertine/2.webp',
+  //       '/marbles/matilda2022/marblescreen/italianbeigetravertine/3.webp',
+  //       '/marbles/matilda2022/marblescreen/italianbeigetravertine/4.webp',
+  //     ],
+  //     marquina: [
+  //       '/marbles/matilda2022/marblescreen/marquina/1.webp',
+  //       '/marbles/matilda2022/marblescreen/marquina/2.webp',
+  //       '/marbles/matilda2022/marblescreen/marquina/3.webp',
+  //       '/marbles/matilda2022/marblescreen/marquina/4.webp',
+  //     ],
+  //     spidergreen: [
+  //       '/marbles/matilda2022/marblescreen/spidergreen/1.webp',
+  //       '/marbles/matilda2022/marblescreen/spidergreen/2.webp',
+  //       '/marbles/matilda2022/marblescreen/spidergreen/3.webp',
+  //       '/marbles/matilda2022/marblescreen/spidergreen/4.webp',
+  //     ],
+  //   },
+  //   description: 'The Matilda Marble Screen by Karan Desai Home brings together sculptural marble and refined stone craftsmanship in a striking expression of contemporary furniture design. Handcrafted from natural marble, its flowing curved form and rhythmic texture introduce movement, depth, and architectural presence to the interior of a modern home or residence. Designed to function both as a spatial divider and a sculptural element, the piece transforms the interior into a refined design moment. Designed by Karan Desai and made in India, this statement piece enhances luxury interiorswhile standing as a distinctive collectible piece.',
+  //   dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOBY3TsfgzYN8aVpJZLF50If4uUdl1vTPgMQEx',
+  //   __v: 0,
+  // },
   {
     _id: {
       $oid: 'side-table',
