@@ -78,7 +78,7 @@ export const products = [
         '/marbles/matilda2024/pendantlights/8.webp',
       ],
     },
-    description: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOxwHWB0tfzZMOQ82F9V3XlUqPn6kstdYmWcTr',
+    description: '',
     __v: 0,
   },
   {
