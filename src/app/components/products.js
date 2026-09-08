@@ -4104,14 +4104,14 @@ It doesn’t whisper luxury — it roars it. Because when you live big, even you
     images: [
       {
         fileName: '1738927007154-Slide1.JPG',
-        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSwGCHZAKnraNxkI5vbez6dT2q8M0osBfR9At',
+        filePath: '/2.0/yoda/png.webp',
         _id: {
           $oid: '67a5eb9f4da9b29cd0f10b72',
         },
       },
       {
         fileName: '1738927007154-Slide1.JPG',
-        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUrfCmRWNnDI67jcCaomXhZLsJd91f4YGitMHP',
+        filePath: '/2.0/yoda/1.webp',
         _id: {
           $oid: '67a5eb9f4da9b29cd0f10b72',
         },
@@ -4119,59 +4119,11 @@ It doesn’t whisper luxury — it roars it. Because when you live big, even you
       },
       {
         fileName: '1738927007154-Slide1.JPG',
-        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUX88qHrzLaynKVcYuZHCDm1IeJRfoT4vBxS8i',
+        filePath: '/2.0/yoda/2.webp',
         _id: {
           $oid: '67a5eb9f4da9b29cd0f10b72',
         },
         thumbnail: '/assets/products/thumbnails/1738927007154-Slide1.JPG',
-      },
-      {
-        fileName: '1738927007154-Slide1.JPG',
-        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUo8Lh75Pd43VNTXj27bgOZneCUs9aBiY5x8vw',
-        _id: {
-          $oid: '67a5eb9f4da9b29cd0f10b72',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927007154-Slide1.JPG',
-      },
-      {
-        fileName: '1738927007154-Slide1.JPG',
-        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUY4zIbonVM7iftKIsUSTJx8haC1mEBkZl4NvR',
-        _id: {
-          $oid: '67a5eb9f4da9b29cd0f10b72',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927007154-Slide1.JPG',
-      },
-      {
-        fileName: '1738927007154-Slide1.JPG',
-        filePath: '/assets/products/1738927007154-Slide1.JPG',
-        _id: {
-          $oid: '67a5eb9f4da9b29cd0f10b72',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927007154-Slide1.JPG',
-      },
-      {
-        fileName: '1738927007155-Slide2.JPG',
-        filePath: '/assets/products/1738927007155-Slide2.JPG',
-        _id: {
-          $oid: '67a5eb9f4da9b29cd0f10b73',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927007155-Slide2.JPG',
-      },
-      {
-        fileName: '1738927007157-Slide3.JPG',
-        filePath: '/assets/products/1738927007157-Slide3.JPG',
-        _id: {
-          $oid: '67a5eb9f4da9b29cd0f10b74',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927007157-Slide3.JPG',
-      },
-      {
-        fileName: '1738927007158-Slide4.JPG',
-        filePath: '/assets/products/1738927007158-Slide4.JPG',
-        _id: {
-          $oid: '67a5eb9f4da9b29cd0f10b75',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927007158-Slide4.JPG',
       },
     ],
     description: `Meet YODAA a monster totem forged from over a century of Bharat Flooring’s terrazzo brilliance. 
