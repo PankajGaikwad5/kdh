@@ -78,7 +78,7 @@ export const products = [
         '/marbles/matilda2024/pendantlights/8.webp',
       ],
     },
-    description: '',
+    description: 'Sculpted from richly veined marble, the Matilda 2024 Pendant Light explores the relationship between solid stone and filtered light. As illumination passes through the form, it highlights the natural depth, warmth and movement of the marble. More than a source of light, it becomes a commanding architectural feature within the room.',
     __v: 0,
   },
   {
