@@ -6,6 +6,7 @@ export const products = [
     title: 'Pendant Lights',
     group: 'matilda_2024',
     material: 'Marble',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOxwHWB0tfzZMOQ82F9V3XlUqPn6kstdYmWcTr',
     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU1wNCWhgmcNbALVg2tCIRm5fi0793BwZH8PYy',
     images: [
       {
@@ -4523,7 +4524,7 @@ It’s luxury with an edge, comfort with a voice, and design that refuses to sta
     material: 'Hinges',
     // collabtext: 'Blum',
     // collablink: 'https://www.blum.com/us/en/',
-    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOEkZT4VWG6mlRhLjyZzHQE75KS9IwnJaWcFNg',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO8Kp6sYJ6OXRnzQocN3dym1xs7Wqkgah8JuVI',
     images: [
       {
         fileName: '1738930738989-Slide1.JPG',
@@ -4589,7 +4590,7 @@ But remember… he's got unfinished business.
 
 Think you can outrun the Mons-Former?
 Let’s find out.`,
-    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO8Kp6sYJ6OXRnzQocN3dym1xs7Wqkgah8JuVI',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOEkZT4VWG6mlRhLjyZzHQE75KS9IwnJaWcFNg',
     __v: 0,
   },
   {
