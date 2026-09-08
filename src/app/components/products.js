@@ -5829,6 +5829,62 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/ff/bst5.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/ff/bst6.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/ff/bst7.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/ff/bst8.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/ff/bst9.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/ff/bst10.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/ff/bst11.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/ff/bst12.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
     ],
     description: `This 3D printed bar stool is formed through a flowing silhouette and a tactile textured surface. Its sculptural construction gives it the presence of a statement object while retaining its purpose as functional seating. Designed for both residential and hospitality spaces, it introduces a bold contemporary form into the setting.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO30kW6DYnpyK0DhEV4daf1ZotLM8ROqYkSFNb',
