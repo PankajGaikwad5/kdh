@@ -5163,7 +5163,7 @@ It's architecture with attitude.`,
     title: 'matilda 2025 KD Desk',
     group: 'matilda_2025',
     material: 'Marble',
-    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOX05IPmuosnbmOpdheGL3EgIPWHwQBAfDiZqX',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOZrO8MJNDS0w7TNVWCzFm8hspGeyOEKurfnX3',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -5239,7 +5239,7 @@ Want to own the room before you even speak? Start here.`,
     title: 'matilda 2025 Mirror',
     group: 'matilda_2025',
     material: 'Marble',
-    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOR6aG6pL357SWXL80wNJFzAsgpUhoDGPVxkTY',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO3RX0koYnpyK0DhEV4daf1ZotLM8ROqYkSFNb',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -5326,7 +5326,7 @@ This is the kind of mirror that doesn’t flatter. It affirms.
     title: 'matilda 2025 Wash Basin',
     group: 'matilda_2025',
     material: 'Marble',
-    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOPGKd4HaSjHqmNAIDGdfwbKCW75FER48cVo3u',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOiXr9FUtUJRoKmnGrQF02ZW1ykXpLdYM8ITvx',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -5483,7 +5483,7 @@ Ideal for contemporary lounges, hospitality spaces, or high-end offices — the 
     title: 'matilda 2025 Conference Table',
     group: 'matilda_2025',
     material: 'Marble',
-    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOQbN94zjEmZGMv8oIDTj47Xefwd1pHkl6ngBy',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOBKY8sRzYN8aVpJZLF50If4uUdl1vTPgMQEx2',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -6463,7 +6463,7 @@ A symbol of restraint, rhythm, and remarkable design.`,
     title: 'matilda 2025 Taavdi',
     group: 'matilda_2025',
     material: 'Marble',
-    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMON3AR8EllKuEFGqiHYwx1vdgXShVApaDPkJnO',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOO2AFilorU1lc4IGVZ5mibaxAoTHtjB6JeSuf',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
