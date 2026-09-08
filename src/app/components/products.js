@@ -5847,7 +5847,7 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
     title: '3D Printed Bar Stool',
     group: 'friends',
     material: 'plastic',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUuI3NLHVvD2FOkC3NsiU7yPRWb18aeZThVzGr',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOkM9roPqXctSvsTPiHmE28xkgA9ynR4Uq3KCZ',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',

@@ -59,7 +59,7 @@ export const catalogues = [
   },
   {
     group: 'friends',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUL6xX4r7DqbauUfVsg4JYrj86xOSilFe5PBo3',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOBjRO0tzYN8aVpJZLF50If4uUdl1vTPgMQEx2',
     // year: '2026',
   },
   {
