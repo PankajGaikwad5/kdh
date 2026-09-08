@@ -5837,7 +5837,7 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
       },
     ],
     description: `Inspired by the familiar form of traditional water pots, this sculptural composition features three handcrafted stone vessels placed on a monolithic marble base. The arrangement brings together cultural reference, natural material and contemporary proportion. Suitable for indoor and outdoor settings, it works as a distinctive stone centrepiece.`,
-    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO30kW6DYnpyK0DhEV4daf1ZotLM8ROqYkSFNb',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOFmwQ02GIUm4TDNaKfAZXnyPEseO5kYx2glv9',
     __v: 0,
   },
   {
