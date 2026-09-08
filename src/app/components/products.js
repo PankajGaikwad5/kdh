@@ -4637,7 +4637,7 @@ But remember… he's got unfinished business.
 
 Think you can outrun the Mons-Former?
 Let’s find out.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUDLzqKC8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO8Kp6sYJ6OXRnzQocN3dym1xs7Wqkgah8JuVI',
     __v: 0,
   },
   {
