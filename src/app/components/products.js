@@ -5711,7 +5711,7 @@ in delicate precision across its surface.
 This circular mirror transforms your wall into a celestial map, glowing softly with constellation points that capture the mystery of the night sky.
 
 Minimalist yet mesmerizing, it brings both reflection and wonder into your space — ideal for those drawn to the stars and the stories they tell.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHr4HFVSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
+    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCEKH3sdtZQpOq9no3vVs5yPKXR8gEYuikGU',
     __v: 0,
   },
   {
