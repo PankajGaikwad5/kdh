@@ -4105,14 +4105,14 @@ It doesn’t whisper luxury — it roars it. Because when you live big, even you
     images: [
       {
         fileName: '1738927007154-Slide1.JPG',
-        filePath: '/2.0/yoda/png.webp',
+        filePath: '/2.0/yoda/1.webp',
         _id: {
           $oid: '67a5eb9f4da9b29cd0f10b72',
         },
       },
       {
         fileName: '1738927007154-Slide1.JPG',
-        filePath: '/2.0/yoda/1.webp',
+        filePath: '/2.0/yoda/2.webp',
         _id: {
           $oid: '67a5eb9f4da9b29cd0f10b72',
         },
@@ -4120,7 +4120,23 @@ It doesn’t whisper luxury — it roars it. Because when you live big, even you
       },
       {
         fileName: '1738927007154-Slide1.JPG',
-        filePath: '/2.0/yoda/2.webp',
+        filePath: '/2.0/yoda/3.webp',
+        _id: {
+          $oid: '67a5eb9f4da9b29cd0f10b72',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927007154-Slide1.JPG',
+      },
+      {
+        fileName: '1738927007154-Slide1.JPG',
+        filePath: '/2.0/yoda/4.webp',
+        _id: {
+          $oid: '67a5eb9f4da9b29cd0f10b72',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927007154-Slide1.JPG',
+      },
+      {
+        fileName: '1738927007154-Slide1.JPG',
+        filePath: '/2.0/yoda/5.webp',
         _id: {
           $oid: '67a5eb9f4da9b29cd0f10b72',
         },
