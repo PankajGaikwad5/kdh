@@ -7,7 +7,7 @@ export const catalogues = [
   },
   {
     group: 'monster_2.0',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQsSTArCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOHuokuxF1d3zpmrSIcueZBfQo80E5Ujs7PTGg',
     image: '/topb.png',
     image2: '/assets/bft.png',
     year: '2024',
