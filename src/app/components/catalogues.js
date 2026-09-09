@@ -76,7 +76,7 @@ export const catalogues = [
   },
   {
     group: 'jina_shilp',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUNEigr4G5UuqxLjF0ygrW1ikRpXaHfGVvonDw',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOzl0d7R3drRCNOYV7h2kSoeU41wvlAyKEqG0T',
     image: '/serafinilogo.png',
     year: '2026',
   },

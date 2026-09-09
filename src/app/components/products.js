@@ -8683,7 +8683,7 @@ The Jina Shilp Mirror is meant to be more than a functional object. It is a quie
     title: 'Pillar Bench',
     group: 'jina_shilp',
     material: '',
-    pdf: '',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOQlRRxxYjEmZGMv8oIDTj47Xefwd1pHkl6ngB',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
