@@ -4101,7 +4101,7 @@ It doesn’t whisper luxury — it roars it. Because when you live big, even you
     material: 'Concrete Terazzo',
     collabtext: 'Bharat Floorings',
     collablink: 'https://www.bharatfloorings.com/',
-    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOzfi4OB3drRCNOYV7h2kSoeU41wvlAyKEqG0T',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOj4dKctzNQNhsYReup8oqCmaiw71dHbWcUIX5',
     images: [
       {
         fileName: '1738927007154-Slide1.JPG',
