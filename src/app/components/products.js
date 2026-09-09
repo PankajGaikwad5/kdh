@@ -4465,7 +4465,7 @@ It’s luxury with an edge, comfort with a voice, and design that refuses to sta
     material: 'Sand Casted Brass and Hand Blown Glass',
     collabtext: 'Arjun Rathi',
     collablink: 'https://www.arjunrathi.com/',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUAadKi3J1oeY2wnF0zQbWX83C4KujdSqt6MUT',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOBIY8xJzYN8aVpJZLF50If4uUdl1vTPgMQEx2',
     images: [
       {
         fileName: '1738929747418-Slide1.JPG',
