@@ -386,7 +386,7 @@ Anchored by heavy, sculpted wood and topped with a plush, fur-like form, it blur
 Minimal in appearance, maximal in impact. It invites you to sit, but demands you notice. 
 
 Grounded in strength and softened with indulgence, this bench proves that the boldest moves don’t need to shout—they just need to exist.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUdXEaLleQLipXnNcaZzTWOmKke9BGF7gf2xIh',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOaw3dkxghAWJf0RpD5MNGad48yOCqt7roLniB',
     __v: 0,
   },
   {
