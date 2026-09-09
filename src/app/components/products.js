@@ -660,7 +660,7 @@ Bold. Balanced. Built for spaces that don’t settle for ordinary.`,
     title: 'Matilda 2024 Center Table 3',
     group: 'matilda_2024',
     material: 'Marble',
-    pdf: '/m23/23ct3.pdf',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOLVwJeIAkQVmSZGde5vjXJNYPU92WHu3y8Fg6',
     defaultMarble: 'Both Banswara',
     marbles: [
       {
