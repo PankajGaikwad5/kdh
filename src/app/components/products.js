@@ -7757,7 +7757,7 @@ Because even your side table should speak volumes.`,
     description: `Defined by bold curves and raw gradients, the Monster Chair embodies
 primal comfort and sculptural presence. A design that commands
 attention while grounding any space with its elemental form`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU1LwB9ZmcNbALVg2tCIRm5fi0793BwZH8PYyx',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOvwlvilekjwaDBhVEJ7igmtKTMdWo6qU8cb3X',
     __v: 0,
   },
   {
@@ -7816,7 +7816,7 @@ attention while grounding any space with its elemental form`,
     ],
   
     description: `Comfort can have character.  The Monster Upholstered Chair tempers its sculptural ash frame with soft upholstery, a reminder that power and comfort can share the same seat.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUdsc7S7QLipXnNcaZzTWOmKke9BGF7gf2xIhq',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOvwlvilekjwaDBhVEJ7igmtKTMdWo6qU8cb3X',
     __v: 0,
   },
   {
