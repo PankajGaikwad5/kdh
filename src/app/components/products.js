@@ -4162,7 +4162,7 @@ You’re not just looking at art—you’re looking at 100 years of innovation, 
     material: 'Fur Fabric',
     collabtext: 'Dimensions',
     collablink: 'https://dimensionsfurniture.in/collections/monster-collection/',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUVOfTglleJz0jfKoyVd9HNhC5wFQ4OrBi2UkD',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOBYn2IuwzYN8aVpJZLF50If4uUdl1vTPgMQEx',
     images: [
       {
         fileName: '1',
