@@ -4303,7 +4303,7 @@ When you take your seat here, you’re not part of the room. You become the focu
     description: `Defined by bold curves and raw gradients, the Monster Chair embodies
 primal comfort and sculptural presence. A design that commands
 attention while grounding any space with its elemental form`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU1LwB9ZmcNbALVg2tCIRm5fi0793BwZH8PYyx',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOLJ6Sw2WAkQVmSZGde5vjXJNYPU92WHu3y8Fg',
     __v: 0,
   },
   {
@@ -8715,7 +8715,7 @@ The Jina Shilp Mirror is meant to be more than a functional object. It is a quie
       },
     ],
     description: `JinaShilp and Pillar bench is conceived as a physical and symbolic intersection between two distinct cultural identities. Designed by Karan Desai and Spinzi for Serafini, the piece brings together two design approaches into a single continuous form. One side reflects the vertical, layered and introspective language of JinaShilp, while the other expresses the architectural rhythm and modular clarity of Pillar. The bench becomes a point of transition where these two worlds meet without losing their individuality. JinaShilp and Pillar bench is not simply a seating object but a narrative of coexistence, where design becomes a medium for dialogue. Produced by Serafini, it embodies a vision of marble design that celebrates diversity while finding unity through form.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUwDjhUugi1vXhd2AYtoGrDFy59EOsBzTnN6eW',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMONm8LsZHllKuEFGqiHYwx1vdgXShVApaDPkJn',
     __v: 0,
   },
 ];
