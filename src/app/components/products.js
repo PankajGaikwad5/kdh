@@ -4215,7 +4215,7 @@ It doesn’t quietly blend in—it leads. Sink into its plush comfort and feel t
 Designed for those who don’t follow trends—they create them. 
 
 When you take your seat here, you’re not part of the room. You become the focus.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQr4b0hCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOLJ6Sw2WAkQVmSZGde5vjXJNYPU92WHu3y8Fg',
     __v: 0,
   },
   {
