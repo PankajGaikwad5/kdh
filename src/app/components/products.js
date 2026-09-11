@@ -288,7 +288,7 @@ For those who don’t follow the rules—they carve their own.`,
     material: 'Burnt Wood & Fur Fabric',
     collabtext: 'Dimensions',
     collablink: 'https://dimensionsfurniture.in/collections/monster-collection/',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9zGTRgx2frimQ5LhFdjbpOHNPEsav1o2Ac0D',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOuPeXPR6MRVaZitrSyHezsoA0vp7q8GnxWE2C',
     images: [
       {
         fileName: '1739952312340-MB Set.53.jpg',
@@ -1721,7 +1721,7 @@ Because when marble meets vision, the result is nothing short of iconic.`,
     material: 'Burnt Wood',
     collabtext: 'Dimensions',
     collablink: 'https://dimensionsfurniture.in/collections/monster-collection/',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUvwL3aR0iQtznIlhRaFJ8jZ6p7xPg3bw9OrDV',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOdX5WLyzvXmWSn1eIpy3d0vtl4fEkq579rjML',
     images: [
       {
         fileName: '1739952193181-1.jpg',
@@ -1985,7 +1985,7 @@ If your space demands character, power, and a touch of rebellion, this is your n
     material: 'Burnt Wood & Fur Fabric',
     collabtext: 'Dimensions',
     collablink: 'https://dimensionsfurniture.in/collections/monster-collection/',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUVOfTglleJz0jfKoyVd9HNhC5wFQ4OrBi2UkD',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO6VedFvTgmyYdxBZk9OWub4XEJaA1zR2CTiMc',
     images: [
       {
         fileName: '1739952224055-Dining chair set.10.jpg',
@@ -2864,7 +2864,7 @@ It’s not about drinking coffee—it’s about experiencing design, technology,
     material: 'Burnt Wood',
     collabtext: 'Dimensions',
     collablink: 'https://dimensionsfurniture.in/collections/monster-collection/',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKURWr6TYE1fzw0AFxNe2UEaubVBY53GTv7kqpl',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOBYt2KC2zYN8aVpJZLF50If4uUdl1vTPgMQEx',
     images: [
       {
         fileName: '1739952401888-Monster Planter_2.17.png',
@@ -4315,7 +4315,7 @@ attention while grounding any space with its elemental form`,
     material: 'Burnt Wood & Fur Fabric',
     collabtext: 'Dimensions',
     collablink: 'https://dimensionsfurniture.in/collections/monster-collection/',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSOlRnmAKnraNxkI5vbez6dT2q8M0osBfR9At',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOxnuZAVtfzZMOQ82F9V3XlUqPn6kstdYmWcTr',
     images: [
       {
         fileName: '1739952336217-Monster chai Opt 1.52.jpg',
@@ -4757,7 +4757,7 @@ You don’t just decorate with this piece—you make a statement without saying 
     material: 'Burnt Wood & Fur Fabric',
     collabtext: 'Dimensions',
     collablink: 'https://dimensionsfurniture.in/collections/monster-collection/',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU2PfjIgaDNvkE7HG39CYgFqmlMw2jVAoxdcnf',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOBYntrdmzYN8aVpJZLF50If4uUdl1vTPgMQEx',
     images: [
       {
         fileName: '1739952360039-Monster Light installation.179.jpg',
@@ -4932,7 +4932,7 @@ Designed for those who play to win, this piece turns any corner into a conversat
     material: 'Burnt Wood',
     collabtext: 'Dimensions',
     collablink: 'https://dimensionsfurniture.in/collections/monster-collection/',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUeJWNLScFPv1kdbg4tT0YfOS529XxhywHpVoU',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOPDC0wMaSjHqmNAIDGdfwbKCW75FER48cVo3u',
     images: [
       {
         fileName: '1739952294985-Library_1.19.jpg',
@@ -7146,7 +7146,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.0 Ottoman',
     group: 'monster_3.0',
     material: 'Burnt Wood & Fur Fabric',
-    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOlRLWch34zUERwb0h6yXWIJq45NdKi1MgA7FT',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOd8QqajvXmWSn1eIpy3d0vtl4fEkq579rjMLs',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -7216,7 +7216,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.0 Coffee Table',
     group: 'monster_3.0',
     material: 'Burnt Wood & Fur Fabric',
-    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOH92YxuF1d3zpmrSIcueZBfQo80E5Ujs7PTGg',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOc3Dw2bhBCHDUBWS0rVfuRb4mIL69ZFEnpQez',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -7503,7 +7503,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.1 Long Dining Table',
     group: 'monster_3.1',
     material: 'Charred Wood with High Gloss Lacquer',
-    pdf: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6BTTZGyeRHXuCZT2y3OdBkMADUJe8lpWrPthn',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOxWKJsaRtfzZMOQ82F9V3XlUqPn6kstdYmWcT',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
