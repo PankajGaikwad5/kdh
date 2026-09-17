@@ -7503,7 +7503,7 @@ Because even your side table should speak volumes.`,
     title: 'Monster 3.1 Long Dining Table',
     group: 'monster_3.1',
     material: 'Charred Wood with High Gloss Lacquer',
-    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOxWKJsaRtfzZMOQ82F9V3XlUqPn6kstdYmWcT',
+    pdf: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6BTTZGyeRHXuCZT2y3OdBkMADUJe8lpWrPthn',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
