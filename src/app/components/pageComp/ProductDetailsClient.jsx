@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState, useCallback, useMemo } from 'react'
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { Button } from '@/app/components/ui/button';
-import { X } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, Grid3X3 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import gsap from 'gsap';
 import dynamic from 'next/dynamic';
@@ -69,6 +69,8 @@ export default function ProductDetailsClient({ product }) {
   const [loadedImages, setLoadedImages] = useState(new Set());
   const [showThumbnailGrid, setShowThumbnailGrid] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
+  const thumbRefs = useRef([]);
   const [selectedMarble, setSelectedMarble] = useState(() => {
     if (product?.material !== 'Marble' && !product?.colorImages && !product?.colors && !product?.marbles) return null;
     // If the product explicitly sets defaultMarble (even to null), use that value
@@ -183,6 +185,25 @@ export default function ProductDetailsClient({ product }) {
     return () => ctx.revert();
   }, []);
 
+  // Centering active thumbnail in horizontal scroll without scrolling the page
+  useEffect(() => {
+    if (isFullscreen) {
+      const activeThumb = thumbRefs.current[currentIndex];
+      if (activeThumb) {
+        const container = activeThumb.parentElement;
+        if (container) {
+          const containerWidth = container.clientWidth;
+          const thumbLeft = activeThumb.offsetLeft;
+          const thumbWidth = activeThumb.clientWidth;
+          container.scrollTo({
+            left: thumbLeft - containerWidth / 2 + thumbWidth / 2,
+            behavior: 'smooth'
+          });
+        }
+      }
+    }
+  }, [currentIndex, isFullscreen]);
+
   const toggleFullscreen = useCallback(() => {
     setIsFullscreen(!isFullscreen);
   }, [isFullscreen]);
@@ -210,14 +231,27 @@ export default function ProductDetailsClient({ product }) {
     return () => controller.abort();
   }, []);
 
+  // Escape key handler (separated to handle full screen and modals)
+  useEffect(() => {
+    const handleEsc = (e) => {
+      if (e.key === 'Escape') {
+        if (isFullscreen) {
+          setIsFullscreen(false);
+        } else if (showModal) {
+          setShowModal(false);
+        } else {
+          router.back();
+        }
+      }
+    };
+    window.addEventListener('keydown', handleEsc);
+    return () => window.removeEventListener('keydown', handleEsc);
+  }, [router, isFullscreen, showModal]);
+
   // Consolidated initialization effect
   useEffect(() => {
     // Set form load time for spam detection
     setFormLoadTime(Date.now());
-
-    // Escape key handler
-    const handleEsc = (e) => e.key === 'Escape' && router.back();
-    window.addEventListener('keydown', handleEsc);
 
     // Defer Facebook Pixel - load after page is interactive
     const fbTimeout = setTimeout(() => {
@@ -251,10 +285,9 @@ export default function ProductDetailsClient({ product }) {
     }, 3000);
 
     return () => {
-      window.removeEventListener('keydown', handleEsc);
       clearTimeout(fbTimeout);
     };
-  }, [router]);
+  }, []);
 
   // Preload active images whenever they change (e.g. when marble is selected)
   useEffect(() => {
@@ -401,13 +434,11 @@ export default function ProductDetailsClient({ product }) {
       <div className='grid md:grid-cols-2 items-start pt-14'>
         <section
           ref={imageRef}
-          className={`${isFullscreen ? 'fixed inset-0 z-50 bg-black' : 'relative'
-            } p-4 flex items-center justify-center mt-4`}
+          className="relative p-4 flex items-center justify-center mt-4 w-full"
         >
           {(activeImages?.length > 0 || product.video) && (
             <div
-              className={`relative w-full ${isFullscreen ? 'h-screen' : 'h-[80vh]'
-                } rounded-lg overflow-hidden`}
+              className="relative w-full h-[80vh] rounded-lg overflow-hidden group/slider border border-white/5 bg-black/20"
             >
               {!imageLoaded && (
                 <div className='absolute inset-0 flex items-center justify-center z-10'>
@@ -417,68 +448,82 @@ export default function ProductDetailsClient({ product }) {
               )}
 
               <div
-                className='relative w-full h-full'
+                className='relative w-full h-full select-none flex items-center justify-center'
                 style={{
                   opacity: imageLoaded ? 1 : 0,
                   transition: 'opacity 0.4s ease',
                 }}
               >
-                {isVideoSlide && product.video ? (
-                  <video
-                    src={product.video}
-                    className='w-full h-full object-contain'
-                    controls
-                    onLoadedData={() => setImageLoaded(true)}
-                  />
-                ) : (
-                  activeImages[currentIndex] && (
-                    <Image
-                      onClick={toggleFullscreen}
-                      src={activeImages[currentIndex].filePath}
-                      alt={product.title}
-                      fill
-                      className='object-contain'
-                      sizes='(max-width: 768px) 100vw, 50vw'
-                      priority={currentIndex === 0}
-                      quality={75}
-                      onLoad={() => setImageLoaded(true)}
+                <AnimatePresence mode="wait">
+                  {isVideoSlide && product.video ? (
+                    <motion.video
+                      key="video"
+                      initial={{ opacity: 0, scale: 0.98 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      exit={{ opacity: 0, scale: 0.98 }}
+                      transition={{ duration: 0.4, ease: [0.76, 0, 0.24, 1] }}
+                      src={product.video}
+                      className='max-w-full max-h-full object-contain'
+                      controls
+                      autoPlay
+                      onLoadedData={() => setImageLoaded(true)}
                     />
-                  )
-                )}
+                  ) : (
+                    activeImages[currentIndex] && (
+                      <motion.div
+                        key={currentIndex}
+                        initial={{ opacity: 0, scale: 0.98 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0.98 }}
+                        transition={{ duration: 0.4, ease: [0.76, 0, 0.24, 1] }}
+                        className="w-full h-full relative"
+                      >
+                        <Image
+                          onClick={toggleFullscreen}
+                          src={activeImages[currentIndex].filePath}
+                          alt={product.title}
+                          fill
+                          className='object-contain cursor-pointer'
+                          sizes='(max-width: 768px) 100vw, 50vw'
+                          priority={currentIndex === 0}
+                          quality={85}
+                          onLoad={() => setImageLoaded(true)}
+                        />
+                      </motion.div>
+                    )
+                  )}
+                </AnimatePresence>
               </div>
 
               {/* Fullscreen Button */}
               <button
                 onClick={toggleFullscreen}
                 className='absolute top-4 right-4 text-white bg-black/60 rounded-full p-2 hover:bg-white hover:text-black transition-all z-20'
+                title="View Fullscreen"
               >
-                {isFullscreen ? (
-                  <X size={20} />
-                ) : (
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    width='20'
-                    height='20'
-                    viewBox='0 0 24 24'
-                    fill='none'
-                    stroke='currentColor'
-                    strokeWidth='2'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                  >
-                    <path d='M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3' />
-                  </svg>
-                )}
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='20'
+                  height='20'
+                  viewBox='0 0 24 24'
+                  fill='none'
+                  stroke='currentColor'
+                  strokeWidth='2'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                >
+                  <path d='M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3' />
+                </svg>
               </button>
 
-              <ThumbnailGrid
-                images={activeImages}
-                video={product.video}
-                currentIndex={currentIndex}
-                onImageSelect={handleImageSelect}
-                isOpen={showThumbnailGrid}
-                onToggle={() => setShowThumbnailGrid(!showThumbnailGrid)}
-              />
+              {/* Grid Toggle Button */}
+              <button
+                onClick={() => setShowThumbnailGrid(!showThumbnailGrid)}
+                className='absolute top-4 left-4 text-white bg-black/60 rounded-full p-2 hover:bg-white hover:text-black transition-all z-20'
+                title='View all media'
+              >
+                <Grid3X3 size={20} />
+              </button>
 
               {totalMedia > 1 && (
                 <>
@@ -882,6 +927,135 @@ export default function ProductDetailsClient({ product }) {
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* Fullscreen Lightbox Carousel Overlay */}
+      <AnimatePresence>
+        {isFullscreen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="fixed inset-0 z-[100] bg-black/95 flex flex-col justify-between p-4 md:p-8 select-none"
+          >
+            {/* Top Bar */}
+            <div className="flex items-center justify-between w-full text-white">
+              <span className="text-xs md:text-sm tracking-widest font-light uppercase">
+                {product.title} <span className="opacity-50">— {currentIndex + 1} / {totalMedia}</span>
+              </span>
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => setShowThumbnailGrid(!showThumbnailGrid)}
+                  className="w-10 h-10 rounded-full bg-white/10 hover:bg-white hover:text-black flex items-center justify-center transition-all cursor-pointer border border-white/10"
+                  aria-label="Toggle thumbnail grid"
+                  title="View all media"
+                >
+                  <Grid3X3 size={18} />
+                </button>
+                <button
+                  onClick={() => setIsFullscreen(false)}
+                  className="w-10 h-10 rounded-full bg-white/10 hover:bg-white hover:text-black flex items-center justify-center transition-all cursor-pointer border border-white/10"
+                  aria-label="Close fullscreen view"
+                >
+                  <X size={20} />
+                </button>
+              </div>
+            </div>
+
+            {/* Centered Image display */}
+            <div className="relative flex-1 flex items-center justify-center w-full h-full my-4 overflow-hidden">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={currentIndex}
+                  initial={{ opacity: 0, scale: 0.97 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.97 }}
+                  transition={{ duration: 0.4, ease: [0.76, 0, 0.24, 1] }}
+                  className="w-full h-full relative flex items-center justify-center"
+                >
+                  {isVideoSlide && product.video ? (
+                    <video
+                      src={product.video}
+                      className="max-w-full max-h-full object-contain"
+                      controls
+                      autoPlay
+                    />
+                  ) : (
+                    <img
+                      src={activeImages[currentIndex]?.filePath}
+                      alt={`${product.title} - Image ${currentIndex + 1}`}
+                      className="max-w-full max-h-full object-contain pointer-events-none"
+                    />
+                  )}
+                </motion.div>
+              </AnimatePresence>
+
+              {/* Navigation Arrows */}
+              {totalMedia > 1 && (
+                <>
+                  <button
+                    onClick={() => navigate('prev')}
+                    className="absolute left-2 md:left-4 w-12 h-12 rounded-full bg-white/5 hover:bg-white/20 text-white flex items-center justify-center transition-all cursor-pointer border border-white/10"
+                    aria-label="Previous image"
+                  >
+                    <ChevronLeft size={24} />
+                  </button>
+                  <button
+                    onClick={() => navigate('next')}
+                    className="absolute right-2 md:right-4 w-12 h-12 rounded-full bg-white/5 hover:bg-white/20 text-white flex items-center justify-center transition-all cursor-pointer border border-white/10"
+                    aria-label="Next image"
+                  >
+                    <ChevronRight size={24} />
+                  </button>
+                </>
+              )}
+            </div>
+
+            {/* Thumbnail Navigation Strip */}
+            {totalMedia > 1 && (
+              <div className="w-full max-w-[1000px] mx-auto overflow-hidden">
+                <div className="relative flex gap-2 overflow-x-auto py-2 scroll-smooth select-none scrollbar-none" style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
+                  {activeImages?.map((img, idx) => (
+                    <button
+                      key={idx}
+                      ref={(el) => (thumbRefs.current[idx] = el)}
+                      onClick={() => handleImageSelect(idx)}
+                      className={`relative w-16 h-12 md:w-20 md:h-14 shrink-0 overflow-hidden border transition-all ${idx === currentIndex
+                        ? 'border-white scale-105 opacity-100'
+                        : 'border-transparent opacity-40 hover:opacity-85'
+                        }`}
+                    >
+                      <Image src={img.filePath} fill sizes="80px" quality={80} className="object-cover pointer-events-none" alt="" />
+                    </button>
+                  ))}
+                  {product.video && (
+                    <button
+                      ref={(el) => (thumbRefs.current[activeImages?.length || 0] = el)}
+                      onClick={() => handleImageSelect(activeImages?.length || 0)}
+                      className={`relative w-16 h-12 md:w-20 md:h-14 shrink-0 overflow-hidden border transition-all bg-zinc-900 flex items-center justify-center ${activeImages?.length === currentIndex
+                        ? 'border-white scale-105 opacity-100'
+                        : 'border-transparent opacity-40 hover:opacity-85'
+                        }`}
+                    >
+                      <span className="text-[10px] text-white font-medium tracking-wider">VIDEO</span>
+                    </button>
+                  )}
+                </div>
+              </div>
+            )}
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Thumbnail Grid Modal (Rendered at root to avoid clipping) */}
+      <ThumbnailGrid
+        images={activeImages}
+        video={product.video}
+        currentIndex={currentIndex}
+        onImageSelect={handleImageSelect}
+        isOpen={showThumbnailGrid}
+        onToggle={() => setShowThumbnailGrid(!showThumbnailGrid)}
+      />
     </main>
   );
 }

@@ -117,15 +117,6 @@ const ThumbnailGrid = ({
 
   return (
     <>
-      {/* Grid Toggle Button */}
-      <button
-        onClick={onToggle}
-        className='absolute top-4 left-4 text-white bg-black/60 rounded-full p-3 hover:bg-white hover:text-black transition-all z-20'
-        title='View all media'
-      >
-        <Grid3X3 size={20} />
-      </button>
-
       {/* Thumbnail Grid Modal */}
       <AnimatePresence>
         {isOpen && (
@@ -133,7 +124,7 @@ const ThumbnailGrid = ({
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className='fixed inset-0 bg-transparent backdrop-blur-md z-50 flex items-center justify-center p-6'
+            className='fixed inset-0 bg-transparent backdrop-blur-md z-[150] flex items-center justify-center p-6'
             onClick={onToggle}
           >
             <motion.div
