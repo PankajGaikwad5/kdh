@@ -138,7 +138,7 @@ const GroupProductsPage = () => {
       className='min-h-screen flex flex-col bg-black'
     >
       <div className='min-h-screen grid grid-rows-[1fr_auto]'>
-        <Navbar arrow={true} home={true} />
+        <Navbar arrow={false} home={true} />
 
         <header className='fixed top-3 right-0 md:right-2 w-full flex justify-end items-center p-4 z-30'>
           <button
