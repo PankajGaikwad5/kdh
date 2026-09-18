@@ -39,23 +39,23 @@ export const catalogues = [
   {
     group: 'matilda_2022',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUbCQo6Ixzt13BbVlJhGUR6Ww2eTaj5pASg9NC',
-    year: '2022',
+    // year: '2022',
   },
   {
     group: 'matilda_2023',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQ5UmIKCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
-    year: '2023',
+    // year: '2023',
   },
   {
     group: 'matilda_2024',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUhabA0v12SwytWkz6IGrxaTC8A1jUN5RndblJ',
     image: '/assets/fm.png',
-    year: '2024',
+    // year: '2024',
   },
   {
     group: 'matilda_2025',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQPpUZqCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
-    year: '2025',
+    // year: '2025',
   },
   {
     group: 'friends',
