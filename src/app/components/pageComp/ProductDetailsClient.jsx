@@ -150,34 +150,34 @@ export default function ProductDetailsClient({ product }) {
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
-      // Fade in the whole page
+      // Subtle fade in for the page
       tl.fromTo(
         pageRef.current,
         { opacity: 0 },
-        { opacity: 1, duration: 1 }
+        { opacity: 1, duration: 1.2 },
+        0
       );
 
-      // Fade in image section
+      // Very subtle fade and scale for the image
       tl.fromTo(
         imageRef.current,
-        { opacity: 0, scale: 0.97 },
-        { opacity: 1, scale: 1, duration: 1.2 },
-        0.2
+        { opacity: 0, scale: 0.98 },
+        { opacity: 1, scale: 1, duration: 1.4 },
+        0
       );
 
-      // Reveal text elements with clip-path from bottom to top
+      // Elegant top-to-bottom reveal for text
       const textEls = detailsRef.current?.querySelectorAll('.gsap-reveal');
       if (textEls?.length) {
         tl.fromTo(
           textEls,
-          { clipPath: 'inset(100% 0% 0% 0%)' },
+          { clipPath: 'inset(0% 0% 100% 0%)' },
           {
             clipPath: 'inset(0% 0% 0% 0%)',
-            duration: 0.9,
-            stagger: 0.12,
-            ease: 'power2.inOut',
+            duration: 1.4,
+            stagger: 0,
           },
-          0.3
+          0
         );
       }
     });
@@ -438,7 +438,7 @@ export default function ProductDetailsClient({ product }) {
         >
           {(activeImages?.length > 0 || product.video) && (
             <div
-              className="relative w-full h-[80vh] rounded-lg overflow-hidden group/slider border border-white/5 bg-black/20"
+              className="relative w-full h-[80vh] rounded-lg overflow-hidden group/slider  border-white/5 bg-black/20"
             >
               {!imageLoaded && (
                 <div className='absolute inset-0 flex items-center justify-center z-10'>
