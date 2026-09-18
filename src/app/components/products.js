@@ -7500,7 +7500,7 @@ Because even your side table should speak volumes.`,
     _id: {
       $oid: 'monster3longdiningtable',
     },
-    title: 'Monster 3.1 Long Dining Table',
+    title: 'Monster 3.1 Dining Table',
     group: 'monster_3.1',
     material: 'Charred Wood with High Gloss Lacquer',
     pdf: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6BTTZGyeRHXuCZT2y3OdBkMADUJe8lpWrPthn',
