@@ -5418,64 +5418,64 @@ This is what success looks like... even when you're rinsing your hands.`,
     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU1V3L8TmcNbALVg2tCIRm5fi0793BwZH8PYyx',
     __v: 0,
   },
-  {
-    _id: {
-      $oid: '67a5eef74da9b29cd0f10be221912',
-    },
-    title: 'Bar Counter',
-    group: 'friends',
-    material: 'Marble',
-    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO6jARcBTgmyYdxBZk9OWub4XEJaA1zR2CTiMc',
-    images: [
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUXh1MqVLaynKVcYuZHCDm1IeJRfoT4vBxS8i0',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUMlIpqXXwfQbC4M3ZGkSm6KPAV10HlYU9dinr',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUOHOO2eZXhqs0g964QCxmbwcn2WStleB3MEP5',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUzAmkYrIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUw20WCLgi1vXhd2AYtoGrDFy59EOsBzTnN6eW',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-        thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
-      },
-    ],
-    description: `Sleek, sculptural, and unapologetically functional — the EA Bar redefines modern luxury. 
+//   {
+//     _id: {
+//       $oid: '67a5eef74da9b29cd0f10be221912',
+//     },
+//     title: 'Bar Counter',
+//     group: 'friends',
+//     material: 'Marble',
+//     pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO6jARcBTgmyYdxBZk9OWub4XEJaA1zR2CTiMc',
+//     images: [
+//       {
+//         fileName: '1738927863060-Slide1.JPG',
+//         filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUXh1MqVLaynKVcYuZHCDm1IeJRfoT4vBxS8i0',
+//         _id: {
+//           $oid: '67a5eef74da9b29cd0f10be2',
+//         },
+//       },
+//       {
+//         fileName: '1738927863060-Slide1.JPG',
+//         filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUMlIpqXXwfQbC4M3ZGkSm6KPAV10HlYU9dinr',
+//         _id: {
+//           $oid: '67a5eef74da9b29cd0f10be2',
+//         },
+//       },
+//       {
+//         fileName: '1738927863060-Slide1.JPG',
+//         filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUOHOO2eZXhqs0g964QCxmbwcn2WStleB3MEP5',
+//         _id: {
+//           $oid: '67a5eef74da9b29cd0f10be2',
+//         },
+//       },
+//       {
+//         fileName: '1738927863060-Slide1.JPG',
+//         filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUzAmkYrIQShtkIwJflF6rAvm7LBdDHgWeNPU8',
+//         _id: {
+//           $oid: '67a5eef74da9b29cd0f10be2',
+//         },
+//         thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
+//       },
+//       {
+//         fileName: '1738927863060-Slide1.JPG',
+//         filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUw20WCLgi1vXhd2AYtoGrDFy59EOsBzTnN6eW',
+//         _id: {
+//           $oid: '67a5eef74da9b29cd0f10be2',
+//         },
+//         thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
+//       },
+//     ],
+//     description: `Sleek, sculptural, and unapologetically functional — the EA Bar redefines modern luxury. 
 
-Wrapped in precision-cut marble with fluted side panels and clean lines, 
-this bar unit integrates high-performance appliances into a striking architectural form. 
-Equipped with refrigerated storage, a wine cooler, and ample concealed cabinetry, 
-it’s designed to serve effortlessly while making a bold visual statement.
+// Wrapped in precision-cut marble with fluted side panels and clean lines, 
+// this bar unit integrates high-performance appliances into a striking architectural form. 
+// Equipped with refrigerated storage, a wine cooler, and ample concealed cabinetry, 
+// it’s designed to serve effortlessly while making a bold visual statement.
 
-Ideal for contemporary lounges, hospitality spaces, or high-end offices — the EA Bar is where design meets utility, flawlessly.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUyXBkZujvoD5bj92PLzxBdul6nT8GrEAS30eN',
-    __v: 0,
-  },
+// Ideal for contemporary lounges, hospitality spaces, or high-end offices — the EA Bar is where design meets utility, flawlessly.`,
+//     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUyXBkZujvoD5bj92PLzxBdul6nT8GrEAS30eN',
+//     __v: 0,
+//   },
   {
     _id: {
       $oid: '67a5eef74da9b29cd0f10be2219112',
@@ -5725,90 +5725,90 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOWUVsxbnC73Sji8N9ZsFzumlXMPrJwbGI2hdO',
     __v: 0,
   },
-  {
-    _id: {
-      $oid: 'ffwaterpots',
-    },
-    title: 'Water Pots',
-    group: 'friends',
-    material: 'Marble',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU82ddUw64oKUn37W6wsTlRmDBFhGrviIjcMxV',
-    images: [
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/ff/pots/1.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/ff/pots/2.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/ff/pots/3.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/ff/pots/4.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/ff/pots/5.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/ff/pots/6.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/ff/pots/7.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/ff/pots/8.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/ff/pots/9.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: '/ff/pots/10.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-    ],
-    description: `Inspired by the familiar form of traditional water pots, this sculptural composition features three handcrafted stone vessels placed on a monolithic marble base. The arrangement brings together cultural reference, natural material and contemporary proportion. Suitable for indoor and outdoor settings, it works as a distinctive stone centrepiece.`,
-    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOFmwQ02GIUm4TDNaKfAZXnyPEseO5kYx2glv9',
-    __v: 0,
-  },
+  // {
+  //   _id: {
+  //     $oid: 'ffwaterpots',
+  //   },
+  //   title: 'Water Pots',
+  //   group: 'friends',
+  //   material: 'Marble',
+  //   pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU82ddUw64oKUn37W6wsTlRmDBFhGrviIjcMxV',
+  //   images: [
+  //     {
+  //       fileName: '1738927863060-Slide1.JPG',
+  //       filePath: '/ff/pots/1.webp',
+  //       _id: {
+  //         $oid: '67a5eef74da9b29cd0f10be2',
+  //       },
+  //     },
+  //     {
+  //       fileName: '1738927863060-Slide1.JPG',
+  //       filePath: '/ff/pots/2.webp',
+  //       _id: {
+  //         $oid: '67a5eef74da9b29cd0f10be2',
+  //       },
+  //     },
+  //     {
+  //       fileName: '1738927863060-Slide1.JPG',
+  //       filePath: '/ff/pots/3.webp',
+  //       _id: {
+  //         $oid: '67a5eef74da9b29cd0f10be2',
+  //       },
+  //     },
+  //     {
+  //       fileName: '1738927863060-Slide1.JPG',
+  //       filePath: '/ff/pots/4.webp',
+  //       _id: {
+  //         $oid: '67a5eef74da9b29cd0f10be2',
+  //       },
+  //     },
+  //     {
+  //       fileName: '1738927863060-Slide1.JPG',
+  //       filePath: '/ff/pots/5.webp',
+  //       _id: {
+  //         $oid: '67a5eef74da9b29cd0f10be2',
+  //       },
+  //     },
+  //     {
+  //       fileName: '1738927863060-Slide1.JPG',
+  //       filePath: '/ff/pots/6.webp',
+  //       _id: {
+  //         $oid: '67a5eef74da9b29cd0f10be2',
+  //       },
+  //     },
+  //     {
+  //       fileName: '1738927863060-Slide1.JPG',
+  //       filePath: '/ff/pots/7.webp',
+  //       _id: {
+  //         $oid: '67a5eef74da9b29cd0f10be2',
+  //       },
+  //     },
+  //     {
+  //       fileName: '1738927863060-Slide1.JPG',
+  //       filePath: '/ff/pots/8.webp',
+  //       _id: {
+  //         $oid: '67a5eef74da9b29cd0f10be2',
+  //       },
+  //     },
+  //     {
+  //       fileName: '1738927863060-Slide1.JPG',
+  //       filePath: '/ff/pots/9.webp',
+  //       _id: {
+  //         $oid: '67a5eef74da9b29cd0f10be2',
+  //       },
+  //     },
+  //     {
+  //       fileName: '1738927863060-Slide1.JPG',
+  //       filePath: '/ff/pots/10.webp',
+  //       _id: {
+  //         $oid: '67a5eef74da9b29cd0f10be2',
+  //       },
+  //     },
+  //   ],
+  //   description: `Inspired by the familiar form of traditional water pots, this sculptural composition features three handcrafted stone vessels placed on a monolithic marble base. The arrangement brings together cultural reference, natural material and contemporary proportion. Suitable for indoor and outdoor settings, it works as a distinctive stone centrepiece.`,
+  //   dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOFmwQ02GIUm4TDNaKfAZXnyPEseO5kYx2glv9',
+  //   __v: 0,
+  // },
   {
     _id: {
       $oid: 'barstool',
@@ -6456,69 +6456,69 @@ A symbol of restraint, rhythm, and remarkable design.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO4UCttXmYLAzci562mjC7NX0nUpdqB8Hf3QEW',
     __v: 0,
   },
-  {
-    _id: {
-      $oid: 'taavdi',
-    },
-    title: 'matilda 2025 Taavdi',
-    group: 'matilda_2025',
-    material: 'Marble',
-    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOO2AFilorU1lc4IGVZ5mibaxAoTHtjB6JeSuf',
-    images: [
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6i13aArFz4iH7WfGTVpvldeUXscEPgYyhMN6x',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6I3wkF6sxbsjpAT301gKUZ9diywRSNXatVuBG',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6vhBkzTfBFZnrWTzhGMHUEmpQfVdIuNOjwvsx',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-    ],
-    marbleImages: {
-      indianblackbheslana: [
-        '/marbles/matilda2025/taavdi/indianblackbheslana/1.webp',
-        '/marbles/matilda2025/taavdi/indianblackbheslana/2.webp',
-        '/marbles/matilda2025/taavdi/indianblackbheslana/3.webp',
-      ],
-      indianrossolevante: [
-        '/marbles/matilda2025/taavdi/indianrossolevante/1.webp',
-        '/marbles/matilda2025/taavdi/indianrossolevante/2.webp',
-        '/marbles/matilda2025/taavdi/indianrossolevante/3.webp',
-      ],
-      italianbeigetravertine: [
-        '/marbles/matilda2025/taavdi/italianbeigetravertine/1.webp',
-        '/marbles/matilda2025/taavdi/italianbeigetravertine/2.webp',
-        '/marbles/matilda2025/taavdi/italianbeigetravertine/3.webp',
-      ],
-      marquina: [
-        '/marbles/matilda2025/taavdi/marquina/1.webp',
-        '/marbles/matilda2025/taavdi/marquina/2.webp',
-        '/marbles/matilda2025/taavdi/marquina/3.webp',
-      ],
-    },
-    description: `You’re not just looking at basins — you’re looking at a power move in stone.
+//   {
+//     _id: {
+//       $oid: 'taavdi',
+//     },
+//     title: 'matilda 2025 Taavdi',
+//     group: 'matilda_2025',
+//     material: 'Marble',
+//     pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOO2AFilorU1lc4IGVZ5mibaxAoTHtjB6JeSuf',
+//     images: [
+//       {
+//         fileName: '1738927863060-Slide1.JPG',
+//         filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6i13aArFz4iH7WfGTVpvldeUXscEPgYyhMN6x',
+//         _id: {
+//           $oid: '67a5eef74da9b29cd0f10be2',
+//         },
+//       },
+//       {
+//         fileName: '1738927863060-Slide1.JPG',
+//         filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6I3wkF6sxbsjpAT301gKUZ9diywRSNXatVuBG',
+//         _id: {
+//           $oid: '67a5eef74da9b29cd0f10be2',
+//         },
+//       },
+//       {
+//         fileName: '1738927863060-Slide1.JPG',
+//         filePath: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6vhBkzTfBFZnrWTzhGMHUEmpQfVdIuNOjwvsx',
+//         _id: {
+//           $oid: '67a5eef74da9b29cd0f10be2',
+//         },
+//       },
+//     ],
+//     marbleImages: {
+//       indianblackbheslana: [
+//         '/marbles/matilda2025/taavdi/indianblackbheslana/1.webp',
+//         '/marbles/matilda2025/taavdi/indianblackbheslana/2.webp',
+//         '/marbles/matilda2025/taavdi/indianblackbheslana/3.webp',
+//       ],
+//       indianrossolevante: [
+//         '/marbles/matilda2025/taavdi/indianrossolevante/1.webp',
+//         '/marbles/matilda2025/taavdi/indianrossolevante/2.webp',
+//         '/marbles/matilda2025/taavdi/indianrossolevante/3.webp',
+//       ],
+//       italianbeigetravertine: [
+//         '/marbles/matilda2025/taavdi/italianbeigetravertine/1.webp',
+//         '/marbles/matilda2025/taavdi/italianbeigetravertine/2.webp',
+//         '/marbles/matilda2025/taavdi/italianbeigetravertine/3.webp',
+//       ],
+//       marquina: [
+//         '/marbles/matilda2025/taavdi/marquina/1.webp',
+//         '/marbles/matilda2025/taavdi/marquina/2.webp',
+//         '/marbles/matilda2025/taavdi/marquina/3.webp',
+//       ],
+//     },
+//     description: `You’re not just looking at basins — you’re looking at a power move in stone.
 
-This dual-basin setup isn’t here to blend in. It’s here to dominate. Crafted in precision-cut marble and set on a layered tray of raw elegance, this piece screams taste, control, and status. 
-The contrast? Deliberate. The proportions? Spot on. Whether it’s for your penthouse powder room or a five-star suite, this is design that sells itself. 
+// This dual-basin setup isn’t here to blend in. It’s here to dominate. Crafted in precision-cut marble and set on a layered tray of raw elegance, this piece screams taste, control, and status. 
+// The contrast? Deliberate. The proportions? Spot on. Whether it’s for your penthouse powder room or a five-star suite, this is design that sells itself. 
 
-Functional? Absolutely. But more than that — it’s unforgettable. 
-Because when you invest in details like this, you’re not just upgrading your space — you’re owning it.`,
-    dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUX8E3DbSLaynKVcYuZHCDm1IeJRfoT4vBxS8i',
-    __v: 0,
-  },
+// Functional? Absolutely. But more than that — it’s unforgettable. 
+// Because when you invest in details like this, you’re not just upgrading your space — you’re owning it.`,
+//     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUX8E3DbSLaynKVcYuZHCDm1IeJRfoT4vBxS8i',
+//     __v: 0,
+//   },
   {
     _id: {
       $oid: 'tfh-av-console',

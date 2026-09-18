@@ -1076,6 +1076,43 @@ export const newImagePaths = [
         group: 'Jina Shilp',
         productId: 'jspillarbench',
       },
+      {
+        name: 'Monster 3.0 Charwood Chair',
+        path: '/monster_3/dchair.png',
+        group: 'Monster 3.0',
+        productId: 'monster30charwoodchair',
+      },
+      {
+        name: 'Pendant Lights',
+        path: '/marbles/matilda2024/pendantlights/1.webp',
+        group: 'Matilda',
+        productId: 'matilda_2024_pendant_lights',
+      },
+      {
+        name: 'Bar Counter',
+        path: '/optimized/eabar.webp',
+        group: 'friends',
+        productId: '67a5eef74da9b29cd0f10be221912',
+      },
+      {
+        name: 'Conference Monster Table',
+        path: '/optimized/conferencemonster.webp',
+        group: 'conference_monster',
+        productId: '67a5eef74da9b29cd0f10be2219112',
+      },
+      {
+        name: 'MONSTER DINING CHAIR BURNT OMBRÉ',
+        path: '/m3/chair/1.webp',
+        group: 'Monster 3.1',
+        productId: 'monster3diningchairburntombre',
+      },
+      {
+        name: 'MONSTER DINING CHAIR UPHOLSTERED',
+        path: '/m3/chair/14.webp',
+        group: 'Monster 3.1',
+        productId: 'monster3diningchairupholstered',
+      },
     ])
     .flat(),
 ];
+
