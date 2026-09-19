@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { ArrowLeft, Search, X, ShoppingBag } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Search, X, ShoppingBag } from 'lucide-react';
 import Link from 'next/link';
 import { products } from './products'; // adjust path if needed
 import { useCart } from '@/app/context/CartContext';
@@ -147,9 +147,27 @@ const Navbar = ({ isBgBlack, arrow, escape, home }) => {
                 placeholder='Search products...'
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' && query.trim().length > 0) {
+                    setShowSearch(false);
+                    router.push(`/search?q=${encodeURIComponent(query)}`);
+                  }
+                }}
                 className='flex-1 outline-none text-gray-300 bg-transparent placeholder-gray-200'
                 autoFocus
               />
+              {query && (
+                <button
+                  onClick={() => {
+                    setShowSearch(false);
+                    router.push(`/search?q=${encodeURIComponent(query)}`);
+                  }}
+                  className='text-gray-400 hover:text-white bg-gray-800 hover:bg-gray-700 p-1.5 rounded-full mr-2 transition-all duration-300 flex items-center justify-center'
+                  title="View all results"
+                >
+                  <ArrowRight size={16} />
+                </button>
+              )}
               <button
                 onClick={() => {
                   setQuery('');
