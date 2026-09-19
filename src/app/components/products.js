@@ -194,13 +194,7 @@ export const products = [
       ],
     },
     video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCgDKppeFoQ5jtomeZYnhXwDRcaNS8IHVWdJi4',
-    description: `This isn’t just a divider—it’s a statement in stone. 
-
-The Monster Partition Screen turns solid marble into pure fluidity, sculpted with curves that flow like confidence. 
-Its cutout rhythm and all-white finish bring structure and softness into perfect balance. It doesn’t separate space—it defines it. 
-
-Precision-crafted and impossible to ignore, this piece brings presence, poise, and quiet power. 
-For those who don’t follow the rules—they carve their own.`,
+    description: `This isn’t just a divider—it’s a statement in stone. The Monster Partition Screen turns solid marble into pure fluidity, sculpted with curves that flow like confidence. Its cutout rhythm and all-white finish bring structure and softness into perfect balance. It doesn’t separate space—it defines it. Precision-crafted and impossible to ignore, this piece brings presence, poise, and quiet power. For those who don’t follow the rules—they carve their own.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOPcBRemVaSjHqmNAIDGdfwbKCW75FER48cVo3',
     __v: 0,
   },
@@ -380,12 +374,7 @@ For those who don’t follow the rules—they carve their own.`,
       },
     ],
     video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCiPUXo2cmlRJdGy18r5wqFbNcEQKfVHC9IjX2',
-    description: `This isn’t just a bench—it’s a quiet disruptor. 
-
-Anchored by heavy, sculpted wood and topped with a plush, fur-like form, it blurs the lines between function and statement. 
-Minimal in appearance, maximal in impact. It invites you to sit, but demands you notice. 
-
-Grounded in strength and softened with indulgence, this bench proves that the boldest moves don’t need to shout—they just need to exist.`,
+    description: `This isn’t just a bench—it’s a quiet disruptor. Anchored by heavy, sculpted wood and topped with a plush, fur-like form, it blurs the lines between function and statement. Minimal in appearance, maximal in impact. It invites you to sit, but demands you notice. Grounded in strength and softened with indulgence, this bench proves that the boldest moves don’t need to shout—they just need to exist.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOaw3dkxghAWJf0RpD5MNGad48yOCqt7roLniB',
     __v: 0,
   },
@@ -503,12 +492,7 @@ Grounded in strength and softened with indulgence, this bench proves that the bo
         '/marbles/newmatilda2024/center_table_1/spidergreen/5.webp',
       ],
     },
-    description: `This center table isn’t just furniture — it’s a power play in pure marble. 
-
-Featuring a bold U-shaped curve and wrapped in flawless white veining, it’s the kind of piece that anchors a room and owns attention. 
-Designed for those who appreciate dominance in design, every angle speaks precision, confidence, and high-level taste. 
-
-This is Karan Desai at his best — where sculptural form meets unstoppable presence in your living space.`,
+    description: `This center table isn’t just furniture — it’s a power play in pure marble. Featuring a bold U-shaped curve and wrapped in flawless white veining, it’s the kind of piece that anchors a room and owns attention. Designed for those who appreciate dominance in design, every angle speaks precision, confidence, and high-level taste. This is Karan Desai at his best — where sculptural form meets unstoppable presence in your living space.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOTPovzUkol4fc15PmWSnAqbsUy78gtp2EBGzu',
     __v: 0,
   },
@@ -643,13 +627,7 @@ This is Karan Desai at his best — where sculptural form meets unstoppable pres
         '/marbles/newmatilda2024/center_table_2/spidergreen/6.webp',
       ],
     },
-    description: `This center table doesn’t just complete a room — it dominates it. 
-
-With a sculptural cross-shaped form carved from seamless white marble, it’s the perfect fusion of architectural audacity and refined taste. 
-Every angle is engineered to impress, every curve is calculated to stand out. 
-
-Designed by Karan Desai, this piece isn’t just furniture — it’s a power statement in stone. 
-Bold. Balanced. Built for spaces that don’t settle for ordinary.`,
+    description: `This center table doesn’t just complete a room — it dominates it. With a sculptural cross-shaped form carved from seamless white marble, it’s the perfect fusion of architectural audacity and refined taste. Every angle is engineered to impress, every curve is calculated to stand out. Designed by Karan Desai, this piece isn’t just furniture — it’s a power statement in stone. Bold. Balanced. Built for spaces that don’t settle for ordinary.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOntKqza0qR6kZyU7GmuJeNarBLvI3hSCstcbP',
     __v: 0,
   },
@@ -974,15 +952,7 @@ Bold. Balanced. Built for spaces that don’t settle for ordinary.`,
       ],
     },
     video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCc6u0KpnvRqiwA2cnJ9Zhf78sxCamS5tDUFQr',
-    description: `This isn’t just a U-shaped table — it’s a masterstroke in marble. 
-
-Sculpted with flawless precision, its flowing curves bend the rules of traditional design. 
-Sleek, bold, and built from pure white marble, this piece isn’t here to blend in — it’s here to lead. 
-
-Whether in a luxe lounge or a modern workspace, it delivers a sharp mix of sophistication and strength. 
-One glance, and you know — this is the real deal.
-
-`,
+    description: `This isn’t just a U-shaped table — it’s a masterstroke in marble. Sculpted with flawless precision, its flowing curves bend the rules of traditional design. Sleek, bold, and built from pure white marble, this piece isn’t here to blend in — it’s here to lead. Whether in a luxe lounge or a modern workspace, it delivers a sharp mix of sophistication and strength. One glance, and you know — this is the real deal.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOsDlNdYnhkQgeHN65xqpRcP27TmMVv0LByWJD',
     __v: 0,
   },
@@ -1077,13 +1047,7 @@ One glance, and you know — this is the real deal.
         thumbnail: '/assets/products/thumbnails/1738929642731-Slide4.JPG',
       },
     ],
-    description: `Monster Gattooffer isn’t a lamp—it’s a power move.
-
-This beast breaks all the rules. With a spiked glass crown and a gold-toned base that means business, it turns soft light into hard impact. 
-It’s art, it’s attitude, and it owns every room it enters. 
-
-You want ordinary? Look elsewhere. You want bold, fearless, unforgettable? Gattooffer delivers—loud and proud. 
-Light your space like you mean it.`,
+    description: `Monster Gattooffer isn’t a lamp—it’s a power move. This beast breaks all the rules. With a spiked glass crown and a gold-toned base that means business, it turns soft light into hard impact. It’s art, it’s attitude, and it owns every room it enters. You want ordinary? Look elsewhere. You want bold, fearless, unforgettable? Gattooffer delivers—loud and proud. Light your space like you mean it.`,
     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8hOcOm64oKUn37W6wsTlRmDBFhGrviIjcMxV',
     __v: 0,
   },
@@ -1205,12 +1169,7 @@ Light your space like you mean it.`,
       ],
     },
     video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCajdlk8JDhG5HCzPb3QlFJuiAr4j6p0c7eDEq',
-    description: `This isn’t just a basin—it’s a bold move. Sculpted like art, built for impact. 
-
-It turns any bathroom into a conversation starter. Pair it with a sleek bathtub and you’ve got a 
-setup that’s stylish, smart, and seriously impressive. 
-
-Luxury isn’t optional. It’s essential. Own it.`,
+    description: `This isn’t just a basin—it’s a bold move. Sculpted like art, built for impact. It turns any bathroom into a conversation starter. Pair it with a sleek bathtub and you’ve got a setup that’s stylish, smart, and seriously impressive. Luxury isn’t optional. It’s essential. Own it.`,
     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUgPpkpBlLdSN8CY5rJGOAxcqQpM9fjoh4etX6',
     __v: 0,
   },
@@ -1319,15 +1278,7 @@ Luxury isn’t optional. It’s essential. Own it.`,
         thumbnail: '/assets/products/thumbnails/1738927948150-Slide5.JPG',
       },
     ],
-    description: `This isn’t just a bathtub — it’s a statement carved in stone. 
-
-With a bold U-shaped silhouette, dual glass panels, and the cool elegance of white marble, this piece transforms any space into a private 
-penthouse retreat. 
-
-Precision meets presence in a design that’s as commanding as it is calming. It’s not about bathing — it’s about owning the moment. 
-When style meets structure like this, luxury becomes non-negotiable.
-
-`,
+    description: `This isn’t just a bathtub — it’s a statement carved in stone. With a bold U-shaped silhouette, dual glass panels, and the cool elegance of white marble, this piece transforms any space into a private penthouse retreat. Precision meets presence in a design that’s as commanding as it is calming. It’s not about bathing — it’s about owning the moment. When style meets structure like this, luxury becomes non-negotiable.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOrdsp9QbmfJY4ltsd2gZzTFGVu5iCAoIxpKya',
     __v: 0,
     marbleImages: {
@@ -1494,13 +1445,7 @@ When style meets structure like this, luxury becomes non-negotiable.
 //         '/marbles/newmatilda2024/chair/spidergreen/5.webp',
 //       ],
 //     },
-//     description: `Listen closely. This isn’t just a chair—it’s a power move carved from pure white marble. 
-
-// Sleek, sculptural, and impossibly elegant, this masterpiece commands attention in any room. 
-// It’s not just about sitting—it’s about making a statement. Precision-crafted to perfection, it blends art, design, and status into one jaw-dropping piece. 
-
-// You don’t just own it—you showcase it. This is how leaders decorate. 
-// One look, and you know—you’ve arrived.`,
+//     description: `Listen closely. This isn’t just a chair—it’s a power move carved from pure white marble. // Sleek, sculptural, and impossibly elegant, this masterpiece commands attention in any room. // It’s not just about sitting—it’s about making a statement. Precision-crafted to perfection, it blends art, design, and status into one jaw-dropping piece. // You don’t just own it—you showcase it. This is how leaders decorate. // One look, and you know—you’ve arrived.`,
 //     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUcFPDsNOzfU0v5mZaj1HWcAwKFCxykrE2NGSI',
 //     __v: 0,
 //   },
@@ -1587,12 +1532,7 @@ When style meets structure like this, luxury becomes non-negotiable.
       },
     ],
     video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCuKKdD4jcQlz4hvfIqLCiaOSx10dMWRDKZYPn',
-    description: `Forget dinner conversations—this table is the conversation. 
-
-Sculpted from rich wood and elevated with fearless design, the Monster Dining Table doesn’t just anchor a room—it defines it. 
-With powerful curves and a presence that commands attention, it invites connection, conversation, and curiosity. 
-
-Designed for those who host with flair, this is where luxury meets audacity, and every gathering becomes a bold expression of style.`,
+    description: `Forget dinner conversations—this table is the conversation. Sculpted from rich wood and elevated with fearless design, the Monster Dining Table doesn’t just anchor a room—it defines it. With powerful curves and a presence that commands attention, it invites connection, conversation, and curiosity. Designed for those who host with flair, this is where luxury meets audacity, and every gathering becomes a bold expression of style.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOd6AH5NvXmWSn1eIpy3d0vtl4fEkq579rjMLs',
     __v: 0,
   },
@@ -1702,13 +1642,7 @@ Designed for those who host with flair, this is where luxury meets audacity, and
       ],
     },
     video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCaXJhNuDhG5HCzPb3QlFJuiAr4j6p0c7eDEqX',
-    description: `This isn’t just a bathtub—it’s a marble masterpiece. 
-
-Bold, sculptural, and built for two, it blends textured leather finesse with sheer size and elegance. 
-Designed to impress indoors or out, it doubles as a luxury planter that commands attention. 
-
-It breaks tradition and rewrites the rules. You’re not just buying a tub—you’re making a statement. 
-Because when marble meets vision, the result is nothing short of iconic.`,
+    description: `This isn’t just a bathtub—it’s a marble masterpiece. Bold, sculptural, and built for two, it blends textured leather finesse with sheer size and elegance. Designed to impress indoors or out, it doubles as a luxury planter that commands attention. It breaks tradition and rewrites the rules. You’re not just buying a tub—you’re making a statement. Because when marble meets vision, the result is nothing short of iconic.`,
     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUCdwK2EX0XaKgNMT1QEmen25RAwc7Sk4UxoJF',
     __v: 0,
   },
@@ -1796,13 +1730,7 @@ Because when marble meets vision, the result is nothing short of iconic.`,
       },
     ],
     video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCgze5OXoQ5jtomeZYnhXwDRcaNS8IHVWdJi4s',
-    description: `It’s not just a console—it’s a bold sculptural force. 
-The Monster Console turns heads with unapologetic presence and primal confidence. 
-
-Crafted from raw, textured wood and sculpted into a form that defies the ordinary, it’s equal parts art and attitude. 
-Refined yet untamed, structured yet wild—this piece doesn’t blend in, it takes over. 
-
-If your space demands character, power, and a touch of rebellion, this is your next move.`,
+    description: `It’s not just a console—it’s a bold sculptural force. The Monster Console turns heads with unapologetic presence and primal confidence. Crafted from raw, textured wood and sculpted into a form that defies the ordinary, it’s equal parts art and attitude. Refined yet untamed, structured yet wild—this piece doesn’t blend in, it takes over. If your space demands character, power, and a touch of rebellion, this is your next move.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOYuTOJWxq6dLIzbPjGW4oiU2MEvH0hptTwnDc',
     __v: 0,
   },
@@ -2084,12 +2012,7 @@ If your space demands character, power, and a touch of rebellion, this is your n
       },
     ],
     video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCOy3I6NvCdTRXkKq6It0VBFyceAso73JQWwnO',
-    description: `Not just a chair—a throne for the unapologetic. The Monster Dining Chair isn’t here to blend in; it’s here to dominate the table. 
-
-With its sculptural stance and indulgently textured surface, it redefines dining with drama and depth. 
-Bold yet comforting, it invites conversation, demands attention, and elevates every seat into a statement. 
-
-This isn’t about taking your place—it’s about owning it, one confident curve at a time.`,
+    description: `Not just a chair—a throne for the unapologetic. The Monster Dining Chair isn’t here to blend in; it’s here to dominate the table. With its sculptural stance and indulgently textured surface, it redefines dining with drama and depth. Bold yet comforting, it invites conversation, demands attention, and elevates every seat into a statement. This isn’t about taking your place—it’s about owning it, one confident curve at a time.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOgzn1b3ZcO9jlyr24LDs3RmTkWCeUAipGbH1Z',
     __v: 0,
   },
@@ -2163,13 +2086,7 @@ This isn’t about taking your place—it’s about owning it, one confident cur
         thumbnail: '/assets/products/thumbnails/1738927208531-Slide8.JPG',
       },
     ],
-    description: `This isn’t just a center table—it’s architectural ambition in pure marble. 
-
-With a fluid arch design that flows like sculpture, the Monster Table is a masterclass in balance, boldness, and refinement. 
-Carved from pristine white marble and built to impress, it doesn’t play by the rules—it redefines the room. 
-
-Precision meets personality in a piece that’s equal parts design and dominance. 
-For those who don’t decorate—they curate power.`,
+    description: `This isn’t just a center table—it’s architectural ambition in pure marble. With a fluid arch design that flows like sculpture, the Monster Table is a masterclass in balance, boldness, and refinement. Carved from pristine white marble and built to impress, it doesn’t play by the rules—it redefines the room. Precision meets personality in a piece that’s equal parts design and dominance. For those who don’t decorate—they curate power.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOjwWrMENQNhsYReup8oqCmaiw71dHbWcUIX5f',
     __v: 0,
     marbleImages: {
@@ -2319,15 +2236,7 @@ For those who don’t decorate—they curate power.`,
         '/marbles/monster1/monster1console/marquina/4.webp',
       ],
     },
-    description: `Discover the magic of marble like never before!
-
-Imagine one big block turning into three useful and beautiful pieces.
-
-They're not just furniture, they have cool lights, speakers, and a sleek design.
-
-Your space, but way more awesome!
-
-Welcome to a world where marble becomes something extraordinary.`,
+    description: `Discover the magic of marble like never before! Imagine one big block turning into three useful and beautiful pieces. They're not just furniture, they have cool lights, speakers, and a sleek design. Your space, but way more awesome! Welcome to a world where marble becomes something extraordinary.`,
     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnl32aIbYcoeRKumWaHxyTj5q3bfMXB6INAUz',
     __v: 0,
   },
@@ -2396,13 +2305,7 @@ Welcome to a world where marble becomes something extraordinary.`,
         thumbnail: '/assets/products/thumbnails/1738927300856-Slide7.JPG',
       },
     ],
-    description: `This is more than a center table — it’s a statement of dominance, precision, and presence. 
-
-Sculpted from pure white marble, its continuous arch isn’t just design, it’s strategy — bold, seamless, unforgettable. 
-Created by Karan Desai, this piece doesn’t just elevate a room, it commands it. 
-
-It tells the world you don’t follow trends — you set them. 
-This is luxury with backbone. Solid, striking, and built to impress.`,
+    description: `This is more than a center table — it’s a statement of dominance, precision, and presence. Sculpted from pure white marble, its continuous arch isn’t just design, it’s strategy — bold, seamless, unforgettable. Created by Karan Desai, this piece doesn’t just elevate a room, it commands it. It tells the world you don’t follow trends — you set them. This is luxury with backbone. Solid, striking, and built to impress.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOzGdK1s3drRCNOYV7h2kSoeU41wvlAyKEqG0T',
     __v: 0,
     marbleImages: {
@@ -2533,15 +2436,7 @@ This is luxury with backbone. Solid, striking, and built to impress.`,
       },
     ],
     video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HC9rpjN5cbKmaUnRuGY8rZ2WhpOsLIyt9Hq65V',
-    description: `This isn’t just a lamp—it’s pure presence. 
-
-Carved from rich, veined marble and arched like a gateway to luxury, it doesn’t light a room—it transforms it. 
-That warm glow beneath the stone? That’s atmosphere, that’s mood, that’s power. 
-
-Every inch screams craftsmanship. This is how you tell the world you’ve arrived—without saying a word. 
-Want elegance? Want impact? Flip the switch—and let marble do the talking.
-
-`,
+    description: `This isn’t just a lamp—it’s pure presence. Carved from rich, veined marble and arched like a gateway to luxury, it doesn’t light a room—it transforms it. That warm glow beneath the stone? That’s atmosphere, that’s mood, that’s power. Every inch screams craftsmanship. This is how you tell the world you’ve arrived—without saying a word. Want elegance? Want impact? Flip the switch—and let marble do the talking.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOauMrVKghAWJf0RpD5MNGad48yOCqt7roLniB',
     __v: 0,
     marbleImages: {
@@ -2690,12 +2585,7 @@ Want elegance? Want impact? Flip the switch—and let marble do the talking.
         thumbnail: '/assets/products/thumbnails/1738927112890-Slide7.JPG',
       },
     ],
-    description: `This isn’t just a bookshelf—it’s a sculptural flex. 
-
-The Monster Shelf fuses form and function with bold curves and architectural confidence. 
-Every line is intentional. Every shelf, a statement. It's not here to blend in—it’s built to elevate, anchor, and lead the room. 
-
-A piece like this doesn’t just hold your collection—it defines your taste. For those who don’t just store ideas—they live them.`,
+    description: `This isn’t just a bookshelf—it’s a sculptural flex. The Monster Shelf fuses form and function with bold curves and architectural confidence. Every line is intentional. Every shelf, a statement. It's not here to blend in—it’s built to elevate, anchor, and lead the room. A piece like this doesn’t just hold your collection—it defines your taste. For those who don’t just store ideas—they live them.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOvjb6QRekjwaDBhVEJ7igmtKTMdWo6qU8cb3X',
     __v: 0,
     marbleImages: {
@@ -2846,12 +2736,7 @@ A piece like this doesn’t just hold your collection—it defines your taste. F
       },
     ],
     video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCjraUcJRgMIbl3P4qwyANo9tH2kiZ5dfchuFv',
-    description: `Born from a shared obsession with precision, Karan Desai and TopBrewer India present Monster 2.0—where architecture meets exceptional coffee. 
-
-This isn’t just a machine; it’s a sculpture with purpose. 
-Bold in form, smart in function, it celebrates those who think bigger, live bolder, and turn routines into rituals. 
-
-It’s not about drinking coffee—it’s about experiencing design, technology, and taste in one powerful moment.`,
+    description: `Born from a shared obsession with precision, Karan Desai and TopBrewer India present Monster 2.0—where architecture meets exceptional coffee. This isn’t just a machine; it’s a sculpture with purpose. Bold in form, smart in function, it celebrates those who think bigger, live bolder, and turn routines into rituals. It’s not about drinking coffee—it’s about experiencing design, technology, and taste in one powerful moment.`,
     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUD5ZmhT8FYI8sxbtc2ngQN4ZeSPwOKkv5yAjm',
     __v: 0,
   },
@@ -2971,11 +2856,7 @@ It’s not about drinking coffee—it’s about experiencing design, technology,
       },
     ],
     video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCE3laOFMxgSbMyfoC091qPNkZsU38XhOrtR6a',
-    description: `Why should plants have all the peace? The Monster
-Planter reimagines botanical displays with an
-avant-garde, feral aesthetic. Sculptural yet organic, it’s a
-fusion of life and art—because even nature deserves to
-be bold.`,
+    description: `Why should plants have all the peace? The Monster Planter reimagines botanical displays with an avant-garde, feral aesthetic. Sculptural yet organic, it’s a fusion of life and art—because even nature deserves to be bold.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOcFYGhHBCHDUBWS0rVfuRb4mIL69ZFEnpQezk',
     __v: 0,
   },
@@ -3052,13 +2933,7 @@ be bold.`,
 //         thumbnail: '/assets/products/thumbnails/1738927999039-Slide3.JPG',
 //       },
 //     ],
-//     description: `This bench doesn’t just seat two—it seals the bond. 
-
-// Carved from luxurious white marble with a design that dares to be different, it’s where bold form meets intimate function. 
-// Whether it’s coffee, conversation, or closing a deal with a glance, this piece turns sitting into a shared experience of style and success. 
-
-// You’re not just buying furniture—you’re investing in timeless chemistry. 
-// This isn’t just art you admire. It’s art you live in.`,
+//     description: `This bench doesn’t just seat two—it seals the bond. // Carved from luxurious white marble with a design that dares to be different, it’s where bold form meets intimate function. // Whether it’s coffee, conversation, or closing a deal with a glance, this piece turns sitting into a shared experience of style and success. // You’re not just buying furniture—you’re investing in timeless chemistry. // This isn’t just art you admire. It’s art you live in.`,
 //     dimensions: 'https://imgs.search.brave.com/iVjI8zr3e5IndwkFtM2PVy-uMhc949oudpKHRM6MEOk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzExLzA3LzEwLzc2/LzM2MF9GXzExMDcx/MDc2ODRfbnBSOURr/M0FtbHZzc0JFN01H/d0tUd0h6UnJFZ2Rs/emwuanBn',
 //     __v: 0,
 //     marbleImages: {
@@ -3363,13 +3238,7 @@ be bold.`,
       },
     ],
     video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HC550WYE2zZEnj4uh9TVHdL6YlaGR3JgyF0cWr',
-    description: `This planter box isn’t just elegant — it’s engineered to impress. 
-
-Sculpted from richly veined marble, its bold U-shaped design commands attention from every angle. 
-It’s not here to quietly blend in — it’s here to redefine what “luxury” means in your space. 
-
-Designed with purpose and executed with precision, this is a piece that turns raw stone into a statement of refined power. 
-Plant life never had a stage this strong.`,
+    description: `This planter box isn’t just elegant — it’s engineered to impress. Sculpted from richly veined marble, its bold U-shaped design commands attention from every angle. It’s not here to quietly blend in — it’s here to redefine what “luxury” means in your space. Designed with purpose and executed with precision, this is a piece that turns raw stone into a statement of refined power. Plant life never had a stage this strong.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOj4UxmyINQNhsYReup8oqCmaiw71dHbWcUIX5',
     __v: 0,
     marbleImages: {
@@ -3487,15 +3356,7 @@ Plant life never had a stage this strong.`,
       },
     ],
     video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCrAAqEATm3Xw2n8KRLyesC1pDh0NbcqkHFIGS',
-    description: `This isn’t a dining table—it’s the centerpiece of influence. 
-
-Sculpted from pure white marble with a bold conical base, it commands the room without saying a word. 
-And that central opening? It’s not just design—it’s vision. Slide in a living tree, and you’ve got nature meeting power, elegance meeting edge. 
-
-This is where deals are struck, guests are impressed, and legacy begins. 
-You don’t dine on it—you build your empire around it.
-
-`,
+    description: `This isn’t a dining table—it’s the centerpiece of influence. Sculpted from pure white marble with a bold conical base, it commands the room without saying a word. And that central opening? It’s not just design—it’s vision. Slide in a living tree, and you’ve got nature meeting power, elegance meeting edge. This is where deals are struck, guests are impressed, and legacy begins. You don’t dine on it—you build your empire around it.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOcr7HkWBCHDUBWS0rVfuRb4mIL69ZFEnpQezk',
     __v: 0,
     marbleImages: {
@@ -3635,12 +3496,7 @@ You don’t dine on it—you build your empire around it.
         thumbnail: '/assets/products/thumbnails/1738927518500-Slide8.JPG',
       },
     ],
-    description: `This isn’t your average vase — it’s a sculptural power play in white marble. 
-
-Designed with razor-sharp precision and bold architectural curves, it’s built to elevate any space it enters. 
-The floral display? That’s just the bonus. What you’re really showing off is control, taste, and presence. 
-
-Crafted by Karan Desai, this vase is where fine art meets fearless form — the kind of piece that doesn’t just hold flowers, it holds attention.`,
+    description: `This isn’t your average vase — it’s a sculptural power play in white marble. Designed with razor-sharp precision and bold architectural curves, it’s built to elevate any space it enters. The floral display? That’s just the bonus. What you’re really showing off is control, taste, and presence. Crafted by Karan Desai, this vase is where fine art meets fearless form — the kind of piece that doesn’t just hold flowers, it holds attention.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOJfeO4ziC7rhemSRXDGyNvQ13FExfqigzH8Bn',
     __v: 0,
     marbleImages: {
@@ -3748,12 +3604,7 @@ Crafted by Karan Desai, this vase is where fine art meets fearless form — the 
         thumbnail: '/assets/products/thumbnails/1738930706117-Slide2.JPG',
       },
     ],
-    description: `Crafted in collaboration with Serafini—a renowned marble atelier from Chiampo, Italy—the Samaveta Bench by Karan Desai is a tribute to cultural connection and inclusive design. 
-
-Its sculpted form offers ergonomic seating, a flat surface for essentials, and a vessel that invites nature or creativity indoors. 
-Equally at home inside or out, the bench marries strength with softness, blending Italian craftsmanship with Indian storytelling. 
-
-More than functional, Samaveta symbolizes unity, empathy, and the beauty of cross-cultural design—transforming any space it inhabits with intention, elegance, and quiet impact.`,
+    description: `Crafted in collaboration with Serafini—a renowned marble atelier from Chiampo, Italy—the Samaveta Bench by Karan Desai is a tribute to cultural connection and inclusive design. Its sculpted form offers ergonomic seating, a flat surface for essentials, and a vessel that invites nature or creativity indoors. Equally at home inside or out, the bench marries strength with softness, blending Italian craftsmanship with Indian storytelling. More than functional, Samaveta symbolizes unity, empathy, and the beauty of cross-cultural design—transforming any space it inhabits with intention, elegance, and quiet impact.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOG1mIkWdWZ4MEadsVkUBj760ySY5XHtPxzcoT',
     __v: 0,
   },
@@ -3828,12 +3679,7 @@ More than functional, Samaveta symbolizes unity, empathy, and the beauty of cros
         thumbnail: '/assets/products/thumbnails/1738927420327-Slide5.JPG',
       },
     ],
-    description: `This isn’t just a basin — it’s a bold declaration of design authority. 
-
-Carved from pure white marble with an architectural arch and sculpted bowl center, it turns everyday function into high-impact form. 
-Precision-cut, flawlessly balanced, and impossible to ignore — this piece by Karan Desai transforms a space into a scene. 
-
-It doesn’t whisper luxury — it roars it. Because when you live big, even your basin has to make a statement.`,
+    description: `This isn’t just a basin — it’s a bold declaration of design authority. Carved from pure white marble with an architectural arch and sculpted bowl center, it turns everyday function into high-impact form. Precision-cut, flawlessly balanced, and impossible to ignore — this piece by Karan Desai transforms a space into a scene. It doesn’t whisper luxury — it roars it. Because when you live big, even your basin has to make a statement.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOuowg0d6MRVaZitrSyHezsoA0vp7q8GnxWE2C',
     __v: 0,
     marbleImages: {
@@ -4143,13 +3989,7 @@ It doesn’t whisper luxury — it roars it. Because when you live big, even you
         thumbnail: '/assets/products/thumbnails/1738927007154-Slide1.JPG',
       },
     ],
-    description: `Meet YODAA a monster totem forged from over a century of Bharat Flooring’s terrazzo brilliance. 
-
-This is more than design; it’s a bold expression of heritage, material mastery, and fearless form. 
-Every layer tells a story, every curve breaks the mold. YODAA doesn’t just stand—it owns the space it’s in. 
-
-It’s vibrant, it’s unapologetic, and it redefines what terrazzo can be. 
-You’re not just looking at art—you’re looking at 100 years of innovation, stacked tall.`,
+    description: `Meet YODAA a monster totem forged from over a century of Bharat Flooring’s terrazzo brilliance. This is more than design; it’s a bold expression of heritage, material mastery, and fearless form. Every layer tells a story, every curve breaks the mold. YODAA doesn’t just stand—it owns the space it’s in. It’s vibrant, it’s unapologetic, and it redefines what terrazzo can be. You’re not just looking at art—you’re looking at 100 years of innovation, stacked tall.`,
     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUrT6FLUNnDI67jcCaomXhZLsJd91f4YGitMHP',
     __v: 0,
   },
@@ -4208,13 +4048,7 @@ You’re not just looking at art—you’re looking at 100 years of innovation, 
         thumbnail: '/assets/products/thumbnails/1739974301885-dchair10.jpg',
       },
     ],
-    description: `This isn’t just a chair—it’s a statement. 
-The Monster Dining Chair commands the room with bold curves, rich velvet, and sculpted form that radiates confidence. 
-
-It doesn’t quietly blend in—it leads. Sink into its plush comfort and feel the shift—you're not just sitting, you're setting the tone. 
-Designed for those who don’t follow trends—they create them. 
-
-When you take your seat here, you’re not part of the room. You become the focus.`,
+    description: `This isn’t just a chair—it’s a statement. The Monster Dining Chair commands the room with bold curves, rich velvet, and sculpted form that radiates confidence. It doesn’t quietly blend in—it leads. Sink into its plush comfort and feel the shift—you're not just sitting, you're setting the tone. Designed for those who don’t follow trends—they create them. When you take your seat here, you’re not part of the room. You become the focus.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOLJ6Sw2WAkQVmSZGde5vjXJNYPU92WHu3y8Fg',
     __v: 0,
   },
@@ -4300,9 +4134,7 @@ When you take your seat here, you’re not part of the room. You become the focu
         },
       },
     ],
-    description: `Defined by bold curves and raw gradients, the Monster Chair embodies
-primal comfort and sculptural presence. A design that commands
-attention while grounding any space with its elemental form`,
+    description: `Defined by bold curves and raw gradients, the Monster Chair embodies primal comfort and sculptural presence. A design that commands attention while grounding any space with its elemental form`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOLJ6Sw2WAkQVmSZGde5vjXJNYPU92WHu3y8Fg',
     __v: 0,
   },
@@ -4446,13 +4278,7 @@ attention while grounding any space with its elemental form`,
       },
     ],
     video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HC1F6dwF9qTbodORhsaUxn8lAzV0u4LC9EkfG3',
-    description: `The Gatoo Chair isn’t just a seat—it’s a bold rebellion in fur. 
-
-Sculpted to command attention, it pairs plush comfort with unapologetically powerful form. 
-Sink into its embrace, but know this: softness doesn’t mean surrender. It means strength. 
-
-Gatoo challenges expectations—where every curve speaks of attitude, and every detail dares to be different. 
-It’s luxury with an edge, comfort with a voice, and design that refuses to stay quiet.`,
+    description: `The Gatoo Chair isn’t just a seat—it’s a bold rebellion in fur. Sculpted to command attention, it pairs plush comfort with unapologetically powerful form. Sink into its embrace, but know this: softness doesn’t mean surrender. It means strength. Gatoo challenges expectations—where every curve speaks of attitude, and every detail dares to be different. It’s luxury with an edge, comfort with a voice, and design that refuses to stay quiet.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOPo3bZaSjHqmNAIDGdfwbKCW75FER48cVo3u2',
     __v: 0,
   },
@@ -4591,21 +4417,7 @@ It’s luxury with an edge, comfort with a voice, and design that refuses to sta
       },
     ],
     video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCHhlvxgVZ2z9ndleWYNv0FOLVQfpArj5MGE8q',
-    description: `ENTER IF YOU DARE: MONS-FORMER IS WAITING
-
-Last year, he was just a friendly farmer.
-Now? He’s a color-soaked chaos machine on a mission.
-
-After a “little” festival mishap, Mons-Former is back—bolder, weirder, and seriously ticked off. 
-His twisted playground never stops spinning, and neither does he. He’s chasing. You’re running. And the only rule? Don’t. Get. Caught.
-
-Dare to race through the madness?
-Snap your escape.
-Dodge the mayhem.
-But remember… he's got unfinished business.
-
-Think you can outrun the Mons-Former?
-Let’s find out.`,
+    description: `ENTER IF YOU DARE: MONS-FORMER IS WAITING Last year, he was just a friendly farmer. Now? He’s a color-soaked chaos machine on a mission. After a “little” festival mishap, Mons-Former is back—bolder, weirder, and seriously ticked off. His twisted playground never stops spinning, and neither does he. He’s chasing. You’re running. And the only rule? Don’t. Get. Caught. Dare to race through the madness? Snap your escape. Dodge the mayhem. But remember… he's got unfinished business. Think you can outrun the Mons-Former? Let’s find out.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOEkZT4VWG6mlRhLjyZzHQE75KS9IwnJaWcFNg',
     __v: 0,
   },
@@ -4701,13 +4513,7 @@ Let’s find out.`,
       },
     ],
     video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCb7IvhiUPLMp7CSHgZ1FoRv8cNKmaY5nb0V34',
-    description: `This isn’t just a lamp—it’s sculpture with swagger. 
-Carved with precision and presence, the Monster Table Lamp pairs fluid curves with raw stone power. 
-
-It doesn’t quietly light a corner—it elevates the entire room. 
-Refined, architectural, and impossible to ignore, it’s built for those who know real luxury lies in the details. 
-
-You don’t just decorate with this piece—you make a statement without saying a word.`,
+    description: `This isn’t just a lamp—it’s sculpture with swagger. Carved with precision and presence, the Monster Table Lamp pairs fluid curves with raw stone power. It doesn’t quietly light a corner—it elevates the entire room. Refined, architectural, and impossible to ignore, it’s built for those who know real luxury lies in the details. You don’t just decorate with this piece—you make a statement without saying a word.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO4Leg2HUmYLAzci562mjC7NX0nUpdqB8Hf3QE',
     __v: 0,
     marbleImages: {
@@ -4799,13 +4605,7 @@ You don’t just decorate with this piece—you make a statement without saying 
         thumbnail: '/assets/products/thumbnails/1739952360039-Monster Light installation.179.jpg',
       },
     ],
-    description: `This isn’t a chandelier—it’s a spectacle in midair. 
-
-The Monster Chandelier redefines lighting with a surreal form and a glow that’s more emotion than illumination. 
-It doesn’t just light the room—it steals the spotlight. 
-
-Soft, sculptural, and wildly unexpected, it’s made for those who crave drama, depth, and design that speaks louder than words. 
-You don’t just switch it on—you ignite the atmosphere.`,
+    description: `This isn’t a chandelier—it’s a spectacle in midair. The Monster Chandelier redefines lighting with a surreal form and a glow that’s more emotion than illumination. It doesn’t just light the room—it steals the spotlight. Soft, sculptural, and wildly unexpected, it’s made for those who crave drama, depth, and design that speaks louder than words. You don’t just switch it on—you ignite the atmosphere.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOjqRnmDNQNhsYReup8oqCmaiw71dHbWcUIX5f',
     __v: 0,
   },
@@ -4882,12 +4682,7 @@ You don’t just switch it on—you ignite the atmosphere.`,
         thumbnail: '/assets/products/thumbnails/1738927863069-Slide7.JPG',
       },
     ],
-    description: `This isn’t just a piece of décor — it’s a calculated strike of style and status. 
-
-Sculpted from flawless white marble, it fuses form and function with unapologetic flair. 
-A commanding arched silhouette, subtle shelving, and a statement vase top—it’s not just about looking good, it’s about owning the space. 
-
-Designed for those who play to win, this piece turns any corner into a conversation, and any room into a showcase.`,
+    description: `This isn’t just a piece of décor — it’s a calculated strike of style and status. Sculpted from flawless white marble, it fuses form and function with unapologetic flair. A commanding arched silhouette, subtle shelving, and a statement vase top—it’s not just about looking good, it’s about owning the space. Designed for those who play to win, this piece turns any corner into a conversation, and any room into a showcase.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMODa400HORANbs7xnj4mUgJXStW8dGvEMKyLVa',
     __v: 0,
     marbleImages: {
@@ -5075,13 +4870,7 @@ Designed for those who play to win, this piece turns any corner into a conversat
       },
     ],
     video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCRJsIBrz87BdYKwzVbskge2pAtoyQOrc3vUTl',
-    description: `This isn’t just a library—it’s a conversation starter. 
-
-The Monster Library breaks the mold with its sculptural chaos and commanding silhouette. 
-It doesn’t just store books—it holds energy, curiosity, and unapologetic attitude. 
-
-Raw, bold, and perfectly imperfect, this piece proves that disorder can be a form of design brilliance. 
-You’re not organizing a space—you’re curating an experience. For those who live by instinct, not instruction—this is your statement shelf.`,
+    description: `This isn’t just a library—it’s a conversation starter. The Monster Library breaks the mold with its sculptural chaos and commanding silhouette. It doesn’t just store books—it holds energy, curiosity, and unapologetic attitude. Raw, bold, and perfectly imperfect, this piece proves that disorder can be a form of design brilliance. You’re not organizing a space—you’re curating an experience. For those who live by instinct, not instruction—this is your statement shelf.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOYcw9WIxq6dLIzbPjGW4oiU2MEvH0hptTwnDc',
     __v: 0,
   },
@@ -5146,13 +4935,7 @@ You’re not organizing a space—you’re curating an experience. For those who
         },
       },
     ],
-    description: `This isn't just evolution—it's a revolution in form.
-The Monster Library Art Edition takes the unapologetic energy of its predecessor and catapults it into the realm of collectible design.
-
-With sculptural asymmetry, bold primary hues, and integrated lighting that feels more like an aura than a feature, this piece blurs the line between functional furniture and immersive artwork. It doesn’t just sit in a room—it dominates it, electrifies it, dares it to respond.
-
-Crafted for the provocateurs, the aesthetes, and the visionaries—this edition isn't just a shelf.
-It's architecture with attitude.`,
+    description: `This isn't just evolution—it's a revolution in form. The Monster Library Art Edition takes the unapologetic energy of its predecessor and catapults it into the realm of collectible design. With sculptural asymmetry, bold primary hues, and integrated lighting that feels more like an aura than a feature, this piece blurs the line between functional furniture and immersive artwork. It doesn’t just sit in a room—it dominates it, electrifies it, dares it to respond. Crafted for the provocateurs, the aesthetes, and the visionaries—this edition isn't just a shelf. It's architecture with attitude.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOXP7JJSuosnbmOpdheGL3EgIPWHwQBAfDiZqX',
     __v: 0,
   },
@@ -5221,14 +5004,7 @@ It's architecture with attitude.`,
         '/marbles/matilda2025/kddesk/marquina/4.webp',
       ],
     },
-    description: `This isn’t a desk—it’s a power platform. 
-
-Crafted from rich white marble with a bold, asymmetrical silhouette, it doesn't just sit in a room—it dominates it. 
-This is where vision is sketched, empires are built, and signatures shape futures. 
-Clean, commanding, and cut like it belongs in the office of a market-moving mogul. 
-
-It's not just about work—it's about presence. 
-Want to own the room before you even speak? Start here.`,
+    description: `This isn’t a desk—it’s a power platform. Crafted from rich white marble with a bold, asymmetrical silhouette, it doesn't just sit in a room—it dominates it. This is where vision is sketched, empires are built, and signatures shape futures. Clean, commanding, and cut like it belongs in the office of a market-moving mogul. It's not just about work—it's about presence. Want to own the room before you even speak? Start here.`,
     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUlmDkYQ9DZL6up3G75dgCY2rJjaQFwifBAEky',
     __v: 0,
   },
@@ -5309,13 +5085,7 @@ Want to own the room before you even speak? Start here.`,
         '/marbles/matilda2025/mirror/marquina/5.webp',
       ],
     },
-    description: `This isn’t just a mirror—it’s your daily check-in with greatness. 
-
-Wrapped in precision-cut marble and standing tall with quiet authority, the Office Mirror brings clarity, presence, and power to any executive space. 
-It’s where ambition meets reflection. 
-You don’t just see yourself—you see the leader, the closer, the game-changer. Bold, refined, unapologetically sharp—just like you. 
-This is the kind of mirror that doesn’t flatter. It affirms.
-`,
+    description: `This isn’t just a mirror—it’s your daily check-in with greatness. Wrapped in precision-cut marble and standing tall with quiet authority, the Office Mirror brings clarity, presence, and power to any executive space. It’s where ambition meets reflection. You don’t just see yourself—you see the leader, the closer, the game-changer. Bold, refined, unapologetically sharp—just like you. This is the kind of mirror that doesn’t flatter. It affirms.`,
     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSdXB8mYAKnraNxkI5vbez6dT2q8M0osBfR9A',
     __v: 0,
   },
@@ -5408,13 +5178,7 @@ This is the kind of mirror that doesn’t flatter. It affirms.
         '/marbles/matilda2025/washbasin/marquina/6.webp',
       ],
     },
-    description: `This isn’t just a wash basin—it’s a flex in stone. 
-
-Carved from a solid block of premium marble, it’s smooth, sculpted, and impossible to ignore. 
-Every curve is confidence, every angle—precision. It doesn’t just belong in a bathroom; it upgrades the entire space. 
-
-You’re not washing up—you’re stepping into ritual, power, and presence. 
-This is what success looks like... even when you're rinsing your hands.`,
+    description: `This isn’t just a wash basin—it’s a flex in stone. Carved from a solid block of premium marble, it’s smooth, sculpted, and impossible to ignore. Every curve is confidence, every angle—precision. It doesn’t just belong in a bathroom; it upgrades the entire space. You’re not washing up—you’re stepping into ritual, power, and presence. This is what success looks like... even when you're rinsing your hands.`,
     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU1V3L8TmcNbALVg2tCIRm5fi0793BwZH8PYyx',
     __v: 0,
   },
@@ -5465,14 +5229,7 @@ This is what success looks like... even when you're rinsing your hands.`,
 //         thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
 //       },
 //     ],
-//     description: `Sleek, sculptural, and unapologetically functional — the EA Bar redefines modern luxury. 
-
-// Wrapped in precision-cut marble with fluted side panels and clean lines, 
-// this bar unit integrates high-performance appliances into a striking architectural form. 
-// Equipped with refrigerated storage, a wine cooler, and ample concealed cabinetry, 
-// it’s designed to serve effortlessly while making a bold visual statement.
-
-// Ideal for contemporary lounges, hospitality spaces, or high-end offices — the EA Bar is where design meets utility, flawlessly.`,
+//     description: `Sleek, sculptural, and unapologetically functional — the EA Bar redefines modern luxury. // Wrapped in precision-cut marble with fluted side panels and clean lines, // this bar unit integrates high-performance appliances into a striking architectural form. // Equipped with refrigerated storage, a wine cooler, and ample concealed cabinetry, // it’s designed to serve effortlessly while making a bold visual statement. // Ideal for contemporary lounges, hospitality spaces, or high-end offices — the EA Bar is where design meets utility, flawlessly.`,
 //     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUyXBkZujvoD5bj92PLzxBdul6nT8GrEAS30eN',
 //     __v: 0,
 //   },
@@ -5553,11 +5310,7 @@ This is what success looks like... even when you're rinsing your hands.`,
         '/marbles/matilda2025/conferencetable/marquina/5.webp',
       ],
     },
-    description: `Make a bold statement in your meeting room with the Monster Conference Table. Crafted entirely from solid marble, 
-this piece blends sculptural artistry with executive function. 
-The organically shaped legs give the table a dynamic presence, as if it's alive and ready to take charge of the room.
-
-Sleek, commanding, and completely unexpected—this table doesn’t just support ideas, it inspires them.`,
+    description: `Make a bold statement in your meeting room with the Monster Conference Table. Crafted entirely from solid marble, this piece blends sculptural artistry with executive function. The organically shaped legs give the table a dynamic presence, as if it's alive and ready to take charge of the room. Sleek, commanding, and completely unexpected—this table doesn’t just support ideas, it inspires them.`,
     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUUvvIwiABY1Vx48e2bhPHIZJqsnBOSArl5D3M',
     __v: 0,
   },
@@ -5642,12 +5395,7 @@ Sleek, commanding, and completely unexpected—this table doesn’t just support
         thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
       },
     ],
-    description: `A poetic fusion of form and material, the Samaveta Console is a sculptural piece born from a creative collaboration between Karan Desai and Serafini.
-
-Part of the Monster series, its name—drawn from the Sanskrit Samaveta, meaning gathered—reflects its harmonious structure and unified presence. 
-Crafted in rich stone with Serafini’s signature finesse and architectural sensibility, the console balances organic fluidity with bold geometry. 
-
-With its monolithic silhouette and tactile surface, Samaveta anchors any space with quiet strength, becoming both a functional piece and a visual statement. A refined testament to material storytelling and design synergy.`,
+    description: `A poetic fusion of form and material, the Samaveta Console is a sculptural piece born from a creative collaboration between Karan Desai and Serafini. Part of the Monster series, its name—drawn from the Sanskrit Samaveta, meaning gathered—reflects its harmonious structure and unified presence. Crafted in rich stone with Serafini’s signature finesse and architectural sensibility, the console balances organic fluidity with bold geometry. With its monolithic silhouette and tactile surface, Samaveta anchors any space with quiet strength, becoming both a functional piece and a visual statement. A refined testament to material storytelling and design synergy.`,
     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUHr4HFVSaRuWqD7EedXzJA3Zl95iyhsGU1kwQ',
     __v: 0,
   },
@@ -5675,11 +5423,7 @@ With its monolithic silhouette and tactile surface, Samaveta anchors any space w
         },
       },
     ],
-    description: `Gaze into the cosmos with the Constellation Mirror, where the stars of Sagittarius, Capricorn, and Scorpio are etched 
-in delicate precision across its surface. 
-This circular mirror transforms your wall into a celestial map, glowing softly with constellation points that capture the mystery of the night sky.
-
-Minimalist yet mesmerizing, it brings both reflection and wonder into your space — ideal for those drawn to the stars and the stories they tell.`,
+    description: `Gaze into the cosmos with the Constellation Mirror, where the stars of Sagittarius, Capricorn, and Scorpio are etched in delicate precision across its surface. This circular mirror transforms your wall into a celestial map, glowing softly with constellation points that capture the mystery of the night sky. Minimalist yet mesmerizing, it brings both reflection and wonder into your space — ideal for those drawn to the stars and the stories they tell.`,
     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUJCEKH3sdtZQpOq9no3vVs5yPKXR8gEYuikGU',
     __v: 0,
   },
@@ -6070,13 +5814,7 @@ Minimalist yet mesmerizing, it brings both reflection and wonder into your space
         '/marbles/matilda2022/chestofdrawer/spidergreen/5.webp',
       ],
     },
-    description: `This is where functionality meets architectural finesse. 
-
-Encased in a sculpted body of elegant white marble, its fluid curves are contrasted by 
-deep charcoal ribbed drawers — a tactile detail that speaks volumes without saying a word. 
-Whether placed in a master suite or a statement hallway, this piece isn’t just storage — it’s a sculptural presence. 
-
-A symbol of restraint, rhythm, and remarkable design.`,
+    description: `This is where functionality meets architectural finesse. Encased in a sculpted body of elegant white marble, its fluid curves are contrasted by deep charcoal ribbed drawers — a tactile detail that speaks volumes without saying a word. Whether placed in a master suite or a statement hallway, this piece isn’t just storage — it’s a sculptural presence. A symbol of restraint, rhythm, and remarkable design.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOq1Aido7NLjmh9XDF3ngvZxi87QRBuOfyKs60',
     __v: 0,
   },
@@ -6509,13 +6247,7 @@ A symbol of restraint, rhythm, and remarkable design.`,
 //         '/marbles/matilda2025/taavdi/marquina/3.webp',
 //       ],
 //     },
-//     description: `You’re not just looking at basins — you’re looking at a power move in stone.
-
-// This dual-basin setup isn’t here to blend in. It’s here to dominate. Crafted in precision-cut marble and set on a layered tray of raw elegance, this piece screams taste, control, and status. 
-// The contrast? Deliberate. The proportions? Spot on. Whether it’s for your penthouse powder room or a five-star suite, this is design that sells itself. 
-
-// Functional? Absolutely. But more than that — it’s unforgettable. 
-// Because when you invest in details like this, you’re not just upgrading your space — you’re owning it.`,
+//     description: `You’re not just looking at basins — you’re looking at a power move in stone. // This dual-basin setup isn’t here to blend in. It’s here to dominate. Crafted in precision-cut marble and set on a layered tray of raw elegance, this piece screams taste, control, and status. // The contrast? Deliberate. The proportions? Spot on. Whether it’s for your penthouse powder room or a five-star suite, this is design that sells itself. // Functional? Absolutely. But more than that — it’s unforgettable. // Because when you invest in details like this, you’re not just upgrading your space — you’re owning it.`,
 //     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUX8E3DbSLaynKVcYuZHCDm1IeJRfoT4vBxS8i',
 //     __v: 0,
 //   },
@@ -6601,15 +6333,7 @@ A symbol of restraint, rhythm, and remarkable design.`,
         '/marbles/matilda2023/console1/spidergreen/5.webp',
       ],
     },
-    description: `This isn’t just a console — it’s confidence, carved in stone. 
-
-The AV Console takes clean lines and luxury materials, then throws subtlety out the window. 
-With its sleek fluted front and full marble body, it doesn’t whisper quality — it shouts it. 
-
-Rounded edges, seamless detailing, and a finish so polished it practically mirrors your ambition. 
-This is the kind of piece that tells the room who’s in charge — even before you say a word. 
-
-Whether it's hiding cables or holding court, AV means business — and business looks damn good.`,
+    description: `This isn’t just a console — it’s confidence, carved in stone. The AV Console takes clean lines and luxury materials, then throws subtlety out the window. With its sleek fluted front and full marble body, it doesn’t whisper quality — it shouts it. Rounded edges, seamless detailing, and a finish so polished it practically mirrors your ambition. This is the kind of piece that tells the room who’s in charge — even before you say a word. Whether it's hiding cables or holding court, AV means business — and business looks damn good.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOxznN0KtfzZMOQ82F9V3XlUqPn6kstdYmWcTr',
     __v: 0,
   },
@@ -6778,14 +6502,7 @@ Whether it's hiding cables or holding court, AV means business — and business 
         '/marbles/matilda2023/console2/spidergreen/5.webp',
       ],
     },
-    description: `Understated? Never. Console 2 is pure finesse — all smooth curves and natural swagger, sculpted from warm travertine that looks like it’s been sunbathing in Tuscany for a century. 
-
-Two bold bases — one squared, one curved — balance each other like a masterclass in duality. 
-It’s clean, it’s confident, and it delivers elegance with a side of authority. 
-
-Place it in your entryway, gallery, or corner office — this piece doesn’t just complement the space, it upgrades the entire narrative. You don’t just walk past this console. You feel it.
-
-`,
+    description: `Understated? Never. Console 2 is pure finesse — all smooth curves and natural swagger, sculpted from warm travertine that looks like it’s been sunbathing in Tuscany for a century. Two bold bases — one squared, one curved — balance each other like a masterclass in duality. It’s clean, it’s confident, and it delivers elegance with a side of authority. Place it in your entryway, gallery, or corner office — this piece doesn’t just complement the space, it upgrades the entire narrative. You don’t just walk past this console. You feel it.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOaBhQfedghAWJf0RpD5MNGad48yOCqt7roLni',
     __v: 0,
   },
@@ -6871,13 +6588,7 @@ Place it in your entryway, gallery, or corner office — this piece doesn’t ju
         '/marbles/matilda2023/sidetable/spidergreen/5.webp',
       ],
     },
-    description: `You think this is just a side table? Think again. This is geometry with swagger. 
-Precision-cut marble cubes, separated by a jet-black bridge — bold, minimal, and absolutely unapologetic. 
-
-It’s not playing the sidekick, it’s co-starring. One part sculpture, one part function, this piece isn’t here to just hold your drink — it’s here to steal attention. 
-Clean lines, killer contrast, and a presence that says: I don’t follow the room, I anchor it.
-
-Because even your side table should speak volumes.`,
+    description: `You think this is just a side table? Think again. This is geometry with swagger. Precision-cut marble cubes, separated by a jet-black bridge — bold, minimal, and absolutely unapologetic. It’s not playing the sidekick, it’s co-starring. One part sculpture, one part function, this piece isn’t here to just hold your drink — it’s here to steal attention. Clean lines, killer contrast, and a presence that says: I don’t follow the room, I anchor it. Because even your side table should speak volumes.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOrRQRBFbmfJY4ltsd2gZzTFGVu5iCAoIxpKya',
     __v: 0,
   },
@@ -6919,7 +6630,7 @@ Because even your side table should speak volumes.`,
         },
       },
     ],
-    description: `There’s something powerful about simplicity in design the way clean lines, sculptural forms, and natural textures come together to create a statement without shouting for attention.  This dining table, with its bold marble base and soft rounded edges, balances strength and elegance in equal measure.  Placed in a calm, neutral setting, it becomes more than just furniture, it anchors the space, inviting you to pause, gather, and connect.  Proof that true luxury isn’t about excess, but about intention and the quiet confidence of design that speaks for itself.`,
+    description: `There’s something powerful about simplicity in design the way clean lines, sculptural forms, and natural textures come together to create a statement without shouting for attention. This dining table, with its bold marble base and soft rounded edges, balances strength and elegance in equal measure. Placed in a calm, neutral setting, it becomes more than just furniture, it anchors the space, inviting you to pause, gather, and connect. Proof that true luxury isn’t about excess, but about intention and the quiet confidence of design that speaks for itself.`,
     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnIzja8bYcoeRKumWaHxyTj5q3bfMXB6INAUz',
     __v: 0,
   },
@@ -7282,7 +6993,7 @@ Because even your side table should speak volumes.`,
         },
       },
     ],
-    description: `Still, yet alive, the Monster Center Table fuses cracked texture with a neon flare that feels almost electric.  It’s a paradox of calm and chaos, designed for spaces that thrive on contrast and conversation.`,
+    description: `Still, yet alive, the Monster Center Table fuses cracked texture with a neon flare that feels almost electric. It’s a paradox of calm and chaos, designed for spaces that thrive on contrast and conversation.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOzfSJeD3drRCNOYV7h2kSoeU41wvlAyKEqG0T',
     __v: 0,
   },
@@ -7667,7 +7378,7 @@ Because even your side table should speak volumes.`,
         },
       },
     ],
-    description: `Order meets anarchy.  The Monster Shelving Unit rises like molten pillars holding glass tiers, a sculptural expression of function where transparency meets tension.`,
+    description: `Order meets anarchy. The Monster Shelving Unit rises like molten pillars holding glass tiers, a sculptural expression of function where transparency meets tension.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOTERh6Zkol4fc15PmWSnAqbsUy78gtp2EBGzu',
     __v: 0,
   },
@@ -7754,9 +7465,7 @@ Because even your side table should speak volumes.`,
       },
     ],
    
-    description: `Defined by bold curves and raw gradients, the Monster Chair embodies
-primal comfort and sculptural presence. A design that commands
-attention while grounding any space with its elemental form`,
+    description: `Defined by bold curves and raw gradients, the Monster Chair embodies primal comfort and sculptural presence. A design that commands attention while grounding any space with its elemental form`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOvwlvilekjwaDBhVEJ7igmtKTMdWo6qU8cb3X',
     __v: 0,
   },
@@ -7815,7 +7524,7 @@ attention while grounding any space with its elemental form`,
       },
     ],
   
-    description: `Comfort can have character.  The Monster Upholstered Chair tempers its sculptural ash frame with soft upholstery, a reminder that power and comfort can share the same seat.`,
+    description: `Comfort can have character. The Monster Upholstered Chair tempers its sculptural ash frame with soft upholstery, a reminder that power and comfort can share the same seat.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOvwlvilekjwaDBhVEJ7igmtKTMdWo6qU8cb3X',
     __v: 0,
   },
@@ -7935,15 +7644,7 @@ attention while grounding any space with its elemental form`,
       },
     ],
     video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCIEyy8y4KW74xlzetoUdfERaY0bgNTvuMiQSj',
-    description: `Not just a mirror.
-A little monster that lives on your wall.
-
-MONSTER MEARR is wrapped in plush blue yarn, giving it a soft, fuzzy, almost huggable personality. 
-The elongated oval shape stands tall on two playful feet, while the glowing, eye-like details on top give it that cheeky, animated charm, inspired by the quirky world of Monsters Inc.
-
-It’s whimsical without being childish. Bold without being loud.
-
-The tactile yarn frame contrasts beautifully with the clean reflective glass, making it both a design statement and a conversation starter. Perfect for bedrooms, creative spaces, or anywhere that needs a bit of personality.`,
+    description: `Not just a mirror. A little monster that lives on your wall. MONSTER MEARR is wrapped in plush blue yarn, giving it a soft, fuzzy, almost huggable personality. The elongated oval shape stands tall on two playful feet, while the glowing, eye-like details on top give it that cheeky, animated charm, inspired by the quirky world of Monsters Inc. It’s whimsical without being childish. Bold without being loud. The tactile yarn frame contrasts beautifully with the clean reflective glass, making it both a design statement and a conversation starter. Perfect for bedrooms, creative spaces, or anywhere that needs a bit of personality.`,
     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8QtKyI64oKUn37W6wsTlRmDBFhGrviIjcMxV',
     colorImages: {
       "originalblue": [
@@ -8249,18 +7950,7 @@ The tactile yarn frame contrasts beautifully with the clean reflective glass, ma
       },
     ],
     video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCo4HqdvaFjWsXwrDTuK930HAGvn81cotf7hz4',
-    description: `A family, translated into form.
-
-The Yodaa Totem is a sculptural yarn installation that represents the quiet architecture of togetherness, a male, a female, and a baby, stacked in a symbolic vertical embrace.
-
-Each figure is distinct in texture, color, and expression yet inseparable in structure. The male stands grounded and protective. The female radiates vibrancy and individuality. The baby, small and tender, becomes the emotional core, the reason they rise as one.
-
-Crafted entirely in layered yarn, the surface feels soft, almost nostalgic but the composition is strong, almost monumental. It’s a contrast between fragility and permanence. Between playfulness and legacy.
-
-This is not just a decorative object.
-It’s a totem of continuity and of love.
-
-A modern heirloom, wrapped in yarn, built on connection.`,
+    description: `A family, translated into form. The Yodaa Totem is a sculptural yarn installation that represents the quiet architecture of togetherness, a male, a female, and a baby, stacked in a symbolic vertical embrace. Each figure is distinct in texture, color, and expression yet inseparable in structure. The male stands grounded and protective. The female radiates vibrancy and individuality. The baby, small and tender, becomes the emotional core, the reason they rise as one. Crafted entirely in layered yarn, the surface feels soft, almost nostalgic but the composition is strong, almost monumental. It’s a contrast between fragility and permanence. Between playfulness and legacy. This is not just a decorative object. It’s a totem of continuity and of love. A modern heirloom, wrapped in yarn, built on connection.`,
     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUSuzN0FAKnraNxkI5vbez6dT2q8M0osBfR9At',
     __v: 0,
   },
@@ -8338,17 +8028,7 @@ A modern heirloom, wrapped in yarn, built on connection.`,
       },
     ],
     video: 'https://jbajlm82js.ufs.sh/f/aPTHctDhG5HCl9HKlKQzg6WDauGf8esyvqEY9A7IOLlRHrcZ',
-    description: `A creature, holding up your everyday.
-
-The Monster Table is where function meets fantasy. A sleek circular glass top rests delicately above a plush, yarn-wrapped form that almost disappears into its own soft blue carpet. Only two glowing eyes give it away, quiet, watchful, alive.
-
-It feels like the table is being supported by something gentle yet strong.
-Soft in texture. Precise in form.
-
-It’s not loud. It doesn’t shout for attention.
-But once you see it, you can’t unsee it.
-
-A sculptural presence disguised as furniture.`,
+    description: `A creature, holding up your everyday. The Monster Table is where function meets fantasy. A sleek circular glass top rests delicately above a plush, yarn-wrapped form that almost disappears into its own soft blue carpet. Only two glowing eyes give it away, quiet, watchful, alive. It feels like the table is being supported by something gentle yet strong. Soft in texture. Precise in form. It’s not loud. It doesn’t shout for attention. But once you see it, you can’t unsee it. A sculptural presence disguised as furniture.`,
     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUucquA9yVvD2FOkC3NsiU7yPRWb18aeZThVzG',
     __v: 0,
   },
@@ -8411,15 +8091,7 @@ A sculptural presence disguised as furniture.`,
         },
       },
     ],
-    description: `The Jina Shilp Coffee Table is a quiet, grounded piece inspired by the simplicity and balance found in Jain architecture. It is designed to feel calm and stable, with a focus on natural materials and soft forms.
-
-The table has a round glass top that keeps the structure feeling light and open. The base is made of stone, with a central pillar that anchors the design. The pillar is carved with simple, repetitive patterns that echo the feeling of temple carvings, but without being too detailed. This gives the table a sense of rhythm and presence.
-
-There are three small candle holders on the table, each holding a hand-poured wax candle. When lit, they add a soft, warm glow that makes the space feel more intimate and thoughtful.
-
-The materials used are natural and tactile. The stone base has a matte finish that highlights its texture, and the glass top adds a modern touch. The overall feeling is one of balance, simplicity, and quiet strength.
-
-Jina Shilp Coffee Table is meant to be a calm presence in a room—a place where you can gather, reflect, and feel grounded.`,
+    description: `The Jina Shilp Coffee Table is a quiet, grounded piece inspired by the simplicity and balance found in Jain architecture. It is designed to feel calm and stable, with a focus on natural materials and soft forms. The table has a round glass top that keeps the structure feeling light and open. The base is made of stone, with a central pillar that anchors the design. The pillar is carved with simple, repetitive patterns that echo the feeling of temple carvings, but without being too detailed. This gives the table a sense of rhythm and presence. There are three small candle holders on the table, each holding a hand-poured wax candle. When lit, they add a soft, warm glow that makes the space feel more intimate and thoughtful. The materials used are natural and tactile. The stone base has a matte finish that highlights its texture, and the glass top adds a modern touch. The overall feeling is one of balance, simplicity, and quiet strength. Jina Shilp Coffee Table is meant to be a calm presence in a room—a place where you can gather, reflect, and feel grounded.`,
     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnie2WirbYcoeRKumWaHxyTj5q3bfMXB6INAU',
     __v: 0,
   },
@@ -8503,18 +8175,7 @@ Jina Shilp Coffee Table is meant to be a calm presence in a room—a place where
         },
       },
     ],
-    description: `
-The Jina Shilp Totem is a sculptural object inspired by the vertical journey seen in Jain temple architecture. The idea comes from the way temple pillars are built in layers, each part carrying meaning and detail. This piece brings those elements together into a single rising form, symbolising growth, balance and inner elevation.
-
-Each segment is treated as an individual piece but carefully composed to work as one form. The proportions are kept grounded at the base and lighter as it moves upward, creating a natural sense of ascent. Traditional carvings are simplified so they feel relevant in a modern space without losing their identity.
-
-A mix of stones is used to build contrast and depth. Green marble forms the base, giving it weight and stability. Lighter stones and richly patterned surfaces are layered above, including carved white stone and deep red tones. Each material is selected to highlight natural textures rather than hide them. The finishes are mostly matte or softly polished to keep the piece tactile and real.
-
-The references come directly from Jain derasars, especially the carved pillars and mandapa elements. The planter integration adds a living layer, allowing plants to grow through the structure and soften the stone.
-
-Technically, the piece is made as stacked modules, ensuring stability while keeping the visual lightness intact. Each block is precisely cut and finished to align seamlessly.
-
-The totem is meant to feel calm, grounded and thoughtful. It carries a quiet presence, where stone and life exist together, reflecting a sense of stillness, growth and cultural continuity.`,
+    description: `The Jina Shilp Totem is a sculptural object inspired by the vertical journey seen in Jain temple architecture. The idea comes from the way temple pillars are built in layers, each part carrying meaning and detail. This piece brings those elements together into a single rising form, symbolising growth, balance and inner elevation. Each segment is treated as an individual piece but carefully composed to work as one form. The proportions are kept grounded at the base and lighter as it moves upward, creating a natural sense of ascent. Traditional carvings are simplified so they feel relevant in a modern space without losing their identity. A mix of stones is used to build contrast and depth. Green marble forms the base, giving it weight and stability. Lighter stones and richly patterned surfaces are layered above, including carved white stone and deep red tones. Each material is selected to highlight natural textures rather than hide them. The finishes are mostly matte or softly polished to keep the piece tactile and real. The references come directly from Jain derasars, especially the carved pillars and mandapa elements. The planter integration adds a living layer, allowing plants to grow through the structure and soften the stone. Technically, the piece is made as stacked modules, ensuring stability while keeping the visual lightness intact. Each block is precisely cut and finished to align seamlessly. The totem is meant to feel calm, grounded and thoughtful. It carries a quiet presence, where stone and life exist together, reflecting a sense of stillness, growth and cultural continuity.`,
     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU9kauxF2frimQ5LhFdjbpOHNPEsav1o2Ac0Dz',
     __v: 0,
   },
@@ -8591,17 +8252,7 @@ The totem is meant to feel calm, grounded and thoughtful. It carries a quiet pre
         },
       },
     ],
-    description: `Jina Shilp Dining Table is a sculptural expression rooted in the quiet strength of Jain architecture. It draws from temple pillars that embody balance, discipline, and spiritual order, translating these values into a contemporary context.
-
-The design prioritizes the base as the primary visual and conceptual element. A glass tabletop is introduced to reduce visual weight, allowing the structure beneath to remain fully legible. Its softly contoured edges temper the composition, bringing a sense of fluidity to an otherwise architectural form.
-
-The table is supported by three carved pillars, each distinct yet composed as a unified whole. Their placement is deliberately asymmetrical: a dominant column anchors the form, while two lighter pillars offset and balance it. This arrangement introduces movement without compromising stability.
-
-Materiality is restrained yet expressive. Red travertine offers warmth and surface richness, black lava stone provides depth and grounding, and yellow travertine introduces a lighter, more intricate character. The carvings draw from temple column motifs, executed with precision and control.
-
-Each pillar is crowned with a hand-poured wax candle, casting a soft ambient glow that enhances the spatial experience.
-
-Jina Shilp Dining table is conceived as an object of presence—where form, material, and light converge to create a composed and contemplative dining environment.`,
+    description: `Jina Shilp Dining Table is a sculptural expression rooted in the quiet strength of Jain architecture. It draws from temple pillars that embody balance, discipline, and spiritual order, translating these values into a contemporary context. The design prioritizes the base as the primary visual and conceptual element. A glass tabletop is introduced to reduce visual weight, allowing the structure beneath to remain fully legible. Its softly contoured edges temper the composition, bringing a sense of fluidity to an otherwise architectural form. The table is supported by three carved pillars, each distinct yet composed as a unified whole. Their placement is deliberately asymmetrical: a dominant column anchors the form, while two lighter pillars offset and balance it. This arrangement introduces movement without compromising stability. Materiality is restrained yet expressive. Red travertine offers warmth and surface richness, black lava stone provides depth and grounding, and yellow travertine introduces a lighter, more intricate character. The carvings draw from temple column motifs, executed with precision and control. Each pillar is crowned with a hand-poured wax candle, casting a soft ambient glow that enhances the spatial experience. Jina Shilp Dining table is conceived as an object of presence—where form, material, and light converge to create a composed and contemplative dining environment.`,
     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUN4sR6EG5UuqxLjF0ygrW1ikRpXaHfGVvonDw',
     __v: 0,
   },
@@ -8664,15 +8315,7 @@ Jina Shilp Dining table is conceived as an object of presence—where form, mate
         },
       },
     ],
-    description: `The Jina Shilp Mirror is designed as a tall, floor-standing piece inspired by Jain temple architecture. At seven feet in height, it takes the form of a carved arch, similar to the entrances and frames seen in temples. The idea was to create something that feels calm, grounded, and meaningful, not just decorative.
-
-In Jain philosophy, there is a strong focus on daily introspection, reflecting on your actions, thoughts, and behavior. This mirror is meant to support that idea. It is not just for looking at yourself, but for pausing and thinking inward. The detailed carvings around the frame are inspired by temple craftsmanship and are designed to slow you down visually, making the act of standing in front of it feel more intentional.
-
-The base of the mirror includes a built-in planter. This is an important part of the concept. When people reflect deeply, they often come face to face with their negative thoughts or actions. That process can feel heavy. The planter is there to balance that feeling. The presence of a growing plant adds a sense of life, hope, and movement. It reminds you that growth is always possible and that you should not stay stuck in those low moments.
-
-The mirror is made in Verde Guatemala marble, known for its deep green color and natural veining. This gives the piece a strong, rich presence while still feeling natural and calm. The contrast between the solid stone and the living plant brings together the ideas of stability and growth.
-
-The Jina Shilp Mirror is meant to be more than a functional object. It is a quiet piece that brings together reflection, growth, and everyday awareness in a simple and meaningful way.`,
+    description: `The Jina Shilp Mirror is designed as a tall, floor-standing piece inspired by Jain temple architecture. At seven feet in height, it takes the form of a carved arch, similar to the entrances and frames seen in temples. The idea was to create something that feels calm, grounded, and meaningful, not just decorative. In Jain philosophy, there is a strong focus on daily introspection, reflecting on your actions, thoughts, and behavior. This mirror is meant to support that idea. It is not just for looking at yourself, but for pausing and thinking inward. The detailed carvings around the frame are inspired by temple craftsmanship and are designed to slow you down visually, making the act of standing in front of it feel more intentional. The base of the mirror includes a built-in planter. This is an important part of the concept. When people reflect deeply, they often come face to face with their negative thoughts or actions. That process can feel heavy. The planter is there to balance that feeling. The presence of a growing plant adds a sense of life, hope, and movement. It reminds you that growth is always possible and that you should not stay stuck in those low moments. The mirror is made in Verde Guatemala marble, known for its deep green color and natural veining. This gives the piece a strong, rich presence while still feeling natural and calm. The contrast between the solid stone and the living plant brings together the ideas of stability and growth. The Jina Shilp Mirror is meant to be more than a functional object. It is a quiet piece that brings together reflection, growth, and everyday awareness in a simple and meaningful way.`,
     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUL68AYmPDqbauUfVsg4JYrj86xOSilFe5PBo3',
     __v: 0,
   },

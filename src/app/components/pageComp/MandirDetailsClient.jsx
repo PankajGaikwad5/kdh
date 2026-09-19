@@ -730,7 +730,7 @@ export default function MandirDetailsClient({ product }) {
                 </div>
               )}
 
-              <div className='gsap-reveal mt-6 border-t border-gray-700 pt-4 text-sm text-white font-light whitespace-pre-line leading-relaxed'>
+              <div className='gsap-reveal mt-6 border-t border-gray-700 pt-4 text-sm text-white font-light whitespace-pre-line leading-relaxed text-justify'>
                 {product.description}
               </div>
 
