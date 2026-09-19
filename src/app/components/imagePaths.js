@@ -317,12 +317,12 @@ export const newImagePaths = [
     group: 'Matilda',
     productId: '67a5eef74da9b29cd0f10be22191',
   },
-  {
-    name: 'Bar Counter',
-    path: '/optimized/eabar.webp',
-    group: 'friends',
-    productId: '67a5eef74da9b29cd0f10be221912',
-  },
+  // {
+  //   name: 'Bar Counter',
+  //   path: '/optimized/eabar.webp',
+  //   group: 'friends',
+  //   productId: '67a5eef74da9b29cd0f10be221912',
+  // },
   {
     name: 'Conference Monster Table',
     path: '/optimized/conferencemonster.webp',
@@ -377,12 +377,12 @@ export const newImagePaths = [
     group: 'Matilda',
     productId: 'side-table',
   },
-  {
-    name: 'Taavdi',
-    path: '/optimized/taavdi.webp',
-    group: 'Matilda 2025',
-    productId: 'taavdi',
-  },
+  // {
+  //   name: 'Taavdi',
+  //   path: '/optimized/taavdi.webp',
+  //   group: 'Matilda 2025',
+  //   productId: 'taavdi',
+  // },
   {
     name: 'Bench',
     path: '/optimized/matilda2023bench.webp',
@@ -914,12 +914,12 @@ export const newImagePaths = [
         group: 'Matilda',
         productId: 'side-table',
       },
-      {
-        name: 'Taavdi',
-        path: '/optimized/taavdi.webp',
-        group: 'Matilda 2025',
-        productId: 'taavdi',
-      },
+      // {
+      //   name: 'Taavdi',
+      //   path: '/optimized/taavdi.webp',
+      //   group: 'Matilda 2025',
+      //   productId: 'taavdi',
+      // },
       {
         name: 'Bench',
         path: '/optimized/matilda2023bench.webp',
@@ -1088,12 +1088,12 @@ export const newImagePaths = [
         group: 'Matilda',
         productId: 'matilda_2024_pendant_lights',
       },
-      {
-        name: 'Bar Counter',
-        path: '/optimized/eabar.webp',
-        group: 'friends',
-        productId: '67a5eef74da9b29cd0f10be221912',
-      },
+      // {
+      //   name: 'Bar Counter',
+      //   path: '/optimized/eabar.webp',
+      //   group: 'friends',
+      //   productId: '67a5eef74da9b29cd0f10be221912',
+      // },
       {
         name: 'Conference Monster Table',
         path: '/optimized/conferencemonster.webp',
