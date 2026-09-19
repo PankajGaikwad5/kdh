@@ -65,7 +65,7 @@ const MandirsPage = () => {
         <div className='w-full text-center flex justify-center'>
           <h1
             ref={headingRef}
-            className='text-2xl md:text-4xl font-bold text-gray-300 pt-20 md:pt-7 pb-8 border-b-2 border-gray-800 uppercase w-full md:max-w-3xl'
+            className='text-2xl md:text-4xl font-bold text-gray-300 pt-20 md:pt-7 pb-3 border-b-2 border-gray-800 uppercase w-full md:max-w-3xl'
           >
             Mandirs
           </h1>
