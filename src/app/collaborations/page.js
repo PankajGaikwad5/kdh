@@ -63,7 +63,7 @@ const page = () => {
             Collaborations
           </h1>
         </div>
-        <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-3 p-6 space-y-8 items-center py-10'>
+        <div className='grid gap-x-6 gap-y-16 sm:grid-cols-2 lg:grid-cols-3 p-6 py-10'>
           {collabs.map((project) => {
             // Apply smaller size to these specific large logos
             const isLargeLogo = ['the quarry', 'Top Brewer', 'bft'].includes(
@@ -71,24 +71,24 @@ const page = () => {
             );
             const sizeClasses = isLargeLogo
               ? 'max-w-[280px] max-h-44'
-              : 'max-w-[420px] max-h-72';
+              : 'max-w-[360px] max-h-56';
 
             return (
               <div
                 key={project._id.$oid || project._id}
-                className={`flex flex-col justify-center gap-2 items-center ${
-                  project.title && '-mb-20'
-                }
-                 `}
+                className='flex flex-col h-[320px] items-center justify-end'
               >
-                <img
-                  src={project.images[0]?.fileUrl}
-                  alt={project.title}
-                  className={`object-contain cursor-pointer ${sizeClasses} w-full transition-transform duration-300 hover:scale-105  
-                  `}
-                  onClick={() => openModal(project)}
-                />
-                <h1 className='text-white'>{project.year}</h1>
+                <div className='flex-grow w-full flex items-center justify-center'>
+                  <img
+                    src={project.images[0]?.fileUrl}
+                    alt={project.title}
+                    className={`object-contain cursor-pointer ${sizeClasses} w-full transition-transform duration-300 hover:scale-105`}
+                    onClick={() => openModal(project)}
+                  />
+                </div>
+                <h1 className='text-white mt-6 text-sm md:text-base font-medium tracking-wider'>
+                  {project.year}
+                </h1>
               </div>
             );
           })}

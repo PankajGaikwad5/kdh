@@ -1,89 +1,6 @@
 export const collabs = [
   {
     _id: {
-      $oid: '20',
-    },
-    title: 'square knots',
-    details: 'ID 2026',
-    year: '2026',
-    moreDetails: '/collections/monster_4.0',
-    images: [
-      {
-        fileName: '2.jpg',
-        fileUrl: '/updatedcollabs/square_knots.png',
-        name: '',
-        _id: {
-          $oid: '6791fe227a5dc4ac2d27e24f',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        fileUrl: '/monster4.1/mirror/1.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        fileUrl: '/monster4.1/mirror/7.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        fileUrl: '/monster4.1/mirror/8.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        fileUrl: '/monster4.1/totem/1.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        fileUrl: '/monster4.1/totem/2.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        fileUrl: '/monster4.1/yodacarpet/1.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        fileUrl: '/monster4.1/yodacarpet/7.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        fileUrl: '/monster4.1/yodacarpet/8.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-      {
-        fileName: '1738927863060-Slide1.JPG',
-        fileUrl: '/monster4.1/yodacarpet/9.webp',
-        _id: {
-          $oid: '67a5eef74da9b29cd0f10be2',
-        },
-      },
-    ],
-    __v: 0,
-  },
-  {
-    _id: {
       $oid: '6',
     },
     title: 'serafini',
@@ -297,6 +214,89 @@ export const collabs = [
   },
   {
     _id: {
+      $oid: '20',
+    },
+    title: 'square knots',
+    details: 'ID 2026',
+    year: '2026',
+    moreDetails: '/collections/monster_4.0',
+    images: [
+      {
+        fileName: '2.jpg',
+        fileUrl: '/updatedcollabs/square_knots.png',
+        name: '',
+        _id: {
+          $oid: '6791fe227a5dc4ac2d27e24f',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/monster4.1/mirror/1.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/monster4.1/mirror/7.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/monster4.1/mirror/8.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/monster4.1/totem/1.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/monster4.1/totem/2.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/monster4.1/yodacarpet/1.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/monster4.1/yodacarpet/7.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/monster4.1/yodacarpet/8.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        fileUrl: '/monster4.1/yodacarpet/9.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+    ],
+    __v: 0,
+  },
+  {
+    _id: {
       $oid: '6791f5807a5dc4ac2d27e20e',
     },
     title: 'dimension',
@@ -330,61 +330,28 @@ export const collabs = [
     ],
     __v: 0,
   },
+  
+ 
   {
     _id: {
-      $oid: '6791f5807a5dc4ac2d27e20e',
+      $oid: '8',
     },
-    title: 'the quarry',
-    details: 'ID 2023',
-    year: '2023',
-    moreDetails: '/collections/monster_1.0',
+    title: 'Arjun Rathi Design',
+    details: '',
+    year: '2025',
+    moreDetails: '/collections/monster_collectibles',
     images: [
       {
-        fileName: '1.jpg',
-        fileUrl: '/updatedcollabs/the_quarry.png',
+        fileName: '2.jpg',
+        fileUrl: '/updatedcollabs/arjun_rathi.png',
         _id: {
-          $oid: '6791f5807a5dc4ac2d27e20f',
-        },
-      },
-      {
-        fileName: '1.jpg',
-        fileUrl: '/quarry/new1.jpg',
-        _id: {
-          $oid: '6791f5807a5dc4ac2d27e20f',
-        },
-      },
-      {
-        fileName: '1.jpg',
-        fileUrl: '/quarry/new2.jpg',
-        _id: {
-          $oid: '6791f5807a5dc4ac2d27e20f',
-        },
-      },
-      {
-        fileName: '1.jpg',
-        fileUrl: '/quarry/new3.jpg',
-        _id: {
-          $oid: '6791f5807a5dc4ac2d27e20f',
-        },
-      },
-      {
-        fileName: '1.jpg',
-        fileUrl: '/quarry/new4.jpg',
-        _id: {
-          $oid: '6791f5807a5dc4ac2d27e20f',
-        },
-      },
-      {
-        fileName: '1.jpg',
-        fileUrl: '/quarry/new5.jpg',
-        _id: {
-          $oid: '6791f5807a5dc4ac2d27e20f',
+          $oid: '6791fe227a5dc4ac2d27e24f',
         },
       },
     ],
     __v: 0,
   },
-  {
+   {
     _id: {
       $oid: '6791fe227a5dc4ac2d27e24e',
     },
@@ -551,7 +518,7 @@ export const collabs = [
       },
     ],
     __v: 0,
-  },
+  },  
   {
     _id: {
       $oid: '4',
@@ -634,18 +601,53 @@ export const collabs = [
   },
   {
     _id: {
-      $oid: '8',
+      $oid: '6791f5807a5dc4ac2d27e20e',
     },
-    title: 'Arjun Rathi Design',
-    details: '',
-    year: '2025',
-    moreDetails: '/collections/monster_collectibles',
+    title: 'the quarry',
+    details: 'ID 2023',
+    year: '2023',
+    moreDetails: '/collections/monster_1.0',
     images: [
       {
-        fileName: '2.jpg',
-        fileUrl: '/updatedcollabs/arjun_rathi.png',
+        fileName: '1.jpg',
+        fileUrl: '/updatedcollabs/the_quarry.png',
         _id: {
-          $oid: '6791fe227a5dc4ac2d27e24f',
+          $oid: '6791f5807a5dc4ac2d27e20f',
+        },
+      },
+      {
+        fileName: '1.jpg',
+        fileUrl: '/quarry/new1.jpg',
+        _id: {
+          $oid: '6791f5807a5dc4ac2d27e20f',
+        },
+      },
+      {
+        fileName: '1.jpg',
+        fileUrl: '/quarry/new2.jpg',
+        _id: {
+          $oid: '6791f5807a5dc4ac2d27e20f',
+        },
+      },
+      {
+        fileName: '1.jpg',
+        fileUrl: '/quarry/new3.jpg',
+        _id: {
+          $oid: '6791f5807a5dc4ac2d27e20f',
+        },
+      },
+      {
+        fileName: '1.jpg',
+        fileUrl: '/quarry/new4.jpg',
+        _id: {
+          $oid: '6791f5807a5dc4ac2d27e20f',
+        },
+      },
+      {
+        fileName: '1.jpg',
+        fileUrl: '/quarry/new5.jpg',
+        _id: {
+          $oid: '6791f5807a5dc4ac2d27e20f',
         },
       },
     ],

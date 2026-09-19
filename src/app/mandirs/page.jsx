@@ -1,264 +1,98 @@
 'use client';
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import Navbar from '../components/Navbar';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import SubProductCard from '../components/SubProductCard';
+import Footer from '../components/Footer';
+import { mandirs } from '../components/mandirsData';
 
-const imagesData = [
-  {
-    title: 'Ashram',
-    year: '2024',
-    urls: [
-      '/mandirs/ashram-mandir/1.webp',
-      '/mandirs/ashram-mandir/2.webp',
-      '/mandirs/ashram-mandir/3.webp',
-    ],
-  },
-  {
-    title: 'BCR',
-    year: '2024',
-    urls: [
-      '/mandirs/bcr-mandir/1.webp',
-      '/mandirs/bcr-mandir/2.webp',
-      '/mandirs/bcr-mandir/3.webp',
-      '/mandirs/bcr-mandir/4.webp',
-    ],
-  },
-  {
-    title: 'DC',
-    year: '2024',
-    urls: [
-      '/mandirs/dc-mandir/1.webp',
-      '/mandirs/dc-mandir/2.webp',
-      '/mandirs/dc-mandir/3.webp',
-      '/mandirs/dc-mandir/4.webp',
-      '/mandirs/dc-mandir/5.webp',
-    ],
-  },
-];
+const MandirsPage = () => {
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const pageRef = useRef(null);
+  const headingRef = useRef(null);
+  const gridRef = useRef(null);
 
-export default function ThreeDCircularGallery() {
-  const containerRef = useRef(null);
-  const [collectionIndex, setCollectionIndex] = useState(0);
-  const [imageIndex, setImageIndex] = useState(0);
-  const [imgSize, setImgSize] = useState({ width: 260, height: 260 }); // 1:1
-  const [radius, setRadius] = useState(400);
-
-  // ✅ Responsive sizes
+  // GSAP entrance animations
   useEffect(() => {
-    const handleResize = () => {
-      const w = window.innerWidth;
-      if (w < 640) {
-        setImgSize({ width: 220, height: 220 });
-        setRadius(120);
-      } else if (w < 1024) {
-        setImgSize({ width: 260, height: 260 });
-        setRadius(180);
-      } else if (w < 1440) {
-        setImgSize({ width: 400, height: 400 });
-        setRadius(260);
-      } else if (w < 1920) {
-        setImgSize({ width: 520, height: 520 });
-        setRadius(320);
-      } else {
-        setImgSize({ width: 480, height: 480 });
-        setRadius(380);
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+
+      // Fade in the whole page
+      tl.fromTo(
+        pageRef.current,
+        { opacity: 0 },
+        { opacity: 1, duration: 1 }
+      );
+
+      // Heading reveal from bottom
+      tl.fromTo(
+        headingRef.current,
+        { clipPath: 'inset(100% 0% 0% 0%)' },
+        { clipPath: 'inset(0% 0% 0% 0%)', duration: 0.9, ease: 'power2.inOut' },
+        0.2
+      );
+
+      // Stagger cards in
+      const cards = gridRef.current?.children;
+      if (cards?.length) {
+        tl.fromTo(
+          cards,
+          { opacity: 0, y: 30 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            stagger: 0.07,
+            ease: 'power2.out',
+          },
+          0.4
+        );
       }
-    };
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    });
+
+    return () => ctx.revert();
   }, []);
-
-  const currentCollection = imagesData[collectionIndex];
-  const total = currentCollection.urls.length;
-
-  // ✅ 3D layout animation
-  useEffect(() => {
-    const items = containerRef.current?.children;
-    if (!items) return;
-
-    const gap = imgSize.width * 0.96; // proper gap, not too big
-
-    Array.from(items).forEach((item, i) => {
-      const offset = (i - imageIndex + total) % total;
-      let x = 0,
-        z = 0,
-        rotationY = 0,
-        scale = 1,
-        opacity = 1;
-
-      if (offset === 0) {
-        x = 0;
-        z = radius;
-        rotationY = 0;
-        scale = 1;
-        opacity = 1;
-      } else if (offset === 1) {
-        x = gap;
-        z = radius * 0.7;
-        rotationY = -25;
-        scale = 0.85;
-        opacity = 0.8;
-      } else if (offset === total - 1) {
-        x = -gap;
-        z = radius * 0.7;
-        rotationY = 25;
-        scale = 0.85;
-        opacity = 0.8;
-      } else {
-        z = 0;
-        opacity = 0;
-        scale = 0.6;
-      }
-
-      gsap.to(item, {
-        x,
-        z,
-        rotationY,
-        scale,
-        opacity,
-        duration: 1,
-        ease: 'power3.out',
-      });
-    });
-  }, [imageIndex, collectionIndex, imgSize, radius, total]);
-
-  // ✅ Smooth collection transition
-  const changeCollectionSmoothly = (newCollection, newImage) => {
-    const tl = gsap.timeline();
-
-    tl.to(containerRef.current, {
-      scale: 0.8,
-      opacity: 0,
-      filter: 'blur(10px)',
-      duration: 0.5,
-      ease: 'power2.inOut',
-    });
-
-    tl.add(() => {
-      setCollectionIndex(newCollection);
-      setImageIndex(newImage);
-    });
-
-    tl.to(containerRef.current, {
-      scale: 1,
-      opacity: 1,
-      filter: 'blur(0px)',
-      duration: 0.6,
-      ease: 'power2.inOut',
-    });
-  };
-
-  const rotate = (dir = 1) => {
-    const next = imageIndex + dir;
-    if (next >= total) {
-      const newCollection = (collectionIndex + 1) % imagesData.length;
-      changeCollectionSmoothly(newCollection, 0);
-    } else if (next < 0) {
-      const newCollection =
-        (collectionIndex - 1 + imagesData.length) % imagesData.length;
-      const lastImg = imagesData[newCollection].urls.length - 1;
-      changeCollectionSmoothly(newCollection, lastImg);
-    } else {
-      setImageIndex(next);
-    }
-  };
-
-  // ✅ Keyboard nav
-  useEffect(() => {
-    const handleKey = (e) => {
-      if (e.key === 'ArrowRight') rotate(1);
-      if (e.key === 'ArrowLeft') rotate(-1);
-    };
-    window.addEventListener('keydown', handleKey);
-    return () => window.removeEventListener('keydown', handleKey);
-  }, [imageIndex, collectionIndex, total]);
 
   return (
     <>
-      <Navbar home={true} />
-      <div className='relative min-h-screen bg-black flex flex-col items-center justify-center overflow-hidden pt-24'>
-        <header className='fixed top-3 right-0 md:right-2 w-full flex justify-end items-center p-4 z-30'>
-          {/* <a href='/'>
-                  <Image
-                    src='/assets/kdhlogo3.png'
-                    alt='Logo'
-                    width={150}
-                    height={40}
-                    className='object-contain'
-                  />
-                </a> */}
-          <button
-            onClick={() => router.back()}
-            className='text-white hover:text-gray-300 transition'
+      <div
+        ref={pageRef}
+        style={{ opacity: 0 }}
+        className='min-h-screen flex flex-col bg-gradient-to-b bg-black'
+      >
+        <Navbar />
+        {/* Grid container fills the available vertical space */}
+        <div className='w-full text-center flex justify-center'>
+          <h1
+            ref={headingRef}
+            className='text-2xl md:text-4xl font-bold text-gray-300 pt-20 md:pt-7 pb-8 border-b-2 border-gray-800 uppercase w-full md:max-w-3xl'
           >
-            <ArrowLeft size={30} />
-          </button>
-        </header>
-        <div className='fixed top-10 left-0 justify-center items-center w-full flex flex-col gap-10'>
-          <h2 className='text-2xl md:text-4xl font-bold text-gray-300 border-b-2 border-gray-800 uppercase w-full md:max-w-3xl text-center'>
             Mandirs
-          </h2>
+          </h1>
         </div>
 
-        <button
-          onClick={() => rotate(-1)}
-          className='absolute left-4 md:left-10 text-white/70 hover:text-white z-30'
+        <main
+          ref={gridRef}
+          className='flex-grow grid grid-cols-2 md:grid-cols-4 pt-10 gap-4 p-4 md:mx-14 my-10 md:my-6 '
+          onMouseLeave={() => setHoveredIndex(null)}
         >
-          <ArrowLeft size={40} />
-        </button>
-        <button
-          onClick={() => rotate(1)}
-          className='absolute right-4 md:right-10 text-white/70 hover:text-white z-30'
-        >
-          <ArrowRight size={40} />
-        </button>
-
-        <div
-          ref={containerRef}
-          className='relative flex items-center justify-center'
-          style={{
-            height: imgSize.height + 40, // add some padding
-            width: '100%',
-            transformStyle: 'preserve-3d',
-            perspective: '1300px',
-          }}
-        >
-          {currentCollection.urls.map((url, i) => {
-            const offset = (i - imageIndex + total) % total;
-            const isActive = offset === 0;
-            return (
-              <div
-                key={i}
-                className='absolute rounded-xl overflow-hidden shadow-2xl '
-                onClick={() => isActive && rotate(1)}
-                style={{
-                  width: imgSize.width,
-                  height: imgSize.height,
-                  backfaceVisibility: 'hidden',
-                  transformStyle: 'preserve-3d',
-                  zIndex: isActive ? 2 : 1,
-                  pointerEvents: isActive ? 'auto' : 'none',
-                  transition: 'z-index 0.3s',
-                }}
-              >
-                <img
-                  src={url}
-                  alt={currentCollection.title}
-                  draggable={false}
-                  className='w-full h-full object-cover'
-                />
-              </div>
-            );
-          })}
-        </div>
-        <h2 className='text-2xl md:text-3xl lg:text-4xl 2xl:mt-40 text-white font-bold pt-6 md:pt-14 xl:pt-20 2xl:pt-0 text-center z-20 flex gap-3'>
-          <span>Mandir</span>
-          <span>{currentCollection.title}</span>
-          <span>{currentCollection.year}</span>
-        </h2>
+          {mandirs.map(({ title, images, _id }, index) => (
+            <SubProductCard
+              key={index}
+              title={title}
+              img={images[0]?.filePath || '/placeholder.webp'}
+              id={_id.$oid}
+              basePath='/mandirdetailpage'
+              subtleHover={true}
+              hoveredIndex={hoveredIndex}
+              setHoveredIndex={setHoveredIndex}
+            />
+          ))}
+        </main>
+        <Footer />
       </div>
     </>
   );
-}
+};
+
+export default MandirsPage;

@@ -1,0 +1,1042 @@
+'use client';
+import React, { useEffect, useRef, useState, useCallback, useMemo } from 'react';
+import Image from 'next/image';
+import { useRouter } from 'next/navigation';
+import { Button } from '@/app/components/ui/button';
+import { X, ChevronLeft, ChevronRight, Grid3X3 } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import gsap from 'gsap';
+import dynamic from 'next/dynamic';
+import { z } from 'zod';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { useForm } from 'react-hook-form';
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from '../../components/ui/form';
+import { Input } from '../../components/ui/input';
+import { Textarea } from '../../components/ui/textarea';
+import ThumbnailGrid from '@/app/components/ThumbnailGrid';
+import Navbar from '@/app/components/Navbar';
+import { useCart } from '@/app/context/CartContext';
+import { getCollectionName } from '@/lib/utils';
+
+const AccordionMarbles = dynamic(
+  () => import('@/app/components/AccordionMarbles').then((mod) => mod.AccordionMarbles),
+  { ssr: false }
+);
+
+
+const formSchema = z.object({
+  name: z.string().min(2, { message: 'Name must be at least 2 characters' }).max(50),
+  email: z.string().email({ message: 'Please enter a valid email address' }),
+  phone: z
+    .string()
+    .min(10, { message: 'Phone number must be at least 10 digits.' })
+    .regex(/^[0-9+\-\s()]+$/, { message: 'Please enter a valid phone number.' }),
+  product: z.string().min(1, { message: 'Product name is required' }),
+  message: z.string().optional(),
+  subject: z.string().default('Product Enquiry'),
+});
+
+const normalizeKey = (str) => {
+  if (!str) return '';
+  return str
+    .toLowerCase()
+    .replace(/monstermearr/g, '')
+    .replace(/&/g, '')
+    .replace(/and/g, '')
+    .replace(/\s+/g, '')
+    .replace(/bush/g, 'brush')
+    .replace(/lavante/g, 'levante')
+    .replace(/roso/g, 'rosso')
+    .replace(/greenspider/g, 'spidergreen');
+};
+
+// ThumbnailGrid Component (keeping original external component structure)
+// This should be in a separate ThumbnailGrid.tsx file
+
+export default function MandirDetailsClient({ product }) {
+  const router = useRouter();
+  const { addToCart, removeFromCart, isInCart } = useCart();
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [showModal, setShowModal] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(false);
+  const [loadedImages, setLoadedImages] = useState(new Set());
+  const [showThumbnailGrid, setShowThumbnailGrid] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
+  const thumbRefs = useRef([]);
+  const [selectedMarble, setSelectedMarble] = useState(() => {
+    if (product?.location !== 'Marble' && !product?.colorImages && !product?.colors && !product?.marbles) return null;
+    // If the product explicitly sets defaultMarble (even to null), use that value
+    // This allows products whose base isn't Banswara to start unselected (null â†’ shows product.images)
+    return 'defaultMarble' in (product || {}) 
+      ? product.defaultMarble 
+      : (product?.marbles && product.marbles.length > 0)
+        ? product.marbles[0].name
+        : (product?.location === 'Marble' ? 'Banswara' : null);
+  });
+
+  const collectionName = useMemo(() => getCollectionName(product), [product]);
+
+  // Calculate active images based on the selected marble/color variant
+  const activeImages = useMemo(() => {
+    const imagesSource = product?.marbleImages || product?.colorImages;
+    if (selectedMarble && imagesSource) {
+      const targetKey = normalizeKey(selectedMarble);
+      const matchedKey = Object.keys(imagesSource).find(
+        (key) => normalizeKey(key) === targetKey
+      );
+      const marbleImagesData = matchedKey ? imagesSource[matchedKey] : null;
+      if (marbleImagesData && marbleImagesData.length > 0) {
+        return marbleImagesData.map((img, idx) => {
+          if (typeof img === 'string') {
+            return {
+              filePath: img,
+              fileName: `${selectedMarble}-${idx}`,
+              _id: { $oid: `${selectedMarble}-${idx}` },
+              thumbnail: img,
+            };
+          }
+          return img;
+        });
+      }
+    }
+    return product?.images || [];
+  }, [product, selectedMarble]);
+
+  // Spam protection
+  const [formLoadTime, setFormLoadTime] = useState(null);
+  const [honeypot, setHoneypot] = useState('');
+
+  const pageRef = useRef(null);
+  const imageRef = useRef(null);
+  const detailsRef = useRef(null);
+
+  const totalMedia = (activeImages?.length || 0) + (product?.video ? 1 : 0);
+  const isVideoSlide = currentIndex >= (activeImages?.length || 0);
+
+  const [submitting, setSubmitting] = useState(false);
+
+  const form = useForm({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: '',
+      email: '',
+      phone: '',
+      message: '',
+      subject: 'Product Enquiry',
+      product: '',
+    },
+  });
+
+  useEffect(() => {
+    if (product) {
+      const details = [];
+      if (collectionName) details.push(`Collection: ${collectionName}`);
+      if (selectedMarble) details.push(`Variant: ${selectedMarble}`);
+      const productStr = `${product.title}${details.length ? ` (${details.join(', ')})` : ''}`;
+      form.setValue('product', productStr);
+    }
+  }, [product, selectedMarble, collectionName, form]);
+
+  // GSAP entrance animations
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+
+      // Subtle fade in for the page
+      tl.fromTo(
+        pageRef.current,
+        { opacity: 0 },
+        { opacity: 1, duration: 1.2 },
+        0
+      );
+
+      // Very subtle fade and scale for the image
+      tl.fromTo(
+        imageRef.current,
+        { opacity: 0, scale: 0.98 },
+        { opacity: 1, scale: 1, duration: 1.4 },
+        0
+      );
+
+      // Elegant top-to-bottom reveal for text
+      const textEls = detailsRef.current?.querySelectorAll('.gsap-reveal');
+      if (textEls?.length) {
+        tl.fromTo(
+          textEls,
+          { clipPath: 'inset(0% 0% 100% 0%)' },
+          {
+            clipPath: 'inset(0% 0% 0% 0%)',
+            duration: 1.4,
+            stagger: 0,
+          },
+          0
+        );
+      }
+    });
+
+    return () => ctx.revert();
+  }, []);
+
+  // Centering active thumbnail in horizontal scroll without scrolling the page
+  useEffect(() => {
+    if (isFullscreen) {
+      const activeThumb = thumbRefs.current[currentIndex];
+      if (activeThumb) {
+        const container = activeThumb.parentElement;
+        if (container) {
+          const containerWidth = container.clientWidth;
+          const thumbLeft = activeThumb.offsetLeft;
+          const thumbWidth = activeThumb.clientWidth;
+          container.scrollTo({
+            left: thumbLeft - containerWidth / 2 + thumbWidth / 2,
+            behavior: 'smooth'
+          });
+        }
+      }
+    }
+  }, [currentIndex, isFullscreen]);
+
+  const toggleFullscreen = useCallback(() => {
+    setIsFullscreen(!isFullscreen);
+  }, [isFullscreen]);
+
+  const preloadImage = useCallback((src) => {
+    const img = new window.Image();
+    img.onload = () => setLoadedImages((prev) => new Set([...prev, src]));
+    img.src = src;
+  }, []);
+
+  // Silently fetch user location via IP geolocation
+  const userLocationRef = useRef('');
+  useEffect(() => {
+    const controller = new AbortController();
+    fetch('https://ipapi.co/json/', { signal: controller.signal })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data && data.city) {
+          userLocationRef.current = [data.city, data.region, data.country_name].filter(Boolean).join(', ');
+        }
+      })
+      .catch(() => {
+        // Silently fail â€“ location is optional
+      });
+    return () => controller.abort();
+  }, []);
+
+  // Escape key handler (separated to handle full screen and modals)
+  useEffect(() => {
+    const handleEsc = (e) => {
+      if (e.key === 'Escape') {
+        if (isFullscreen) {
+          setIsFullscreen(false);
+        } else if (showModal) {
+          setShowModal(false);
+        } else {
+          router.back();
+        }
+      }
+    };
+    window.addEventListener('keydown', handleEsc);
+    return () => window.removeEventListener('keydown', handleEsc);
+  }, [router, isFullscreen, showModal]);
+
+  // Consolidated initialization effect
+  useEffect(() => {
+    // Set form load time for spam detection
+    setFormLoadTime(Date.now());
+
+    // Defer Facebook Pixel - load after page is interactive
+    const fbTimeout = setTimeout(() => {
+      if (!window.fbq) {
+        !(function (f, b, e, v, n, t, s) {
+          if (f.fbq) return;
+          n = f.fbq = function () {
+            n.callMethod
+              ? n.callMethod.apply(n, arguments)
+              : n.queue.push(arguments);
+          };
+          if (!f._fbq) f._fbq = n;
+          n.push = n;
+          n.loaded = !0;
+          n.version = '2.0';
+          n.queue = [];
+          t = b.createElement(e);
+          t.async = !0;
+          t.src = v;
+          s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s);
+        })(
+          window,
+          document,
+          'script',
+          'https://connect.facebook.net/en_US/fbevents.js',
+        );
+        window.fbq('init', '1398430317981375');
+        window.fbq('track', 'PageView');
+      }
+    }, 3000);
+
+    return () => {
+      clearTimeout(fbTimeout);
+    };
+  }, []);
+
+  // Preload active images whenever they change (e.g. when marble is selected)
+  useEffect(() => {
+    const timers = [];
+    if (activeImages?.length > 0) {
+      // Preload the first image immediately
+      preloadImage(activeImages[0].filePath);
+      
+      // Preload the rest with a slight stagger
+      activeImages
+        .slice(1)
+        .forEach((img, i) => {
+          const t = setTimeout(() => preloadImage(img.filePath), i * 100);
+          timers.push(t);
+        });
+    }
+    return () => timers.forEach(clearTimeout);
+  }, [activeImages, preloadImage]);
+
+  const handleSelectMarble = useCallback((marbleName) => {
+    // Determine what the "default" state for this product is
+    const productDefault = 'defaultMarble' in (product || {}) 
+      ? product.defaultMarble 
+      : (product?.marbles && product.marbles.length > 0)
+        ? product.marbles[0].name
+        : (product?.location === 'Marble' ? 'Banswara' : null);
+    setSelectedMarble((prev) => (prev === marbleName ? productDefault : marbleName));
+    setCurrentIndex(0);
+    setImageLoaded(false);
+  }, [product]);
+
+  const handleImageSelect = useCallback(
+    (index) => {
+      setImageLoaded(
+        index >= (activeImages?.length || 0) ||
+        loadedImages.has(activeImages[index]?.filePath),
+      );
+      setCurrentIndex(index);
+    },
+    [activeImages, loadedImages],
+  );
+
+  const navigate = useCallback(
+    (direction) => {
+      if (!totalMedia) return;
+      setImageLoaded(false);
+      const newIndex =
+        direction === 'next'
+          ? (currentIndex + 1) % totalMedia
+          : currentIndex === 0
+            ? totalMedia - 1
+            : currentIndex - 1;
+      setCurrentIndex(newIndex);
+      if (
+        newIndex >= (activeImages?.length || 0) ||
+        loadedImages.has(activeImages[newIndex]?.filePath)
+      ) {
+        setImageLoaded(true);
+      }
+    },
+    [currentIndex, totalMedia, activeImages, loadedImages],
+  );
+
+  const onSubmit = async (values) => {
+    setSubmitting(true);
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          values: {
+            name: values.name,
+            email: values.email,
+            number: values.phone, // Maps to 'number' in contact API
+            message: values.message || `Product enquiry for ${values.product}`,
+            subject: values.subject || 'Product Enquiry',
+            product: values.product,
+            location: userLocationRef.current,
+          },
+          honeypot, // Spam detection: should be empty
+          timestamp: formLoadTime || Date.now() - 3500, // Spam detection: time form was loaded
+        }),
+      });
+
+      if (res.ok) {
+        alert('Enquiry submitted successfully!');
+        setShowModal(false);
+        form.reset({
+          name: '',
+          email: '',
+          phone: '',
+          message: '',
+          subject: 'Product Enquiry',
+          product: form.getValues('product'),
+        });
+      } else {
+        const data = await res.json().catch(() => ({}));
+        alert(data.error || data.msg || 'Failed to submit enquiry. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error submitting enquiry:', error);
+      alert('Something went wrong. Please try again.');
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
+  const marbles = useMemo(
+    () => [
+      { name: 'Banswara', src: '/marbles/banswara.webp' },
+      {
+        name: 'Indian Black Bheslana',
+        src: '/marbles/indianblackbheslana.webp',
+      },
+      { name: 'Indian Rosso Levante', src: '/marbles/indianrossolevante.webp' },
+      {
+        name: 'Italian Beige Travertine',
+        src: '/marbles/italianbeigetravertine.webp',
+        rotate: true,
+      },
+      { name: 'Marquina', src: '/marbles/marquina.webp' },
+      { name: 'Spider Green', src: '/marbles/spidergreen.webp' },
+    ],
+    [],
+  );
+
+  return (
+    <main
+      ref={pageRef}
+      style={{ opacity: 0 }}
+      className='min-h-screen bg-black text-white'
+    >
+      <Navbar home={true} />
+      <header className='fixed top-3 right-2 w-full flex justify-end p-4 z-30'>
+        <button
+          onClick={() => router.back()}
+          className='text-white hover:text-gray-300'
+        >
+          <X size={30} />
+        </button>
+      </header>
+
+      <div className='grid md:grid-cols-2 items-start pt-14'>
+        <section
+          ref={imageRef}
+          className="relative p-4 flex items-center justify-center mt-4 w-full"
+        >
+          {(activeImages?.length > 0 || product.video) && (
+            <div
+              className="relative w-full h-[80vh] rounded-lg overflow-hidden group/slider  border-white/5 bg-black/20"
+            >
+              {!imageLoaded && (
+                <div className='absolute inset-0 flex items-center justify-center z-10'>
+                  <div className='animate-spin rounded-full h-8 w-8 border-b-2 border-white' />
+                  <p className='text-sm text-gray-400 ml-4'>Loading...</p>
+                </div>
+              )}
+
+              <div
+                className='relative w-full h-full select-none flex items-center justify-center'
+                style={{
+                  opacity: imageLoaded ? 1 : 0,
+                  transition: 'opacity 0.2s ease',
+                }}
+              >
+                <AnimatePresence>
+                  {isVideoSlide && product.video ? (
+                    <motion.video
+                      key="video"
+                      initial={{ opacity: 0, scale: 0.98 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      exit={{ opacity: 0, scale: 0.98 }}
+                      transition={{ duration: 0.3, ease: [0.76, 0, 0.24, 1] }}
+                      src={product.video}
+                      className='absolute inset-0 w-full h-full object-contain'
+                      controls
+                      autoPlay
+                      onLoadedData={() => setImageLoaded(true)}
+                    />
+                  ) : (
+                    activeImages[currentIndex] && (
+                      <motion.div
+                        key={currentIndex}
+                        initial={{ opacity: 0, scale: 0.98 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0.98 }}
+                        transition={{ duration: 0.3, ease: [0.76, 0, 0.24, 1] }}
+                        className="absolute inset-0 w-full h-full"
+                      >
+                        <Image
+                          onClick={toggleFullscreen}
+                          src={activeImages[currentIndex].filePath}
+                          alt={product.title}
+                          fill
+                          className='object-contain cursor-pointer'
+                          sizes='(max-width: 768px) 100vw, 50vw'
+                          priority={currentIndex === 0}
+                          unoptimized={true}
+                          onLoad={() => setImageLoaded(true)}
+                        />
+                      </motion.div>
+                    )
+                  )}
+                </AnimatePresence>
+              </div>
+
+              {/* Fullscreen Button */}
+              <button
+                onClick={toggleFullscreen}
+                className='absolute top-4 right-4 text-white bg-black/60 rounded-full p-2 hover:bg-white hover:text-black transition-all z-20'
+                title="View Fullscreen"
+              >
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='20'
+                  height='20'
+                  viewBox='0 0 24 24'
+                  fill='none'
+                  stroke='currentColor'
+                  strokeWidth='2'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                >
+                  <path d='M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3' />
+                </svg>
+              </button>
+
+              {/* Grid Toggle Button */}
+              <button
+                onClick={() => setShowThumbnailGrid(!showThumbnailGrid)}
+                className='absolute top-4 left-4 text-white bg-black/60 rounded-full p-2 hover:bg-white hover:text-black transition-all z-20'
+                title='View all media'
+              >
+                <Grid3X3 size={20} />
+              </button>
+
+              {totalMedia > 1 && (
+                <>
+                  <button
+                    onClick={() => navigate('prev')}
+                    disabled={!imageLoaded}
+                    className='absolute left-4 top-1/2 -translate-y-1/2 text-white bg-black/60 rounded-full p-3 hover:bg-white hover:text-black transition-all disabled:opacity-50 z-20'
+                  >
+                    <ChevronLeft size={24} />
+                  </button>
+                  <button
+                    onClick={() => navigate('next')}
+                    disabled={!imageLoaded}
+                    className='absolute right-4 top-1/2 -translate-y-1/2 text-white bg-black/60 rounded-full p-3 hover:bg-white hover:text-black transition-all disabled:opacity-50 z-20'
+                  >
+                    <ChevronRight size={24} />
+                  </button>
+                  <div className='absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/60 rounded-full px-3 py-1 text-sm z-20'>
+                    {currentIndex + 1} / {totalMedia}
+                  </div>
+                </>
+              )}
+            </div>
+          )}
+        </section>
+
+        <section
+          ref={detailsRef}
+          className='p-4 md:p-10 flex flex-col 2xl:mt-20 justify-between bg-black z-10'
+        >
+          <div>
+            <h1 className='gsap-reveal text-4xl md:text-4xl 2xl:text-6xl 2xl:mb-20 mb-6 capitalize font-light tracking-tight'>
+              {product.title}
+            </h1>
+
+            {product.collabtext && (
+              <div className='gsap-reveal mb-4 flex items-center'>
+                <span className='text-gray-400 text-sm mr-2'>
+                  Collaboration with
+                </span>
+                {product.collablink ? (
+                  <a
+                    href={product.collablink}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='text-white hover:underline flex items-center'
+                  >
+                    {product.collabtext}
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      className='h-4 w-4 ml-1'
+                      fill='none'
+                      viewBox='0 0 24 24'
+                      stroke='currentColor'
+                    >
+                      <path
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth={2}
+                        d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'
+                      />
+                    </svg>
+                  </a>
+                ) : (
+                  <span className='text-white'>{product.collabtext}</span>
+                )}
+              </div>
+            )}
+
+            <div className='flex flex-col gap-4 text-sm 2xl:space-y-8'>
+              <div className='gsap-reveal grid grid-cols-2 md:grid-cols-3 gap-2'>
+                <div>
+                  <h4 className='font-semibold text-gray-400 text-xs mb-1'>
+                    Dimension
+                  </h4>
+                  <p className='text-white'>
+                    {product.dimensions?.includes('http') ? (
+                      <a
+                        href={product.dimensions}
+                        target='_blank'
+                        className='underline text-blue-400 hover:text-blue-200'
+                      >
+                        View Dimensions
+                      </a>
+                    ) : (
+                      product.dimensions
+                    )}
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className='font-semibold text-gray-400 text-xs mb-1'>
+                    Material
+                  </h4>
+                  <p className='text-white'>{product.location}</p>
+                </div>
+              </div>
+
+              {(product.location === 'Marble' || (product.colors && product.colors.length > 0) || product.colorImages || (product.marbles && product.marbles.length > 0)) && (
+                <div className='gsap-reveal flex flex-col gap-2'>
+                  <h2 className='text-lg mb-2 uppercase tracking-wide font-medium'>
+                    {product.colors || product.colorImages
+                      ? 'COLOR VARIATIONS'
+                      : product.marbles
+                        ? 'MARBLE COMBINATIONS'
+                        : 'MARBLES'}
+                  </h2>
+                  <div className='flex flex-wrap gap-4'>
+                    {(product.marbles || product.colors || marbles).map((option) => {
+                      const isSelected = selectedMarble === option.name;
+                      const imagesSource = product.colorImages || product.marbleImages;
+                      const hasCustomImages = !!(
+                        imagesSource &&
+                        (() => {
+                          const targetKey = normalizeKey(option.name);
+                          const matchedKey = Object.keys(imagesSource).find(
+                            (key) => normalizeKey(key) === targetKey
+                          );
+                          return matchedKey ? imagesSource[matchedKey].length > 0 : false;
+                        })()
+                      );
+                      return (
+                        <button
+                          key={option.name}
+                          onClick={() => handleSelectMarble(option.name)}
+                          className='flex flex-col items-center text-center focus:outline-none group relative transition-transform duration-200 hover:scale-105'
+                          title={
+                            hasCustomImages
+                              ? `Click to view product in ${option.name}`
+                              : `View ${option.name} option`
+                          }
+                        >
+                          {option.swatches && option.swatches.length === 2 ? (
+                            <div
+                              className={`relative w-[70px] h-[70px] overflow-hidden rounded-md flex transition-all duration-300 ${
+                                isSelected
+                                  ? 'ring-2 ring-white ring-offset-2 ring-offset-black scale-95 opacity-100'
+                                  : 'opacity-85 group-hover:opacity-100'
+                              }`}
+                            >
+                              <div className='relative w-1/2 h-full overflow-hidden border-r border-black/40'>
+                                <Image
+                                  src={option.swatches[0]}
+                                  alt={`${option.name} 1`}
+                                  fill
+                                  className='object-cover'
+                                  sizes='35px'
+                                />
+                              </div>
+                              <div className='relative w-1/2 h-full overflow-hidden'>
+                                <Image
+                                  src={option.swatches[1]}
+                                  alt={`${option.name} 2`}
+                                  fill
+                                  className='object-cover'
+                                  sizes='35px'
+                                />
+                              </div>
+                              {/* Subtle dot to indicate this option has custom photos */}
+                              {hasCustomImages && !isSelected && (
+                                <span className='absolute bottom-1 right-1 w-2.5 h-2.5 bg-white border border-black rounded-full shadow z-10' />
+                              )}
+                            </div>
+                          ) : (
+                            <div className='relative w-[70px] h-[70px] overflow-hidden rounded-md'>
+                              <Image
+                                width={70}
+                                height={70}
+                                src={option.src || option.swatches?.[0]}
+                                alt={option.name}
+                                className={`aspect-square object-cover transition-all duration-300 ${
+                                  option.rotate ? 'rotate-90' : ''
+                                } ${
+                                  isSelected
+                                    ? 'ring-2 ring-white ring-offset-2 ring-offset-black scale-95 opacity-100'
+                                    : 'opacity-85 group-hover:opacity-100'
+                                }`}
+                              />
+                              {/* Subtle dot to indicate this option has custom photos */}
+                              {hasCustomImages && !isSelected && (
+                                <span className='absolute bottom-1 right-1 w-2.5 h-2.5 bg-white border border-black rounded-full shadow' />
+                              )}
+                            </div>
+                          )}
+                          <p
+                            className={`text-xs w-[85px] mt-2 break-words leading-tight transition-colors duration-200 ${
+                              isSelected
+                                ? 'text-white font-semibold'
+                                : 'text-gray-400 group-hover:text-white'
+                            }`}
+                          >
+                            {option.name}
+                          </p>
+                        </button>
+                      );
+                    })}
+                  </div>
+                  {product.location === 'Marble' && !product.marbles && (
+                    <AccordionMarbles
+                      selectedMarble={selectedMarble}
+                      onSelectMarble={handleSelectMarble}
+                      product={product}
+                    />
+                  )}
+                </div>
+              )}
+
+              <div className='gsap-reveal mt-6 border-t border-gray-700 pt-4 text-sm text-white font-light whitespace-pre-line leading-relaxed'>
+                {product.description}
+              </div>
+
+              <div className='gsap-reveal mt-10 flex gap-4 flex-col md:flex-row flex-wrap'>
+                {product.pdf && (
+                  <a href={product.pdf} target='_blank' rel='noopener noreferrer' className='w-full md:w-auto'>
+                    <Button
+                      variant='outline'
+                      className='px-6 py-2 border w-full border-white text-black rounded-none hover:bg-white/80'
+                    >
+                      Download Spec Sheet
+                    </Button>
+                  </a>
+                )}
+
+                <Button
+                  className='px-6 py-2 border w-full md:w-auto border-white bg-transparent text-white rounded-none hover:bg-white hover:text-black transition-all duration-300'
+                  onClick={() => {
+                    if (!formLoadTime) setFormLoadTime(Date.now());
+                    setShowModal(true);
+                  }}
+                >
+                  Enquire
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <AnimatePresence>
+        {showModal && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className='fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur p-4'
+          >
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              className='bg-zinc-950 border border-zinc-800 p-6 sm:p-8 rounded-xl w-full max-w-md relative max-h-[90vh] overflow-y-auto'
+            >
+              <button
+                onClick={() => setShowModal(false)}
+                className='absolute top-4 right-4 text-gray-400 hover:text-white transition'
+              >
+                <X size={20} />
+              </button>
+              <h2 className='text-xl font-semibold mb-4 text-white'>Enquire</h2>
+              <Form {...form}>
+                <form
+                  className='space-y-4'
+                  onSubmit={form.handleSubmit(onSubmit)}
+                >
+                  {/* Honeypot field - hidden from users, bots will fill it */}
+                  <input
+                    type='text'
+                    name='website'
+                    value={honeypot}
+                    onChange={(e) => setHoneypot(e.target.value)}
+                    style={{
+                      position: 'absolute',
+                      left: '-9999px',
+                      width: '1px',
+                      height: '1px',
+                      opacity: 0,
+                      pointerEvents: 'none',
+                    }}
+                    tabIndex='-1'
+                    autoComplete='off'
+                    aria-hidden='true'
+                  />
+                  <FormField
+                    control={form.control}
+                    name='name'
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className='text-gray-300'>Name</FormLabel>
+                        <FormControl>
+                          <Input
+                            className='bg-zinc-900 border-zinc-700 text-white placeholder:text-zinc-500'
+                            placeholder='Enter your name'
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name='email'
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className='text-gray-300'>Email</FormLabel>
+                        <FormControl>
+                          <Input
+                            className='bg-zinc-900 border-zinc-700 text-white placeholder:text-zinc-500'
+                            placeholder='Enter your email'
+                            type='email'
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name='phone'
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className='text-gray-300'>Mobile Number</FormLabel>
+                        <FormControl>
+                          <Input
+                            className='bg-zinc-900 border-zinc-700 text-white placeholder:text-zinc-500'
+                            placeholder='Enter your mobile number'
+                            type='tel'
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <FormField
+                    control={form.control}
+                    name='product'
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className='text-gray-300'>Product Name</FormLabel>
+                        <FormControl>
+                          <Input
+                            className='bg-zinc-900 border-zinc-700 text-white placeholder:text-zinc-500'
+                            placeholder='Please specify the product name'
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+
+                  <FormField
+                    control={form.control}
+                    name='message'
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className='text-gray-300'>Message (Optional)</FormLabel>
+                        <FormControl>
+                          <Textarea
+                            placeholder='Enter your message'
+                            className='bg-zinc-900 border-zinc-700 text-white placeholder:text-zinc-500 resize-none'
+                            rows={3}
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <Button
+                    type='submit'
+                    disabled={submitting}
+                    className='w-full bg-white uppercase text-black hover:bg-gray-200 transition font-medium tracking-wider py-2 rounded-md'
+                  >
+                    {submitting ? 'Submitting...' : 'Submit'}
+                  </Button>
+                </form>
+              </Form>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Fullscreen Lightbox Carousel Overlay */}
+      <AnimatePresence>
+        {isFullscreen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="fixed inset-0 z-[100] bg-black/95 flex flex-col justify-between p-4 md:p-8 select-none"
+          >
+            {/* Top Bar */}
+            <div className="flex items-center justify-between w-full text-white">
+              <span className="text-xs md:text-sm tracking-widest font-light uppercase">
+                {product.title} <span className="opacity-50"> - {currentIndex + 1} / {totalMedia}</span>
+              </span>
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => setShowThumbnailGrid(!showThumbnailGrid)}
+                  className="w-10 h-10 rounded-full bg-white/10 hover:bg-white hover:text-black flex items-center justify-center transition-all cursor-pointer border border-white/10"
+                  aria-label="Toggle thumbnail grid"
+                  title="View all media"
+                >
+                  <Grid3X3 size={18} />
+                </button>
+                <button
+                  onClick={() => setIsFullscreen(false)}
+                  className="w-10 h-10 rounded-full bg-white/10 hover:bg-white hover:text-black flex items-center justify-center transition-all cursor-pointer border border-white/10"
+                  aria-label="Close fullscreen view"
+                >
+                  <X size={20} />
+                </button>
+              </div>
+            </div>
+
+            {/* Centered Image display */}
+            <div className="relative flex-1 flex items-center justify-center w-full h-full my-4 overflow-hidden">
+              <AnimatePresence>
+                <motion.div
+                  key={currentIndex}
+                  initial={{ opacity: 0, scale: 0.97 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.97 }}
+                  transition={{ duration: 0.2, ease: [0.76, 0, 0.24, 1] }}
+                  className="absolute inset-0 w-full h-full flex items-center justify-center"
+                >
+                  {isVideoSlide && product.video ? (
+                    <video
+                      src={product.video}
+                      className="max-w-full max-h-full object-contain"
+                      controls
+                      autoPlay
+                    />
+                  ) : (
+                    <img
+                      src={activeImages[currentIndex]?.filePath}
+                      alt={`${product.title} - Image ${currentIndex + 1}`}
+                      className="max-w-full max-h-full object-contain pointer-events-none"
+                    />
+                  )}
+                </motion.div>
+              </AnimatePresence>
+
+              {/* Navigation Arrows */}
+              {totalMedia > 1 && (
+                <>
+                  <button
+                    onClick={() => navigate('prev')}
+                    className="absolute left-2 md:left-4 w-12 h-12 rounded-full bg-white/5 hover:bg-white/20 text-white flex items-center justify-center transition-all cursor-pointer border border-white/10"
+                    aria-label="Previous image"
+                  >
+                    <ChevronLeft size={24} />
+                  </button>
+                  <button
+                    onClick={() => navigate('next')}
+                    className="absolute right-2 md:right-4 w-12 h-12 rounded-full bg-white/5 hover:bg-white/20 text-white flex items-center justify-center transition-all cursor-pointer border border-white/10"
+                    aria-label="Next image"
+                  >
+                    <ChevronRight size={24} />
+                  </button>
+                </>
+              )}
+            </div>
+
+            {/* Thumbnail Navigation Strip */}
+            {totalMedia > 1 && (
+              <div className="w-full max-w-[1000px] mx-auto overflow-hidden">
+                <div className="relative flex gap-2 overflow-x-auto py-2 scroll-smooth select-none scrollbar-none" style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
+                  {activeImages?.map((img, idx) => (
+                    <button
+                      key={idx}
+                      ref={(el) => (thumbRefs.current[idx] = el)}
+                      onClick={() => handleImageSelect(idx)}
+                      className={`relative w-16 h-12 md:w-20 md:h-14 shrink-0 overflow-hidden border transition-all ${idx === currentIndex
+                        ? 'border-white scale-105 opacity-100'
+                        : 'border-transparent opacity-40 hover:opacity-85'
+                        }`}
+                    >
+                      <Image src={img.filePath} fill sizes="80px" unoptimized={true} className="object-cover pointer-events-none" alt="" />
+                    </button>
+                  ))}
+                  {product.video && (
+                    <button
+                      ref={(el) => (thumbRefs.current[activeImages?.length || 0] = el)}
+                      onClick={() => handleImageSelect(activeImages?.length || 0)}
+                      className={`relative w-16 h-12 md:w-20 md:h-14 shrink-0 overflow-hidden border transition-all bg-zinc-900 flex items-center justify-center ${activeImages?.length === currentIndex
+                        ? 'border-white scale-105 opacity-100'
+                        : 'border-transparent opacity-40 hover:opacity-85'
+                        }`}
+                    >
+                      <span className="text-[10px] text-white font-medium tracking-wider">VIDEO</span>
+                    </button>
+                  )}
+                </div>
+              </div>
+            )}
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Thumbnail Grid Modal (Rendered at root to avoid clipping) */}
+      <ThumbnailGrid
+        images={activeImages}
+        video={product.video}
+        currentIndex={currentIndex}
+        onImageSelect={handleImageSelect}
+        isOpen={showThumbnailGrid}
+        onToggle={() => setShowThumbnailGrid(!showThumbnailGrid)}
+      />
+    </main>
+  );
+}
+

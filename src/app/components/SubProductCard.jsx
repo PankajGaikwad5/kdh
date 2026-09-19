@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const SubProductCard = ({ title, img, id, hoveredIndex, setHoveredIndex }) => {
+const SubProductCard = ({ title, img, id, hoveredIndex, setHoveredIndex, basePath = '/collections', subtleHover = false }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [imageSize, setImageSize] = useState(300); // default image size
 
@@ -27,7 +27,7 @@ const SubProductCard = ({ title, img, id, hoveredIndex, setHoveredIndex }) => {
   }, []);
 
   return (
-    <Link href={`/collections/${id}`}>
+    <Link href={`${basePath}/${id}`}>
       <div
         onMouseEnter={() => setHoveredIndex(id)}
         onMouseLeave={() => setHoveredIndex(null)}
@@ -41,7 +41,7 @@ const SubProductCard = ({ title, img, id, hoveredIndex, setHoveredIndex }) => {
               `}
       >
         {/* This wrapper allows the image to pop out */}
-        <div className='w-full max-w-[300px] aspect-[4/3] relative rounded-lg overflow-visible group-hover:overflow-visible'>
+        <div className={`w-full max-w-[300px] aspect-[4/3] relative rounded-lg ${subtleHover ? 'overflow-hidden' : 'overflow-visible group-hover:overflow-visible'}`}>
           {isLoading && (
             <div className='absolute inset-0 bg-gray-200 dark:bg-gray-700 animate-pulse rounded-lg' />
           )}
@@ -50,8 +50,8 @@ const SubProductCard = ({ title, img, id, hoveredIndex, setHoveredIndex }) => {
             src={img}
             alt={title}
             fill
-            className='object-contain transition-transform duration-300 
-                     group-hover:scale-[1.70]'
+            className={`object-contain transition-transform duration-300 
+                     ${subtleHover ? 'group-hover:scale-110 object-cover' : 'group-hover:scale-[1.70]'}`}
             onLoad={() => setIsLoading(false)}
           />
         </div>
