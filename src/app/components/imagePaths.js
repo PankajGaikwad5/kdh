@@ -240,7 +240,7 @@ export const newImagePaths = [
     productId: '67a5ec494da9b29cd0f10b87',
   },
   {
-    name: 'Gattoo X Top Brewer',
+    name: 'Gattoo | Top Brewer',
     path: '/optimized/topbrewer.webp',
     group: 'Monster 2.0',
     productId: '67a5eb7e4da9b29cd0f10b69',
@@ -266,7 +266,7 @@ export const newImagePaths = [
   {
     name: 'Samaveta Bench',
     path: '/optimized/samavetabench.webp',
-    group: 'KD X Serafini',
+    group: 'KD | Serafini',
     productId: '67a5fa124da9b29cd0f10c36',
   },
   {
@@ -332,7 +332,7 @@ export const newImagePaths = [
   {
     name: 'Samaveta Console',
     path: '/optimized/samavetaconsole.webp',
-    group: 'KD X Serafini',
+    group: 'KD | Serafini',
     productId: 'samaveta-console',
   },
   {
@@ -789,7 +789,7 @@ export const newImagePaths = [
         productId: '67a5ec494da9b29cd0f10b87',
       },
       {
-        name: 'Gattoo X Top Brewer',
+        name: 'Gattoo | Top Brewer',
         path: '/optimized/topbrewer.webp',
         group: 'Monster 2.0',
         productId: '67a5eb7e4da9b29cd0f10b69',
@@ -815,7 +815,7 @@ export const newImagePaths = [
       {
         name: 'Samaveta Bench',
         path: '/optimized/samavetabench.webp',
-        group: 'KD X Serafini',
+        group: 'KD | Serafini',
         productId: '67a5fa124da9b29cd0f10c36',
       },
       {
@@ -869,7 +869,7 @@ export const newImagePaths = [
       {
         name: 'Samaveta Console',
         path: '/optimized/samavetaconsole.webp',
-        group: 'KD X Serafini',
+        group: 'KD | Serafini',
         productId: 'samaveta-console',
       },
       {

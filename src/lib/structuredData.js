@@ -73,7 +73,7 @@ export function getFAQSchema() {
         name: 'What are the main collections offered by Karan Desai Home?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Our main collections include: Monster 1.0 (collaboration with The Quarry), Monster 2.0 (with TopBrewer and Bharat Flooring), Monster 3.0 and 3.1 (with Dimensions), Matilda collections (2022-2025), Monster Collectibles (with Arjun Rathi), KD X Serafini collaboration, and Monsformer (with Blum). Each collection features unique, limited-edition designer pieces.',
+          text: 'Our main collections include: Monster 1.0 (collaboration with The Quarry), Monster 2.0 (with TopBrewer and Bharat Flooring), Monster 3.0 and 3.1 (with Dimensions), Matilda collections (2022-2025), Monster Collectibles (with Arjun Rathi), KD | Serafini collaboration, and Monsformer (with Blum). Each collection features unique, limited-edition designer pieces.',
         },
       },
       {

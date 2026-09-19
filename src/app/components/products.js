@@ -2630,7 +2630,7 @@ export const products = [
     _id: {
       $oid: '67a5eb7e4da9b29cd0f10b69',
     },
-    title: 'monster 2.0 gattoo x top brewer',
+    title: 'monster 2.0 gattoo | top brewer',
     group: 'monster_2.0',
     material: 'Rainforest Green Marble',
     collabtext: 'TopBrewer',

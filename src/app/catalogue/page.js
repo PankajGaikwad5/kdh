@@ -46,7 +46,7 @@ const page = () => {
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-8 gap-x-14 gap-y-16'>
               <div className='uppercase flex flex-col gap-3'>
                 <img src='/collabs/kdxserafini.jpeg' alt='' className='w-72' />
-                <h1 className='font-bold tracking-widest'>kd x serafini</h1>
+                <h1 className='font-bold tracking-widest'>kd | serafini</h1>
                 <span>
                   <a
                     target='_blank'

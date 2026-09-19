@@ -185,7 +185,7 @@ export default function RootLayout({ children }) {
         name: 'What collections does Karan Desai Home offer?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Our collections include Monster 1.0, 2.0, 3.0, and 3.1, Matilda collections (2022-2025), Monster Collectibles, KD X Serafini collaboration, and Monsformer. Each features unique, limited-edition designer pieces.',
+          text: 'Our collections include Monster 1.0, 2.0, 3.0, and 3.1, Matilda collections (2022-2025), Monster Collectibles, KD | Serafini collaboration, and Monsformer. Each features unique, limited-edition designer pieces.',
         },
       },
     ],

@@ -161,7 +161,7 @@ const GroupProductsPage = () => {
                     src={'/assets/kdhlogo3.png'}
                     className='w-24 sm:w-36 md:w-52 2xl:w-60'
                   />
-                  <X className='text-white' size={30} />
+                  <span className='text-white text-3xl md:text-5xl mx-2 font-light'>|</span>
                   <Image
                     width={200}
                     height={200}
@@ -171,7 +171,7 @@ const GroupProductsPage = () => {
                   />
                   {image2 && (
                     <>
-                      <X className='text-white' size={30} />
+                      <span className='text-white text-3xl md:text-5xl mx-2 font-light'>|</span>
                       <Image
                         width={100}
                         height={100}
@@ -221,7 +221,7 @@ const GroupProductsPage = () => {
                   <p className='text-white text-xs font-normal'>{`(2022)`}</p>
                 </span>
               </h1>
-              <X className='text-white' size={30} />
+              <span className='text-white text-3xl md:text-5xl mx-2 font-light'>|</span>
               <Image
                 width={250}
                 height={250}

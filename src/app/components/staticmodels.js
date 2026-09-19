@@ -81,7 +81,7 @@ export const staticModels = [
     url: '/tbg.glb',
     scale: 60,
     id: '67a5eb7e4da9b29cd0f10b69',
-    tooltip: 'Gattoo X Top Brewer',
+    tooltip: 'Gattoo | Top Brewer',
   },
 
   {
