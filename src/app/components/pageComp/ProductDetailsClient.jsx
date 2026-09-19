@@ -292,12 +292,11 @@ export default function ProductDetailsClient({ product }) {
   // Preload active images whenever they change (e.g. when marble is selected)
   useEffect(() => {
     const timers = [];
-    if (activeImages?.[0]) {
-      setImageLoaded(false);
+    if (activeImages?.length > 0) {
+      // Preload the first image immediately
       preloadImage(activeImages[0].filePath);
-      if (loadedImages.has(activeImages[0].filePath)) {
-        setImageLoaded(true);
-      }
+      
+      // Preload the rest with a slight stagger
       activeImages
         .slice(1)
         .forEach((img, i) => {
@@ -306,7 +305,7 @@ export default function ProductDetailsClient({ product }) {
         });
     }
     return () => timers.forEach(clearTimeout);
-  }, [activeImages, preloadImage, loadedImages]);
+  }, [activeImages, preloadImage]);
 
   const handleSelectMarble = useCallback((marbleName) => {
     // Determine what the "default" state for this product is
@@ -451,19 +450,19 @@ export default function ProductDetailsClient({ product }) {
                 className='relative w-full h-full select-none flex items-center justify-center'
                 style={{
                   opacity: imageLoaded ? 1 : 0,
-                  transition: 'opacity 0.4s ease',
+                  transition: 'opacity 0.2s ease',
                 }}
               >
-                <AnimatePresence mode="wait">
+                <AnimatePresence>
                   {isVideoSlide && product.video ? (
                     <motion.video
                       key="video"
                       initial={{ opacity: 0, scale: 0.98 }}
                       animate={{ opacity: 1, scale: 1 }}
                       exit={{ opacity: 0, scale: 0.98 }}
-                      transition={{ duration: 0.4, ease: [0.76, 0, 0.24, 1] }}
+                      transition={{ duration: 0.3, ease: [0.76, 0, 0.24, 1] }}
                       src={product.video}
-                      className='max-w-full max-h-full object-contain'
+                      className='absolute inset-0 w-full h-full object-contain'
                       controls
                       autoPlay
                       onLoadedData={() => setImageLoaded(true)}
@@ -475,8 +474,8 @@ export default function ProductDetailsClient({ product }) {
                         initial={{ opacity: 0, scale: 0.98 }}
                         animate={{ opacity: 1, scale: 1 }}
                         exit={{ opacity: 0, scale: 0.98 }}
-                        transition={{ duration: 0.4, ease: [0.76, 0, 0.24, 1] }}
-                        className="w-full h-full relative"
+                        transition={{ duration: 0.3, ease: [0.76, 0, 0.24, 1] }}
+                        className="absolute inset-0 w-full h-full"
                       >
                         <Image
                           onClick={toggleFullscreen}
@@ -486,7 +485,7 @@ export default function ProductDetailsClient({ product }) {
                           className='object-contain cursor-pointer'
                           sizes='(max-width: 768px) 100vw, 50vw'
                           priority={currentIndex === 0}
-                          quality={85}
+                          unoptimized={true}
                           onLoad={() => setImageLoaded(true)}
                         />
                       </motion.div>
@@ -964,14 +963,14 @@ export default function ProductDetailsClient({ product }) {
 
             {/* Centered Image display */}
             <div className="relative flex-1 flex items-center justify-center w-full h-full my-4 overflow-hidden">
-              <AnimatePresence mode="wait">
+              <AnimatePresence>
                 <motion.div
                   key={currentIndex}
                   initial={{ opacity: 0, scale: 0.97 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.97 }}
-                  transition={{ duration: 0.4, ease: [0.76, 0, 0.24, 1] }}
-                  className="w-full h-full relative flex items-center justify-center"
+                  transition={{ duration: 0.2, ease: [0.76, 0, 0.24, 1] }}
+                  className="absolute inset-0 w-full h-full flex items-center justify-center"
                 >
                   {isVideoSlide && product.video ? (
                     <video
@@ -1025,7 +1024,7 @@ export default function ProductDetailsClient({ product }) {
                         : 'border-transparent opacity-40 hover:opacity-85'
                         }`}
                     >
-                      <Image src={img.filePath} fill sizes="80px" quality={80} className="object-cover pointer-events-none" alt="" />
+                      <Image src={img.filePath} fill sizes="80px" unoptimized={true} className="object-cover pointer-events-none" alt="" />
                     </button>
                   ))}
                   {product.video && (

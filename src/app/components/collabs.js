@@ -335,7 +335,7 @@ export const collabs = [
       $oid: '6791f5807a5dc4ac2d27e20e',
     },
     title: 'the quarry',
-    details: 'ID 2022',
+    details: 'ID 2023',
     year: '2023',
     moreDetails: '/collections/monster_1.0',
     images: [

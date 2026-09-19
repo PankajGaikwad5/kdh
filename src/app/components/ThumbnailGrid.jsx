@@ -171,7 +171,7 @@ const ThumbnailGrid = ({
                         alt={`Thumbnail ${index + 1}`}
                         fill
                         className='object-cover transition-transform duration-300 group-hover:scale-110'
-                        quality={70}
+                        unoptimized={true}
                         sizes='200px'
                       />
 
