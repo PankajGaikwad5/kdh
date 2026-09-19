@@ -138,16 +138,16 @@ const GroupProductsPage = () => {
       className='min-h-screen flex flex-col bg-black'
     >
       <div className='min-h-screen grid grid-rows-[1fr_auto]'>
-        <Navbar arrow={false} home={true} />
+        <Navbar arrow={false} home={false} />
 
-        <header className='fixed top-3 right-0 md:right-2 w-full flex justify-end items-center p-4 z-30'>
+        {/* <header className='fixed top-3 right-0 md:right-2 w-full flex justify-end items-center p-4 z-30'>
           <button
             onClick={() => router.back()}
             className='text-white hover:text-gray-300 transition'
           >
             <ArrowLeft size={30} />
           </button>
-        </header>
+        </header> */}
 
         <div ref={headerRef} className='pt-20 md:pt-7 px-4 sm:px-6 lg:px-8'>
           <div className='w-full text-center flex flex-col justify-center items-center'>
