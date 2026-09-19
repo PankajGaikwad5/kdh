@@ -186,7 +186,7 @@ const GroupProductsPage = () => {
                 <div className='gsap-reveal flex flex-col gap-3'>
                   <h1 className='text-4xl font-bold text-gray-300 uppercase w-full md:max-w-3xl'>
                     {group.replace('_', ' ')}
-                    {year && <p className='text-white text-xs font-normal'>{`(${year})`}</p>}
+                    {/* {year && <p className='text-white text-xs font-normal'>{`(${year})`}</p>} */}
                   </h1>
                 </div>
               </>
