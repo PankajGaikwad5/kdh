@@ -2170,7 +2170,7 @@ Carved from pristine white marble and built to impress, it doesn’t play by the
 
 Precision meets personality in a piece that’s equal parts design and dominance. 
 For those who don’t decorate—they curate power.`,
-    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOjwWrMENQNhsYReup8oqCmaiw71dHbWcUIX5',
+    dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOjwWrMENQNhsYReup8oqCmaiw71dHbWcUIX5f',
     __v: 0,
     marbleImages: {
       indianblackbheslana: [
