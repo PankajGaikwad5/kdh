@@ -31,7 +31,7 @@ export function AccordionMarbles({ selectedMarble, onSelectMarble, product }) {
   return (
     <div className='flex flex-col items-start justify-start mt-4 w-full'>
       {/* Header */}
-      <button
+      {/* <button
         className='w-full flex items-center justify-between gap-2 text-lg focus:outline-none'
         onClick={() => setOpen(!open)}
       >
@@ -41,7 +41,7 @@ export function AccordionMarbles({ selectedMarble, onSelectMarble, product }) {
             open ? 'rotate-180' : ''
           }`}
         />
-      </button>
+      </button> */}
 
       {/* Dropdown Content */}
       {open && (
@@ -69,23 +69,17 @@ export function AccordionMarbles({ selectedMarble, onSelectMarble, product }) {
                     : `View ${marble.name} option`
                 }
               >
-                <div className='relative w-[70px] h-[70px] overflow-hidden rounded-md'>
+                <div className={`relative w-10 h-10 overflow-hidden rounded-full transition-all duration-300 ${
+                  isSelected
+                    ? 'ring-1 ring-white ring-offset-2 ring-offset-black opacity-100'
+                    : 'opacity-70 group-hover:opacity-100'
+                }`}>
                   <Image
-                    width={70}
-                    height={70}
+                    fill
                     src={marble.src}
                     alt={marble.name}
-                    className={`aspect-square object-cover transition-all duration-300 ${
-                      marble.rotate ? 'rotate-90' : ''
-                    } ${
-                      isSelected
-                        ? 'ring-2 ring-white ring-offset-2 ring-offset-black scale-95 opacity-100'
-                        : 'opacity-85 group-hover:opacity-100'
-                    }`}
+                    className={`object-cover ${marble.rotate ? 'rotate-90' : ''}`}
                   />
-                  {hasCustomImages && !isSelected && (
-                    <span className='absolute bottom-1 right-1 w-2.5 h-2.5 bg-white border border-black rounded-full shadow' />
-                  )}
                 </div>
                 <p
                   className={`text-xs w-[80px] mt-2 break-words transition-colors duration-200 ${

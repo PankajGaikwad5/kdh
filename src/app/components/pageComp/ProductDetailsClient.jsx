@@ -593,7 +593,7 @@ export default function ProductDetailsClient({ product }) {
             )}
 
             <div className='flex flex-col gap-4 text-sm 2xl:space-y-8'>
-              <div className='gsap-reveal grid grid-cols-2 md:grid-cols-3 gap-2'>
+              {/* <div className='gsap-reveal grid grid-cols-2 md:grid-cols-3 gap-2'>
                 <div>
                   <h4 className='font-semibold text-gray-400 text-xs mb-1'>
                     Dimension
@@ -624,7 +624,7 @@ export default function ProductDetailsClient({ product }) {
                   </h4>
                   <p className='text-white'>{product.material}</p>
                 </div>
-              </div>
+              </div> */}
 
               {(product.material === 'Marble' || (product.colors && product.colors.length > 0) || product.colorImages || (product.marbles && product.marbles.length > 0)) && (
                 <div className='gsap-reveal flex flex-col gap-2'>
@@ -662,10 +662,10 @@ export default function ProductDetailsClient({ product }) {
                         >
                           {option.swatches && option.swatches.length === 2 ? (
                             <div
-                              className={`relative w-[70px] h-[70px] overflow-hidden rounded-md flex transition-all duration-300 ${
+                              className={`relative w-10 h-10 overflow-hidden rounded-full flex transition-all duration-300 ${
                                 isSelected
-                                  ? 'ring-2 ring-white ring-offset-2 ring-offset-black scale-95 opacity-100'
-                                  : 'opacity-85 group-hover:opacity-100'
+                                  ? 'ring-1 ring-white ring-offset-2 ring-offset-black opacity-100'
+                                  : 'opacity-70 group-hover:opacity-100'
                               }`}
                             >
                               <div className='relative w-1/2 h-full overflow-hidden border-r border-black/40'>
@@ -687,29 +687,20 @@ export default function ProductDetailsClient({ product }) {
                                 />
                               </div>
                               {/* Subtle dot to indicate this option has custom photos */}
-                              {hasCustomImages && !isSelected && (
-                                <span className='absolute bottom-1 right-1 w-2.5 h-2.5 bg-white border border-black rounded-full shadow z-10' />
-                              )}
                             </div>
                           ) : (
-                            <div className='relative w-[70px] h-[70px] overflow-hidden rounded-md'>
+                            <div className={`relative w-10 h-10 overflow-hidden rounded-full transition-all duration-300 ${
+                                isSelected
+                                  ? 'ring-1 ring-white ring-offset-2 ring-offset-black opacity-100'
+                                  : 'opacity-70 group-hover:opacity-100'
+                              }`}
+                            >
                               <Image
-                                width={70}
-                                height={70}
+                                fill
                                 src={option.src || option.swatches?.[0]}
                                 alt={option.name}
-                                className={`aspect-square object-cover transition-all duration-300 ${
-                                  option.rotate ? 'rotate-90' : ''
-                                } ${
-                                  isSelected
-                                    ? 'ring-2 ring-white ring-offset-2 ring-offset-black scale-95 opacity-100'
-                                    : 'opacity-85 group-hover:opacity-100'
-                                }`}
+                                className={`object-cover ${option.rotate ? 'rotate-90' : ''}`}
                               />
-                              {/* Subtle dot to indicate this option has custom photos */}
-                              {hasCustomImages && !isSelected && (
-                                <span className='absolute bottom-1 right-1 w-2.5 h-2.5 bg-white border border-black rounded-full shadow' />
-                              )}
                             </div>
                           )}
                           <p
