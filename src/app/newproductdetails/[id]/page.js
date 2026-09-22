@@ -6,6 +6,7 @@ import { useParams, useRouter } from 'next/navigation';
 import { Button } from '@/app/components/ui/button';
 import { X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { formatProductDescription } from '@/app/utils/formatDescription';
 
 
 const ProductDetailsPage = () => {
@@ -164,7 +165,7 @@ const ProductDetailsPage = () => {
               </div>
 
               <div className='mt-6 border-t border-gray-300 pt-4 text-sm text-black whitespace-pre-line leading-relaxed'>
-                {product.description}
+                {formatProductDescription(product.description)}
               </div>
 
               <div className='mt-10 flex gap-4'>

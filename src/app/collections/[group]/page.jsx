@@ -307,7 +307,7 @@ const GroupProductsPageV2 = () => {
 
         <div ref={headerRef} className=''>
           <div className='w-full text-center flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8'>
-            {image1 ? (
+            {/* {image1 ? (
               <>
                 <div className='gsap-reveal flex gap-8 2xl:gap-8 items-center pb-2 border-b border-gray-800 w-full max-w-3xl 2xl:max-w-5xl justify-center mb-6'>
                   <Image
@@ -345,12 +345,12 @@ const GroupProductsPageV2 = () => {
                   </h1>
                 </div>
               </>
-            ) : (
-              <h1 className='gsap-reveal text-2xl md:text-4xl font-medium text-gray-200 pb-6 border-b border-gray-800 uppercase w-full md:max-w-3xl tracking-widest'>
+            ) : ( */}
+              <h1 className='gsap-reveal text-2xl md:text-4xl font-medium text-gray-200 py-6 border-b border-gray-800 uppercase w-full md:max-w-3xl tracking-widest'>
                 {group.replace('_', ' ')}
-                {year && <span className='block text-gray-400 text-sm font-light mt-4 tracking-widest'>{year}</span>}
+                {/* {year && <span className='block text-gray-400 text-sm font-light mt-4 tracking-widest'>{year}</span>} */}
               </h1>
-            )}
+            {/* )} */}
 
             {hasPdf && (
               <div className='gsap-reveal flex justify-center mt-8'>

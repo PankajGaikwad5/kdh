@@ -24,6 +24,7 @@ import ThumbnailGrid from '@/app/components/ThumbnailGrid';
 import Navbar from '@/app/components/Navbar';
 import { useCart } from '@/app/context/CartContext';
 import { getCollectionName } from '@/lib/utils';
+import { formatProductDescription } from '@/app/utils/formatDescription';
 
 const AccordionMarbles = dynamic(
   () => import('@/app/components/AccordionMarbles').then((mod) => mod.AccordionMarbles),
@@ -731,7 +732,7 @@ export default function MandirDetailsClient({ product }) {
               )}
 
               <div className='gsap-reveal mt-6 border-t border-gray-700 pt-4 text-sm text-white font-light whitespace-pre-line leading-relaxed text-justify'>
-                {product.description}
+                {formatProductDescription(product.description)}
               </div>
 
               <div className='gsap-reveal mt-10 flex gap-4 flex-col md:flex-row flex-wrap'>

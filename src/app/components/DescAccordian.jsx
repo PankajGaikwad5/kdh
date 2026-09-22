@@ -22,6 +22,7 @@ import {
 } from '../components/ui/form';
 import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
+import { formatProductDescription } from '../utils/formatDescription';
 
 
 const formSchema = z.object({
@@ -109,7 +110,9 @@ const DescAccordian = ({ scrollPosition, desc, title, dimensions, pdf }) => {
         {/* <h1 className='uppercase text-zinc-500 font-semibold my-4 text-base'>
           description
         </h1> */}
-        <p className=' text-sm text-zinc-300 font-medium checkfont text-justify whitespace-pre-line'>{desc}</p>
+        <div className='text-justify whitespace-pre-line'>
+          {formatProductDescription(desc, 'text-sm text-zinc-300 font-medium checkfont mb-4 last:mb-0')}
+        </div>
       </div>
       <div className='flex flex-col  md:w-[50%] px-6 md:px-16'>
         <Accordion
