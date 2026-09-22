@@ -41,3 +41,40 @@ export function getCollectionName(productOrItem) {
   return '';
 }
 
+export function formatTitle(title) {
+  if (!title) return '';
+  let cleaned = title.trim();
+  
+  const prefixes = [
+    'matilda 2022',
+    'matilda 2023',
+    'matilda 2024',
+    'matilda 2025',
+    'matila 2024',
+    'monster 1.0',
+    'monster 2.0',
+    'monster 3.0',
+    'monster 3.1',
+    'monster 4.0',
+    'monster collectibles',
+    'monster',
+    'jina shilp',
+    'samaveta',
+    'serafini',
+    'monsformer'
+  ];
+
+  for (const prefix of prefixes) {
+    const regex = new RegExp(`^${prefix}\\s*`, 'i');
+    if (regex.test(cleaned)) {
+      cleaned = cleaned.replace(regex, '');
+      break;
+    }
+  }
+
+  if (cleaned.length > 0) {
+    cleaned = cleaned.charAt(0).toUpperCase() + cleaned.slice(1);
+  }
+
+  return cleaned;
+}

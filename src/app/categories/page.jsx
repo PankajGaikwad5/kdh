@@ -6,10 +6,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Footer from '../components/Footer';
 import { HoverBorderGradient } from '@/components/ui/hover-border-gradient';
-import { categoryList } from '../utils/categories';
+import { categoryList, deriveCategory } from '../utils/categories';
+import { products as allProducts } from '../components/products';
 
 const CategoryCard = ({ category, index }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const [hasHovered, setHasHovered] = useState(false);
+  const [imgIndex, setImgIndex] = useState(0);
 
   // 4 columns logic (lg: screens)
   const isAlternate4 = (Math.floor(index / 4) + (index % 4)) % 2 !== 0;
@@ -22,6 +25,32 @@ const CategoryCard = ({ category, index }) => {
   const bgColor = `${bgMobile} ${bgDesktop}`;
   const slug = category.name.toLowerCase().replace(/ /g, '-');
 
+  const categoryProducts = allProducts.filter(p => deriveCategory(p.title) === category.name);
+  
+  const productImages = categoryProducts
+    .map(p => {
+      const imgs = p.images || [];
+      return imgs.length > 0 ? (imgs[0].filePath || imgs[0]) : null;
+    })
+    .filter(Boolean);
+    
+  const primaryImage = productImages.length > 0 ? productImages[0] : category.img;
+  
+  const uniqueImages = [...new Set([primaryImage, ...productImages])].slice(0, 10);
+
+  useEffect(() => {
+    let interval;
+    if (isHovered && uniqueImages.length > 1) {
+      setHasHovered(true);
+      interval = setInterval(() => {
+        setImgIndex((prev) => (prev + 1) % uniqueImages.length);
+      }, 800);
+    } else {
+      setImgIndex(0);
+    }
+    return () => clearInterval(interval);
+  }, [isHovered, uniqueImages.length]);
+
   return (
     <Link
       href={`/categories/${slug}`}
@@ -31,13 +60,29 @@ const CategoryCard = ({ category, index }) => {
     >
       <div className='flex-grow flex items-center justify-center overflow-hidden mb-8'>
         <div className='relative w-full h-full transform transition-transform duration-700 ease-out group-hover:scale-105'>
-          <Image
-            src={category.img}
-            alt={category.name}
-            fill
-            className='object-contain transition-opacity duration-500'
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-          />
+          {uniqueImages.map((imgSrc, i) => {
+            if (i !== 0 && !hasHovered) return null;
+            const isVisible = i === imgIndex;
+            return (
+              <div key={i} className={`absolute inset-0 transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+                {typeof imgSrc === 'string' && imgSrc.includes('http') ? (
+                  <img
+                    src={imgSrc}
+                    alt={category.name}
+                    className='object-contain w-full h-full absolute inset-0 '
+                  />
+                ) : (
+                  <Image
+                    src={imgSrc}
+                    alt={category.name}
+                    fill
+                    className='object-contain '
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                  />
+                )}
+              </div>
+            );
+          })}
         </div>
       </div>
 

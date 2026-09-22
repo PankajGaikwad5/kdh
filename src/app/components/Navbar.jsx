@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import { ArrowLeft, ArrowRight, Search, X, ShoppingBag } from 'lucide-react';
 import Link from 'next/link';
 import { products } from './products'; // adjust path if needed
+import { categoryList } from '@/app/utils/categories';
 import { useCart } from '@/app/context/CartContext';
 
 
@@ -14,6 +15,7 @@ const Navbar = ({ isBgBlack, arrow, escape, home }) => {
   const [white, setWhite] = useState(false);
   const [showSearch, setShowSearch] = useState(false);
   const [query, setQuery] = useState('');
+  const [showCategories, setShowCategories] = useState(false);
   const [results, setResults] = useState([]);
   const { cartCount, isInitialized } = useCart();
 
@@ -64,7 +66,7 @@ const Navbar = ({ isBgBlack, arrow, escape, home }) => {
   const newNavTopics = [
     { id: 2, name: 'about', path: 'about' },
     { id: 3, name: 'collections', path: 'collections' },
-    // { id: 9, name: 'categories', path: 'categories' },
+    // { id: 9, name: 'categories', isDropdown: true },
     { id: 7, name: 'mandirs', path: 'mandirs' },
     { id: 4, name: 'collaborations', path: 'collaborations' },
     { id: 5, name: 'press', path: 'press' },
@@ -76,7 +78,7 @@ const Navbar = ({ isBgBlack, arrow, escape, home }) => {
     <>
       {/* Hamburger */}
       <div
-        className={`w-full flex fixed md:m-8 m-6 font-extralight text-xs uppercase tracking-wider text-gray-800 navMenu z-[60] cursor-pointer ${
+        className={`flex fixed md:m-8 m-6 font-extralight text-xs uppercase tracking-wider text-gray-800 navMenu z-[60] cursor-pointer ${
           nav && 'open'
         }`}
         onClick={() => {
@@ -232,17 +234,50 @@ const Navbar = ({ isBgBlack, arrow, escape, home }) => {
           <Link
             href='/'
             className='hover:text-gray-600 transition-all duration-300'
+            onClick={() => { setNav(false); setWhite(false); }}
           >
             home
           </Link>
-          {newNavTopics.map(({ id, name, path }) => (
+          {newNavTopics.map(({ id, name, path, isDropdown }) => (
             <li key={id}>
-              <Link
-                href={`/${path}`}
-                className='hover:text-gray-600 transition-all duration-300'
-              >
-                {name}
-              </Link>
+              {isDropdown ? (
+                <div 
+                  className='flex flex-col'
+                  onMouseEnter={() => setShowCategories(true)}
+                  onMouseLeave={() => setShowCategories(false)}
+                >
+                  <button
+                    onClick={(e) => { e.preventDefault(); setShowCategories(!showCategories); }}
+                    className='hover:text-gray-600 transition-all duration-300 text-left uppercase w-full flex justify-between items-center cursor-default'
+                  >
+                    {name}
+                  </button>
+                  <ul className={`pl-4 overflow-hidden transition-all duration-500 ease-in-out ${showCategories ? 'max-h-[500px] mt-2 opacity-100' : 'max-h-0 opacity-0'}`}>
+                    {categoryList.map((category, index) => {
+                      const slug = category.name.toLowerCase().replace(/ /g, '-');
+                      return (
+                        <li key={index} className="my-2">
+                          <Link
+                            href={`/categories/${slug}`}
+                            className="hover:text-gray-600 transition-all duration-300 text-xs 2xl:text-xl font-normal tracking-widest text-gray-400"
+                            onClick={() => { setNav(false); setWhite(false); }}
+                          >
+                            {category.name}
+                          </Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              ) : (
+                <Link
+                  href={`/${path}`}
+                  className='hover:text-gray-600 transition-all duration-300'
+                  onClick={() => { setNav(false); setWhite(false); }}
+                >
+                  {name}
+                </Link>
+              )}
             </li>
           ))}
         </ul>

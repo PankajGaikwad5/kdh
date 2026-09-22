@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import CarouselComp from './CarouselComp';
 import DescAccordian from './DescAccordian';
 import { X } from 'lucide-react';
+import { formatTitle } from '@/lib/utils';
 
 const ProductModal = ({ product, onClose }) => {
   useEffect(() => {
@@ -29,7 +30,7 @@ const ProductModal = ({ product, onClose }) => {
         <DescAccordian
           desc={product.description}
           dimensions={product.dimensions}
-          title={product.title}
+          title={formatTitle(product.title)}
         />
       </div>
     </div>

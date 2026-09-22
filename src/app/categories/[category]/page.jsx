@@ -9,6 +9,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { HoverBorderGradient } from '@/components/ui/hover-border-gradient';
 import { deriveCategory } from '@/app/utils/categories';
+import { formatTitle } from '@/lib/utils';
 
 const ProductCardV2 = ({ product, index }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -24,10 +25,83 @@ const ProductCardV2 = ({ product, index }) => {
   const bgColor = `${bgMobile} ${bgDesktop}`;
 
   const primaryImage = product.images?.[0]?.filePath || '';
-  const title = product.title || '';
+  const title = formatTitle(product.title) || '';
   const collectionName = product.group?.replace('_', ' ') || '';
   
-  const hoverImage = product.images?.[1]?.filePath || primaryImage;
+  // Custom Hover Image logic
+  let hoverImageIndex = 1; // default 2nd image
+  if (product.group === 'jina_shilp') {
+    const titleLower = title.toLowerCase();
+    if (titleLower.includes('coffee table')) hoverImageIndex = 1;
+    else if (titleLower.includes('totem')) hoverImageIndex = 3;
+    else if (titleLower.includes('dining table')) hoverImageIndex = 1;
+    else if (titleLower.includes('mirror')) hoverImageIndex = 2;
+    else if (titleLower.includes('pillar bench')) hoverImageIndex = 1;
+  } else if (product.group === 'monster_4.0') {
+    const titleLower = title.toLowerCase();
+    if (titleLower.includes('yodaa')) hoverImageIndex = 1;
+    else if (titleLower.includes('mearr')) hoverImageIndex = 1;
+    else if (titleLower.includes('monster rug')) hoverImageIndex = 1;
+  } else if (product.group === 'monster_3.0') {
+    const titleLower = title.toLowerCase();
+    if (titleLower.includes('dining kids chair')) hoverImageIndex = 5;
+    else if (titleLower.includes('dining chair')) hoverImageIndex = 3;
+    else if (titleLower.includes('chardwood chair')) hoverImageIndex = 3;
+    else if (titleLower.includes('gattoo chair')) hoverImageIndex = 5;
+    else if (titleLower.includes('dining table')) hoverImageIndex = 6;
+    else if (titleLower.includes('console')) hoverImageIndex = 6;
+    else if (titleLower.includes('planter')) hoverImageIndex = 7;
+    else if (titleLower.includes('library art edition')) hoverImageIndex = 5;
+    else if (titleLower.includes('library')) hoverImageIndex = 5;
+    else if (titleLower.includes('bench')) hoverImageIndex = 5;
+  } else if (product.group === 'matilda_2024') {
+    const titleLower = title.toLowerCase();
+    if (titleLower.includes('pendant light')) hoverImageIndex = 7;
+    else if (titleLower.includes('partition')) hoverImageIndex = 8;
+    else if (titleLower.includes('center table 1')) hoverImageIndex = 6;
+    else if (titleLower.includes('center table 2')) hoverImageIndex = 7;
+    else if (titleLower.includes('u-table')) hoverImageIndex = 5;
+    else if (titleLower.includes('console')) hoverImageIndex = 5;
+    else if (titleLower.includes('coffee table')) hoverImageIndex = 3;
+    else if (titleLower.includes('floor lamp')) hoverImageIndex = 9;
+    else if (titleLower.includes('library')) hoverImageIndex = 6;
+    else if (titleLower.includes('planter')) hoverImageIndex = 6;
+    else if (titleLower.includes('dining table')) hoverImageIndex = 4;
+    else if (titleLower.includes('flower vase')) hoverImageIndex = 6;
+    else if (titleLower.includes('table lamp')) hoverImageIndex = 6;
+    else if (titleLower.includes('basin')) hoverImageIndex = 5;
+    else if (titleLower.includes('side table')) hoverImageIndex = 6;
+  } else if (product.group === 'monster_2.0') {
+    const titleLower = title.toLowerCase();
+    if (titleLower.includes('gatto')) hoverImageIndex = 9;
+    else if (titleLower.includes('yodaa')) hoverImageIndex = 2;
+  } else if (product.group === 'monster_collectibles') {
+    const titleLower = title.toLowerCase();
+    if (titleLower.includes('gum')) hoverImageIndex = 6;
+    else if (titleLower.includes('gattoofer') || titleLower.includes('gattooffer')) hoverImageIndex = 6;
+    else if (titleLower.includes('squinty')) hoverImageIndex = 8;
+    else if (titleLower.includes('grumpy')) hoverImageIndex = 6;
+    else if (titleLower.includes('brainy')) hoverImageIndex = 7;
+    else if (titleLower.includes('binty')) hoverImageIndex = 5;
+    else if (titleLower.includes('buddha')) hoverImageIndex = 1;
+    else if (titleLower.includes('guard')) hoverImageIndex = 5;
+  } else if (product.group === 'serafini' || product.group === 'samaveta') {
+    const titleLower = title.toLowerCase();
+    if (titleLower.includes('bench')) hoverImageIndex = 6;
+    else if (titleLower.includes('console')) hoverImageIndex = 5;
+  } else if (product.group === 'monster_1.0') {
+    const titleLower = title.toLowerCase();
+    if (titleLower.includes('basin')) hoverImageIndex = 8;
+    else if (titleLower.includes('bathtub')) hoverImageIndex = 4;
+    else if (titleLower.includes('console')) hoverImageIndex = 5;
+  } else if (product.group === 'matilda_2022') {
+    const titleLower = title.toLowerCase();
+    if (titleLower.includes('bed side table')) hoverImageIndex = 4;
+    else if (titleLower.includes('side table')) hoverImageIndex = 4;
+    else if (titleLower.includes('console')) hoverImageIndex = 5;
+  }
+  
+  const hoverImage = product.images?.[hoverImageIndex]?.filePath || product.images?.[1]?.filePath || primaryImage;
 
   return (
     <Link

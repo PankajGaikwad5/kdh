@@ -5,6 +5,7 @@ import { useParams, useRouter } from 'next/navigation';
 import Navbar from '@/app/components/Navbar';
 import Footer from '@/app/components/Footer';
 import { products } from '@/app/components/products';
+import { formatTitle } from '@/lib/utils';
 import { catalogues } from '@/app/components/catalogues';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -24,7 +25,7 @@ const ProductCardV2 = ({ product, index }) => {
   const bgColor = `${bgMobile} ${bgDesktop}`;
 
   const primaryImage = product.images?.[0]?.filePath || '';
-  const title = product.title || '';
+  const title = formatTitle(product.title) || '';
   const collectionName = product.group?.replace('_', ' ') || '';
 
   // Custom Hover Image logic
@@ -134,13 +135,13 @@ const ProductCardV2 = ({ product, index }) => {
       </div>
 
       <div className={`flex flex-col items-start text-left z-10 transition-opacity duration-700 ${isHovered ? 'opacity-0' : 'opacity-100'}`}>
-        <h2 className='text-sm md:text-xl font-medium text-gray-200 uppercase tracking-widest mb-1 line-clamp-1'>
+        <h2 className='text-sm md:text-xl font-base text-gray-200 uppercase tracking-widest mb-1 line-clamp-1'>
           {title}
         </h2>
         
-        <p className='text-[10px] md:text-sm text-gray-400 uppercase tracking-widest font-light line-clamp-2 min-h-[2rem] md:min-h-[2.5rem] leading-tight md:leading-normal mb-2 md:mb-4'>
+        {/* <p className='text-[10px] md:text-sm text-gray-400 uppercase tracking-widest font-light line-clamp-2 min-h-[2rem] md:min-h-[2.5rem] leading-tight md:leading-normal mb-2 md:mb-4'>
           {collectionName}
-        </p>
+        </p> */}
       </div>
 
       {/* Hover Overlay Content */}

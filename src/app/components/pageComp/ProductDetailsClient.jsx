@@ -23,7 +23,7 @@ import { Textarea } from '../../components/ui/textarea';
 import ThumbnailGrid from '@/app/components/ThumbnailGrid';
 import Navbar from '@/app/components/Navbar';
 import { useCart } from '@/app/context/CartContext';
-import { getCollectionName } from '@/lib/utils';
+import { getCollectionName, formatTitle } from '@/lib/utils';
 import { formatProductDescription } from '@/app/utils/formatDescription';
 
 const AccordionMarbles = dynamic(
@@ -422,7 +422,7 @@ export default function ProductDetailsClient({ product }) {
       className='min-h-screen bg-black text-white'
     >
       <Navbar home={true} />
-      <header className='fixed top-3 right-2 w-full flex justify-end p-4 z-30'>
+      <header className='fixed top-3 right-2 flex justify-end p-4 z-30'>
         <button
           onClick={() => router.back()}
           className='text-white hover:text-gray-300'
@@ -555,8 +555,13 @@ export default function ProductDetailsClient({ product }) {
           className='p-4 md:p-10 flex flex-col 2xl:mt-20 justify-between bg-black z-10'
         >
           <div>
+            {collectionName && (
+              <p className="gsap-reveal text-gray-400 uppercase tracking-widest text-xs mb-2">
+                {collectionName}
+              </p>
+            )}
             <h1 className='gsap-reveal text-4xl md:text-4xl 2xl:text-6xl  capitalize font-light tracking-tight'>
-              {product.title}
+              {formatTitle(product.title)}
             </h1>
 
             {product.collabtext && (
@@ -594,7 +599,7 @@ export default function ProductDetailsClient({ product }) {
             )}
 
             <div className='flex flex-col gap-4 text-sm 2xl:space-y-8'>
-              {/* <div className='gsap-reveal grid grid-cols-2 md:grid-cols-3 gap-2'>
+              <div className='gsap-reveal grid grid-cols-2 md:grid-cols-3 gap-2'>
                 <div>
                   <h4 className='font-semibold text-gray-400 text-xs mb-1'>
                     Dimension
@@ -625,16 +630,16 @@ export default function ProductDetailsClient({ product }) {
                   </h4>
                   <p className='text-white'>{product.material}</p>
                 </div>
-              </div> */}
+              </div>
 
               {(product.material === 'Marble' || (product.colors && product.colors.length > 0) || product.colorImages || (product.marbles && product.marbles.length > 0)) && (
                 <div className='gsap-reveal flex flex-col gap-2'>
                   <h2 className='text-lg mb-2 uppercase tracking-wide font-medium'>
-                    {product.colors || product.colorImages
+                    {/* {product.colors || product.colorImages
                       ? 'COLOR VARIATIONS'
                       : product.marbles
                         ? 'MARBLE COMBINATIONS'
-                        : 'MARBLES'}
+                        : 'MARBLES'} */}
                   </h2>
                   <div className='flex flex-wrap gap-4'>
                     {(product.marbles || product.colors || marbles).map((option) => {

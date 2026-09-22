@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ProductCard from '../components/ProductCard';
 import { products } from '../components/products';
+import { formatTitle } from '@/lib/utils';
 
 function SearchResults() {
   const searchParams = useSearchParams();
@@ -83,7 +84,7 @@ function SearchResults() {
                     <ProductCard
                       key={id}
                       id={id}
-                      title={product.title}
+                      title={formatTitle(product.title)}
                       img={img}
                       hoveredIndex={hoveredIndex}
                       setHoveredIndex={setHoveredIndex}

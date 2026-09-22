@@ -7,7 +7,7 @@ import { Trash2 } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { useCart } from '../context/CartContext';
-import { getCollectionName } from '@/lib/utils';
+import { getCollectionName, formatTitle } from '@/lib/utils';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
@@ -232,7 +232,7 @@ export default function CartPage() {
 
                           <div className='flex-1 min-w-0 pr-8'>
                             <h2 className='text-sm font-semibold tracking-wider text-gray-200 capitalize truncate mb-1'>
-                              {item.title}
+                              {formatTitle(item.title)}
                             </h2>
                             {collectionName && (
                               <p className='text-xs text-gray-400 tracking-normal font-light mb-0.5'>
