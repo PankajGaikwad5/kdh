@@ -54,12 +54,12 @@ export const catalogues = [
   },
   {
     group: 'matilda_2025',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQPpUZqCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO1azvWP4p805GRV2KDPQoMArhlxciNLCYa964',
     year: '2025',
   },
   {
     group: 'friends',
-    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOBjRO0tzYN8aVpJZLF50If4uUdl1vTPgMQEx2',
+    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOTsMcnnkol4fc15PmWSnAqbsUy78gtp2EBGzu',
     // year: '2026',
   },
   {
