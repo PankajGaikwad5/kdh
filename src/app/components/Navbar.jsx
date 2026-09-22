@@ -64,7 +64,7 @@ const Navbar = ({ isBgBlack, arrow, escape, home }) => {
   const newNavTopics = [
     { id: 2, name: 'about', path: 'about' },
     { id: 3, name: 'collections', path: 'collections' },
-    { id: 9, name: 'categories', path: 'categories' },
+    // { id: 9, name: 'categories', path: 'categories' },
     { id: 7, name: 'mandirs', path: 'mandirs' },
     { id: 4, name: 'collaborations', path: 'collaborations' },
     { id: 5, name: 'press', path: 'press' },
