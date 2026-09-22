@@ -649,13 +649,13 @@ export const products = [
         name: 'Both Rosso Levante',
         src: '/marbles/indianrossolevante.webp',
       },
-      {
-        name: 'Banswara & Italian Beige Travertine',
-        swatches: [
-          '/marbles/banswara.webp',
-          '/marbles/italianbeigetravertine.webp',
-        ],
-      },
+      // {
+      //   name: 'Banswara & Italian Beige Travertine',
+      //   swatches: [
+      //     '/marbles/banswara.webp',
+      //     '/marbles/italianbeigetravertine.webp',
+      //   ],
+      // },
       {
         name: 'Banswara & Black Bheslana',
         swatches: [
