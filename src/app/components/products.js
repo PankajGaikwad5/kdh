@@ -7539,6 +7539,13 @@ export const products = [
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
+        filePath: '/4.0/monstermirror/0.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
         filePath: '/4.0/monstermirror/1.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
@@ -7803,6 +7810,13 @@ export const products = [
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
+        filePath: '/4.0/monstertotem/0.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
         filePath: '/4.0/monstertotem/1.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
@@ -7963,6 +7977,13 @@ export const products = [
     material: 'Carpet',
     pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUIfcmHFW6qU3iBow9cLQK4A1kuMTGmF8rel2f',
     images: [
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/4.0/monstertable/0.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
       {
         fileName: '1738927863060-Slide1.JPG',
         filePath: '/4.0/monstertable/1.webp',

@@ -193,7 +193,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang='en' className={leagueSpartan.variable}>
-      <body className='tracking-widest antialiased font-sans bg-black'>
+      <body className={`tracking-widest antialiased bg-black ${leagueSpartan.className}`}>
         {/* Google Analytics */}
         <Script
           strategy='afterInteractive'

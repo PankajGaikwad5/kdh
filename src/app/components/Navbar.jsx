@@ -22,7 +22,7 @@ const Navbar = ({ isBgBlack, arrow, escape, home }) => {
     if (window.history.length > 1) {
       router.back();
     } else {
-      router.push(`/collections/${group}`);
+      router.push(`/collections`);
     }
   };
 

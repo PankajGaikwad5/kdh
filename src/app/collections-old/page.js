@@ -221,6 +221,7 @@ const page = () => {
               id={group}
               hoveredIndex={hoveredIndex}
               setHoveredIndex={setHoveredIndex}
+              basePath="/collections-old"
             />
           ))}
         </main>
