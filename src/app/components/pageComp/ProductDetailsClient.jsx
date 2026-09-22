@@ -24,6 +24,7 @@ import ThumbnailGrid from '@/app/components/ThumbnailGrid';
 import Navbar from '@/app/components/Navbar';
 import { useCart } from '@/app/context/CartContext';
 import { getCollectionName } from '@/lib/utils';
+import { formatProductDescription } from '@/app/utils/formatDescription';
 
 const AccordionMarbles = dynamic(
   () => import('@/app/components/AccordionMarbles').then((mod) => mod.AccordionMarbles),
@@ -554,7 +555,7 @@ export default function ProductDetailsClient({ product }) {
           className='p-4 md:p-10 flex flex-col 2xl:mt-20 justify-between bg-black z-10'
         >
           <div>
-            <h1 className='gsap-reveal text-4xl md:text-4xl 2xl:text-6xl 2xl:mb-20 mb-6 capitalize font-light tracking-tight'>
+            <h1 className='gsap-reveal text-4xl md:text-4xl 2xl:text-6xl  capitalize font-light tracking-tight'>
               {product.title}
             </h1>
 
@@ -726,8 +727,8 @@ export default function ProductDetailsClient({ product }) {
                 </div>
               )}
 
-              <div className='gsap-reveal mt-6 border-t border-gray-700 pt-4 text-sm text-white font-light whitespace-pre-line leading-relaxed text-justify'>
-                {product.description}
+              <div className='gsap-reveal mt-2 border-t border-gray-700 pt-4 text-sm text-white font-light whitespace-pre-line leading-relaxed text-justify'>
+                {formatProductDescription(product.description)}
               </div>
 
               <div className='gsap-reveal mt-10 flex gap-4 flex-col md:flex-row flex-wrap'>
@@ -756,7 +757,7 @@ export default function ProductDetailsClient({ product }) {
                     Add to Cart
                   </Button>
                 )}
-                <Button
+                {/* <Button
                   className='px-6 py-2 border w-full md:w-auto border-white bg-transparent text-white rounded-none hover:bg-white hover:text-black transition-all duration-300'
                   onClick={() => {
                     if (!formLoadTime) setFormLoadTime(Date.now());
@@ -764,7 +765,7 @@ export default function ProductDetailsClient({ product }) {
                   }}
                 >
                   Enquire
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>
