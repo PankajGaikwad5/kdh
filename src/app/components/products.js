@@ -6359,6 +6359,13 @@ export const products = [
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m23/console.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
     ],
     marbleImages: {
       indianblackbheslana: [
@@ -6446,6 +6453,13 @@ export const products = [
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m23/bench.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
     ],
     marbleImages: {
       banswara: [
@@ -6506,7 +6520,7 @@ export const products = [
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/marbles/matilda2023/console2/banswara/1.webp',
+        filePath: '/m23/pngs/console.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -6528,6 +6542,13 @@ export const products = [
       {
         fileName: '1738927863060-Slide1.JPG',
         filePath: '/marbles/matilda2023/console2/banswara/4.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m23/console2.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -6581,7 +6602,7 @@ export const products = [
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/marbles/matilda2023/sidetable/banswara/1.webp',
+        filePath: '/m23/pngs/sidetable.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -6610,6 +6631,13 @@ export const products = [
       {
         fileName: '1738927863060-Slide1.JPG',
         filePath: '/marbles/matilda2023/sidetable/banswara/5.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m23/sidetable.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -6693,6 +6721,13 @@ export const products = [
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m23/diningtable.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
     ],
     description: `There’s something powerful about simplicity in design the way clean lines, sculptural forms, and natural textures come together to create a statement without shouting for attention. This dining table, with its bold marble base and soft rounded edges, balances strength and elegance in equal measure. Placed in a calm, neutral setting, it becomes more than just furniture, it anchors the space, inviting you to pause, gather, and connect. Proof that true luxury isn’t about excess, but about intention and the quiet confidence of design that speaks for itself.`,
     dimensions: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUnIzja8bYcoeRKumWaHxyTj5q3bfMXB6INAUz',
@@ -6739,6 +6774,13 @@ export const products = [
       {
         fileName: '1738927863060-Slide1.JPG',
         filePath: '/tfhoptimized/tfhconsolegreen5.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m23/consolegreen.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },

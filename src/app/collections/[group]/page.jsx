@@ -123,7 +123,7 @@ const ProductCardV2 = ({ product, index }) => {
     else if (titleLower.includes('mirror')) hoverImageIndex = 4; // 5th image
     else if (titleLower.includes('shelv')) hoverImageIndex = 4; // 5th image
     else if (titleLower.includes('side table')) hoverImageIndex = 4; // 5th image
-  } else if (product.group === 'matilda_2025') {
+  } else if (product.group === 'matilda_2025' || product.group === 'matilda_2023') {
     if (product.images && product.images.length > 0) {
       hoverImageIndex = product.images.length - 1; // last image
     }
