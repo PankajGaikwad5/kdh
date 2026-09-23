@@ -44,7 +44,10 @@ const ProductCardV2 = ({ product, index }) => {
     else if (titleLower.includes('monster rug')) hoverImageIndex = 1; // 2nd image
   } else if (product.group === 'monster_3.0') {
     const titleLower = title.toLowerCase();
-    if (titleLower.includes('dining kids chair')) hoverImageIndex = 5; // 6th image
+    if (titleLower.includes('chandelier')) hoverImageIndex = 5; // 6th image
+    else if (titleLower.includes('coffee table')) hoverImageIndex = 3; // 4th image
+    else if (titleLower.includes('ottoman')) hoverImageIndex = 8; // 9th image
+    else if (titleLower.includes('dining kids chair')) hoverImageIndex = 5; // 6th image
     else if (titleLower.includes('dining chair')) hoverImageIndex = 3; // 4th image
     else if (titleLower.includes('chardwood chair')) hoverImageIndex = 3; // 4th image
     else if (titleLower.includes('gattoo chair')) hoverImageIndex = 5; // 6th image

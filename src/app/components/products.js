@@ -4604,6 +4604,14 @@ export const products = [
         },
         thumbnail: '/assets/products/thumbnails/1739952360039-Monster Light installation.179.jpg',
       },
+      {
+        fileName: '1739952360039-Monster Light installation.179.jpg',
+        filePath: '/monster_3/chandelier.webp',
+        _id: {
+          $oid: '67b590e8e03cc2c55c624a62',
+        },
+        thumbnail: '/assets/products/thumbnails/1739952360039-Monster Light installation.179.jpg',
+      },
     ],
     description: `This isn’t a chandelier—it’s a spectacle in midair. The Monster Chandelier redefines lighting with a surreal form and a glow that’s more emotion than illumination. It doesn’t just light the room—it steals the spotlight. Soft, sculptural, and wildly unexpected, it’s made for those who crave drama, depth, and design that speaks louder than words. You don’t just switch it on—you ignite the atmosphere.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOjqRnmDNQNhsYReup8oqCmaiw71dHbWcUIX5f',
@@ -6915,6 +6923,13 @@ export const products = [
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/monster_3/ottoman.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
     ],
     description: 'A sculptural ottoman defined by its rounded silhouette, plush textured upholstery, and distinctive deep-green cracked-finish base. Designed as a bold companion piece within the Monster 3.0 collection, it combines tactile softness with an expressive, sculptural form.',
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO6WYulzTgmyYdxBZk9OWub4XEJaA1zR2CTiMc',
@@ -6946,6 +6961,13 @@ export const products = [
       {
         fileName: '1738927863060-Slide1.JPG',
         filePath: '/new_monster3/coffeetable3.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/new_monster3/coffeetable4.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
