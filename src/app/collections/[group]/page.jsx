@@ -100,7 +100,12 @@ const ProductCardV2 = ({ product, index }) => {
     else if (titleLower.includes('console')) hoverImageIndex = 5; // 6th image
   } else if (product.group === 'matilda_2022') {
     const titleLower = title.toLowerCase();
-    if (titleLower.includes('bed side table')) hoverImageIndex = 4; // 5th image
+    
+    if (titleLower.includes('chest of drawer') || titleLower.includes('marble console') || titleLower.includes('teabar') || titleLower.includes('tea bar') || titleLower.includes('teabear')) {
+      if (product.images && product.images.length > 0) {
+        hoverImageIndex = product.images.length - 1;
+      }
+    } else if (titleLower.includes('bed side table')) hoverImageIndex = 4; // 5th image
     else if (titleLower.includes('side table')) hoverImageIndex = 4; // 5th image
     else if (titleLower.includes('console')) hoverImageIndex = 5; // 6th image
   } else if (product.group === 'monster_3.1') {

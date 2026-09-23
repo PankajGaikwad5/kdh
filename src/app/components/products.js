@@ -5826,6 +5826,13 @@ export const products = [
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/kdadprojectimages/chestofdrawer.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
     ],
     marbleImages: {
       indianblackbheslana: [
@@ -6073,6 +6080,13 @@ export const products = [
       {
         fileName: '1738927863060-Slide1.JPG',
         filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUc7srztvOzfU0v5mZaj1HWcAwKFCxykrE2NGS',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/kdadprojectimages/marbleconsole.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -6839,6 +6853,13 @@ export const products = [
       {
         fileName: '1738927863060-Slide1.JPG',
         filePath: '/kdadprojectimages/22teabar.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/kdadprojectimages/teabar.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
