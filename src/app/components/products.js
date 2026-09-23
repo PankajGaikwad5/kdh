@@ -1659,7 +1659,7 @@ export const products = [
     images: [
       {
         fileName: '1739952193181-1.jpg',
-        filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUysEWFrjvoD5bj92PLzxBdul6nT8GrEAS30eN',
+        filePath: '/new_monster3/1console.webp',
         _id: {
           $oid: '67b59041e03cc2c55c624a4c',
         },
