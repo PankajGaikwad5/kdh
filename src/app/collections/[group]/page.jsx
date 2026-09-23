@@ -123,8 +123,16 @@ const ProductCardV2 = ({ product, index }) => {
       hoverImageIndex = product.images.length - 1; // last image
     }
   }
-  
-  const hoverImage = product.images?.[hoverImageIndex]?.filePath || product.images?.[1]?.filePath || primaryImage;
+  let hoverImage = product.images?.[hoverImageIndex]?.filePath || product.images?.[1]?.filePath || primaryImage;
+
+  if (product.group === 'matilda_2024') {
+    const titleLower = title.toLowerCase();
+    if (titleLower.includes('center table 3') && product.marbleImages?.bothbanswara?.[3]) {
+      hoverImage = product.marbleImages.bothbanswara[3];
+    } else if (titleLower.includes('bathtub') && product.images && product.images.length > 0) {
+      hoverImage = product.images[product.images.length - 1].filePath || hoverImage;
+    }
+  }
 
   return (
     <Link

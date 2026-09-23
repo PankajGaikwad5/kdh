@@ -749,12 +749,14 @@ export const products = [
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
+      
     ],
     marbleImages: {
       bothbanswara: [
         '/marbles/newmatilda2024/center_table_3/both banswara/1.webp',
         '/marbles/newmatilda2024/center_table_3/both banswara/2.webp',
         '/marbles/newmatilda2024/center_table_3/both banswara/3.webp',
+        '/marbles/newmatilda2024/center_table_3/both banswara/centertable3.webp',
       ],
       bothrossolevante: [
         '/marbles/newmatilda2024/center_table_3/both rosso levante/1.webp',
@@ -1272,6 +1274,14 @@ export const products = [
       {
         fileName: '1738927948150-Slide5.JPG',
         filePath: '/assets/products/1738927948150-Slide5.JPG',
+        _id: {
+          $oid: '67a5ef4c4da9b29cd0f10bf9',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927948150-Slide5.JPG',
+      },
+      {
+        fileName: '1738927948150-Slide5.JPG',
+        filePath: '/m23/bathtub.webp',
         _id: {
           $oid: '67a5ef4c4da9b29cd0f10bf9',
         },
