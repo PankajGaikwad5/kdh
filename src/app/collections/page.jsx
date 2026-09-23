@@ -180,7 +180,7 @@ const Page = () => {
       id: 14,
       title: 'Monster 3.1 | Dimensions',
       group: 'monster_3.1',
-      img: '/m3/desk/3.png',
+      img: '/m3/desk/3.webp',
       projects: '',
     },
     {

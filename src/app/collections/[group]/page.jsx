@@ -100,6 +100,21 @@ const ProductCardV2 = ({ product, index }) => {
     if (titleLower.includes('bed side table')) hoverImageIndex = 4; // 5th image
     else if (titleLower.includes('side table')) hoverImageIndex = 4; // 5th image
     else if (titleLower.includes('console')) hoverImageIndex = 5; // 6th image
+  } else if (product.group === 'monster_3.1') {
+    const titleLower = title.toLowerCase();
+    if (titleLower.includes('burnt ombr')) hoverImageIndex = 4; // 5th image
+    else if (titleLower.includes('upholstered')) hoverImageIndex = 6; // 7th image
+    else if (titleLower.includes('round dining table')) hoverImageIndex = 4; // 5th image
+    else if (titleLower.includes('dining table')) hoverImageIndex = 5; // 6th image
+    else if (titleLower.includes('center table')) hoverImageIndex = 4; // 5th image
+    else if (titleLower.includes('coffee table')) hoverImageIndex = 3; // 4th image
+    else if (titleLower.includes('console storage') || titleLower.includes('consolestorage')) hoverImageIndex = 4; // 5th image
+    else if (titleLower.includes('console')) hoverImageIndex = 6; // 7th image
+    else if (titleLower.includes('desk')) hoverImageIndex = 4; // 5th image
+    else if (titleLower.includes('floor lamp') || titleLower.includes('floorlamp')) hoverImageIndex = 3; // 4th image
+    else if (titleLower.includes('mirror')) hoverImageIndex = 4; // 5th image
+    else if (titleLower.includes('shelv')) hoverImageIndex = 4; // 5th image
+    else if (titleLower.includes('side table')) hoverImageIndex = 4; // 5th image
   }
   
   const hoverImage = product.images?.[hoverImageIndex]?.filePath || product.images?.[1]?.filePath || primaryImage;

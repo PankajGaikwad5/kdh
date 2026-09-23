@@ -6966,28 +6966,35 @@ export const products = [
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m3/centertable/1.png',
+        filePath: '/m3/centertable/1.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m3/centertable/2.png',
+        filePath: '/m3/centertable/2.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m3/centertable/3.png',
+        filePath: '/m3/centertable/3.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m3/centertable/4.png',
+        filePath: '/m3/centertable/4.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/centertable/5.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -7008,21 +7015,28 @@ export const products = [
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m3/coffeetable/1.png',
+        filePath: '/m3/coffeetable/1.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m3/coffeetable/2.png',
+        filePath: '/m3/coffeetable/2.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m3/coffeetable/3.png',
+        filePath: '/m3/coffeetable/3.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/coffeetable/4.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -7043,42 +7057,49 @@ export const products = [
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m3/console/1.png',
+        filePath: '/m3/console/1.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m3/console/2.png',
+        filePath: '/m3/console/2.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m3/console/3.png',
+        filePath: '/m3/console/3.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m3/console/4.png',
+        filePath: '/m3/console/4.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m3/console/5.png',
+        filePath: '/m3/console/5.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m3/console/6.png',
+        filePath: '/m3/console/6.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/console/7.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -7099,28 +7120,35 @@ export const products = [
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m3/consolestorage/1.png',
+        filePath: '/m3/consolestorage/1.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m3/consolestorage/2.png',
+        filePath: '/m3/consolestorage/2.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m3/consolestorage/3.png',
+        filePath: '/m3/consolestorage/3.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m3/consolestorage/4.png',
+        filePath: '/m3/consolestorage/4.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/consolestorage/5.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -7141,28 +7169,35 @@ export const products = [
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m3/desk/3.png',
+        filePath: '/m3/desk/3.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m3/desk/2.png',
+        filePath: '/m3/desk/2.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m3/desk/1.png',
+        filePath: '/m3/desk/1.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        filePath: '/m3/desk/4.png',
+        filePath: '/m3/desk/4.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/desk/5.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -7198,6 +7233,13 @@ export const products = [
       {
         fileName: '1738927863060-Slide1.JPG',
         filePath: '/m3/floorlamp/3.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/floorlamp/4.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -7251,6 +7293,13 @@ export const products = [
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/longdiningtable/6.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
     ],
     description: `Some tables hold conversations. This one commands them. Crafted in solid ashwood and finished in a molten high-gloss lacquer, the Monster Dining Table transforms gatherings into performance, where texture, reflection, and raw geometry meet ritual and rebellion.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOBYYa55kzYN8aVpJZLF50If4uUdl1vTPgMQEx',
@@ -7289,6 +7338,13 @@ export const products = [
       {
         fileName: '1738927863060-Slide1.JPG',
         filePath: '/m3/monstermirror/4.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/monstermirror/5.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -7335,6 +7391,13 @@ export const products = [
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/rounddining/5.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
     ],
     description: `A table that draws people in through gravity, not grandeur. Its reflective black surface and sculpted base create a circle of energy, grounding conversations, centering experiences, and turning dining into ritual.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO81kDzvJ6OXRnzQocN3dym1xs7Wqkgah8JuVI',
@@ -7373,6 +7436,13 @@ export const products = [
       {
         fileName: '1738927863060-Slide1.JPG',
         filePath: '/m3/shelves/4.png',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/shelves/5.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -7419,6 +7489,13 @@ export const products = [
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/m3/sidetable/5.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+      },
     ],
     description: `The Monster 3.1 Side Table combines an organic silhouette with a charred textured body and a high-gloss top. Created through a collaboration between Karan Desai Home and Dimensions Furniture, the piece moves between functional furniture and collectible design. Its bold form introduces a playful yet sculptural presence to the interior.`,
     dimensions: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOHdSddwzF1d3zpmrSIcueZBfQo80E5Ujs7PTG',
@@ -7459,6 +7536,13 @@ export const products = [
       {
         fileName: '4.webp',
         filePath: '/m3/chair/4.webp',
+        _id: {
+          $oid: 'm3_chair_4',
+        },
+      },
+      {
+        fileName: '5.webp',
+        filePath: '/m3/chair/5.webp',
         _id: {
           $oid: 'm3_chair_4',
         },
@@ -7518,6 +7602,13 @@ export const products = [
       {
         fileName: '19.webp',
         filePath: '/m3/chair/19.webp',
+        _id: {
+          $oid: 'm3_chair_19',
+        },
+      },
+      {
+        fileName: '20.webp',
+        filePath: '/m3/chair/20.webp',
         _id: {
           $oid: 'm3_chair_19',
         },
