@@ -4985,6 +4985,14 @@ export const products = [
         },
         thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
       },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/matilda2025/kddesk.webp',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
+      },
     ],
     marbleImages: {
       indianblackbheslana: [
@@ -5057,6 +5065,14 @@ export const products = [
       {
         fileName: '1738927863060-Slide1.JPG',
         filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUyQPCE7jvoD5bj92PLzxBdul6nT8GrEAS30eN',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/matilda2025/mirror.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -5146,6 +5162,14 @@ export const products = [
       {
         fileName: '1738927863060-Slide1.JPG',
         filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUQrVNmpCgpKiS14YXmU2JDcwG0vBsCL6dWNyP',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/matilda2025/washbasin.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
@@ -5282,6 +5306,14 @@ export const products = [
       {
         fileName: '1738927863060-Slide1.JPG',
         filePath: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUwBqqfkgi1vXhd2AYtoGrDFy59EOsBzTnN6eW',
+        _id: {
+          $oid: '67a5eef74da9b29cd0f10be2',
+        },
+        thumbnail: '/assets/products/thumbnails/1738927863060-Slide1.JPG',
+      },
+      {
+        fileName: '1738927863060-Slide1.JPG',
+        filePath: '/matilda2025/conferencetable.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },

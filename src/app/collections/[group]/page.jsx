@@ -118,6 +118,10 @@ const ProductCardV2 = ({ product, index }) => {
     else if (titleLower.includes('mirror')) hoverImageIndex = 4; // 5th image
     else if (titleLower.includes('shelv')) hoverImageIndex = 4; // 5th image
     else if (titleLower.includes('side table')) hoverImageIndex = 4; // 5th image
+  } else if (product.group === 'matilda_2025') {
+    if (product.images && product.images.length > 0) {
+      hoverImageIndex = product.images.length - 1; // last image
+    }
   }
   
   const hoverImage = product.images?.[hoverImageIndex]?.filePath || product.images?.[1]?.filePath || primaryImage;
