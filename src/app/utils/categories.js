@@ -1,40 +1,66 @@
 export const categoryList = [
-  { name: 'Console', img: '/group/3.png' },
-  { name: 'Dining Table', img: 'https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6gBXjHSCZerKAITJasY524vLb0iMwnFhmpSEq' },
-  { name: 'Center Table', img: '/group/2.png' },
-  { name: 'Coffee & Side Tables', img: '/group/1.png' },
-  { name: 'Chair', img: '/group/6.png' },
-  { name: 'Bench', img: '/group/7.png' },
-  { name: 'Bathtub', img: '/group/3.png' },
-  { name: 'Basin', img: '/group/4.png' },
-  { name: 'Planter', img: '/group/1.png' },
-  { name: 'Vase', img: '/group/5.png' },
-  { name: 'Mirror', img: '/group/6.png' },
-  { name: 'Lamp', img: '/group/7.png' },
-  { name: 'Library & Storage', img: '/group/1.png' },
-  { name: 'Screen & Partition', img: '/group/2.png' },
-  { name: 'Rug', img: '/group/3.png' },
+  { name: 'Living Room' },
+  { name: 'Dining Room' },
+  { name: 'Bedroom' },
+  { name: 'Bathroom' },
+  { name: 'Office & Study' },
+  { name: 'Lighting' },
+  { name: 'Decors & Accessories' }
 ];
 
 export const deriveCategory = (title) => {
-  if (!title) return 'Other';
+  if (!title) return ['Decors & Accessories'];
   const lower = title.toLowerCase();
+  const cats = new Set();
   
-  if (lower.includes('console') || lower.includes('totem')) return 'Console';
-  if (lower.includes('dining table')) return 'Dining Table';
-  if (lower.includes('center table') || lower.includes('u table') || lower.includes('u-table')) return 'Center Table';
-  if (lower.includes('coffee table') || lower.includes('side table') || lower.includes('bed side table')) return 'Coffee & Side Tables';
-  if (lower.includes('chair') || lower.includes('stool') || lower.includes('pouffe')) return 'Chair';
-  if (lower.includes('bench')) return 'Bench';
-  if (lower.includes('bathtub')) return 'Bathtub';
-  if (lower.includes('basin')) return 'Basin';
-  if (lower.includes('planter')) return 'Planter';
-  if (lower.includes('vase')) return 'Vase';
-  if (lower.includes('mirror') || lower.includes('mearr')) return 'Mirror';
-  if (lower.includes('lamp') || lower.includes('pendant') || lower.includes('gum') || lower.includes('gattoo') || lower.includes('squinty') || lower.includes('grumpy') || lower.includes('brainy') || lower.includes('binty') || lower.includes('buddha') || lower.includes('guard')) return 'Lamp';
-  if (lower.includes('library')) return 'Library & Storage';
-  if (lower.includes('partition') || lower.includes('screen')) return 'Screen & Partition';
-  if (lower.includes('rug') || lower.includes('carpet')) return 'Rug';
+  if (lower.includes('center table') || lower.includes('coffee table') || lower.includes('u table') || lower.includes('u-table') || lower.includes('ottoman') || lower.includes('sofa') || lower.includes('rug') || lower.includes('carpet')) {
+    cats.add('Living Room');
+  }
+  if (lower.includes('console')) {
+    cats.add('Living Room');
+    cats.add('Bedroom');
+  }
+  if (lower.includes('side table')) {
+    cats.add('Living Room');
+    cats.add('Bedroom');
+  }
+  if (lower.includes('bench')) {
+    cats.add('Living Room');
+    cats.add('Bedroom');
+    cats.add('Dining Room');
+  }
+  if (lower.includes('partition') || lower.includes('screen') || lower.includes('monsformer')) {
+    cats.add('Living Room');
+  }
   
-  return 'Other';
+  if (lower.includes('dining table') || lower.includes('dining chair') || lower.includes('bar ') || lower.includes('tea bar') || lower.includes('bar stool') || lower.includes('charwood chair') || lower.includes('gattoo chair')) {
+    cats.add('Dining Room');
+  }
+  if (lower.includes('chair') && !lower.includes('dining chair') && !lower.includes('charwood chair') && !lower.includes('gattoo chair')) {
+    cats.add('Living Room');
+  }
+  
+  if (lower.includes('bed side table') || lower.includes('chest of drawer')) {
+    cats.add('Bedroom');
+  }
+  
+  if (lower.includes('basin') || lower.includes('bathtub')) {
+    cats.add('Bathroom');
+  }
+  
+  if (lower.includes('desk') || lower.includes('conference table') || lower.includes('library') || lower.includes('shelving')) {
+    cats.add('Office & Study');
+  }
+  
+  if (lower.includes('planter') || lower.includes('vase') || lower.includes('mirror') || lower.includes('mearr') || lower.includes('totem') || lower.includes('gum') || lower.includes('gattoofer') || lower.includes('squinty') || lower.includes('grumpy') || lower.includes('brainy') || lower.includes('binty') || lower.includes('buddha') || lower.includes('guard') || lower.includes('yodaa')) {
+    cats.add('Decors & Accessories');
+  }
+  
+  if (lower.includes('lamp') || lower.includes('pendant') || lower.includes('chandelier') || lower.includes('gum') || lower.includes('gattoofer') || lower.includes('squinty') || lower.includes('grumpy') || lower.includes('brainy') || lower.includes('binty') || lower.includes('buddha') || lower.includes('guard')) {
+    cats.add('Lighting');
+  }
+  
+  if (cats.size === 0) return ['Decors & Accessories'];
+  
+  return Array.from(cats);
 };

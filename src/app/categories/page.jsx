@@ -25,7 +25,7 @@ const CategoryCard = ({ category, index }) => {
   const bgColor = `${bgMobile} ${bgDesktop}`;
   const slug = category.name.toLowerCase().replace(/ /g, '-');
 
-  const categoryProducts = allProducts.filter(p => deriveCategory(p.title) === category.name);
+  const categoryProducts = allProducts.filter(p => deriveCategory(p.title).includes(category.name));
   
   const productImages = categoryProducts
     .map(p => {

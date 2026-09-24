@@ -560,7 +560,7 @@ export default function ProductDetailsClient({ product }) {
                 {collectionName}
               </p>
             )}
-            <h1 className='gsap-reveal text-4xl md:text-4xl 2xl:text-6xl  capitalize font-light tracking-tight'>
+            <h1 className='gsap-reveal text-4xl md:text-4xl 2xl:text-6xl  capitalize font-base'>
               {formatTitle(product.title)}
             </h1>
 

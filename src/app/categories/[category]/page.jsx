@@ -32,76 +32,111 @@ const ProductCardV2 = ({ product, index }) => {
   let hoverImageIndex = 1; // default 2nd image
   if (product.group === 'jina_shilp') {
     const titleLower = title.toLowerCase();
-    if (titleLower.includes('coffee table')) hoverImageIndex = 1;
-    else if (titleLower.includes('totem')) hoverImageIndex = 3;
-    else if (titleLower.includes('dining table')) hoverImageIndex = 1;
-    else if (titleLower.includes('mirror')) hoverImageIndex = 2;
-    else if (titleLower.includes('pillar bench')) hoverImageIndex = 1;
+    if (titleLower.includes('coffee table')) hoverImageIndex = 1; // 2nd image
+    else if (titleLower.includes('totem')) hoverImageIndex = 3; // 4th image
+    else if (titleLower.includes('dining table')) hoverImageIndex = 1; // 2nd image
+    else if (titleLower.includes('mirror')) hoverImageIndex = 2; // 3rd image
+    else if (titleLower.includes('pillar bench')) hoverImageIndex = 1; // 2nd image
   } else if (product.group === 'monster_4.0') {
     const titleLower = title.toLowerCase();
-    if (titleLower.includes('yodaa')) hoverImageIndex = 1;
-    else if (titleLower.includes('mearr')) hoverImageIndex = 1;
-    else if (titleLower.includes('monster rug')) hoverImageIndex = 1;
+    if (titleLower.includes('yodaa')) hoverImageIndex = 1; // 2nd image
+    else if (titleLower.includes('mearr')) hoverImageIndex = 1; // 2nd image
+    else if (titleLower.includes('monster rug')) hoverImageIndex = 1; // 2nd image
   } else if (product.group === 'monster_3.0') {
     const titleLower = title.toLowerCase();
-    if (titleLower.includes('dining kids chair')) hoverImageIndex = 5;
-    else if (titleLower.includes('dining chair')) hoverImageIndex = 3;
-    else if (titleLower.includes('chardwood chair')) hoverImageIndex = 3;
-    else if (titleLower.includes('gattoo chair')) hoverImageIndex = 5;
-    else if (titleLower.includes('dining table')) hoverImageIndex = 6;
-    else if (titleLower.includes('console')) hoverImageIndex = 6;
-    else if (titleLower.includes('planter')) hoverImageIndex = 7;
-    else if (titleLower.includes('library art edition')) hoverImageIndex = 5;
-    else if (titleLower.includes('library')) hoverImageIndex = 5;
-    else if (titleLower.includes('bench')) hoverImageIndex = 5;
+    if (titleLower.includes('chandelier')) hoverImageIndex = 5; // 6th image
+    else if (titleLower.includes('coffee table')) hoverImageIndex = 3; // 4th image
+    else if (titleLower.includes('ottoman')) hoverImageIndex = 8; // 9th image
+    else if (titleLower.includes('dining kids chair')) hoverImageIndex = 5; // 6th image
+    else if (titleLower.includes('dining chair')) hoverImageIndex = 3; // 4th image
+    else if (titleLower.includes('chardwood chair')) hoverImageIndex = 3; // 4th image
+    else if (titleLower.includes('gattoo chair')) hoverImageIndex = 5; // 6th image
+    else if (titleLower.includes('dining table')) hoverImageIndex = 6; // 7th image
+    else if (titleLower.includes('console')) hoverImageIndex = 6; // 7th image
+    else if (titleLower.includes('planter')) hoverImageIndex = 7; // 8th image
+    else if (titleLower.includes('library art edition')) hoverImageIndex = 5; // 6th image
+    else if (titleLower.includes('library')) hoverImageIndex = 5; // 6th image
+    else if (titleLower.includes('bench')) hoverImageIndex = 5; // 6th image
   } else if (product.group === 'matilda_2024') {
     const titleLower = title.toLowerCase();
-    if (titleLower.includes('pendant light')) hoverImageIndex = 7;
-    else if (titleLower.includes('partition')) hoverImageIndex = 8;
-    else if (titleLower.includes('center table 1')) hoverImageIndex = 6;
-    else if (titleLower.includes('center table 2')) hoverImageIndex = 7;
-    else if (titleLower.includes('u-table')) hoverImageIndex = 5;
-    else if (titleLower.includes('console')) hoverImageIndex = 5;
-    else if (titleLower.includes('coffee table')) hoverImageIndex = 3;
-    else if (titleLower.includes('floor lamp')) hoverImageIndex = 9;
-    else if (titleLower.includes('library')) hoverImageIndex = 6;
-    else if (titleLower.includes('planter')) hoverImageIndex = 6;
-    else if (titleLower.includes('dining table')) hoverImageIndex = 4;
-    else if (titleLower.includes('flower vase')) hoverImageIndex = 6;
-    else if (titleLower.includes('table lamp')) hoverImageIndex = 6;
-    else if (titleLower.includes('basin')) hoverImageIndex = 5;
-    else if (titleLower.includes('side table')) hoverImageIndex = 6;
+    if (titleLower.includes('pendant light')) hoverImageIndex = 7; // 8th image
+    else if (titleLower.includes('partition')) hoverImageIndex = 8; // 9th image
+    else if (titleLower.includes('center table 1')) hoverImageIndex = 6; // 7th image
+    else if (titleLower.includes('center table 2')) hoverImageIndex = 7; // 8th image
+    else if (titleLower.includes('u-table')) hoverImageIndex = 5; // 6th image
+    else if (titleLower.includes('console')) hoverImageIndex = 5; // 6th image
+    else if (titleLower.includes('coffee table')) hoverImageIndex = 3; // 4th image
+    else if (titleLower.includes('floor lamp')) hoverImageIndex = 9; // 10th image
+    else if (titleLower.includes('library')) hoverImageIndex = 6; // 7th image
+    else if (titleLower.includes('planter')) hoverImageIndex = 6; // 7th image
+    else if (titleLower.includes('dining table')) hoverImageIndex = 4; // 5th image
+    else if (titleLower.includes('flower vase')) hoverImageIndex = 6; // 7th image
+    else if (titleLower.includes('table lamp')) hoverImageIndex = 6; // 7th image
+    else if (titleLower.includes('basin')) hoverImageIndex = 5; // 6th image
+    else if (titleLower.includes('side table')) hoverImageIndex = 6; // 7th image
   } else if (product.group === 'monster_2.0') {
     const titleLower = title.toLowerCase();
-    if (titleLower.includes('gatto')) hoverImageIndex = 9;
-    else if (titleLower.includes('yodaa')) hoverImageIndex = 2;
+    if (titleLower.includes('gatto')) hoverImageIndex = 9; // 10th image
+    else if (titleLower.includes('yodaa')) hoverImageIndex = 2; // 3rd image
   } else if (product.group === 'monster_collectibles') {
     const titleLower = title.toLowerCase();
-    if (titleLower.includes('gum')) hoverImageIndex = 6;
-    else if (titleLower.includes('gattoofer') || titleLower.includes('gattooffer')) hoverImageIndex = 6;
-    else if (titleLower.includes('squinty')) hoverImageIndex = 8;
-    else if (titleLower.includes('grumpy')) hoverImageIndex = 6;
-    else if (titleLower.includes('brainy')) hoverImageIndex = 7;
-    else if (titleLower.includes('binty')) hoverImageIndex = 5;
-    else if (titleLower.includes('buddha')) hoverImageIndex = 1;
-    else if (titleLower.includes('guard')) hoverImageIndex = 5;
+    if (titleLower.includes('gum')) hoverImageIndex = 6; // 7th image
+    else if (titleLower.includes('gattoofer') || titleLower.includes('gattooffer')) hoverImageIndex = 6; // 7th image
+    else if (titleLower.includes('squinty')) hoverImageIndex = 8; // 9th image
+    else if (titleLower.includes('grumpy')) hoverImageIndex = 6; // 7th image
+    else if (titleLower.includes('brainy')) hoverImageIndex = 7; // 8th image
+    else if (titleLower.includes('binty')) hoverImageIndex = 5; // 6th image
+    else if (titleLower.includes('buddha')) hoverImageIndex = 1; // 2nd image
+    else if (titleLower.includes('guard')) hoverImageIndex = 5; // 6th image
   } else if (product.group === 'serafini' || product.group === 'samaveta') {
     const titleLower = title.toLowerCase();
-    if (titleLower.includes('bench')) hoverImageIndex = 6;
-    else if (titleLower.includes('console')) hoverImageIndex = 5;
+    if (titleLower.includes('bench')) hoverImageIndex = 6; // 7th image
+    else if (titleLower.includes('console')) hoverImageIndex = 5; // 6th image
   } else if (product.group === 'monster_1.0') {
     const titleLower = title.toLowerCase();
-    if (titleLower.includes('basin')) hoverImageIndex = 8;
-    else if (titleLower.includes('bathtub')) hoverImageIndex = 4;
-    else if (titleLower.includes('console')) hoverImageIndex = 5;
+    if (titleLower.includes('basin')) hoverImageIndex = 8; // 9th image
+    else if (titleLower.includes('bathtub')) hoverImageIndex = 4; // 5th image
+    else if (titleLower.includes('console')) hoverImageIndex = 5; // 6th image
   } else if (product.group === 'matilda_2022') {
     const titleLower = title.toLowerCase();
-    if (titleLower.includes('bed side table')) hoverImageIndex = 4;
-    else if (titleLower.includes('side table')) hoverImageIndex = 4;
-    else if (titleLower.includes('console')) hoverImageIndex = 5;
+    
+    if (titleLower.includes('chest of drawer') || titleLower.includes('marble console') || titleLower.includes('teabar') || titleLower.includes('tea bar') || titleLower.includes('teabear')) {
+      if (product.images && product.images.length > 0) {
+        hoverImageIndex = product.images.length - 1;
+      }
+    } else if (titleLower.includes('bed side table')) hoverImageIndex = 4; // 5th image
+    else if (titleLower.includes('side table')) hoverImageIndex = 4; // 5th image
+    else if (titleLower.includes('console')) hoverImageIndex = 5; // 6th image
+  } else if (product.group === 'monster_3.1') {
+    const titleLower = title.toLowerCase();
+    if (titleLower.includes('burnt ombr')) hoverImageIndex = 4; // 5th image
+    else if (titleLower.includes('upholstered')) hoverImageIndex = 6; // 7th image
+    else if (titleLower.includes('round dining table')) hoverImageIndex = 4; // 5th image
+    else if (titleLower.includes('dining table')) hoverImageIndex = 5; // 6th image
+    else if (titleLower.includes('center table')) hoverImageIndex = 4; // 5th image
+    else if (titleLower.includes('coffee table')) hoverImageIndex = 3; // 4th image
+    else if (titleLower.includes('console storage') || titleLower.includes('consolestorage')) hoverImageIndex = 4; // 5th image
+    else if (titleLower.includes('console')) hoverImageIndex = 6; // 7th image
+    else if (titleLower.includes('desk')) hoverImageIndex = 4; // 5th image
+    else if (titleLower.includes('floor lamp') || titleLower.includes('floorlamp')) hoverImageIndex = 3; // 4th image
+    else if (titleLower.includes('mirror')) hoverImageIndex = 4; // 5th image
+    else if (titleLower.includes('shelv')) hoverImageIndex = 4; // 5th image
+    else if (titleLower.includes('side table')) hoverImageIndex = 4; // 5th image
+  } else if (product.group === 'matilda_2025' || product.group === 'matilda_2023') {
+    if (product.images && product.images.length > 0) {
+      hoverImageIndex = product.images.length - 1; // last image
+    }
   }
-  
-  const hoverImage = product.images?.[hoverImageIndex]?.filePath || product.images?.[1]?.filePath || primaryImage;
+  let hoverImage = product.images?.[hoverImageIndex]?.filePath || product.images?.[1]?.filePath || primaryImage;
+
+  if (product.group === 'matilda_2024') {
+    const titleLower = title.toLowerCase();
+    if (titleLower.includes('center table 3') && product.marbleImages?.bothbanswara?.[3]) {
+      hoverImage = product.marbleImages.bothbanswara[3];
+    } else if (titleLower.includes('bathtub') && product.images && product.images.length > 0) {
+      hoverImage = product.images[product.images.length - 1].filePath || hoverImage;
+    }
+  }
 
   return (
     <Link
@@ -192,8 +227,8 @@ const CategoryProductsPage = () => {
     
     // Filter products whose derived category matches (case insensitive)
     const matchedProducts = products.filter((p) => {
-      const derived = deriveCategory(p.title);
-      return derived.toLowerCase() === categoryName.toLowerCase();
+      const derivedArray = deriveCategory(p.title);
+      return derivedArray.some(d => d.toLowerCase() === categoryName.toLowerCase());
     });
     setFilteredProducts(matchedProducts);
   }, [category]);
