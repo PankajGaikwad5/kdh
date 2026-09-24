@@ -283,7 +283,7 @@ const Page = () => {
       <div className='w-full pt-32 pb-8 px-8 md:px-12 flex items-end'>
         <h1
           ref={headingRef}
-          className='text-3xl md:text-5xl font-light text-white uppercase tracking-[0.2em]'
+          className='text-3xl md:text-5xl  text-white uppercase '
         >
           Collections
         </h1>
