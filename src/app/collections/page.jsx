@@ -26,7 +26,11 @@ const CollectionCard = ({ product, index }) => {
   const isAlternate2 = (Math.floor(index / 2) + (index % 2)) % 2 !== 0;
   const bgMobile = isAlternate2 ? 'bg-[#1a1a1a]' : 'bg-[#121212]';
 
-  const bgColor = `${bgMobile} ${bgDesktop}`;
+  // 5 columns logic (2xl: screens)
+  const isAlternate5 = (Math.floor(index / 5) + (index % 5)) % 2 !== 0;
+  const bg2xl = isAlternate5 ? '2xl:bg-[#1a1a1a]' : '2xl:bg-[#121212]';
+
+  const bgColor = `${bgMobile} ${bgDesktop} ${bg2xl}`;
 
   const catalogItem = catalogues.find((c) => c.group === product.group);
   const year = catalogItem?.year;
@@ -288,7 +292,7 @@ const Page = () => {
       {/* Grid */}
       <main
         ref={gridRef}
-        className='grid grid-cols-2 lg:grid-cols-4 w-full flex-grow'
+        className='grid grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5 w-full flex-grow'
       >
         {products.map((product, index) => (
           <CollectionCard key={index} product={product} index={index} />

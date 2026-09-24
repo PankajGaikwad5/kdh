@@ -22,7 +22,11 @@ const CategoryCard = ({ category, index }) => {
   const isAlternate2 = (Math.floor(index / 2) + (index % 2)) % 2 !== 0;
   const bgMobile = isAlternate2 ? 'bg-[#1a1a1a]' : 'bg-[#121212]';
 
-  const bgColor = `${bgMobile} ${bgDesktop}`;
+  // 5 columns logic (2xl: screens)
+  const isAlternate5 = (Math.floor(index / 5) + (index % 5)) % 2 !== 0;
+  const bg2xl = isAlternate5 ? '2xl:bg-[#1a1a1a]' : '2xl:bg-[#121212]';
+
+  const bgColor = `${bgMobile} ${bgDesktop} ${bg2xl}`;
   const slug = category.name.toLowerCase().replace(/ /g, '-');
 
   const categoryProducts = allProducts.filter(p => deriveCategory(p.title).includes(category.name));
@@ -171,7 +175,7 @@ const Page = () => {
       {/* Grid */}
       <main
         ref={gridRef}
-        className='grid grid-cols-2 lg:grid-cols-4 w-full flex-grow'
+        className='grid grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5 w-full flex-grow'
       >
         {categoryList.map((category, index) => (
           <CategoryCard key={index} category={category} index={index} />

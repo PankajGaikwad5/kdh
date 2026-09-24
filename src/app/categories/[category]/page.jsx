@@ -22,7 +22,11 @@ const ProductCardV2 = ({ product, index }) => {
   const isAlternate2 = (Math.floor(index / 2) + (index % 2)) % 2 !== 0;
   const bgMobile = isAlternate2 ? 'bg-[#1a1a1a]' : 'bg-[#121212]';
 
-  const bgColor = `${bgMobile} ${bgDesktop}`;
+  // 5 columns logic (2xl: screens)
+  const isAlternate5 = (Math.floor(index / 5) + (index % 5)) % 2 !== 0;
+  const bg2xl = isAlternate5 ? '2xl:bg-[#1a1a1a]' : '2xl:bg-[#121212]';
+
+  const bgColor = `${bgMobile} ${bgDesktop} ${bg2xl}`;
 
   const primaryImage = product.images?.[0]?.filePath || '';
   const title = formatTitle(product.title) || '';
@@ -303,7 +307,7 @@ const CategoryProductsPage = () => {
             {filteredProducts.length > 0 ? (
               <main
                 ref={gridRef}
-                className='grid grid-cols-2 lg:grid-cols-4 w-full flex-grow'
+                className='grid grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5 w-full flex-grow'
               >
                 {filteredProducts.map((product, index) => (
                   <ProductCardV2

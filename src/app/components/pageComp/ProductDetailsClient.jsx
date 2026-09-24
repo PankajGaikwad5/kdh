@@ -560,7 +560,7 @@ export default function ProductDetailsClient({ product }) {
                 {collectionName}
               </p>
             )}
-            <h1 className='gsap-reveal text-4xl md:text-4xl 2xl:text-6xl  capitalize font-base'>
+            <h1 className='gsap-reveal text-4xl md:text-4xl 2xl:text-6xl mb-2 capitalize font-base'>
               {formatTitle(product.title)}
             </h1>
 
@@ -732,7 +732,7 @@ export default function ProductDetailsClient({ product }) {
                 </div>
               )}
 
-              <div className='gsap-reveal mt-2 border-t border-gray-700 pt-4 text-sm text-white font-light whitespace-pre-line leading-relaxed text-justify'>
+              <div className='gsap-reveal mt-2 border-t border-gray-700 pt-4 text-sm text-white font-light whitespace-pre-line text-justify'>
                 {formatProductDescription(product.description)}
               </div>
 
