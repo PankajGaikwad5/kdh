@@ -10,6 +10,16 @@ import Footer from '../components/Footer';
 
 const magazines = [
   {
+    id: 6,
+    name: 'Delhi Times',
+    issue: 'September 2026 - Instagram Post',
+    coverImage: '/press/mags/delhitimes1.webp',
+    featuredImages: ['/press/mags/delhitimes5.webp'],
+    description: 'Totems are taking a stand in contemporary interiors, bringing height, texture and a sculptural sense of character to overlooked corners. Featured in Delhi Times.',
+    externalLink: 'https://www.instagram.com/p/DdyLDZ7AFSU/',
+    isInstagram: true,
+  },
+  {
     id: 1,
     name: 'Ezine',
     issue: 'August 2026 Issue',
@@ -49,16 +59,7 @@ const magazines = [
     featuredImages: ['/press/mags/fortune2.webp'],
     description: 'An exclusive feature highlighting the handcrafted brass details and futuristic design of the new Monster lighting series.',
   },
-  {
-    id: 6,
-    name: 'Delhi Times',
-    issue: 'September 2026 - Instagram Post',
-    coverImage: '/press/mags/delhitimes1.webp',
-    featuredImages: ['/press/mags/delhitimes4.webp'],
-    description: 'Totems are taking a stand in contemporary interiors, bringing height, texture and a sculptural sense of character to overlooked corners. Featured in Delhi Times.',
-    externalLink: 'https://www.instagram.com/p/DdyLDZ7AFSU/',
-    isInstagram: true,
-  },
+
 ];
 
 // const pressItems = [
@@ -284,7 +285,7 @@ export default function PressPage() {
             {/* Header */}
             <div className="flex items-center justify-between p-5 border-b border-zinc-900 bg-zinc-950/50 backdrop-blur-md">
               <div>
-                <h3 className={`text-lg font-bold text-white uppercase tracking-wider ${montserrat.className}`}>
+                <h3 className={`text-lg font-bold text-white uppercase tracking-wider `}>
                   {selectedMagazine.name}
                 </h3>
                 <p className="text-xs text-zinc-500 tracking-widest uppercase mt-0.5 font-semibold">
