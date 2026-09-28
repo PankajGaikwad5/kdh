@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState, Fragment } from 'react';
 import gsap from 'gsap';
 import Image from 'next/image';
-import { X, BookOpen } from 'lucide-react';
+import { X, BookOpen, ChevronLeft, ChevronRight, Instagram, ExternalLink } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
@@ -54,7 +54,7 @@ const magazines = [
     name: 'Delhi Times',
     issue: 'September 2026 - Instagram Post',
     coverImage: '/press/mags/delhitimes1.webp',
-    featuredImages: ['/press/mags/delhitimes2.webp', '/press/mags/delhitimes3.webp', '/press/mags/delhitimes4.webp', '/press/mags/delhitimes5.webp', '/press/mags/delhitimes6.webp', '/press/mags/delhitimes7.webp'],
+    featuredImages: ['/press/mags/delhitimes4.webp'],
     description: 'Totems are taking a stand in contemporary interiors, bringing height, texture and a sculptural sense of character to overlooked corners. Featured in Delhi Times.',
     externalLink: 'https://www.instagram.com/p/DdyLDZ7AFSU/',
     isInstagram: true,
@@ -86,11 +86,15 @@ export default function PressPage() {
   const pressRef = useRef(null);
 
   const [selectedMagazine, setSelectedMagazine] = useState(null);
+  const [activeFeaturedIndex, setActiveFeaturedIndex] = useState(0);
   const [loadedImages, setLoadedImages] = useState({});
   const [zoomedImage, setZoomedImage] = useState(null);
   const [isZoomedIn, setIsZoomedIn] = useState(false);
   const [mousePos, setMousePos] = useState({ x: 0.5, y: 0.5 });
   const zoomContainerRef = useRef(null);
+
+  const isSinglePage = (mag) => { return mag.featuredImages.length === 1 && mag.featuredImages[0] === mag.coverImage; };
+  const selectMagazine = (mag) => { setSelectedMagazine(mag); setActiveFeaturedIndex(0); };
 
   const handleImageLoad = (id) => {
     setLoadedImages((prev) => ({ ...prev, [id]: true }));
@@ -122,7 +126,28 @@ export default function PressPage() {
     };
 
     window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+  
+  const magazineImages = selectedMagazine
+    ? Array.from(new Set([selectedMagazine.coverImage, ...(selectedMagazine.featuredImages || [])].filter(Boolean)))
+    : [];
+
+  const currentZoomIndex = magazineImages.indexOf(zoomedImage);
+
+  const prevZoomImage = (e) => {
+    if (e) e.stopPropagation();
+    if (magazineImages.length <= 1) return;
+    const prevIdx = (currentZoomIndex - 1 + magazineImages.length) % magazineImages.length;
+    setZoomedImage(magazineImages[prevIdx]);
+  };
+
+  const nextZoomImage = (e) => {
+    if (e) e.stopPropagation();
+    if (magazineImages.length <= 1) return;
+    const nextIdx = (currentZoomIndex + 1) % magazineImages.length;
+    setZoomedImage(magazineImages[nextIdx]);
+  };
+
+  return () => window.removeEventListener('keydown', handleKeyDown);
   }, [zoomedImage, selectedMagazine]);
 
   useEffect(() => {
@@ -259,90 +284,186 @@ export default function PressPage() {
             {/* Header */}
             <div className="flex items-center justify-between p-5 border-b border-zinc-900 bg-zinc-950/50 backdrop-blur-md">
               <div>
-                <h3 className='text-lg font-bold text-white uppercase tracking-wider'>
+                <h3 className={`text-lg font-bold text-white uppercase tracking-wider ${montserrat.className}`}>
                   {selectedMagazine.name}
                 </h3>
                 <p className="text-xs text-zinc-500 tracking-widest uppercase mt-0.5 font-semibold">
                   {selectedMagazine.issue}
                 </p>
               </div>
-              <button
-                onClick={() => setSelectedMagazine(null)}
-                className="p-2 text-zinc-400 hover:text-white bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 rounded-full transition-colors duration-200"
-                aria-label="Close"
-              >
-                <X size={18} />
-              </button>
+              <div className="flex items-center gap-3">
+                {selectedMagazine.externalLink && (
+                  <a
+                    href={selectedMagazine.externalLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3.5 py-1.5 bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 hover:opacity-90 text-white text-xs font-semibold rounded-full flex items-center gap-2 transition-all duration-300 shadow-md"
+                  >
+                    <Instagram size={14} />
+                    <span className="hidden sm:inline">View on Instagram</span>
+                    <ExternalLink size={12} className="sm:hidden" />
+                  </a>
+                )}
+                <button
+                  onClick={() => setSelectedMagazine(null)}
+                  className="p-2 text-zinc-400 hover:text-white bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 rounded-full transition-colors duration-200"
+                  aria-label="Close"
+                >
+                  <X size={18} />
+                </button>
+              </div>
             </div>
 
             {/* Content Area */}
             <div className="flex-1 overflow-y-auto p-6 md:p-8 flex flex-col items-center justify-start md:justify-center">
-
               {/* Spread layout - stacked on mobile, side-by-side on desktop */}
-              <div className="w-full flex flex-col md:flex-row gap-8 justify-center items-stretch max-w-4xl">
-                {/* Cover Spread */}
-                <div className="w-full md:flex-1 flex flex-col items-center justify-center">
-                  <span className="text-[10px] uppercase tracking-widest text-zinc-500 mb-2 font-semibold">Magazine Cover</span>
-                  <div
-                    onClick={() => { setZoomedImage(selectedMagazine.coverImage); setIsZoomedIn(false); }}
-                    className="relative w-full max-w-[320px] aspect-[3/4] rounded-lg overflow-hidden border border-zinc-800/80 shadow-2xl cursor-zoom-in hover:opacity-95 transition-opacity duration-300"
-                  >
-                    {!loadedImages[`modal-${selectedMagazine.id}-cover`] && (
-                      <div className="absolute inset-0 bg-zinc-900 animate-pulse flex items-center justify-center">
-                        <span className="text-[10px] uppercase tracking-widest text-zinc-600">Loading...</span>
-                      </div>
-                    )}
-                    <Image
-                      src={selectedMagazine.coverImage}
-                      alt={`${selectedMagazine.name} Cover`}
-                      fill
-                      priority
-                      className="object-cover"
-                      onLoad={() => handleImageLoad(`modal-${selectedMagazine.id}-cover`)}
-                    />
+              {isSinglePage(selectedMagazine) ? (
+                /* Single Page Fallback Layout */
+                <div className="w-full flex justify-center items-center max-w-md">
+                  <div className="w-full flex flex-col items-center justify-center">
+                    <span className="text-[10px] uppercase tracking-widest text-zinc-500 mb-2 font-semibold">Feature Image</span>
+                    <div
+                      onClick={() => { setZoomedImage(selectedMagazine.coverImage); setIsZoomedIn(false); }}
+                      className="relative w-full aspect-[3/4] rounded-lg overflow-hidden border border-zinc-800/80 shadow-2xl cursor-zoom-in hover:opacity-95 transition-opacity duration-300"
+                    >
+                      {!loadedImages[`modal-${selectedMagazine.id}-cover`] && (
+                        <div className="absolute inset-0 bg-zinc-900 animate-pulse flex items-center justify-center">
+                          <span className="text-[10px] uppercase tracking-widest text-zinc-600">Loading...</span>
+                        </div>
+                      )}
+                      <Image
+                        src={selectedMagazine.coverImage}
+                        alt={`${selectedMagazine.name} Spread`}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 400px"
+                        className={`w-full h-full object-cover ${
+                          loadedImages[`modal-${selectedMagazine.id}-cover`] ? 'opacity-100' : 'opacity-0'
+                        }`}
+                        onLoad={() => handleImageLoad(`modal-${selectedMagazine.id}-cover`)}
+                        onError={() => handleImageLoad(`modal-${selectedMagazine.id}-cover`)}
+                      />
+                    </div>
                   </div>
                 </div>
-
-                {selectedMagazine.featuredImages.map((imgUrl, index) => (
-                  <Fragment key={index}>
-                    {/* Vertical Divider */}
-                    <div className="hidden md:block w-px self-stretch bg-zinc-800/60 my-4" />
-
-                    {/* Feature Spread */}
+              ) : (
+                /* Double Page Layout */
+                <div className="w-full flex flex-col items-center justify-center">
+                  <div className="w-full flex flex-col md:flex-row gap-8 justify-center items-stretch max-w-4xl">
+                    {/* Cover Spread */}
                     <div className="w-full md:flex-1 flex flex-col items-center justify-center">
                       <span className="text-[10px] uppercase tracking-widest text-zinc-500 mb-2 font-semibold">
-                        Featured Page {selectedMagazine.featuredImages.length > 1 ? index + 1 : ''}
+                        {selectedMagazine.isInstagram ? 'Project Photo' : 'Magazine Cover'}
                       </span>
                       <div
-                        onClick={() => { setZoomedImage(imgUrl); setIsZoomedIn(false); }}
+                        onClick={() => { setZoomedImage(selectedMagazine.coverImage); setIsZoomedIn(false); }}
                         className="relative w-full max-w-[320px] aspect-[3/4] rounded-lg overflow-hidden border border-zinc-800/80 shadow-2xl cursor-zoom-in hover:opacity-95 transition-opacity duration-300"
                       >
-                        {!loadedImages[`modal-${selectedMagazine.id}-feature-${index}`] && (
+                        {!loadedImages[`modal-${selectedMagazine.id}-cover`] && (
                           <div className="absolute inset-0 bg-zinc-900 animate-pulse flex items-center justify-center">
                             <span className="text-[10px] uppercase tracking-widest text-zinc-600">Loading...</span>
                           </div>
                         )}
                         <Image
-                          src={imgUrl}
-                          alt={`${selectedMagazine.name} Feature ${index + 1}`}
+                          src={selectedMagazine.coverImage}
+                          alt={`${selectedMagazine.name} Cover`}
                           fill
-                          priority
-                          className="object-cover"
-                          onLoad={() => handleImageLoad(`modal-${selectedMagazine.id}-feature-${index}`)}
+                          sizes="320px"
+                          className={`w-full h-full object-cover ${
+                            loadedImages[`modal-${selectedMagazine.id}-cover`] ? 'opacity-100' : 'opacity-0'
+                          }`}
+                          onLoad={() => handleImageLoad(`modal-${selectedMagazine.id}-cover`)}
+                          onError={() => handleImageLoad(`modal-${selectedMagazine.id}-cover`)}
                         />
                       </div>
                     </div>
-                  </Fragment>
-                ))}
-              </div>
 
-              {/* Description */}
-              {/* <div className="mt-8 text-center max-w-xl">
-                <p className="text-xs text-zinc-400 font-light leading-relaxed italic">
-                  "{selectedMagazine.description}"
-                </p>
-              </div> */}
+                    {/* Featured page rendering */}
+                    {selectedMagazine.featuredImages[activeFeaturedIndex] && (
+                      <>
+                        {/* Vertical Divider */}
+                        <div className="hidden md:block w-px self-stretch bg-zinc-800/60 my-4" />
 
+                        {/* Feature Spread */}
+                        <div className="w-full md:flex-1 flex flex-col items-center justify-center">
+                          <span className="text-[10px] uppercase tracking-widest text-zinc-500 mb-2 font-semibold">
+                            {selectedMagazine.isInstagram
+                              ? 'Instagram Post & Caption'
+                              : `Featured Page ${selectedMagazine.featuredImages.length > 1 ? activeFeaturedIndex + 1 : ''}`}
+                          </span>
+                          <div
+                            onClick={() => { setZoomedImage(selectedMagazine.featuredImages[activeFeaturedIndex]); setIsZoomedIn(false); }}
+                            className="relative w-full max-w-[320px] aspect-[3/4] rounded-lg overflow-hidden border border-zinc-800/80 shadow-2xl cursor-zoom-in hover:opacity-95 transition-opacity duration-300"
+                          >
+                            {!loadedImages[`modal-${selectedMagazine.id}-feature-${activeFeaturedIndex}`] && (
+                              <div className="absolute inset-0 bg-zinc-900 animate-pulse flex items-center justify-center">
+                                <span className="text-[10px] uppercase tracking-widest text-zinc-600">Loading...</span>
+                              </div>
+                            )}
+                            <Image
+                              src={selectedMagazine.featuredImages[activeFeaturedIndex]}
+                              alt={`${selectedMagazine.name} Feature ${activeFeaturedIndex + 1}`}
+                              fill
+                              sizes="320px"
+                              className={`w-full h-full object-cover ${
+                                loadedImages[`modal-${selectedMagazine.id}-feature-${activeFeaturedIndex}`] ? 'opacity-100' : 'opacity-0'
+                              }`}
+                              onLoad={() => handleImageLoad(`modal-${selectedMagazine.id}-feature-${activeFeaturedIndex}`)}
+                              onError={() => handleImageLoad(`modal-${selectedMagazine.id}-feature-${activeFeaturedIndex}`)}
+                            />
+                          </div>
+                        </div>
+                      </>
+                    )}
+                  </div>
+
+                  {/* Spread Thumbnails / Navigation if multiple pages */}
+                  {selectedMagazine.featuredImages.length > 1 && (
+                    <div className="mt-8 flex items-center justify-center gap-4">
+                      <button
+                        onClick={() =>
+                          setActiveFeaturedIndex((prev) => (prev > 0 ? prev - 1 : selectedMagazine.featuredImages.length - 1))
+                        }
+                        className="p-2 rounded-full bg-zinc-950 border border-zinc-800 hover:text-white text-zinc-400 transition-colors"
+                        aria-label="Previous page"
+                      >
+                        <ChevronLeft size={16} />
+                      </button>
+
+                      <div className="flex items-center gap-2">
+                        {selectedMagazine.featuredImages.map((img, idx) => (
+                          <button
+                            key={idx}
+                            onClick={() => setActiveFeaturedIndex(idx)}
+                            className={`relative w-10 h-14 rounded overflow-hidden transition-all duration-300 ${
+                              activeFeaturedIndex === idx
+                                ? 'ring-2 ring-pink-700 scale-105 border-transparent'
+                                : 'opacity-50 hover:opacity-100 border border-zinc-800'
+                            }`}
+                          >
+                            <Image
+                              src={img}
+                              alt={`Spread page ${idx + 1}`}
+                              fill
+                              sizes="40px"
+                              className="w-full h-full object-cover"
+                            />
+                          </button>
+                        ))}
+                      </div>
+
+                      <button
+                        onClick={() =>
+                          setActiveFeaturedIndex((prev) => (prev < selectedMagazine.featuredImages.length - 1 ? prev + 1 : 0))
+                        }
+                        className="p-2 rounded-full bg-zinc-950 border border-zinc-800 hover:text-white text-zinc-400 transition-colors"
+                        aria-label="Next page"
+                      >
+                        <ChevronRight size={16} />
+                      </button>
+                    </div>
+                  )}
+                </div>
+              )}
             </div>
           </div>
         </div>
