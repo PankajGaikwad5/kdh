@@ -49,6 +49,16 @@ const magazines = [
     featuredImages: ['/press/mags/fortune2.webp'],
     description: 'An exclusive feature highlighting the handcrafted brass details and futuristic design of the new Monster lighting series.',
   },
+  {
+    id: 6,
+    name: 'Delhi Times',
+    issue: 'September 2026 - Instagram Post',
+    coverImage: '/press/mags/delhitimes1.webp',
+    featuredImages: ['/press/mags/delhitimes2.webp', '/press/mags/delhitimes3.webp', '/press/mags/delhitimes4.webp', '/press/mags/delhitimes5.webp', '/press/mags/delhitimes6.webp', '/press/mags/delhitimes7.webp'],
+    description: 'Totems are taking a stand in contemporary interiors, bringing height, texture and a sculptural sense of character to overlooked corners. Featured in Delhi Times.',
+    externalLink: 'https://www.instagram.com/p/DdyLDZ7AFSU/',
+    isInstagram: true,
+  },
 ];
 
 // const pressItems = [
