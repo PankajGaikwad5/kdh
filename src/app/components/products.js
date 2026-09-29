@@ -3556,7 +3556,7 @@ export const products = [
     material: 'Marble',
     collabtext: 'Serafini',
     collablink: 'https://www.serafini.com/products-page/samaveta-luxury-marble-bench',
-    pdf: 'https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUCDnRdrPX0XaKgNMT1QEmen25RAwc7Sk4UxoJ',
+    pdf: 'https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETU1380ABLRDnjSBCAuk1FhTeXyczvVNKdJ89a',
     images: [
       {
         fileName: '1738930706115-Slide1.JPG',
@@ -4376,7 +4376,7 @@ export const products = [
     material: 'Hinges',
     // collabtext: 'Blum',
     // collablink: 'https://www.blum.com/us/en/',
-    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO8Kp6sYJ6OXRnzQocN3dym1xs7Wqkgah8JuVI',
+    pdf: 'https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fET5NBrYmsrWq5pfmYig9GPhwce4FZEuKbsJxna',
     images: [
       {
         fileName: '1738930738989-Slide1.JPG',
@@ -5373,7 +5373,7 @@ export const products = [
     material: 'Marble',
     collabtext: 'Serafini',
     collablink: 'https://www.serafini.com/products-page/samaveta-marble-console',
-    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOYnR9Y9xq6dLIzbPjGW4oiU2MEvH0hptTwnDc',
+    pdf: 'https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETh16iXEtm8fETaNYbdMxFnsjCGeJKI4WZX9Or',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -8278,7 +8278,7 @@ export const products = [
     title: 'Coffee Table',
     group: 'jina_shilp',
     material: '',
-    pdf: 'https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETcDTPo54IT2R8fxZk3ndVLvi4YU5JWsNh7r6t',
+    pdf: 'https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETtQLnWT8rBmnJsSTMKoYufvZLGNHykV5pzObA',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
