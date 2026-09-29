@@ -8502,7 +8502,7 @@ export const products = [
     title: 'Mirror',
     group: 'jina_shilp',
     material: '',
-    pdf: 'https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETG8csEQkHds2frvmTDpL4PGCg9hB5i0S6lNEF',
+    pdf: 'https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETVRFD6k3JYt47lhMbsxp28nHTQ5zXeGEVZOgu',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
