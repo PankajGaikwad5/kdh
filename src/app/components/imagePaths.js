@@ -19,7 +19,7 @@ export const newImagePaths = [
   },
   {
     name: 'Monster Console',
-    path: '/optimized/monster3console2.webp',
+    path: '/optimized/monster3console.webp',
     group: 'Monster 3.0',
     productId: '67b59041e03cc2c55c624a4b',
   },
@@ -580,7 +580,7 @@ export const newImagePaths = [
       },
       {
         name: 'Monster Console',
-        path: '/optimized/monster3console2.webp',
+        path: '/optimized/monster3console.webp',
         group: 'Monster 3.0',
         productId: '67b59041e03cc2c55c624a4b',
       },
