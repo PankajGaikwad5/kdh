@@ -599,7 +599,7 @@ export default function ProductDetailsClient({ product }) {
             )}
 
             <div className='flex flex-col gap-4 text-sm 2xl:space-y-8'>
-              <div className='gsap-reveal grid grid-cols-2 md:grid-cols-3 gap-2'>
+              {/* <div className='gsap-reveal grid grid-cols-2 md:grid-cols-3 gap-2'>
                 <div>
                   <h4 className='font-semibold text-gray-400 text-xs mb-1'>
                     Dimension
@@ -630,7 +630,7 @@ export default function ProductDetailsClient({ product }) {
                   </h4>
                   <p className='text-white'>{product.material}</p>
                 </div>
-              </div>
+              </div> */}
 
               {(product.material === 'Marble' || (product.colors && product.colors.length > 0) || product.colorImages || (product.marbles && product.marbles.length > 0)) && (
                 <div className='gsap-reveal flex flex-col gap-2'>
