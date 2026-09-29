@@ -8278,7 +8278,7 @@ export const products = [
     title: 'Coffee Table',
     group: 'jina_shilp',
     material: '',
-    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMONGDCQOllKuEFGqiHYwx1vdgXShVApaDPkJnO',
+    pdf: 'https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETcDTPo54IT2R8fxZk3ndVLvi4YU5JWsNh7r6t',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -8341,7 +8341,7 @@ export const products = [
     title: 'Totem',
     group: 'jina_shilp',
     material: '',
-    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO83MLyOJ6OXRnzQocN3dym1xs7Wqkgah8JuVI',
+    pdf: 'https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETwCLNitvdHTWm6hNKJsYcrPzA4v8kqZR7j9wp',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -8425,7 +8425,7 @@ export const products = [
     title: 'Dining Table',
     group: 'jina_shilp',
     material: '',
-    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOT7pWBLBkol4fc15PmWSnAqbsUy78gtp2EBGz',
+    pdf: 'https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETU3tglhLRDnjSBCAuk1FhTeXyczvVNKdJ89aW',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -8502,7 +8502,7 @@ export const products = [
     title: 'Mirror',
     group: 'jina_shilp',
     material: '',
-    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOpkIWloP3rNhAZbyusfUHIiaBK09J5xzpGSRo',
+    pdf: 'https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETG8csEQkHds2frvmTDpL4PGCg9hB5i0S6lNEF',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
@@ -8565,7 +8565,7 @@ export const products = [
     title: 'Pillar Bench',
     group: 'jina_shilp',
     material: '',
-    pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOQlRRxxYjEmZGMv8oIDTj47Xefwd1pHkl6ngB',
+    pdf: 'https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fET3bJCmNucM1QRWXxzuGYTNLCcAoKBI6D0hOf8',
     images: [
       {
         fileName: '1738927863060-Slide1.JPG',
