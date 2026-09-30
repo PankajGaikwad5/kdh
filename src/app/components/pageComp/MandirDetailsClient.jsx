@@ -519,7 +519,7 @@ export default function MandirDetailsClient({ product }) {
               {/* Grid Toggle Button */}
               <button
                 onClick={() => setShowThumbnailGrid(!showThumbnailGrid)}
-                className='absolute top-4 left-4 text-white bg-black/60 rounded-full p-2 hover:bg-white hover:text-black transition-all z-20'
+                className='absolute top-4 right-16 text-white bg-black/60 rounded-full p-2 hover:bg-white hover:text-black transition-all z-20'
                 title='View all media'
               >
                 <Grid3X3 size={20} />
