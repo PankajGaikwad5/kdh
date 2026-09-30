@@ -16,8 +16,12 @@ const FloatingImagesScene = dynamic(
   }
 );
 
+import ProductDetailsClient from './components/pageComp/ProductDetailsClient';
+import { products } from './components/products';
+
 const page = () => {
   const [dimensions, setDimensions] = useState({ width: 200, height: 200 });
+  const [selectedProduct, setSelectedProduct] = useState(null);
   const floatingImagesRef = useRef(null);
 
   // Kick off texture preloading progressively during idle time — while the Three.js chunk is still
@@ -62,26 +66,38 @@ const page = () => {
       }
     };
 
-    //   // const handleKeyDown = (event) => {
-    //   //   if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
-    //   //     // Scroll FloatingImagesScene into focus
-    //   //     if (floatingImagesRef.current) {
-    //   //       floatingImagesRef.current.scrollIntoView({
-    //   //         behavior: 'smooth',
-    //   //         block: 'center',
-    //   //       });
-    //   //       floatingImagesRef.current.focus();
-    //   //     }
-    //   //   }
-    //   // };
-    //   window.focus(floatingImagesRef.current);
-
     handleResize(); // Initial check
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
+  useEffect(() => {
+    const handlePopState = () => {
+      if (selectedProduct) {
+        setSelectedProduct(null);
+      }
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, [selectedProduct]);
+
+  const handleProductSelect = (productId, href) => {
+    const p = products.find((prod) => {
+      const id = typeof prod._id === 'object' ? prod._id.$oid : prod._id;
+      return id === productId;
+    });
+    if (p) {
+      window.history.pushState(null, '', href);
+      setSelectedProduct(p);
+    }
+  };
+
+  const handleCloseModal = () => {
+    window.history.back(); // Triggers popstate which will set selectedProduct to null
+  };
+
   return (
     <main className='min-h-screen select-none overflow-y-hidden scrollhide overflow-hidden bg-[#232424]'>
       <div className='hidden'>
@@ -150,29 +166,17 @@ const page = () => {
         <p>https://karandesaihome.com</p>
       </div>
       <div
+        id="home-logo-container"
         style={{
           position: 'absolute',
           top: 0,
           left: 0,
           width: '100%',
-          // backgroundImage: 'url("/assets/kdhlogo2.png")',
-          // backgroundSize: 'cover',
-          // backgroundPosition: 'center',
           zIndex: 1,
         }}
         className='flex  justify-center text-start items-start'
       >
-        <div
-          // style={{
-          //   backgroundImage: 'url("/assets/kdhlogo2.png")',
-          //   backgroundSize: 'cover',
-          //   backgroundPosition: 'center',
-          // }}
-          className='w-full p-0 mt-2 2xl:mt-7  flex justify-center items-center '
-        >
-          {/* <h1 className='uppercase md:text-6xl text-center flex flex-col md:gap-4 font-bold'>
-            welcome to <span className=''>karan desai home</span>
-          </h1> */}
+        <div className='w-full p-0 mt-2 2xl:mt-7  flex justify-center items-center '>
           <Image
             src='/assets/kdhlogo3.png'
             alt='Karan Desai Home Logo'
@@ -183,10 +187,13 @@ const page = () => {
         </div>
       </div>
       <Navbar />
-      {/* <FloatingImagesScene /> */}
-      {/* <div ref={floatingImagesRef} tabIndex={-1} className='focus:outline-none'> */}
-      <FloatingImagesScene />
-      {/* </div> */}
+      <FloatingImagesScene onProductSelect={handleProductSelect} />
+      
+      {selectedProduct && (
+        <div className="fixed inset-0 z-[100] bg-transparent">
+          <ProductDetailsClient product={selectedProduct} onClose={handleCloseModal} />
+        </div>
+      )}
     </main>
   );
 };

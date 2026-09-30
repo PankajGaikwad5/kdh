@@ -8,6 +8,7 @@ import gsap from 'gsap';
 import { newImagePaths } from './imagePaths';
 import CustomLoader from './CustomLoader';
 import { Plus, Minus } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 // ─── One shared geometry for ALL image planes ────────────────────────────────
 const SHARED_GEO = new THREE.PlaneGeometry(1, 1, 1, 1);
@@ -232,30 +233,86 @@ SphericalGallery.displayName = 'SphericalGallery';
 // ─── CameraAnimator (smooth zoom into clicked product) ───────────────────────
 function CameraAnimator({ zoomTarget, onZoomComplete }) {
   const camera = useThree((s) => s.camera);
+  const scene = useThree((s) => s.scene);
+
+  const onZoomCompleteRef = useRef(onZoomComplete);
+  useEffect(() => {
+    onZoomCompleteRef.current = onZoomComplete;
+  }, [onZoomComplete]);
 
   useEffect(() => {
     if (!zoomTarget) return;
 
     let completed = false;
-    const done = () => { if (!completed) { completed = true; onZoomComplete(); } };
+    const done = () => { if (!completed) { completed = true; onZoomCompleteRef.current(); } };
+
+    // Add black fog to the scene to swallow the background stars and other products
+    if (!scene.fog) {
+      scene.fog = new THREE.Fog('#000000', 100, 200);
+    }
 
     const target = new THREE.Vector3(...zoomTarget.position);
     const dir = target.clone().sub(camera.position).normalize();
-    const endPos = target.clone().sub(dir.multiplyScalar(1.5));
+    // Use 3.0 instead of 1.5 to prevent the object from getting "too damn big"
+    const endPos = target.clone().sub(dir.multiplyScalar(3.0));
 
-    const tween = gsap.to(camera.position, {
-      x: endPos.x, y: endPos.y, z: endPos.z,
-      duration: 1.2,
-      ease: 'power2.inOut',
-      onUpdate: () => camera.lookAt(target),
-      onComplete: done,
+    const tl = gsap.timeline({ onComplete: done });
+
+    // Fade the background to black by bringing the fog extremely close (just behind the object)
+    gsap.to(scene.fog, {
+      near: 0.1,
+      far: 4.5,
+      duration: 1.0,
+      ease: 'power2.out'
     });
 
-    // Safety fallback — navigate even if animation somehow stalls
-    const fallback = setTimeout(done, 2000);
+    tl.to(camera.position, {
+      x: endPos.x, y: endPos.y, z: endPos.z,
+      duration: 1.0,
+      ease: 'power3.inOut',
+      onUpdate: () => camera.lookAt(target),
+    });
 
-    return () => { tween.kill(); clearTimeout(fallback); };
-  }, [zoomTarget, camera, onZoomComplete]);
+    const isDesktop = window.innerWidth >= 768;
+    
+    // Dynamically calculate the exact pan offset needed to place the object at 25vw
+    // (the center of the left half of the screen)
+    const vFov = camera.fov * Math.PI / 180;
+    const visibleHeight = 2 * 3.0 * Math.tan(vFov / 2);
+    const visibleWidth = visibleHeight * camera.aspect;
+    // We want the camera to move right by exactly 1/4 of the visible width
+    // so the object moves left by 1/4 of the screen (landing at 25vw).
+    const offsetAmount = isDesktop ? (visibleWidth / 4) : 0; 
+
+    if (offsetAmount > 0) {
+      const rightVec = new THREE.Vector3().crossVectors(dir, camera.up).normalize();
+      const panObj = { offset: 0 };
+      
+      tl.to(panObj, {
+        offset: offsetAmount,
+        duration: 0.8,
+        ease: 'power2.inOut',
+        onUpdate: () => {
+          const currentOffset = rightVec.clone().multiplyScalar(panObj.offset);
+          camera.position.copy(endPos).add(currentOffset);
+          camera.lookAt(target.clone().add(currentOffset));
+        }
+      });
+    }
+
+    // Safety fallback — navigate even if animation somehow stalls
+    // Timeout must be longer than the total timeline duration (1.0 + 0.8 = 1.8s)
+    const fallback = setTimeout(done, 3000);
+
+    return () => { 
+      tl.kill(); 
+      clearTimeout(fallback); 
+      // Reset fog smoothly when closing product details
+      if (scene.fog) {
+        gsap.to(scene.fog, { near: 100, far: 200, duration: 0.8 });
+      }
+    };
+  }, [zoomTarget, camera, scene]);
 
   return null;
 }
@@ -271,7 +328,8 @@ function ScrollHandler({ onScrollIntoSphere, onScrollOutOfSphere }) {
 }
 
 // ─── Main Component ───────────────────────────────────────────────────────────
-export default function FloatingImagesScene() {
+export default function FloatingImagesScene({ onProductSelect }) {
+  const router = useRouter();
   const isMobile = useMemo(() => typeof window !== 'undefined' && window.innerWidth < 768, []);
   const [zoomTarget, setZoomTarget]        = useState(null);
   const zoomHrefRef          = useRef(null);
@@ -298,7 +356,12 @@ export default function FloatingImagesScene() {
     setZoomTarget(null);
     zoomHrefRef.current = null;
 
-    const resetZoom = () => { setZoomTarget(null); zoomHrefRef.current = null; };
+    const resetZoom = () => { 
+      setZoomTarget(null); 
+      zoomHrefRef.current = null; 
+      gsap.to('#home-logo-container', { opacity: 1, duration: 0.8, ease: 'power2.inOut', overwrite: true });
+      gsap.to('nav, header, .fixed', { opacity: 1, duration: 0.8, ease: 'power2.inOut', overwrite: true });
+    };
     const onPageShow = (e) => {
       if (e.persisted) window.location.reload();
     };
@@ -333,11 +396,22 @@ export default function FloatingImagesScene() {
     zoomHrefRef.current = href;
     setZoomTarget({ position: worldPosition, href });
     setTooltipVisible(false);
+
+    // Fade out home page UI elements (Logo, Navbar) for a seamless transition illusion
+    gsap.to('#home-logo-container', { opacity: 0, duration: 0.8, ease: 'power2.inOut' });
+    gsap.to('nav, header, .fixed', { opacity: 0, duration: 0.8, ease: 'power2.inOut' });
   }, [zoomTarget]);
 
   const handleZoomComplete = useCallback(() => {
-    if (zoomHrefRef.current) window.location.href = zoomHrefRef.current;
-  }, []);
+    if (zoomHrefRef.current && onProductSelect) {
+      // The productId is available in the href, but it's cleaner to pass the ID directly.
+      // Wait, we didn't store productId in ref. Let's extract it from href.
+      const match = zoomHrefRef.current.match(/\/productdetails\/(.+)/);
+      if (match) {
+        onProductSelect(match[1], zoomHrefRef.current);
+      }
+    }
+  }, [onProductSelect]);
 
   const showTooltip = useCallback(({ name, group }) => {
     if (!hasMouseMoved.current || !tooltipRef.current) return;
@@ -385,8 +459,6 @@ export default function FloatingImagesScene() {
           makeDefault
         />
       </Canvas>
-
-      <div className={`zoom-transition ${zoomTarget ? ' active' : ''}`} />
 
       <div
         ref={tooltipRef}

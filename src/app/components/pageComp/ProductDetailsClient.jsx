@@ -61,12 +61,12 @@ const normalizeKey = (str) => {
 // ThumbnailGrid Component (keeping original external component structure)
 // This should be in a separate ThumbnailGrid.tsx file
 
-export default function ProductDetailsClient({ product }) {
+export default function ProductDetailsClient({ product, onClose }) {
   const router = useRouter();
   const { addToCart, removeFromCart, isInCart } = useCart();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showModal, setShowModal] = useState(false);
-  const [imageLoaded, setImageLoaded] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(true);
   const [loadedImages, setLoadedImages] = useState(new Set());
   const [showThumbnailGrid, setShowThumbnailGrid] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -151,6 +151,8 @@ export default function ProductDetailsClient({ product }) {
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
+      const isDesktop = window.innerWidth >= 768;
+
       // Subtle fade in for the page
       tl.fromTo(
         pageRef.current,
@@ -159,27 +161,57 @@ export default function ProductDetailsClient({ product }) {
         0
       );
 
-      // Very subtle fade and scale for the image
-      tl.fromTo(
-        imageRef.current,
-        { opacity: 0, scale: 0.98 },
-        { opacity: 1, scale: 1, duration: 1.4 },
-        0
-      );
-
-      // Elegant top-to-bottom reveal for text
-      const textEls = detailsRef.current?.querySelectorAll('.gsap-reveal');
-      if (textEls?.length) {
+      if (isDesktop) {
+        // Image just subtly scales since the container opacity handles the fade
         tl.fromTo(
-          textEls,
-          { clipPath: 'inset(0% 0% 100% 0%)' },
-          {
-            clipPath: 'inset(0% 0% 0% 0%)',
-            duration: 1.4,
-            stagger: 0,
-          },
+          imageRef.current,
+          { scale: 0.98 },
+          { scale: 1, duration: 1.2, ease: 'power3.inOut' },
           0
         );
+
+        // Elegant top-to-bottom reveal for text
+        const textEls = detailsRef.current?.querySelectorAll('.gsap-reveal');
+        if (textEls?.length) {
+          tl.fromTo(
+            textEls,
+            { clipPath: 'inset(0% 0% 100% 0%)', opacity: 0, x: 20 },
+            {
+              clipPath: 'inset(0% 0% 0% 0%)',
+              opacity: 1,
+              x: 0,
+              duration: 1.4,
+              stagger: 0.1,
+              ease: 'power3.out'
+            },
+            0.8
+          );
+        }
+      } else {
+        // Very subtle scale for the image on mobile (container handles opacity)
+        tl.fromTo(
+          imageRef.current,
+          { scale: 0.98 },
+          { scale: 1, duration: 1.4 },
+          0
+        );
+
+        // Elegant top-to-bottom reveal for text
+        const textEls = detailsRef.current?.querySelectorAll('.gsap-reveal');
+        if (textEls?.length) {
+          tl.fromTo(
+            textEls,
+            { clipPath: 'inset(0% 0% 100% 0%)', opacity: 0 },
+            {
+              clipPath: 'inset(0% 0% 0% 0%)',
+              opacity: 1,
+              duration: 1.4,
+              stagger: 0.1,
+              ease: 'power3.out'
+            },
+            0.2
+          );
+        }
       }
     });
 
@@ -424,7 +456,7 @@ export default function ProductDetailsClient({ product }) {
       <Navbar home={true} />
       <header className='fixed top-3 right-2 flex justify-end p-4 z-30'>
         <button
-          onClick={() => router.back()}
+          onClick={() => (onClose ? onClose() : router.back())}
           className='text-white hover:text-gray-300'
         >
           <X size={30} />
