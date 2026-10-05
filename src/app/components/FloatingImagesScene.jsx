@@ -9,12 +9,13 @@ import { newImagePaths } from './imagePaths';
 import CustomLoader from './CustomLoader';
 import { Plus, Minus } from 'lucide-react';
 import { useRouter } from 'next/navigation';
+import { useTheme } from 'next-themes';
 
 // ─── One shared geometry for ALL image planes ────────────────────────────────
 const SHARED_GEO = new THREE.PlaneGeometry(1, 1, 1, 1);
 
 // ─── Starfield ────────────────────────────────────────────────────────────────
-function Starfield({ count = 200, radius = 200 }) {
+function Starfield({ count = 200, radius = 200, isLight = false }) {
   const pointsRef = useRef();
   const tick = useRef(0);
 
@@ -30,12 +31,18 @@ function Starfield({ count = 200, radius = 200 }) {
       pos[i*3]   = r * Math.sin(theta) * Math.cos(phi);
       pos[i*3+1] = r * Math.sin(theta) * Math.sin(phi);
       pos[i*3+2] = r * Math.cos(theta);
-      if      (i%3===0) { col[i*3]=1;   col[i*3+1]=1;   col[i*3+2]=1;   }
-      else if (i%3===1) { col[i*3]=0.6; col[i*3+1]=0.8; col[i*3+2]=1;   }
-      else              { col[i*3]=1;   col[i*3+1]=0.9; col[i*3+2]=0.5; }
+      if (isLight) {
+        if      (i%3===0) { col[i*3]=0;   col[i*3+1]=0;   col[i*3+2]=0;   }
+        else if (i%3===1) { col[i*3]=0.2; col[i*3+1]=0.2; col[i*3+2]=0.2; }
+        else              { col[i*3]=0.1; col[i*3+1]=0.1; col[i*3+2]=0.1; }
+      } else {
+        if      (i%3===0) { col[i*3]=1;   col[i*3+1]=1;   col[i*3+2]=1;   }
+        else if (i%3===1) { col[i*3]=0.6; col[i*3+1]=0.8; col[i*3+2]=1;   }
+        else              { col[i*3]=1;   col[i*3+1]=0.9; col[i*3+2]=0.5; }
+      }
     }
     return { positions: pos, colors: col };
-  }, [count, radius]);
+  }, [count, radius, isLight]);
 
   const [starTexture, setStarTexture] = useState(null);
   useEffect(() => {
@@ -44,15 +51,21 @@ function Starfield({ count = 200, radius = 200 }) {
     c.width = c.height = size;
     const ctx = c.getContext('2d');
     const g = ctx.createRadialGradient(size/2,size/2,0, size/2,size/2,size/2);
-    g.addColorStop(0,   'rgba(255,255,255,1)');
-    g.addColorStop(0.2, 'rgba(255,255,255,0.4)');
-    g.addColorStop(1,   'rgba(255,255,255,0)');
+    if (isLight) {
+      g.addColorStop(0,   'rgba(0,0,0,0.8)');
+      g.addColorStop(0.15, 'rgba(0,0,0,0.3)');
+      g.addColorStop(0.4, 'rgba(0,0,0,0)');
+    } else {
+      g.addColorStop(0,   'rgba(255,255,255,1)');
+      g.addColorStop(0.2, 'rgba(255,255,255,0.4)');
+      g.addColorStop(1,   'rgba(255,255,255,0)');
+    }
     ctx.fillStyle = g;
     ctx.beginPath(); ctx.arc(size/2,size/2,size/2,0,Math.PI*2); ctx.fill();
     const tex = new THREE.CanvasTexture(c);
     setStarTexture(tex);
     return () => tex.dispose();
-  }, []);
+  }, [isLight]);
 
   useFrame(() => {
     if (++tick.current % 3 === 0 && pointsRef.current)
@@ -67,8 +80,8 @@ function Starfield({ count = 200, radius = 200 }) {
         <bufferAttribute attach='attributes-position' count={count} array={positions} itemSize={3} />
         <bufferAttribute attach='attributes-color'    count={count} array={colors}    itemSize={3} />
       </bufferGeometry>
-      <pointsMaterial map={starTexture} size={3} sizeAttenuation transparent
-        blending={THREE.AdditiveBlending} depthWrite={false} vertexColors />
+      <pointsMaterial map={starTexture} size={isLight ? 2.5 : 3} sizeAttenuation transparent
+        blending={THREE.NormalBlending} depthWrite={false} vertexColors />
     </points>
   );
 }
@@ -231,7 +244,7 @@ const SphericalGallery = React.forwardRef(
 SphericalGallery.displayName = 'SphericalGallery';
 
 // ─── CameraAnimator (smooth zoom into clicked product) ───────────────────────
-function CameraAnimator({ zoomTarget, onZoomComplete }) {
+function CameraAnimator({ zoomTarget, onZoomComplete, isLight }) {
   const camera = useThree((s) => s.camera);
   const scene = useThree((s) => s.scene);
 
@@ -246,9 +259,11 @@ function CameraAnimator({ zoomTarget, onZoomComplete }) {
     let completed = false;
     const done = () => { if (!completed) { completed = true; onZoomCompleteRef.current(); } };
 
-    // Add black fog to the scene to swallow the background stars and other products
+    // Add fog to the scene to swallow the background stars and other products
     if (!scene.fog) {
-      scene.fog = new THREE.Fog('#000000', 100, 200);
+      scene.fog = new THREE.Fog(isLight ? '#ffffff' : '#000000', 100, 200);
+    } else {
+      scene.fog.color.set(isLight ? '#ffffff' : '#000000');
     }
 
     const target = new THREE.Vector3(...zoomTarget.position);
@@ -341,6 +356,9 @@ export default function FloatingImagesScene({ onProductSelect }) {
   const [tooltipVisible, setTooltipVisible] = useState(false);
 
   const [isTabVisible, setIsTabVisible] = useState(true);
+  
+  const { theme } = useTheme();
+  const isLight = theme === 'light';
 
   // Pause rendering loops when tab is hidden to save memory and CPU/GPU resources
   useEffect(() => {
@@ -429,10 +447,11 @@ export default function FloatingImagesScene({ onProductSelect }) {
         camera={{ position: [0, 0, 50], fov: 65, near: 0.1, far: 800 }}
         dpr={isMobile ? [0.5, 1] : [1, 1.5]}
         gl={{ powerPreference: 'high-performance', antialias: false, stencil: false, depth: true, alpha: false }}
-        style={{ position:'absolute', top:0, left:0, width:'100%', height:'100%', background:'#000' }}
+        style={{ position:'absolute', top:0, left:0, width:'100%', height:'100%', background: isLight ? '#ffffff' : '#000000' }}
       >
+        <color attach="background" args={[isLight ? '#ffffff' : '#000000']} />
         <ambientLight intensity={1} />
-        <Starfield count={isMobile ? 80 : 200} radius={25} />
+        <Starfield count={isMobile ? 80 : 200} radius={25} isLight={isLight} />
 
         <Suspense fallback={<CustomLoader />}>
           <ScrollControls pages={2} damping={0.1}>
@@ -449,7 +468,7 @@ export default function FloatingImagesScene({ onProductSelect }) {
           </ScrollControls>
         </Suspense>
 
-        <CameraAnimator zoomTarget={zoomTarget} onZoomComplete={handleZoomComplete} />
+        <CameraAnimator zoomTarget={zoomTarget} onZoomComplete={handleZoomComplete} isLight={isLight} />
         <OrbitControls
           enableZoom={false}
           enablePan={false}

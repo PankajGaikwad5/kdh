@@ -25,6 +25,7 @@ import Navbar from '@/app/components/Navbar';
 import { useCart } from '@/app/context/CartContext';
 import { getCollectionName, formatTitle } from '@/lib/utils';
 import { formatProductDescription } from '@/app/utils/formatDescription';
+import { useTheme } from 'next-themes';
 
 const AccordionMarbles = dynamic(
   () => import('@/app/components/AccordionMarbles').then((mod) => mod.AccordionMarbles),
@@ -62,6 +63,8 @@ const normalizeKey = (str) => {
 // This should be in a separate ThumbnailGrid.tsx file
 
 export default function ProductDetailsClient({ product, onClose }) {
+  const { theme } = useTheme();
+  const isLight = theme === 'light';
   const router = useRouter();
   const { addToCart, removeFromCart, isInCart } = useCart();
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -451,13 +454,13 @@ export default function ProductDetailsClient({ product, onClose }) {
     <main
       ref={pageRef}
       style={{ opacity: 0 }}
-      className='min-h-screen bg-black text-white'
+      className={`min-h-screen ${isLight ? 'bg-white text-black' : 'bg-black text-white'}`}
     >
       <Navbar home={true} />
       <header className='fixed top-3 right-2 flex justify-end p-4 z-30'>
         <button
           onClick={() => (onClose ? onClose() : router.back())}
-          className='text-white hover:text-gray-300'
+          className={`hover:opacity-70 ${isLight ? 'text-black' : 'text-white hover:text-gray-300'}`}
         >
           <X size={30} />
         </button>
@@ -470,7 +473,7 @@ export default function ProductDetailsClient({ product, onClose }) {
         >
           {(activeImages?.length > 0 || product.video) && (
             <div
-              className="relative w-full h-[80vh] rounded-lg overflow-hidden group/slider  border-white/5 bg-black/20"
+              className="relative w-full h-[80vh] rounded-lg overflow-hidden group/slider bg-transparent"
             >
               {!imageLoaded && (
                 <div className='absolute inset-0 flex items-center justify-center z-10'>
@@ -530,7 +533,7 @@ export default function ProductDetailsClient({ product, onClose }) {
               {/* Fullscreen Button */}
               <button
                 onClick={toggleFullscreen}
-                className='absolute top-4 right-4 text-white bg-black/60 rounded-full p-2 hover:bg-white hover:text-black transition-all z-20'
+                className={`absolute top-4 right-4 rounded-full p-2 transition-all z-20 flex items-center justify-center w-9 h-9 ${isLight ? 'text-gray-500 bg-black/5 hover:bg-black hover:text-white' : 'text-gray-400 bg-white/10 hover:bg-white hover:text-black'}`}
                 title="View Fullscreen"
               >
                 <svg
@@ -551,7 +554,7 @@ export default function ProductDetailsClient({ product, onClose }) {
               {/* Grid Toggle Button */}
               <button
                 onClick={() => setShowThumbnailGrid(!showThumbnailGrid)}
-                className='absolute top-4 right-16 text-white bg-black/60 rounded-full p-2 hover:bg-white hover:text-black transition-all z-20'
+                className={`absolute top-4 right-16 rounded-full p-2 transition-all z-20 flex items-center justify-center w-9 h-9 ${isLight ? 'text-gray-500 bg-black/5 hover:bg-black hover:text-white' : 'text-gray-400 bg-white/10 hover:bg-white hover:text-black'}`}
                 title='View all media'
               >
                 <Grid3X3 size={20} />
@@ -562,18 +565,18 @@ export default function ProductDetailsClient({ product, onClose }) {
                   <button
                     onClick={() => navigate('prev')}
                     disabled={!imageLoaded}
-                    className='absolute left-4 top-1/2 -translate-y-1/2 text-white bg-black/60 rounded-full p-3 hover:bg-white hover:text-black transition-all disabled:opacity-50 z-20'
+                    className={`absolute left-4 top-1/2 -translate-y-1/2 transition-all disabled:opacity-50 z-20 px-2 ${isLight ? 'text-gray-400 hover:text-black' : 'text-gray-400 hover:text-white'}`}
                   >
-                    <span className='text-xl'>‹</span>
+                    <span className='text-4xl font-light'>‹</span>
                   </button>
                   <button
                     onClick={() => navigate('next')}
                     disabled={!imageLoaded}
-                    className='absolute right-4 top-1/2 -translate-y-1/2 text-white bg-black/60 rounded-full p-3 hover:bg-white hover:text-black transition-all disabled:opacity-50 z-20'
+                    className={`absolute right-4 top-1/2 -translate-y-1/2 transition-all disabled:opacity-50 z-20 px-2 ${isLight ? 'text-gray-400 hover:text-black' : 'text-gray-400 hover:text-white'}`}
                   >
-                    <span className='text-xl'>›</span>
+                    <span className='text-4xl font-light'>›</span>
                   </button>
-                  <div className='absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/60 rounded-full px-3 py-1 text-sm z-20'>
+                  <div className={`absolute bottom-4 left-1/2 -translate-x-1/2 text-sm z-20 font-medium tracking-widest ${isLight ? 'text-gray-400' : 'text-gray-400'}`}>
                     {currentIndex + 1} / {totalMedia}
                   </div>
                 </>
@@ -584,11 +587,11 @@ export default function ProductDetailsClient({ product, onClose }) {
 
         <section
           ref={detailsRef}
-          className='p-4 md:p-10 flex flex-col 2xl:mt-20 justify-between bg-black z-10'
+          className={`p-4 md:p-10 flex flex-col 2xl:mt-20 justify-between z-10 ${isLight ? 'bg-white' : 'bg-black'}`}
         >
           <div>
             {collectionName && (
-              <p className="gsap-reveal text-gray-400 uppercase tracking-widest text-xs mb-2">
+              <p className={`gsap-reveal uppercase tracking-widest text-xs mb-2 ${isLight ? 'text-gray-500' : 'text-gray-400'}`}>
                 {collectionName}
               </p>
             )}
@@ -606,7 +609,7 @@ export default function ProductDetailsClient({ product, onClose }) {
                     href={product.collablink}
                     target='_blank'
                     rel='noopener noreferrer'
-                    className='text-white hover:underline flex items-center'
+                    className={`hover:underline flex items-center ${isLight ? 'text-black' : 'text-white'}`}
                   >
                     {product.collabtext}
                     <svg
@@ -625,7 +628,7 @@ export default function ProductDetailsClient({ product, onClose }) {
                     </svg>
                   </a>
                 ) : (
-                  <span className='text-white'>{product.collabtext}</span>
+                  <span className={isLight ? 'text-black' : 'text-white'}>{product.collabtext}</span>
                 )}
               </div>
             )}
@@ -744,8 +747,8 @@ export default function ProductDetailsClient({ product, onClose }) {
                           <p
                             className={`text-xs w-[85px] mt-2 break-words leading-tight transition-colors duration-200 ${
                               isSelected
-                                ? 'text-white font-semibold'
-                                : 'text-gray-400 group-hover:text-white'
+                                ? isLight ? 'text-black font-semibold' : 'text-white font-semibold'
+                                : isLight ? 'text-gray-500 hover:text-black' : 'text-gray-400 group-hover:text-white'
                             }`}
                           >
                             {option.name}
@@ -764,7 +767,7 @@ export default function ProductDetailsClient({ product, onClose }) {
                 </div>
               )}
 
-              <div className='gsap-reveal mt-2 border-t border-gray-700 pt-4 text-sm text-white font-light whitespace-pre-line text-justify'>
+              <div className={`gsap-reveal mt-2 border-t pt-4 text-sm font-light whitespace-pre-line text-justify ${isLight ? 'border-gray-300 text-gray-700' : 'border-gray-700 text-white'}`}>
                 {formatProductDescription(product.description)}
               </div>
 
@@ -773,7 +776,11 @@ export default function ProductDetailsClient({ product, onClose }) {
                   <a href={product.pdf} target='_blank' rel='noopener noreferrer' className='w-full md:w-auto'>
                     <Button
                       variant='outline'
-                      className='px-6 py-2 border w-full border-white text-black rounded-none hover:bg-white/80'
+                      className={`px-6 py-2 w-full rounded-none transition-all duration-300 border ${
+                        isLight 
+                          ? 'border-gray-800 text-black bg-transparent hover:bg-gray-100' 
+                          : 'border-gray-400 text-gray-300 bg-transparent hover:bg-white/10 hover:text-white'
+                      }`}
                     >
                       Download Spec Sheet
                     </Button>
@@ -781,14 +788,24 @@ export default function ProductDetailsClient({ product, onClose }) {
                 )}
                 {isInCart(product._id.$oid, selectedMarble) ? (
                   <Button
-                    className='px-6 py-2 border w-full md:w-auto border-red-500 bg-red-500/10 text-red-500 rounded-none hover:bg-red-500 hover:text-white transition-all duration-300 font-medium'
+                    variant='outline'
+                    className={`px-6 py-2 w-full md:w-auto rounded-none transition-all duration-300 font-medium border ${
+                      isLight
+                        ? 'border-red-600 bg-red-50 text-red-600 hover:bg-red-100 hover:text-red-700'
+                        : 'border-red-500/50 bg-red-500/10 text-red-500 hover:bg-red-500/20 hover:text-red-400'
+                    }`}
                     onClick={() => removeFromCart(product._id.$oid, selectedMarble)}
                   >
                     Remove from Cart
                   </Button>
                 ) : (
                   <Button
-                    className='px-6 py-2 border w-full md:w-auto border-white bg-white text-black rounded-none hover:bg-transparent hover:text-white transition-all duration-300 font-medium'
+                    variant='outline'
+                    className={`px-6 py-2 w-full md:w-auto rounded-none transition-all duration-300 font-medium border ${
+                      isLight
+                        ? 'border-gray-800 text-black bg-transparent hover:bg-gray-100'
+                        : 'border-gray-400 text-gray-300 bg-transparent hover:bg-white/10 hover:text-white'
+                    }`}
                     onClick={() => addToCart(product, selectedMarble)}
                   >
                     Add to Cart

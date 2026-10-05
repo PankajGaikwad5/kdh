@@ -1,5 +1,6 @@
 'use client';
 import React, { useRef, useEffect, useState } from 'react';
+import { useTheme } from 'next-themes';
 import gsap from 'gsap';
 import Navbar from '../components/Navbar';
 import Image from 'next/image';
@@ -18,17 +19,26 @@ const CollectionCard = ({ product, index }) => {
   const mainTitle = titleParts[0];
   const subTitle = titleParts.slice(1).join(' | ');
 
+  const { theme } = useTheme();
+  const isLight = theme === 'light';
+
   // 4 columns logic (lg: screens)
   const isAlternate4 = (Math.floor(index / 4) + (index % 4)) % 2 !== 0;
-  const bgDesktop = isAlternate4 ? 'lg:bg-[#1a1a1a]' : 'lg:bg-[#121212]';
+  const bgDesktop = isAlternate4 
+    ? (isLight ? 'lg:bg-gray-100' : 'lg:bg-[#1a1a1a]') 
+    : (isLight ? 'lg:bg-gray-200' : 'lg:bg-[#121212]');
 
   // 2 columns logic (default for mobile & tablet)
   const isAlternate2 = (Math.floor(index / 2) + (index % 2)) % 2 !== 0;
-  const bgMobile = isAlternate2 ? 'bg-[#1a1a1a]' : 'bg-[#121212]';
+  const bgMobile = isAlternate2 
+    ? (isLight ? 'bg-gray-100' : 'bg-[#1a1a1a]') 
+    : (isLight ? 'bg-gray-200' : 'bg-[#121212]');
 
   // 5 columns logic (2xl: screens)
   const isAlternate5 = (Math.floor(index / 5) + (index % 5)) % 2 !== 0;
-  const bg2xl = isAlternate5 ? '2xl:bg-[#1a1a1a]' : '2xl:bg-[#121212]';
+  const bg2xl = isAlternate5 
+    ? (isLight ? '2xl:bg-gray-100' : '2xl:bg-[#1a1a1a]') 
+    : (isLight ? '2xl:bg-gray-200' : '2xl:bg-[#121212]');
 
   const bgColor = `${bgMobile} ${bgDesktop} ${bg2xl}`;
 
@@ -63,7 +73,7 @@ const CollectionCard = ({ product, index }) => {
       href={`/collections/${product.group}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className={`relative flex flex-col justify-between h-[280px] md:h-[450px] lg:h-[500px] p-4 md:p-8 md:py-6 group cursor-pointer ${bgColor} transition-colors duration-500 hover:bg-[#222]`}
+      className={`relative flex flex-col justify-between h-[280px] md:h-[450px] lg:h-[500px] p-4 md:p-8 md:py-6 group cursor-pointer ${bgColor} transition-colors duration-500 ${isLight ? 'hover:bg-gray-300' : 'hover:bg-[#222]'}`}
     >
       {year && (
         <div className='absolute top-3 right-3 md:top-5 md:right-5 text-[10px] md:text-base font-light text-gray-400 tracking-widest z-10'>
@@ -99,11 +109,11 @@ const CollectionCard = ({ product, index }) => {
       </div>
 
       <div className='flex flex-col items-start text-left z-10'>
-        <h2 className='text-sm md:text-2xl font-medium text-gray-200 uppercase tracking-widest mb-1'>
+        <h2 className={`text-sm md:text-2xl font-medium uppercase tracking-widest mb-1 ${isLight ? 'text-gray-900' : 'text-gray-200'}`}>
           {mainTitle}
         </h2>
         
-        <p className='text-[10px] md:text-base text-gray-400 uppercase tracking-widest font-light line-clamp-2 min-h-[2rem] md:min-h-[2.5rem] leading-tight md:leading-normal mb-2 md:mb-4'>
+        <p className={`text-[10px] md:text-base uppercase tracking-widest font-light line-clamp-2 min-h-[2rem] md:min-h-[2.5rem] leading-tight md:leading-normal mb-2 md:mb-4 ${isLight ? 'text-gray-700' : 'text-gray-400'}`}>
           {subTitle || 'KARAN DESAI HOME'}
         </p>
         
@@ -120,6 +130,8 @@ const CollectionCard = ({ product, index }) => {
 };
 
 const Page = () => {
+  const { theme } = useTheme();
+  const isLight = theme === 'light';
   const pageRef = useRef(null);
   const headingRef = useRef(null);
   const gridRef = useRef(null);
@@ -275,15 +287,15 @@ const Page = () => {
     <div
       ref={pageRef}
       style={{ opacity: 0 }}
-      className='min-h-screen flex flex-col bg-black overflow-hidden'
+      className={`min-h-screen flex flex-col overflow-hidden ${isLight ? 'bg-white' : 'bg-black'}`}
     >
       <Navbar />
       
       {/* Sleek Minimal Header */}
-      <div className='w-full pt-32 pb-8 px-8 md:px-12 flex items-end'>
+      <div className={`w-full pt-32 pb-8 px-8 md:px-12 flex items-end ${isLight ? 'border-b border-gray-200' : ''}`}>
         <h1
           ref={headingRef}
-          className='text-3xl md:text-5xl  text-white uppercase '
+          className={`text-3xl md:text-5xl uppercase ${isLight ? 'text-gray-900' : 'text-white'}`}
         >
           Collections
         </h1>

@@ -185,6 +185,7 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Playfair_Display } from 'next/font/google';
+import { useTheme } from 'next-themes';
 
 // Fonts
 const playfair = Playfair_Display({
@@ -193,8 +194,11 @@ const playfair = Playfair_Display({
 });
 
 const AboutCard = () => {
+  const { theme } = useTheme();
+  const isLight = theme === 'light';
+
   return (
-    <div className='max-w-3xl mx-auto bg-black rounded-2xl overflow-hidden shadow-2xl relative'>
+    <div className={`max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-2xl relative ${isLight ? 'bg-white' : 'bg-black'}`}>
       {/* Fixed image background */}
       <div className='fixed left-0 w-full flex justify-center z-0'>
         <Image
@@ -206,11 +210,11 @@ const AboutCard = () => {
         />
 
         {/* Fade at bottom of image */}
-        <div className='absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-black z-10' />
+        <div className={`absolute bottom-0 left-0 w-full h-32 z-10 ${isLight ? 'bg-gradient-to-b from-transparent to-white' : 'bg-gradient-to-b from-transparent to-black'}`} />
       </div>
 
       {/* Text content */}
-      <div className='relative z-20 mt-80 px-6 md:px-12 py-12 text-white bg-black bg-opacity-90'>
+      <div className={`relative z-20 mt-80 px-6 md:px-12 py-12 ${isLight ? 'text-black bg-white bg-opacity-95' : 'text-white bg-black bg-opacity-90'}`}>
         {/* Name */}
         <h1 className={`text-3xl md:text-4xl font-bold ${playfair.className}`}>
           Karan Desai
@@ -221,14 +225,14 @@ const AboutCard = () => {
 
         {/* Subtitle */}
         <p
-          className='uppercase text-sm text-gray-400'
+          className={`uppercase text-sm ${isLight ? 'text-gray-600' : 'text-gray-400'}`}
         >
           Architecture &amp; Interiors | TEDx Speaker
         </p>
 
         {/* Body text */}
         <div
-          className='mt-6 space-y-4 text-gray-300 leading-relaxed'
+          className={`mt-6 space-y-4 leading-relaxed ${isLight ? 'text-gray-800' : 'text-gray-300'}`}
         >
           <p>
             Born in 1987, Karan Desai founded KDAD Studio in 2012 after
@@ -249,14 +253,14 @@ const AboutCard = () => {
               href='https://www.karandesai.in/'
               target='_blank'
               rel='noopener noreferrer'
-              className='underline text-gray-300 hover:text-white'
+              className={`underline ${isLight ? 'text-blue-700 hover:text-black' : 'text-gray-300 hover:text-white'}`}
             >
               karandesai.in
             </a>
             .
           </p>
           {/* KDAD Logo */}
-          <section className='px-4 pt-10 pb-16 md:px-14 lg:px-20 bg-black'>
+          <section className={`px-4 pt-10 pb-16 md:px-14 lg:px-20 ${isLight ? 'bg-white' : 'bg-black'}`}>
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -273,7 +277,7 @@ const AboutCard = () => {
                   alt='KDAD Logo'
                   width={400}
                   height={400}
-                  className='object-contain'
+                  className={`object-contain ${isLight ? 'invert' : ''}`}
                 />
               </a>
             </motion.div>

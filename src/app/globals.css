@@ -303,3 +303,60 @@ body {
   /* slim scrollbar */
   scrollbar-color: rgba(255, 255, 255, 0.699) transparent;
 }
+
+/* Light Theme Overrides (for hardcoded dark mode utility classes) */
+.light body, .light main, .light {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+.light .text-white {
+  color: #000000 !important;
+}
+.light .bg-black, .light .bg-black\/90, .light .bg-black\/80 {
+  background-color: #f8f9fa !important;
+}
+.light .bg-\[\#232424\] {
+  background-color: #e5e7eb !important;
+}
+.light .bg-zinc-950, .light .bg-zinc-900 {
+  background-color: #f3f4f6 !important;
+}
+.light .border-white\/10, .light .border-white\/20, .light .border-white\/40, .light .border-zinc-800, .light .border-zinc-700 {
+  border-color: rgba(0, 0, 0, 0.15) !important;
+}
+.light .bg-white\/10 {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+.light .text-gray-400, .light .text-gray-300 {
+  color: #4b5563 !important;
+}
+.light .hover\:text-white:hover {
+  color: #000000 !important;
+}
+.light .hover\:bg-white:hover {
+  background-color: #000000 !important;
+}
+.light .placeholder\:text-zinc-500::placeholder {
+  color: #9ca3af !important;
+}
+.light img[src*="kdhlogo"] {
+  filter: invert(1);
+}
+.light .navMenu > span {
+  background-color: #000000 !important;
+}
+.light .bg-\[\#1a1a1a\], .light .lg\:bg-\[\#1a1a1a\], .light .2xl\:bg-\[\#1a1a1a\] {
+  background-color: #f3f4f6 !important;
+}
+.light .bg-\[\#121212\], .light .lg\:bg-\[\#121212\], .light .2xl\:bg-\[\#121212\] {
+  background-color: #e5e7eb !important;
+}
+.light .hover\:bg-\[\#222\]:hover {
+  background-color: #d1d5db !important;
+}
+.light .text-gray-200, .light .text-gray-100 {
+  color: #1f2937 !important;
+}
+.light .bg-black\/20 {
+  background-color: transparent !important;
+}

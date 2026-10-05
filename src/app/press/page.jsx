@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { X, BookOpen, ChevronLeft, ChevronRight, Instagram, ExternalLink } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { useTheme } from 'next-themes';
 
 
 const magazines = [
@@ -81,6 +82,9 @@ const magazines = [
 // ─────────────────────────────────────────────────────────────────────────────
 
 export default function PressPage() {
+  const { theme } = useTheme();
+  const isLight = theme === 'light';
+  
   const pageRef = useRef(null);
   const headingRef = useRef(null);
   const magazinesRef = useRef(null);
@@ -192,7 +196,7 @@ export default function PressPage() {
   return (
     <div
       ref={pageRef}
-      className="bg-black min-h-screen text-zinc-100"
+      className={`min-h-screen ${isLight ? 'bg-white text-black' : 'bg-black text-zinc-100'}`}
       style={{
         opacity: 0,
         backgroundImage: `url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.1'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E")`,
@@ -206,7 +210,7 @@ export default function PressPage() {
         <div className="w-full text-center flex justify-center">
           <h1
             ref={headingRef}
-            className='text-2xl md:text-4xl font-bold text-gray-200 pb-8 border-b-2 border-gray-800 uppercase w-full md:max-w-3xl'
+            className={`text-2xl md:text-4xl font-bold pb-8 border-b-2 uppercase w-full md:max-w-3xl ${isLight ? 'text-black border-gray-200' : 'text-gray-200 border-gray-800'}`}
           >
             Press
           </h1>
@@ -230,13 +234,17 @@ export default function PressPage() {
               onClick={() => {
                 setSelectedMagazine(mag);
               }}
-              className="group cursor-pointer relative flex flex-col rounded-xl overflow-hidden bg-zinc-950/40 border border-zinc-900 transition-all duration-500 hover:border-zinc-700/80 hover:shadow-2xl hover:shadow-white/[0.01]"
+              className={`group cursor-pointer relative flex flex-col rounded-xl overflow-hidden transition-all duration-500 border ${
+                isLight 
+                  ? 'bg-white border-gray-200 hover:border-gray-400 hover:shadow-xl' 
+                  : 'bg-zinc-950/40 border-zinc-900 hover:border-zinc-700/80 hover:shadow-2xl hover:shadow-white/[0.01]'
+              }`}
             >
               {/* Image Aspect ratio 3/4 */}
-              <div className="relative w-full aspect-[3/4] overflow-hidden bg-zinc-900">
+              <div className={`relative w-full aspect-[3/4] overflow-hidden ${isLight ? 'bg-gray-100' : 'bg-zinc-900'}`}>
                 {!loadedImages[`mag-${mag.id}-cover`] && (
-                  <div className="absolute inset-0 bg-zinc-900 animate-pulse flex items-center justify-center">
-                    <span className="text-[10px] uppercase tracking-widest text-zinc-600">Loading...</span>
+                  <div className={`absolute inset-0 flex items-center justify-center animate-pulse ${isLight ? 'bg-gray-100' : 'bg-zinc-900'}`}>
+                    <span className={`text-[10px] uppercase tracking-widest ${isLight ? 'text-gray-400' : 'text-zinc-600'}`}>Loading...</span>
                   </div>
                 )}
                 <Image
@@ -258,11 +266,11 @@ export default function PressPage() {
               </div>
 
               {/* Title & Info */}
-              <div className="p-5 flex flex-col gap-1.5 border-t border-zinc-900">
-                <span className='text-[10px] uppercase tracking-widest text-zinc-500 font-semibold'>
+              <div className={`p-5 flex flex-col gap-1.5 border-t ${isLight ? 'border-gray-200' : 'border-zinc-900'}`}>
+                <span className={`text-[10px] uppercase tracking-widest font-semibold ${isLight ? 'text-gray-500' : 'text-zinc-500'}`}>
                   {mag.issue}
                 </span>
-                <h3 className='text-base font-bold text-zinc-200 group-hover:text-white transition-colors duration-300 uppercase tracking-wide'>
+                <h3 className={`text-base font-bold transition-colors duration-300 uppercase tracking-wide ${isLight ? 'text-black' : 'text-zinc-200 group-hover:text-white'}`}>
                   {mag.name}
                 </h3>
                 {/* <p className="text-xs text-zinc-400 mt-1 line-clamp-2 leading-relaxed font-light">

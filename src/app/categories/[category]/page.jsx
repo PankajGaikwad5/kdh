@@ -10,21 +10,30 @@ import Link from 'next/link';
 import { HoverBorderGradient } from '@/components/ui/hover-border-gradient';
 import { deriveCategory } from '@/app/utils/categories';
 import { formatTitle } from '@/lib/utils';
+import { useTheme } from 'next-themes';
 
 const ProductCardV2 = ({ product, index }) => {
+  const { theme } = useTheme();
+  const isLight = theme === 'light';
   const [isHovered, setIsHovered] = useState(false);
 
   // 4 columns logic (lg: screens)
   const isAlternate4 = (Math.floor(index / 4) + (index % 4)) % 2 !== 0;
-  const bgDesktop = isAlternate4 ? 'lg:bg-[#1a1a1a]' : 'lg:bg-[#121212]';
+  const bgDesktop = isAlternate4 
+    ? (isLight ? 'lg:bg-gray-100' : 'lg:bg-[#1a1a1a]') 
+    : (isLight ? 'lg:bg-gray-200' : 'lg:bg-[#121212]');
 
   // 2 columns logic (default for mobile & tablet)
   const isAlternate2 = (Math.floor(index / 2) + (index % 2)) % 2 !== 0;
-  const bgMobile = isAlternate2 ? 'bg-[#1a1a1a]' : 'bg-[#121212]';
+  const bgMobile = isAlternate2 
+    ? (isLight ? 'bg-gray-100' : 'bg-[#1a1a1a]') 
+    : (isLight ? 'bg-gray-200' : 'bg-[#121212]');
 
   // 5 columns logic (2xl: screens)
   const isAlternate5 = (Math.floor(index / 5) + (index % 5)) % 2 !== 0;
-  const bg2xl = isAlternate5 ? '2xl:bg-[#1a1a1a]' : '2xl:bg-[#121212]';
+  const bg2xl = isAlternate5 
+    ? (isLight ? '2xl:bg-gray-100' : '2xl:bg-[#1a1a1a]') 
+    : (isLight ? '2xl:bg-gray-200' : '2xl:bg-[#121212]');
 
   const bgColor = `${bgMobile} ${bgDesktop} ${bg2xl}`;
 
@@ -147,7 +156,7 @@ const ProductCardV2 = ({ product, index }) => {
       href={`/productdetails/${product._id.$oid}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className={`relative flex flex-col justify-between h-[280px] md:h-[450px] lg:h-[500px] p-4 md:p-8 md:py-6 group cursor-pointer ${bgColor} transition-colors duration-500 hover:bg-[#222] overflow-hidden`}
+      className={`relative flex flex-col justify-between h-[280px] md:h-[450px] lg:h-[500px] p-4 md:p-8 md:py-6 group cursor-pointer ${bgColor} transition-colors duration-500 ${isLight ? 'hover:bg-gray-300' : 'hover:bg-[#222]'} overflow-hidden`}
     >
       {/* Default Content */}
       <div className={`flex-grow flex items-center justify-center overflow-hidden mb-8 transition-opacity duration-700 ${isHovered ? 'opacity-0' : 'opacity-100'}`}>
@@ -173,11 +182,11 @@ const ProductCardV2 = ({ product, index }) => {
       </div>
 
       <div className={`flex flex-col items-start text-left z-10 transition-opacity duration-700 ${isHovered ? 'opacity-0' : 'opacity-100'}`}>
-        <h2 className='text-sm md:text-xl font-medium text-gray-200 uppercase tracking-widest mb-1 line-clamp-1'>
+        <h2 className={`text-sm md:text-xl font-medium uppercase tracking-widest mb-1 line-clamp-1 ${isLight ? 'text-gray-900' : 'text-gray-200'}`}>
           {title}
         </h2>
         
-        <p className='text-[10px] md:text-sm text-gray-400 uppercase tracking-widest font-light line-clamp-2 min-h-[2rem] md:min-h-[2.5rem] leading-tight md:leading-normal mb-2 md:mb-4'>
+        <p className={`text-[10px] md:text-sm uppercase tracking-widest font-light line-clamp-2 min-h-[2rem] md:min-h-[2.5rem] leading-tight md:leading-normal mb-2 md:mb-4 ${isLight ? 'text-gray-700' : 'text-gray-400'}`}>
           {collectionName}
         </p>
       </div>
@@ -219,6 +228,8 @@ const ProductCardV2 = ({ product, index }) => {
 };
 
 const CategoryProductsPage = () => {
+  const { theme } = useTheme();
+  const isLight = theme === 'light';
   const { category } = useParams();
   const [filteredProducts, setFilteredProducts] = useState([]);
   const pageRef = useRef(null);
@@ -291,14 +302,14 @@ const CategoryProductsPage = () => {
     <div
       ref={pageRef}
       style={{ opacity: 0 }}
-      className='min-h-screen flex flex-col bg-black'
+      className={`min-h-screen flex flex-col ${isLight ? 'bg-white' : 'bg-black'}`}
     >
       <div className='min-h-screen grid grid-rows-[1fr_auto]'>
         <Navbar arrow={false} home={false} />
 
         <div ref={headerRef} className='pt-28'>
           <div className='w-full text-center flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8'>
-            <h1 className='gsap-reveal text-2xl md:text-4xl font-medium text-gray-200 pb-6 border-b border-gray-800 uppercase w-full md:max-w-3xl tracking-widest'>
+            <h1 className={`gsap-reveal text-2xl md:text-4xl font-medium pb-6 border-b uppercase w-full md:max-w-3xl tracking-widest ${isLight ? 'text-gray-900 border-gray-200' : 'text-gray-200 border-gray-800'}`}>
               {displayCategory}
             </h1>
           </div>

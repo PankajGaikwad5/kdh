@@ -7,9 +7,13 @@ import Link from 'next/link';
 import { products } from './products'; // adjust path if needed
 import { categoryList } from '@/app/utils/categories';
 import { useCart } from '@/app/context/CartContext';
+import { useTheme } from 'next-themes';
 
 
 const Navbar = ({ isBgBlack, arrow, escape, home }) => {
+  const { theme } = useTheme();
+  const isLight = theme === 'light';
+  
   const router = useRouter();
   const [nav, setNav] = useState(false);
   const [white, setWhite] = useState(false);
@@ -135,16 +139,16 @@ const Navbar = ({ isBgBlack, arrow, escape, home }) => {
       {/* Search overlay */}
       {showSearch && (
         <div
-          className='fixed inset-0 bg-black/70 backdrop-blur-sm z-40 flex justify-center items-start p-6'
+          className='fixed inset-0 bg-black/70 backdrop-blur-md z-40 flex justify-center items-start p-6'
           onClick={() => setShowSearch(false)} // click outside closes
         >
           <div
-            className='bg-transparent rounded-xl shadow-xl w-full max-w-lg p-6 relative'
+            className='bg-transparent w-full max-w-lg p-6 relative'
             onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside box
           >
             {/* Search input */}
-            <div className='flex items-center border border-gray-300 rounded-full px-3 py-2'>
-              <Search className='text-gray-500 mr-2' size={18} />
+            <div className='flex items-center border rounded-full px-3 py-2 border-white bg-transparent'>
+              <Search className='text-white mr-2' size={18} />
               <input
                 type='text'
                 placeholder='Search products...'
@@ -156,7 +160,7 @@ const Navbar = ({ isBgBlack, arrow, escape, home }) => {
                     router.push(`/search?q=${encodeURIComponent(query)}`);
                   }
                 }}
-                className='flex-1 outline-none text-gray-300 bg-transparent placeholder-gray-200'
+                className='flex-1 outline-none bg-transparent text-white placeholder-white/50'
                 autoFocus
               />
               {query && (
@@ -165,7 +169,7 @@ const Navbar = ({ isBgBlack, arrow, escape, home }) => {
                     setShowSearch(false);
                     router.push(`/search?q=${encodeURIComponent(query)}`);
                   }}
-                  className='text-gray-400 hover:text-white bg-gray-800 hover:bg-gray-700 p-1.5 rounded-full mr-2 transition-all duration-300 flex items-center justify-center'
+                  className='p-1.5 rounded-full mr-2 transition-all duration-300 flex items-center justify-center bg-white text-black hover:bg-white/80'
                   title="View all results"
                 >
                   <ArrowRight size={16} />
@@ -176,7 +180,7 @@ const Navbar = ({ isBgBlack, arrow, escape, home }) => {
                   setQuery('');
                   setShowSearch(false);
                 }}
-                className='text-gray-500 hover:text-gray-700'
+                className='transition-all text-white hover:opacity-70'
               >
                 <X size={18} />
               </button>
@@ -189,7 +193,7 @@ const Navbar = ({ isBgBlack, arrow, escape, home }) => {
                   <li key={item._id.$oid}>
                     <Link
                       href={`/productdetails/${item._id.$oid}`}
-                      className='flex items-center gap-4 p-3 rounded-lg hover:bg-gray-800 transition'
+                      className='group flex items-center gap-4 p-3 rounded-lg transition-all hover:bg-white'
                       onClick={() => setShowSearch(false)}
                     >
                       <Image
@@ -197,9 +201,9 @@ const Navbar = ({ isBgBlack, arrow, escape, home }) => {
                         alt={item.title}
                         width={100}
                         height={100}
-                        className='w-32 h-32 object-cover rounded-md'
+                        className='w-32 h-32 object-cover'
                       />
-                      <span className='text-gray-300 font-medium'>
+                      <span className='font-medium transition-colors text-white group-hover:text-black'>
                         {item.title}
                       </span>
                     </Link>
@@ -210,7 +214,7 @@ const Navbar = ({ isBgBlack, arrow, escape, home }) => {
 
             {/* No results */}
             {query && results.length === 0 && (
-              <p className='mt-4 text-gray-500 text-center'>
+              <p className='mt-4 text-center font-medium text-white'>
                 No products found.
               </p>
             )}

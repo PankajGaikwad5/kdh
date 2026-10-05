@@ -467,10 +467,10 @@ export default function ProductDetailsClient({ product, onClose }) {
       <div className='grid md:grid-cols-[45%_55%] xl:grid-cols-[40%_60%] items-start pt-16'>
         <section
           ref={imageRef}
-          className="relative flex flex-col items-center justify-start w-full"
+          className="relative flex flex-col items-center justify-start w-full md:h-[calc(100vh-6rem)]"
         >
           {(activeImages?.length > 0 || product.video) && (
-            <div className="w-full px-4 md:px-8 xl:px-12 flex flex-col justify-between h-[55vh] md:h-[calc(100vh-6rem)] gap-4">
+            <div className="w-full px-4 md:px-8 xl:px-12 py-4 lg:py-2 flex flex-col justify-between h-[55vh] md:h-full gap-4">
               <div className="flex justify-end gap-2 w-full">
                 <button
                   onClick={() => setShowThumbnailGrid(!showThumbnailGrid)}
@@ -552,9 +552,9 @@ export default function ProductDetailsClient({ product, onClose }) {
                   </AnimatePresence>
                 </div>
               </div>
-              
+
               {totalMedia > 1 && (
-                <div className='flex items-center justify-center gap-8 mt-2 z-20'>
+                <div className='flex items-center justify-center gap-8 z-20 h-16'>
                   <button
                     onClick={() => navigate('prev')}
                     disabled={!imageLoaded}
@@ -583,37 +583,39 @@ export default function ProductDetailsClient({ product, onClose }) {
           className='p-4 md:px-6 lg:px-10 lg:py-2 flex flex-col justify-between h-auto md:h-[calc(100vh-6rem)] bg-black z-10'
         >
           <style dangerouslySetInnerHTML={{ __html: "@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;650&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');" }} />
-          <div className='flex flex-col'>
+          <div className='flex flex-col overflow-y-auto flex-1 min-h-0 md:pr-4' style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+            <div className='flex justify-between items-end mb-6'>
             <h1 className='gsap-reveal lowercase tracking-wide text-4xl md:text-[2.5rem] lg:text-[3rem]' style={{ fontFamily: '"League Spartan", sans-serif', fontWeight: 650, lineHeight: 1 }}>
               {formatTitle(product.title)}
             </h1>
             {collectionName && (
-              <p className="gsap-reveal uppercase mb-6 -mt-1 text-gray-400" >
+              <p className="gsap-reveal uppercase text-sm text-gray-400" >
                 {collectionName}
               </p>
             )}
+            </div>
 
-            <div className="flex flex-col gap-2 text-sm" style={{ fontFamily: '"Poppins", sans-serif' }}>
-              <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-2">
+            <div className="flex flex-col gap-4 justify-center text-sm" style={{ fontFamily: '"Poppins", sans-serif' }}>
+              <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-4">
                 <div className="w-24 md:w-32 shrink-0 text-gray-400 uppercase tracking-widest text-xs ">Inspiration</div>
                 <div className="flex-1 font-thin text-white text-xs">Inspired by the seamless blend of modern geometry and natural forms.</div>
               </div>
-              <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-2">
+              <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-4">
                 <div className="w-24 md:w-32 shrink-0 text-gray-400 uppercase tracking-widest text-xs ">Concept</div>
                 <div className="flex-1 font-thin text-white text-xs">Inspired by the seamless blend of modern geometry and natural forms.</div>
               </div>
 
-              <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-2">
+              <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-4">
                 <div className="w-24 md:w-32 shrink-0 text-gray-400 uppercase tracking-widest text-xs ">Material</div>
                 <div className="flex-1 font-thin text-white text-xs">{product.material || 'Premium Wood / Marble'}</div>
               </div>
 
-              <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-2">
+              <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-4">
                 <div className="w-24 md:w-32 shrink-0 text-gray-400 uppercase tracking-widest text-xs ">Finish</div>
                 <div className="flex-1 font-thin text-white text-xs">Matte Polish with Protective Coating</div>
               </div>
 
-              <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-2">
+              <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-4">
                 <div className="w-24 md:w-32 shrink-0 text-gray-400 uppercase tracking-widest text-xs ">Dimension</div>
                 <div className="flex-1 font-thin text-white text-xs">
                   <p>Length: {product.dimensions && !product.dimensions.includes('http') ? product.dimensions : '120 cm'}</p>
@@ -622,7 +624,7 @@ export default function ProductDetailsClient({ product, onClose }) {
                 </div>
               </div>
 
-              <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-2">
+              <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-4">
                 <div className="w-24 md:w-32 shrink-0 text-gray-400 uppercase tracking-widest text-xs ">Category</div>
                 <div className="flex-1 font-thin text-white text-xs">{product.category || 'Furniture'}</div>
               </div>
@@ -645,7 +647,7 @@ export default function ProductDetailsClient({ product, onClose }) {
             </div>
           </div>
 
-          <div className='gsap-reveal flex gap-4 w-full mt-4 md:mt-0'>
+          <div className='gsap-reveal flex gap-4 w-full mt-4 md:mt-0 h-16 items-center shrink-0'>
             <div className="w-32 hidden md:block"></div>
             <div className='flex-1 flex flex-col sm:flex-row gap-4 sm:items-center justify-start md:justify-end'>
               {product.pdf && (
@@ -681,7 +683,7 @@ export default function ProductDetailsClient({ product, onClose }) {
                 </div>
               )}
             </div>
-            </div>
+          </div>
         </section>
       </div>
 

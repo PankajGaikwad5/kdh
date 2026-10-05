@@ -40,7 +40,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <main
-      className='min-h-screen bg-black text-white relative'
+      className='min-h-screen relative'
     >
       <Navbar />
 

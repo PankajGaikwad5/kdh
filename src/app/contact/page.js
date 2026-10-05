@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import Navbar from '../components/Navbar';
+import { useTheme } from 'next-themes';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
@@ -39,6 +40,9 @@ const formSchema = z.object({
 });
 
 const page = () => {
+  const { theme } = useTheme();
+  const isLight = theme === 'light';
+
   // Track when form was loaded (for spam detection)
   const [formLoadTime, setFormLoadTime] = useState(null);
   const [honeypot, setHoneypot] = useState('');
@@ -142,28 +146,28 @@ const page = () => {
       <div
         ref={pageRef}
         style={{ opacity: 0 }}
-        className='min-h-screen flex flex-col bg-gradient-to-b bg-black'
+        className={`min-h-screen flex flex-col border-none ${isLight ? 'bg-white text-black' : 'bg-gradient-to-b bg-black text-white'}`}
       >
         <div
-          className='min-h-screen text-white'
+          className='min-h-screen border-none'
           // style={{
           //   backgroundImage: `url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.1'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
           // }}
         >
           <Navbar arrow={true} />
-          <main className='pt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+          <main className='pt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-none shadow-none'>
             <div className='w-full text-center flex justify-center'>
               <h1
                 ref={headingRef}
-                className='text-4xl font-bold text-gray-200 pb-8 border-b-2 border-gray-800 uppercase w-full md:max-w-3xl'
+                className={`text-4xl font-bold pb-8 border-b-2 uppercase inline-block ${isLight ? 'text-black border-gray-200' : 'text-gray-200 border-gray-800'}`}
               >
                 Contact Us
               </h1>
             </div>
-            <div className='w-full text-white flex justify-center items-center flex-col lg:flex-row gap-8 py-12  '>
+            <div className={`w-full flex justify-center items-center flex-col lg:flex-row gap-8 py-12 ${isLight ? 'text-black' : 'text-white'}`}>
               <div
                 ref={formRef}
-                className='w-full max-w-lg z-10 tracking-widest p-6 flex flex-col border border-gray-800 hover:border-gray-200 rounded-lg  hover:shadow-2xl transition-all duration-500 '
+                className={`w-full max-w-lg z-10 tracking-widest p-6 flex flex-col border rounded-lg transition-all duration-500 ${isLight ? 'border-transparent bg-transparent hover:border-gray-300 hover:shadow-lg' : 'border-gray-800 bg-transparent hover:border-gray-200 hover:shadow-2xl'}`}
               >
                 <p
                   className='text-xs font-bold mb-2 uppercase font-light'
@@ -277,7 +281,7 @@ const page = () => {
                     </div>
                     <Button
                       type='submit'
-                      className='bg-white uppercase text-gray-900 hover:bg-black hover:text-white transition-all duration-500 ease-in-out  border-zinc-600 rounded-none border px-5 tracking-normal font-medium mt-2'
+                      className={`uppercase transition-all duration-500 ease-in-out border rounded-none px-5 tracking-normal font-medium mt-2 ${isLight ? 'bg-black text-white border-black hover:bg-gray-800' : 'bg-white text-gray-900 border-zinc-600 hover:bg-black hover:text-white'}`}
                     >
                       Submit
                     </Button>
@@ -287,7 +291,7 @@ const page = () => {
               {/*  */}
               <div
                 ref={infoRef}
-                className='w-full max-w-lg text-xs z-10 font-thin text-white p-4 flex flex-col space-y-4 my-12 py-10'
+                className={`w-full max-w-lg text-xs z-10 font-thin p-4 flex flex-col space-y-4 my-12 py-10 ${isLight ? 'text-black' : 'text-white'}`}
               >
                 <div className='flex flex-wrap items-center gap-8 text-center '>
                   <a
@@ -348,12 +352,12 @@ const page = () => {
                 <div
                   className='flex flex-col gap-4 sm:flex-row sm:gap-6 font-normal sm:text-left tracking-widest'
                 >
-                  <p className='text-green-400'>
+                  <p className={isLight ? 'text-green-600' : 'text-green-400'}>
                     We are not a normal team of architects and interior
                     designers, but a unified movement of innovators and creators
                     of unique design experiences.
                   </p>
-                  <p className='text-blue-400'>
+                  <p className={isLight ? 'text-blue-600' : 'text-blue-400'}>
                     We offer extraordinary design solutions which contribute to
                     the well-being of our customers and bring real value to
                     their life and work. By entering the space we created, you

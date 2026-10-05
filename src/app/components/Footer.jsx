@@ -81,7 +81,7 @@ const Footer = () => {
         </div>
       </div>
       {/* Bottom bar for Copyright and Legal Links */}
-      <div className='border-t border-zinc-900 py-4 w-full flex flex-col md:flex-row justify-center items-center gap-2 md:gap-4 text-[10px] text-zinc-500 font-light tracking-wider bg-zinc-950/40'>
+      <div className='border-t border-zinc-900 py-4 w-full flex flex-col md:flex-row justify-center items-center gap-2 md:gap-4 text-[10px] text-zinc-500 font-light tracking-wider '>
         <span>&copy; {new Date().getFullYear()} KARAN DESAI HOME. ALL RIGHTS RESERVED.</span>
         <span className='hidden md:inline text-zinc-800'>|</span>
         <div className='flex gap-4'>

@@ -4,8 +4,11 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import Image from 'next/image';
 import Card from '../Card';
+import { useTheme } from 'next-themes';
 
 export default function AboutClient() {
+  const { theme } = useTheme();
+  const isLight = theme === 'light';
   const sectionRef = useRef(null);
   const titleRef = useRef(null);
   const subtitleRef = useRef(null);
@@ -56,13 +59,13 @@ export default function AboutClient() {
       <section className='text-center pt-24 mb-10'>
         <h1
           ref={titleRef}
-          className='text-4xl md:text-5xl font-light tracking-tight uppercase'
+          className={`text-4xl md:text-5xl font-light tracking-tight uppercase ${isLight ? 'text-black' : 'text-white'}`}
         >
           About
         </h1>
         <p
           ref={subtitleRef}
-          className='mt-3 text-gray-400 max-w-2xl mx-auto text-sm md:text-base'
+          className={`mt-3 max-w-2xl mx-auto text-sm md:text-base ${isLight ? 'text-gray-600' : 'text-gray-400'}`}
         >
           Award-winning Architecture and Interior Design studio by Karan Desai.
           Crafting luxury spaces and designer collections inspired by art and
