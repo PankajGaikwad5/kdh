@@ -18,8 +18,8 @@ const FloatingImagesScene = dynamic(
   }
 );
 
-import ProductDetailsClient from './components/pageComp/ProductDetailsClient';
-import { products } from './components/products';
+import AltProductDetailsClient from './components/pageComp/AltProductDetailsClient';
+import { products } from './components/altproducts';
 
 const page = () => {
   const [dimensions, setDimensions] = useState({ width: 200, height: 200 });
@@ -199,7 +199,7 @@ const page = () => {
       
       {selectedProduct && (
         <div className="fixed inset-0 z-[100] bg-transparent">
-          <ProductDetailsClient product={selectedProduct} onClose={handleCloseModal} />
+          <AltProductDetailsClient product={selectedProduct} onClose={handleCloseModal} />
         </div>
       )}
 
