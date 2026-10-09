@@ -10,7 +10,6 @@ import { catalogues } from '@/app/components/catalogues';
 import Image from 'next/image';
 import Link from 'next/link';
 import { HoverBorderGradient } from '@/components/ui/hover-border-gradient';
-import { useTheme } from 'next-themes';
 
 const ProductCardV2 = ({ product, index }) => {
   const [isHovered, setIsHovered] = useState(false);

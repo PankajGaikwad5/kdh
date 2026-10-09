@@ -1,6 +1,5 @@
 'use client';
 import React, { useRef, useEffect, useState } from 'react';
-import { useTheme } from 'next-themes';
 import gsap from 'gsap';
 import Navbar from '../components/Navbar';
 import Image from 'next/image';
@@ -11,6 +10,10 @@ import { categoryList, deriveCategory } from '../utils/categories';
 import { products as allProducts } from '../components/products';
 
 const CategoryCard = ({ category, index }) => {
+  const [isHovered, setIsHovered] = useState(false);
+  const [hasHovered, setHasHovered] = useState(false);
+  const [imgIndex, setImgIndex] = useState(0);
+
   // 4 columns logic (lg: screens)
   const isAlternate4 = (Math.floor(index / 4) + (index % 4)) % 2 !== 0;
   const bgDesktop = isAlternate4 
