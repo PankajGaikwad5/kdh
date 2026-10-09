@@ -11,29 +11,23 @@ import { categoryList, deriveCategory } from '../utils/categories';
 import { products as allProducts } from '../components/products';
 
 const CategoryCard = ({ category, index }) => {
-  const { theme } = useTheme();
-  const isLight = theme === 'light';
-  const [isHovered, setIsHovered] = useState(false);
-  const [hasHovered, setHasHovered] = useState(false);
-  const [imgIndex, setImgIndex] = useState(0);
-
   // 4 columns logic (lg: screens)
   const isAlternate4 = (Math.floor(index / 4) + (index % 4)) % 2 !== 0;
   const bgDesktop = isAlternate4 
-    ? (isLight ? 'lg:bg-gray-100' : 'lg:bg-[#1a1a1a]') 
-    : (isLight ? 'lg:bg-gray-200' : 'lg:bg-[#121212]');
+    ? 'lg:bg-gray-100 lg:dark:bg-[#1a1a1a]'
+    : 'lg:bg-gray-200 lg:dark:bg-[#121212]';
 
   // 2 columns logic (default for mobile & tablet)
   const isAlternate2 = (Math.floor(index / 2) + (index % 2)) % 2 !== 0;
   const bgMobile = isAlternate2 
-    ? (isLight ? 'bg-gray-100' : 'bg-[#1a1a1a]') 
-    : (isLight ? 'bg-gray-200' : 'bg-[#121212]');
+    ? 'bg-gray-100 dark:bg-[#1a1a1a]'
+    : 'bg-gray-200 dark:bg-[#121212]';
 
   // 5 columns logic (2xl: screens)
   const isAlternate5 = (Math.floor(index / 5) + (index % 5)) % 2 !== 0;
   const bg2xl = isAlternate5 
-    ? (isLight ? '2xl:bg-gray-100' : '2xl:bg-[#1a1a1a]') 
-    : (isLight ? '2xl:bg-gray-200' : '2xl:bg-[#121212]');
+    ? '2xl:bg-gray-100 2xl:dark:bg-[#1a1a1a]'
+    : '2xl:bg-gray-200 2xl:dark:bg-[#121212]';
 
   const bgColor = `${bgMobile} ${bgDesktop} ${bg2xl}`;
   const slug = category.name.toLowerCase().replace(/ /g, '-');
@@ -69,7 +63,7 @@ const CategoryCard = ({ category, index }) => {
       href={`/categories/${slug}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className={`relative flex flex-col justify-between h-[280px] md:h-[450px] lg:h-[500px] p-4 md:p-8 md:py-6 group cursor-pointer ${bgColor} transition-colors duration-500 ${isLight ? 'hover:bg-gray-300' : 'hover:bg-[#222]'}`}
+      className={`relative flex flex-col justify-between h-[280px] md:h-[450px] lg:h-[500px] p-4 md:p-8 md:py-6 group cursor-pointer ${bgColor} transition-colors duration-500 hover:bg-gray-300 dark:hover:bg-[#222]`}
     >
       <div className='flex-grow flex items-center justify-center overflow-hidden mb-8'>
         <div className='relative w-full h-full transform transition-transform duration-700 ease-out group-hover:scale-105'>
@@ -100,11 +94,11 @@ const CategoryCard = ({ category, index }) => {
       </div>
 
       <div className='flex flex-col items-start text-left z-10'>
-        <h2 className={`text-sm md:text-2xl font-medium uppercase tracking-widest mb-1 ${isLight ? 'text-gray-900' : 'text-gray-200'}`}>
+        <h2 className={`text-sm md:text-2xl font-medium uppercase tracking-widest mb-1 text-gray-900 dark:text-gray-200`}>
           {category.name}
         </h2>
         
-        <p className={`text-[10px] md:text-base uppercase tracking-widest font-light line-clamp-2 min-h-[2rem] md:min-h-[2.5rem] leading-tight md:leading-normal mb-2 md:mb-4 ${isLight ? 'text-gray-700' : 'text-gray-400'}`}>
+        <p className={`text-[10px] md:text-base uppercase tracking-widest font-light line-clamp-2 min-h-[2rem] md:min-h-[2.5rem] leading-tight md:leading-normal mb-2 md:mb-4 text-gray-700 dark:text-gray-400`}>
           EXPLORE CATEGORY
         </p>
         
@@ -121,8 +115,6 @@ const CategoryCard = ({ category, index }) => {
 };
 
 const Page = () => {
-  const { theme } = useTheme();
-  const isLight = theme === 'light';
   const pageRef = useRef(null);
   const headingRef = useRef(null);
   const gridRef = useRef(null);
@@ -169,15 +161,15 @@ const Page = () => {
     <div
       ref={pageRef}
       style={{ opacity: 0 }}
-      className={`min-h-screen flex flex-col overflow-hidden ${isLight ? 'bg-white' : 'bg-black'}`}
+      className={`min-h-screen flex flex-col overflow-hidden bg-white dark:bg-black`}
     >
       <Navbar />
       
       {/* Sleek Minimal Header */}
-      <div className={`w-full pt-32 pb-8 px-8 md:px-12 flex items-end ${isLight ? 'border-b border-gray-200' : ''}`}>
+      <div className={`w-full pt-32 pb-8 px-8 md:px-12 flex items-end border-b border-gray-200 dark:border-transparent`}>
         <h1
           ref={headingRef}
-          className={`text-3xl md:text-5xl font-light uppercase tracking-[0.2em] ${isLight ? 'text-gray-900' : 'text-white'}`}
+          className={`text-3xl md:text-5xl font-light uppercase tracking-[0.2em] text-gray-900 dark:text-white`}
         >
           Categories
         </h1>
