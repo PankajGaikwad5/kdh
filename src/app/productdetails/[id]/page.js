@@ -1,4 +1,4 @@
-import { products } from '@/app/components/altProducts';
+import { products } from '@/app/components/altproducts';
 import AltProductDetailsClient from '@/app/components/pageComp/AltProductDetailsClient';
 import { notFound } from 'next/navigation';
 
