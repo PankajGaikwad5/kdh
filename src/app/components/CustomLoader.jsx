@@ -4,8 +4,10 @@ import '../styles/planet.scss';
 import { Html, useProgress } from '@react-three/drei';
 import { useThree } from '@react-three/fiber';
 import * as THREE from 'three';
+import { useTheme } from 'next-themes';
 
 export default function CustomLoader() {
+  const { theme } = useTheme();
   const { progress } = useProgress();
   const [showLoader, setShowLoader] = useState(true);
   const GIF_DURATION = 2500;
@@ -38,13 +40,13 @@ export default function CustomLoader() {
             className='flex flex-col justify-center items-center gap-4'
           >
             <div
-              style={{ color: 'white', pointerEvents: 'none' }}
+              style={{ color: theme === 'light' ? 'black' : 'white', pointerEvents: 'none' }}
               className='text-center'
             >
               {Math.round(progress)}%
             </div>
             <img
-              src={`/optimizedsign.gif`}
+              src={theme === 'light' ? '/optimizedsignblack.gif' : '/optimizedsign.gif'}
               className={`transition-opacity duration-700`}
               alt='Animated signature representing Karan Desai Architecture'
               style={{
