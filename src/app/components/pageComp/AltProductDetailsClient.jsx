@@ -630,7 +630,22 @@ export default function ProductDetailsClient({ product, onClose }) {
               {product.dimensions && (
                 <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-4">
                   <div className="w-24 md:w-32 shrink-0 text-gray-400 uppercase tracking-widest text-xs ">Dimension</div>
-                  <div className="flex-1 font-thin text-white text-xs">{product.dimensions}</div>
+                  <div className="flex-1 font-thin text-white text-xs flex flex-col gap-1">
+                    {product.dimensions.split('|').map((part, idx) => {
+                      const splitIdx = part.indexOf(':');
+                      if (splitIdx !== -1) {
+                        const label = part.substring(0, splitIdx).trim();
+                        const val = part.substring(splitIdx + 1).trim();
+                        return (
+                          <div key={idx} className="flex">
+                            <span className="w-20 shrink-0">{label}:</span>
+                            <span>{val}</span>
+                          </div>
+                        );
+                      }
+                      return <div key={idx}>{part.trim()}</div>;
+                    })}
+                  </div>
                 </div>
               )}
 
