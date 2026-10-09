@@ -348,10 +348,14 @@ export default function ProductDetailsClient({ product, onClose }) {
       : (product?.marbles && product.marbles.length > 0)
         ? product.marbles[0].name
         : (product?.material === 'Marble' ? 'Banswara' : null);
-    setSelectedMarble((prev) => (prev === marbleName ? productDefault : marbleName));
-    setCurrentIndex(0);
-    setImageLoaded(false);
-  }, [product]);
+        
+    const nextMarble = selectedMarble === marbleName ? productDefault : marbleName;
+    if (selectedMarble !== nextMarble) {
+      setSelectedMarble(nextMarble);
+      setCurrentIndex(0);
+      setImageLoaded(false);
+    }
+  }, [product, selectedMarble]);
 
   const handleImageSelect = useCallback(
     (index) => {
@@ -596,51 +600,66 @@ export default function ProductDetailsClient({ product, onClose }) {
             </div>
 
             <div className="flex flex-col gap-4 justify-center text-sm" style={{ fontFamily: '"Poppins", sans-serif' }}>
-              <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-4">
-                <div className="w-24 md:w-32 shrink-0 text-gray-400 uppercase tracking-widest text-xs ">Inspiration</div>
-                <div className="flex-1 font-thin text-white text-xs">Inspired by the seamless blend of modern geometry and natural forms.</div>
-              </div>
-              <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-4">
-                <div className="w-24 md:w-32 shrink-0 text-gray-400 uppercase tracking-widest text-xs ">Concept</div>
-                <div className="flex-1 font-thin text-white text-xs">Inspired by the seamless blend of modern geometry and natural forms.</div>
-              </div>
-
-              <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-4">
-                <div className="w-24 md:w-32 shrink-0 text-gray-400 uppercase tracking-widest text-xs ">Material</div>
-                <div className="flex-1 font-thin text-white text-xs">{product.material || 'Premium Wood / Marble'}</div>
-              </div>
-
-              <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-4">
-                <div className="w-24 md:w-32 shrink-0 text-gray-400 uppercase tracking-widest text-xs ">Finish</div>
-                <div className="flex-1 font-thin text-white text-xs">Matte Polish with Protective Coating</div>
-              </div>
-
-              <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-4">
-                <div className="w-24 md:w-32 shrink-0 text-gray-400 uppercase tracking-widest text-xs ">Dimension</div>
-                <div className="flex-1 font-thin text-white text-xs">
-                  <p>Length: {product.dimensions && !product.dimensions.includes('http') ? product.dimensions : '120 cm'}</p>
-                  <p>Width: 60 cm</p>
-                  <p>Height: 45 cm</p>
+              {product.inspiration && (
+                <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-4">
+                  <div className="w-24 md:w-32 shrink-0 text-gray-400 uppercase tracking-widest text-xs ">Inspiration</div>
+                  <div className="flex-1 font-thin text-white text-xs">{product.inspiration}</div>
                 </div>
-              </div>
+              )}
+              {product.concept && (
+                <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-4">
+                  <div className="w-24 md:w-32 shrink-0 text-gray-400 uppercase tracking-widest text-xs ">Concept</div>
+                  <div className="flex-1 font-thin text-white text-xs">{product.concept}</div>
+                </div>
+              )}
 
-              <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-4">
-                <div className="w-24 md:w-32 shrink-0 text-gray-400 uppercase tracking-widest text-xs ">Category</div>
-                <div className="flex-1 font-thin text-white text-xs">{product.category || 'Furniture'}</div>
-              </div>
+              {product.material && (
+                <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-4">
+                  <div className="w-24 md:w-32 shrink-0 text-gray-400 uppercase tracking-widest text-xs ">Material</div>
+                  <div className="flex-1 font-thin text-white text-xs">{product.material}</div>
+                </div>
+              )}
+
+              {product.finish && (
+                <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-4">
+                  <div className="w-24 md:w-32 shrink-0 text-gray-400 uppercase tracking-widest text-xs ">Finish</div>
+                  <div className="flex-1 font-thin text-white text-xs">{product.finish}</div>
+                </div>
+              )}
+
+              {product.dimensions && (
+                <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-4">
+                  <div className="w-24 md:w-32 shrink-0 text-gray-400 uppercase tracking-widest text-xs ">Dimension</div>
+                  <div className="flex-1 font-thin text-white text-xs">{product.dimensions}</div>
+                </div>
+              )}
+
+              {product.category && (
+                <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-4">
+                  <div className="w-24 md:w-32 shrink-0 text-gray-400 uppercase tracking-widest text-xs ">Category</div>
+                  <div className="flex-1 font-thin text-white text-xs">{product.category}</div>
+                </div>
+              )}
 
               {(product.material === 'Marble' || product.marbles || product.colors) && (
                 <div className="gsap-reveal flex flex-col gap-4 pb-4">
                   <div className="w-full md:w-64 shrink-0 text-gray-400 uppercase tracking-widest text-xs ">Recommended Materials</div>
-                  <div className="flex-1 flex flex-row flex-wrap gap-4 md:gap-9">
-                    {[...(product.marbles || product.colors || marbles), { name: 'Exclusive Alt Material', src: 'https://images.unsplash.com/photo-1590664216124-7541249b6574?q=80&w=200&auto=format&fit=crop' }].map((m, idx) => (
-                      <div key={m.name + idx} className="relative flex flex-col items-center group cursor-pointer">
-                        <div className="w-10 h-10 relative overflow-hidden bg-white/10 rounded-full border border-white/20 transition-transform duration-300 group-hover:scale-110">
-                           <Image src={m.src || m.swatches?.[0]} alt={m.name} fill className="object-cover" />
-                        </div>
-                        <span className="absolute top-12 left-1/2 -translate-x-1/2 text-[9px] uppercase text-gray-400 text-center w-[6rem] break-words leading-tight opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 pointer-events-none">{m.name}</span>
-                      </div>
-                    ))}
+                  <div className="flex-1 flex flex-row flex-wrap gap-x-7 gap-y-10 md:gap-9 pl-6 pt-2">
+                    {(product.marbles || product.colors || marbles).map((m, idx) => {
+                      const isSelected = selectedMarble === m.name;
+                      return (
+                        <button 
+                          key={m.name + idx} 
+                          onClick={() => handleSelectMarble(m.name)}
+                          className="relative flex flex-col items-center group cursor-pointer focus:outline-none"
+                        >
+                          <div className={`w-10 h-10 relative overflow-hidden rounded-full transition-all duration-300 group-hover:scale-110 ${isSelected ? 'ring-1 ring-white ring-offset-2 ring-offset-black bg-white/20' : 'border border-white/20 bg-white/10'}`}>
+                             <Image src={m.src || m.swatches?.[0]} alt={m.name} fill className={`object-cover ${m.rotate ? 'rotate-90' : ''}`} />
+                          </div>
+                          <span className={`absolute top-12 left-1/2 -translate-x-1/2 text-[9px] uppercase text-center w-[6rem] break-words leading-tight transition-opacity duration-300 z-20 pointer-events-none ${isSelected ? 'text-white opacity-100' : 'text-gray-400 opacity-0 group-hover:opacity-100'}`}>{m.name}</span>
+                        </button>
+                      );
+                    })}
                   </div>
                 </div>
               )}

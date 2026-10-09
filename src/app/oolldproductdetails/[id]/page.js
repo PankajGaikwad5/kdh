@@ -1,5 +1,5 @@
 import { products } from '@/app/components/products';
-import AltProductDetailsClient from '@/app/components/pageComp/AltProductDetailsClient';
+import ProductDetailsClient from '@/app/components/pageComp/ProductDetailsClient';
 import { notFound } from 'next/navigation';
 
 export async function generateMetadata({ params }) {
@@ -19,7 +19,7 @@ export async function generateMetadata({ params }) {
       product.material || ''
     }, furniture, interior design`,
     alternates: {
-      canonical: `https://karandesaihome.com/altproductdetails/${product._id.$oid}`,
+      canonical: `https://karandesaihome.com/productdetails/${product._id.$oid}`,
     },
     openGraph: {
       title: 'Karan Desai Home',
@@ -40,7 +40,7 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default function AltProductDetailsPage({ params }) {
+export default function ProductDetailsPage({ params }) {
   const product = products.find((p) => {
     const productId = typeof p._id === 'object' ? p._id.$oid : p._id;
     return productId === params.id;
@@ -48,5 +48,5 @@ export default function AltProductDetailsPage({ params }) {
 
   if (!product) notFound();
 
-  return <AltProductDetailsClient product={product} />;
+  return <ProductDetailsClient product={product} />;
 }
