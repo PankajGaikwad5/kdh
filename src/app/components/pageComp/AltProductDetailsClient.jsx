@@ -456,13 +456,13 @@ export default function ProductDetailsClient({ product, onClose }) {
     <main
       ref={pageRef}
       style={{ opacity: 0, fontFamily: '"Poppins", sans-serif' }}
-      className='min-h-screen bg-black text-white'
+      className='min-h-screen bg-white dark:bg-black text-black dark:text-white'
     >
       <Navbar home={true} />
       <header className='fixed top-3 right-2 flex justify-end p-4 z-30'>
         <button
           onClick={() => (onClose ? onClose() : router.back())}
-          className='text-white hover:text-gray-300'
+          className='text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300'
         >
           <X size={30} />
         </button>
@@ -478,14 +478,14 @@ export default function ProductDetailsClient({ product, onClose }) {
               <div className="flex justify-end gap-2 w-full">
                 <button
                   onClick={() => setShowThumbnailGrid(!showThumbnailGrid)}
-                  className='text-gray-400 bg-white/10 rounded-full p-1.5 w-8 h-8 flex items-center justify-center hover:bg-white hover:text-black transition-all z-20'
+                  className='text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-white/10 rounded-full p-1.5 w-8 h-8 flex items-center justify-center hover:bg-white hover:text-black transition-all z-20'
                   title='View all media'
                 >
                   <Grid3X3 size={16} />
                 </button>
                 <button
                   onClick={toggleFullscreen}
-                  className='text-gray-400 bg-white/10 rounded-full p-1.5 w-8 h-8 flex items-center justify-center hover:bg-white hover:text-black transition-all z-20'
+                  className='text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-white/10 rounded-full p-1.5 w-8 h-8 flex items-center justify-center hover:bg-white hover:text-black transition-all z-20'
                   title="View Fullscreen"
                 >
                   <svg
@@ -562,17 +562,17 @@ export default function ProductDetailsClient({ product, onClose }) {
                   <button
                     onClick={() => navigate('prev')}
                     disabled={!imageLoaded}
-                    className='text-gray-400 hover:text-white transition-all disabled:opacity-50 z-20 px-2'
+                    className='text-gray-500 dark:text-gray-400 hover:text-black dark:text-white transition-all disabled:opacity-50 z-20 px-2'
                   >
                     <span className='text-3xl font-light'>‹</span>
                   </button>
-                  <div className='text-sm text-gray-400 font-medium tracking-widest '>
+                  <div className='text-sm text-gray-500 dark:text-gray-400 font-medium tracking-widest '>
                     {currentIndex + 1} / {totalMedia}
                   </div>
                   <button
                     onClick={() => navigate('next')}
                     disabled={!imageLoaded}
-                    className='text-gray-400 hover:text-white transition-all disabled:opacity-50 z-20 px-2'
+                    className='text-gray-500 dark:text-gray-400 hover:text-black dark:text-white transition-all disabled:opacity-50 z-20 px-2'
                   >
                     <span className='text-3xl font-light'>›</span>
                   </button>
@@ -584,7 +584,7 @@ export default function ProductDetailsClient({ product, onClose }) {
 
                 <section
           ref={detailsRef}
-          className='p-4 md:px-6 lg:px-10 lg:py-2 flex flex-col justify-between h-auto md:h-[calc(100vh-6rem)] bg-black z-10'
+          className='p-4 md:px-6 lg:px-10 lg:py-2 flex flex-col justify-between h-auto md:h-[calc(100vh-6rem)] bg-white dark:bg-black z-10'
         >
           <style dangerouslySetInnerHTML={{ __html: "@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;650&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');" }} />
           <div className='flex flex-col overflow-y-auto flex-1 min-h-0 md:pr-4' style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
@@ -593,7 +593,7 @@ export default function ProductDetailsClient({ product, onClose }) {
               {formatTitle(product.title)}
             </h1>
             {collectionName && (
-              <p className="gsap-reveal uppercase text-sm text-gray-400" >
+              <p className="gsap-reveal uppercase text-sm text-gray-500 dark:text-gray-400" >
                 {collectionName}
               </p>
             )}
@@ -601,36 +601,36 @@ export default function ProductDetailsClient({ product, onClose }) {
 
             <div className="flex flex-col gap-4 justify-center text-sm" style={{ fontFamily: '"Poppins", sans-serif' }}>
               {product.inspiration && (
-                <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-4">
-                  <div className="w-24 md:w-32 shrink-0 text-gray-400 uppercase tracking-widest text-xs ">Inspiration</div>
-                  <div className="flex-1 font-thin text-white text-xs">{product.inspiration}</div>
+                <div className="gsap-reveal flex gap-4 border-b border-gray-200 dark:border-white/20 pb-4">
+                  <div className="w-24 md:w-32 shrink-0 text-gray-500 dark:text-gray-400 uppercase tracking-widest text-xs ">Inspiration</div>
+                  <div className="flex-1 font-thin text-black dark:text-white text-xs">{product.inspiration}</div>
                 </div>
               )}
               {product.concept && (
-                <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-4">
-                  <div className="w-24 md:w-32 shrink-0 text-gray-400 uppercase tracking-widest text-xs ">Concept</div>
-                  <div className="flex-1 font-thin text-white text-xs">{product.concept}</div>
+                <div className="gsap-reveal flex gap-4 border-b border-gray-200 dark:border-white/20 pb-4">
+                  <div className="w-24 md:w-32 shrink-0 text-gray-500 dark:text-gray-400 uppercase tracking-widest text-xs ">Concept</div>
+                  <div className="flex-1 font-thin text-black dark:text-white text-xs">{product.concept}</div>
                 </div>
               )}
 
               {product.material && (
-                <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-4">
-                  <div className="w-24 md:w-32 shrink-0 text-gray-400 uppercase tracking-widest text-xs ">Material</div>
-                  <div className="flex-1 font-thin text-white text-xs">{product.material}</div>
+                <div className="gsap-reveal flex gap-4 border-b border-gray-200 dark:border-white/20 pb-4">
+                  <div className="w-24 md:w-32 shrink-0 text-gray-500 dark:text-gray-400 uppercase tracking-widest text-xs ">Material</div>
+                  <div className="flex-1 font-thin text-black dark:text-white text-xs">{product.material}</div>
                 </div>
               )}
 
               {product.finish && (
-                <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-4">
-                  <div className="w-24 md:w-32 shrink-0 text-gray-400 uppercase tracking-widest text-xs ">Finish</div>
-                  <div className="flex-1 font-thin text-white text-xs">{product.finish}</div>
+                <div className="gsap-reveal flex gap-4 border-b border-gray-200 dark:border-white/20 pb-4">
+                  <div className="w-24 md:w-32 shrink-0 text-gray-500 dark:text-gray-400 uppercase tracking-widest text-xs ">Finish</div>
+                  <div className="flex-1 font-thin text-black dark:text-white text-xs">{product.finish}</div>
                 </div>
               )}
 
               {product.dimensions && (
-                <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-4">
-                  <div className="w-24 md:w-32 shrink-0 text-gray-400 uppercase tracking-widest text-xs ">Dimension</div>
-                  <div className="flex-1 font-thin text-white text-xs flex flex-col gap-1">
+                <div className="gsap-reveal flex gap-4 border-b border-gray-200 dark:border-white/20 pb-4">
+                  <div className="w-24 md:w-32 shrink-0 text-gray-500 dark:text-gray-400 uppercase tracking-widest text-xs ">Dimension</div>
+                  <div className="flex-1 font-thin text-black dark:text-white text-xs flex flex-col gap-1">
                     {product.dimensions.split('|').map((part, idx) => {
                       const splitIdx = part.indexOf(':');
                       if (splitIdx !== -1) {
@@ -650,15 +650,15 @@ export default function ProductDetailsClient({ product, onClose }) {
               )}
 
               {product.category && (
-                <div className="gsap-reveal flex gap-4 border-b border-white/20 pb-4">
-                  <div className="w-24 md:w-32 shrink-0 text-gray-400 uppercase tracking-widest text-xs ">Category</div>
-                  <div className="flex-1 font-thin text-white text-xs">{product.category}</div>
+                <div className="gsap-reveal flex gap-4 border-b border-gray-200 dark:border-white/20 pb-4">
+                  <div className="w-24 md:w-32 shrink-0 text-gray-500 dark:text-gray-400 uppercase tracking-widest text-xs ">Category</div>
+                  <div className="flex-1 font-thin text-black dark:text-white text-xs">{product.category}</div>
                 </div>
               )}
 
               {(product.material === 'Marble' || product.marbles || product.colors) && (
                 <div className="gsap-reveal flex flex-col gap-4 pb-4">
-                  <div className="w-full md:w-64 shrink-0 text-gray-400 uppercase tracking-widest text-xs ">Recommended Materials</div>
+                  <div className="w-full md:w-64 shrink-0 text-gray-500 dark:text-gray-400 uppercase tracking-widest text-xs ">Recommended Materials</div>
                   <div className="flex-1 flex flex-row flex-wrap gap-x-7 gap-y-10 md:gap-9 pl-6 pt-2">
                     {(product.marbles || product.colors || marbles).map((m, idx) => {
                       const isSelected = selectedMarble === m.name;
@@ -668,10 +668,10 @@ export default function ProductDetailsClient({ product, onClose }) {
                           onClick={() => handleSelectMarble(m.name)}
                           className="relative flex flex-col items-center group cursor-pointer focus:outline-none"
                         >
-                          <div className={`w-10 h-10 relative overflow-hidden rounded-full transition-all duration-300 group-hover:scale-110 ${isSelected ? 'ring-1 ring-white ring-offset-2 ring-offset-black bg-white/20' : 'border border-white/20 bg-white/10'}`}>
+                          <div className={`w-10 h-10 relative overflow-hidden rounded-full transition-all duration-300 group-hover:scale-110 ${isSelected ? 'ring-1 ring-black dark:ring-white ring-offset-2 ring-offset-white dark:ring-offset-black bg-gray-200 dark:bg-white/20' : 'border border-gray-200 dark:border-white/20 bg-gray-100 dark:bg-white/10'}`}>
                              <Image src={m.src || m.swatches?.[0]} alt={m.name} fill className={`object-cover ${m.rotate ? 'rotate-90' : ''}`} />
                           </div>
-                          <span className={`absolute top-12 left-1/2 -translate-x-1/2 text-[9px] uppercase text-center w-[6rem] break-words leading-tight transition-opacity duration-300 z-20 pointer-events-none ${isSelected ? 'text-white opacity-100' : 'text-gray-400 opacity-0 group-hover:opacity-100'}`}>{m.name}</span>
+                          <span className={`absolute top-12 left-1/2 -translate-x-1/2 text-[9px] uppercase text-center w-[6rem] break-words leading-tight transition-opacity duration-300 z-20 pointer-events-none ${isSelected ? 'text-black dark:text-white opacity-100' : 'text-gray-900 dark:text-gray-400 opacity-0 group-hover:opacity-100'} `}>{m.name}</span>
                         </button>
                       );
                     })}
@@ -688,7 +688,7 @@ export default function ProductDetailsClient({ product, onClose }) {
                 <a href={product.pdf} target='_blank' rel='noopener noreferrer' className='w-full md:w-auto'>
                   <HoverBorderGradient
                     containerClassName="mt-0 border-gray-400"
-                    className="bg-black/20 flex items-center justify-center text-[10px] font-medium uppercase tracking-widest text-gray-400 group-hover:text-white transition-colors duration-300 px-6 py-[8px]"
+                    className="bg-black/20 flex items-center justify-center text-[10px] font-medium uppercase tracking-widest text-gray-500 dark:text-gray-400 group-hover:text-black dark:text-white transition-colors duration-300 px-6 py-[8px]"
                     as="button"
                   >
                     <span className="mb-[-2px]">Download Spec Sheet</span>
@@ -699,7 +699,7 @@ export default function ProductDetailsClient({ product, onClose }) {
                 <div onClick={() => removeFromCart(product._id.$oid, selectedMarble)}>
                   <HoverBorderGradient
                     containerClassName="mt-0"
-                    className="bg-red-500/20 flex items-center justify-center text-[10px] font-medium uppercase tracking-widest text-red-500 group-hover:text-white transition-colors duration-300 px-6 py-[8px]"
+                    className="bg-red-500/20 flex items-center justify-center text-[10px] font-medium uppercase tracking-widest text-red-500 group-hover:text-black dark:text-white transition-colors duration-300 px-6 py-[8px]"
                     as="button"
                   >
                     <span className="mb-[-2px]">Remove from Cart</span>
@@ -709,7 +709,7 @@ export default function ProductDetailsClient({ product, onClose }) {
                 <div onClick={() => addToCart(product, selectedMarble)}>
                   <HoverBorderGradient
                     containerClassName="mt-0 border-gray-400"
-                    className="bg-black/20 flex items-center justify-center text-[10px] font-medium uppercase tracking-widest text-gray-400 group-hover:text-white transition-colors duration-300 px-6 py-[8px]"
+                    className="bg-black/20 flex items-center justify-center text-[10px] font-medium uppercase tracking-widest text-gray-500 dark:text-gray-400 group-hover:text-black dark:text-white transition-colors duration-300 px-6 py-[8px]"
                     as="button"
                   >
                     <span className="mb-[-2px]">Add to Cart</span>
@@ -737,11 +737,11 @@ export default function ProductDetailsClient({ product, onClose }) {
             >
               <button
                 onClick={() => setShowModal(false)}
-                className='absolute top-4 right-4 text-gray-400 hover:text-white transition'
+                className='absolute top-4 right-4 text-gray-500 dark:text-gray-400 hover:text-black dark:text-white transition'
               >
                 <X size={20} />
               </button>
-              <h2 className='text-xl font-semibold mb-4 text-white'>Enquire</h2>
+              <h2 className='text-xl font-semibold mb-4 text-black dark:text-white'>Enquire</h2>
               <Form {...form}>
                 <form
                   className='space-y-4'
@@ -773,7 +773,7 @@ export default function ProductDetailsClient({ product, onClose }) {
                         <FormLabel className='text-gray-300'>Name</FormLabel>
                         <FormControl>
                           <Input
-                            className='bg-zinc-900 border-zinc-700 text-white placeholder:text-zinc-500'
+                            className='bg-zinc-900 border-zinc-700 text-black dark:text-white placeholder:text-zinc-500'
                             placeholder='Enter your name'
                             {...field}
                           />
@@ -790,7 +790,7 @@ export default function ProductDetailsClient({ product, onClose }) {
                         <FormLabel className='text-gray-300'>Email</FormLabel>
                         <FormControl>
                           <Input
-                            className='bg-zinc-900 border-zinc-700 text-white placeholder:text-zinc-500'
+                            className='bg-zinc-900 border-zinc-700 text-black dark:text-white placeholder:text-zinc-500'
                             placeholder='Enter your email'
                             type='email'
                             {...field}
@@ -808,7 +808,7 @@ export default function ProductDetailsClient({ product, onClose }) {
                         <FormLabel className='text-gray-300'>Mobile Number</FormLabel>
                         <FormControl>
                           <Input
-                            className='bg-zinc-900 border-zinc-700 text-white placeholder:text-zinc-500'
+                            className='bg-zinc-900 border-zinc-700 text-black dark:text-white placeholder:text-zinc-500'
                             placeholder='Enter your mobile number'
                             type='tel'
                             {...field}
@@ -826,7 +826,7 @@ export default function ProductDetailsClient({ product, onClose }) {
                         <FormLabel className='text-gray-300'>Product Name</FormLabel>
                         <FormControl>
                           <Input
-                            className='bg-zinc-900 border-zinc-700 text-white placeholder:text-zinc-500'
+                            className='bg-zinc-900 border-zinc-700 text-black dark:text-white placeholder:text-zinc-500'
                             placeholder='Please specify the product name'
                             {...field}
                           />
@@ -845,7 +845,7 @@ export default function ProductDetailsClient({ product, onClose }) {
                         <FormControl>
                           <Textarea
                             placeholder='Enter your message'
-                            className='bg-zinc-900 border-zinc-700 text-white placeholder:text-zinc-500 resize-none'
+                            className='bg-zinc-900 border-zinc-700 text-black dark:text-white placeholder:text-zinc-500 resize-none'
                             rows={3}
                             {...field}
                           />
@@ -879,14 +879,14 @@ export default function ProductDetailsClient({ product, onClose }) {
             className="fixed inset-0 z-[100] bg-black/95 flex flex-col justify-between p-4 md:p-8 select-none"
           >
             {/* Top Bar */}
-            <div className="flex items-center justify-between w-full text-white">
+            <div className="flex items-center justify-between w-full text-black dark:text-white">
               <span className="text-xs md:text-sm tracking-widest font-light uppercase">
                 {product.title} <span className="opacity-50">— {currentIndex + 1} / {totalMedia}</span>
               </span>
               <div className="flex items-center gap-2">
                 <button
                   onClick={() => setShowThumbnailGrid(!showThumbnailGrid)}
-                  className="w-10 h-10 rounded-full bg-white/10 hover:bg-white hover:text-black flex items-center justify-center transition-all cursor-pointer border border-white/10"
+                  className="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 hover:bg-white hover:text-black flex items-center justify-center transition-all cursor-pointer border border-white/10"
                   aria-label="Toggle thumbnail grid"
                   title="View all media"
                 >
@@ -894,7 +894,7 @@ export default function ProductDetailsClient({ product, onClose }) {
                 </button>
                 <button
                   onClick={() => setIsFullscreen(false)}
-                  className="w-10 h-10 rounded-full bg-white/10 hover:bg-white hover:text-black flex items-center justify-center transition-all cursor-pointer border border-white/10"
+                  className="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 hover:bg-white hover:text-black flex items-center justify-center transition-all cursor-pointer border border-white/10"
                   aria-label="Close fullscreen view"
                 >
                   <X size={20} />
@@ -935,17 +935,17 @@ export default function ProductDetailsClient({ product, onClose }) {
                 <>
                   <button
                     onClick={() => navigate('prev')}
-                    className="absolute left-2 md:left-8 text-gray-400 hover:text-white transition-all cursor-pointer p-4"
+                    className="absolute left-2 md:left-8 text-gray-500 dark:text-gray-400 hover:text-black dark:text-white transition-all cursor-pointer p-4"
                     aria-label="Previous image"
                   >
-                    <ChevronLeft size={50} className='text-gray-400 hover:text-white' />
+                    <ChevronLeft size={50} className='text-gray-500 dark:text-gray-400 hover:text-black dark:text-white' />
                   </button>
                   <button
                     onClick={() => navigate('next')}
-                    className="absolute right-2 md:right-8 text-gray-400 hover:text-white transition-all cursor-pointer p-4"
+                    className="absolute right-2 md:right-8 text-gray-500 dark:text-gray-400 hover:text-black dark:text-white transition-all cursor-pointer p-4"
                     aria-label="Next image"
                   >
-                    <ChevronRight size={50} className='text-gray-400 hover:text-white' />
+                    <ChevronRight size={50} className='text-gray-500 dark:text-gray-400 hover:text-black dark:text-white' />
                   </button>
                 </>
               )}
@@ -977,7 +977,7 @@ export default function ProductDetailsClient({ product, onClose }) {
                         : 'border-transparent opacity-40 hover:opacity-85'
                         }`}
                     >
-                      <span className="text-[10px] text-white font-medium tracking-wider">VIDEO</span>
+                      <span className="text-[10px] text-black dark:text-white font-medium tracking-wider">VIDEO</span>
                     </button>
                   )}
                 </div>
