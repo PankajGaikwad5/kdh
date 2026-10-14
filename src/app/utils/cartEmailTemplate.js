@@ -1,5 +1,3 @@
-import path from 'path';
-import fs from 'fs';
 import { formatTitle, getCollectionName } from '../../lib/utils.js';
 
 /**
@@ -48,54 +46,34 @@ export function generateCustomerCartEmail({
   });
 
   const attachments = [];
-  const publicDir = path.join(process.cwd(), 'public');
   const baseLiveUrl = 'https://karandesaihome.com';
 
-  // 1. Brand Logo URL & Attachment
+  // 1. Brand Logo URL (referenced directly in HTML)
   const logoUrl = `${baseLiveUrl}/assets/kdhlogo3.png`;
-  const logoPath = path.join(publicDir, 'assets', 'kdhlogo3.png');
-  if (fs.existsSync(logoPath)) {
-    attachments.push({
-      filename: 'kdh-logo.png',
-      path: logoPath,
-    });
-  }
 
-  // 2. Process Cart Item Images (use live HTTPS URLs for template + attach actual files)
+  // 2. Process Cart Item Images (use live HTTPS URLs for template + attach remote files without bundling local disk)
   const processedItems = (cartItems || []).map((item, idx) => {
     let imgSrc = `${baseLiveUrl}/placeholder.png`;
     const rawImage = item.image || '';
-    let localFilePath = null;
 
     if (rawImage.startsWith('http://') || rawImage.startsWith('https://')) {
       imgSrc = rawImage;
-      // Attach remote image via URL
-      attachments.push({
-        filename: `${(formatTitle(item.title) || 'Product').replace(/[^a-zA-Z0-9_-]/g, '_')}-${idx + 1}.jpg`,
-        path: rawImage,
-      });
     } else if (rawImage) {
       const cleanRel = rawImage.replace(/^\/+/, '').split('?')[0];
       imgSrc = `${baseLiveUrl}/${cleanRel}`;
-      const candidatePath = path.join(publicDir, cleanRel);
-
-      if (fs.existsSync(candidatePath)) {
-        localFilePath = candidatePath;
-        const ext = path.extname(candidatePath) || '.webp';
-        attachments.push({
-          filename: `${(formatTitle(item.title) || 'Product').replace(/[^a-zA-Z0-9_-]/g, '_')}-${idx + 1}${ext}`,
-          path: localFilePath,
-        });
-      } else {
-        attachments.push({
-          filename: `${(formatTitle(item.title) || 'Product').replace(/[^a-zA-Z0-9_-]/g, '_')}-${idx + 1}.jpg`,
-          path: imgSrc,
-        });
-      }
     }
 
     const titleFormatted = formatTitle(item.title) || item.title || 'Luxury Product';
     const collection = item.collectionName || getCollectionName(item) || '';
+
+    // Nodemailer streams attachments directly from remote HTTPS URLs at runtime without bundling local files
+    if (imgSrc && !imgSrc.includes('placeholder.png')) {
+      const ext = imgSrc.split('.').pop().split(/[?#]/)[0] || 'jpg';
+      attachments.push({
+        filename: `${(titleFormatted || 'Product').replace(/[^a-zA-Z0-9_-]/g, '_')}-${idx + 1}.${ext}`,
+        path: imgSrc,
+      });
+    }
 
     return {
       title: titleFormatted,
