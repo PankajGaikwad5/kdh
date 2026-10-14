@@ -688,7 +688,7 @@ export default function ProductDetailsClient({ product, onClose }) {
                 <a href={product.pdf} target='_blank' rel='noopener noreferrer' className='w-full md:w-auto'>
                   <HoverBorderGradient
                     containerClassName="mt-0 border-gray-400"
-                    className="bg-black/20 flex items-center justify-center text-[10px] font-medium uppercase tracking-widest text-gray-500 dark:text-gray-400 group-hover:text-black dark:text-white transition-colors duration-300 px-6 py-[8px]"
+                    className="bg-black/20 flex items-center justify-center text-[10px] font-medium uppercase tracking-widest text-zinc-800 hover:text-black dark:text-zinc-200 dark:hover:text-white transition-colors duration-300 px-6 py-[8px]"
                     as="button"
                   >
                     <span className="mb-[-2px]">Download Spec Sheet</span>
@@ -699,7 +699,7 @@ export default function ProductDetailsClient({ product, onClose }) {
                 <div onClick={() => removeFromCart(product._id.$oid, selectedMarble)}>
                   <HoverBorderGradient
                     containerClassName="mt-0"
-                    className="bg-red-500/20 flex items-center justify-center text-[10px] font-medium uppercase tracking-widest text-red-500 group-hover:text-black dark:text-white transition-colors duration-300 px-6 py-[8px]"
+                    className="bg-red-500/20 flex items-center justify-center text-[10px] font-medium uppercase tracking-widest text-red-600 hover:text-red-700 dark:text-red-400 dark:hover:text-red-300 transition-colors duration-300 px-6 py-[8px]"
                     as="button"
                   >
                     <span className="mb-[-2px]">Remove from Cart</span>
@@ -709,7 +709,7 @@ export default function ProductDetailsClient({ product, onClose }) {
                 <div onClick={() => addToCart(product, selectedMarble)}>
                   <HoverBorderGradient
                     containerClassName="mt-0 border-gray-400"
-                    className="bg-black/20 flex items-center justify-center text-[10px] font-medium uppercase tracking-widest text-gray-500 dark:text-gray-400 group-hover:text-black dark:text-white transition-colors duration-300 px-6 py-[8px]"
+                    className="bg-black/20 flex items-center justify-center text-[10px] font-medium uppercase tracking-widest text-zinc-800 hover:text-black dark:text-zinc-200 dark:hover:text-white transition-colors duration-300 px-6 py-[8px]"
                     as="button"
                   >
                     <span className="mb-[-2px]">Add to Cart</span>

@@ -7,6 +7,10 @@ import {
   validateMessage,
   checkRateLimit,
 } from '../../utils/spamDetection';
+import {
+  generateCustomerCartEmail,
+  generateAdminCartEmail,
+} from '../../utils/cartEmailTemplate';
 
 // Force Node to prefer IPv4 over IPv6 to resolve DNS lookup failures on Windows (getaddrinfo ENOTFOUND / ETIMEDOUT smtp.gmail.com)
 try {
@@ -17,7 +21,25 @@ try {
 
 export async function POST(req) {
   const { values, honeypot, timestamp } = await req.json();
-  const { name, email, message, subject, product, number, location: clientLocation } = values || {};
+  const {
+    name,
+    email,
+    message,
+    subject,
+    product,
+    number,
+    location: clientLocation,
+    isCart,
+    source,
+    cartItems,
+  } = values || {};
+
+  // Check if this inquiry originates specifically from the Cart
+  const isCartSubmission = Boolean(
+    isCart === true ||
+    source === 'cart' ||
+    (Array.isArray(cartItems) && cartItems.length > 0)
+  );
 
   // 1. Honeypot check - if filled, it's a bot
   if (honeypot) {
@@ -84,9 +106,9 @@ export async function POST(req) {
     }
   }
 
-  // Sanitize environment variables by stripping quotes
+  // Sanitize environment variables by stripping quotes and extra whitespace
   const emailUser = (process.env.EMAIL || '').replace(/['"]/g, '').trim();
-  const emailPass = (process.env.PASS || '').replace(/['"]/g, '').trim();
+  const emailPass = (process.env.PASS || '').replace(/['"]/g, '').replace(/\s+/g, '').trim();
   const recipient1 = (process.env.REMAIL || '').replace(/['"]/g, '').trim();
   const recipient2 = (process.env.SECONDEMAIL || '').replace(/['"]/g, '').trim();
 
@@ -129,21 +151,81 @@ export async function POST(req) {
     }
   }
 
-  // Set up email options
-  const mailOptions = {
-    from: `Karan Desai Home <${emailUser}>`,
-    to: recipients || emailUser,
-    replyTo: email,
-    subject: subject || 'Cart Inquiry',
-    text: `Name: ${name}\nEmail: ${email}\nContact No.: ${number}\nMessage: ${message || ''}\n${
-      product ? `Product(s): ${product}` : ''
-    }${locationText}`,
-  };
+  const referenceId = `KDH-${Math.floor(100000 + Math.random() * 900000)}`;
 
   try {
-    await transporter.sendMail(mailOptions);
+    if (isCartSubmission) {
+      // 1. Send Admin Notification for Cart Enquiry
+      const adminEmailData = generateAdminCartEmail({
+        name,
+        email,
+        number,
+        message,
+        product,
+        cartItems,
+        locationText,
+        referenceId,
+      });
+
+      const adminMailOptions = {
+        from: `Karan Desai Home <${emailUser}>`,
+        to: recipients || emailUser,
+        replyTo: email,
+        subject: subject || `Luxury Cart Enquiry [${referenceId}] - ${name}`,
+        text: adminEmailData.text,
+        html: adminEmailData.html,
+      };
+
+      await transporter.sendMail(adminMailOptions);
+
+      // 2. Send Automated Confirmation Email to Customer (ONLY for cart enquiry)
+      const customerEmail = (email || '').trim();
+      if (customerEmail) {
+        try {
+          const customerEmailData = generateCustomerCartEmail({
+            name,
+            email: customerEmail,
+            number,
+            message,
+            cartItems,
+            referenceId,
+          });
+
+          const customerMailOptions = {
+            from: `Karan Desai Home <${emailUser}>`,
+            to: customerEmail,
+            replyTo: 'info@karandesai.in',
+            subject: customerEmailData.subject,
+            text: customerEmailData.text,
+            html: customerEmailData.html,
+            attachments: customerEmailData.attachments,
+          };
+
+          await transporter.sendMail(customerMailOptions);
+          console.log(`[CART ENQUIRY] Automated confirmation email successfully sent to customer: ${customerEmail}`);
+        } catch (customerMailError) {
+          console.error('[CART ENQUIRY] Error sending customer confirmation email to', customerEmail, ':', customerMailError);
+          // Admin received the email, so we do not fail the submission
+        }
+      }
+    } else {
+      // Standard Non-Cart Form (e.g. Contact Us page):
+      // Send ONLY to admin, do NOT send customer confirmation email
+      const mailOptions = {
+        from: `Karan Desai Home <${emailUser}>`,
+        to: recipients || emailUser,
+        replyTo: email,
+        subject: subject || 'General Inquiry',
+        text: `Name: ${name}\nEmail: ${email}\nContact No.: ${number || ''}\nMessage: ${message || ''}\n${
+          product ? `Product(s): ${product}` : ''
+        }${locationText}`,
+      };
+
+      await transporter.sendMail(mailOptions);
+    }
+
     return NextResponse.json(
-      { msg: 'Email sent successfully!' },
+      { msg: 'Enquiry submitted successfully!', referenceId },
       { status: 200 },
     );
   } catch (error) {
@@ -152,14 +234,16 @@ export async function POST(req) {
     // Fallback for development mode when SMTP is unreachable or fails
     if (process.env.NODE_ENV === 'development') {
       console.log('[DEV FALLBACK] Enquiry received:', {
+        isCartSubmission,
         name,
         email,
         number,
         product,
         message,
+        cartItemsCount: cartItems?.length,
       });
       return NextResponse.json(
-        { msg: 'Enquiry submitted successfully! (Development Mode)' },
+        { msg: 'Enquiry submitted successfully! (Development Mode)', referenceId },
         { status: 200 },
       );
     }

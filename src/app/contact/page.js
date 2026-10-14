@@ -8,6 +8,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { Button } from '../components/ui/button';
 import { FaWhatsapp, FaPhone } from 'react-icons/fa';
+import { Loader2, CheckCircle2 } from 'lucide-react';
 import {
   Form,
   FormControl,
@@ -46,6 +47,9 @@ const page = () => {
   // Track when form was loaded (for spam detection)
   const [formLoadTime, setFormLoadTime] = useState(null);
   const [honeypot, setHoneypot] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [sentSuccess, setSentSuccess] = useState(false);
+  const [sendStage, setSendStage] = useState(0);
   const pageRef = useRef(null);
   const headingRef = useRef(null);
   const formRef = useRef(null);
@@ -115,8 +119,13 @@ const page = () => {
   });
 
   async function onSubmit(values) {
-    // Do something with the form values.
-    // console.log(values);
+    setLoading(true);
+    setSentSuccess(false);
+    setSendStage(1);
+
+    const timer1 = setTimeout(() => setSendStage(2), 400);
+    const timer2 = setTimeout(() => setSendStage(3), 1100);
+
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -130,15 +139,28 @@ const page = () => {
         }),
       });
 
+      clearTimeout(timer1);
+      clearTimeout(timer2);
+
       if (response.ok) {
-        alert('Message sent successfully!');
-        // Refresh the page
-        window.location.reload();
+        setSendStage(4);
+        setSentSuccess(true);
+        form.reset();
+        setTimeout(() => {
+          setSentSuccess(false);
+          setSendStage(0);
+        }, 5000);
       } else {
-        alert('Failed to send the message. Please try again.');
+        const errorData = await response.json();
+        alert(errorData.error || 'Failed to send the message. Please try again.');
       }
     } catch (error) {
+      clearTimeout(timer1);
+      clearTimeout(timer2);
       console.log(error);
+      alert('An error occurred. Please try again.');
+    } finally {
+      setLoading(false);
     }
   }
   return (
@@ -279,12 +301,94 @@ const page = () => {
                         Terms & Conditions
                       </Link>.
                     </div>
-                    <Button
-                      type='submit'
-                      className={`uppercase transition-all duration-500 ease-in-out border rounded-none px-5 tracking-normal font-medium mt-2 ${isLight ? 'bg-black text-white border-black hover:bg-gray-800' : 'bg-white text-gray-900 border-zinc-600 hover:bg-black hover:text-white'}`}
-                    >
-                      Submit
-                    </Button>
+                      {/* Visual Progress indicator when sending */}
+                      {loading && (
+                        <div className={`p-4 rounded border text-xs flex flex-col gap-3 transition-all duration-300 shadow-md ${
+                          isLight 
+                            ? 'bg-zinc-100 border-zinc-300 text-zinc-900' 
+                            : 'bg-zinc-900 border-zinc-700 text-zinc-100'
+                        }`}>
+                          <div className='flex items-center justify-between'>
+                            <div className='flex items-center gap-2.5 font-medium'>
+                              <Loader2 className={`w-4 h-4 animate-spin ${isLight ? 'text-black' : 'text-white'}`} />
+                              <span className='font-semibold tracking-wide'>
+                                {sendStage === 1 && 'Submitting your message...'}
+                                {sendStage === 2 && 'Processing message details...'}
+                                {sendStage >= 3 && 'Finalizing submission...'}
+                              </span>
+                            </div>
+                            <span className={`text-[10px] tracking-wider uppercase font-mono font-semibold ${isLight ? 'text-zinc-600' : 'text-zinc-400'}`}>
+                              {sendStage === 1 && '30%'}
+                              {sendStage === 2 && '65%'}
+                              {sendStage >= 3 && '85%'}
+                            </span>
+                          </div>
+                          <div className={`w-full h-2 rounded-full overflow-hidden ${isLight ? 'bg-zinc-200' : 'bg-zinc-800'}`}>
+                            <div
+                              className={`h-full rounded-full transition-all duration-500 ease-out ${isLight ? 'bg-black' : 'bg-white'}`}
+                              style={{
+                                width: sendStage === 1 ? '30%' : sendStage === 2 ? '65%' : '85%',
+                              }}
+                            />
+                          </div>
+                          <p className={`text-[11px] font-light leading-tight ${isLight ? 'text-zinc-600' : 'text-zinc-400'}`}>
+                            Please wait while your message is being submitted...
+                          </p>
+                        </div>
+                      )}
+
+                      {/* Visual Success notification */}
+                      {sentSuccess && (
+                        <div className='p-4 rounded border text-xs flex flex-col gap-2.5 bg-emerald-950/40 border-emerald-600 text-emerald-200 transition-all duration-300 shadow-md'>
+                          <div className='flex items-center justify-between'>
+                            <div className='flex items-center gap-2'>
+                              <CheckCircle2 className='w-4 h-4 text-emerald-400 shrink-0' />
+                              <span className='font-semibold text-emerald-100 text-sm'>Message Sent Successfully!</span>
+                            </div>
+                            <span className='text-[10px] font-mono uppercase text-emerald-400 font-bold'>100% Complete</span>
+                          </div>
+                          <div className='w-full h-1.5 rounded-full overflow-hidden bg-emerald-950'>
+                            <div className='h-full rounded-full bg-emerald-400 w-full transition-all duration-300' />
+                          </div>
+                          <p className='text-emerald-300/90 text-xs mt-0.5 leading-normal'>
+                            We have received your message and our team will get back to you soon. Thank you for contacting us.
+                          </p>
+                        </div>
+                      )}
+
+                      <Button
+                        type='submit'
+                        disabled={loading || sentSuccess}
+                        className={`uppercase transition-all duration-300 ease-in-out border rounded-none px-5 tracking-normal font-medium mt-2 w-full h-12 flex items-center justify-center gap-2 cursor-pointer shadow-sm ${
+                          isLight
+                            ? 'bg-black text-white border-black hover:bg-zinc-800 hover:!text-white disabled:bg-zinc-900 disabled:opacity-90 disabled:text-white'
+                            : 'bg-white text-black border-zinc-600 hover:bg-black hover:!text-white disabled:bg-zinc-200 disabled:opacity-80 disabled:text-black'
+                        }`}
+                        style={{ color: isLight ? '#ffffff' : undefined }}
+                      >
+                        {loading ? (
+                          <div className='flex items-center justify-center gap-2.5 text-white'>
+                            <Loader2 className='w-4 h-4 animate-spin text-white' />
+                            <span className='tracking-wider font-semibold text-xs text-white' style={{ color: '#ffffff' }}>
+                              Sending Message ({sendStage === 1 ? '30%' : sendStage === 2 ? '65%' : '85%'})
+                            </span>
+                          </div>
+                        ) : sentSuccess ? (
+                          <div className='flex items-center justify-center gap-2 text-emerald-400'>
+                            <CheckCircle2 className='w-4 h-4 text-emerald-400' />
+                            <span className='tracking-wider font-semibold text-xs text-emerald-400'>
+                              Message Sent!
+                            </span>
+                          </div>
+                        ) : (
+                          <span 
+                            className={`tracking-wider font-medium text-xs ${isLight ? 'text-white' : 'text-black group-hover:text-white'}`}
+                            style={{ color: isLight ? '#ffffff' : undefined }}
+                          >
+                            Submit
+                          </span>
+                        )}
+                      </Button>
                   </form>
                 </Form>
               </div>
