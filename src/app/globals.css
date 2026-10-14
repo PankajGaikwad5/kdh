@@ -309,44 +309,16 @@ body {
   background-color: #ffffff !important;
   color: #000000 !important;
 }
-
-/* Invert text-white ONLY for regular text elements, NEVER for buttons or interactive badges */
-.light .text-white:not(button):not(button *):not([type="submit"]):not([type="submit"] *):not([type="button"]):not([type="button"] *):not([role="button"]):not([role="button"] *):not(.btn):not([class*="rounded-none"]):not([class*="rounded-full"]):not([class*="px-"]):not(.text-always-white) {
+.light .text-white {
   color: #000000 !important;
 }
-
-/* Background overrides for general containers */
-.light .bg-black:not(button):not([type="submit"]):not([type="button"]):not([role="button"]):not(a[class*="bg-black"]),
-.light .bg-black\/90, 
-.light .bg-black\/80 {
+.light .bg-black, .light .bg-black\/90, .light .bg-black\/80 {
   background-color: #f8f9fa !important;
 }
-
-/* Buttons with dark backgrounds in light theme must retain black bg and white text */
-.light button.bg-black,
-.light [type="submit"].bg-black,
-.light a.bg-black,
-.light button[class*="bg-black"],
-.light [type="submit"][class*="bg-black"],
-.light a[class*="bg-black"] {
-  background-color: #000000 !important;
-  color: #ffffff !important;
-}
-
-.light button.bg-black *,
-.light [type="submit"].bg-black *,
-.light a.bg-black *,
-.light button[class*="bg-black"] *,
-.light [type="submit"][class*="bg-black"] *,
-.light a[class*="bg-black"] * {
-  color: #ffffff !important;
-}
-
 .light .bg-\[\#232424\] {
   background-color: #e5e7eb !important;
 }
-.light .bg-zinc-950:not(button):not([type="submit"]),
-.light .bg-zinc-900:not(button):not([type="submit"]) {
+.light .bg-zinc-950, .light .bg-zinc-900 {
   background-color: #f3f4f6 !important;
 }
 .light .border-white\/10, .light .border-white\/20, .light .border-white\/40, .light .border-zinc-800, .light .border-zinc-700 {
@@ -359,53 +331,26 @@ body {
   color: #4b5563 !important;
 }
 
-/* Plain inline links hover to black, but NEVER buttons */
-.light a:not([class*="rounded"]):not([class*="px-"]):not(.btn).hover\:text-white:hover {
+/* In light theme, links hover to black ONLY if they do NOT have a dark hover background */
+.light .hover\:text-white:not([class*="hover:bg-"]):not([class*="bg-black"]):hover {
   color: #000000 !important;
 }
+.light .hover\:bg-white:hover {
+  background-color: #000000 !important;
+}
 
-/* Buttons and dark elements when hovered MUST have white text and NEVER go black on black */
-.light button[class*="hover:bg-black"]:hover,
-.light button[class*="hover:bg-zinc"]:hover,
-.light button[class*="hover:bg-gray-800"]:hover,
-.light button[class*="hover:bg-gray-900"]:hover,
-.light [type="submit"][class*="hover:bg-black"]:hover,
-.light [type="submit"][class*="hover:bg-zinc"]:hover,
-.light [type="submit"][class*="hover:bg-gray-800"]:hover,
-.light [type="submit"][class*="hover:bg-gray-900"]:hover,
-.light a[class*="hover:bg-black"]:hover,
-.light a[class*="hover:bg-zinc"]:hover,
-.light a[class*="hover:bg-gray-800"]:hover,
-.light a[class*="hover:bg-gray-900"]:hover,
-.light [role="button"][class*="hover:bg-black"]:hover,
-.light [role="button"][class*="hover:bg-zinc"]:hover,
+/* When buttons/elements intentionally hover to black or dark zinc, keep text white on hover */
 .light .hover\:bg-black:hover,
 .light .hover\:bg-zinc-800:hover,
 .light .hover\:bg-zinc-900:hover,
-.light .hover\:bg-gray-800:hover,
-.light .hover\:bg-gray-900:hover {
+.light button[class*="hover:bg-black"]:hover,
+.light button[class*="hover:bg-zinc"]:hover {
   color: #ffffff !important;
 }
 
-.light button[class*="hover:bg-black"]:hover *,
-.light button[class*="hover:bg-zinc"]:hover *,
-.light button[class*="hover:bg-gray-800"]:hover *,
-.light button[class*="hover:bg-gray-900"]:hover *,
-.light [type="submit"][class*="hover:bg-black"]:hover *,
-.light [type="submit"][class*="hover:bg-zinc"]:hover *,
-.light [type="submit"][class*="hover:bg-gray-800"]:hover *,
-.light [type="submit"][class*="hover:bg-gray-900"]:hover *,
-.light a[class*="hover:bg-black"]:hover *,
-.light a[class*="hover:bg-zinc"]:hover *,
-.light a[class*="hover:bg-gray-800"]:hover *,
-.light a[class*="hover:bg-gray-900"]:hover *,
-.light [role="button"][class*="hover:bg-black"]:hover *,
-.light [role="button"][class*="hover:bg-zinc"]:hover *,
-.light .hover\:bg-black:hover *,
-.light .hover\:bg-zinc-800:hover *,
-.light .hover\:bg-zinc-900:hover *,
-.light .hover\:bg-gray-800:hover *,
-.light .hover\:bg-gray-900:hover * {
+/* Form submission buttons with solid black background in light theme */
+.light form button[type="submit"].bg-black,
+.light form button[type="submit"].bg-black * {
   color: #ffffff !important;
 }
 
