@@ -22,8 +22,8 @@ import { Input } from '../../components/ui/input';
 import { Textarea } from '../../components/ui/textarea';
 import ThumbnailGrid from '@/app/components/ThumbnailGrid';
 import Navbar from '@/app/components/Navbar';
-import { useCart } from '@/app/context/CartContext';
 import { getCollectionName, formatTitle } from '@/lib/utils';
+import { HoverBorderGradient } from '@/components/ui/hover-border-gradient';
 import { formatProductDescription } from '@/app/utils/formatDescription';
 
 const AccordionMarbles = dynamic(
@@ -61,26 +61,25 @@ const normalizeKey = (str) => {
 // ThumbnailGrid Component (keeping original external component structure)
 // This should be in a separate ThumbnailGrid.tsx file
 
-export default function MandirDetailsClient({ product }) {
+export default function MandirDetailsClient({ product, onClose }) {
   const router = useRouter();
-  const { addToCart, removeFromCart, isInCart } = useCart();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showModal, setShowModal] = useState(false);
-  const [imageLoaded, setImageLoaded] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(true);
   const [loadedImages, setLoadedImages] = useState(new Set());
   const [showThumbnailGrid, setShowThumbnailGrid] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
   const thumbRefs = useRef([]);
   const [selectedMarble, setSelectedMarble] = useState(() => {
-    if (product?.location !== 'Marble' && !product?.colorImages && !product?.colors && !product?.marbles) return null;
+    if (product?.material !== 'Marble' && !product?.colorImages && !product?.colors && !product?.marbles) return null;
     // If the product explicitly sets defaultMarble (even to null), use that value
-    // This allows products whose base isn't Banswara to start unselected (null â†’ shows product.images)
+    // This allows products whose base isn't Banswara to start unselected (null → shows product.images)
     return 'defaultMarble' in (product || {}) 
       ? product.defaultMarble 
       : (product?.marbles && product.marbles.length > 0)
         ? product.marbles[0].name
-        : (product?.location === 'Marble' ? 'Banswara' : null);
+        : (product?.material === 'Marble' ? 'Banswara' : null);
   });
 
   const collectionName = useMemo(() => getCollectionName(product), [product]);
@@ -151,35 +150,67 @@ export default function MandirDetailsClient({ product }) {
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
+      const isDesktop = window.innerWidth >= 768;
+
       // Subtle fade in for the page
       tl.fromTo(
         pageRef.current,
         { opacity: 0 },
-        { opacity: 1, duration: 1.2 },
+        { opacity: 1, duration: 0.6 },
         0
       );
 
-      // Very subtle fade and scale for the image
-      tl.fromTo(
-        imageRef.current,
-        { opacity: 0, scale: 0.98 },
-        { opacity: 1, scale: 1, duration: 1.4 },
-        0
-      );
-
-      // Elegant top-to-bottom reveal for text
-      const textEls = detailsRef.current?.querySelectorAll('.gsap-reveal');
-      if (textEls?.length) {
+      if (isDesktop) {
+        // Image just subtly scales since the container opacity handles the fade
         tl.fromTo(
-          textEls,
-          { clipPath: 'inset(0% 0% 100% 0%)' },
-          {
-            clipPath: 'inset(0% 0% 0% 0%)',
-            duration: 1.4,
-            stagger: 0,
-          },
+          imageRef.current,
+          { scale: 0.98 },
+          { scale: 1, duration: 0.6, ease: 'power3.inOut' },
           0
         );
+
+        // Elegant top-to-bottom reveal for text
+        const textEls = detailsRef.current?.querySelectorAll('.gsap-reveal');
+        if (textEls?.length) {
+          tl.fromTo(
+            textEls,
+            { clipPath: 'inset(0% 0% 100% 0%)', opacity: 0, x: 20 },
+            {
+              clipPath: 'inset(0% 0% 0% 0%)',
+              opacity: 1,
+              x: 0,
+              duration: 0.8,
+              stagger: 0.05,
+              ease: 'power3.out'
+            },
+            0.3
+          );
+        }
+      } else {
+        // Very subtle scale for the image on mobile (container handles opacity)
+        tl.fromTo(
+          imageRef.current,
+          { scale: 0.98 },
+          { scale: 1, duration: 0.8 },
+          0
+        );
+
+        // Elegant top-to-bottom reveal for text
+        const textEls = detailsRef.current?.querySelectorAll('.gsap-reveal');
+        if (textEls?.length) {
+          tl.fromTo(
+            textEls,
+            { clipPath: 'inset(0% 0% 100% 0%)', opacity: 0 },
+            {
+              clipPath: 'inset(0% 0% 0% 0%)',
+              opacity: 1,
+              duration: 0.8,
+              stagger: 0.05,
+              ease: 'power3.out'
+            },
+            0.1
+          );
+        }
       }
     });
 
@@ -227,7 +258,7 @@ export default function MandirDetailsClient({ product }) {
         }
       })
       .catch(() => {
-        // Silently fail â€“ location is optional
+        // Silently fail – location is optional
       });
     return () => controller.abort();
   }, []);
@@ -314,11 +345,15 @@ export default function MandirDetailsClient({ product }) {
       ? product.defaultMarble 
       : (product?.marbles && product.marbles.length > 0)
         ? product.marbles[0].name
-        : (product?.location === 'Marble' ? 'Banswara' : null);
-    setSelectedMarble((prev) => (prev === marbleName ? productDefault : marbleName));
-    setCurrentIndex(0);
-    setImageLoaded(false);
-  }, [product]);
+        : (product?.material === 'Marble' ? 'Banswara' : null);
+        
+    const nextMarble = selectedMarble === marbleName ? productDefault : marbleName;
+    if (selectedMarble !== nextMarble) {
+      setSelectedMarble(nextMarble);
+      setCurrentIndex(0);
+      setImageLoaded(false);
+    }
+  }, [product, selectedMarble]);
 
   const handleImageSelect = useCallback(
     (index) => {
@@ -418,349 +453,265 @@ export default function MandirDetailsClient({ product }) {
   return (
     <main
       ref={pageRef}
-      style={{ opacity: 0 }}
-      className='min-h-screen bg-black text-white'
+      style={{ opacity: 0, fontFamily: '"Poppins", sans-serif' }}
+      className='min-h-screen bg-white dark:bg-black text-black dark:text-white'
     >
       <Navbar home={true} />
       <header className='fixed top-3 right-2 flex justify-end p-4 z-30'>
         <button
-          onClick={() => router.back()}
-          className='text-white hover:text-gray-300'
+          onClick={() => (onClose ? onClose() : router.back())}
+          className='text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300'
         >
           <X size={30} />
         </button>
       </header>
 
-      <div className='grid md:grid-cols-2 items-start pt-14'>
+      <div className='grid md:grid-cols-[45%_55%] xl:grid-cols-[40%_60%] items-start pt-16'>
         <section
           ref={imageRef}
-          className="relative p-4 flex items-center justify-center mt-4 w-full"
+          className="relative flex flex-col items-center justify-start w-full md:h-[calc(100vh-6rem)]"
         >
           {(activeImages?.length > 0 || product.video) && (
-            <div
-              className="relative w-full h-[80vh] rounded-lg overflow-hidden group/slider  border-white/5 bg-black/20"
-            >
-              {!imageLoaded && (
-                <div className='absolute inset-0 flex items-center justify-center z-10'>
-                  <div className='animate-spin rounded-full h-8 w-8 border-b-2 border-white' />
-                  <p className='text-sm text-gray-400 ml-4'>Loading...</p>
-                </div>
-              )}
-
+            <div className="w-full px-4 md:px-8 xl:px-12 py-4 lg:py-2 flex flex-col justify-between h-[55vh] md:h-full gap-4">
+              <div className="flex justify-end gap-2 w-full">
+                <button
+                  onClick={() => setShowThumbnailGrid(!showThumbnailGrid)}
+                  className='text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-white/10 rounded-full p-1.5 w-8 h-8 flex items-center justify-center hover:bg-white hover:text-black transition-all z-20'
+                  title='View all media'
+                >
+                  <Grid3X3 size={16} />
+                </button>
+                <button
+                  onClick={toggleFullscreen}
+                  className='text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-white/10 rounded-full p-1.5 w-8 h-8 flex items-center justify-center hover:bg-white hover:text-black transition-all z-20'
+                  title="View Fullscreen"
+                >
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='16'
+                    height='16'
+                    viewBox='0 0 24 24'
+                    fill='none'
+                    stroke='currentColor'
+                    strokeWidth='2'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                  >
+                    <path d='M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3' />
+                  </svg>
+                </button>
+              </div>
               <div
-                className='relative w-full h-full select-none flex items-center justify-center'
-                style={{
-                  opacity: imageLoaded ? 1 : 0,
-                  transition: 'opacity 0.2s ease',
-                }}
+                className="relative flex-1 flex items-center justify-center w-full group/slider rounded-lg overflow-hidden bg-transparent min-h-0"
               >
-                <AnimatePresence>
-                  {isVideoSlide && product.video ? (
-                    <motion.video
-                      key="video"
-                      initial={{ opacity: 0, scale: 0.98 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      exit={{ opacity: 0, scale: 0.98 }}
-                      transition={{ duration: 0.3, ease: [0.76, 0, 0.24, 1] }}
-                      src={product.video}
-                      className='absolute inset-0 w-full h-full object-contain'
-                      controls
-                      autoPlay
-                      onLoadedData={() => setImageLoaded(true)}
-                    />
-                  ) : (
-                    activeImages[currentIndex] && (
-                      <motion.div
-                        key={currentIndex}
+                {!imageLoaded && (
+                  <div className='absolute inset-0 flex items-center justify-center z-10'>
+                    <div className='animate-spin rounded-full h-8 w-8 border-b-2 border-white' />
+                  </div>
+                )}
+
+                <div
+                  className='relative w-full h-full flex items-center justify-center select-none'
+                  style={{
+                    opacity: imageLoaded ? 1 : 0,
+                    transition: 'opacity 0.2s ease',
+                  }}
+                >
+                  <AnimatePresence mode="wait">
+                    {isVideoSlide && product.video ? (
+                      <motion.video
+                        key="video"
                         initial={{ opacity: 0, scale: 0.98 }}
                         animate={{ opacity: 1, scale: 1 }}
                         exit={{ opacity: 0, scale: 0.98 }}
-                        transition={{ duration: 0.3, ease: [0.76, 0, 0.24, 1] }}
-                        className="absolute inset-0 w-full h-full"
-                      >
-                        <Image
-                          onClick={toggleFullscreen}
-                          src={activeImages[currentIndex].filePath}
-                          alt={product.title}
-                          fill
-                          className='object-contain cursor-pointer'
-                          sizes='(max-width: 768px) 100vw, 50vw'
-                          priority={currentIndex === 0}
-                          unoptimized={true}
-                          onLoad={() => setImageLoaded(true)}
-                        />
-                      </motion.div>
-                    )
-                  )}
-                </AnimatePresence>
+                        transition={{ duration: 0.2 }}
+                        src={product.video}
+                        className='max-w-full max-h-full object-contain'
+                        controls
+                        autoPlay
+                        onLoadedData={() => setImageLoaded(true)}
+                      />
+                    ) : (
+                      activeImages[currentIndex] && (
+                        <motion.div
+                          key={currentIndex}
+                          initial={{ opacity: 0, scale: 0.98 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          exit={{ opacity: 0, scale: 0.98 }}
+                          transition={{ duration: 0.2 }}
+                          className="relative flex items-center justify-center w-full h-full"
+                        >
+                          <img
+                            onClick={toggleFullscreen}
+                            src={activeImages[currentIndex].filePath}
+                            alt={product.title}
+                            className='max-w-full max-h-full object-contain cursor-pointer'
+                            onLoad={() => setImageLoaded(true)}
+                          />
+                        </motion.div>
+                      )
+                    )}
+                  </AnimatePresence>
+                </div>
               </div>
 
-              {/* Fullscreen Button */}
-              <button
-                onClick={toggleFullscreen}
-                className='absolute top-4 right-4 text-white bg-black/60 rounded-full p-2 hover:bg-white hover:text-black transition-all z-20'
-                title="View Fullscreen"
-              >
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  width='20'
-                  height='20'
-                  viewBox='0 0 24 24'
-                  fill='none'
-                  stroke='currentColor'
-                  strokeWidth='2'
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                >
-                  <path d='M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3' />
-                </svg>
-              </button>
-
-              {/* Grid Toggle Button */}
-              <button
-                onClick={() => setShowThumbnailGrid(!showThumbnailGrid)}
-                className='absolute top-4 right-16 text-white bg-black/60 rounded-full p-2 hover:bg-white hover:text-black transition-all z-20'
-                title='View all media'
-              >
-                <Grid3X3 size={20} />
-              </button>
-
               {totalMedia > 1 && (
-                <>
+                <div className='flex items-center justify-center gap-8 z-20 h-16'>
                   <button
                     onClick={() => navigate('prev')}
                     disabled={!imageLoaded}
-                    className='absolute left-4 top-1/2 -translate-y-1/2 text-white bg-black/60 rounded-full p-3 hover:bg-white hover:text-black transition-all disabled:opacity-50 z-20'
+                    className='text-gray-500 dark:text-gray-400 hover:text-black dark:text-white transition-all disabled:opacity-50 z-20 px-2'
                   >
-                    <ChevronLeft size={24} />
+                    <span className='text-3xl font-light'>‹</span>
                   </button>
+                  <div className='text-sm text-gray-500 dark:text-gray-400 font-medium tracking-widest '>
+                    {currentIndex + 1} / {totalMedia}
+                  </div>
                   <button
                     onClick={() => navigate('next')}
                     disabled={!imageLoaded}
-                    className='absolute right-4 top-1/2 -translate-y-1/2 text-white bg-black/60 rounded-full p-3 hover:bg-white hover:text-black transition-all disabled:opacity-50 z-20'
+                    className='text-gray-500 dark:text-gray-400 hover:text-black dark:text-white transition-all disabled:opacity-50 z-20 px-2'
                   >
-                    <ChevronRight size={24} />
+                    <span className='text-3xl font-light'>›</span>
                   </button>
-                  <div className='absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/60 rounded-full px-3 py-1 text-sm z-20'>
-                    {currentIndex + 1} / {totalMedia}
-                  </div>
-                </>
+                </div>
               )}
             </div>
           )}
         </section>
 
-        <section
+                <section
           ref={detailsRef}
-          className='p-4 md:p-10 flex flex-col 2xl:mt-20 justify-between bg-black z-10'
+          className='p-4 md:px-6 lg:px-10 lg:py-2 flex flex-col justify-between h-auto md:h-[calc(100vh-6rem)] bg-white dark:bg-black z-10'
         >
-          <div>
+          <style dangerouslySetInnerHTML={{ __html: "@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;650&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');" }} />
+          <div className='flex flex-col overflow-y-auto flex-1 min-h-0 md:pr-4' style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+            <div className='flex justify-between items-end mb-6'>
+            <h1 className='gsap-reveal lowercase tracking-wide text-4xl md:text-[2.5rem] lg:text-[3rem]' style={{ fontFamily: '"League Spartan", sans-serif', fontWeight: 650, lineHeight: 1 }}>
+              {formatTitle(product.title)}
+            </h1>
             {collectionName && (
-              <p className="gsap-reveal text-gray-400 uppercase tracking-widest text-xs mb-2">
+              <p className="gsap-reveal uppercase text-sm text-gray-500 dark:text-gray-400" >
                 {collectionName}
               </p>
             )}
-            <h1 className='gsap-reveal text-4xl md:text-4xl 2xl:text-6xl 2xl:mb-20 mb-6 capitalize font-light tracking-tight'>
-              {formatTitle(product.title)}
-            </h1>
+            </div>
 
-            {product.collabtext && (
-              <div className='gsap-reveal mb-4 flex items-center'>
-                <span className='text-gray-400 text-sm mr-2'>
-                  Collaboration with
-                </span>
-                {product.collablink ? (
-                  <a
-                    href={product.collablink}
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='text-white hover:underline flex items-center'
-                  >
-                    {product.collabtext}
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      className='h-4 w-4 ml-1'
-                      fill='none'
-                      viewBox='0 0 24 24'
-                      stroke='currentColor'
-                    >
-                      <path
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        strokeWidth={2}
-                        d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'
-                      />
-                    </svg>
-                  </a>
-                ) : (
-                  <span className='text-white'>{product.collabtext}</span>
-                )}
-              </div>
-            )}
-
-            <div className='flex flex-col gap-4 text-sm 2xl:space-y-8'>
-              <div className='gsap-reveal grid grid-cols-2 md:grid-cols-3 gap-2'>
-                <div>
-                  <h4 className='font-semibold text-gray-400 text-xs mb-1'>
-                    Dimension
-                  </h4>
-                  <p className='text-white'>
-                    {product.dimensions?.includes('http') ? (
-                      <a
-                        href={product.dimensions}
-                        target='_blank'
-                        className='underline text-blue-400 hover:text-blue-200'
-                      >
-                        View Dimensions
-                      </a>
-                    ) : (
-                      product.dimensions
-                    )}
-                  </p>
+            <div className="flex flex-col gap-4 justify-center text-sm" style={{ fontFamily: '"Poppins", sans-serif' }}>
+              {product.description && (
+                <div className="gsap-reveal flex gap-4 border-b border-gray-200 dark:border-white/20 pb-4">
+                  <div className="w-24 md:w-32 shrink-0 text-gray-500 dark:text-gray-400 uppercase tracking-widest text-xs ">Description</div>
+                  <div className="flex-1 font-thin text-black dark:text-white text-xs leading-relaxed">{product.description}</div>
                 </div>
-
-                <div>
-                  <h4 className='font-semibold text-gray-400 text-xs mb-1'>
-                    Material
-                  </h4>
-                  <p className='text-white'>{product.location}</p>
+              )}
+              {product.inspiration && (
+                <div className="gsap-reveal flex gap-4 border-b border-gray-200 dark:border-white/20 pb-4">
+                  <div className="w-24 md:w-32 shrink-0 text-gray-500 dark:text-gray-400 uppercase tracking-widest text-xs ">Inspiration</div>
+                  <div className="flex-1 font-thin text-black dark:text-white text-xs">{product.inspiration}</div>
                 </div>
-              </div>
+              )}
+              {product.concept && (
+                <div className="gsap-reveal flex gap-4 border-b border-gray-200 dark:border-white/20 pb-4">
+                  <div className="w-24 md:w-32 shrink-0 text-gray-500 dark:text-gray-400 uppercase tracking-widest text-xs ">Concept</div>
+                  <div className="flex-1 font-thin text-black dark:text-white text-xs">{product.concept}</div>
+                </div>
+              )}
 
-              {(product.location === 'Marble' || (product.colors && product.colors.length > 0) || product.colorImages || (product.marbles && product.marbles.length > 0)) && (
-                <div className='gsap-reveal flex flex-col gap-2'>
-                  <h2 className='text-lg mb-2 uppercase tracking-wide font-medium'>
-                    {product.colors || product.colorImages
-                      ? 'COLOR VARIATIONS'
-                      : product.marbles
-                        ? 'MARBLE COMBINATIONS'
-                        : 'MARBLES'}
-                  </h2>
-                  <div className='flex flex-wrap gap-4'>
-                    {(product.marbles || product.colors || marbles).map((option) => {
-                      const isSelected = selectedMarble === option.name;
-                      const imagesSource = product.colorImages || product.marbleImages;
-                      const hasCustomImages = !!(
-                        imagesSource &&
-                        (() => {
-                          const targetKey = normalizeKey(option.name);
-                          const matchedKey = Object.keys(imagesSource).find(
-                            (key) => normalizeKey(key) === targetKey
-                          );
-                          return matchedKey ? imagesSource[matchedKey].length > 0 : false;
-                        })()
-                      );
+              {product.material && (
+                <div className="gsap-reveal flex gap-4 border-b border-gray-200 dark:border-white/20 pb-4">
+                  <div className="w-24 md:w-32 shrink-0 text-gray-500 dark:text-gray-400 uppercase tracking-widest text-xs ">Material</div>
+                  <div className="flex-1 font-thin text-black dark:text-white text-xs">{product.material}</div>
+                </div>
+              )}
+
+              {product.finish && (
+                <div className="gsap-reveal flex gap-4 border-b border-gray-200 dark:border-white/20 pb-4">
+                  <div className="w-24 md:w-32 shrink-0 text-gray-500 dark:text-gray-400 uppercase tracking-widest text-xs ">Finish</div>
+                  <div className="flex-1 font-thin text-black dark:text-white text-xs">{product.finish}</div>
+                </div>
+              )}
+
+              {product.dimensions && (
+                <div className="gsap-reveal flex gap-4 border-b border-gray-200 dark:border-white/20 pb-4">
+                  <div className="w-24 md:w-32 shrink-0 text-gray-500 dark:text-gray-400 uppercase tracking-widest text-xs ">Dimension</div>
+                  <div className="flex-1 font-thin text-black dark:text-white text-xs flex flex-col gap-1">
+                    {product.dimensions.split('|').map((part, idx) => {
+                      const splitIdx = part.indexOf(':');
+                      if (splitIdx !== -1) {
+                        const label = part.substring(0, splitIdx).trim();
+                        const val = part.substring(splitIdx + 1).trim();
+                        return (
+                          <div key={idx} className="flex">
+                            <span className="w-20 shrink-0">{label}:</span>
+                            <span>{val}</span>
+                          </div>
+                        );
+                      }
+                      return <div key={idx}>{part.trim()}</div>;
+                    })}
+                  </div>
+                </div>
+              )}
+
+              {product.category && (
+                <div className="gsap-reveal flex gap-4 border-b border-gray-200 dark:border-white/20 pb-4">
+                  <div className="w-24 md:w-32 shrink-0 text-gray-500 dark:text-gray-400 uppercase tracking-widest text-xs ">Category</div>
+                  <div className="flex-1 font-thin text-black dark:text-white text-xs">{product.category}</div>
+                </div>
+              )}
+
+              {(product.material === 'Marble' || product.marbles || product.colors) && (
+                <div className="gsap-reveal flex flex-col gap-4 pb-4">
+                  <div className="w-full md:w-64 shrink-0 text-gray-500 dark:text-gray-400 uppercase tracking-widest text-xs ">Recommended Materials</div>
+                  <div className="flex-1 flex flex-row flex-wrap gap-x-7 gap-y-10 md:gap-9 pl-6 pt-2">
+                    {(product.marbles || product.colors || marbles).map((m, idx) => {
+                      const isSelected = selectedMarble === m.name;
                       return (
-                        <button
-                          key={option.name}
-                          onClick={() => handleSelectMarble(option.name)}
-                          className='flex flex-col items-center text-center focus:outline-none group relative transition-transform duration-200 hover:scale-105'
-                          title={
-                            hasCustomImages
-                              ? `Click to view product in ${option.name}`
-                              : `View ${option.name} option`
-                          }
+                        <button 
+                          key={m.name + idx} 
+                          onClick={() => handleSelectMarble(m.name)}
+                          className="relative flex flex-col items-center group cursor-pointer focus:outline-none"
                         >
-                          {option.swatches && option.swatches.length === 2 ? (
-                            <div
-                              className={`relative w-[70px] h-[70px] overflow-hidden rounded-md flex transition-all duration-300 ${
-                                isSelected
-                                  ? 'ring-2 ring-white ring-offset-2 ring-offset-black scale-95 opacity-100'
-                                  : 'opacity-85 group-hover:opacity-100'
-                              }`}
-                            >
-                              <div className='relative w-1/2 h-full overflow-hidden border-r border-black/40'>
-                                <Image
-                                  src={option.swatches[0]}
-                                  alt={`${option.name} 1`}
-                                  fill
-                                  className='object-cover'
-                                  sizes='35px'
-                                />
-                              </div>
-                              <div className='relative w-1/2 h-full overflow-hidden'>
-                                <Image
-                                  src={option.swatches[1]}
-                                  alt={`${option.name} 2`}
-                                  fill
-                                  className='object-cover'
-                                  sizes='35px'
-                                />
-                              </div>
-                              {/* Subtle dot to indicate this option has custom photos */}
-                              {hasCustomImages && !isSelected && (
-                                <span className='absolute bottom-1 right-1 w-2.5 h-2.5 bg-white border border-black rounded-full shadow z-10' />
-                              )}
-                            </div>
-                          ) : (
-                            <div className='relative w-[70px] h-[70px] overflow-hidden rounded-md'>
-                              <Image
-                                width={70}
-                                height={70}
-                                src={option.src || option.swatches?.[0]}
-                                alt={option.name}
-                                className={`aspect-square object-cover transition-all duration-300 ${
-                                  option.rotate ? 'rotate-90' : ''
-                                } ${
-                                  isSelected
-                                    ? 'ring-2 ring-white ring-offset-2 ring-offset-black scale-95 opacity-100'
-                                    : 'opacity-85 group-hover:opacity-100'
-                                }`}
-                              />
-                              {/* Subtle dot to indicate this option has custom photos */}
-                              {hasCustomImages && !isSelected && (
-                                <span className='absolute bottom-1 right-1 w-2.5 h-2.5 bg-white border border-black rounded-full shadow' />
-                              )}
-                            </div>
-                          )}
-                          <p
-                            className={`text-xs w-[85px] mt-2 break-words leading-tight transition-colors duration-200 ${
-                              isSelected
-                                ? 'text-white font-semibold'
-                                : 'text-gray-400 group-hover:text-white'
-                            }`}
-                          >
-                            {option.name}
-                          </p>
+                          <div className={`w-10 h-10 relative overflow-hidden rounded-full transition-all duration-300 group-hover:scale-110 ${isSelected ? 'ring-1 ring-black dark:ring-white ring-offset-2 ring-offset-white dark:ring-offset-black bg-gray-200 dark:bg-white/20' : 'border border-gray-200 dark:border-white/20 bg-gray-100 dark:bg-white/10'}`}>
+                             <Image src={m.src || m.swatches?.[0]} alt={m.name} fill className={`object-cover ${m.rotate ? 'rotate-90' : ''}`} />
+                          </div>
+                          <span className={`absolute top-12 left-1/2 -translate-x-1/2 text-[9px] uppercase text-center w-[6rem] break-words leading-tight transition-opacity duration-300 z-20 pointer-events-none ${isSelected ? 'text-black dark:text-white opacity-100' : 'text-gray-900 dark:text-gray-400 opacity-0 group-hover:opacity-100'} `}>{m.name}</span>
                         </button>
                       );
                     })}
                   </div>
-                  {product.location === 'Marble' && !product.marbles && (
-                    <AccordionMarbles
-                      selectedMarble={selectedMarble}
-                      onSelectMarble={handleSelectMarble}
-                      product={product}
-                    />
-                  )}
                 </div>
               )}
+            </div>
+          </div>
 
-              <div className='gsap-reveal mt-6 border-t border-gray-700 pt-4 text-sm text-white font-light whitespace-pre-line leading-relaxed text-justify'>
-                {formatProductDescription(product.description)}
-              </div>
-
-              <div className='gsap-reveal mt-10 flex gap-4 flex-col md:flex-row flex-wrap'>
-                {product.pdf && (
-                  <a href={product.pdf} target='_blank' rel='noopener noreferrer' className='w-full md:w-auto'>
-                    <Button
-                      variant='outline'
-                      className='px-6 py-2 border w-full border-white text-black rounded-none hover:bg-white/80'
-                    >
-                      Download Spec Sheet
-                    </Button>
-                  </a>
-                )}
-
-                <Button
-                  className='px-6 py-2 border w-full md:w-auto border-white bg-transparent text-white rounded-none hover:bg-white hover:text-black transition-all duration-300'
-                  onClick={() => {
-                    if (!formLoadTime) setFormLoadTime(Date.now());
-                    setShowModal(true);
-                  }}
+          <div className='gsap-reveal flex gap-4 w-full mt-4 md:mt-0 h-16 items-center shrink-0'>
+            <div className="w-32 hidden md:block"></div>
+            <div className='flex-1 flex flex-col sm:flex-row gap-4 sm:items-center justify-start md:justify-end'>
+              {product.pdf && (
+                <a href={product.pdf} target='_blank' rel='noopener noreferrer' className='w-full md:w-auto'>
+                  <HoverBorderGradient
+                    containerClassName="mt-0 border-gray-400"
+                    className="bg-black/20 flex items-center justify-center text-[10px] font-medium uppercase tracking-widest text-gray-500 dark:text-gray-400 group-hover:text-black dark:text-white transition-colors duration-300 px-6 py-[8px]"
+                    as="button"
+                  >
+                    <span className="mb-[-2px]">Download Spec Sheet</span>
+                  </HoverBorderGradient>
+                </a>
+              )}
+              <div
+                onClick={() => {
+                  if (!formLoadTime) setFormLoadTime(Date.now());
+                  setShowModal(true);
+                }}
+              >
+                <HoverBorderGradient
+                  containerClassName="mt-0 border-gray-400"
+                  className="bg-black/20 flex items-center justify-center text-[10px] font-medium uppercase tracking-widest text-gray-500 dark:text-gray-400 group-hover:text-black dark:text-white transition-colors duration-300 px-6 py-[8px]"
+                  as="button"
                 >
-                  Enquire
-                </Button>
+                  <span className="mb-[-2px]">Enquire</span>
+                </HoverBorderGradient>
               </div>
             </div>
           </div>
@@ -783,11 +734,11 @@ export default function MandirDetailsClient({ product }) {
             >
               <button
                 onClick={() => setShowModal(false)}
-                className='absolute top-4 right-4 text-gray-400 hover:text-white transition'
+                className='absolute top-4 right-4 text-gray-500 dark:text-gray-400 hover:text-black dark:text-white transition'
               >
                 <X size={20} />
               </button>
-              <h2 className='text-xl font-semibold mb-4 text-white'>Enquire</h2>
+              <h2 className='text-xl font-semibold mb-4 text-black dark:text-white'>Enquire</h2>
               <Form {...form}>
                 <form
                   className='space-y-4'
@@ -819,7 +770,7 @@ export default function MandirDetailsClient({ product }) {
                         <FormLabel className='text-gray-300'>Name</FormLabel>
                         <FormControl>
                           <Input
-                            className='bg-zinc-900 border-zinc-700 text-white placeholder:text-zinc-500'
+                            className='bg-zinc-900 border-zinc-700 text-black dark:text-white placeholder:text-zinc-500'
                             placeholder='Enter your name'
                             {...field}
                           />
@@ -836,7 +787,7 @@ export default function MandirDetailsClient({ product }) {
                         <FormLabel className='text-gray-300'>Email</FormLabel>
                         <FormControl>
                           <Input
-                            className='bg-zinc-900 border-zinc-700 text-white placeholder:text-zinc-500'
+                            className='bg-zinc-900 border-zinc-700 text-black dark:text-white placeholder:text-zinc-500'
                             placeholder='Enter your email'
                             type='email'
                             {...field}
@@ -854,7 +805,7 @@ export default function MandirDetailsClient({ product }) {
                         <FormLabel className='text-gray-300'>Mobile Number</FormLabel>
                         <FormControl>
                           <Input
-                            className='bg-zinc-900 border-zinc-700 text-white placeholder:text-zinc-500'
+                            className='bg-zinc-900 border-zinc-700 text-black dark:text-white placeholder:text-zinc-500'
                             placeholder='Enter your mobile number'
                             type='tel'
                             {...field}
@@ -872,7 +823,7 @@ export default function MandirDetailsClient({ product }) {
                         <FormLabel className='text-gray-300'>Product Name</FormLabel>
                         <FormControl>
                           <Input
-                            className='bg-zinc-900 border-zinc-700 text-white placeholder:text-zinc-500'
+                            className='bg-zinc-900 border-zinc-700 text-black dark:text-white placeholder:text-zinc-500'
                             placeholder='Please specify the product name'
                             {...field}
                           />
@@ -891,7 +842,7 @@ export default function MandirDetailsClient({ product }) {
                         <FormControl>
                           <Textarea
                             placeholder='Enter your message'
-                            className='bg-zinc-900 border-zinc-700 text-white placeholder:text-zinc-500 resize-none'
+                            className='bg-zinc-900 border-zinc-700 text-black dark:text-white placeholder:text-zinc-500 resize-none'
                             rows={3}
                             {...field}
                           />
@@ -925,14 +876,14 @@ export default function MandirDetailsClient({ product }) {
             className="fixed inset-0 z-[100] bg-black/95 flex flex-col justify-between p-4 md:p-8 select-none"
           >
             {/* Top Bar */}
-            <div className="flex items-center justify-between w-full text-white">
+            <div className="flex items-center justify-between w-full text-black dark:text-white">
               <span className="text-xs md:text-sm tracking-widest font-light uppercase">
-                {product.title} <span className="opacity-50"> - {currentIndex + 1} / {totalMedia}</span>
+                {product.title} <span className="opacity-50">— {currentIndex + 1} / {totalMedia}</span>
               </span>
               <div className="flex items-center gap-2">
                 <button
                   onClick={() => setShowThumbnailGrid(!showThumbnailGrid)}
-                  className="w-10 h-10 rounded-full bg-white/10 hover:bg-white hover:text-black flex items-center justify-center transition-all cursor-pointer border border-white/10"
+                  className="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 hover:bg-white hover:text-black flex items-center justify-center transition-all cursor-pointer border border-white/10"
                   aria-label="Toggle thumbnail grid"
                   title="View all media"
                 >
@@ -940,7 +891,7 @@ export default function MandirDetailsClient({ product }) {
                 </button>
                 <button
                   onClick={() => setIsFullscreen(false)}
-                  className="w-10 h-10 rounded-full bg-white/10 hover:bg-white hover:text-black flex items-center justify-center transition-all cursor-pointer border border-white/10"
+                  className="w-10 h-10 rounded-full bg-gray-100 dark:bg-white/10 hover:bg-white hover:text-black flex items-center justify-center transition-all cursor-pointer border border-white/10"
                   aria-label="Close fullscreen view"
                 >
                   <X size={20} />
@@ -981,17 +932,17 @@ export default function MandirDetailsClient({ product }) {
                 <>
                   <button
                     onClick={() => navigate('prev')}
-                    className="absolute left-2 md:left-4 w-12 h-12 rounded-full bg-white/5 hover:bg-white/20 text-white flex items-center justify-center transition-all cursor-pointer border border-white/10"
+                    className="absolute left-2 md:left-8 text-gray-500 dark:text-gray-400 hover:text-black dark:text-white transition-all cursor-pointer p-4"
                     aria-label="Previous image"
                   >
-                    <ChevronLeft size={24} />
+                    <ChevronLeft size={50} className='text-gray-500 dark:text-gray-400 hover:text-black dark:text-white' />
                   </button>
                   <button
                     onClick={() => navigate('next')}
-                    className="absolute right-2 md:right-4 w-12 h-12 rounded-full bg-white/5 hover:bg-white/20 text-white flex items-center justify-center transition-all cursor-pointer border border-white/10"
+                    className="absolute right-2 md:right-8 text-gray-500 dark:text-gray-400 hover:text-black dark:text-white transition-all cursor-pointer p-4"
                     aria-label="Next image"
                   >
-                    <ChevronRight size={24} />
+                    <ChevronRight size={50} className='text-gray-500 dark:text-gray-400 hover:text-black dark:text-white' />
                   </button>
                 </>
               )}
@@ -1023,7 +974,7 @@ export default function MandirDetailsClient({ product }) {
                         : 'border-transparent opacity-40 hover:opacity-85'
                         }`}
                     >
-                      <span className="text-[10px] text-white font-medium tracking-wider">VIDEO</span>
+                      <span className="text-[10px] text-black dark:text-white font-medium tracking-wider">VIDEO</span>
                     </button>
                   )}
                 </div>
