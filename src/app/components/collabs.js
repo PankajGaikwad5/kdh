@@ -526,7 +526,7 @@ export const collabs = [
     title: 'marble',
     details: 'ID 2024',
     year: '2024',
-    moreDetails: '/collections/matilda',
+    moreDetails: '/collections/matilda_2024',
     images: [
       {
         fileName: '2.jpg',
@@ -551,7 +551,7 @@ export const collabs = [
     title: 'casa',
     details: 'ID 2024',
     year: '2024',
-    moreDetails: '/collections/matilda',
+    moreDetails: '/collections/matilda_2024',
     images: [
       {
         fileName: '2.jpg',

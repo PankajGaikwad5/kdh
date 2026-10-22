@@ -600,6 +600,12 @@ export default function ProductDetailsClient({ product, onClose }) {
             </div>
 
             <div className="flex flex-col gap-4 justify-center text-sm" style={{ fontFamily: '"Poppins", sans-serif' }}>
+              {product.description && (
+                <div className="gsap-reveal flex gap-4 border-b border-gray-200 dark:border-white/20 pb-4">
+                  <div className="w-24 md:w-32 shrink-0 text-gray-500 dark:text-gray-400 uppercase tracking-widest text-xs ">Description</div>
+                  <div className="flex-1 font-thin text-black dark:text-white text-xs leading-relaxed">{product.description}</div>
+                </div>
+              )}
               {product.inspiration && (
                 <div className="gsap-reveal flex gap-4 border-b border-gray-200 dark:border-white/20 pb-4">
                   <div className="w-24 md:w-32 shrink-0 text-gray-500 dark:text-gray-400 uppercase tracking-widest text-xs ">Inspiration</div>
