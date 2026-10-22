@@ -231,63 +231,63 @@ export const collabs = [
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        fileUrl: '/monster4.1/mirror/1.webp',
+        fileUrl: '/monster4.0/mirror/1.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        fileUrl: '/monster4.1/mirror/7.webp',
+        fileUrl: '/monster4.0/mirror/7.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        fileUrl: '/monster4.1/mirror/8.webp',
+        fileUrl: '/monster4.0/mirror/8.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        fileUrl: '/monster4.1/totem/1.webp',
+        fileUrl: '/monster4.0/totem/1.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        fileUrl: '/monster4.1/totem/2.webp',
+        fileUrl: '/monster4.0/totem/2.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        fileUrl: '/monster4.1/yodacarpet/1.webp',
+        fileUrl: '/monster4.0/yodacarpet/1.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        fileUrl: '/monster4.1/yodacarpet/7.webp',
+        fileUrl: '/monster4.0/yodacarpet/7.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        fileUrl: '/monster4.1/yodacarpet/8.webp',
+        fileUrl: '/monster4.0/yodacarpet/8.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
       },
       {
         fileName: '1738927863060-Slide1.JPG',
-        fileUrl: '/monster4.1/yodacarpet/9.webp',
+        fileUrl: '/monster4.0/yodacarpet/9.webp',
         _id: {
           $oid: '67a5eef74da9b29cd0f10be2',
         },
