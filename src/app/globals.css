@@ -378,3 +378,70 @@ body {
 .light .bg-black\/20 {
   background-color: transparent !important;
 }
+/* Nav menu (own classes so the light overrides above don't force solid backgrounds) */
+.nav-menu {
+  --nav-ink: #f5f5f5;
+  --nav-rule: rgba(255, 255, 255, 0.12);
+  color: var(--nav-ink);
+}
+.light .nav-menu {
+  --nav-ink: #111111;
+  --nav-rule: rgba(0, 0, 0, 0.12);
+}
+
+/* Full-page screen: the page stays faintly visible behind a dark, blurred veil */
+.nav-screen {
+  background-color: rgba(8, 8, 8, 0.86);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+.light .nav-screen {
+  background-color: rgba(246, 246, 244, 0.88);
+}
+
+.nav-rule {
+  border-color: var(--nav-rule);
+}
+
+.nav-label {
+  font-size: 10px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.nav-primary {
+  font-size: clamp(1.375rem, min(4vh, 2.3vw), 2.5rem);
+  line-height: 1.15;
+  font-weight: 300;
+  letter-spacing: 0.06em;
+}
+
+.nav-sub {
+  font-size: 0.8125rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.nav-info {
+  font-size: 0.875rem;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 767px) {
+  .nav-primary {
+    font-size: clamp(1.375rem, 6vw, 1.75rem);
+  }
+}
+
+@media (min-width: 1536px) {
+  .nav-label {
+    font-size: 12px;
+  }
+  .nav-sub {
+    font-size: 1rem;
+  }
+  .nav-info {
+    font-size: 1rem;
+  }
+}

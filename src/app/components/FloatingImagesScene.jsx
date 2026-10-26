@@ -19,9 +19,9 @@ function Starfield({ count = 200, radius = 200, isLight = false }) {
   const pointsRef = useRef();
   const tick = useRef(0);
 
-  const { positions, colors } = useMemo(() => {
+  // Positions don't depend on theme, so toggling only recolours the stars instead of re-scattering them
+  const positions = useMemo(() => {
     const pos = new Float32Array(count * 3);
-    const col = new Float32Array(count * 3);
     for (let i = 0; i < count; i++) {
       const phi   = Math.random() * Math.PI * 2;
       const theta = Math.acos(2 * Math.random() - 1);
@@ -31,6 +31,13 @@ function Starfield({ count = 200, radius = 200, isLight = false }) {
       pos[i*3]   = r * Math.sin(theta) * Math.cos(phi);
       pos[i*3+1] = r * Math.sin(theta) * Math.sin(phi);
       pos[i*3+2] = r * Math.cos(theta);
+    }
+    return pos;
+  }, [count, radius]);
+
+  const colors = useMemo(() => {
+    const col = new Float32Array(count * 3);
+    for (let i = 0; i < count; i++) {
       if (isLight) {
         if      (i%3===0) { col[i*3]=0;   col[i*3+1]=0;   col[i*3+2]=0;   }
         else if (i%3===1) { col[i*3]=0.2; col[i*3+1]=0.2; col[i*3+2]=0.2; }
@@ -41,8 +48,8 @@ function Starfield({ count = 200, radius = 200, isLight = false }) {
         else              { col[i*3]=1;   col[i*3+1]=0.9; col[i*3+2]=0.5; }
       }
     }
-    return { positions: pos, colors: col };
-  }, [count, radius, isLight]);
+    return col;
+  }, [count, isLight]);
 
   const [starTexture, setStarTexture] = useState(null);
   useEffect(() => {
@@ -78,7 +85,7 @@ function Starfield({ count = 200, radius = 200, isLight = false }) {
     <points ref={pointsRef}>
       <bufferGeometry>
         <bufferAttribute attach='attributes-position' count={count} array={positions} itemSize={3} />
-        <bufferAttribute attach='attributes-color'    count={count} array={colors}    itemSize={3} />
+        <bufferAttribute key={isLight ? 'light' : 'dark'} attach='attributes-color' count={count} array={colors} itemSize={3} />
       </bufferGeometry>
       <pointsMaterial map={starTexture} size={isLight ? 2.5 : 3} sizeAttenuation transparent
         blending={THREE.NormalBlending} depthWrite={false} vertexColors />
@@ -518,8 +525,10 @@ export default function FloatingImagesScene({ onProductSelect }) {
         .tooltip.visible { opacity:1; transform:scale(1) translateY(0); }
         .tt-name  { color:white; font-size:13px; font-weight:600; margin-bottom:2px; }
         .tt-group { color:rgba(255,255,255,0.65); font-size:11px; }
-        .navigation-buttons { position:fixed; bottom:20px; gap:10px; z-index:1000; }
+        /* Full-width strip lets taps through so it doesn't cover the theme toggle */
+        .navigation-buttons { position:fixed; bottom:20px; gap:10px; z-index:1000; pointer-events:none; }
         .navigation-buttons button {
+          pointer-events:auto;
           background:rgba(0,0,0,0.5); color:white; border:none;
           padding:6px 10px; border-radius:25px; cursor:pointer;
         }
