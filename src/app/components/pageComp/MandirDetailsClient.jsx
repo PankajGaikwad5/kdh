@@ -692,7 +692,7 @@ export default function MandirDetailsClient({ product, onClose }) {
                 <a href={product.pdf} target='_blank' rel='noopener noreferrer' className='w-full md:w-auto'>
                   <HoverBorderGradient
                     containerClassName="mt-0 border-gray-400"
-                    className="bg-black/20 flex items-center justify-center text-[10px] font-medium uppercase tracking-widest text-gray-500 dark:text-gray-400 group-hover:text-black dark:text-white transition-colors duration-300 px-6 py-[8px]"
+                    className="bg-black/20 flex items-center justify-center text-[10px] font-medium uppercase tracking-widest text-gray-500 dark:text-gray-400 group-hover:text-black dark:group-hover:text-white transition-colors duration-300 px-6 py-[8px]"
                     as="button"
                   >
                     <span className="mb-[-2px]">Download Spec Sheet</span>
@@ -707,7 +707,7 @@ export default function MandirDetailsClient({ product, onClose }) {
               >
                 <HoverBorderGradient
                   containerClassName="mt-0 border-gray-400"
-                  className="bg-black/20 flex items-center justify-center text-[10px] font-medium uppercase tracking-widest text-gray-500 dark:text-gray-400 group-hover:text-black dark:text-white transition-colors duration-300 px-6 py-[8px]"
+                  className="bg-black/20 flex items-center justify-center text-[10px] font-medium uppercase tracking-widest text-gray-500 dark:text-gray-400 group-hover:text-black dark:group-hover:text-white transition-colors duration-300 px-6 py-[8px]"
                   as="button"
                 >
                   <span className="mb-[-2px]">Enquire</span>

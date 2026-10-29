@@ -557,6 +557,36 @@ export const newImagePaths = [
     group: 'Jina Shilp',
     productId: 'jspillarbench',
   },
+  {
+    name: 'Center Table',
+    path: '/matilda2026/centertable/1.webp',
+    group: 'Matilda 2026',
+    productId: 'matilda_2026_centertable',
+  },
+  {
+    name: 'Dining Table',
+    path: '/matilda2026/diningtable/1.webp',
+    group: 'Matilda 2026',
+    productId: 'matilda_2026_diningtable',
+  },
+  {
+    name: 'Sofa',
+    path: '/matilda2026/sofa/1.webp',
+    group: 'Matilda 2026',
+    productId: 'matilda_2026_sofa',
+  },
+  {
+    name: 'Round Dining Table',
+    path: '/matilda2026/rounddiningtable/1.webp',
+    group: 'Matilda 2026',
+    productId: 'matilda_2026_rounddiningtable',
+  },
+  {
+    name: 'Study Table',
+    path: '/matilda2026/studytable/1.webp',
+    group: 'Matilda 2026',
+    productId: 'matilda_2026_studytable',
+  },
 
   ...Array(2)
     .fill([
@@ -1075,6 +1105,36 @@ export const newImagePaths = [
         path: '/js/pillarbench/png.webp',
         group: 'Jina Shilp',
         productId: 'jspillarbench',
+      },
+      {
+        name: 'Center Table',
+        path: '/matilda2026/centertable/1.webp',
+        group: 'Matilda 2026',
+        productId: 'matilda_2026_centertable',
+      },
+      {
+        name: 'Dining Table',
+        path: '/matilda2026/diningtable/1.webp',
+        group: 'Matilda 2026',
+        productId: 'matilda_2026_diningtable',
+      },
+      {
+        name: 'Sofa',
+        path: '/matilda2026/sofa/1.webp',
+        group: 'Matilda 2026',
+        productId: 'matilda_2026_sofa',
+      },
+      {
+        name: 'Round Dining Table',
+        path: '/matilda2026/rounddiningtable/1.webp',
+        group: 'Matilda 2026',
+        productId: 'matilda_2026_rounddiningtable',
+      },
+      {
+        name: 'Study Table',
+        path: '/matilda2026/studytable/1.webp',
+        group: 'Matilda 2026',
+        productId: 'matilda_2026_studytable',
       },
       {
         name: 'Monster 3.0 Charwood Chair',

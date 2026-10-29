@@ -173,6 +173,13 @@ const Page = () => {
 
   const products = [
     {
+      id: 17,
+      title: 'Matilda 2026',
+      group: 'matilda_2026',
+      img: '/matilda2026/centertable/1.webp',
+      projects: 'center table, dining table, sofa, round dining table, study table',
+    },
+    {
       id: 16,
       title: 'Jina Shilp | Serafini',
       group: 'jina_shilp',

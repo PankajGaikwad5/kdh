@@ -58,6 +58,11 @@ export const catalogues = [
     year: '2025',
   },
   {
+    group: 'matilda_2026',
+    pdf: 'https://pmir2qrvn1.ufs.sh/f/czy2uq7CnNdowezAJ8kbh43Y8KCafTvOHjR9tNmo5q1xVGdB',
+    year: '2026',
+  },
+  {
     group: 'friends',
     pdf: 'https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOTsMcnnkol4fc15PmWSnAqbsUy78gtp2EBGzu',
     // year: '2026',

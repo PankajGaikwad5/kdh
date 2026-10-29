@@ -59,7 +59,7 @@ export const deriveCategory = (title) => {
   }
   
   // Office & Study
-  if (lower.includes('desk') || lower.includes('conference table') || lower.includes('library') || lower.includes('shelving') || lower.includes('top brewer') || lower.includes('matilda 2025 mirror')) {
+  if (lower.includes('desk') || lower.includes('study table') ||lower.includes('conference table') || lower.includes('library') || lower.includes('shelving') || lower.includes('top brewer') || lower.includes('matilda 2025 mirror')) {
     cats.add('Office & Study');
   }
   

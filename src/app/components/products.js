@@ -1,6 +1,263 @@
 export const products = [
   {
     _id: {
+      $oid: 'matilda_2026_centertable',
+    },
+    title: 'Matilda 2026 Center Table',
+    group: 'matilda_2026',
+    material: 'Marble',
+    pdf: 'https://pmir2qrvn1.ufs.sh/f/czy2uq7CnNdoqEJtPR52zoMuX3wnNWTRFgHcYBieEsCAr5xm',
+    images: [
+      {
+        fileName: '1.webp',
+        filePath: '/matilda2026/centertable/1.webp',
+        _id: {
+          $oid: 'm26_ct_1',
+        },
+      },
+      {
+        fileName: '2.webp',
+        filePath: '/matilda2026/centertable/2.webp',
+        _id: {
+          $oid: 'm26_ct_2',
+        },
+      },
+      {
+        fileName: '3.webp',
+        filePath: '/matilda2026/centertable/3.webp',
+        _id: {
+          $oid: 'm26_ct_3',
+        },
+      },
+      {
+        fileName: '4.webp',
+        filePath: '/matilda2026/centertable/4.webp',
+        _id: {
+          $oid: 'm26_ct_4',
+        },
+      },
+      {
+        fileName: '5.webp',
+        filePath: '/matilda2026/centertable/5.webp',
+        _id: {
+          $oid: 'm26_ct_5',
+        },
+      },
+    ],
+    dimensions: 'Width: 59in/1499mm | Depth: 44in/1118mm | Height: 20in/508mm',
+    __v: 0,
+    description: 'An organically contoured burgundy marble top rests on a bold cylindrical base, its expressive veining set against a brushed gold side element and a raised circular surface. A sculptural statement that brings architectural character and material richness to the contemporary living room.',
+    inspiration: 'Organic stone forms and the tension between natural marble and refined metal',
+    concept: 'A layered centrepiece where stone, metal and raised surfaces meet in a single sculptural composition',
+    finish: 'Polished burgundy marble with natural veining and brushed gold metal',
+    category: 'Living Room',
+  },
+  {
+    _id: {
+      $oid: 'matilda_2026_diningtable',
+    },
+    title: 'Matilda 2026 Dining Table',
+    group: 'matilda_2026',
+    material: 'Marble',
+    pdf: 'https://pmir2qrvn1.ufs.sh/f/czy2uq7CnNdoyBX7qlOeQaGot9fgp0FBLzT8bn1RwD3ViUuS',
+    images: [
+      {
+        fileName: '1.webp',
+        filePath: '/matilda2026/diningtable/1.webp',
+        _id: {
+          $oid: 'm26_dt_1',
+        },
+      },
+      {
+        fileName: '2.webp',
+        filePath: '/matilda2026/diningtable/2.webp',
+        _id: {
+          $oid: 'm26_dt_2',
+        },
+      },
+      {
+        fileName: '3.webp',
+        filePath: '/matilda2026/diningtable/3.webp',
+        _id: {
+          $oid: 'm26_dt_3',
+        },
+      },
+      {
+        fileName: '4.webp',
+        filePath: '/matilda2026/diningtable/4.webp',
+        _id: {
+          $oid: 'm26_dt_4',
+        },
+      },
+      {
+        fileName: '5.webp',
+        filePath: '/matilda2026/diningtable/5.webp',
+        _id: {
+          $oid: 'm26_dt_5',
+        },
+      },
+    ],
+    dimensions: 'Width: 68in/1727mm | Depth: 60in/1524mm | Height: 30in/762mm',
+    __v: 0,
+    description: 'A softly contoured grey tabletop is balanced on a bold burgundy marble base, its expressive veining and geometric silhouette anchoring the room. A contemporary take on collectible furniture, defined by proportion, texture and visual balance.',
+    inspiration: 'Architectural massing and the quiet dialogue between restraint and weight',
+    concept: 'A restrained upper surface held aloft by a substantial, sculptural stone foundation',
+    finish: 'Burgundy marble with natural veining and a soft grey tabletop',
+    category: 'Dining Room',
+  },
+  {
+    _id: {
+      $oid: 'matilda_2026_sofa',
+    },
+    title: 'Matilda 2026 Sofa',
+    group: 'matilda_2026',
+    material: 'Marble',
+    pdf: 'https://pmir2qrvn1.ufs.sh/f/czy2uq7CnNdoflaUiyqPR91cHV8OFsLgwidEzqrn2AJhlXUC',
+    images: [
+      {
+        fileName: '1.webp',
+        filePath: '/matilda2026/sofa/1.webp',
+        _id: {
+          $oid: 'm26_sf_1',
+        },
+      },
+      {
+        fileName: '2.webp',
+        filePath: '/matilda2026/sofa/2.webp',
+        _id: {
+          $oid: 'm26_sf_2',
+        },
+      },
+      {
+        fileName: '3.webp',
+        filePath: '/matilda2026/sofa/3.webp',
+        _id: {
+          $oid: 'm26_sf_3',
+        },
+      },
+      {
+        fileName: '4.webp',
+        filePath: '/matilda2026/sofa/4.webp',
+        _id: {
+          $oid: 'm26_sf_4',
+        },
+      },
+      {
+        fileName: '5.webp',
+        filePath: '/matilda2026/sofa/5.webp',
+        _id: {
+          $oid: 'm26_sf_5',
+        },
+      },
+    ],
+    dimensions: 'Width: 200in/5080mm | Depth: 135in/3429mm | Height: 31in/787mm',
+    __v: 0,
+    description: 'Low, softly rounded seating in plush, warm-neutral upholstery sits on a deep green marble platform with integrated planters and an understated side table. A sculptural living statement that blurs the line between furniture, nature and function.',
+    inspiration: 'Landscape, and the way nature settles into architectural space',
+    concept: 'A seating landscape where upholstery, stone and planting share a single platform',
+    finish: 'Textured neutral upholstery on polished green marble with natural veining',
+    category: 'Living Room',
+  },
+  {
+    _id: {
+      $oid: 'matilda_2026_rounddiningtable',
+    },
+    title: 'Matilda 2026 Round Dining Table',
+    group: 'matilda_2026',
+    pdf: 'https://pmir2qrvn1.ufs.sh/f/czy2uq7CnNdoz0TcChPw9Sf0TD4Cm1QRpzxLWZVG7EyXHbK8',
+    images: [
+      {
+        fileName: '1.webp',
+        filePath: '/matilda2026/rounddiningtable/1.webp',
+        _id: {
+          $oid: 'm26_rdt_1',
+        },
+      },
+      {
+        fileName: '2.webp',
+        filePath: '/matilda2026/rounddiningtable/2.webp',
+        _id: {
+          $oid: 'm26_rdt_2',
+        },
+      },
+      {
+        fileName: '3.webp',
+        filePath: '/matilda2026/rounddiningtable/3.webp',
+        _id: {
+          $oid: 'm26_rdt_3',
+        },
+      },
+      {
+        fileName: '4.webp',
+        filePath: '/matilda2026/rounddiningtable/4.webp',
+        _id: {
+          $oid: 'm26_rdt_4',
+        },
+      },
+    ],
+    dimensions: 'Height: 30in/762mm | Diameter: 36in/914mm',
+    __v: 0,
+    description: 'A softly rounded circular top rests on a tapered architectural base, finished in a rich monochromatic burgundy with a subtle recessed cross detail. Sculptural minimalism that brings understated elegance and strong character to contemporary dining.',
+    inspiration: 'Pure geometry and the expressive power of a single, saturated colour',
+    concept: 'A monochrome sculptural form distilled to circle, cross and taper',
+    finish: 'Seamless burgundy finish with recessed cross detailing',
+    category: 'Dining Room',
+  },
+  {
+    _id: {
+      $oid: 'matilda_2026_studytable',
+    },
+    title: 'Matilda 2026 Study Table',
+    group: 'matilda_2026',
+    material: 'Marble',
+    pdf: 'https://pmir2qrvn1.ufs.sh/f/czy2uq7CnNdoiLxHneM6kmAExMguLOVH1eIvBoiQaJpy2cn0',
+    images: [
+      {
+        fileName: '1.webp',
+        filePath: '/matilda2026/studytable/1.webp',
+        _id: {
+          $oid: 'm26_st_1',
+        },
+      },
+      {
+        fileName: '2.webp',
+        filePath: '/matilda2026/studytable/2.webp',
+        _id: {
+          $oid: 'm26_st_2',
+        },
+      },
+      {
+        fileName: '3.webp',
+        filePath: '/matilda2026/studytable/3.webp',
+        _id: {
+          $oid: 'm26_st_3',
+        },
+      },
+      {
+        fileName: '4.webp',
+        filePath: '/matilda2026/studytable/4.webp',
+        _id: {
+          $oid: 'm26_st_4',
+        },
+      },
+      {
+        fileName: '5.webp',
+        filePath: '/matilda2026/studytable/5.webp',
+        _id: {
+          $oid: 'm26_st_5',
+        },
+      },
+    ],
+    dimensions: 'Width: 46in/1168mm | Depth: 21in/533mm | Height: 30in/762mm',
+    __v: 0,
+    description: 'A softly contoured top is carried on four distinct legs in burgundy marble, veined black marble, pale natural stone and refined metal. A balanced, understated workspace that brings material richness and collectible design to everyday use.',
+    inspiration: 'Material collage and the character of contrasting natural surfaces',
+    concept: 'A functional work surface where every leg tells a different material story',
+    finish: 'Mixed marble, natural stone and metallic legs with a soft grey top',
+    category: 'Office & Study',
+  },
+  {
+    _id: {
       $oid: 'matilda_2024_pendant_lights',
     },
     title: 'Pendant Lights',
