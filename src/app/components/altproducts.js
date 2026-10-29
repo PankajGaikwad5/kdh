@@ -5,7 +5,7 @@ export const products = [
     },
     "title": "Matilda 2026 Center Table",
     "group": "matilda_2026",
-    "material": "Marble",
+    "material": "Indian Rosso Levante Marble & Brushed Gold Metal",
     "pdf": "https://pmir2qrvn1.ufs.sh/f/czy2uq7CnNdoqEJtPR52zoMuX3wnNWTRFgHcYBieEsCAr5xm",
     "images": [
       {
@@ -46,10 +46,10 @@ export const products = [
     ],
     "dimensions": "Width: 59in/1499mm | Depth: 44in/1118mm | Height: 20in/508mm",
     "__v": 0,
-    "description": "An organically contoured burgundy marble top rests on a bold cylindrical base, its expressive veining set against a brushed gold side element and a raised circular surface. A sculptural statement that brings architectural character and material richness to the contemporary living room.",
+    "description": "An organically contoured Indian Rosso Levante marble top rests on a bold cylindrical base, its expressive veining set against a brushed gold side element and a raised circular surface. A sculptural statement that brings architectural character and material richness to the contemporary living room.",
     "inspiration": "Organic stone forms and the tension between natural marble and refined metal",
     "concept": "A layered centrepiece where stone, metal and raised surfaces meet in a single sculptural composition",
-    "finish": "Polished burgundy marble with natural veining and brushed gold metal",
+    "finish": "Polished Indian Rosso Levante marble with natural veining and brushed gold metal",
     "category": "Living Room"
   },
   {
@@ -58,7 +58,7 @@ export const products = [
     },
     "title": "Matilda 2026 Dining Table",
     "group": "matilda_2026",
-    "material": "Marble",
+    "material": "Indian Rosso Levante Marble",
     "pdf": "https://pmir2qrvn1.ufs.sh/f/czy2uq7CnNdoyBX7qlOeQaGot9fgp0FBLzT8bn1RwD3ViUuS",
     "images": [
       {
@@ -99,10 +99,10 @@ export const products = [
     ],
     "dimensions": "Width: 68in/1727mm | Depth: 60in/1524mm | Height: 30in/762mm",
     "__v": 0,
-    "description": "A softly contoured grey tabletop is balanced on a bold burgundy marble base, its expressive veining and geometric silhouette anchoring the room. A contemporary take on collectible furniture, defined by proportion, texture and visual balance.",
+    "description": "A softly contoured grey tabletop is balanced on a bold Indian Rosso Levante marble base, its expressive veining and geometric silhouette anchoring the room. A contemporary take on collectible furniture, defined by proportion, texture and visual balance.",
     "inspiration": "Architectural massing and the quiet dialogue between restraint and weight",
     "concept": "A restrained upper surface held aloft by a substantial, sculptural stone foundation",
-    "finish": "Burgundy marble with natural veining and a soft grey tabletop",
+    "finish": "Indian Rosso Levante marble with natural veining and a soft grey tabletop",
     "category": "Dining Room"
   },
   {
@@ -111,7 +111,7 @@ export const products = [
     },
     "title": "Matilda 2026 Sofa",
     "group": "matilda_2026",
-    "material": "Marble",
+    "material": "Green Marble & Upholstery",
     "pdf": "https://pmir2qrvn1.ufs.sh/f/czy2uq7CnNdoflaUiyqPR91cHV8OFsLgwidEzqrn2AJhlXUC",
     "images": [
       {
@@ -164,6 +164,7 @@ export const products = [
     },
     "title": "Matilda 2026 Round Dining Table",
     "group": "matilda_2026",
+    "material": "3D Printed",
     "pdf": "https://pmir2qrvn1.ufs.sh/f/czy2uq7CnNdoz0TcChPw9Sf0TD4Cm1QRpzxLWZVG7EyXHbK8",
     "images": [
       {
@@ -197,10 +198,10 @@ export const products = [
     ],
     "dimensions": "Height: 30in/762mm | Diameter: 36in/914mm",
     "__v": 0,
-    "description": "A softly rounded circular top rests on a tapered architectural base, finished in a rich monochromatic burgundy with a subtle recessed cross detail. Sculptural minimalism that brings understated elegance and strong character to contemporary dining.",
-    "inspiration": "Pure geometry and the expressive power of a single, saturated colour",
+    "description": "A softly rounded circular top rests on a tapered architectural base, 3D printed as a seamless monochromatic form with a subtle recessed cross detail. Sculptural minimalism that brings understated elegance and strong character to contemporary dining.",
+    "inspiration": "Pure geometry and the sculptural freedom of 3D printing",
     "concept": "A monochrome sculptural form distilled to circle, cross and taper",
-    "finish": "Seamless burgundy finish with recessed cross detailing",
+    "finish": "Seamless 3D printed finish with recessed cross detailing",
     "category": "Dining Room"
   },
   {
@@ -209,7 +210,7 @@ export const products = [
     },
     "title": "Matilda 2026 Study Table",
     "group": "matilda_2026",
-    "material": "Marble",
+    "material": "3D Printed Top & Marble",
     "pdf": "https://pmir2qrvn1.ufs.sh/f/czy2uq7CnNdoiLxHneM6kmAExMguLOVH1eIvBoiQaJpy2cn0",
     "images": [
       {
@@ -250,10 +251,10 @@ export const products = [
     ],
     "dimensions": "Width: 46in/1168mm | Depth: 21in/533mm | Height: 30in/762mm",
     "__v": 0,
-    "description": "A softly contoured top is carried on four distinct legs in burgundy marble, veined black marble, pale natural stone and refined metal. A balanced, understated workspace that brings material richness and collectible design to everyday use.",
+    "description": "A softly contoured 3D printed top is carried on four distinct legs, each in a contrasting marble. A balanced, understated workspace that brings material richness and collectible design to everyday use.",
     "inspiration": "Material collage and the character of contrasting natural surfaces",
     "concept": "A functional work surface where every leg tells a different material story",
-    "finish": "Mixed marble, natural stone and metallic legs with a soft grey top",
+    "finish": "3D printed top on contrasting marble legs",
     "category": "Office & Study"
   },
   {
