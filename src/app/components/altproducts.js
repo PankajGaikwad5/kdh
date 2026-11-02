@@ -552,7 +552,7 @@ export const products = [
     "material": "Burnt Wood & Fur Fabric",
     "collabtext": "Dimensions",
     "collablink": "https://dimensionsfurniture.in/collections/monster-collection/",
-    "pdf": "https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOuPeXPR6MRVaZitrSyHezsoA0vp7q8GnxWE2C",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fET4nnwNgbICB8OGV6hYfMW1JAiEFwlzDdtLnT5",
     "images": [
       {
         "fileName": "1739952312340-MB Set.53.jpg",
@@ -1348,7 +1348,7 @@ export const products = [
     "material": "Marble",
     "collabtext": "The Quarry",
     "collablink": "https://www.quarry.asia/index.php",
-    "pdf": "https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUcmsYcPOzfU0v5mZaj1HWcAwKFCxykrE2NGSI",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETzZHHn5Bs0mgaDpc9rB6oWZwxQMJltLKCYEh4",
     "images": [
       {
         "fileName": "1738926030310-1.jpg",
@@ -1642,7 +1642,7 @@ export const products = [
     "material": "Burnt Wood",
     "collabtext": "Dimensions",
     "collablink": "https://dimensionsfurniture.in/collections/monster-collection/",
-    "pdf": "https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKU8t2Fwv64oKUn37W6wsTlRmDBFhGrviIjcMxV",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETaxMamnCDgPR5YGAzKe0QqMkdB6ViyocjEbvr",
     "images": [
       {
         "fileName": "1739952279061-Id Dining set.156.jpg",
@@ -1733,7 +1733,7 @@ export const products = [
     "material": "Marble",
     "collabtext": "The Quarry",
     "collablink": "https://www.quarry.asia/index.php",
-    "pdf": "https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUmXhiD1Mgck96WhX7TGdaslL58YeZAnUDbwov",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETHv3ZKSY8qANMJ9VocEiIpa4mvSfROrKjw6yZ",
     "images": [
       {
         "fileName": "1738926481003-Slide2.JPG",
@@ -1847,7 +1847,7 @@ export const products = [
     "material": "Burnt Wood",
     "collabtext": "Dimensions",
     "collablink": "https://dimensionsfurniture.in/collections/monster-collection/",
-    "pdf": "https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOdX5WLyzvXmWSn1eIpy3d0vtl4fEkq579rjML",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETWIg9DBPEl4cIxtY2vVfwMUhnNugbPjoC8zF3",
     "images": [
       {
         "fileName": "1739952193181-1.jpg",
@@ -2025,7 +2025,7 @@ export const products = [
     "material": "Burnt Wood & Fur Fabric",
     "collabtext": "Dimensions",
     "collablink": "https://dimensionsfurniture.in/collections/monster-collection/",
-    "pdf": "https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMO6VedFvTgmyYdxBZk9OWub4XEJaA1zR2CTiMc",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETlPMSTN2zx2byPWhLZ7905XQEki61RCcVUtGB",
     "images": [
       {
         "fileName": "1739952224055-Dining chair set.10.jpg",
@@ -2251,7 +2251,7 @@ export const products = [
     "material": "Marble",
     "collabtext": "The Quarry",
     "collablink": "https://www.quarry.asia/index.php",
-    "pdf": "https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUB0rHdma3qeoXrYV82Q6T5Enb4WD1LwdAJjzP",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETNub9zOMraWqFD9k46lAE82pMYvo7rBecd0iJ",
     "images": [
       {
         "fileName": "1738926778781-Slide1.JPG",
@@ -2771,7 +2771,7 @@ export const products = [
     "material": "Rainforest Green Marble",
     "collabtext": "TopBrewer",
     "collablink": "https://www.topbrewernyc.com/",
-    "pdf": "https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUj6mAs3UhR95a1yWpqvPz7meuoUTAG8HEOb2I",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fET5ez5HbsrWq5pfmYig9GPhwce4FZEuKbsJxna",
     "images": [
       {
         "fileName": "1738926974582-Slide1.JPG",
@@ -2889,7 +2889,7 @@ export const products = [
     "material": "Burnt Wood",
     "collabtext": "Dimensions",
     "collablink": "https://dimensionsfurniture.in/collections/monster-collection/",
-    "pdf": "https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOBYt2KC2zYN8aVpJZLF50If4uUdl1vTPgMQEx",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETL7YKxpoc2uNEwvOPUIhz4j7TYleyrHLa8xtR",
     "images": [
       {
         "fileName": "1739952401888-Monster Planter_2.17.png",
@@ -3582,7 +3582,7 @@ export const products = [
     "material": "Marble",
     "collabtext": "Serafini",
     "collablink": "https://www.serafini.com/products-page/samaveta-luxury-marble-bench",
-    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETU1380ABLRDnjSBCAuk1FhTeXyczvVNKdJ89a",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETHaLdKpY8qANMJ9VocEiIpa4mvSfROrKjw6yZ",
     "images": [
       {
         "fileName": "1738930706115-Slide1.JPG",
@@ -4003,7 +4003,7 @@ export const products = [
     "material": "Concrete Terazzo",
     "collabtext": "Bharat Floorings",
     "collablink": "https://www.bharatfloorings.com/",
-    "pdf": "https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOj4dKctzNQNhsYReup8oqCmaiw71dHbWcUIX5",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETGUvLnykHds2frvmTDpL4PGCg9hB5i0S6lNEF",
     "images": [
       {
         "fileName": "1738927007154-Slide1.JPG",
@@ -4062,7 +4062,7 @@ export const products = [
     "material": "Fur Fabric",
     "collabtext": "Dimensions",
     "collablink": "https://dimensionsfurniture.in/collections/monster-collection/",
-    "pdf": "https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOBYn2IuwzYN8aVpJZLF50If4uUdl1vTPgMQEx",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETbK2hs6qIkFDNZ7HJ5eAxnUWaofg8T3l2VdjR",
     "images": [
       {
         "fileName": "1",
@@ -4125,7 +4125,7 @@ export const products = [
     "material": "Burnt Wood & Fur Fabric",
     "collabtext": "Dimensions",
     "collablink": "https://dimensionsfurniture.in/collections/monster-collection/",
-    "pdf": "https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUVOfTglleJz0jfKoyVd9HNhC5wFQ4OrBi2UkD",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fET9f9WE16lzTek1Dcf3mqSFrp7RtE4agUhNwYb",
     "images": [
       {
         "fileName": "dchair.png",
@@ -4215,7 +4215,7 @@ export const products = [
     "material": "Burnt Wood & Fur Fabric",
     "collabtext": "Dimensions",
     "collablink": "https://dimensionsfurniture.in/collections/monster-collection/",
-    "pdf": "https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOxnuZAVtfzZMOQ82F9V3XlUqPn6kstdYmWcTr",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETN3gxPuraWqFD9k46lAE82pMYvo7rBecd0iJZ",
     "images": [
       {
         "fileName": "1739952336217-Monster chai Opt 1.52.jpg",
@@ -4645,7 +4645,7 @@ export const products = [
     "material": "Burnt Wood & Fur Fabric",
     "collabtext": "Dimensions",
     "collablink": "https://dimensionsfurniture.in/collections/monster-collection/",
-    "pdf": "https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOBYntrdmzYN8aVpJZLF50If4uUdl1vTPgMQEx",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETD7r1i2HGBuoU1vsxSLGQP8NC6DeKV5Ic4ykz",
     "images": [
       {
         "fileName": "1739952360039-Monster Light installation.179.jpg",
@@ -4825,7 +4825,7 @@ export const products = [
     "material": "Burnt Wood",
     "collabtext": "Dimensions",
     "collablink": "https://dimensionsfurniture.in/collections/monster-collection/",
-    "pdf": "https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOPDC0wMaSjHqmNAIDGdfwbKCW75FER48cVo3u",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETf3kzMOmDzFui2vN1hSCptgQGd5cyZlPH046B",
     "images": [
       {
         "fileName": "1739952294985-Library_1.19.jpg",
@@ -4985,7 +4985,7 @@ export const products = [
     "material": "Burnt Wood",
     "collabtext": "Dimensions",
     "collablink": "https://dimensionsfurniture.in/collections/monster-collection/",
-    "pdf": "https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUeJWNLScFPv1kdbg4tT0YfOS529XxhywHpVoU",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETc6fucf4IT2R8fxZk3ndVLvi4YU5JWsNh7r6t",
     "images": [
       {
         "fileName": "1739952294985-Library_1.19.jpg",
@@ -5426,7 +5426,7 @@ export const products = [
     "material": "Marble",
     "collabtext": "Serafini",
     "collablink": "https://www.serafini.com/products-page/samaveta-marble-console",
-    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETh16iXEtm8fETaNYbdMxFnsjCGeJKI4WZX9Or",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fET2UfF3X9r8K4Rma5SJPxkIMCA9h6T3H17fXEs",
     "images": [
       {
         "fileName": "1738927863060-Slide1.JPG",
@@ -5513,7 +5513,7 @@ export const products = [
     "title": "Constelletion Mirror",
     "group": "friends",
     "material": "Mirror",
-    "pdf": "https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOj3hQnnNQNhsYReup8oqCmaiw71dHbWcUIX5f",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETtjwtWQ8rBmnJsSTMKoYufvZLGNHykV5pzObA",
     "images": [
       {
         "fileName": "1738927863060-Slide1.JPG",
@@ -5545,7 +5545,7 @@ export const products = [
     "title": "3D Printed Bar",
     "group": "friends",
     "material": "plastic",
-    "pdf": "https://7h4qznnnsa.ufs.sh/f/8EYZaNz64oKUer5rygcFPv1kdbg4tT0YfOS529XxhywHpVoU",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETEgwT0yKrwlys2ZWHxAfTK0bhaLNtD4cFgQV3",
     "images": [
       {
         "fileName": "1738927863060-Slide1.JPG",
@@ -5591,7 +5591,7 @@ export const products = [
     "title": "3D Printed Bar Stool",
     "group": "friends",
     "material": "plastic",
-    "pdf": "https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOkM9roPqXctSvsTPiHmE28xkgA9ynR4Uq3KCZ",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETpiKHNQE7CwLxFJsaBmiAtyMfgnHuS8khoXU2",
     "images": [
       {
         "fileName": "1738927863060-Slide1.JPG",
@@ -5693,7 +5693,7 @@ export const products = [
     "title": "matilda 2022 bed Side Table",
     "group": "matilda_2022",
     "material": "Marble",
-    "pdf": "https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOpgcFJFBP3rNhAZbyusfUHIiaBK09J5xzpGSR",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fET9wDU3x6lzTek1Dcf3mqSFrp7RtE4agUhNwYb",
     "images": [
       {
         "fileName": "1738927863060-Slide1.JPG",
@@ -5778,7 +5778,7 @@ export const products = [
     "title": "matilda 2022 Chest Of Drawer",
     "group": "matilda_2022",
     "material": "Marble",
-    "pdf": "https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6swU1OB9vFBgSUW0cX9kRd8PDVGquOawNHiYT",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fET4Vr5thbICB8OGV6hYfMW1JAiEFwlzDdtLnT5",
     "images": [
       {
         "fileName": "1738927863060-Slide1.JPG",
@@ -5875,7 +5875,7 @@ export const products = [
     "title": "matilda 2022 Console",
     "group": "matilda_2022",
     "material": "Resin and Clay",
-    "pdf": "https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6TSgc3m4l5c29SVtCBxOUDevPXhKIyTMj1qrL",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETQF7CNP3fhHqbTGzBIRu8XmSVL7rYgw3joWNE",
     "images": [
       {
         "fileName": "1738927863060-Slide1.JPG",
@@ -5935,7 +5935,7 @@ export const products = [
     "title": "matilda 2022 Marble Console",
     "group": "matilda_2022",
     "material": "Marble",
-    "pdf": "https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6X3O0cnqNcjaPH8TOvun7r2FplmxtqbKMIzf0",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETyubjCrz3pnhfQrWZgdsokx4ywzqHEU6TeOcX",
     "images": [
       {
         "fileName": "1738927863060-Slide1.JPG",
@@ -5995,7 +5995,7 @@ export const products = [
     "title": "matilda 2022 Side Table",
     "group": "matilda_2022",
     "material": "Marble",
-    "pdf": "https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6Ed9BYq8vfBbIaKPCgLGxqndpNv5DjmeSowJ9",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETMorhZLOLC9Eqs1JGoY0KdU6bWInfADtFl4QZ",
     "images": [
       {
         "fileName": "1738927863060-Slide1.JPG",
@@ -6080,7 +6080,7 @@ export const products = [
     "title": "matilda 2023 Console",
     "group": "matilda_2023",
     "material": "Marble",
-    "pdf": "https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOtACPKTECNT82uVeHGxrbtQFfsJc75Uigz9SX",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETvxuDEJMl0BUTkcH7VZw5xFSfL38QiheKpuzr",
     "images": [
       {
         "fileName": "1738927863060-Slide1.JPG",
@@ -6178,7 +6178,7 @@ export const products = [
     "group": "matilda_2023",
     "material": "Marble",
     "defaultMarble": null,
-    "pdf": "https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOHHVUdwF1d3zpmrSIcueZBfQo80E5Ujs7PTGg",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETX1imxmJhsKquJwLgYD5iAnOZrplN9RoGQT26",
     "images": [
       {
         "fileName": "1738927863060-Slide1.JPG",
@@ -6282,7 +6282,7 @@ export const products = [
     "title": "matilda 2023 Console 2",
     "group": "matilda_2023",
     "material": "Marble",
-    "pdf": "https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOuX4i9r6MRVaZitrSyHezsoA0vp7q8GnxWE2C",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETnfEKkAueApROuKD2d9UoPG3vt1aI68Y4EFrT",
     "images": [
       {
         "fileName": "1738927863060-Slide1.JPG",
@@ -6368,7 +6368,7 @@ export const products = [
     "title": "matilda 2023 Side Table",
     "group": "matilda_2023",
     "material": "Marble",
-    "pdf": "https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMORj0mpwL357SWXL80wNJFzAsgpUhoDGPVxkTY",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fET6Zxn5dXQR17NMKTzed0B9U4ZLHxsSpPbJqga",
     "images": [
       {
         "fileName": "1738927863060-Slide1.JPG",
@@ -6465,7 +6465,7 @@ export const products = [
     "title": "Matilda 2023 Dining Table",
     "group": "matilda_2023",
     "material": "Marble",
-    "pdf": "https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ63H9BP0kO70Cba5AdxRUpojYnlNeJ2mGDHhtk",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETHgEcZdY8qANMJ9VocEiIpa4mvSfROrKjw6yZ",
     "images": [
       {
         "fileName": "1738927863060-Slide1.JPG",
@@ -6519,7 +6519,7 @@ export const products = [
     "group": "matilda_2023",
     "material": "Marble",
     "defaultMarble": null,
-    "pdf": "https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6iW4dbZFz4iH7WfGTVpvldeUXscEPgYyhMN6x",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fET5yyh23srWq5pfmYig9GPhwce4FZEuKbsJxna",
     "images": [
       {
         "fileName": "1738927863060-Slide1.JPG",
@@ -6623,7 +6623,7 @@ export const products = [
     "title": "matilda 2022 Tea Bar",
     "group": "matilda_2022",
     "material": "Marble",
-    "pdf": "https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6cIMh6UyZdMxEUp6Ra5hHXyADko0YJOeK4Pzn",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETAwSIiBUX1CWNKq8JeODVhvrPBMgolutwYFz2",
     "images": [
       {
         "fileName": "1738927863060-Slide1.JPG",
@@ -6756,7 +6756,7 @@ export const products = [
     "title": "Monster 3.0 Ottoman",
     "group": "monster_3.0",
     "material": "Burnt Wood & Fur Fabric",
-    "pdf": "https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOd8QqajvXmWSn1eIpy3d0vtl4fEkq579rjMLs",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETWRAFdEPEl4cIxtY2vVfwMUhnNugbPjoC8zF3",
     "images": [
       {
         "fileName": "1738927863060-Slide1.JPG",
@@ -6837,7 +6837,7 @@ export const products = [
     "title": "Monster 3.0 Coffee Table",
     "group": "monster_3.0",
     "material": "Burnt Wood & Fur Fabric",
-    "pdf": "https://7nnvvwj7e7.ufs.sh/f/xX7vuGtfzZMOc3Dw2bhBCHDUBWS0rVfuRb4mIL69ZFEnpQez",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fET8bzOFclUlVbo1PA24C6dqfWJDFOSnLEhQY0G",
     "images": [
       {
         "fileName": "1738927863060-Slide1.JPG",
@@ -6883,7 +6883,7 @@ export const products = [
     "title": "Monster 3.1 Center Table",
     "group": "monster_3.1",
     "material": "Charred Wood with High Gloss Lacquer",
-    "pdf": "https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ66L2v0P3jRledxo3hIaUpzVs7H2gCbEfBZ8Gk",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETRuK6KWy3sb6am48LuOe29cgjtVhrZJFwWqoT",
     "images": [
       {
         "fileName": "1738927863060-Slide1.JPG",
@@ -6936,7 +6936,7 @@ export const products = [
     "title": "Monster 3.1 Coffee Table",
     "group": "monster_3.1",
     "material": "Charred Wood with High Gloss Lacquer",
-    "pdf": "https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6Q48E3UrAEae8yoHbhSkJuscDIK4m7dfTjqZW",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETkXUZDB7MhDFBlP1oCvjb5OgkAVIY98Ex0NK3",
     "images": [
       {
         "fileName": "1738927863060-Slide1.JPG",
@@ -6982,7 +6982,7 @@ export const products = [
     "title": "Monster 3.1 Console",
     "group": "monster_3.1",
     "material": "Charred Wood with High Gloss Lacquer",
-    "pdf": "https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6O7gUUkuHEwqX8ryijeQWIxhs7f4S2KPznVcF",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETdFTKwnDULFqzYWxVkhaQIbP4cT678vESK2fn",
     "images": [
       {
         "fileName": "1738927863060-Slide1.JPG",
@@ -7049,7 +7049,7 @@ export const products = [
     "title": "Monster 3.1 Console Storage",
     "group": "monster_3.1",
     "material": "Charred Wood with High Gloss Lacquer",
-    "pdf": "https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6TiGQ554l5c29SVtCBxOUDevPXhKIyTMj1qrL",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fET2JLpkT9r8K4Rma5SJPxkIMCA9h6T3H17fXEs",
     "images": [
       {
         "fileName": "1738927863060-Slide1.JPG",
@@ -7102,7 +7102,7 @@ export const products = [
     "title": "Monster 3.1 Desk",
     "group": "monster_3.1",
     "material": "Charred Wood with High Gloss Lacquer",
-    "pdf": "https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6yVnze0AAvzOemNhFRJkaS3KXZ0LMo1E2ijgW",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fET1NtmEj2W4DNaMPxhe3J76kQmEzF9ygWjlcH1",
     "images": [
       {
         "fileName": "1738927863060-Slide1.JPG",
@@ -7155,7 +7155,7 @@ export const products = [
     "title": "Monster 3.1 Floorlamp",
     "group": "monster_3.1",
     "material": "Charred Wood with High Gloss Lacquer",
-    "pdf": "https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6FRcjQtnPM3mXfpc1SBakLQqAlTVoE0twgruR",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETCVmAlAnX0i9Rr4ylJ8T126AvWdaSwVuLzGjY",
     "images": [
       {
         "fileName": "1738927863060-Slide1.JPG",
@@ -7201,7 +7201,7 @@ export const products = [
     "title": "Monster 3.1 Dining Table",
     "group": "monster_3.1",
     "material": "Charred Wood with High Gloss Lacquer",
-    "pdf": "https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6BTTZGyeRHXuCZT2y3OdBkMADUJe8lpWrPthn",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETnu1mNleApROuKD2d9UoPG3vt1aI68Y4EFrTW",
     "images": [
       {
         "fileName": "1738927863060-Slide1.JPG",
@@ -7261,7 +7261,7 @@ export const products = [
     "title": "Monster 3.1 Mirror",
     "group": "monster_3.1",
     "material": "Charred Wood with High Gloss Lacquer",
-    "pdf": "https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6Db3o5g79lTEUmF6fdNKHtjJSZsbWXiezhB0I",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fET7SNAVFRBzqkov2x1bgf5QsEwUth3eKHSTypR",
     "images": [
       {
         "fileName": "1738927863060-Slide1.JPG",
@@ -7314,7 +7314,7 @@ export const products = [
     "title": "Monster 3.1 Round Dining Table",
     "group": "monster_3.1",
     "material": "Charred Wood with High Gloss Lacquer",
-    "pdf": "https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6pg3KN8bTL34HCtozJKF1vMsEy08j6bxYOPRn",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETtCoCUT8rBmnJsSTMKoYufvZLGNHykV5pzObA",
     "images": [
       {
         "fileName": "1738927863060-Slide1.JPG",
@@ -7367,7 +7367,7 @@ export const products = [
     "title": "Monster 3.1 Single Shelving Unit",
     "group": "monster_3.1",
     "material": "Charred Wood with High Gloss Lacquer",
-    "pdf": "https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6dEh2V9j5nQHCxdAwKzgMiNoO8BVZTP3fJuq1",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETPvYxSENFr4eaXGSfIM8iWo3n70clvgYHw2qk",
     "images": [
       {
         "fileName": "1738927863060-Slide1.JPG",
@@ -7420,7 +7420,7 @@ export const products = [
     "title": "Monster 3.1 Side Table",
     "group": "monster_3.1",
     "material": "Charred Wood with High Gloss Lacquer",
-    "pdf": "https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6JfqSYIEXjBOH8Lgb3Dl6QsSrvVaGt4h5xzZn",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fETtZGTOY8rBmnJsSTMKoYufvZLGNHykV5pzObA",
     "images": [
       {
         "fileName": "1738927863060-Slide1.JPG",
@@ -7475,7 +7475,7 @@ export const products = [
     "material": "Burnt Wood & Fur Fabric",
     "collabtext": "Dimensions",
     "collablink": "https://dimensionsfurniture.in/collections/monster-collection/",
-    "pdf": "https://ilf6s48f28.ufs.sh/f/A71pwfasMjQ6Y4QARBNpQ6Mplf2w0nGeTNo5xsyRHC8DzakU",
+    "pdf": "https://mi1tgj0lv8.ufs.sh/f/hHCcWEtm8fET1My9SGW4DNaMPxhe3J76kQmEzF9ygWjlcH1t",
     "images": [
       {
         "fileName": "1.webp",
