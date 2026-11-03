@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import gsap from 'gsap';
 import { useParams, useRouter } from 'next/navigation';
 import Navbar from '@/app/components/Navbar';
@@ -14,7 +14,8 @@ import ProductCardV2 from '@/app/components/ProductCardV2';
 
 const GroupProductsPageV2 = () => {
   const { group } = useParams();
-  const [filteredProducts, setFilteredProducts] = useState([]);
+  // Computed during render (not in an effect) so the product grid is in the server-rendered HTML
+  const filteredProducts = useMemo(() => products.filter((p) => p.group === group), [group]);
   const [showModal, setShowModal] = useState(false);
   const [formData, setFormData] = useState({ name: '', email: '', phone: '' });
   const [loading, setLoading] = useState(false);
@@ -27,9 +28,6 @@ const GroupProductsPageV2 = () => {
   const gridRef = useRef(null);
 
   useEffect(() => {
-    const groupProducts = products.filter((p) => p.group === group);
-    setFilteredProducts(groupProducts);
-
     const foundCatalogue = catalogues.find((c) => c.group === group);
     setPdfLink(foundCatalogue ? foundCatalogue.pdf : '');
     setImage1(foundCatalogue ? foundCatalogue.image : '');

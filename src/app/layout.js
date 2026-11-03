@@ -44,12 +44,16 @@ const leagueSpartan = League_Spartan({
 // });
 
 export const metadata = {
-  title: `Karan Desai Home | Luxury Décor, Furniture & Lifestyle`,
-  description: `Discover award-winning architectural and interior designs by Karan Desai Home – led by TedX Speaker and visionary architect Karan Desai.`,
+  title: {
+    default: `Karan Desai Home | Luxury Designer Furniture – Tables, Chairs, Lighting & Décor`,
+    template: `%s | Karan Desai Home`,
+  },
+  description: `Karan Desai Home – luxury designer furniture from Mumbai: marble center tables, dining tables, dining chairs, sofas, consoles, desks, lamps, mirrors and décor. Award-winning design by architect and TEDx speaker Karan Desai.`,
   metadataBase: new URL('https://karandesaihome.com'),
   openGraph: {
-    title: 'Karan Desai Home',
-    description: 'Award Winning Architecture + Interior Design Studio',
+    title: 'Karan Desai Home | Luxury Designer Furniture & Décor',
+    description: 'Luxury designer furniture – tables, chairs, sofas, consoles, lighting and décor – by award-winning architect Karan Desai.',
+    siteName: 'Karan Desai Home',
     url: 'https://karandesaihome.com',
     images: ['/assets/newkdh.png'],
     type: 'website',
@@ -60,9 +64,6 @@ export const metadata = {
     description:
       'Discover the innovative architectural designs of Karan Desai Home.',
     images: ['/assets/newkdh.png'],
-  },
-  alternates: {
-    canonical: 'https://karandesaihome.com',
   },
   keywords: [
     // Brand & Collections
@@ -98,6 +99,23 @@ export const metadata = {
 
     // Product Categories
     'luxury furniture',
+    'designer furniture India',
+    'luxury center table',
+    'marble coffee table',
+    'luxury dining table',
+    'marble dining table',
+    'designer dining chairs',
+    'luxury sofa',
+    'designer console table',
+    'luxury side table',
+    'designer study table',
+    'luxury desk',
+    'designer floor lamp',
+    'designer chandelier',
+    'luxury mirror',
+    'marble wash basin',
+    'designer bathtub',
+    'luxury bar furniture',
     'designer lighting',
     'decorative sculptures',
     'collectible art pieces',

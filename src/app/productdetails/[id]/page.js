@@ -1,29 +1,52 @@
 import { products } from '@/app/components/altproducts';
 import AltProductDetailsClient from '@/app/components/pageComp/AltProductDetailsClient';
 import { notFound } from 'next/navigation';
+import {
+  getProductId,
+  getProductSeo,
+  getProductJsonLd,
+  getProductUrl,
+  SITE_URL,
+} from '@/lib/seo';
+
+const findProduct = (id) => products.find((p) => getProductId(p) === id);
+
+export function generateStaticParams() {
+  return products.map((p) => ({ id: getProductId(p) }));
+}
 
 export async function generateMetadata({ params }) {
-  const product = products.find((p) => {
-    const productId = typeof p._id === 'object' ? p._id.$oid : p._id;
-    return productId === params.id;
-  });
+  const product = findProduct(params.id);
 
   if (!product) return {};
 
+  const { title, description, keywords } = getProductSeo(product);
+  const url = getProductUrl(product);
+  const images = (product.images || []).slice(0, 4).map((img) => ({
+    url: `${SITE_URL}${img.filePath || img}`,
+    alt: title,
+  }));
+
   return {
-    title: product.title,
-    description:
-      product.description ||
-      `${product.title} - Product specifications and details`,
-    keywords: `${product.title}, ${
-      product.material || ''
-    }, furniture, interior design`,
+    title,
+    description,
+    keywords,
     alternates: {
-      canonical: `https://karandesaihome.com/altproductdetails/${product._id.$oid}`,
+      canonical: url,
     },
     openGraph: {
-      title: 'Karan Desai Home',
+      title,
+      description,
+      url,
+      siteName: 'Karan Desai Home',
+      images,
       type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: images.map((i) => i.url),
     },
     robots: {
       index: true,
@@ -41,12 +64,17 @@ export async function generateMetadata({ params }) {
 }
 
 export default function AltProductDetailsPage({ params }) {
-  const product = products.find((p) => {
-    const productId = typeof p._id === 'object' ? p._id.$oid : p._id;
-    return productId === params.id;
-  });
+  const product = findProduct(params.id);
 
   if (!product) notFound();
 
-  return <AltProductDetailsClient product={product} />;
+  return (
+    <>
+      <script
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(getProductJsonLd(product)) }}
+      />
+      <AltProductDetailsClient product={product} />
+    </>
+  );
 }

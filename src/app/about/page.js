@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 export const metadata = {
-  title: 'About Page of Karan Desai Home',
+  title: 'About Karan Desai – Architect & Luxury Furniture Designer',
   description:
     'Learn about Karan Desai — Award-winning Architecture + Interior Design Studio. Explore creative collections, luxury design philosophy, and craftsmanship at Karan Desai Home.',
   keywords: [

@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import gsap from 'gsap';
 import { useParams, useRouter } from 'next/navigation';
 import Navbar from '@/app/components/Navbar';
@@ -225,21 +225,20 @@ const ProductCardV2 = ({ product, index }) => {
 
 const CategoryProductsPage = () => {
   const { category } = useParams();
-  const [filteredProducts, setFilteredProducts] = useState([]);
   const pageRef = useRef(null);
   const headerRef = useRef(null);
   const gridRef = useRef(null);
 
-  useEffect(() => {
+  // Computed during render (not in an effect) so the product grid is in the server-rendered HTML
+  const filteredProducts = useMemo(() => {
     // Decode the slug to get the display name
     const categoryName = decodeURIComponent(category).replace(/-/g, ' ');
-    
+
     // Filter products whose derived category matches (case insensitive)
-    const matchedProducts = products.filter((p) => {
+    return products.filter((p) => {
       const derivedArray = deriveCategory(p.title);
       return derivedArray.some(d => d.toLowerCase() === categoryName.toLowerCase());
     });
-    setFilteredProducts(matchedProducts);
   }, [category]);
 
   // GSAP entrance animations
